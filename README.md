@@ -8,10 +8,11 @@
    ```
    bash ./vnncomp_scripts/install_tool.sh v1
    ```
-3) Check that gurobi license was obtained successfully by calling `python3` and running:
-    ```
-    import gurobipy
-    gurobipy.Model()
-    exit()
-    ```
-   If an error is returned, acquire a gurobi license
+3) Acquire a gurobi license and install:
+   ```
+   cd gurobi903/linux64/bin
+   ./grbgetkey <license-key>
+   ```
+
+## Run Info
+ERAN should be run on a GPU instance

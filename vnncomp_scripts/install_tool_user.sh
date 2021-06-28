@@ -8,9 +8,9 @@ else
 fi
 
 
-cd bin
-./grbgetkey 9050179c-d832-11eb-80a7-0242ac120002 < ../../
-cd ../../../
+#cd bin
+#./grbgetkey #################### < ../../
+#cd ../../../
 
 if [[ $CONDA_DEFAULT_ENV == "" ]]; then
   python3 -m pip install -r requirements.txt
