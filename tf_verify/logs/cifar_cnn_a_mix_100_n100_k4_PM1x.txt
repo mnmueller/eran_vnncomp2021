@@ -1,0 +1,459 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/__main__.py --netname ../nets/SDP_FO_nets/CNN_A_CIFAR_MIX.onnx --dataset cifar10 --domain refinegpupoly --epsilon 0.00784313725 --from_test 0 --num_test 100 --k 4 --s -2 --sparse_n 100 --partial_milp 1 --max_milp_neurons 100 --timeout_final_milp 500 --mean 0.49137255 0.48235294 0.44666667 --std 0.24705882 0.24352941 0.26156863 --subset a_mix
+2021-04-13 11:32:26.152216: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Apr  3 2021 10:38:48) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-04-13 11:32:27.014443: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-13 11:32:27.036073: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-13 11:32:27.036271: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-04-13 11:32:27.036283: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-13 11:32:27.036305: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-13 11:32:27.036318: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-04-13 11:32:27.036868: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-13 11:32:27.037000: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-13 11:32:27.038389: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-13 11:32:27.038713: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-04-13 11:32:27.038793: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-13 11:32:27.038836: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-13 11:32:27.039045: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-13 11:32:27.039223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-04-13 11:32:27.039238: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-13 11:32:27.359340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-13 11:32:27.359358: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-04-13 11:32:27.359363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-04-13 11:32:27.359481: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-13 11:32:27.359696: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-13 11:32:27.359882: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-13 11:32:27.360053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3246 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-04-13 11:32:27.360233: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+{'approx_k': True,
+ 'attack': False,
+ 'complete': False,
+ 'data_dir': None,
+ 'dataset': 'cifar10',
+ 'debug': False,
+ 'delta': 0.3,
+ 'domain': 'refinegpupoly',
+ 'epsfile': None,
+ 'epsilon': 0.00784313725,
+ 'from_test': 0,
+ 'gamma': inf,
+ 'geometric': False,
+ 'geometric_config': None,
+ 'input_box': None,
+ 'k': 4,
+ 'logdir': None,
+ 'logname': None,
+ 'max_milp_neurons': 100,
+ 'mean': [0.49137255, 0.48235294, 0.44666667],
+ 'n_milp_refine': 1,
+ 'netname': '../nets/SDP_FO_nets/CNN_A_CIFAR_MIX.onnx',
+ 'normalized_region': True,
+ 'num_params': 0,
+ 'num_tests': 100,
+ 'numproc': 16,
+ 'output_constraints': None,
+ 'partial_milp': 1,
+ 'quant_step': None,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 100,
+ 'spatial': False,
+ 'specnumber': None,
+ 'std': [0.24705882, 0.24352941, 0.26156863],
+ 'subset': 'a_mix',
+ 't_norm': 'inf',
+ 'target': None,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 500.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'use_default_heuristic': True,
+ 'use_milp': True,
+ 'vnn_lib_spec': None,
+ 'zonotope': None}
+netname  ../nets/SDP_FO_nets/CNN_A_CIFAR_MIX.onnx  epsilon  0.00784313725  domain  refinegpupoly  dataset  cifar10 args complete  False  complete  False  timeout_lp  1
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound for constraint (3, 4, 0): -0.0044/-0.0044, Final solve time: 2.281
+Partial MILP model status: 6, Obj val/bound for constraint (3, 4, 0): inf/0.0100, Final solve time: 39.056
+img 0 Verified 3
+progress: 1/100, correct:  1/1, verified: 1/1, unsafe: 0/0,  time: 57.088; 57.088; 57.088
+Model status: 2, Obj val/bound for constraint (9, 1, 0): -1.8217/-1.8217, Final solve time: 2.517
+Partial MILP model status: 11, Obj val/bound for constraint (9, 1, 0): -1.0219/-1.8217, Final solve time: 7.525
+img 1 Failed, with adversarial example with label 1. Correct label is 9
+progress: 2/100, correct:  2/2, verified: 1/1, unsafe: 1/1,  time: 17.744; 37.416; 74.833
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -1.7793/-1.7793, Final solve time: 5.174
+Partial MILP model status: 11, Obj val/bound for constraint (1, 0, 0): -0.8898/-1.7793, Final solve time: 184.981
+img 2 Failed, without a adversarial example
+progress: 3/100, correct:  3/3, verified: 1/2, unsafe: 1/2,  time: 222.304; 99.046; 297.137
+Model status: 6, Obj val/bound for constraint (6, 2, 0): 0.0000/failed, Final solve time: 14.557
+Model status: 2, Obj val/bound for constraint (6, 4, 0): -0.7501/-0.7501, Final solve time: 17.598
+Partial MILP model status: 11, Obj val/bound for constraint (6, 4, 0): -0.0298/-0.7501, Final solve time: 484.675
+img 3 Failed, without a adversarial example
+progress: 4/100, correct:  4/4, verified: 1/3, unsafe: 1/3,  time: 589.280; 221.604; 886.417
+img 4 Verified 0
+progress: 5/100, correct:  5/5, verified: 2/4, unsafe: 1/3,  time: 0.033; 177.290; 886.450
+Model status: 2, Obj val/bound for constraint (2, 4, 0): -0.6386/-0.6386, Final solve time: 10.254
+Partial MILP model status: 11, Obj val/bound for constraint (2, 4, 0): -0.4216/-0.6384, Final solve time: 278.235
+img 5 Failed, without a adversarial example
+progress: 6/100, correct:  6/6, verified: 2/5, unsafe: 1/4,  time: 336.888; 203.890; 1223.338
+Model status: 6, Obj val/bound for constraint (1, 0, 0): 0.0000/failed, Final solve time: 5.869
+img 6 Verified 1
+progress: 7/100, correct:  7/7, verified: 3/6, unsafe: 1/4,  time: 41.846; 180.740; 1265.183
+img 7 Verified 9
+progress: 8/100, correct:  8/8, verified: 4/7, unsafe: 1/4,  time: 0.029; 158.151; 1265.212
+Model status: 6, Obj val/bound for constraint (3, 2, 0): 0.0000/failed, Final solve time: 5.247
+Model status: 2, Obj val/bound for constraint (3, 4, 0): -1.1758/-1.1758, Final solve time: 5.252
+Partial MILP model status: 11, Obj val/bound for constraint (3, 4, 0): -0.8727/-1.1758, Final solve time: 104.251
+img 8 Failed, with adversarial example with label 4. Correct label is 3
+progress: 9/100, correct:  9/9, verified: 4/7, unsafe: 2/5,  time: 142.984; 156.466; 1408.195
+Model status: 6, Obj val/bound for constraint (3, 0, 0): 0.0000/failed, Final solve time: 13.358
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -2.7459/-2.7459, Final solve time: 12.459
+Partial MILP model status: 11, Obj val/bound for constraint (3, 2, 0): -0.7263/-2.7459, Final solve time: 334.692
+img 9 Failed, with adversarial example with label 2. Correct label is 3
+progress: 10/100, correct:  10/10, verified: 4/7, unsafe: 3/6,  time: 426.330; 183.452; 1834.525
+img 10 Verified 1
+progress: 11/100, correct:  11/11, verified: 5/8, unsafe: 3/6,  time: 0.036; 166.778; 1834.561
+Model status: 2, Obj val/bound for constraint (6, 2, 0): -0.5819/-0.5819, Final solve time: 10.767
+Partial MILP model status: 6, Obj val/bound for constraint (6, 2, 0): inf/0.0100, Final solve time: 450.149
+Model status: 2, Obj val/bound for constraint (6, 4, 0): -0.4176/-0.4176, Final solve time: 10.062
+Partial MILP model status: 6, Obj val/bound for constraint (6, 4, 0): inf/0.0100, Final solve time: 366.124
+img 11 Verified 6
+progress: 12/100, correct:  12/12, verified: 6/9, unsafe: 3/6,  time: 889.879; 227.037; 2724.439
+Model status: 6, Obj val/bound for constraint (3, 2, 0): 0.0000/failed, Final solve time: 9.021
+Model status: 2, Obj val/bound for constraint (3, 4, 0): -0.6425/-0.6425, Final solve time: 8.525
+Partial MILP model status: 9, Obj val/bound for constraint (3, 4, 0): inf/-0.4915, Final solve time: 500.014
+img 12 Failed
+progress: 13/100, correct:  13/13, verified: 6/10, unsafe: 3/7,  time: 570.707; 253.473; 3295.147
+img 13 Verified 6
+progress: 14/100, correct:  14/14, verified: 7/11, unsafe: 3/7,  time: 0.058; 235.372; 3295.205
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -0.0481/-0.0481, Final solve time: 3.293
+Partial MILP model status: 6, Obj val/bound for constraint (5, 2, 0): inf/0.0100, Final solve time: 20.614
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.2113/-0.2113, Final solve time: 3.056
+Partial MILP model status: 11, Obj val/bound for constraint (5, 3, 0): -0.1109/-0.2113, Final solve time: 19.848
+img 14 Failed, without a adversarial example
+progress: 15/100, correct:  15/15, verified: 7/12, unsafe: 3/8,  time: 57.055; 223.484; 3352.261
+img 15 Verified 8
+progress: 16/100, correct:  16/16, verified: 8/13, unsafe: 3/8,  time: 0.037; 209.519; 3352.297
+Model status: 6, Obj val/bound for constraint (5, 8, 0): 0.0000/failed, Final solve time: 5.756
+img 16 Verified 5
+progress: 17/100, correct:  17/17, verified: 9/14, unsafe: 3/8,  time: 43.973; 199.781; 3396.270
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -0.7827/-0.7827, Final solve time: 14.810
+Partial MILP model status: 9, Obj val/bound for constraint (1, 0, 0): inf/-0.6604, Final solve time: 500.026
+img 17 Failed
+progress: 18/100, correct:  18/18, verified: 9/15, unsafe: 3/9,  time: 581.330; 220.978; 3977.600
+Model status: 2, Obj val/bound for constraint (9, 1, 0): -0.6251/-0.6251, Final solve time: 3.216
+Partial MILP model status: 11, Obj val/bound for constraint (9, 1, 0): -0.3168/-0.5000, Final solve time: 42.587
+img 18 Failed, without a adversarial example
+progress: 19/100, correct:  19/19, verified: 9/16, unsafe: 3/10,  time: 62.886; 212.657; 4040.486
+img 19 Verified 7
+progress: 20/100, correct:  20/20, verified: 10/17, unsafe: 3/10,  time: 0.039; 202.026; 4040.524
+img 20 Verified 0
+progress: 21/100, correct:  21/21, verified: 11/18, unsafe: 3/10,  time: 0.026; 192.407; 4040.550
+img 21 Verified 0
+progress: 22/100, correct:  22/22, verified: 12/19, unsafe: 3/10,  time: 0.028; 183.663; 4040.578
+img 22 Verified 4
+progress: 23/100, correct:  23/23, verified: 13/20, unsafe: 3/10,  time: 0.029; 175.679; 4040.607
+img 23 Verified 0
+progress: 24/100, correct:  24/24, verified: 14/21, unsafe: 3/10,  time: 0.027; 168.360; 4040.634
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -0.5386/-0.5386, Final solve time: 18.329
+Partial MILP model status: 9, Obj val/bound for constraint (3, 2, 0): inf/-0.4541, Final solve time: 500.053
+img 24 Failed
+progress: 25/100, correct:  25/25, verified: 14/22, unsafe: 3/11,  time: 608.009; 185.946; 4648.643
+Model status: 2, Obj val/bound for constraint (3, 6, 0): -1.0828/-1.0828, Final solve time: 16.525
+Partial MILP model status: 11, Obj val/bound for constraint (3, 6, 0): -0.3492/-1.0828, Final solve time: 348.783
+img 25 Failed, without a adversarial example
+progress: 26/100, correct:  26/26, verified: 14/23, unsafe: 3/12,  time: 443.138; 195.838; 5091.781
+img 26 Verified 0
+progress: 27/100, correct:  27/27, verified: 15/24, unsafe: 3/12,  time: 0.035; 188.586; 5091.816
+Model status: 2, Obj val/bound for constraint (6, 2, 0): -0.9513/-0.9513, Final solve time: 11.342
+Partial MILP model status: 11, Obj val/bound for constraint (6, 2, 0): -0.2934/-0.9513, Final solve time: 259.985
+img 27 Failed, without a adversarial example
+progress: 28/100, correct:  28/28, verified: 15/25, unsafe: 3/13,  time: 317.143; 193.177; 5408.959
+Model status: 6, Obj val/bound for constraint (6, 2, 0): 0.0000/failed, Final solve time: 8.450
+Model status: 6, Obj val/bound for constraint (6, 4, 0): 0.0000/failed, Final solve time: 8.816
+img 28 Verified 6
+progress: 29/100, correct:  29/29, verified: 16/26, unsafe: 3/13,  time: 57.097; 188.485; 5466.056
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -0.3574/-0.3574, Final solve time: 2.146
+Partial MILP model status: 11, Obj val/bound for constraint (0, 2, 0): -0.1362/-0.3526, Final solve time: 4.116
+img 29 Failed, without a adversarial example
+progress: 30/100, correct:  30/30, verified: 16/27, unsafe: 3/14,  time: 13.873; 182.664; 5479.929
+img 30 Verified 8
+progress: 31/100, correct:  31/31, verified: 17/28, unsafe: 3/14,  time: 0.027; 176.773; 5479.956
+Model status: 6, Obj val/bound for constraint (6, 2, 0): 0.0000/failed, Final solve time: 12.821
+Model status: 6, Obj val/bound for constraint (6, 3, 0): 0.0000/failed, Final solve time: 12.144
+Model status: 6, Obj val/bound for constraint (6, 5, 0): 0.0000/failed, Final solve time: 12.923
+img 31 Verified 6
+progress: 32/100, correct:  32/32, verified: 18/29, unsafe: 3/14,  time: 96.175; 174.254; 5576.131
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -0.4435/-0.4435, Final solve time: 36.512
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): inf/-10.0066, Final solve time: 500.016
+img 32 Failed
+progress: 33/100, correct:  33/33, verified: 18/30, unsafe: 3/15,  time: 696.394; 190.077; 6272.525
+img 33 Verified 8
+progress: 34/100, correct:  34/34, verified: 19/31, unsafe: 3/15,  time: 0.063; 184.488; 6272.588
+Model status: 6, Obj val/bound for constraint (5, 2, 0): 0.0000/failed, Final solve time: 11.628
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.1929/-0.1929, Final solve time: 11.442
+Partial MILP model status: 9, Obj val/bound for constraint (5, 3, 0): inf/-0.0452, Final solve time: 500.067
+img 34 Failed
+progress: 35/100, correct:  35/35, verified: 19/32, unsafe: 3/16,  time: 573.276; 195.596; 6845.864
+img 35 Verified 1
+progress: 36/100, correct:  36/36, verified: 20/33, unsafe: 3/16,  time: 0.063; 190.165; 6845.928
+img 36 Verified 0
+progress: 37/100, correct:  37/37, verified: 21/34, unsafe: 3/16,  time: 0.025; 185.026; 6845.953
+Model status: 6, Obj val/bound for constraint (5, 2, 0): 0.0000/failed, Final solve time: 5.743
+Model status: 6, Obj val/bound for constraint (5, 3, 0): 0.0000/failed, Final solve time: 5.161
+Model status: 2, Obj val/bound for constraint (5, 4, 0): -0.4049/-0.4049, Final solve time: 5.215
+Partial MILP model status: 6, Obj val/bound for constraint (5, 4, 0): inf/0.0100, Final solve time: 294.404
+Model status: 6, Obj val/bound for constraint (5, 6, 0): 0.0000/failed, Final solve time: 5.508
+Model status: 2, Obj val/bound for constraint (5, 7, 0): -0.6144/-0.6144, Final solve time: 5.509
+Partial MILP model status: 11, Obj val/bound for constraint (5, 7, 0): -0.1945/-0.6144, Final solve time: 117.912
+img 37 Failed, without a adversarial example
+progress: 38/100, correct:  38/38, verified: 21/35, unsafe: 3/17,  time: 476.912; 192.707; 7322.865
+Model status: 6, Obj val/bound for constraint (8, 2, 0): 0.0000/failed, Final solve time: 4.784
+Model status: 6, Obj val/bound for constraint (8, 3, 0): 0.0000/failed, Final solve time: 4.812
+Model status: 6, Obj val/bound for constraint (8, 6, 0): 0.0000/failed, Final solve time: 4.472
+Model status: 2, Obj val/bound for constraint (8, 7, 0): -1.1483/-1.1483, Final solve time: 4.370
+Partial MILP model status: 11, Obj val/bound for constraint (8, 7, 0): -0.3897/-1.1483, Final solve time: 133.259
+img 38 Failed, without a adversarial example
+progress: 39/100, correct:  39/39, verified: 21/36, unsafe: 3/18,  time: 178.153; 192.334; 7501.019
+Model status: 6, Obj val/bound for constraint (6, 2, 0): 0.0000/failed, Final solve time: 8.106
+Model status: 2, Obj val/bound for constraint (6, 4, 0): -0.4903/-0.4903, Final solve time: 7.956
+Partial MILP model status: 11, Obj val/bound for constraint (6, 4, 0): inf/0.0100, Final solve time: 297.123
+img 39 Verified 6
+progress: 40/100, correct:  40/40, verified: 22/37, unsafe: 3/18,  time: 363.082; 196.603; 7864.101
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -1.4277/-1.4277, Final solve time: 10.196
+Partial MILP model status: 11, Obj val/bound for constraint (5, 2, 0): -0.8897/-1.4272, Final solve time: 228.855
+img 40 Failed, with adversarial example with label 2. Correct label is 5
+progress: 41/100, correct:  41/41, verified: 22/37, unsafe: 4/19,  time: 283.353; 198.718; 8147.454
+Model status: 2, Obj val/bound for constraint (3, 0, 0): -0.5502/-0.5502, Final solve time: 5.151
+Partial MILP model status: 11, Obj val/bound for constraint (3, 0, 0): -0.2364/-0.5501, Final solve time: 81.361
+img 41 Failed, with adversarial example with label 1. Correct label is 3
+progress: 42/100, correct:  42/42, verified: 22/37, unsafe: 5/20,  time: 116.340; 196.757; 8263.794
+Model status: 2, Obj val/bound for constraint (6, 2, 0): -0.5976/-0.5976, Final solve time: 23.887
+Partial MILP model status: 9, Obj val/bound for constraint (6, 2, 0): inf/-9.0850, Final solve time: 500.007
+img 42 Failed
+progress: 43/100, correct:  43/43, verified: 22/38, unsafe: 5/21,  time: 619.820; 206.596; 8883.613
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -0.0147/-0.0147, Final solve time: 2.933
+Partial MILP model status: 6, Obj val/bound for constraint (1, 8, 0): inf/0.0100, Final solve time: 45.845
+Model status: 2, Obj val/bound for constraint (1, 9, 0): -0.7521/-0.7521, Final solve time: 2.694
+Partial MILP model status: 11, Obj val/bound for constraint (1, 9, 0): -0.5870/-0.7520, Final solve time: 36.667
+img 43 Failed, without a adversarial example
+progress: 44/100, correct:  44/44, verified: 22/39, unsafe: 5/22,  time: 102.542; 204.231; 8986.155
+img 44 Verified 8
+progress: 45/100, correct:  45/45, verified: 23/40, unsafe: 5/22,  time: 0.029; 199.693; 8986.184
+Model status: 6, Obj val/bound for constraint (2, 4, 0): 0.0000/failed, Final solve time: 12.642
+img 45 Verified 2
+progress: 46/100, correct:  46/46, verified: 24/41, unsafe: 5/22,  time: 71.370; 196.903; 9057.555
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -0.8387/-0.8387, Final solve time: 15.974
+Partial MILP model status: 9, Obj val/bound for constraint (4, 2, 0): inf/-0.7477, Final solve time: 500.033
+img 46 Failed
+progress: 47/100, correct:  47/47, verified: 24/42, unsafe: 5/23,  time: 592.690; 205.324; 9650.245
+Model status: 2, Obj val/bound for constraint (2, 4, 0): -0.8743/-0.8743, Final solve time: 9.341
+Partial MILP model status: 11, Obj val/bound for constraint (2, 4, 0): -0.3195/-0.8743, Final solve time: 296.580
+img 47 Failed, without a adversarial example
+progress: 48/100, correct:  48/48, verified: 24/43, unsafe: 5/24,  time: 351.105; 208.361; 10001.349
+Model status: 6, Obj val/bound for constraint (7, 4, 0): 0.0000/failed, Final solve time: 6.401
+img 48 Verified 7
+progress: 49/100, correct:  49/49, verified: 25/44, unsafe: 5/24,  time: 40.961; 204.945; 10042.310
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -1.7111/-1.7111, Final solve time: 2.564
+Partial MILP model status: 11, Obj val/bound for constraint (8, 0, 0): -1.3713/-1.7111, Final solve time: 57.897
+img 49 Failed, with adversarial example with label 0. Correct label is 8
+progress: 50/100, correct:  50/50, verified: 25/44, unsafe: 6/25,  time: 76.258; 202.371; 10118.569
+Model status: 6, Obj val/bound for constraint (6, 4, 0): 0.0000/failed, Final solve time: 5.925
+img 50 Verified 6
+progress: 51/100, correct:  51/51, verified: 26/45, unsafe: 6/25,  time: 40.384; 199.195; 10158.952
+img 51 Verified 0
+progress: 52/100, correct:  52/52, verified: 27/46, unsafe: 6/25,  time: 0.028; 195.365; 10158.980
+Model status: 6, Obj val/bound for constraint (6, 2, 0): 0.0000/failed, Final solve time: 13.949
+img 52 Verified 6
+progress: 53/100, correct:  53/53, verified: 28/47, unsafe: 6/25,  time: 82.011; 193.226; 10240.991
+img 53 Verified 7
+progress: 54/100, correct:  54/54, verified: 29/48, unsafe: 6/25,  time: 0.029; 189.649; 10241.020
+Model status: 6, Obj val/bound for constraint (0, 1, 0): 0.0000/failed, Final solve time: 4.301
+Model status: 6, Obj val/bound for constraint (0, 4, 0): 0.0000/failed, Final solve time: 4.192
+Model status: 6, Obj val/bound for constraint (0, 8, 0): 0.0000/failed, Final solve time: 3.932
+Model status: 6, Obj val/bound for constraint (0, 9, 0): 0.0000/failed, Final solve time: 4.360
+img 54 Verified 0
+progress: 55/100, correct:  55/55, verified: 30/49, unsafe: 6/25,  time: 43.744; 186.996; 10284.764
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -0.2764/-0.2764, Final solve time: 8.652
+Partial MILP model status: 6, Obj val/bound for constraint (5, 2, 0): inf/0.0100, Final solve time: 327.872
+img 55 Verified 5
+progress: 56/100, correct:  56/56, verified: 31/50, unsafe: 6/25,  time: 395.930; 190.727; 10680.694
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -1.9722/-1.9722, Final solve time: 5.076
+Partial MILP model status: 11, Obj val/bound for constraint (9, 8, 0): -1.6376/-1.9722, Final solve time: 113.373
+img 56 Failed, with adversarial example with label 8. Correct label is 9
+progress: 57/100, correct:  57/57, verified: 31/50, unsafe: 7/26,  time: 150.183; 190.015; 10830.877
+Model status: 6, Obj val/bound for constraint (3, 0, 0): 0.0000/failed, Final solve time: 29.526
+Model status: 6, Obj val/bound for constraint (3, 1, 0): 0.0000/failed, Final solve time: 23.354
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -1.3259/-1.3259, Final solve time: 25.126
+Partial MILP model status: 9, Obj val/bound for constraint (3, 2, 0): inf/-9.5354, Final solve time: 500.017
+img 57 Failed
+progress: 58/100, correct:  58/58, verified: 31/51, unsafe: 7/27,  time: 682.313; 198.503; 11513.190
+img 58 Verified 7
+progress: 59/100, correct:  59/59, verified: 32/52, unsafe: 7/27,  time: 0.064; 195.140; 11513.254
+Model status: 6, Obj val/bound for constraint (0, 1, 0): 0.0000/failed, Final solve time: 34.906
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -2.0179/-2.0179, Final solve time: 39.307
+Partial MILP model status: 9, Obj val/bound for constraint (0, 2, 0): inf/-13.6670, Final solve time: 500.009
+img 59 Failed
+progress: 60/100, correct:  60/60, verified: 32/53, unsafe: 7/28,  time: 721.788; 203.917; 12235.042
+Model status: 2, Obj val/bound for constraint (2, 4, 0): -0.9922/-0.9922, Final solve time: 3.404
+Partial MILP model status: 11, Obj val/bound for constraint (2, 4, 0): -0.6698/-0.9922, Final solve time: 38.396
+img 60 Failed, with adversarial example with label 4. Correct label is 2
+progress: 61/100, correct:  61/61, verified: 32/53, unsafe: 8/29,  time: 59.696; 201.553; 12294.738
+Model status: 6, Obj val/bound for constraint (5, 0, 0): 0.0000/failed, Final solve time: 14.552
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -1.6616/-1.6616, Final solve time: 15.898
+Partial MILP model status: 11, Obj val/bound for constraint (5, 2, 0): -0.6233/-1.6616, Final solve time: 421.446
+img 61 Failed, with adversarial example with label 3. Correct label is 5
+progress: 62/100, correct:  62/62, verified: 32/53, unsafe: 9/30,  time: 520.375; 206.695; 12815.113
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -0.4306/-0.4306, Final solve time: 13.437
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-0.4306, Final solve time: 500.336
+img 62 Failed
+progress: 63/100, correct:  63/63, verified: 32/54, unsafe: 9/31,  time: 586.234; 212.720; 13401.347
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -1.0775/-1.0775, Final solve time: 3.586
+Partial MILP model status: 11, Obj val/bound for constraint (4, 2, 0): -0.7651/-1.0775, Final solve time: 28.120
+img 63 Failed, with adversarial example with label 2. Correct label is 4
+progress: 64/100, correct:  64/64, verified: 32/54, unsafe: 10/32,  time: 50.970; 210.192; 13452.318
+Model status: 6, Obj val/bound for constraint (1, 0, 0): 0.0000/failed, Final solve time: 6.948
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -1.6880/-1.6880, Final solve time: 8.713
+Partial MILP model status: 11, Obj val/bound for constraint (1, 8, 0): -1.0347/-1.6880, Final solve time: 233.560
+img 64 Failed, with adversarial example with label 8. Correct label is 1
+progress: 65/100, correct:  65/65, verified: 32/54, unsafe: 11/33,  time: 289.743; 211.416; 13742.060
+img 65 Verified 2
+progress: 66/100, correct:  66/66, verified: 33/55, unsafe: 11/33,  time: 0.047; 208.214; 13742.107
+img 66 Verified 1
+progress: 67/100, correct:  67/67, verified: 34/56, unsafe: 11/33,  time: 0.029; 205.107; 13742.136
+Model status: 2, Obj val/bound for constraint (1, 9, 0): -1.5176/-1.5176, Final solve time: 4.123
+Partial MILP model status: 11, Obj val/bound for constraint (1, 9, 0): -1.1960/-1.5176, Final solve time: 41.545
+img 67 Failed, with adversarial example with label 9. Correct label is 1
+progress: 68/100, correct:  68/68, verified: 34/56, unsafe: 12/34,  time: 69.086; 203.106; 13811.222
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.7311/-0.7311, Final solve time: 4.199
+Partial MILP model status: 11, Obj val/bound for constraint (5, 3, 0): -0.6065/-0.7311, Final solve time: 76.459
+img 68 Failed, with adversarial example with label 3. Correct label is 5
+progress: 69/100, correct:  69/69, verified: 34/56, unsafe: 13/35,  time: 104.984; 201.684; 13916.206
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -1.1357/-1.1357, Final solve time: 8.000
+Partial MILP model status: 11, Obj val/bound for constraint (1, 8, 0): -0.5917/-1.1357, Final solve time: 214.859
+img 69 Failed, without a adversarial example
+progress: 70/100, correct:  70/70, verified: 34/57, unsafe: 13/36,  time: 259.762; 202.514; 14175.968
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -0.8439/-0.8439, Final solve time: 2.741
+Partial MILP model status: 11, Obj val/bound for constraint (2, 0, 0): -0.5869/-0.8439, Final solve time: 69.720
+img 70 Failed, with adversarial example with label 0. Correct label is 2
+progress: 71/100, correct:  71/71, verified: 34/57, unsafe: 14/37,  time: 89.695; 200.925; 14265.663
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -1.4713/-1.4713, Final solve time: 2.903
+Partial MILP model status: 11, Obj val/bound for constraint (1, 0, 0): -1.1727/-1.4713, Final solve time: 24.914
+img 71 Failed, with adversarial example with label 0. Correct label is 1
+progress: 72/100, correct:  72/72, verified: 34/57, unsafe: 15/38,  time: 46.309; 198.777; 14311.972
+Model status: 2, Obj val/bound for constraint (2, 3, 0): -0.5053/-0.5053, Final solve time: 17.595
+Partial MILP model status: 9, Obj val/bound for constraint (2, 3, 0): inf/-0.5053, Final solve time: 500.082
+img 72 Failed
+progress: 73/100, correct:  73/73, verified: 34/58, unsafe: 15/39,  time: 604.918; 204.341; 14916.890
+Model status: 2, Obj val/bound for constraint (6, 2, 0): -1.9922/-1.9922, Final solve time: 14.933
+Partial MILP model status: 9, Obj val/bound for constraint (6, 2, 0): inf/-10.2765, Final solve time: 500.002
+img 73 Failed
+progress: 74/100, correct:  74/74, verified: 34/59, unsafe: 15/40,  time: 587.100; 209.513; 15503.990
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -1.0178/-1.0178, Final solve time: 7.073
+Partial MILP model status: 11, Obj val/bound for constraint (8, 0, 0): -0.5014/-1.0178, Final solve time: 186.628
+img 74 Failed, without a adversarial example
+progress: 75/100, correct:  75/75, verified: 34/60, unsafe: 15/41,  time: 228.715; 209.769; 15732.706
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -1.0310/-1.0310, Final solve time: 7.048
+Partial MILP model status: 11, Obj val/bound for constraint (4, 2, 0): -0.0616/-0.6941, Final solve time: 498.131
+img 75 Failed, without a adversarial example
+progress: 76/100, correct:  76/76, verified: 34/61, unsafe: 15/42,  time: 542.230; 214.144; 16274.935
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -1.3223/-1.3223, Final solve time: 9.138
+Partial MILP model status: 11, Obj val/bound for constraint (4, 2, 0): -0.5933/-1.3223, Final solve time: 315.236
+img 76 Failed, without a adversarial example
+progress: 77/100, correct:  77/77, verified: 34/62, unsafe: 15/43,  time: 374.960; 216.232; 16649.895
+img 77 Verified 5
+progress: 78/100, correct:  78/78, verified: 35/63, unsafe: 15/43,  time: 0.041; 213.461; 16649.936
+Model status: 6, Obj val/bound for constraint (1, 0, 0): 0.0000/failed, Final solve time: 13.465
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -1.5238/-1.5238, Final solve time: 13.794
+Partial MILP model status: 9, Obj val/bound for constraint (1, 8, 0): inf/-1.5194, Final solve time: 500.026
+img 78 Failed
+progress: 79/100, correct:  79/79, verified: 35/64, unsafe: 15/44,  time: 585.663; 218.172; 17235.598
+Model status: 6, Obj val/bound for constraint (0, 8, 0): 0.0000/failed, Final solve time: 8.901
+img 79 Verified 0
+progress: 80/100, correct:  80/80, verified: 36/65, unsafe: 15/44,  time: 48.467; 216.051; 17284.065
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -0.0172/-0.0172, Final solve time: 21.128
+Partial MILP model status: 9, Obj val/bound for constraint (3, 2, 0): inf/-7.2279, Final solve time: 500.002
+img 80 Failed
+progress: 81/100, correct:  81/81, verified: 36/66, unsafe: 15/45,  time: 616.964; 221.000; 17901.029
+img 81 Verified 0
+progress: 82/100, correct:  82/82, verified: 37/67, unsafe: 15/45,  time: 0.066; 218.306; 17901.095
+img 82 Verified 6
+progress: 83/100, correct:  83/83, verified: 38/68, unsafe: 15/45,  time: 0.032; 215.676; 17901.127
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -0.7407/-0.7407, Final solve time: 24.819
+Partial MILP model status: 9, Obj val/bound for constraint (4, 2, 0): inf/-0.7407, Final solve time: 500.053
+img 83 Failed
+progress: 84/100, correct:  84/84, verified: 38/69, unsafe: 15/46,  time: 614.446; 220.423; 18515.573
+Model status: 6, Obj val/bound for constraint (9, 0, 0): 0.0000/failed, Final solve time: 3.937
+Model status: 2, Obj val/bound for constraint (9, 2, 0): -0.1004/-0.1004, Final solve time: 5.120
+Partial MILP model status: 6, Obj val/bound for constraint (9, 2, 0): inf/0.0100, Final solve time: 134.514
+Model status: 2, Obj val/bound for constraint (9, 3, 0): -0.5048/-0.5048, Final solve time: 4.587
+Partial MILP model status: 6, Obj val/bound for constraint (9, 3, 0): inf/0.0100, Final solve time: 198.459
+Model status: 6, Obj val/bound for constraint (9, 5, 0): 0.0000/failed, Final solve time: 4.344
+Model status: 6, Obj val/bound for constraint (9, 7, 0): 0.0000/failed, Final solve time: 4.310
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -0.2964/-0.2964, Final solve time: 4.569
+Partial MILP model status: 6, Obj val/bound for constraint (9, 8, 0): inf/0.0100, Final solve time: 102.697
+img 84 Verified 9
+progress: 85/100, correct:  85/85, verified: 39/70, unsafe: 15/46,  time: 489.819; 223.593; 19005.392
+img 85 Verified 0
+progress: 86/100, correct:  86/86, verified: 40/71, unsafe: 15/46,  time: 0.074; 220.994; 19005.466
+Model status: 6, Obj val/bound for constraint (4, 0, 0): 0.0000/failed, Final solve time: 12.341
+Model status: 6, Obj val/bound for constraint (4, 2, 0): 0.0000/failed, Final solve time: 11.848
+Model status: 6, Obj val/bound for constraint (4, 6, 0): 0.0000/failed, Final solve time: 13.303
+Model status: 6, Obj val/bound for constraint (4, 7, 0): 0.0000/failed, Final solve time: 14.714
+img 86 Verified 4
+progress: 87/100, correct:  87/87, verified: 41/72, unsafe: 15/46,  time: 115.139; 219.777; 19120.605
+Model status: 6, Obj val/bound for constraint (5, 2, 0): 0.0000/failed, Final solve time: 6.390
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.1502/-0.1502, Final solve time: 5.927
+Partial MILP model status: 6, Obj val/bound for constraint (5, 3, 0): inf/0.0100, Final solve time: 217.595
+Model status: 2, Obj val/bound for constraint (5, 7, 0): -1.1757/-1.1757, Final solve time: 5.399
+Partial MILP model status: 11, Obj val/bound for constraint (5, 7, 0): -0.6118/-1.1757, Final solve time: 94.841
+img 87 Failed, without a adversarial example
+progress: 88/100, correct:  88/88, verified: 41/73, unsafe: 15/47,  time: 366.687; 221.446; 19487.292
+img 88 Verified 8
+progress: 89/100, correct:  89/89, verified: 42/74, unsafe: 15/47,  time: 0.037; 218.959; 19487.329
+img 89 Verified 1
+progress: 90/100, correct:  90/90, verified: 43/75, unsafe: 15/47,  time: 0.026; 216.526; 19487.355
+Model status: 6, Obj val/bound for constraint (3, 0, 0): 0.0000/failed, Final solve time: 22.517
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -1.8685/-1.8685, Final solve time: 19.565
+Partial MILP model status: 9, Obj val/bound for constraint (3, 2, 0): inf/-1.8685, Final solve time: 500.013
+img 90 Failed
+progress: 91/100, correct:  91/91, verified: 43/76, unsafe: 15/48,  time: 637.642; 221.154; 20124.997
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -0.8607/-0.8607, Final solve time: 3.147
+Partial MILP model status: 11, Obj val/bound for constraint (0, 2, 0): -0.4424/-0.8607, Final solve time: 6.733
+img 91 Failed, with adversarial example with label 3. Correct label is 0
+progress: 92/100, correct:  92/92, verified: 43/76, unsafe: 16/49,  time: 18.573; 218.952; 20143.570
+img 92 Verified 1
+progress: 93/100, correct:  93/93, verified: 44/77, unsafe: 16/49,  time: 0.030; 216.598; 20143.600
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -1.1486/-1.1486, Final solve time: 4.729
+Partial MILP model status: 11, Obj val/bound for constraint (1, 8, 0): -0.8936/-1.1485, Final solve time: 113.811
+img 93 Failed, with adversarial example with label 8. Correct label is 1
+progress: 94/100, correct:  94/94, verified: 44/77, unsafe: 17/50,  time: 145.653; 215.843; 20289.253
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -1.2836/-1.2836, Final solve time: 7.516
+Partial MILP model status: 11, Obj val/bound for constraint (4, 2, 0): -0.7765/-1.2835, Final solve time: 143.609
+img 94 Failed, with adversarial example with label 2. Correct label is 4
+progress: 95/100, correct:  95/95, verified: 44/77, unsafe: 18/51,  time: 187.641; 215.546; 20476.894
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -2.2561/-2.2561, Final solve time: 12.068
+Partial MILP model status: 11, Obj val/bound for constraint (8, 0, 0): -1.3024/-2.2561, Final solve time: 404.939
+img 95 Failed, with adversarial example with label 3. Correct label is 8
+progress: 96/100, correct:  96/96, verified: 44/77, unsafe: 19/52,  time: 482.395; 218.326; 20959.288
+Model status: 6, Obj val/bound for constraint (5, 0, 0): 0.0000/failed, Final solve time: 15.730
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -0.1731/-0.1731, Final solve time: 16.045
+Partial MILP model status: 6, Obj val/bound for constraint (5, 2, 0): inf/0.0100, Final solve time: 485.606
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.3752/-0.3752, Final solve time: 15.448
+Partial MILP model status: 11, Obj val/bound for constraint (5, 3, 0): -0.0732/-0.3752, Final solve time: 322.262
+img 96 Failed, without a adversarial example
+progress: 97/100, correct:  97/97, verified: 44/78, unsafe: 19/53,  time: 931.844; 225.682; 21891.132
+img 97 Verified 8
+progress: 98/100, correct:  98/98, verified: 45/79, unsafe: 19/53,  time: 0.050; 223.379; 21891.182
+img 98 Verified 1
+progress: 99/100, correct:  99/99, verified: 46/80, unsafe: 19/53,  time: 0.028; 221.123; 21891.210
+img 99 Verified 2
+progress: 100/100, correct:  100/100, verified: 47/81, unsafe: 19/53,  time: 0.022; 218.912; 21891.233
+analysis precision  47 /  100
+
+Process finished with exit code 0

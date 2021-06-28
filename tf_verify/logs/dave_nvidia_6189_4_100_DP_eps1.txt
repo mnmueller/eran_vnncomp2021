@@ -1,0 +1,456 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --netname ../nets/DAVE/DAVE_NVIDIA_1_PGD_v2.onnx --domain gpupoly --epsilon 0.00392156862 --epsilon_y 0.0 --regression True --from_test 0 --num_test 100 --k 3 --s -2 --sparse_n 50 --timeout_milp 10 --timeout_lp 10 --timeout_final_lp 200 --max_gpu_batch 200 --debug --data_dillation 20
+2021-04-11 10:56:35.943119: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Apr  3 2021 10:38:48) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-04-11 10:56:36.722231: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-11 10:56:36.726012: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-11 10:56:36.726295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-04-11 10:56:36.726307: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-11 10:56:36.726330: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-11 10:56:36.726344: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-04-11 10:56:36.726939: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-11 10:56:36.727091: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-11 10:56:36.728538: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-11 10:56:36.728898: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-04-11 10:56:36.728997: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-11 10:56:36.729044: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-11 10:56:36.729340: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-11 10:56:36.729602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-04-11 10:56:36.729620: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-11 10:56:37.049188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-11 10:56:37.049208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-04-11 10:56:37.049213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-04-11 10:56:37.049336: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-11 10:56:37.049600: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-11 10:56:37.049839: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-11 10:56:37.050062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7447 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-04-11 10:56:37.050241: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+{'approx_k': True,
+ 'complete': False,
+ 'data_dillation': 20,
+ 'debug': True,
+ 'domain': 'gpupoly',
+ 'epsilon': 0.00392156862,
+ 'epsilon_y': 0.0,
+ 'from_test': 0,
+ 'k': 3,
+ 'max_gpu_batch': 200,
+ 'max_milp_neurons': 30,
+ 'n_milp_refine': 1,
+ 'netname': '../nets/DAVE/DAVE_NVIDIA_1_PGD_v2.onnx',
+ 'num_tests': 100,
+ 'partial_milp': 0,
+ 'refine_neurons': False,
+ 'regression': True,
+ 's': -2,
+ 'sparse_n': 50,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 200.0,
+ 'timeout_final_milp': 100,
+ 'timeout_lp': 10.0,
+ 'timeout_milp': 10.0}
+Final Tanh layer omitted
+img 0: y: 0.0053; y_nat: 0.0605; y_lb/ub: 0.0439/0.0712 natural MSE: 3.0453e-03 and certified MSE: 4.3366e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 1/100, nat MSE:  3.0453e-03/3.0453e-03, cert MSE: 4.3366e-03/4.3366e-03, time: 1.723; 1.723; 1.723
+img 20: y: 0.0006; y_nat: 0.0464; y_lb/ub: 0.0292/0.0633 natural MSE: 2.1005e-03 and certified MSE: 3.9363e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 2/100, nat MSE:  2.5729e-03/2.5729e-03, cert MSE: 4.1364e-03/4.1364e-03, time: 1.550; 1.636; 3.272
+img 40: y: 0.0103; y_nat: 0.0883; y_lb/ub: 0.0791/0.0936 natural MSE: 6.0773e-03 and certified MSE: 6.9316e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 3/100, nat MSE:  3.0453e-03/3.7410e-03, cert MSE: 4.3366e-03/5.0681e-03, time: 1.573; 1.615; 4.846
+img 60: y: 0.0017; y_nat: 0.0175; y_lb/ub: -0.0176/0.0526 natural MSE: 2.4932e-04 and certified MSE: 2.5961e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 4/100, nat MSE:  2.5729e-03/2.8681e-03, cert MSE: 4.1364e-03/4.4501e-03, time: 1.570; 1.604; 6.416
+img 80: y: 0.0006; y_nat: 0.0007; y_lb/ub: -0.0056/0.0107 natural MSE: 1.3450e-08 and certified MSE: 1.0310e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 5/100, nat MSE:  2.1005e-03/2.2945e-03, cert MSE: 3.9363e-03/3.5807e-03, time: 1.351; 1.553; 7.767
+img 100: y: 0.0000; y_nat: -0.0332; y_lb/ub: -0.0455/-0.0203 natural MSE: 1.1026e-03 and certified MSE: 2.0703e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 6/100, nat MSE:  1.6016e-03/2.0958e-03, cert MSE: 3.2662e-03/3.3290e-03, time: 1.282; 1.508; 9.049
+img 120: y: -0.0045; y_nat: -0.0222; y_lb/ub: -0.0286/-0.0159 natural MSE: 3.1519e-04 and certified MSE: 5.8268e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 7/100, nat MSE:  1.1026e-03/1.8415e-03, cert MSE: 2.5961e-03/2.9366e-03, time: 1.198; 1.464; 10.247
+img 140: y: 0.0033; y_nat: -0.0324; y_lb/ub: -0.0424/-0.0231 natural MSE: 1.2791e-03 and certified MSE: 2.0939e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 8/100, nat MSE:  1.1909e-03/1.7712e-03, cert MSE: 2.3450e-03/2.8313e-03, time: 1.280; 1.441; 11.527
+img 160: y: -0.0024; y_nat: -0.0332; y_lb/ub: -0.0458/-0.0202 natural MSE: 9.5341e-04 and certified MSE: 1.8886e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 9/100, nat MSE:  1.1026e-03/1.6803e-03, cert MSE: 2.0939e-03/2.7266e-03, time: 1.277; 1.423; 12.804
+img 180: y: -0.0106; y_nat: 0.0628; y_lb/ub: 0.0506/0.0747 natural MSE: 5.3820e-03 and certified MSE: 7.2666e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 10/100, nat MSE:  1.1909e-03/2.0505e-03, cert MSE: 2.3450e-03/3.1806e-03, time: 1.188; 1.399; 13.992
+img 200: y: -0.0428; y_nat: 0.0852; y_lb/ub: 0.0729/0.0974 natural MSE: 1.6368e-02 and certified MSE: 1.9644e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 11/100, nat MSE:  1.2791e-03/3.3520e-03, cert MSE: 2.5961e-03/4.6772e-03, time: 1.107; 1.373; 15.099
+img 220: y: -0.0850; y_nat: -0.0471; y_lb/ub: -0.0520/-0.0359 natural MSE: 1.4370e-03 and certified MSE: 2.4122e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 12/100, nat MSE:  1.3581e-03/3.1924e-03, cert MSE: 2.5041e-03/4.4885e-03, time: 1.014; 1.343; 16.113
+img 240: y: -0.0999; y_nat: 0.0320; y_lb/ub: 0.0084/0.0560 natural MSE: 1.7418e-02 and certified MSE: 2.4330e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 13/100, nat MSE:  1.4370e-03/4.2867e-03, cert MSE: 2.5961e-03/6.0147e-03, time: 1.296; 1.339; 17.409
+img 260: y: -0.0994; y_nat: -0.0537; y_lb/ub: -0.0702/-0.0371 natural MSE: 2.0969e-03 and certified MSE: 3.8856e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 14/100, nat MSE:  1.7670e-03/4.1303e-03, cert MSE: 3.2409e-03/5.8626e-03, time: 1.211; 1.330; 18.620
+img 280: y: -0.0983; y_nat: -0.1297; y_lb/ub: -0.1336/-0.1218 natural MSE: 9.8455e-04 and certified MSE: 1.2455e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 15/100, nat MSE:  1.4370e-03/3.9206e-03, cert MSE: 2.5961e-03/5.5548e-03, time: 1.207; 1.322; 19.828
+img 300: y: -0.0988; y_nat: -0.0766; y_lb/ub: -0.0792/-0.0733 natural MSE: 4.9550e-04 and certified MSE: 6.5255e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 16/100, nat MSE:  1.3581e-03/3.7065e-03, cert MSE: 2.5041e-03/5.2484e-03, time: 0.988; 1.301; 20.816
+img 320: y: -0.0908; y_nat: -0.0715; y_lb/ub: -0.0740/-0.0692 natural MSE: 3.7384e-04 and certified MSE: 4.6840e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 17/100, nat MSE:  1.2791e-03/3.5105e-03, cert MSE: 2.4122e-03/4.9673e-03, time: 1.211; 1.296; 22.027
+img 340: y: -0.0949; y_nat: -0.0618; y_lb/ub: -0.0649/-0.0576 natural MSE: 1.0976e-03 and certified MSE: 1.3894e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 18/100, nat MSE:  1.1909e-03/3.3764e-03, cert MSE: 2.2530e-03/4.7685e-03, time: 1.056; 1.282; 23.083
+img 360: y: -0.0906; y_nat: -0.0759; y_lb/ub: -0.0829/-0.0683 natural MSE: 2.1474e-04 and certified MSE: 4.9696e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 19/100, nat MSE:  1.1026e-03/3.2100e-03, cert MSE: 2.0939e-03/4.5437e-03, time: 1.642; 1.301; 24.725
+img 380: y: -0.0607; y_nat: -0.0227; y_lb/ub: -0.0307/-0.0148 natural MSE: 1.4449e-03 and certified MSE: 2.1145e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 20/100, nat MSE:  1.1909e-03/3.1218e-03, cert MSE: 2.1042e-03/4.4222e-03, time: 2.142; 1.343; 26.867
+/home/mark/Projects/ERAN/eran/tf_verify/eran_light.py:197: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  fig, ax = plt.subplots(1, 1, figsize=(8, 4))
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+img 400: y: -0.0067; y_nat: -0.0100; y_lb/ub: -0.0166/-0.0031 natural MSE: 1.1144e-05 and certified MSE: 9.9469e-05
+progress: 21/100, nat MSE:  1.1026e-03/2.9736e-03, cert MSE: 2.0939e-03/4.2164e-03, time: 1.570; 1.354; 28.437
+img 420: y: 0.0164; y_nat: 0.0042; y_lb/ub: -0.0086/0.0168 natural MSE: 1.4977e-04 and certified MSE: 6.2592e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 22/100, nat MSE:  1.1001e-03/2.8453e-03, cert MSE: 2.0821e-03/4.0532e-03, time: 1.445; 1.358; 29.882
+img 440: y: 0.0057; y_nat: -0.0096; y_lb/ub: -0.0177/-0.0004 natural MSE: 2.3615e-04 and certified MSE: 5.5087e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 23/100, nat MSE:  1.0976e-03/2.7318e-03, cert MSE: 2.0703e-03/3.9009e-03, time: 1.511; 1.365; 31.392
+img 460: y: -0.0061; y_nat: -0.0244; y_lb/ub: -0.0362/-0.0155 natural MSE: 3.3464e-04 and certified MSE: 9.0449e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 24/100, nat MSE:  1.0411e-03/2.6320e-03, cert MSE: 1.9795e-03/3.7760e-03, time: 1.606; 1.375; 32.998
+img 480: y: -0.0011; y_nat: -0.0207; y_lb/ub: -0.0315/-0.0099 natural MSE: 3.8314e-04 and certified MSE: 9.2432e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 25/100, nat MSE:  9.8455e-04/2.5420e-03, cert MSE: 1.8886e-03/3.6620e-03, time: 1.559; 1.382; 34.558
+img 500: y: 0.0055; y_nat: -0.0025; y_lb/ub: -0.0097/0.0059 natural MSE: 6.3589e-05 and certified MSE: 2.3256e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 26/100, nat MSE:  9.6898e-04/2.4467e-03, cert MSE: 1.6390e-03/3.5301e-03, time: 1.603; 1.391; 36.161
+img 520: y: 0.0006; y_nat: -0.0430; y_lb/ub: -0.0518/-0.0312 natural MSE: 1.8985e-03 and certified MSE: 2.7386e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 27/100, nat MSE:  9.8455e-04/2.4264e-03, cert MSE: 1.8886e-03/3.5008e-03, time: 1.815; 1.406; 37.975
+img 540: y: -0.0028; y_nat: -0.0072; y_lb/ub: -0.0161/0.0018 natural MSE: 1.9934e-05 and certified MSE: 1.7669e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 28/100, nat MSE:  9.6898e-04/2.3404e-03, cert MSE: 1.6390e-03/3.3820e-03, time: 1.644; 1.415; 39.619
+img 560: y: -0.0072; y_nat: -0.0298; y_lb/ub: -0.0396/-0.0263 natural MSE: 5.0876e-04 and certified MSE: 1.0483e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 29/100, nat MSE:  9.5341e-04/2.2773e-03, cert MSE: 1.3894e-03/3.3016e-03, time: 1.785; 1.428; 41.405
+img 580: y: -0.0150; y_nat: -0.0239; y_lb/ub: -0.0321/-0.0159 natural MSE: 7.9932e-05 and certified MSE: 2.9365e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 30/100, nat MSE:  7.3109e-04/2.2040e-03, cert MSE: 1.3174e-03/3.2013e-03, time: 1.680; 1.436; 43.085
+img 600: y: -0.0154; y_nat: -0.0004; y_lb/ub: -0.0080/0.0072 natural MSE: 2.2355e-04 and certified MSE: 5.1094e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 31/100, nat MSE:  5.0876e-04/2.1401e-03, cert MSE: 1.2455e-03/3.1145e-03, time: 1.625; 1.442; 44.710
+img 620: y: -0.0128; y_nat: -0.0098; y_lb/ub: -0.0173/-0.0025 natural MSE: 8.6130e-06 and certified MSE: 1.0664e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 32/100, nat MSE:  5.0213e-04/2.0735e-03, cert MSE: 1.1469e-03/3.0205e-03, time: 1.460; 1.443; 46.170
+img 640: y: -0.0089; y_nat: -0.0036; y_lb/ub: -0.0125/0.0051 natural MSE: 2.7748e-05 and certified MSE: 1.9567e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 33/100, nat MSE:  4.9550e-04/2.0115e-03, cert MSE: 1.0483e-03/2.9349e-03, time: 1.444; 1.443; 47.614
+img 660: y: -0.0033; y_nat: -0.0102; y_lb/ub: -0.0190/-0.0017 natural MSE: 4.7286e-05 and certified MSE: 2.4669e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 34/100, nat MSE:  4.3932e-04/1.9538e-03, cert MSE: 9.8630e-04/2.8559e-03, time: 1.553; 1.446; 49.167
+img 680: y: -0.0046; y_nat: -0.0253; y_lb/ub: -0.0347/-0.0161 natural MSE: 4.2919e-04 and certified MSE: 9.0710e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 35/100, nat MSE:  4.2919e-04/1.9102e-03, cert MSE: 9.2432e-04/2.8002e-03, time: 1.573; 1.450; 50.740
+img 700: y: -0.0111; y_nat: -0.0275; y_lb/ub: -0.0367/-0.0181 natural MSE: 2.6756e-04 and certified MSE: 6.5505e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 36/100, nat MSE:  4.0617e-04/1.8646e-03, cert MSE: 9.1571e-04/2.7406e-03, time: 1.671; 1.456; 52.411
+img 720: y: -0.0111; y_nat: -0.0192; y_lb/ub: -0.0297/-0.0086 natural MSE: 6.5316e-05 and certified MSE: 3.4655e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 37/100, nat MSE:  3.8314e-04/1.8159e-03, cert MSE: 9.0710e-04/2.6759e-03, time: 1.696; 1.462; 54.106
+img 740: y: -0.0167; y_nat: 0.0021; y_lb/ub: -0.0088/0.0124 natural MSE: 3.5314e-04 and certified MSE: 8.4610e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 38/100, nat MSE:  3.7849e-04/1.7775e-03, cert MSE: 9.0579e-04/2.6277e-03, time: 1.734; 1.469; 55.841
+img 760: y: -0.0050; y_nat: 0.0078; y_lb/ub: 0.0036/0.0118 natural MSE: 1.6303e-04 and certified MSE: 2.8223e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 39/100, nat MSE:  3.7384e-04/1.7361e-03, cert MSE: 9.0449e-04/2.5676e-03, time: 1.712; 1.476; 57.552
+img 780: y: -0.0003; y_nat: 0.0058; y_lb/ub: 0.0022/0.0098 natural MSE: 3.7374e-05 and certified MSE: 1.0236e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 40/100, nat MSE:  3.6349e-04/1.6936e-03, cert MSE: 8.7529e-04/2.5060e-03, time: 1.682; 1.481; 59.234
+img 800: y: 0.0006; y_nat: 0.0082; y_lb/ub: -0.0008/0.0179 natural MSE: 5.8413e-05 and certified MSE: 3.0083e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 41/100, nat MSE:  3.5314e-04/1.6537e-03, cert MSE: 8.4610e-04/2.4522e-03, time: 1.750; 1.487; 60.984
+img 820: y: 0.0235; y_nat: 0.0096; y_lb/ub: -0.0043/0.0173 natural MSE: 1.9222e-04 and certified MSE: 7.7439e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 42/100, nat MSE:  3.4389e-04/1.6189e-03, cert MSE: 8.1024e-04/2.4122e-03, time: 1.751; 1.494; 62.735
+img 840: y: -0.0189; y_nat: -0.0067; y_lb/ub: -0.0150/0.0009 natural MSE: 1.4930e-04 and certified MSE: 3.9278e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 43/100, nat MSE:  3.3464e-04/1.5847e-03, cert MSE: 7.7439e-04/2.3653e-03, time: 1.748; 1.500; 64.483
+img 860: y: -0.0420; y_nat: -0.0378; y_lb/ub: -0.0546/-0.0244 natural MSE: 1.6994e-05 and certified MSE: 3.0722e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 44/100, nat MSE:  3.2492e-04/1.5491e-03, cert MSE: 7.1472e-04/2.3185e-03, time: 1.685; 1.504; 66.169
+img 880: y: -0.0561; y_nat: -0.0424; y_lb/ub: -0.0496/-0.0354 natural MSE: 1.8786e-04 and certified MSE: 4.3027e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 45/100, nat MSE:  3.1519e-04/1.5189e-03, cert MSE: 6.5505e-04/2.2765e-03, time: 1.604; 1.506; 67.773
+img 900: y: -0.0450; y_nat: -0.0310; y_lb/ub: -0.0439/-0.0224 natural MSE: 1.9537e-04 and certified MSE: 5.1106e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 46/100, nat MSE:  2.9138e-04/1.4901e-03, cert MSE: 6.5380e-04/2.2382e-03, time: 1.732; 1.511; 69.505
+img 920: y: -0.0340; y_nat: -0.0458; y_lb/ub: -0.0565/-0.0291 natural MSE: 1.4111e-04 and certified MSE: 5.0872e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 47/100, nat MSE:  2.6756e-04/1.4614e-03, cert MSE: 6.5255e-04/2.2014e-03, time: 1.792; 1.517; 71.297
+img 940: y: -0.0333; y_nat: -0.0261; y_lb/ub: -0.0346/-0.0177 natural MSE: 5.1938e-05 and certified MSE: 2.4328e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 48/100, nat MSE:  2.5844e-04/1.4320e-03, cert MSE: 6.3923e-04/2.1606e-03, time: 1.591; 1.518; 72.888
+img 960: y: -0.0124; y_nat: -0.0256; y_lb/ub: -0.0350/-0.0153 natural MSE: 1.7607e-04 and certified MSE: 5.1408e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 49/100, nat MSE:  2.4932e-04/1.4064e-03, cert MSE: 6.2592e-04/2.1270e-03, time: 1.559; 1.519; 74.447
+img 980: y: 0.0059; y_nat: -0.0285; y_lb/ub: -0.0374/-0.0177 natural MSE: 1.1861e-03 and certified MSE: 1.8803e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 50/100, nat MSE:  2.5844e-04/1.4020e-03, cert MSE: 6.3923e-04/2.1220e-03, time: 1.657; 1.522; 76.104
+img 1000: y: -0.0122; y_nat: 0.0042; y_lb/ub: -0.0060/0.0131 natural MSE: 2.7112e-04 and certified MSE: 6.3990e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 51/100, nat MSE:  2.6756e-04/1.3798e-03, cert MSE: 6.3990e-04/2.0930e-03, time: 1.772; 1.527; 77.876
+img 1020: y: 0.0150; y_nat: 0.0032; y_lb/ub: -0.0009/0.0083 natural MSE: 1.3946e-04 and certified MSE: 2.5325e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 52/100, nat MSE:  2.5844e-04/1.3560e-03, cert MSE: 6.3291e-04/2.0576e-03, time: 1.562; 1.528; 79.437
+img 1040: y: -0.0053; y_nat: 0.0020; y_lb/ub: -0.0017/0.0062 natural MSE: 5.4228e-05 and certified MSE: 1.3194e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 53/100, nat MSE:  2.4932e-04/1.3314e-03, cert MSE: 6.2592e-04/2.0213e-03, time: 1.547; 1.528; 80.984
+img 1060: y: -0.0015; y_nat: -0.0083; y_lb/ub: -0.0178/-0.0038 natural MSE: 4.6265e-05 and certified MSE: 2.6544e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 54/100, nat MSE:  2.4273e-04/1.3076e-03, cert MSE: 6.0430e-04/1.9887e-03, time: 1.553; 1.528; 82.538
+img 1080: y: -0.0436; y_nat: -0.0338; y_lb/ub: -0.0368/-0.0285 natural MSE: 9.6849e-05 and certified MSE: 2.2985e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 55/100, nat MSE:  2.3615e-04/1.2856e-03, cert MSE: 5.8268e-04/1.9568e-03, time: 1.544; 1.529; 84.081
+img 1100: y: -0.0680; y_nat: -0.0639; y_lb/ub: -0.0714/-0.0560 natural MSE: 1.6549e-05 and certified MSE: 1.4462e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 56/100, nat MSE:  2.2985e-04/1.2629e-03, cert MSE: 5.6678e-04/1.9244e-03, time: 1.426; 1.527; 85.507
+img 1120: y: -0.0789; y_nat: -0.0854; y_lb/ub: -0.0900/-0.0796 natural MSE: 4.2858e-05 and certified MSE: 1.2336e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 57/100, nat MSE:  2.2355e-04/1.2415e-03, cert MSE: 5.5087e-04/1.8928e-03, time: 1.424; 1.525; 86.931
+img 1140: y: -0.0222; y_nat: -0.0174; y_lb/ub: -0.0198/-0.0144 natural MSE: 2.2473e-05 and certified MSE: 5.9922e-05
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 58/100, nat MSE:  2.1914e-04/1.2205e-03, cert MSE: 5.3247e-04/1.8612e-03, time: 1.406; 1.523; 88.337
+img 1160: y: 0.0188; y_nat: 0.0316; y_lb/ub: 0.0276/0.0340 natural MSE: 1.6168e-04 and certified MSE: 2.2882e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 59/100, nat MSE:  2.1474e-04/1.2025e-03, cert MSE: 5.1408e-04/1.8335e-03, time: 1.471; 1.522; 89.808
+img 1180: y: 0.0126; y_nat: 0.0172; y_lb/ub: 0.0116/0.0234 natural MSE: 2.1445e-05 and certified MSE: 1.1561e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 60/100, nat MSE:  2.0506e-04/1.1829e-03, cert MSE: 5.1257e-04/1.8049e-03, time: 1.462; 1.521; 91.270
+img 1200: y: 0.0188; y_nat: 0.0199; y_lb/ub: 0.0096/0.0297 natural MSE: 1.1634e-06 and certified MSE: 1.1929e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 61/100, nat MSE:  1.9537e-04/1.1635e-03, cert MSE: 5.1106e-04/1.7773e-03, time: 1.697; 1.524; 92.967
+img 1220: y: 0.0743; y_nat: 0.0046; y_lb/ub: -0.0466/0.0562 natural MSE: 4.8577e-03 and certified MSE: 1.4617e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 62/100, nat MSE:  2.0506e-04/1.2231e-03, cert MSE: 5.1257e-04/1.9844e-03, time: 1.786; 1.528; 94.752
+img 1240: y: 0.1009; y_nat: 0.0559; y_lb/ub: 0.0476/0.0631 natural MSE: 2.0269e-03 and certified MSE: 2.8498e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 63/100, nat MSE:  2.1474e-04/1.2358e-03, cert MSE: 5.1408e-04/1.9981e-03, time: 1.601; 1.529; 96.354
+img 1260: y: 0.1330; y_nat: 0.0689; y_lb/ub: 0.0545/0.0792 natural MSE: 4.1030e-03 and certified MSE: 6.1640e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 64/100, nat MSE:  2.1914e-04/1.2806e-03, cert MSE: 5.3247e-04/2.0632e-03, time: 1.461; 1.528; 97.814
+img 1280: y: 0.1483; y_nat: 0.0590; y_lb/ub: 0.0458/0.0684 natural MSE: 7.9792e-03 and certified MSE: 1.0508e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 65/100, nat MSE:  2.2355e-04/1.3837e-03, cert MSE: 5.5087e-04/2.1931e-03, time: 1.579; 1.529; 99.393
+img 1300: y: 0.1390; y_nat: 0.0376; y_lb/ub: -0.0011/0.0746 natural MSE: 1.0283e-02 and certified MSE: 1.9639e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 66/100, nat MSE:  2.2985e-04/1.5185e-03, cert MSE: 5.6678e-04/2.4574e-03, time: 1.486; 1.528; 100.879
+img 1320: y: 0.1508; y_nat: 0.0838; y_lb/ub: 0.0729/0.0943 natural MSE: 4.4961e-03 and certified MSE: 6.0648e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 67/100, nat MSE:  2.3615e-04/1.5630e-03, cert MSE: 5.8268e-04/2.5113e-03, time: 1.748; 1.532; 102.626
+img 1340: y: 0.1354; y_nat: -0.0427; y_lb/ub: -0.0598/-0.0182 natural MSE: 3.1715e-02 and certified MSE: 3.8085e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 68/100, nat MSE:  2.4273e-04/2.0064e-03, cert MSE: 6.0430e-04/3.0344e-03, time: 1.587; 1.533; 104.214
+img 1360: y: 0.1482; y_nat: 0.0370; y_lb/ub: 0.0102/0.0474 natural MSE: 1.2377e-02 and certified MSE: 1.9032e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 69/100, nat MSE:  2.4932e-04/2.1567e-03, cert MSE: 6.2592e-04/3.2663e-03, time: 1.652; 1.534; 105.866
+img 1380: y: 0.1338; y_nat: 0.1004; y_lb/ub: 0.0611/0.1480 natural MSE: 1.1162e-03 and certified MSE: 5.2902e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 70/100, nat MSE:  2.5844e-04/2.1418e-03, cert MSE: 6.3291e-04/3.2952e-03, time: 1.584; 1.535; 107.450
+img 1400: y: 0.1433; y_nat: 0.2076; y_lb/ub: 0.1845/0.2244 natural MSE: 4.1309e-03 and certified MSE: 6.5702e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 71/100, nat MSE:  2.6756e-04/2.1698e-03, cert MSE: 6.3990e-04/3.3413e-03, time: 1.449; 1.534; 108.899
+img 1420: y: 0.1667; y_nat: 0.0317; y_lb/ub: -0.0059/0.0659 natural MSE: 1.8203e-02 and certified MSE: 2.9781e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 72/100, nat MSE:  2.6934e-04/2.3925e-03, cert MSE: 6.4622e-04/3.7085e-03, time: 1.672; 1.536; 110.572
+img 1440: y: 0.1494; y_nat: 0.0506; y_lb/ub: 0.0294/0.0612 natural MSE: 9.7706e-03 and certified MSE: 1.4414e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 73/100, nat MSE:  2.7112e-04/2.4936e-03, cert MSE: 6.5255e-04/3.8552e-03, time: 1.554; 1.536; 112.126
+img 1460: y: 0.0994; y_nat: 0.1612; y_lb/ub: 0.0437/0.2611 natural MSE: 3.8162e-03 and certified MSE: 2.6145e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 74/100, nat MSE:  2.9316e-04/2.5115e-03, cert MSE: 6.5380e-04/4.1564e-03, time: 2.106; 1.544; 114.232
+img 1480: y: 0.1432; y_nat: -0.0336; y_lb/ub: -0.0491/-0.0172 natural MSE: 3.1267e-02 and certified MSE: 3.6967e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 75/100, nat MSE:  3.1519e-04/2.8949e-03, cert MSE: 6.5505e-04/4.5939e-03, time: 1.625; 1.545; 115.858
+img 1500: y: 0.1326; y_nat: -0.0496; y_lb/ub: -0.0846/-0.0123 natural MSE: 3.3210e-02 and certified MSE: 4.7186e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 76/100, nat MSE:  3.2492e-04/3.2938e-03, cert MSE: 7.1472e-04/5.1543e-03, time: 1.651; 1.546; 117.509
+img 1520: y: 0.1340; y_nat: -0.0329; y_lb/ub: -0.0705/0.0099 natural MSE: 2.7860e-02 and certified MSE: 4.1830e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 77/100, nat MSE:  3.3464e-04/3.6128e-03, cert MSE: 7.7439e-04/5.6306e-03, time: 1.991; 1.552; 119.500
+img 1540: y: 0.1500; y_nat: 0.0404; y_lb/ub: -0.0026/0.0767 natural MSE: 1.1993e-02 and certified MSE: 2.3269e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 78/100, nat MSE:  3.4389e-04/3.7202e-03, cert MSE: 8.1024e-04/5.8567e-03, time: 1.883; 1.556; 121.383
+img 1560: y: 0.1556; y_nat: 0.0536; y_lb/ub: 0.0222/0.0768 natural MSE: 1.0391e-02 and certified MSE: 1.7779e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 79/100, nat MSE:  3.5314e-04/3.8047e-03, cert MSE: 8.4610e-04/6.0076e-03, time: 1.938; 1.561; 123.321
+img 1580: y: 0.1328; y_nat: 0.0653; y_lb/ub: 0.0553/0.0746 natural MSE: 4.5541e-03 and certified MSE: 6.0040e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 80/100, nat MSE:  3.6349e-04/3.8140e-03, cert MSE: 8.7529e-04/6.0076e-03, time: 1.804; 1.564; 125.125
+img 1600: y: 0.1356; y_nat: 0.0759; y_lb/ub: 0.0296/0.1114 natural MSE: 3.5609e-03 and certified MSE: 1.1229e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 81/100, nat MSE:  3.7384e-04/3.8109e-03, cert MSE: 9.0449e-04/6.0721e-03, time: 1.792; 1.567; 126.917
+img 1620: y: 0.1317; y_nat: 0.1325; y_lb/ub: 0.1260/0.1382 natural MSE: 6.7261e-07 and certified MSE: 4.2339e-05
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 82/100, nat MSE:  3.6349e-04/3.7645e-03, cert MSE: 8.7529e-04/5.9985e-03, time: 1.676; 1.568; 128.593
+img 1640: y: 0.1348; y_nat: 0.0977; y_lb/ub: 0.0730/0.1095 natural MSE: 1.3803e-03 and certified MSE: 3.8216e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 83/100, nat MSE:  3.7384e-04/3.7357e-03, cert MSE: 9.0449e-04/5.9723e-03, time: 2.031; 1.574; 130.624
+img 1660: y: 0.0722; y_nat: 0.0104; y_lb/ub: -0.0003/0.0237 natural MSE: 3.8167e-03 and certified MSE: 5.2512e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 84/100, nat MSE:  3.7849e-04/3.7367e-03, cert MSE: 9.0579e-04/5.9637e-03, time: 1.725; 1.576; 132.349
+img 1680: y: 0.0239; y_nat: -0.0137; y_lb/ub: -0.0288/0.0020 natural MSE: 1.4132e-03 and certified MSE: 2.7719e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 85/100, nat MSE:  3.8314e-04/3.7094e-03, cert MSE: 9.0710e-04/5.9262e-03, time: 1.390; 1.573; 133.739
+img 1700: y: 0.0139; y_nat: -0.0557; y_lb/ub: -0.1080/-0.0237 natural MSE: 4.8427e-03 and certified MSE: 1.4858e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 86/100, nat MSE:  4.0617e-04/3.7225e-03, cert MSE: 9.1571e-04/6.0300e-03, time: 1.503; 1.573; 135.242
+img 1720: y: 0.0156; y_nat: -0.0205; y_lb/ub: -0.0566/-0.0136 natural MSE: 1.2978e-03 and certified MSE: 5.2089e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 87/100, nat MSE:  4.2919e-04/3.6947e-03, cert MSE: 9.2432e-04/6.0206e-03, time: 1.334; 1.570; 136.576
+img 1740: y: -0.0083; y_nat: -0.0172; y_lb/ub: -0.0516/-0.0143 natural MSE: 7.8657e-05 and certified MSE: 1.8712e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 88/100, nat MSE:  4.0617e-04/3.6536e-03, cert MSE: 9.8630e-04/5.9734e-03, time: 1.169; 1.565; 137.745
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+img 1760: y: -0.0174; y_nat: -0.0639; y_lb/ub: -0.1205/-0.0181 natural MSE: 2.1570e-03 and certified MSE: 1.0622e-02
+progress: 89/100, nat MSE:  4.2919e-04/3.6368e-03, cert MSE: 1.0483e-03/6.0257e-03, time: 1.213; 1.561; 138.958
+img 1780: y: -0.0337; y_nat: -0.0479; y_lb/ub: -0.0977/-0.0116 natural MSE: 2.0244e-04 and certified MSE: 4.0962e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 90/100, nat MSE:  4.0617e-04/3.5986e-03, cert MSE: 1.1469e-03/6.0042e-03, time: 1.101; 1.556; 140.059
+img 1800: y: -0.0731; y_nat: -0.0980; y_lb/ub: -0.1401/-0.0504 natural MSE: 6.2310e-04 and certified MSE: 4.4888e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 91/100, nat MSE:  4.2919e-04/3.5659e-03, cert MSE: 1.2455e-03/5.9876e-03, time: 1.189; 1.552; 141.249
+img 1820: y: -0.0906; y_nat: -0.1341; y_lb/ub: -0.1766/-0.0955 natural MSE: 1.8976e-03 and certified MSE: 7.3961e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 92/100, nat MSE:  4.6235e-04/3.5478e-03, cert MSE: 1.3174e-03/6.0029e-03, time: 1.468; 1.551; 142.717
+img 1840: y: -0.0833; y_nat: -0.1490; y_lb/ub: -0.1794/-0.1136 natural MSE: 4.3180e-03 and certified MSE: 9.2259e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 93/100, nat MSE:  4.9550e-04/3.5561e-03, cert MSE: 1.3894e-03/6.0375e-03, time: 1.689; 1.553; 144.406
+img 1860: y: -0.1154; y_nat: -0.0983; y_lb/ub: -0.1105/-0.0855 natural MSE: 2.9297e-04 and certified MSE: 8.9014e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 94/100, nat MSE:  4.6235e-04/3.5213e-03, cert MSE: 1.3174e-03/5.9828e-03, time: 1.445; 1.552; 145.851
+img 1880: y: -0.0772; y_nat: -0.1022; y_lb/ub: -0.1135/-0.0893 natural MSE: 6.2545e-04 and certified MSE: 1.3170e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 95/100, nat MSE:  4.9550e-04/3.4909e-03, cert MSE: 1.3170e-03/5.9337e-03, time: 1.823; 1.554; 147.674
+img 1900: y: -0.0896; y_nat: -0.1497; y_lb/ub: -0.1596/-0.1395 natural MSE: 3.6087e-03 and certified MSE: 4.8905e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 96/100, nat MSE:  5.0213e-04/3.4921e-03, cert MSE: 1.3532e-03/5.9228e-03, time: 1.473; 1.554; 149.147
+img 1920: y: -0.1078; y_nat: -0.1443; y_lb/ub: -0.1519/-0.1341 natural MSE: 1.3279e-03 and certified MSE: 1.9464e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 97/100, nat MSE:  5.0876e-04/3.4698e-03, cert MSE: 1.3894e-03/5.8818e-03, time: 1.509; 1.553; 150.657
+img 1940: y: -0.0750; y_nat: -0.1511; y_lb/ub: -0.1612/-0.1371 natural MSE: 5.7846e-03 and certified MSE: 7.4302e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 98/100, nat MSE:  5.6593e-04/3.4934e-03, cert MSE: 1.6303e-03/5.8976e-03, time: 1.542; 1.553; 152.198
+img 1960: y: -0.1094; y_nat: -0.1419; y_lb/ub: -0.1528/-0.1326 natural MSE: 1.0557e-03 and certified MSE: 1.8821e-03
+progress: 99/100, nat MSE:  6.2310e-04/3.4688e-03, cert MSE: 1.8712e-03/5.8570e-03, time: 1.492; 1.552; 153.690
+certified images: 0; analysis precision  0 /  99
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+
+Process finished with exit code 0

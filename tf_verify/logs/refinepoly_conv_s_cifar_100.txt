@@ -1,0 +1,846 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/__main__.py --netname ../nets/cifar10/convSmallRELU__PGDK.pyt --dataset cifar10 --domain refinepoly --epsilon 0.00784313725 --from_test 0 --num_test 100 --k 1 --refine_neurons --timeout_milp 100
+2021-02-10 00:44:00.288315: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Dec 25 2020 17:51:09) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-02-10 00:44:01.044076: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-10 00:44:01.044480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-02-10 00:44:01.072840: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.073774: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-10 00:44:01.073814: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-10 00:44:01.073887: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-02-10 00:44:01.073932: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-02-10 00:44:01.075697: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-10 00:44:01.076060: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-10 00:44:01.079955: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-10 00:44:01.080676: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-02-10 00:44:01.080834: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-10 00:44:01.080926: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.081519: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.082046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-02-10 00:44:01.082077: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-10 00:44:01.370624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-10 00:44:01.370644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-02-10 00:44:01.370649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-02-10 00:44:01.370756: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.371021: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.371261: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.371491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9030 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+{'approx_k': True,
+ 'attack': False,
+ 'complete': False,
+ 'data_dir': None,
+ 'dataset': 'cifar10',
+ 'debug': True,
+ 'delta': 0.3,
+ 'domain': 'refinepoly',
+ 'epsfile': None,
+ 'epsilon': 0.00784313725,
+ 'from_test': 0,
+ 'gamma': inf,
+ 'geometric': False,
+ 'geometric_config': None,
+ 'input_box': None,
+ 'k': 1,
+ 'logdir': None,
+ 'logname': None,
+ 'max_milp_neurons': 30,
+ 'mean': None,
+ 'netname': '../nets/cifar10/convSmallRELU__PGDK.pyt',
+ 'normalized_region': True,
+ 'num_params': 0,
+ 'num_tests': 100,
+ 'numproc': 16,
+ 'output_constraints': None,
+ 'partial_milp': 0,
+ 'quant_step': None,
+ 'refine_neurons': True,
+ 's': -2,
+ 'sparse_n': 70,
+ 'spatial': False,
+ 'specnumber': None,
+ 'std': None,
+ 'subset': None,
+ 't_norm': 'inf',
+ 'target': None,
+ 'timeout_complete': 1,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 100,
+ 'timeout_lp': 1,
+ 'timeout_milp': 100.0,
+ 'use_default_heuristic': True,
+ 'use_milp': True,
+ 'zonotope': None}
+netname  ../nets/cifar10/convSmallRELU__PGDK.pyt  epsilon  0.00784313725  domain  refinepoly  dataset  cifar10 args complete  False  complete  False  timeout_lp  1
+W shape (4, 4, 3, 16)
+Conv2D {'filters': 16, 'kernel_size': [4, 4], 'input_shape': [32, 32, 3], 'stride': [2, 2], 'padding': 0} W.shape: (4, 4, 3, 16) b.shape: (16,)
+	OutShape:  (1, 15, 15, 16)
+W shape (4, 4, 16, 32)
+Conv2D {'filters': 32, 'kernel_size': [4, 4], 'input_shape': [15, 15, 16], 'stride': [2, 2], 'padding': 0} W.shape: (4, 4, 16, 32) b.shape: (32,)
+	OutShape:  (1, 6, 6, 32)
+ReLU
+	OutShape:  (1, 100)
+	WShape:  (1152, 100)
+	BShape:  (100,)
+Affine
+	OutShape:  (1, 10)
+	WShape:  (100, 10)
+	BShape:  (10,)
+WARNING:tensorflow:From /home/mark/Projects/ERAN/eran/tf_verify/tensorflow_translator.py:123: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /home/mark/anaconda3/envs/eran/lib/python3.6/site-packages/tensorflow/python/framework/convert_to_constants.py:856: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+WARNING:tensorflow:From /home/mark/Projects/ERAN/eran/tf_verify/tensorflow_translator.py:124: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.remove_training_nodes`
+2021-02-10 00:44:01.931077: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-10 00:44:01.931181: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.931440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-10 00:44:01.931457: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-10 00:44:01.931472: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-02-10 00:44:01.931480: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-02-10 00:44:01.931487: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-10 00:44:01.931494: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-10 00:44:01.931501: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-10 00:44:01.931508: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-02-10 00:44:01.931515: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-10 00:44:01.931547: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.931793: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.932009: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-02-10 00:44:01.932118: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-10 00:44:01.932159: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.932381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-10 00:44:01.932390: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-10 00:44:01.932398: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-02-10 00:44:01.932405: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-02-10 00:44:01.932412: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-10 00:44:01.932419: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-10 00:44:01.932426: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-10 00:44:01.932432: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-02-10 00:44:01.932439: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-10 00:44:01.932466: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.932703: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.932917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-02-10 00:44:01.932935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-10 00:44:01.932939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-02-10 00:44:01.932942: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-02-10 00:44:01.932985: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.933225: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-10 00:44:01.933446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9030 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-02-10 00:44:01.936616: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-02-10 00:44:01.937428: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3600000000 Hz
+This network has 4852 neurons.
+concrete  [0.39010389083911, -3.6470953451271035, 2.1036936060868867, 6.135341064144782, -0.9039599556834406, 3.6481058989958326, 1.7571431057951012, -2.9117483403994573, -1.291436558237226, -3.161482291671399]
+nlb  [-1.3055324357441451, -5.6175437783926245, 0.6272413346992487, 4.444255907581799, -2.158915976046585, 1.7710588097394855, -0.056096334121972825, -4.697777737203996, -3.147879918525482, -5.025447610035612]  nub  [2.2351855956449964, -1.6137175596423738, 3.6513277897619565, 7.170618799310236, 0.7269893482642292, 5.112604425857024, 3.257883968096297, -0.4633697684012151, 0.42270816174062187, -1.0302299486329958] adv labels  None
+img 0 Verified 3
+progress: 1/100, correct:  1/1, verified: 1/1, unsafe: 0/1,  time: 1.156; 1.156; 1.156
+concrete  [6.965012287742624, 7.189411817831432, -2.402441069598206, -4.43021756836729, -1.9925692653070342, -7.544446845043488, -6.415277246546336, -5.892384362256382, 11.138333874113222, 5.935943961804301]
+nlb  [5.4822836557225125, 5.744218807142542, -3.5838031539986788, -5.4663754990996365, -3.1436712111845386, -8.838814214926836, -7.6360303935426375, -7.312919087629419, 9.607214804369764, 4.6229692691461475]  nub  [8.122584635492966, 8.702621210672406, -1.230991420272621, -3.3447585051588002, -0.8113944647191159, -6.120319591407356, -4.946224884762466, -4.435451442440053, 12.380800004906543, 7.37690405695102] adv labels  None
+img 1 Verified 8
+progress: 2/100, correct:  2/2, verified: 2/2, unsafe: 0/2,  time: 1.147; 1.151; 2.303
+concrete  [3.8046647181450184, 3.372257315773151, -2.2306562593675516, -1.7698187475177565, -2.026759711026083, -1.1819955182610853, -5.112787659197377, -1.9972628690497813, 8.300117880986551, 1.0686153368696862]
+nlb  [1.6584334923455826, 1.5130278455858277, -3.9279319219186086, -3.1394109210488184, -3.448302234861302, -2.8362848890446877, -6.599333123178095, -3.987522074437412, 6.074834234441217, -0.3956845037664519]  nub  [5.51370870963968, 5.3758909566296085, -0.5368550875609767, -0.40368910481187664, -0.49280121551501505, 0.37353242384998975, -3.484784591507887, -0.13202941586446112, 10.2476288132428, 3.0677277930908087] adv labels  None
+img 2 Verified 8
+progress: 3/100, correct:  3/3, verified: 3/3, unsafe: 0/3,  time: 1.214; 1.172; 3.517
+concrete  [7.490202647324326, 2.1212095072482686, 4.447675284311055, -1.3335166254710447, 1.0948182001730176, -8.173654383739928, -3.0770809248416007, -3.228751786428271, 6.279200572502878, -3.412983440493675]
+nlb  [6.032010895696506, 0.5543628536188787, 3.0771157237247944, -2.3289894149524377, -0.23745036320160015, -9.270886282321893, -4.163675946703941, -5.013897369747294, 5.093566442264668, -4.723677337019419]  nub  [8.575641117055108, 3.5646030073295303, 5.455503726360198, -0.29623173942883557, 2.446669944482983, -6.473853925063612, -2.01880048860547, -1.5112391007850792, 7.396183528145259, -1.7882005584688545] adv labels  None
+krelu: n 70 split_zero 388 after cutoff 169 number of args 388
+total k-activation time: 0.272. Time for input: 0.008. Time for k-activation constraints 0.264.
+krelu: n 70 split_zero 114 after cutoff 103 number of args 114
+total k-activation time: 0.298. Time for input: 0.003. Time for k-activation constraints 0.296.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Refinement of bounds time: 801.965. MILP used: True. 59 bounds refined.
+krelu: n 70 split_zero 17 after cutoff 17 number of args 17
+total k-activation time: 0.309. Time for input: 0.001. Time for k-activation constraints 0.308.
+Model status: 2, Objval against label 8: -0.3707, Final solve time: 0.402
+nlb  [6.165371192620699, 0.6781955865377338, 3.192952171191185, -2.274492084428793, -0.12649539023411, -9.243889763466704, -4.10257280705958, -4.848231869456729, 5.164860928263606, -4.636514130998663]  nub  [8.518059047894116, 3.4667878453528562, 5.410707548404772, -0.3723492132167061, 2.3369382434907497, -6.657163151880102, -2.102026376028924, -1.6466066901729706, 7.338947885381144, -1.9092642767769266] adv labels  None
+img 3 Failed
+progress: 4/100, correct:  4/4, verified: 3/4, unsafe: 0/4,  time: 805.670; 202.297; 809.187
+concrete  [-4.924085670873529, -5.510248829990702, 3.26737386480335, 4.355198862447009, 4.979601140794784, 1.652484838249198, 5.923429735409572, -0.3404980677491824, -1.7778592321749156, -5.37220401634787]
+nlb  [-7.123949419267517, -8.408239081114644, 0.7621512176416984, 2.256718713215631, 2.6799213078340514, -0.538504340940056, 3.4046725985214508, -3.551484335247537, -4.099926867901152, -7.72683302446895]  nub  [-2.0287808212407565, -2.429124687736953, 5.229087977076374, 5.955991140038874, 7.163795986609437, 3.8334194851282826, 7.957401083017355, 2.741167480062545, 0.7025973303358458, -2.4901957617545603] adv labels  None
+krelu: n 70 split_zero 381 after cutoff 134 number of args 381
+total k-activation time: 0.305. Time for input: 0.008. Time for k-activation constraints 0.297.
+krelu: n 70 split_zero 202 after cutoff 186 number of args 202
+total k-activation time: 0.330. Time for input: 0.005. Time for k-activation constraints 0.326.
+Refinement of bounds time: 1201.825. MILP used: True. 40 bounds refined.
+krelu: n 70 split_zero 43 after cutoff 42 number of args 43
+total k-activation time: 0.326. Time for input: 0.002. Time for k-activation constraints 0.325.
+Model status: 2, Objval against label 2: -0.1233, Final solve time: 0.490
+nlb  [-7.010530473156703, -8.285322691361618, 0.9011210232242276, 2.3687877213007127, 2.7563907822503912, -0.42281877980091687, 3.536401077674779, -3.3559749309205227, -3.9552397748613157, -7.5763440205489845]  nub  [-2.1825048230049235, -2.6310528065879546, 5.182689228415016, 5.881097733825476, 7.0236028809503415, 3.7228878094975233, 7.8437677896662095, 2.496294529862513, 0.5879435049015865, -2.604861966320521] adv labels  None
+img 4 Failed
+progress: 5/100, correct:  5/5, verified: 3/5, unsafe: 0/5,  time: 1205.913; 403.020; 2015.100
+concrete  [-0.17358829327848857, -3.132262983038189, 0.9262888490053992, 3.234289893864357, 1.9520213104116577, 1.683969641296973, 4.918451805375768, -0.24940570650557117, -3.647730853035557, -2.859911160553294]
+nlb  [-2.0920892675697957, -5.002444308404919, -0.6242503194771201, 1.820417169041034, 0.2211071310964341, 0.03669058826227497, 3.2568996087202557, -2.199185190366066, -5.5497422354237, -4.669021702760658]  nub  [1.8089436151274767, -0.783572920678066, 2.4153838036504998, 4.450122945697846, 3.4780147192745745, 3.2424989328989415, 6.580293587263722, 1.7391855904057036, -1.769544885575692, -1.1076178738452809] adv labels  None
+img 5 Verified 6
+progress: 6/100, correct:  6/6, verified: 4/6, unsafe: 0/6,  time: 1.203; 336.051; 2016.303
+concrete  [2.055372120083338, 4.369588544325553, 0.6861049119648736, 1.2318952376732435, -5.459601330653637, 1.8096648287502557, 0.9674566531212592, -1.0968986173130137, -4.725265262989303, 3.287610095356819]
+nlb  [0.7929980191337178, 2.807731686920136, -0.5077131272815956, 0.12847572716720485, -6.774538048314282, 0.5946248098017036, -0.1495361208936876, -2.616015704546562, -5.992109524250366, 1.8368170228845888]  nub  [3.285563066242865, 6.056925487427971, 1.9222046768641434, 2.134750628399506, -4.173151332781185, 2.937003320599409, 2.090914558104455, 0.2297174436119815, -3.154273802952342, 4.690317957647392] adv labels  None
+krelu: n 70 split_zero 329 after cutoff 168 number of args 329
+total k-activation time: 0.300. Time for input: 0.007. Time for k-activation constraints 0.294.
+krelu: n 70 split_zero 90 after cutoff 78 number of args 90
+total k-activation time: 0.324. Time for input: 0.002. Time for k-activation constraints 0.322.
+Refinement of bounds time: 777.845. MILP used: True. 63 bounds refined.
+krelu: n 70 split_zero 8 after cutoff 8 number of args 8
+total k-activation time: 0.320. Time for input: 0.001. Time for k-activation constraints 0.320.
+Model status: 2, Objval against label 9: -0.3293, Final solve time: 0.441
+nlb  [0.8475174666873954, 2.8531876762425212, -0.44370454476168164, 0.2081780775573386, -6.7374393174065865, 0.6620280702469556, -0.10540351971590584, -2.520757437952664, -5.966302464684908, 1.915716424725448]  nub  [3.2348635311183647, 5.981444435258685, 1.8266932800297841, 2.100742364388735, -4.237889014450868, 2.905581799252529, 2.06277684404309, 0.1749663056011607, -3.2572964787175156, 4.632072088366062] adv labels  None
+img 6 Failed
+progress: 7/100, correct:  7/7, verified: 4/7, unsafe: 0/7,  time: 781.732; 399.719; 2798.035
+concrete  [0.6144144899508914, -3.574010236620843, 1.3665438768266205, 1.6819517360348681, 1.4814410271619218, 0.07409185587495197, 3.5314810780200667, -2.1419487245381426, -0.7372728310698878, -0.8701544642946785]
+nlb  [-1.3102659630208584, -5.459351904623764, -0.020420662912556207, 0.33866964278692596, 0.25303345747430506, -1.5987814038274224, 2.0087282786144454, -4.052428374379056, -2.738157225222228, -2.8023089855562984]  nub  [2.3373702091872866, -1.7381379418857132, 2.9247612407496, 2.9444067811198584, 3.029895254704056, 1.7488956847186115, 4.9772425180636635, 0.39559379062009176, 0.8424083611520649, 0.6704966904875622] adv labels  None
+krelu: n 70 split_zero 565 after cutoff 215 number of args 565
+total k-activation time: 0.321. Time for input: 0.011. Time for k-activation constraints 0.310.
+krelu: n 70 split_zero 136 after cutoff 128 number of args 136
+total k-activation time: 0.311. Time for input: 0.003. Time for k-activation constraints 0.308.
+Refinement of bounds time: 1202.053. MILP used: True. 64 bounds refined.
+krelu: n 70 split_zero 24 after cutoff 24 number of args 24
+total k-activation time: 0.337. Time for input: 0.001. Time for k-activation constraints 0.335.
+nlb  [-1.1417809356183684, -5.288936725808754, 0.10537447573096505, 0.46490504175954106, 0.3137727741914396, -1.4607379771685132, 2.1177995120700386, -3.9237722265983326, -2.6161844591217784, -2.5668668640142585]  nub  [2.188819003864617, -1.8144007099145516, 2.763572954340575, 2.8572047387621176, 2.85052519497217, 1.631703941717152, 4.883981416121833, 0.1086809386979957, 0.6756320797823329, 0.6243365285390968] adv labels  None
+img 7 Verified 6
+progress: 8/100, correct:  8/8, verified: 5/8, unsafe: 0/8,  time: 1205.585; 500.453; 4003.620
+concrete  [-0.268988330586195, -6.773993958912796, 2.4873060637595055, 4.506814078038185, 1.9447455463459205, 3.8722244785403346, 2.2164275331883037, -0.017763036062089885, -1.9592801694104962, -4.0676215566794385]
+nlb  [-2.563373072956261, -9.291091200309769, 0.5496892216609198, 2.792640313123933, 0.11238618819477872, 1.829640535141889, 0.08660398735963497, -2.3155978234370393, -3.872019719987526, -6.130219560832158]  nub  [2.110266044182811, -4.322987649877302, 4.3743829183286325, 6.050395049566231, 3.76035671765649, 5.4025753565116315, 4.095653381241616, 2.4212971380491113, 0.405241453031072, -1.8903558701235539] adv labels  None
+krelu: n 70 split_zero 493 after cutoff 167 number of args 493
+total k-activation time: 0.325. Time for input: 0.009. Time for k-activation constraints 0.315.
+krelu: n 70 split_zero 161 after cutoff 147 number of args 161
+total k-activation time: 0.313. Time for input: 0.004. Time for k-activation constraints 0.310.
+Refinement of bounds time: 1202.407. MILP used: True. 66 bounds refined.
+krelu: n 70 split_zero 34 after cutoff 34 number of args 34
+total k-activation time: 0.338. Time for input: 0.001. Time for k-activation constraints 0.337.
+Model status: 2, Objval against label 2: -0.2619, Final solve time: 0.474
+nlb  [-2.3916969585891295, -9.093972618586946, 0.7380869860218707, 2.9280977254194696, 0.22570157463634163, 1.9945290889608072, 0.25422847660553444, -2.183767048767927, -3.750090365963826, -5.935572195046373]  nub  [1.9284723754398723, -4.513139270590834, 4.216273371947718, 5.928083697442184, 3.612187912432323, 5.304632862636538, 3.9934148178599664, 2.178245706427668, 0.21372038112437539, -2.0676330969525396] adv labels  None
+img 8 Failed
+progress: 9/100, correct:  9/9, verified: 5/9, unsafe: 0/9,  time: 1206.273; 578.877; 5209.893
+concrete  [0.6119814210368935, 7.5717350233091505, -1.3414440653641395, -3.52785389618297, -0.5328755446899579, -5.207696236900501, -2.9209183500364215, -3.2495711734871136, 2.0581041439247296, 8.25121551586859]
+img 9 not considered, incorrectly classified
+progress: 10/100, correct:  9/10, verified: 5/9, unsafe: 0/9,  time: 0.697; 578.877; 5209.893
+concrete  [4.370453349728108, -4.835542737892106, 0.09061313457854488, 1.861940886379334, 1.4236246517037359, 2.237884770367778, 0.7868941575378551, -0.3675649764043683, 2.8252726166803908, -5.948715791002716]
+nlb  [2.186845418367368, -6.655946581624301, -1.7274367537779383, 0.17645188726558003, -0.10668375785651038, 0.30830526352141535, -0.9924562356423622, -3.0580941562765003, 1.1598841255513106, -7.886177109251259]  nub  [6.259053421599984, -2.342967005468613, 2.1995899553997433, 3.3491568074301834, 3.0570844258622607, 3.8606584641274413, 2.621478992981266, 1.6341161976223828, 4.729033808993589, -3.7329337944164585] adv labels  None
+krelu: n 70 split_zero 633 after cutoff 150 number of args 633
+total k-activation time: 0.349. Time for input: 0.012. Time for k-activation constraints 0.337.
+krelu: n 70 split_zero 154 after cutoff 135 number of args 154
+total k-activation time: 0.341. Time for input: 0.003. Time for k-activation constraints 0.338.
+Refinement of bounds time: 1202.623. MILP used: True. 63 bounds refined.
+krelu: n 70 split_zero 30 after cutoff 29 number of args 30
+total k-activation time: 0.336. Time for input: 0.001. Time for k-activation constraints 0.335.
+Model status: 2, Objval against label 3: -0.3096, Final solve time: 0.435
+nlb  [2.3458874183487954, -6.531620046966374, -1.506738305830225, 0.3384865355438727, -0.009249234613150964, 0.48020371290192543, -0.8485506260806264, -2.7691544935575507, 1.3206207649849486, -7.702259627694601]  nub  [6.146946782000713, -2.5593898047043884, 1.9572971029681536, 3.208683841383391, 2.831973778573119, 3.6428279466287097, 2.4338817686711054, 1.4878094791014151, 4.586217233161305, -3.9673857228052154] adv labels  None
+img 10 Failed
+progress: 11/100, correct:  10/11, verified: 5/10, unsafe: 0/10,  time: 1206.403; 641.630; 6416.296
+concrete  [-1.3682903612106807, 7.144632367314343, -1.3343154994681838, -2.700628414036812, -1.4407940201534564, -3.19226804775483, -4.098302768652247, -3.084016409880503, 5.0910208749775725, 7.630469252864423]
+nlb  [-2.919554470807528, 4.836345722860002, -2.886515332307068, -4.074204021120018, -3.0914933544090455, -4.962273807732836, -5.564028587697736, -4.9207976459433596, 3.321026577630979, 6.008011776622848]  nub  [0.359163546877813, 8.996162640849427, 0.3026717163644528, -1.2077781641629957, -0.046587260094940956, -1.6869876575436888, -2.340455938570211, -0.9804545528401154, 7.002126376284049, 9.394520533516317] adv labels  None
+krelu: n 70 split_zero 324 after cutoff 135 number of args 324
+total k-activation time: 0.366. Time for input: 0.007. Time for k-activation constraints 0.360.
+krelu: n 70 split_zero 115 after cutoff 99 number of args 115
+total k-activation time: 0.366. Time for input: 0.002. Time for k-activation constraints 0.364.
+Refinement of bounds time: 958.532. MILP used: True. 71 bounds refined.
+krelu: n 70 split_zero 26 after cutoff 25 number of args 26
+total k-activation time: 0.393. Time for input: 0.001. Time for k-activation constraints 0.392.
+Model status: 2, Objval against label 1: -1.1718, Final solve time: 0.499
+nlb  [-2.792612768511368, 5.086504702929254, -2.7242520957172904, -3.9563948876940094, -2.952425414875653, -4.781516227548631, -5.438707045410452, -4.7363091408595634, 3.4335390516354165, 6.15770691931038]  nub  [0.1887303079070254, 8.837023517247639, 0.14257958247064387, -1.3600961366469326, -0.1477796467586356, -1.7787385857417854, -2.515344742920466, -1.235905708170488, 6.816655349254238, 9.250214703129203] adv labels  None
+img 11 Failed
+progress: 12/100, correct:  11/12, verified: 5/11, unsafe: 0/11,  time: 962.666; 670.815; 7378.963
+concrete  [-0.5360400201824163, -1.303756940320666, -0.695037034332039, 1.9450035762807163, 1.0565984259795655, 3.284807269250156, 3.1115222971666383, 0.13648008469469727, -1.8395914680653098, -2.37187168720154]
+nlb  [-2.357623211323955, -3.193200209503686, -2.1176948624517555, 0.5243384582611784, -0.668692678309126, 1.8810409346856318, 1.3860232613308308, -1.9123841211585932, -3.632736231649966, -4.18266285645194]  nub  [0.9386286182641733, 1.0795300062739352, 1.1538508240255991, 3.3077606392328627, 2.719396785150431, 4.39049728094562, 4.955310352032552, 2.056769687728045, -0.18016268700807261, -0.46666343082410255] adv labels  None
+krelu: n 70 split_zero 557 after cutoff 159 number of args 557
+total k-activation time: 0.370. Time for input: 0.011. Time for k-activation constraints 0.359.
+krelu: n 70 split_zero 125 after cutoff 116 number of args 125
+total k-activation time: 0.368. Time for input: 0.003. Time for k-activation constraints 0.365.
+Refinement of bounds time: 1195.191. MILP used: True. 64 bounds refined.
+krelu: n 70 split_zero 23 after cutoff 23 number of args 23
+total k-activation time: 0.395. Time for input: 0.001. Time for k-activation constraints 0.394.
+Model status: 2, Objval against label 6: -1.7464, Final solve time: 0.519
+nlb  [-2.206681744369629, -3.084736339829485, -2.041030667332484, 0.6341040231201086, -0.548674580875661, 2.0199517863277916, 1.4919861643369952, -1.7291567935640721, -3.4970354757646027, -4.101024908766985]  nub  [0.861128049616338, 0.9083624682768859, 0.9662348914578277, 3.220388182931899, 2.6021459053415765, 4.365559075566158, 4.813154596773703, 1.9298360267445205, -0.31632279076846276, -0.5902024874646203] adv labels  None
+img 12 Failed
+progress: 13/100, correct:  12/13, verified: 5/12, unsafe: 0/12,  time: 1199.414; 714.865; 8578.377
+concrete  [0.867850949415142, -1.2716657765904607, 0.7470282848972918, -0.6477318262677652, -0.5538692038433097, 3.0349792378055516, -0.7021325300923634, 10.892267684764716, -6.391934380915825, -2.2297556070939217]
+nlb  [-0.37754605267757685, -2.697542298679546, -0.6050952019584226, -1.6022113229215853, -1.5550634465055233, 1.8051288876888212, -1.8945251505895413, 9.502361918586415, -7.805848398159153, -3.468378776661899]  nub  [2.092539775328123, 0.2715764671745074, 2.019633143942835, 0.2569924479218732, 0.6341632322651187, 3.964249170534342, 0.3213027486065082, 12.473364604435687, -4.890858676732115, -0.9379524126749996] adv labels  None
+img 13 Verified 7
+progress: 14/100, correct:  13/14, verified: 6/13, unsafe: 0/13,  time: 1.168; 659.965; 8579.544
+concrete  [-1.125825458527508, 4.423827931865479, -0.8921271228774977, -1.3779436046141693, -3.4422936167982616, -1.386638807831565, -1.8814558719255632, -0.3447625241140183, 1.150586180028537, 6.581922360629162]
+nlb  [-3.1242489761047048, 1.8944487809124944, -2.5736129294519206, -3.1133311833219386, -5.3659425654404584, -3.6927285209374947, -3.754255597099511, -2.833959702185591, -1.2788733134879346, 4.302625995973074]  nub  [1.298644144661965, 6.9534767688203205, 0.8607704770282364, 0.6430846045034233, -1.7304537618929758, 0.5007272634009605, 0.1367462653749861, 2.248224381697985, 3.3159182193867354, 8.667992594126682] adv labels  None
+krelu: n 70 split_zero 410 after cutoff 165 number of args 410
+total k-activation time: 0.384. Time for input: 0.008. Time for k-activation constraints 0.375.
+krelu: n 70 split_zero 147 after cutoff 137 number of args 147
+total k-activation time: 0.381. Time for input: 0.003. Time for k-activation constraints 0.378.
+Refinement of bounds time: 1202.076. MILP used: True. 76 bounds refined.
+krelu: n 70 split_zero 40 after cutoff 38 number of args 40
+total k-activation time: 0.386. Time for input: 0.002. Time for k-activation constraints 0.385.
+Model status: 2, Objval against label 1: -0.4525, Final solve time: 0.501
+nlb  [-2.989086004257992, 2.148567389508957, -2.414464773001827, -2.9276601307736225, -5.1745436815304355, -3.4457588189078576, -3.548811158206448, -2.595537593372234, -1.0581387934265658, 4.567417154442615]  nub  [0.9842214925239028, 6.689045146701994, 0.6445485228897735, 0.45591786794342926, -1.9007989263962248, 0.33866678567820774, -0.031625240838081305, 1.9610966242042203, 3.1166970260892075, 8.511932638074816] adv labels  None
+img 14 Failed
+progress: 15/100, correct:  14/15, verified: 6/14, unsafe: 0/14,  time: 1206.313; 698.990; 9785.857
+concrete  [1.2707665197934963, 1.284963190340448, -1.904782504002758, -0.1769380274586507, -1.2960887908897372, 0.02808949507585821, 0.9652045920749981, -1.5542187705209658, 6.8164796011005535, -2.9245085730198537]
+nlb  [-1.0426878093724055, -1.0123056281534981, -3.882442148566138, -1.6557256823326656, -3.037903284303402, -1.983288753060756, -0.8494738655400658, -3.970590853930002, 4.451920463932977, -4.81897627171121]  nub  [3.3199408677185476, 3.4320869166194883, 0.11943575065794691, 1.4041587613761628, 0.41641291173757494, 1.9252274617607743, 2.813118966455804, 1.2123533060555323, 8.87694119738405, -0.7147332208525524] adv labels  None
+img 15 Verified 8
+progress: 16/100, correct:  15/16, verified: 7/15, unsafe: 0/15,  time: 1.315; 652.478; 9787.172
+concrete  [-0.3287313224279934, -2.3652066635920033, 1.5399457136957173, 5.458961707686736, -5.631426318352397, 5.08228243216407, -2.5976616808182107, 1.5794441184903116, -1.7926395172090837, 2.051704831053816]
+img 16 not considered, incorrectly classified
+progress: 17/100, correct:  15/17, verified: 7/15, unsafe: 0/15,  time: 0.570; 652.478; 9787.172
+concrete  [-1.3244041852486672, -4.086281361076499, 1.5183084019071682, 3.163463957424029, 0.2691765017122527, 0.9769204264244687, -2.054573711251377, 3.6029875327289957, -2.45723491166684, 3.1220720676088085]
+nlb  [-2.9954831309019996, -6.311607917310652, -0.048820810790534686, 1.7705432939288004, -1.3148345122462775, -0.6495323528336298, -3.812356518943362, 1.3337712199729914, -4.06997017543434, 1.0231855137791661]  nub  [0.58730488885416, -2.0812327801522454, 3.2385913255165115, 4.6531469759105555, 1.7754200489891305, 2.5637441913810464, -0.0725588151131235, 5.663448785122696, -0.45225395251110995, 4.8150464868980745] adv labels  None
+krelu: n 70 split_zero 409 after cutoff 156 number of args 409
+total k-activation time: 0.388. Time for input: 0.008. Time for k-activation constraints 0.380.
+krelu: n 70 split_zero 140 after cutoff 125 number of args 140
+total k-activation time: 0.383. Time for input: 0.003. Time for k-activation constraints 0.380.
+Refinement of bounds time: 1201.992. MILP used: True. 70 bounds refined.
+krelu: n 70 split_zero 25 after cutoff 24 number of args 25
+total k-activation time: 0.378. Time for input: 0.001. Time for k-activation constraints 0.377.
+Model status: 2, Objval against label 2: -0.4615, Final solve time: 0.444
+nlb  [-2.893253033542493, -6.127357190637156, 0.08224152223169896, 1.89571317576703, -1.190960797420923, -0.5433768330407868, -3.7057066544993575, 1.6220137356713737, -3.9535212809478946, 1.3484244451985599]  nub  [0.3852545371348256, -2.2274621481950283, 3.0379231098845887, 4.509854105878892, 1.664360792988605, 2.4291983745035037, -0.2963156595755726, 5.526891861613586, -0.6790516203970378, 4.718673947318724] adv labels  None
+img 17 Failed
+progress: 18/100, correct:  16/18, verified: 7/16, unsafe: 0/16,  time: 1206.172; 687.084; 10993.344
+concrete  [4.241046965390001, 3.2006993542990103, -0.9795332824812978, -2.00113478311164, 1.113155829920729, -3.990132614264202, -5.579380232104308, -2.005461804128136, 4.896738233305713, 3.5224372137003512]
+nlb  [3.209014253628231, 1.6942527416444046, -2.1142969396765143, -3.1241745488159944, 0.14494563060126917, -5.329992701973615, -6.569065125759761, -3.439791142940183, 3.8006928282556087, 2.247954547214898]  nub  [5.212270322088221, 4.686142782059493, 0.21435002341417514, -1.1859204244489239, 1.936250335328948, -2.6382659796415933, -4.2330069876241145, -0.6981907674084566, 6.087049681232681, 4.9987759631616155] adv labels  None
+krelu: n 70 split_zero 407 after cutoff 216 number of args 407
+total k-activation time: 0.405. Time for input: 0.008. Time for k-activation constraints 0.397.
+krelu: n 70 split_zero 92 after cutoff 80 number of args 92
+total k-activation time: 0.401. Time for input: 0.002. Time for k-activation constraints 0.399.
+Refinement of bounds time: 801.898. MILP used: True. 61 bounds refined.
+krelu: n 70 split_zero 20 after cutoff 18 number of args 20
+total k-activation time: 0.399. Time for input: 0.001. Time for k-activation constraints 0.398.
+Model status: 2, Objval against label 0: -0.3859, Final solve time: 0.447
+nlb  [3.281450710825483, 1.8135111955707088, -2.021701254362773, -3.0350835858959364, 0.23224622165095432, -5.219983921154898, -6.509133146666391, -3.3517566480654537, 3.860589757015558, 2.3526005656890514]  nub  [5.121460302256365, 4.594111343556789, 0.11911999778900866, -1.2346347365741774, 1.8877816933096832, -2.7528456343985885, -4.350520248555674, -0.7885513991146803, 5.995685695349043, 4.876366682175493] adv labels  None
+img 18 Failed
+progress: 19/100, correct:  17/19, verified: 7/17, unsafe: 0/17,  time: 805.905; 694.073; 11799.249
+concrete  [-4.256535805807367, -4.05519164594799, 2.206609563505613, 1.7757727793547564, 4.562272344215229, 2.2420598570269203, 6.645335965781743, 2.6139804506588624, -3.454717070806464, -4.740821234404811]
+nlb  [-6.190636074909289, -5.9477067113000635, 0.7251696295913302, 0.40775368425619146, 3.0431559796353698, 0.5823068866018274, 4.993625070789737, 0.8160900457070935, -5.283540693149988, -6.431028590786562]  nub  [-2.618411128075996, -1.8658998044777015, 3.5675816692932867, 3.2659964206100676, 5.873813333674942, 3.7097487830118023, 8.227483542784686, 4.973304759544334, -1.7868418705471503, -2.9454515313066842] adv labels  None
+krelu: n 70 split_zero 340 after cutoff 125 number of args 340
+total k-activation time: 0.418. Time for input: 0.007. Time for k-activation constraints 0.412.
+krelu: n 70 split_zero 140 after cutoff 123 number of args 140
+total k-activation time: 0.410. Time for input: 0.003. Time for k-activation constraints 0.407.
+Refinement of bounds time: 1202.023. MILP used: True. 68 bounds refined.
+krelu: n 70 split_zero 20 after cutoff 19 number of args 20
+total k-activation time: 0.411. Time for input: 0.001. Time for k-activation constraints 0.410.
+nlb  [-6.074966600240054, -5.832470236269873, 0.8360112852777112, 0.49795233885035733, 3.1499803647355025, 0.7112760388081363, 5.119938041991717, 0.9108127784644822, -5.149218113928321, -6.325354041149339]  nub  [-2.6770585379147014, -2.0208176997966216, 3.451584961133737, 3.170162620561582, 5.764727848248184, 3.6359392133028647, 8.162920070379917, 4.720442967067934, -1.8330967036586767, -3.117336505094429] adv labels  None
+img 19 Verified 6
+progress: 20/100, correct:  18/20, verified: 8/18, unsafe: 0/18,  time: 1205.940; 722.511; 13005.190
+concrete  [-3.967345095571993, -1.1615674623016858, 0.4766518814282341, 0.575973398977364, 2.4887609367384407, 1.1293822554967465, -1.1299369132640287, 7.709514777041152, -5.565887982459126, 1.6427733047060573]
+nlb  [-5.378441090143441, -3.1544817747332656, -1.0252002780936018, -0.688455962765669, 0.8615720841998132, -0.3459592163062807, -2.5988775004976823, 5.430690176953032, -7.085119553803659, -0.09197605948311917]  nub  [-2.485933405465782, 1.064051266489121, 1.8579531596396512, 1.8552266195480909, 4.013825002436, 2.579697812301757, 0.47568442675813966, 9.683869422601322, -3.6168929410425785, 3.1964442091293956] adv labels  None
+img 20 Verified 7
+progress: 21/100, correct:  19/21, verified: 9/19, unsafe: 0/19,  time: 1.247; 684.549; 13006.436
+concrete  [9.430217404182363, -3.650502472922089, 9.04484143045744, 5.038305475623661, -0.02867302913954198, -0.6816200978357864, 0.054177605176490014, -2.519097399525432, -2.638323798145477, -10.584756749755902]
+nlb  [8.695647639563134, -4.594786652066536, 8.330538957820243, 4.267104195421913, -0.871205571066935, -1.4465524211317413, -0.6872546336134714, -3.5406414053371353, -3.4608076418044944, -11.571160098886123]  nub  [10.111217624489543, -2.5571751631636777, 9.735908718024037, 5.647946834415709, 0.8764306659823283, -0.04868709218919357, 0.8296222141320255, -1.4394742727535625, -1.8382139142112277, -9.567682235379069] adv labels  None
+krelu: n 70 split_zero 532 after cutoff 352 number of args 532
+total k-activation time: 0.421. Time for input: 0.010. Time for k-activation constraints 0.411.
+krelu: n 70 split_zero 63 after cutoff 57 number of args 63
+total k-activation time: 0.444. Time for input: 0.002. Time for k-activation constraints 0.443.
+Refinement of bounds time: 802.096. MILP used: True. 56 bounds refined.
+krelu: n 70 split_zero 6 after cutoff 6 number of args 6
+total k-activation time: 0.409. Time for input: 0.001. Time for k-activation constraints 0.409.
+Used simplex terminate
+Model status: 11, Objval against label 2: 0.0000, Final solve time: 0.405
+Model was not successful status is 11
+nlb  [8.738613326026142, -4.563872795044341, 8.350510252215022, 4.290184294454452, -0.8610404964874669, -1.4225743437166887, -0.6546410923157673, -3.5088929438515017, -3.4388414951938584, -11.537503329871122]  nub  [10.101246721846458, -2.613922689497997, 9.697956628347454, 5.64370756592869, 0.8563639639320093, -0.07182163419845532, 0.8085060873954684, -1.4742301496936852, -1.8660466894816397, -9.59865717987277] adv labels  None
+img 21 Failed
+progress: 22/100, correct:  20/22, verified: 9/20, unsafe: 0/20,  time: 806.365; 690.640; 13812.801
+concrete  [5.1413834689742695, -3.5679625578098135, 1.9839788611122011, 0.7562634954394692, 3.514702266432779, -0.7755311875412026, -0.07130801132315703, -3.016211392402088, 3.701480311502592, -6.329847807698664]
+img 22 not considered, incorrectly classified
+progress: 23/100, correct:  20/23, verified: 9/20, unsafe: 0/20,  time: 0.433; 690.640; 13812.801
+concrete  [-2.257309959403126, 5.276732591305239, -2.9287521071121367, -1.1929734694716867, -2.5612461483181774, -2.057038229142959, 0.06054211151693053, 0.3892268718151255, -2.494517641957597, 10.107881388746794]
+nlb  [-4.24928281492063, 3.275013384075538, -4.547799762439883, -2.64072518603, -3.832651558517456, -3.679995321886532, -1.6383207588087094, -1.4005068753995533, -4.329434950417355, 8.129260606774718]  nub  [-0.35286963549196876, 7.307097470840957, -1.0561697327958173, 0.11667077609465573, -0.7885605576804533, -0.5861207618778731, 1.5488927257757907, 2.2786815059131027, -0.4872951998665364, 11.648897233549159] adv labels  None
+img 23 Verified 9
+progress: 24/100, correct:  21/24, verified: 10/21, unsafe: 0/21,  time: 1.257; 657.812; 13814.058
+concrete  [-0.8068480424243422, -5.714050964298447, 3.9639248859326415, 0.7043338616843227, 5.161451899262829, 1.1223288486044505, 0.8592565154844948, 1.6429285744233653, -1.197301113325063, -3.379574884747256]
+img 24 not considered, incorrectly classified
+progress: 25/100, correct:  21/25, verified: 10/21, unsafe: 0/21,  time: 0.612; 657.812; 13814.058
+concrete  [-5.41703169536781, -1.5329056163132557, 2.409000573767107, 1.4537589212889062, 3.7723767652412667, 2.2117934607642917, 2.1317000579373295, -0.8889092016048261, -3.183193483811116, 0.8093982453716096]
+img 25 not considered, incorrectly classified
+progress: 26/100, correct:  21/26, verified: 10/21, unsafe: 0/21,  time: 0.596; 657.812; 13814.058
+concrete  [-0.8528391762785578, -4.536126027533545, 2.9200603976092663, 1.699957095620855, 4.620329799306953, 2.0718046557361003, 1.1815971878607154, 4.480078045835918, -4.784430576396545, -3.8699167772520493]
+nlb  [-2.4412559414288384, -6.41882300476568, 1.3824265345358548, 0.5710666593761498, 3.079786336053029, 0.8777820988923434, -0.10597749292398688, 2.483852878059779, -6.488009778282134, -5.58169460569254]  nub  [1.1016935059867865, -2.8448051402197745, 4.2776432616883735, 3.031767003642828, 6.2607589397072285, 3.3137441869531257, 2.5977945947375343, 6.152554449004108, -3.2429799457417645, -2.17818323470808] adv labels  None
+krelu: n 70 split_zero 507 after cutoff 149 number of args 507
+total k-activation time: 0.443. Time for input: 0.010. Time for k-activation constraints 0.433.
+krelu: n 70 split_zero 152 after cutoff 132 number of args 152
+total k-activation time: 0.445. Time for input: 0.003. Time for k-activation constraints 0.441.
+Refinement of bounds time: 1201.987. MILP used: True. 49 bounds refined.
+krelu: n 70 split_zero 27 after cutoff 26 number of args 27
+total k-activation time: 0.466. Time for input: 0.001. Time for k-activation constraints 0.465.
+Model status: 2, Objval against label 2: -0.0417, Final solve time: 0.509
+nlb  [-2.40505279999274, -6.329245222733176, 1.42713115445275, 0.6201335921889065, 3.1101048368832855, 0.9003727987303216, -0.06105659674584735, 2.6213067019106107, -6.418959298688013, -5.411787514304057]  nub  [0.9452241138889675, -2.8732924401169493, 4.224063205049646, 2.9270385736908096, 6.168296346362095, 3.2469405823940463, 2.5257352744688233, 6.1166871367285225, -3.3045385412906714, -2.2054945133893913] adv labels  None
+img 26 Failed
+progress: 27/100, correct:  22/27, verified: 10/22, unsafe: 0/22,  time: 1206.361; 682.746; 15020.419
+concrete  [2.910556711665152, -4.383947937022858, 1.4401431778514375, -0.07846136176225504, 2.287948877773966, -0.2675897162314595, -0.16570213218079397, 4.7774277453969125, -4.567492304475533, 0.5066657197187082]
+img 27 not considered, incorrectly classified
+progress: 28/100, correct:  22/28, verified: 10/22, unsafe: 0/22,  time: 0.664; 682.746; 15020.419
+concrete  [1.5054992349134837, 2.2899946224607644, 0.5369666751466144, 0.03989579125075804, -0.24534159384566906, -0.7047388898554271, -2.8383293975746424, -0.6962473848177958, -2.519158666088133, 5.364568011727009]
+nlb  [-0.31420504027568047, 0.5262630007571774, -1.1971913263499938, -1.3179729016561086, -1.719835097549955, -2.420665496677267, -4.511714556246616, -2.4707250680514745, -4.166747461287133, 3.556432492696292]  nub  [3.3114896826260263, 4.327077902516716, 2.2992839639613165, 1.1692568776662806, 1.266263874005554, 0.4855784434781989, -1.3416826603134948, 1.247570290305961, -0.3613773039025291, 6.97875005091211] adv labels  None
+img 28 Verified 9
+progress: 29/100, correct:  23/29, verified: 11/23, unsafe: 0/23,  time: 1.207; 653.114; 15021.626
+concrete  [-0.5799663634639314, -3.397250512652142, 0.13127423219539358, 0.5651162626008609, 2.298669563730909, 1.239428298727439, 5.4669043033788425, 2.3638213735680775, -3.9299255274237765, -2.2396400687296234]
+nlb  [-2.349971485707328, -5.257835404939901, -1.516897593982571, -0.620587992158464, 0.7633131627739287, -0.29710178864964054, 3.8702130532922903, 0.39885941384665186, -5.736755355542621, -4.152318789621691]  nub  [1.2433417759611667, -1.2025090569761296, 1.7542531714958722, 1.8521113953690267, 3.7714191034801225, 2.5784668394539123, 6.72304126614169, 4.095261597567127, -1.8330717782410537, -0.18401595248448835] adv labels  None
+img 29 Verified 6
+progress: 30/100, correct:  24/30, verified: 12/24, unsafe: 0/24,  time: 1.251; 625.953; 15022.877
+concrete  [-1.5926356372959318, -1.2414804643796373, 2.1816271477078115, 2.558383191152928, 0.8211293333654226, 1.6100725605692243, 2.090252086449237, 1.0393998716277741, -3.988188012714976, -2.2854151329530774]
+img 30 not considered, incorrectly classified
+progress: 31/100, correct:  24/31, verified: 12/24, unsafe: 0/24,  time: 0.544; 625.953; 15022.877
+concrete  [-1.827337821250659, -3.622761241651512, 3.3519219123357895, 2.0778453348115877, 3.2914334909586236, 2.010352557384549, -0.4196445041161519, 1.2035655570126622, -1.1779759025747958, -2.5189365785770645]
+img 31 not considered, incorrectly classified
+progress: 32/100, correct:  24/32, verified: 12/24, unsafe: 0/24,  time: 0.551; 625.953; 15022.877
+concrete  [1.5357526492902902, -3.9837088840413313, 0.2986186257798754, 1.3284504842062577, 2.4428296168259602, 0.7193970745050141, 0.9415140737346309, -0.9173439064338025, 4.488455926202756, -4.38357967680296]
+img 32 not considered, incorrectly classified
+progress: 33/100, correct:  24/33, verified: 12/24, unsafe: 0/24,  time: 0.703; 625.953; 15022.877
+concrete  [-3.5817301242986637, -2.0168260021740108, 1.4196093404753907, 6.049978168220343, -0.23761194857765539, 5.982416633024114, 1.2904997601424575, -0.19434694935484848, -3.543084913913773, -3.1757290564207534]
+img 33 not considered, incorrectly classified
+progress: 34/100, correct:  24/34, verified: 12/24, unsafe: 0/24,  time: 0.553; 625.953; 15022.877
+concrete  [1.968562180838202, 0.24404878456302379, -2.406546135073132, 0.595692208659921, -1.1913738701359127, -2.1464292040472817, -4.198014633693383, 0.678927225056793, 1.7113088620582173, 6.892442843521966]
+nlb  [0.6896071951250008, -1.5584824970566233, -3.7537988938435887, -0.6370271414467878, -2.6274564188081264, -3.533015511488198, -5.639721729955864, -1.1191428709974562, 0.031277880449359446, 5.121937392852888]  nub  [3.3670973429942777, 2.255035806929532, -0.8720832546108691, 1.679132408681043, 0.16893863012679042, -0.6152295751479495, -2.814656763311796, 2.2756471968612884, 3.4143270391357796, 8.56349199990696] adv labels  None
+img 34 Verified 9
+progress: 35/100, correct:  25/35, verified: 13/25, unsafe: 0/25,  time: 1.148; 600.961; 15024.026
+concrete  [-6.005007780092936, 4.179835455049774, -1.709762105712133, 3.5187106574788016, -1.55499280726833, 1.6171325091952882, -1.6689694280995793, -0.9106683368593278, -0.6204382688772574, 5.326122868633305]
+img 35 not considered, incorrectly classified
+progress: 36/100, correct:  25/36, verified: 13/25, unsafe: 0/25,  time: 0.803; 600.961; 15024.026
+concrete  [-2.7793754789200604, -7.819884603186769, 2.422120900070267, 0.6478956649434731, 4.562123021600019, 3.178769863242995, 3.148706187246361, 7.6466867348790535, -5.42435164810266, -3.195225916853318]
+img 36 not considered, incorrectly classified
+progress: 37/100, correct:  25/37, verified: 13/25, unsafe: 0/25,  time: 0.793; 600.961; 15024.026
+concrete  [5.06694139075128, 5.559519046050613, -4.675116080427498, -0.9726416055652043, -3.1115916763003404, -2.7531135871244374, -7.4485125288606016, 0.03384385421066818, 3.8564443228843386, 8.617201230622207]
+img 37 not considered, incorrectly classified
+progress: 38/100, correct:  25/38, verified: 13/25, unsafe: 0/25,  time: 0.660; 600.961; 15024.026
+concrete  [-0.7102214286950511, 1.7525708168723368, -1.685409353685808, -1.749847853962107, -0.8887823508005365, -1.0534653068635897, -2.4789603015831623, -0.45245788037966306, 0.7873778472511455, 8.200452890599992]
+nlb  [-2.245344640631945, -0.22310112902230422, -3.2192714738847807, -3.4027716909382675, -2.3838323536575774, -3.0279201232933346, -4.117890358294068, -2.5509218217605287, -1.1607088154920255, 6.048304247138573]  nub  [1.2686119585640176, 3.9248915733061103, 0.009384429505263022, -0.3137738727329717, 0.9439674865858292, 0.5224995333445173, -0.5890128979010855, 1.574767878198423, 2.7264882930010277, 9.706632991679815] adv labels  None
+img 38 Verified 9
+progress: 39/100, correct:  26/39, verified: 14/26, unsafe: 0/26,  time: 1.254; 577.895; 15025.280
+concrete  [-1.9056162359403375, -3.968649890607338, -1.0937350136624742, 2.515653503832275, 1.0352840351008088, 4.034294444530783, -1.3333077099237969, 0.2551684621312098, 2.784182795399325, -0.4009818836891623]
+nlb  [-3.5622730227783643, -5.9049837600295385, -2.703815116143751, 1.0653332083949256, -0.6587799690873991, 2.266235213068483, -2.980571589487602, -1.8491164636803314, 0.9683024318118884, -2.254854215529699]  nub  [0.11476185398165503, -1.7759772588060303, 0.6330208615665964, 3.7552694244046547, 2.6026340909148598, 5.430992581307674, 0.2771606210093625, 2.3367038324667373, 4.867805323819345, 1.3936309412602141] adv labels  None
+krelu: n 70 split_zero 322 after cutoff 132 number of args 322
+total k-activation time: 0.445. Time for input: 0.007. Time for k-activation constraints 0.438.
+krelu: n 70 split_zero 127 after cutoff 116 number of args 127
+total k-activation time: 0.439. Time for input: 0.003. Time for k-activation constraints 0.436.
+Refinement of bounds time: 801.864. MILP used: True. 61 bounds refined.
+krelu: n 70 split_zero 28 after cutoff 28 number of args 28
+total k-activation time: 0.436. Time for input: 0.001. Time for k-activation constraints 0.435.
+Model status: 2, Objval against label 8: -1.6458, Final solve time: 0.367
+nlb  [-3.3922053102071184, -5.733408574912421, -2.5533976766291215, 1.2111772095962638, -0.47697260837000605, 2.4677300540564264, -2.854807591905784, -1.626640836442593, 1.118023274433821, -2.0108777651216116]  nub  [-0.14977514341236964, -2.0177396074528673, 0.4340021334327135, 3.6032500860093495, 2.4728064649690435, 5.312365210436596, 0.11151554729657961, 2.1484264918370273, 4.645568256368682, 1.2425521401232802] adv labels  None
+img 39 Failed
+progress: 40/100, correct:  27/40, verified: 14/27, unsafe: 0/27,  time: 806.147; 586.349; 15831.427
+concrete  [4.424798473469519, -0.8502432030896453, -0.20435239826523674, -1.907038055559021, 4.393403383081344, -3.346075323831498, -6.304900596013862, 1.9559016317502413, 0.6242497576066043, 3.53137462159278]
+img 40 not considered, incorrectly classified
+progress: 41/100, correct:  27/41, verified: 14/27, unsafe: 0/27,  time: 0.503; 586.349; 15831.427
+concrete  [-1.4032456777386726, -4.060664420134988, 2.3440064936395206, 2.1018108776202094, 3.3576303066110107, 0.4394117053041771, 5.790613271297699, 0.9916361016774848, -4.806848699618392, -3.27493144522145]
+nlb  [-2.996403664672516, -5.521464176198083, 1.0596216883725615, 0.8946263926583383, 1.9962329664253446, -1.1086843528341652, 4.381220673316085, -0.4763751499891738, -6.3355021427460985, -4.564367382463526]  nub  [0.3213294896328443, -2.525212432513945, 3.719022174704708, 3.0856431657151018, 4.573396747115039, 1.662918951742414, 6.949535731371262, 2.6372774571321917, -2.9874733742924704, -1.8096894768579344] adv labels  None
+img 41 Verified 6
+progress: 42/100, correct:  28/42, verified: 15/28, unsafe: 0/28,  time: 1.211; 565.451; 15832.638
+concrete  [-0.726827530946329, -3.4413598003603036, 1.2583236609022044, 3.839838218171497, -0.5571536198737256, 6.543637503846013, -2.896204811970934, 3.100196265791359, -4.622612264902085, -0.4217357511455828]
+nlb  [-1.809564221909246, -4.792305008716829, -0.1306859913322014, 2.9331347000524555, -1.6357566082646822, 5.333034512586787, -4.06415082645223, 2.0094128697237834, -6.094302333468249, -1.6917248575948318]  nub  [0.4657107468700761, -1.6590236963870773, 2.4429124154142885, 4.714613491491373, 0.3492879695271232, 7.579197244686112, -1.758122372021368, 4.450753951441306, -3.5343235091943845, 1.0320484873214415] adv labels  None
+img 42 Verified 5
+progress: 43/100, correct:  29/43, verified: 16/29, unsafe: 0/29,  time: 1.129; 545.992; 15833.767
+concrete  [-3.7416308603053214, -1.4003526920568503, -0.22526366057424224, 2.1767812504438653, 3.3423315575134445, 0.9300931427949664, 2.8481520045612805, -0.8451036088849293, 1.706818723471681, -2.528191378326397]
+img 43 not considered, incorrectly classified
+progress: 44/100, correct:  29/44, verified: 16/29, unsafe: 0/29,  time: 0.597; 545.992; 15833.767
+concrete  [7.600562821076688, 0.03883227040168702, 4.3909991692752, -7.4099579348609, 3.1323381226770297, -7.977598807473752, -5.573923916071877, -2.4558199331150665, 7.623124410554221, 3.189528365113982]
+img 44 not considered, incorrectly classified
+progress: 45/100, correct:  29/45, verified: 16/29, unsafe: 0/29,  time: 0.604; 545.992; 15833.767
+concrete  [0.34278560368752825, 4.695613296085441, -3.667339706110876, -0.4102550516206092, -0.39549395144248406, -1.848464294096368, -2.447272239521032, -1.7336325321968584, 1.2348415868821803, 7.992794728995339]
+nlb  [-1.600261904745962, 2.7554574088183474, -5.078023704246561, -1.7218890117318668, -1.718629133063944, -3.424497620363622, -3.8160096416339613, -3.54221112580479, -0.616903664622541, 6.3710376311443415]  nub  [2.171079561944442, 6.357425285267921, -2.0876963065218543, 0.90604717229097, 1.1185885369579998, -0.2634135840207439, -0.9609294336256069, -0.04638614067757878, 3.1123802213226406, 9.570704116752424] adv labels  None
+img 45 Verified 9
+progress: 46/100, correct:  30/46, verified: 17/30, unsafe: 0/30,  time: 1.258; 527.834; 15835.025
+concrete  [-7.534944233635299, -6.714462658481164, 4.355607441815722, 6.743987929716661, 1.4754398641079052, 6.300446397464803, 3.6785163825994736, -0.026803556121994757, -3.411948438533091, -2.0713731579693193]
+nlb  [-9.140437806473411, -8.68922845266252, 2.8505254959126622, 5.387832999336741, 0.12297645533724452, 4.844128964062995, 2.144638869066531, -1.7687075019885874, -5.419391030971318, -3.94593928707681]  nub  [-5.661551372737718, -4.881300166250386, 5.658344148298753, 7.796675719283335, 3.074914851709235, 7.667292679822426, 4.982162444739636, 2.5384861301239217, -1.6124432902633454, -0.12633551672752108] adv labels  None
+krelu: n 70 split_zero 551 after cutoff 179 number of args 551
+total k-activation time: 0.447. Time for input: 0.011. Time for k-activation constraints 0.436.
+krelu: n 70 split_zero 126 after cutoff 115 number of args 126
+total k-activation time: 0.438. Time for input: 0.003. Time for k-activation constraints 0.436.
+Refinement of bounds time: 1201.982. MILP used: True. 67 bounds refined.
+krelu: n 70 split_zero 28 after cutoff 28 number of args 28
+total k-activation time: 0.435. Time for input: 0.001. Time for k-activation constraints 0.434.
+Model status: 2, Objval against label 5: -0.8227, Final solve time: 0.479
+nlb  [-9.078354788101501, -8.499814323892076, 2.999543885067707, 5.480795281217405, 0.18716583188148578, 4.965003432616309, 2.2688655374843414, -1.6114471062189852, -5.26779097278308, -3.854579088288741]  nub  [-5.815684765838295, -4.989014011923148, 5.558661525255498, 7.75741069398467, 2.941739727333222, 7.589389035029817, 4.919802735132792, 2.26312602711513, -1.6981236463425566, -0.2663948761735954] adv labels  None
+img 46 Failed
+progress: 47/100, correct:  31/47, verified: 17/31, unsafe: 0/31,  time: 1206.238; 549.718; 17041.262
+concrete  [-2.243318654962111, -1.4677848081117892, -0.8773214657080104, 2.257916963949749, -0.1651434295587361, 1.4921385882316494, 1.0843994649227335, 1.2897885632113006, 0.6105630474936447, -0.14684457265727424]
+img 47 not considered, incorrectly classified
+progress: 48/100, correct:  31/48, verified: 17/31, unsafe: 0/31,  time: 0.579; 549.718; 17041.262
+concrete  [-2.8912749831163276, -6.870740218110842, 3.1751305090245805, 0.6360891093200325, 6.206394170101151, 2.2201331141784197, 2.21625232967318, 6.958671837958226, -5.122003063371269, -3.834741673391202]
+nlb  [-4.9399623740893785, -8.677879301428714, 1.4364262143691622, -0.8725751735768634, 4.574127140740229, 0.3478957069092098, 0.5690911995191866, 4.239898935983156, -7.3473668643474594, -6.014180952539796]  nub  [-0.4080987078339365, -4.393588458390249, 4.975451097481444, 1.9819184495487665, 7.56346662892506, 3.5006827872274595, 3.955215151957593, 9.306760776241802, -2.8610674964858895, -1.7335598499330684] adv labels  None
+krelu: n 70 split_zero 440 after cutoff 163 number of args 440
+total k-activation time: 0.458. Time for input: 0.009. Time for k-activation constraints 0.450.
+krelu: n 70 split_zero 170 after cutoff 157 number of args 170
+total k-activation time: 0.450. Time for input: 0.004. Time for k-activation constraints 0.446.
+Refinement of bounds time: 1202.997. MILP used: True. 66 bounds refined.
+krelu: n 70 split_zero 34 after cutoff 33 number of args 34
+total k-activation time: 0.444. Time for input: 0.001. Time for k-activation constraints 0.443.
+Model status: 2, Objval against label 4: -1.7218, Final solve time: 0.466
+nlb  [-4.742022965612023, -8.504657551052569, 1.6131933368716402, -0.7506337965543477, 4.758857403847481, 0.5374988862450755, 0.7350393051947753, 4.507722471804426, -7.204127055912484, -5.846949030337032]  nub  [-0.6362283517828792, -4.649081181109424, 4.786464748923251, 1.8593780463327707, 7.4612502435071955, 3.3921754551633816, 3.850981321867696, 9.139622319109932, -3.1357350730493163, -1.8807149524995856] adv labels  None
+img 48 Failed
+progress: 49/100, correct:  32/49, verified: 17/32, unsafe: 0/32,  time: 1207.466; 570.273; 18248.729
+concrete  [-2.009709711049186, -4.986177463039814, 4.430425629074775, 0.7838325402403157, 4.811141025488055, 1.0803769770573324, 5.226899564272932, 1.7208424114448198, -4.882230564405984, -4.3184613709005735]
+nlb  [-3.9799722798814354, -7.201721522441553, 2.6647975731533506, -0.9157937850786622, 3.050571102661692, -0.7612780088555382, 3.238405119333885, -0.9108830989130404, -6.8552737495922855, -6.24324801465287]  nub  [0.07795016637170425, -2.4296439896635786, 6.238482192566793, 2.27022816110997, 6.609373203400745, 2.827124916478976, 6.8793272657654105, 3.9533467913318967, -2.8032526149109867, -2.08537898186894] adv labels  None
+krelu: n 70 split_zero 489 after cutoff 208 number of args 489
+total k-activation time: 0.467. Time for input: 0.009. Time for k-activation constraints 0.457.
+krelu: n 70 split_zero 165 after cutoff 152 number of args 165
+total k-activation time: 0.459. Time for input: 0.003. Time for k-activation constraints 0.456.
+Refinement of bounds time: 1203.148. MILP used: True. 74 bounds refined.
+krelu: n 70 split_zero 43 after cutoff 42 number of args 43
+total k-activation time: 0.460. Time for input: 0.001. Time for k-activation constraints 0.459.
+Model status: 2, Objval against label 2: -1.4135, Final solve time: 0.479
+nlb  [-3.8068622732545596, -7.060965023171869, 2.8742475454332537, -0.7382482815858881, 3.225832049283943, -0.6014668422960602, 3.4782881727657093, -0.581368525568357, -6.719575571392155, -6.115653473620753]  nub  [-0.1104359462226958, -2.7037121052095667, 6.024712558720609, 2.134563871894296, 6.504393481151338, 2.696549034884437, 6.78610273817935, 3.706178244698555, -2.976928819785106, -2.326853265034607] adv labels  None
+img 49 Failed
+progress: 50/100, correct:  33/50, verified: 17/33, unsafe: 0/33,  time: 1207.554; 589.584; 19456.282
+concrete  [-0.4187221212389156, -0.4941614226629418, 2.518250614454773, -1.3858392618114348, -2.9640881918721393, -4.252314467451063, 0.5867055986990146, 0.7534165374253615, 1.948710352124233, 5.525065545001095]
+nlb  [-1.626973132404969, -2.1121497287732445, 1.362896742311103, -2.3342345977090257, -4.096578797626858, -5.373192247102883, -0.687323518555577, -0.6377009086611802, 0.7600261919595872, 4.33408373834561]  nub  [0.7789821011550002, 1.347430588804321, 3.641029088473624, -0.28673155587008403, -1.9568170222160022, -2.957493594611067, 1.8393664328605104, 1.7984485710466795, 3.0172288881030593, 6.907842347508837] adv labels  None
+img 50 Verified 9
+progress: 51/100, correct:  34/51, verified: 18/34, unsafe: 0/34,  time: 1.209; 572.279; 19457.491
+concrete  [0.6390557669521996, -0.3290002517391013, -0.6530086141869731, -2.001680244388694, -0.4062950834418723, -3.477403228837965, 0.38733239820345905, 0.9325644842188368, 4.778984077294899, 1.3101381470548799]
+nlb  [-1.7991328092233714, -3.275418593321531, -2.6940911490073938, -3.8182949587917556, -2.318030572795927, -5.275295842105143, -1.7867123856398508, -2.161843827045659, 2.1066699949059795, -1.3058358994974968]  nub  [3.2982802414738104, 2.6143824558787006, 1.7011238468520087, 0.10723256782649883, 1.9034929822295628, -1.4510462425838293, 2.602295202173216, 3.5993263206148884, 6.7099120088025455, 3.554262722098817] adv labels  None
+krelu: n 70 split_zero 473 after cutoff 212 number of args 473
+total k-activation time: 0.505. Time for input: 0.009. Time for k-activation constraints 0.495.
+krelu: n 70 split_zero 206 after cutoff 190 number of args 206
+total k-activation time: 0.474. Time for input: 0.005. Time for k-activation constraints 0.469.
+Refinement of bounds time: 1201.916. MILP used: True. 30 bounds refined.
+krelu: n 70 split_zero 49 after cutoff 49 number of args 49
+total k-activation time: 0.471. Time for input: 0.002. Time for k-activation constraints 0.469.
+Used simplex terminate
+Model status: 11, Objval against label 7: 0.0000, Final solve time: 0.473
+Model was not successful status is 11
+nlb  [-1.699868909281568, -3.17970414297807, -2.5589405157877487, -3.7628670685274708, -2.305192791186334, -5.206501824019445, -1.7294371438374954, -1.9601515828502958, 2.2204004797538466, -1.1932522566119605]  nub  [3.2146395583033773, 2.4036494427522936, 1.6295522432640028, 0.024975902985392796, 1.8246784484247105, -1.5236571416665765, 2.5294231558437397, 3.5186509501915544, 6.682367661892833, 3.499167005126236] adv labels  None
+img 51 Failed
+progress: 52/100, correct:  35/52, verified: 18/35, unsafe: 0/35,  time: 1207.014; 590.414; 20664.505
+concrete  [0.8288575721864355, -3.379116805201385, 0.5001216682375809, 0.16314489603342364, 0.8835035471011782, 1.0467058186323344, 4.081286644462228, 2.426492598098565, -1.2336001649417945, -2.438051565694608]
+img 52 not considered, incorrectly classified
+progress: 53/100, correct:  35/53, verified: 18/35, unsafe: 0/35,  time: 0.689; 590.414; 20664.505
+concrete  [-3.3730280021344954, -3.0963882220716603, 0.5830711243507328, 3.5378334349701155, 2.674338925148099, 3.582623690637351, 2.7433988921282446, 2.7538525744642914, -5.791735125468522, -0.9684072705808857]
+img 53 not considered, incorrectly classified
+progress: 54/100, correct:  35/54, verified: 18/35, unsafe: 0/35,  time: 0.678; 590.414; 20664.505
+concrete  [8.4736233448502, 3.3924972714674975, -4.324049877299131, -4.213400323472088, -2.2069033274600156, -6.631232528042061, -7.138698440688544, -4.716624704290422, 16.20264934105249, 4.387211239978377]
+nlb  [6.463359619094758, 1.859919752814478, -5.886229900662034, -5.345537840403961, -3.5723628075809875, -8.149065665749236, -8.377151401422102, -6.428458960973654, 14.209054841885324, 2.8207226992512697]  nub  [9.923615668164292, 5.155134602496155, -2.573168289046939, -2.9188701350490422, -0.8320436123405563, -5.131641566169693, -5.736474434697814, -2.881724603268409, 17.88545742140208, 5.964495354148088] adv labels  None
+img 54 Verified 8
+progress: 55/100, correct:  36/55, verified: 19/36, unsafe: 0/36,  time: 1.169; 574.046; 20665.674
+concrete  [3.0061382110137096, -1.8351920645762185, 1.0118938009682876, -1.5355711665404108, 1.0892415308021999, -2.6971766897475695, -1.216336437275622, -3.9597159645351705, 6.994343353499254, 0.558248601124968]
+nlb  [1.404692929326664, -3.545902696700688, -0.5896259750711577, -2.769357891289082, -0.09085099018223067, -4.18847178645568, -2.451529199418462, -5.80786578504973, 5.219509103029555, -0.9875222189040282]  nub  [4.5654687842366135, 0.10394714364331671, 2.4822172998747836, -0.4028832132711757, 2.4466233039458993, -1.4318178283433514, 0.21081144605321106, -1.8961456077585346, 8.39946319799289, 2.1706339619807227] adv labels  None
+img 55 Verified 8
+progress: 56/100, correct:  37/56, verified: 20/37, unsafe: 0/37,  time: 1.104; 558.562; 20666.778
+concrete  [-0.6880166244796861, -6.299985393205904, 1.1656364642155346, 4.512826984527519, 2.245117540865413, 4.512483132142729, -0.17934268891761657, 7.171734126652954, -6.120909517051912, -2.54463218303533]
+nlb  [-2.0687444284532743, -7.867374445797832, 0.09157586202935847, 3.418661639070129, 1.2662344418734688, 3.3619521578528917, -1.4617980734831866, 5.903843611077389, -7.487041170047414, -3.854691158638035]  nub  [0.7845588911537082, -4.791331359229114, 2.3287210860425636, 5.421180414251441, 3.384511382031169, 5.513333315591514, 1.0288493547536361, 8.874519725094407, -4.911778100066294, -1.3460218171863871] adv labels  None
+img 56 Verified 7
+progress: 57/100, correct:  38/57, verified: 21/38, unsafe: 0/38,  time: 1.293; 543.897; 20668.072
+concrete  [-2.0352655635441304, -1.5273905735691136, 0.9075868862809001, 1.1718454525954247, -0.4326026853964763, 1.1672688084428187, 4.023911785352925, 0.7596648700692151, 0.2954640200011424, -1.613230631809301]
+img 57 not considered, incorrectly classified
+progress: 58/100, correct:  38/58, verified: 21/38, unsafe: 0/38,  time: 0.676; 543.897; 20668.072
+concrete  [-1.5265629779398955, -4.958085088953749, 1.6371326741391465, 2.1464516633054447, 1.0875441815139337, 1.6389169925372689, 2.5314223969010046, -1.161978856986224, 1.75698635272816, -1.1318598074060238]
+img 58 not considered, incorrectly classified
+progress: 59/100, correct:  38/59, verified: 21/38, unsafe: 0/38,  time: 0.713; 543.897; 20668.072
+concrete  [-2.0806011692501105, -2.101865568692943, 3.3464762808826536, 2.9621867573408136, 2.1171992298097773, 1.4559327750837787, 2.466074330592947, 1.547583994426845, -2.0250249504992928, -4.842078101458776]
+img 59 not considered, incorrectly classified
+progress: 60/100, correct:  38/60, verified: 21/38, unsafe: 0/38,  time: 0.549; 543.897; 20668.072
+concrete  [-3.502883693522507, -6.489160558296241, 1.4556873649071331, -0.396627700529788, 7.290551916839018, 1.0712254115242823, 3.1998552919135315, 13.505811313525157, -6.1237684918762625, -6.939122791098291]
+nlb  [-5.5221779990160975, -8.483356681940478, -0.22631390549384142, -2.0163579332454993, 5.584107866860533, -0.6458288235743663, 1.400910958852986, 10.600165173918805, -8.106945017018118, -8.616426713784179]  nub  [-1.2196799715482818, -4.208865142303594, 3.4932118100297282, 1.081746239586598, 8.756499947553642, 2.642301929889314, 4.785488548670618, 15.538500050527713, -4.284590598271343, -4.461674883678481] adv labels  None
+img 60 Verified 7
+progress: 61/100, correct:  39/61, verified: 22/39, unsafe: 0/39,  time: 1.323; 529.984; 20669.395
+concrete  [-5.250990155370425, -8.123578072282013, 3.6037617446768695, 5.928885988437326, 3.1889247915462717, 5.195401829062718, 4.318804615134226, 4.920875079752319, -5.784924731433816, -4.537980440621399]
+nlb  [-6.621889264114705, -9.772892245877696, 2.1634200285831824, 4.596613741544468, 1.7069612112106367, 3.6649780155838316, 2.7603383439735403, 2.8885716803270802, -7.423788132121236, -6.186651573430167]  nub  [-3.416773372112151, -5.989433723537011, 4.866021314331428, 7.08545621851852, 4.4977420429363955, 6.573551997133371, 5.710161681674486, 6.455154498256999, -4.094537977198676, -2.7678063257398486] adv labels  None
+krelu: n 70 split_zero 461 after cutoff 140 number of args 461
+total k-activation time: 0.477. Time for input: 0.009. Time for k-activation constraints 0.468.
+krelu: n 70 split_zero 119 after cutoff 104 number of args 119
+total k-activation time: 0.469. Time for input: 0.003. Time for k-activation constraints 0.466.
+Refinement of bounds time: 1191.194. MILP used: True. 71 bounds refined.
+krelu: n 70 split_zero 22 after cutoff 21 number of args 22
+total k-activation time: 0.470. Time for input: 0.001. Time for k-activation constraints 0.469.
+Used simplex terminate
+Model status: 11, Objval against label 5: 0.0000, Final solve time: 0.473
+Model was not successful status is 11
+nlb  [-6.54200856887727, -9.695659376286041, 2.326389973333371, 4.746259045977322, 1.853556586458206, 3.8085141542371144, 2.899947054366856, 3.1169727852133966, -7.288410454729502, -6.037260934652881]  nub  [-3.6218786897083106, -6.1826003500061555, 4.755112800344202, 6.977649486230511, 4.326948583154578, 6.446438943413188, 5.638448070773367, 6.35257588204809, -4.279025540732056, -2.900598208226136] adv labels  None
+img 61 Failed
+progress: 62/100, correct:  40/62, verified: 22/40, unsafe: 0/40,  time: 1196.040; 546.636; 21865.435
+concrete  [-0.27640845691351645, 0.4802192750504359, 0.24226133263010827, -0.12932097310892304, 1.9928964736511667, -0.297639914219955, 5.051428878247046, 1.5960971246903015, -2.2358993243758376, -3.6378452913480985]
+nlb  [-1.6471272138982826, -1.0534558103846954, -0.8735101215304011, -1.2046804369730817, 0.9843276948701097, -1.4725462843329502, 3.5520275947217494, 0.1746635785684765, -3.512157731196714, -5.047419022593286]  nub  [1.208737042802212, 1.9439483353979905, 1.3774087852988401, 0.793073514705005, 3.1244462311296655, 0.8245912582129296, 6.335455387840565, 2.9105836311915128, -0.8242057520874243, -2.0772404069511547] adv labels  None
+img 62 Verified 6
+progress: 63/100, correct:  41/63, verified: 23/41, unsafe: 0/41,  time: 1.176; 533.332; 21866.611
+concrete  [0.12490782378895063, 0.9371916019465681, 1.3041930812065605, 2.722389606997085, 1.2447635473628227, 0.18515396634754655, -3.2990524708689986, -1.4571036431553197, -3.3368915444357343, 4.44473321372225]
+img 63 not considered, incorrectly classified
+progress: 64/100, correct:  41/64, verified: 23/41, unsafe: 0/41,  time: 0.732; 533.332; 21866.611
+concrete  [-1.4099899730370227, -0.954362191808203, 1.8634280246136985, 1.7565425444831193, 0.6262347914122419, 3.072397479532073, 3.8917138803089455, 0.18825171143741778, -5.885682744008972, -1.156540589399083]
+nlb  [-3.4023399758668087, -3.39593731575175, -0.12529120590974122, -0.09425305572846668, -1.0004613163439267, 0.8770091114648721, 1.600036446027788, -2.087863168872029, -8.138244106367166, -3.5194522101568295]  nub  [0.5773594499104416, 1.6394648676567387, 3.876541519574853, 3.141616494292156, 2.7335909997400636, 4.644587005287054, 5.748196263430993, 2.888265510852192, -3.4955406357419903, 1.3841679984669841] adv labels  None
+krelu: n 70 split_zero 620 after cutoff 157 number of args 620
+total k-activation time: 0.480. Time for input: 0.012. Time for k-activation constraints 0.468.
+krelu: n 70 split_zero 145 after cutoff 136 number of args 145
+total k-activation time: 0.479. Time for input: 0.003. Time for k-activation constraints 0.476.
+Refinement of bounds time: 1203.793. MILP used: True. 71 bounds refined.
+krelu: n 70 split_zero 35 after cutoff 35 number of args 35
+total k-activation time: 0.469. Time for input: 0.001. Time for k-activation constraints 0.467.
+Used simplex terminate
+Model status: 11, Objval against label 2: 0.0000, Final solve time: 0.500
+Model was not successful status is 11
+nlb  [-3.2666396748339706, -3.2174629965455233, 0.043438198167377644, 0.08804035105833492, -0.9276452995176272, 1.1309445104451106, 1.8179058303741762, -1.8835106704581037, -7.9773845490969935, -3.355718960346666]  nub  [0.4529709969093009, 1.4303399747439463, 3.683789395713366, 3.063506593061371, 2.4682501863666144, 4.588039922543737, 5.630509154098313, 2.588814996098142, -3.6978673960231285, 1.186188726694954] adv labels  None
+img 64 Failed
+progress: 65/100, correct:  42/65, verified: 23/42, unsafe: 0/42,  time: 1208.919; 549.417; 23075.530
+concrete  [-3.835872532696861, -3.343626980231986, 6.534482880433792, 2.1320955822425915, 4.187020232002676, -0.9700479450314844, 3.8537371045542295, 1.8589335348635105, -4.9817083585463955, -3.811078905562187]
+nlb  [-5.895415610423833, -5.437710734330169, 4.699365119606359, 0.5800604867748532, 2.212229198511405, -2.803620930959991, 1.853055427119227, -0.33839925097831, -6.930058925178354, -5.577186093845152]  nub  [-1.8393673347193076, -1.238623715089191, 7.8002773440735735, 3.5521134052092207, 5.7375832941341685, 1.0820110423826603, 5.639095596268762, 4.147317077223415, -2.461285179782876, -1.3706642435952665] adv labels  None
+img 65 Verified 2
+progress: 66/100, correct:  43/66, verified: 24/43, unsafe: 0/43,  time: 1.117; 536.666; 23076.647
+concrete  [4.395965513929636, 5.82040054845668, -0.4806178413008471, -3.4662195476533695, -2.547519852679059, -4.735475952904128, 1.2622646418851, -5.193929295629219, 5.501306225504467, 2.095559668898318]
+nlb  [2.4321270267504715, 4.131113431685881, -2.043648643991063, -4.535886960638523, -3.7812893800604583, -6.085239601825906, -0.07066964197569901, -6.961463252184536, 3.5771982368793767, 0.7698745854597157]  nub  [5.856771234662073, 7.3108530142441035, 0.8407428606613042, -2.1496742562267883, -1.1116151253360727, -3.2104413124150963, 2.761561269211229, -3.1988264524987517, 7.12011096459734, 3.7170356341264106] adv labels  None
+krelu: n 70 split_zero 498 after cutoff 139 number of args 498
+total k-activation time: 0.480. Time for input: 0.010. Time for k-activation constraints 0.470.
+krelu: n 70 split_zero 121 after cutoff 107 number of args 121
+total k-activation time: 0.490. Time for input: 0.003. Time for k-activation constraints 0.488.
+Refinement of bounds time: 907.979. MILP used: True. 65 bounds refined.
+krelu: n 70 split_zero 17 after cutoff 17 number of args 17
+total k-activation time: 0.470. Time for input: 0.001. Time for k-activation constraints 0.469.
+Model status: 2, Objval against label 0: -0.6248, Final solve time: 0.473
+nlb  [2.5818898493038436, 4.236711558510492, -1.8983375853832876, -4.467201184160275, -3.7186435977081786, -5.97194764803083, 0.041285573021450604, -6.84182929853675, 3.6736075956445853, 0.850941188837714]  nub  [5.818610449220149, 7.230692427734495, 0.7740386362798323, -2.247562355768946, -1.2716588305508318, -3.299440612150527, 2.624910930298284, -3.362469977988613, 7.0197662885422245, 3.5533468526023] adv labels  None
+img 66 Failed
+progress: 67/100, correct:  44/67, verified: 24/44, unsafe: 0/44,  time: 912.256; 545.202; 23988.903
+concrete  [7.932375140832933, -2.663333150784779, 4.145422055122531, -3.0822621367585117, 1.7834153020775574, -1.7447762777545583, -1.4103597812643478, -2.250255765272893, 3.150813551490007, -3.514485062327715]
+img 67 not considered, incorrectly classified
+progress: 68/100, correct:  44/68, verified: 24/44, unsafe: 0/44,  time: 0.486; 545.202; 23988.903
+concrete  [-4.279327882200446, -3.264569431913454, 0.9731966336780344, 5.0286563230424886, 2.1558644530777133, 4.618909294620625, -0.8635026249779062, -0.337015370608398, -2.7300990623362713, 0.546901946085327]
+nlb  [-5.865605631518176, -4.506600989197377, -0.18309403836166555, 3.901081801941624, 0.8950548756782244, 3.364259537940964, -2.0813277884327412, -1.7536120548176173, -4.353983692621057, -0.6921488734259569]  nub  [-2.968959195875053, -1.6728565232095207, 2.2660374780392023, 5.919047338492514, 3.187693370914412, 5.694470414105756, 0.28943020371788225, 1.4305544707451558, -1.2287766319777509, 2.0937914007974916] adv labels  None
+krelu: n 70 split_zero 373 after cutoff 142 number of args 373
+total k-activation time: 0.478. Time for input: 0.007. Time for k-activation constraints 0.470.
+krelu: n 70 split_zero 107 after cutoff 94 number of args 107
+total k-activation time: 0.470. Time for input: 0.002. Time for k-activation constraints 0.468.
+Refinement of bounds time: 802.198. MILP used: True. 64 bounds refined.
+krelu: n 70 split_zero 17 after cutoff 15 number of args 17
+total k-activation time: 0.479. Time for input: 0.001. Time for k-activation constraints 0.478.
+Model status: 2, Objval against label 5: -0.6385, Final solve time: 0.464
+nlb  [-5.717804332646796, -4.441323611625839, -0.08452931174819467, 3.985915079486824, 0.986467443321762, 3.4758249654503675, -1.9828916325064534, -1.7051843667508066, -4.260949377216512, -0.6428937323367929]  nub  [-3.02617872450744, -1.7932340168786431, 2.133250911540546, 5.894505696331121, 3.117698704064955, 5.64934255525137, 0.21496789246258713, 1.3089291894285375, -1.3141088852704503, 1.9428899262497894] adv labels  None
+img 68 Failed
+progress: 69/100, correct:  45/69, verified: 24/45, unsafe: 0/45,  time: 806.508; 551.009; 24795.411
+concrete  [-1.671455919087254, 3.3067214982039683, -0.11141197638193859, 1.2157014118486622, -1.435615586256832, -0.35694066426377996, -4.490023803032999, 1.3409678146615474, -0.022015855623270783, 4.59615167479825]
+img 69 not considered, incorrectly classified
+progress: 70/100, correct:  45/70, verified: 24/45, unsafe: 0/45,  time: 0.752; 551.009; 24795.411
+concrete  [2.311694989129946, -4.572411217933688, 2.4615497791459338, 0.5629813703569329, 2.2567469240600335, -1.2061886070742731, 0.4752987430525228, -0.7991783172238519, 1.794790084650006, -1.4772603906997712]
+nlb  [0.024878607978426504, -6.6988044069212105, 0.3919958079090749, -1.109867084533053, 0.4578665506531231, -3.271732510567754, -1.4613617628624793, -3.398450417423116, -0.39834709429635967, -3.565107928268781]  nub  [4.768610493414288, -2.318933928927632, 4.64179058504472, 2.1903923489015105, 4.290337379152006, 0.7674243996737707, 2.1944263086930147, 1.565284253203989, 4.022155854632128, 0.36322404757458127] adv labels  None
+krelu: n 70 split_zero 736 after cutoff 251 number of args 736
+total k-activation time: 0.486. Time for input: 0.015. Time for k-activation constraints 0.471.
+krelu: n 70 split_zero 168 after cutoff 149 number of args 168
+total k-activation time: 0.471. Time for input: 0.003. Time for k-activation constraints 0.467.
+Refinement of bounds time: 1201.885. MILP used: True. 15 bounds refined.
+krelu: n 70 split_zero 41 after cutoff 41 number of args 41
+total k-activation time: 0.471. Time for input: 0.002. Time for k-activation constraints 0.470.
+Model status: 2, Objval against label 0: -3.2185, Final solve time: 0.530
+nlb  [0.0972076472455432, -6.658421535528364, 0.4207692125558809, -1.0599674428319403, 0.49943172127159424, -3.224124970049794, -1.3958572305522066, -3.348702021404646, -0.3347651414449507, -3.5119906647944825]  nub  [4.714510742069995, -2.3993385848641737, 4.5726579232551545, 2.1578301756107576, 4.251302999914166, 0.7397162063149142, 2.157094771152341, 1.4559872024574463, 3.9671662996861015, 0.3308542705803184] adv labels  None
+img 70 Failed
+progress: 71/100, correct:  46/71, verified: 24/46, unsafe: 0/46,  time: 1206.141; 565.251; 26001.551
+concrete  [-3.621064355936425, -1.4949318673496612, 0.23139140498500735, 2.065731144611852, 1.3067492624506805, 1.218211326011379, 4.787690029788707, 2.7700820611231953, -5.186662492798839, 0.21085950274296172]
+nlb  [-5.856347957404073, -3.7600542053144888, -1.5062077319148857, 0.5394556610448916, -0.47128411762985895, -0.5025896688859357, 2.7235491912580643, 0.4860765475664423, -7.282909445138758, -1.9437064655739156]  nub  [-1.5289463299232597, 0.7473160055448324, 2.12380941916866, 3.53754671398325, 3.2950039926837644, 3.078947878433337, 6.304538178486771, 4.780701063302282, -2.773881548012849, 2.3935384042887575] adv labels  None
+krelu: n 70 split_zero 554 after cutoff 193 number of args 554
+total k-activation time: 0.483. Time for input: 0.011. Time for k-activation constraints 0.472.
+krelu: n 70 split_zero 165 after cutoff 149 number of args 165
+total k-activation time: 0.478. Time for input: 0.004. Time for k-activation constraints 0.474.
+Refinement of bounds time: 1202.873. MILP used: True. 55 bounds refined.
+krelu: n 70 split_zero 30 after cutoff 30 number of args 30
+total k-activation time: 0.470. Time for input: 0.001. Time for k-activation constraints 0.469.
+Model status: 2, Objval against label 7: -0.8047, Final solve time: 0.511
+nlb  [-5.732824669884311, -3.6468369729160104, -1.392521560487308, 0.6455705870100154, -0.3455094131818735, -0.3492833668105957, 2.8581093015005536, 0.6557212273206247, -7.2156019981213015, -1.8234885665660931]  nub  [-1.6446424279137335, 0.598889953818698, 2.017787371251716, 3.4481819966142035, 3.1735528988277393, 2.9843338066234892, 6.260221109828752, 4.697792576194864, -2.9739716061512085, 2.2253960681179468] adv labels  None
+img 71 Failed
+progress: 72/100, correct:  47/72, verified: 24/47, unsafe: 0/47,  time: 1207.492; 578.916; 27209.043
+concrete  [4.438268966717276, -2.7899909821870215, 1.4557694308972267, -2.1152963326145806, 0.9861300575852684, -3.8802756908878764, -0.14938130210796083, -3.918017650285571, 8.26318268464435, -0.08707703652575063]
+nlb  [2.7375905476872178, -4.271714438266775, -0.0904964933267793, -3.4053202894765198, -0.35476971132572277, -5.491635276411204, -1.6708146688207055, -5.863189875362949, 6.591420029485834, -1.602377929459079]  nub  [6.096720709071168, -0.8072083325032194, 2.9696174211310264, -0.9307074865123649, 2.536821056114091, -2.461873180818687, 1.1906241075370152, -1.912588369550328, 9.828786091416728, 1.2873703563285872] adv labels  None
+img 72 Verified 8
+progress: 73/100, correct:  48/73, verified: 25/48, unsafe: 0/48,  time: 1.073; 566.877; 27210.116
+concrete  [3.969430967540735, 0.004539921653574482, 1.571782504649259, -2.0886003169755254, -1.6687184458007738, -4.256182734643673, -0.8222701084779401, -5.052644521295866, 9.16328797788546, 0.8603463836548355]
+nlb  [2.079733719539977, -1.9495494769617747, -0.29826295687555454, -3.5877082155733695, -3.162793400840263, -5.956848949113923, -2.475042815171822, -6.919662209221419, 7.283406338339764, -0.803476224281324]  nub  [5.681588059621106, 2.4266225657619764, 3.0259086962987496, -0.8240749696191234, 0.15139262880605478, -2.600534402812286, 0.536484887496573, -2.7176026162080347, 10.800784283432847, 2.587350171125921] adv labels  None
+img 73 Verified 8
+progress: 74/100, correct:  49/74, verified: 26/49, unsafe: 0/49,  time: 1.170; 555.332; 27211.286
+concrete  [4.10549866061033, 0.9651935073961653, 0.8014550491264288, -3.3374604207582905, 2.4196427630153097, -5.063790620452321, -3.645939120132394, 0.3634264259131857, 3.058765614045145, 2.309124590426182]
+nlb  [2.766452026216424, -0.3586861429121275, -0.7970147972776845, -4.4623596607048945, 1.079472103674804, -6.456268532957369, -4.959527104228366, -1.4103622286437931, 1.684205821765766, 1.2097305714809945]  nub  [5.274984916333142, 2.784219066643786, 1.9160583864566987, -2.332728157190751, 3.474018744637815, -3.804606356990984, -2.2862499280083735, 2.301735036739839, 4.520775321014702, 3.742867878143653] adv labels  None
+krelu: n 70 split_zero 463 after cutoff 171 number of args 463
+total k-activation time: 0.478. Time for input: 0.009. Time for k-activation constraints 0.469.
+krelu: n 70 split_zero 128 after cutoff 114 number of args 128
+total k-activation time: 0.486. Time for input: 0.003. Time for k-activation constraints 0.483.
+Refinement of bounds time: 802.114. MILP used: True. 64 bounds refined.
+krelu: n 70 split_zero 19 after cutoff 18 number of args 19
+total k-activation time: 0.475. Time for input: 0.002. Time for k-activation constraints 0.473.
+Model status: 2, Objval against label 8: -0.4159, Final solve time: 0.480
+nlb  [2.8690471342344335, -0.22202302849851732, -0.6519354577818013, -4.42478439435638, 1.22837877488909, -6.3578437967472725, -4.866259996023331, -1.2861474126924795, 1.7940285556849835, 1.2808824458275463]  nub  [5.1977293765975885, 2.6085762188311, 1.8262436326163207, -2.4072087774521647, 3.3958703531982812, -3.927715488843392, -2.362003406195592, 2.171731389417464, 4.401076906678852, 3.61362673914919] adv labels  None
+img 74 Failed
+progress: 75/100, correct:  50/75, verified: 26/50, unsafe: 0/50,  time: 806.466; 560.355; 28017.752
+concrete  [-4.029360266947242, -5.1076496903460935, 4.555837296115414, 1.9874581141448902, 4.4557630722548565, 3.0208470240789214, 1.5614047820416699, 2.2182710498944513, -3.612320671616704, -2.593491820776904]
+nlb  [-5.517028495137476, -6.864407658855119, 3.270112679990271, 0.8223250623659104, 3.221529318591089, 1.502500273570055, 0.194522270239728, 0.44473108728027855, -5.410812282360107, -3.971253558943011]  nub  [-2.244549305688857, -2.9548786483612712, 6.032052903095035, 2.8296178758496806, 5.703929505000035, 4.273427251355805, 2.9601895938455924, 3.741212297006636, -2.166626193929227, -1.0227215013648399] adv labels  None
+krelu: n 70 split_zero 442 after cutoff 196 number of args 442
+total k-activation time: 0.478. Time for input: 0.008. Time for k-activation constraints 0.470.
+krelu: n 70 split_zero 133 after cutoff 117 number of args 133
+total k-activation time: 0.472. Time for input: 0.003. Time for k-activation constraints 0.469.
+Refinement of bounds time: 1202.045. MILP used: True. 63 bounds refined.
+krelu: n 70 split_zero 25 after cutoff 24 number of args 25
+total k-activation time: 0.470. Time for input: 0.001. Time for k-activation constraints 0.468.
+Model status: 2, Objval against label 4: -1.4550, Final solve time: 0.441
+nlb  [-5.425936644916325, -6.707923467926267, 3.3452159396162764, 0.9343718506565893, 3.361714572079247, 1.6077460971960806, 0.3195150148772045, 0.6348804980121405, -5.276633357249172, -3.854233089979393]  nub  [-2.413252893079015, -3.2057192275705493, 5.888002949982034, 2.7493937610128696, 5.614721694981373, 4.214958132484616, 2.834923394527828, 3.6012383636887004, -2.2732185881310105, -1.1327988057391454] adv labels  None
+img 75 Failed
+progress: 76/100, correct:  51/76, verified: 26/51, unsafe: 0/51,  time: 1206.246; 573.020; 29223.998
+concrete  [3.242643030024539, 1.30761855175763, 0.8739819017540855, -1.8441953499844412, -1.61956193131004, -1.8687545638975267, -2.07645137556925, -0.6398173043647778, 3.2101167862882845, 2.1491057778790053]
+img 76 not considered, incorrectly classified
+progress: 77/100, correct:  51/77, verified: 26/51, unsafe: 0/51,  time: 0.523; 573.020; 29223.998
+concrete  [-0.7310266789247394, -1.309485275235023, -0.40906316628760525, 4.442626431157491, -1.2143706747352119, 3.9084440367781377, 0.6716389077688711, -1.6704562500019453, 2.1696757889722136, -3.667305085649831]
+nlb  [-2.2959324715030194, -3.099777305411365, -1.869320176407905, 3.206685543209501, -2.553829866330083, 2.496705774381166, -1.1373890557857749, -3.5994185456178243, 0.5879321356412242, -5.341643069181878]  nub  [0.6599793247125594, 0.6294664449797299, 1.1122328079266472, 5.598731825419086, 0.08699777312414313, 4.919493871123209, 2.5380223472786887, 0.16864267891446708, 3.8033989847144594, -1.5553348624822594] adv labels  None
+krelu: n 70 split_zero 342 after cutoff 142 number of args 342
+total k-activation time: 0.473. Time for input: 0.007. Time for k-activation constraints 0.466.
+krelu: n 70 split_zero 115 after cutoff 104 number of args 115
+total k-activation time: 0.473. Time for input: 0.003. Time for k-activation constraints 0.471.
+Refinement of bounds time: 1048.413. MILP used: True. 65 bounds refined.
+krelu: n 70 split_zero 22 after cutoff 22 number of args 22
+total k-activation time: 0.470. Time for input: 0.001. Time for k-activation constraints 0.469.
+Model status: 2, Objval against label 5: -0.3159, Final solve time: 0.459
+nlb  [-2.1667558197825287, -2.969745576555493, -1.742038516818992, 3.2751898180391508, -2.477704110911786, 2.6188172058669514, -0.973638722071586, -3.379257603367477, 0.66193651722845, -5.2108225255258915]  nub  [0.5844562707151041, 0.5341501772510507, 0.9492355091590333, 5.518735358815283, -0.02274932657111259, 4.870385862551061, 2.3359433672564918, 0.0035786547751592086, 3.711448621554158, -1.7374953798143777] adv labels  None
+img 77 Failed
+progress: 78/100, correct:  52/78, verified: 26/52, unsafe: 0/52,  time: 1052.723; 582.245; 30276.721
+concrete  [-0.27983923401312105, -6.67864301637287, 3.714865910691704, 4.699179559048849, 0.2914787677061384, 4.037201361072257, 2.0225295538181216, 0.7763739375847546, -2.214508215952244, -4.394779050736961]
+nlb  [-2.0003960632246605, -8.150654185923274, 2.166412702356155, 3.5067262625531024, -1.3727874669884692, 2.866397238588833, 0.2648651055455949, -1.0146162616102363, -3.842654153362829, -5.858874608744007]  nub  [1.2549033895440764, -4.570889907380972, 4.823867965934414, 5.849634787598706, 1.5384137125269073, 5.307592243321695, 3.3951535990220596, 2.8374438975465077, -0.5438406699303553, -2.46640448034776] adv labels  None
+krelu: n 70 split_zero 498 after cutoff 171 number of args 498
+total k-activation time: 0.486. Time for input: 0.009. Time for k-activation constraints 0.476.
+krelu: n 70 split_zero 114 after cutoff 104 number of args 114
+total k-activation time: 0.476. Time for input: 0.003. Time for k-activation constraints 0.474.
+Refinement of bounds time: 1201.308. MILP used: True. 68 bounds refined.
+krelu: n 70 split_zero 24 after cutoff 23 number of args 24
+total k-activation time: 0.477. Time for input: 0.001. Time for k-activation constraints 0.476.
+Model status: 2, Objval against label 2: -0.2834, Final solve time: 0.521
+nlb  [-1.8434922934903923, -8.07756494904188, 2.2990882000762194, 3.598376034314152, -1.2394741873646715, 2.9629699928807893, 0.43911991023602837, -0.8425560964655697, -3.7137422369061306, -5.745716262559574]  nub  [1.169458085077693, -4.795467845853174, 4.779437164930349, 5.749920009445968, 1.427703498382694, 5.167028219210812, 3.3576101248306545, 2.6159190514430555, -0.6693721750055753, -2.6127431463529125] adv labels  None
+img 78 Failed
+progress: 79/100, correct:  53/79, verified: 26/53, unsafe: 0/53,  time: 1205.709; 594.008; 31482.430
+concrete  [4.125759483783705, 3.250040709466592, -1.7741940334140611, 0.1616593131207773, 1.7314778858585804, -4.478828326108778, -3.280490735090901, -6.061816055395609, 8.087298923920953, 1.5963375652297553]
+nlb  [3.2907797510112644, 2.1271179380609704, -2.744830738221115, -0.6824415052082583, 0.7759135072167425, -5.374092296849977, -4.341979994402705, -7.277692047771218, 6.990137209466186, 0.6016252149213164]  nub  [5.189531624336323, 4.344585446793632, -0.8396452342249615, 0.8521618376150201, 2.724606198076592, -3.603842741640161, -2.3456838364365913, -4.7323060799061585, 8.998591134917826, 2.7445087141911486] adv labels  None
+img 79 Verified 8
+progress: 80/100, correct:  54/80, verified: 27/54, unsafe: 0/54,  time: 1.073; 583.028; 31483.503
+concrete  [5.493633885314471, 2.1281676331438684, -0.642509843420408, -1.6993565595575473, -0.39819633452150155, -3.431116397377839, -5.425374045966772, -1.880599301733031, 7.44382354868986, 0.186251574823524]
+nlb  [3.7366416720133206, 0.06685406281923875, -2.0641677681107486, -2.9429953745789663, -1.7240380824352655, -4.892669238361585, -6.780958368779868, -3.5323635428527496, 5.384789155595633, -1.5056400765910192]  nub  [6.8271220566894355, 3.806540976627965, 1.0574613999455205, -0.16230273898833922, 1.0131792805343116, -1.8093389813659373, -3.7202603769404448, -0.06866539427025355, 8.974669015233184, 1.9619813692196624] adv labels  None
+krelu: n 70 split_zero 555 after cutoff 214 number of args 555
+total k-activation time: 0.480. Time for input: 0.011. Time for k-activation constraints 0.469.
+krelu: n 70 split_zero 111 after cutoff 92 number of args 111
+total k-activation time: 0.472. Time for input: 0.003. Time for k-activation constraints 0.470.
+Refinement of bounds time: 1194.310. MILP used: True. 67 bounds refined.
+krelu: n 70 split_zero 26 after cutoff 25 number of args 26
+total k-activation time: 0.475. Time for input: 0.001. Time for k-activation constraints 0.473.
+nlb  [3.9962702096720095, 0.30072275679905924, -1.9257384396828032, -2.802995707634197, -1.5412779326763193, -4.707167577568866, -6.6692562883899456, -3.2806205304272478, 5.614932193957955, -1.3153938239525482]  nub  [6.688111618199501, 3.600228420782633, 0.7746300494468505, -0.3351625610567972, 0.8844555865500148, -1.9851214135659099, -3.9437473420368665, -0.27340551483440323, 8.758576689258064, 1.7100505396337982] adv labels  None
+img 80 Verified 8
+progress: 81/100, correct:  55/81, verified: 28/55, unsafe: 0/55,  time: 1198.225; 594.213; 32681.728
+concrete  [2.8870049627855208, 5.944653201319867, -3.186514813510932, -2.2447572889449656, -4.813206315157188, -3.8160237999177866, -3.22448913554616, 4.046771664238437, 4.492385685122207, 1.6044895373077457]
+nlb  [1.60643870123529, 4.370171120665245, -4.321146238672989, -3.291685153219673, -5.990895354799156, -4.984022019114222, -4.324650894177673, 2.3801880344514736, 3.088275655178701, 0.30564901870901967]  nub  [4.146377111186782, 7.625985569716537, -1.9246768564088537, -1.1377876960718594, -3.6672650299199203, -2.668757486075532, -1.9337210505186688, 5.544742522029861, 5.568354252245794, 3.087717850324473] adv labels  None
+krelu: n 70 split_zero 424 after cutoff 181 number of args 424
+total k-activation time: 0.477. Time for input: 0.009. Time for k-activation constraints 0.469.
+krelu: n 70 split_zero 84 after cutoff 68 number of args 84
+total k-activation time: 0.471. Time for input: 0.002. Time for k-activation constraints 0.469.
+Refinement of bounds time: 783.041. MILP used: True. 65 bounds refined.
+krelu: n 70 split_zero 20 after cutoff 18 number of args 20
+total k-activation time: 0.473. Time for input: 0.001. Time for k-activation constraints 0.471.
+Model status: 2, Objval against label 7: -0.2763, Final solve time: 0.457
+nlb  [1.7090122714494886, 4.51407662087265, -4.260302210469135, -3.1982567075814146, -5.9105141947732465, -4.892370909531461, -4.233035816401953, 2.5301413821522662, 3.216983561271038, 0.427078440513204]  nub  [4.039369673861999, 7.540580110787863, -2.0882271660978726, -1.2486358471844428, -3.74710225876051, -2.767878290797389, -2.0118116625589386, 5.415285699632318, 5.493307998496459, 2.934484794253863] adv labels  None
+img 81 Failed
+progress: 82/100, correct:  56/82, verified: 28/56, unsafe: 0/56,  time: 787.303; 597.661; 33469.031
+concrete  [0.4571200137716748, 7.93525047900255, 2.3241515016472842, -1.504776799606421, 0.24890146385136483, -3.0440498940204956, 1.093965075219522, -4.694104264293421, -1.6173180871334703, 0.7526979996569142]
+nlb  [-1.3054045474932208, 6.130061521806171, 0.8929277672608902, -2.8421994228206806, -1.0194872884249957, -4.553536334076229, -0.2625573467332609, -6.4067482948636245, -3.5066339599421776, -0.8330749737878124]  nub  [2.3581753835868757, 9.496168171293435, 3.7842525864176637, -0.25265227289875447, 1.627049154109859, -1.5679202174169762, 2.4553962448278224, -2.844432799595463, 0.21083902835186114, 2.4082681107193107] adv labels  None
+img 82 Verified 1
+progress: 83/100, correct:  57/83, verified: 29/57, unsafe: 0/57,  time: 1.000; 587.194; 33470.031
+concrete  [-0.5075984405514608, -3.406609252327028, -0.4126966292878616, 1.4637333202556388, 2.7435521602757627, 1.0377097143852, -3.2724973231594268, 7.613162834144247, -1.2054005612548313, -1.514773547989867]
+nlb  [-1.858608568086878, -4.89069032944291, -2.0157381872699816, 0.49609503537667216, 1.378216409006988, -0.08969253612876343, -4.521426533601389, 5.739379275629591, -2.574302769207104, -2.883067632937462]  nub  [0.8483153297054863, -1.5358659976896127, 0.8180178718726826, 2.671516022028864, 3.8921897508685364, 2.3804439169470024, -1.8848494821068402, 8.9203740394798, 0.2538154849521439, -0.16693666668222112] adv labels  None
+img 83 Verified 7
+progress: 84/100, correct:  58/84, verified: 30/58, unsafe: 0/58,  time: 1.191; 577.090; 33471.223
+concrete  [2.092334554772691, -6.756087962020406, 3.183482211746562, 2.698944672551744, -0.7999504548913805, 1.2055000573027894, -1.4681772365153367, 2.1249589209348176, -0.1128105768550039, 0.09095054839030202]
+nlb  [1.0340954863651597, -8.207578156994426, 2.073802360922784, 1.7285265959990803, -1.9622580883303586, 0.08536023218758824, -2.6127328807743426, 0.605889656498452, -1.3098262147027273, -1.5173438924796043]  nub  [3.0596150555360113, -5.140550094355813, 4.3662728863301234, 3.6635387029336752, 0.510972874126224, 2.2834005822204007, -0.08639437216250878, 3.476411108687802, 1.0988994825921674, 1.3496666061262] adv labels  None
+krelu: n 70 split_zero 482 after cutoff 234 number of args 482
+total k-activation time: 0.481. Time for input: 0.010. Time for k-activation constraints 0.472.
+krelu: n 70 split_zero 86 after cutoff 77 number of args 86
+total k-activation time: 0.472. Time for input: 0.002. Time for k-activation constraints 0.470.
+Refinement of bounds time: 802.616. MILP used: True. 58 bounds refined.
+krelu: n 70 split_zero 15 after cutoff 14 number of args 15
+total k-activation time: 0.471. Time for input: 0.001. Time for k-activation constraints 0.470.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.446
+Model was not successful status is 11
+nlb  [1.1348908329199763, -8.096942299022155, 2.147271234063949, 1.7917979819130692, -1.870353498307424, 0.18330353648150388, -2.5522406901222543, 0.7619952355399562, -1.2237888365611225, -1.3654077664198487]  nub  [2.9836916381064946, -5.269082072138405, 4.227508086998904, 3.569257279074084, 0.4127009297352369, 2.195888734671667, -0.1862289718665075, 3.38965148162356, 0.9798206941770506, 1.2482487033140748] adv labels  None
+img 84 Failed
+progress: 85/100, correct:  59/85, verified: 30/59, unsafe: 0/59,  time: 807.280; 580.992; 34278.503
+concrete  [1.9402879214510027, -1.9797504949153595, 1.9126772921555597, -1.9108686894455664, 1.059395254989987, 0.5367752945434331, -4.131699361948587, 5.346239769155095, -2.558721549401584, 2.091905065715944]
+img 85 not considered, incorrectly classified
+progress: 86/100, correct:  59/86, verified: 30/59, unsafe: 0/59,  time: 0.631; 580.992; 34278.503
+concrete  [1.484979576630514, 1.2510208042749793, 1.7507639145704477, 1.1723910328534284, 1.137489235138314, -0.5022702218681205, -3.542959600863004, -1.9354246475148547, 2.2918312563040564, -1.3474506250951388]
+img 86 not considered, incorrectly classified
+progress: 87/100, correct:  59/87, verified: 30/59, unsafe: 0/59,  time: 0.665; 580.992; 34278.503
+concrete  [1.1379568958459096, -0.771981697370464, 2.229440223326239, -0.9729525027702348, 1.8937948263104343, -1.1864506544269393, -1.928107026453992, -3.5684465356323765, 5.201159923219735, 0.5455858751000984]
+img 87 not considered, incorrectly classified
+progress: 88/100, correct:  59/88, verified: 30/59, unsafe: 0/59,  time: 0.623; 580.992; 34278.503
+concrete  [1.8380703537039242, -3.6921750329627527, -0.29005360359987997, -1.249548064137588, 0.9533774951772822, -1.5465397489674357, -0.43945636073678174, -0.5220077870242518, 6.400931383969983, 0.32996654912034495]
+nlb  [-0.0028063404095259987, -5.610711587088901, -2.0573125681705, -2.4457359850931524, -0.9077791125288102, -3.0764944777761927, -1.9381869550895892, -2.5558265359322982, 4.421367883577937, -1.1961626004783148]  nub  [3.3752851289886223, -1.5583992982680426, 1.3322778624407146, 0.3698317628634817, 2.428914648971256, 0.14834534280182507, 1.083079415842386, 1.7231326530536222, 8.03299906418774, 2.1833295759050673] adv labels  None
+img 88 Verified 8
+progress: 89/100, correct:  60/89, verified: 31/60, unsafe: 0/60,  time: 1.217; 571.329; 34279.720
+concrete  [2.810168520472654, 3.1637403229006886, -2.257944976569277, -3.537055182195802, -1.9722870162165902, -4.510032369305866, -0.878063114086832, 1.0813398871117843, 3.053090444685879, 5.007618795179132]
+nlb  [1.2936404899826754, 1.1654752002105868, -3.833606396992091, -4.807884681873187, -3.4639484035583714, -6.218007932311573, -2.6164539473437944, -1.18802755935383, 1.4983678886441127, 3.341773359091095]  nub  [4.386586842907917, 5.157474574149358, -0.7314532273964904, -2.2674501320313967, -0.24521348531750836, -3.0281180037273154, 0.7805637082120515, 3.053889130505603, 4.800069282690914, 6.808670721044984] adv labels  None
+krelu: n 70 split_zero 358 after cutoff 116 number of args 358
+total k-activation time: 0.476. Time for input: 0.007. Time for k-activation constraints 0.469.
+krelu: n 70 split_zero 130 after cutoff 116 number of args 130
+total k-activation time: 0.473. Time for input: 0.003. Time for k-activation constraints 0.470.
+Refinement of bounds time: 802.128. MILP used: True. 63 bounds refined.
+krelu: n 70 split_zero 24 after cutoff 22 number of args 24
+total k-activation time: 0.468. Time for input: 0.001. Time for k-activation constraints 0.467.
+Model status: 2, Objval against label 1: -0.1455, Final solve time: 0.497
+nlb  [1.3840211965872693, 1.376872668250943, -3.6806808513647877, -4.667965720857489, -3.331696181555194, -6.02040855320873, -2.4782922552873554, -0.9358754155306449, 1.582970787114173, 3.4793410844554318]  nub  [4.2089322324753855, 4.96715302683516, -0.9009650227270241, -2.3839905295152115, -0.454524214758392, -3.082940806460504, 0.6651238399035392, 2.9397009128543203, 4.593663846266133, 6.642917038923684] adv labels  None
+img 89 Failed
+progress: 90/100, correct:  61/90, verified: 31/61, unsafe: 0/61,  time: 806.580; 575.185; 35086.300
+concrete  [8.868279134575666, 4.268334949748502, -2.0451537431140165, -4.162687498888037, 3.136682577848908, -5.634217934915884, -5.945170705684845, -3.706035523542685, 6.465255340960718, 1.6737301153965791]
+nlb  [7.2951982566589635, 2.7247312920340656, -3.5265070140578403, -5.213926063942008, 1.9096000049462094, -7.020300805082166, -7.181075349089817, -5.278761240036041, 4.987442170615644, 0.17814673519701335]  nub  [10.357321320532929, 5.951336191661487, -0.7397627990773011, -3.1821675770590763, 4.388730862668224, -4.385065940107369, -4.680521685171566, -1.9965478407303439, 7.973394911359897, 3.196244393067659] adv labels  None
+img 90 Verified 0
+progress: 91/100, correct:  62/91, verified: 32/62, unsafe: 0/62,  time: 1.019; 565.924; 35087.319
+concrete  [-3.102890401551108, -2.878756281991462, 1.8567230399338548, 2.46204759185395, 3.599714403154709, 1.8562090230256991, 2.67097889521125, 1.4069733410144916, -4.437017148648837, -1.3781046571137507]
+img 91 not considered, incorrectly classified
+progress: 92/100, correct:  62/92, verified: 32/62, unsafe: 0/62,  time: 0.627; 565.924; 35087.319
+concrete  [2.0992112729567687, 2.369570798854657, 0.5007133553361726, -2.2095792968209986, -1.6372026190050646, -3.028172211927495, -6.828550639376615, 0.08414546693731326, 10.982480645640017, -0.2992187809484977]
+nlb  [1.042399811179608, 1.0179489239519954, -0.7428433630082726, -3.150312577914331, -2.8856803621174887, -4.008232244035944, -7.888220067402885, -1.78790357938673, 9.700434909146042, -1.54745009719458]  nub  [3.078815550398003, 3.7853859175302103, 1.6317268254966166, -1.3105575796995483, -0.38644351904501384, -1.8268121048437516, -5.726463416146682, 1.6391983243993005, 12.013811686912327, 1.305666019274781] adv labels  None
+img 92 Verified 8
+progress: 93/100, correct:  63/93, verified: 33/63, unsafe: 0/63,  time: 1.163; 556.960; 35088.482
+concrete  [-0.4261573975890807, -3.890989548433709, 2.780981727355646, -0.46750977176268865, 0.16607623136401453, 1.068921200501776, 5.694860933432617, -1.5257438742163107, -0.28850046077299285, -1.1332403005832388]
+nlb  [-2.2290833684098157, -5.133080672060169, 1.3337805993761656, -1.7047857422333428, -1.0731735436338241, -0.45276555503640514, 4.458669167618067, -3.404221007624968, -2.167745577720121, -2.5578073623649544]  nub  [0.8533061356518202, -1.6351811918592558, 3.964272418650535, 0.9496170136725142, 1.2568533384530953, 2.2348061246256465, 6.957416394917941, 0.16619185166693526, 1.3554098499186906, 0.7701373086208734] adv labels  None
+img 93 Verified 6
+progress: 94/100, correct:  64/94, verified: 34/64, unsafe: 0/64,  time: 1.206; 548.276; 35089.688
+concrete  [5.108967794784092e-05, -3.4745045214514385, 3.2818834072635754, 0.4125924864867753, 4.350134449893756, 0.006229134118576299, 2.284401257152812, 0.4741669984325142, -1.5740486944609768, -4.441907270565274]
+nlb  [-1.8595375275071904, -5.5474010201889765, 1.3762974647223234, -1.1541719047560832, 2.626471674344693, -1.7517212600570249, 0.243119982211349, -1.6852043693971048, -3.6743141835572057, -6.187411833518272]  nub  [1.9519525653952223, -1.375121942650514, 4.958411427170031, 1.757056609226915, 6.173783150740181, 1.6164093936502557, 4.123065784259059, 2.6131316695591944, 0.26581412856007025, -1.9802905573849936] adv labels  None
+krelu: n 70 split_zero 498 after cutoff 195 number of args 498
+total k-activation time: 0.509. Time for input: 0.040. Time for k-activation constraints 0.469.
+krelu: n 70 split_zero 186 after cutoff 165 number of args 186
+total k-activation time: 0.482. Time for input: 0.004. Time for k-activation constraints 0.478.
+Refinement of bounds time: 1202.337. MILP used: True. 47 bounds refined.
+krelu: n 70 split_zero 43 after cutoff 42 number of args 43
+total k-activation time: 0.468. Time for input: 0.002. Time for k-activation constraints 0.466.
+Model status: 2, Objval against label 2: -0.9845, Final solve time: 0.479
+nlb  [-1.8045463547448346, -5.4411037542930485, 1.4903307486275714, -1.0413655197828757, 2.7211476369836998, -1.6349360276818183, 0.33715043528818267, -1.5666388481292515, -3.5708654089847127, -6.051792351738651]  nub  [1.7982107308596338, -1.4346389632089338, 4.844341152483156, 1.692194471964519, 6.0200821930933275, 1.5284874820767709, 3.993358515093072, 2.446554856383553, 0.18252087370226833, -2.015362914886143] adv labels  None
+img 94 Failed
+progress: 95/100, correct:  65/95, verified: 34/65, unsafe: 0/65,  time: 1206.680; 558.406; 36296.368
+concrete  [-5.261603763084825, -5.496517605948168, 0.09694006514098552, 3.121803105312144, 3.472883374641649, 3.169095212743453, 4.934093626138726, 1.512051820143917, -2.7741616029462772, -0.05192786989576803]
+nlb  [-7.443173111217056, -7.765099865804505, -1.866180926745148, 1.4642606787503998, 1.449055384093041, 1.228882193030549, 2.651650287494577, -0.9652629418135603, -5.041433641316354, -2.277079604092341]  nub  [-2.6862257766506135, -2.853405600428007, 2.412547028024726, 4.702585098147608, 4.92164129927112, 4.92499956696406, 6.922308304160847, 4.218301508964732, -0.4906956238190327, 2.1197761580607577] adv labels  None
+krelu: n 70 split_zero 395 after cutoff 136 number of args 395
+total k-activation time: 0.473. Time for input: 0.008. Time for k-activation constraints 0.465.
+krelu: n 70 split_zero 147 after cutoff 132 number of args 147
+total k-activation time: 0.472. Time for input: 0.003. Time for k-activation constraints 0.469.
+Refinement of bounds time: 1203.583. MILP used: True. 77 bounds refined.
+krelu: n 70 split_zero 38 after cutoff 37 number of args 38
+total k-activation time: 0.473. Time for input: 0.001. Time for k-activation constraints 0.472.
+Model status: 2, Objval against label 3: -0.4894, Final solve time: 0.486
+nlb  [-7.249937501378015, -7.588723407205055, -1.6573765580369244, 1.6190643843214667, 1.6650658599678543, 1.4335346398565862, 2.889178315151852, -0.7343997822761826, -4.781500312833028, -1.9898291886924535]  nub  [-2.9436842590927195, -3.1034179702573255, 2.1184764955388595, 4.538638077039991, 4.794024435386216, 4.709245093308125, 6.726699138734492, 3.882740835307957, -0.6679739768401394, 1.8963465290445483] adv labels  None
+img 95 Failed
+progress: 96/100, correct:  66/96, verified: 34/66, unsafe: 0/66,  time: 1208.147; 568.250; 37504.516
+concrete  [-0.7992405836329989, -2.1913649838994087, 1.1574765451289637, -0.04567640790527156, 3.50303597817733, -0.413140555482402, 7.505067243157834, -0.9728233770730851, -3.6032636096036774, -2.167259325239399]
+nlb  [-3.4728197085952495, -4.857798514967528, -0.8200500589058283, -1.876831119706104, 1.2749480265125865, -2.7431048779329106, 4.912759242235265, -3.523418333144376, -6.079732328324452, -4.645713417591074]  nub  [1.8587686544202728, 0.7161493997455531, 3.4433730833805187, 1.8349337754977693, 5.421424182423383, 1.4191832738469445, 9.212582093392099, 2.5243040408092368, -0.9757840803801491, 0.31257002516521265] adv labels  None
+img 96 Verified 6
+progress: 97/100, correct:  67/97, verified: 35/67, unsafe: 0/67,  time: 1.307; 559.788; 37505.823
+concrete  [4.438201427951853, -4.785871548341684, 3.1237910029063922, -0.23747960108749042, 1.5287985369564783, -0.27716665596189494, -0.8249384004166423, -2.3661104446497188, 3.738612280427692, -3.091434184191773]
+nlb  [3.073314586071915, -6.144181329873503, 1.6785881794945576, -1.1684153518301312, 0.3847053507239009, -1.4546108176809418, -1.936040837438891, -4.009355114544137, 2.5888383221274345, -4.418059638073435]  nub  [5.50596127288296, -3.1041739179849563, 4.24251204110507, 0.8242858650053858, 2.612691133105462, 0.784895943498966, 0.38052650513592307, -0.7198713019353254, 4.974026493544442, -1.636468879258847] adv labels  None
+krelu: n 70 split_zero 764 after cutoff 77 number of args 764
+total k-activation time: 0.499. Time for input: 0.015. Time for k-activation constraints 0.485.
+krelu: n 70 split_zero 141 after cutoff 92 number of args 141
+total k-activation time: 0.476. Time for input: 0.004. Time for k-activation constraints 0.473.
+Refinement of bounds time: 1202.641. MILP used: True. 33 bounds refined.
+krelu: n 70 split_zero 40 after cutoff 37 number of args 40
+total k-activation time: 0.475. Time for input: 0.001. Time for k-activation constraints 0.473.
+Model status: 2, Objval against label 2: -0.1246, Final solve time: 0.293
+nlb  [3.1327815898399707, -6.068802504010215, 1.7831889007172559, -1.1191624193663667, 0.4120998933785426, -1.3914351012184454, -1.8900724453175708, -3.9186078613686295, 2.60016625073342, -4.359340040235182]  nub  [5.492050177790488, -3.18658273649129, 4.207459907824927, 0.7494464587867804, 2.5673785643736835, 0.7590412571295465, 0.3011362744493382, -0.856825700664278, 4.902946768431323, -1.7065676433869374] adv labels  None
+img 97 Failed
+progress: 98/100, correct:  68/98, verified: 35/68, unsafe: 0/68,  time: 1206.531; 569.299; 38712.353
+concrete  [10.895014315544774, -4.037072323563712, 3.212908555644634, 1.8572418874764252, 2.9691968915072153, 0.9223033999931036, -3.0486410926105343, 2.747276024046532, -3.7888195448463295, -7.116219039410702]
+nlb  [10.006229119497688, -5.263364926682357, 2.3014752093948023, 1.1786483037560327, 2.171589590866129, -0.026642647943431966, -4.0047094280933315, 1.577394450170633, -4.691139222419102, -8.171495351905952]  nub  [11.650582215292706, -2.9249983415740544, 4.176509781883939, 2.6283128291247313, 3.8268969799175587, 1.813128091022699, -2.0772830146897143, 3.864600832689977, -2.7677784689044964, -6.166641722002276] adv labels  None
+img 98 Verified 0
+progress: 99/100, correct:  69/99, verified: 36/69, unsafe: 0/69,  time: 0.975; 561.063; 38713.328
+concrete  [-2.607071975442111, -5.630831347527863, 1.810098387872128, 1.8183076507343663, 0.6706123416713737, 0.5259895888342834, -2.587516384898505, 6.519451573753667, -0.8065738610201053, 2.781752812086938]
+nlb  [-3.8950451609759362, -7.646052970468407, 0.283276236456451, 0.4540853563730696, -0.7125061631914436, -1.0415232302922803, -3.876748653830938, 4.152561762889752, -2.3813564984078144, 0.5604036228713661]  nub  [-0.9220073626766997, -3.3990048788565703, 3.2599409863851134, 3.1775430825345925, 2.2309892250377312, 1.918279860821876, -1.0129480271062576, 8.422468131389868, 0.8895577555193113, 4.402035762883858] adv labels  None
+img 99 Verified 7
+progress: 100/100, correct:  70/100, verified: 37/70, unsafe: 0/70,  time: 1.255; 553.065; 38714.583
+analysis precision  37 /  70
+
+Process finished with exit code 0

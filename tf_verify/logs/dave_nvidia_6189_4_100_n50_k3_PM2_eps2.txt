@@ -1,0 +1,1646 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --netname ../nets/DAVE/DAVE_NVIDIA_1_PGD_v2.onnx --domain refinegpupoly --epsilon 0.00784313725 --epsilon_y 0.0 --regression True --from_test 0 --num_test 100 --k 3 --s -2 --sparse_n 50 --timeout_milp 10 --timeout_lp 10 --timeout_final_lp 200 --timeout_final_milp 120 --max_gpu_batch 180 --debug --data_dillation 20 --partial_milp 2 --max_milp_neurons 30
+2021-04-12 20:28:51.940587: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Apr  3 2021 10:38:48) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-04-12 20:28:52.722710: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-12 20:28:52.726510: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-12 20:28:52.726781: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-04-12 20:28:52.726796: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-12 20:28:52.726821: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-12 20:28:52.726837: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-04-12 20:28:52.727418: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-12 20:28:52.727554: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-12 20:28:52.729011: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-12 20:28:52.729331: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-04-12 20:28:52.729416: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-12 20:28:52.729463: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-12 20:28:52.729734: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-12 20:28:52.729973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-04-12 20:28:52.729991: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-12 20:28:53.043394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-12 20:28:53.043413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-04-12 20:28:53.043418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-04-12 20:28:53.043535: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-12 20:28:53.043815: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-12 20:28:53.044062: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-12 20:28:53.044286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7732 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-04-12 20:28:53.044463: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+{'approx_k': True,
+ 'complete': False,
+ 'data_dillation': 20,
+ 'debug': True,
+ 'domain': 'refinegpupoly',
+ 'epsilon': 0.00784313725,
+ 'epsilon_y': 0.0,
+ 'from_test': 0,
+ 'k': 3,
+ 'max_gpu_batch': 180,
+ 'max_milp_neurons': 30,
+ 'n_milp_refine': 1,
+ 'netname': '../nets/DAVE/DAVE_NVIDIA_1_PGD_v2.onnx',
+ 'num_tests': 100,
+ 'partial_milp': 2,
+ 'refine_neurons': False,
+ 'regression': True,
+ 's': -2,
+ 'sparse_n': 50,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 200.0,
+ 'timeout_final_milp': 120.0,
+ 'timeout_lp': 10.0,
+ 'timeout_milp': 10.0}
+Final Tanh layer omitted
+krelu: n 50 split_zero 8706 after cutoff 0 number of args 8706
+krelu: n 50 split_zero 451 after cutoff 1 number of args 452
+krelu: n 50 split_zero 141 after cutoff 68 number of args 505
+krelu: n 50 split_zero 211 after cutoff 27 number of args 312
+krelu: n 50 split_zero 110 after cutoff 0 number of args 110
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound for constraint (0, -1, 0.06053351034754681): -0.0570/-0.0570, Final solve time: 59.964
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.06053351034754681): -0.0456/-0.0456, Final solve time: 120.049
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.06053351034754681): -0.0335/-0.0335, Final solve time: 38.282
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.06053351034754681): inf/-0.0317, Final solve time: 120.007
+img 0: y: 0.0053; y_nat: 0.0605; y_lb/ub: 0.0149/0.0920 natural MSE: 3.0453e-03 and certified MSE: 7.5019e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 1/100, nat MSE:  3.0453e-03/3.0453e-03, cert MSE: 7.5019e-03/7.5019e-03, time: 506.553; 506.553; 506.553
+krelu: n 50 split_zero 9565 after cutoff 0 number of args 9565
+krelu: n 50 split_zero 567 after cutoff 0 number of args 567
+krelu: n 50 split_zero 181 after cutoff 74 number of args 578
+krelu: n 50 split_zero 213 after cutoff 31 number of args 368
+krelu: n 50 split_zero 100 after cutoff 0 number of args 100
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.04638641842750097): -0.0451/-0.0451, Final solve time: 38.530
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.04638641842750097): -0.0364/-0.0364, Final solve time: 120.047
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.04638641842750097): -0.0293/-0.0293, Final solve time: 26.171
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.04638641842750097): inf/-0.0276, Final solve time: 120.007
+img 20: y: 0.0006; y_nat: 0.0464; y_lb/ub: 0.0099/0.0739 natural MSE: 2.1005e-03 and certified MSE: 5.3770e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 2/100, nat MSE:  2.5729e-03/2.5729e-03, cert MSE: 6.4395e-03/6.4395e-03, time: 490.767; 498.660; 997.320
+krelu: n 50 split_zero 9530 after cutoff 0 number of args 9530
+krelu: n 50 split_zero 538 after cutoff 0 number of args 538
+krelu: n 50 split_zero 170 after cutoff 57 number of args 503
+krelu: n 50 split_zero 216 after cutoff 22 number of args 272
+krelu: n 50 split_zero 109 after cutoff 0 number of args 109
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.08829202366380491): -0.0364/-0.0364, Final solve time: 36.174
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.08829202366380491): -0.0307/-0.0307, Final solve time: 120.044
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.08829202366380491): -0.0166/-0.0166, Final solve time: 28.004
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.08829202366380491): inf/-0.0152, Final solve time: 120.010
+img 40: y: 0.0103; y_nat: 0.0883; y_lb/ub: 0.0575/0.1031 natural MSE: 6.0773e-03 and certified MSE: 8.6104e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 3/100, nat MSE:  3.0453e-03/3.7410e-03, cert MSE: 7.5019e-03/7.1631e-03, time: 466.674; 487.998; 1463.994
+krelu: n 50 split_zero 10234 after cutoff 0 number of args 10234
+krelu: n 50 split_zero 652 after cutoff 6 number of args 656
+krelu: n 50 split_zero 139 after cutoff 40 number of args 330
+krelu: n 50 split_zero 214 after cutoff 12 number of args 231
+krelu: n 50 split_zero 106 after cutoff 0 number of args 106
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.01745662711105984): -0.0519/-0.0519, Final solve time: 46.253
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.01745662711105984): inf/-0.0491, Final solve time: 120.005
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.01745662711105984): -0.0709/-0.0709, Final solve time: 38.784
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.01745662711105984): -0.0703/-0.0703, Final solve time: 82.540
+img 60: y: 0.0017; y_nat: 0.0175; y_lb/ub: -0.0316/0.0876 natural MSE: 2.4932e-04 and certified MSE: 7.3768e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 4/100, nat MSE:  2.5729e-03/2.8681e-03, cert MSE: 7.4394e-03/7.2165e-03, time: 428.636; 473.157; 1892.630
+krelu: n 50 split_zero 9411 after cutoff 0 number of args 9411
+krelu: n 50 split_zero 601 after cutoff 0 number of args 601
+krelu: n 50 split_zero 121 after cutoff 41 number of args 321
+krelu: n 50 split_zero 227 after cutoff 8 number of args 234
+krelu: n 50 split_zero 71 after cutoff 0 number of args 71
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0006715298572145136): -0.0176/-0.0176, Final solve time: 30.213
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, 0.0006715298572145136): -0.0164/-0.0164, Final solve time: 65.081
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0006715298572145136): -0.0319/-0.0319, Final solve time: 32.302
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.0006715298572145136): -0.0319/-0.0319, Final solve time: 14.609
+img 80: y: 0.0006; y_nat: 0.0007; y_lb/ub: -0.0157/0.0326 natural MSE: 1.3450e-08 and certified MSE: 1.0261e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 5/100, nat MSE:  2.1005e-03/2.2945e-03, cert MSE: 7.3768e-03/5.9785e-03, time: 280.455; 434.617; 2173.085
+krelu: n 50 split_zero 10043 after cutoff 0 number of args 10043
+krelu: n 50 split_zero 437 after cutoff 1 number of args 438
+krelu: n 50 split_zero 104 after cutoff 20 number of args 149
+krelu: n 50 split_zero 168 after cutoff 5 number of args 170
+krelu: n 50 split_zero 75 after cutoff 0 number of args 75
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.033206057519532345): -0.0210/-0.0210, Final solve time: 35.691
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.033206057519532345): -0.0210/-0.0210, Final solve time: 35.784
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.033206057519532345): -0.0244/-0.0244, Final solve time: 29.570
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.033206057519532345): -0.0244/-0.0244, Final solve time: 29.477
+img 100: y: 0.0000; y_nat: -0.0332; y_lb/ub: -0.0541/-0.0088 natural MSE: 1.1026e-03 and certified MSE: 2.9272e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 6/100, nat MSE:  1.6016e-03/2.0958e-03, cert MSE: 6.3769e-03/5.4699e-03, time: 248.134; 403.536; 2421.219
+krelu: n 50 split_zero 9286 after cutoff 0 number of args 9286
+krelu: n 50 split_zero 459 after cutoff 5 number of args 461
+krelu: n 50 split_zero 72 after cutoff 21 number of args 122
+krelu: n 50 split_zero 122 after cutoff 1 number of args 123
+krelu: n 50 split_zero 51 after cutoff 0 number of args 51
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.022249965824431856): -0.0150/-0.0150, Final solve time: 50.727
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.022249965824431856): -0.0150/-0.0150, Final solve time: 51.047
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.022249965824431856): -0.0153/-0.0153, Final solve time: 26.144
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.022249965824431856): -0.0153/-0.0153, Final solve time: 26.241
+img 120: y: -0.0045; y_nat: -0.0222; y_lb/ub: -0.0373/-0.0069 natural MSE: 3.1519e-04 and certified MSE: 1.0749e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 7/100, nat MSE:  1.1026e-03/1.8415e-03, cert MSE: 5.3770e-03/4.8421e-03, time: 270.112; 384.476; 2691.331
+krelu: n 50 split_zero 12623 after cutoff 0 number of args 12623
+krelu: n 50 split_zero 539 after cutoff 0 number of args 539
+krelu: n 50 split_zero 176 after cutoff 46 number of args 436
+krelu: n 50 split_zero 162 after cutoff 8 number of args 169
+krelu: n 50 split_zero 66 after cutoff 0 number of args 66
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.03243147746310563): -0.0247/-0.0247, Final solve time: 38.046
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.03243147746310563): -0.0247/-0.0247, Final solve time: 19.230
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.03243147746310563): -0.0197/-0.0197, Final solve time: 29.201
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.03243147746310563): -0.0195/-0.0195, Final solve time: 96.733
+img 140: y: 0.0033; y_nat: -0.0324; y_lb/ub: -0.0571/-0.0129 natural MSE: 1.2791e-03 and certified MSE: 3.6545e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 8/100, nat MSE:  1.1909e-03/1.7712e-03, cert MSE: 4.5157e-03/4.6936e-03, time: 335.960; 378.411; 3027.291
+krelu: n 50 split_zero 12066 after cutoff 0 number of args 12066
+krelu: n 50 split_zero 680 after cutoff 0 number of args 680
+krelu: n 50 split_zero 154 after cutoff 47 number of args 429
+krelu: n 50 split_zero 155 after cutoff 5 number of args 157
+krelu: n 50 split_zero 66 after cutoff 0 number of args 66
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.033236207848065774): -0.0323/-0.0323, Final solve time: 78.132
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.033236207848065774): -0.0317/-0.0317, Final solve time: 72.497
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.033236207848065774): -0.0317/-0.0317, Final solve time: 32.702
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.033236207848065774): -0.0312/-0.0317, Final solve time: 120.042
+img 160: y: -0.0024; y_nat: -0.0332; y_lb/ub: -0.0648/-0.0016 natural MSE: 9.5341e-04 and certified MSE: 3.9042e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 9/100, nat MSE:  1.1026e-03/1.6803e-03, cert MSE: 3.9042e-03/4.6059e-03, time: 455.931; 387.025; 3483.222
+krelu: n 50 split_zero 13735 after cutoff 0 number of args 13735
+krelu: n 50 split_zero 590 after cutoff 0 number of args 590
+krelu: n 50 split_zero 175 after cutoff 43 number of args 396
+krelu: n 50 split_zero 154 after cutoff 2 number of args 155
+krelu: n 50 split_zero 61 after cutoff 0 number of args 61
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.06280646840395417): -0.0388/-0.0388, Final solve time: 25.829
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.06280646840395417): -0.0307/-0.0358, Final solve time: 120.050
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.06280646840395417): -0.0220/-0.0220, Final solve time: 26.351
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.06280646840395417): -0.0214/-0.0214, Final solve time: 111.481
+img 180: y: -0.0106; y_nat: 0.0628; y_lb/ub: 0.0270/0.0840 natural MSE: 5.3820e-03 and certified MSE: 8.9383e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 10/100, nat MSE:  1.1909e-03/2.0505e-03, cert MSE: 4.6406e-03/5.0391e-03, time: 430.888; 391.411; 3914.110
+krelu: n 50 split_zero 14264 after cutoff 0 number of args 14264
+krelu: n 50 split_zero 683 after cutoff 0 number of args 683
+krelu: n 50 split_zero 207 after cutoff 66 number of args 568
+krelu: n 50 split_zero 182 after cutoff 5 number of args 184
+krelu: n 50 split_zero 61 after cutoff 0 number of args 61
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.08515809730572924): -0.0469/-0.0469, Final solve time: 26.353
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.08515809730572924): -0.0426/-0.0430, Final solve time: 120.044
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.08515809730572924): -0.0191/-0.0191, Final solve time: 34.508
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.08515809730572924): -0.0178/-0.0178, Final solve time: 120.040
+img 200: y: -0.0428; y_nat: 0.0852; y_lb/ub: 0.0422/0.1025 natural MSE: 1.6368e-02 and certified MSE: 2.1120e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 11/100, nat MSE:  1.2791e-03/3.3520e-03, cert MSE: 5.3770e-03/6.5010e-03, time: 468.452; 398.415; 4382.562
+krelu: n 50 split_zero 12755 after cutoff 0 number of args 12755
+krelu: n 50 split_zero 630 after cutoff 0 number of args 630
+krelu: n 50 split_zero 133 after cutoff 30 number of args 273
+krelu: n 50 split_zero 151 after cutoff 0 number of args 151
+krelu: n 50 split_zero 33 after cutoff 0 number of args 33
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.04709217551397904): -0.0119/-0.0119, Final solve time: 23.050
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.04709217551397904): -0.0119/-0.0119, Final solve time: 22.980
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.04709217551397904): -0.0368/-0.0368, Final solve time: 26.909
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.04709217551397904): -0.0368/-0.0368, Final solve time: 26.876
+img 220: y: -0.0850; y_nat: -0.0471; y_lb/ub: -0.0589/-0.0103 natural MSE: 1.4370e-03 and certified MSE: 5.5804e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 12/100, nat MSE:  1.3581e-03/3.1924e-03, cert MSE: 5.4787e-03/6.4243e-03, time: 235.598; 384.847; 4618.160
+krelu: n 50 split_zero 10936 after cutoff 0 number of args 10936
+krelu: n 50 split_zero 562 after cutoff 0 number of args 562
+krelu: n 50 split_zero 106 after cutoff 42 number of args 316
+krelu: n 50 split_zero 199 after cutoff 6 number of args 203
+krelu: n 50 split_zero 72 after cutoff 0 number of args 72
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.03203346976416866): -0.0618/-0.0618, Final solve time: 30.065
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.03203346976416866): -0.0599/-0.0599, Final solve time: 120.043
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.03203346976416866): -0.0598/-0.0598, Final solve time: 33.667
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.03203346976416866): -0.0597/-0.0597, Final solve time: 43.327
+img 240: y: -0.0999; y_nat: 0.0320; y_lb/ub: -0.0278/0.0915 natural MSE: 1.7418e-02 and certified MSE: 3.6660e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 13/100, nat MSE:  1.4370e-03/4.2867e-03, cert MSE: 5.5804e-03/8.7502e-03, time: 368.325; 383.576; 4986.485
+krelu: n 50 split_zero 9220 after cutoff 0 number of args 9220
+krelu: n 50 split_zero 515 after cutoff 2 number of args 516
+krelu: n 50 split_zero 106 after cutoff 39 number of args 289
+krelu: n 50 split_zero 196 after cutoff 6 number of args 200
+krelu: n 50 split_zero 57 after cutoff 0 number of args 57
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.05365217945873183): -0.0283/-0.0283, Final solve time: 52.549
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.05365217945873183): -0.0283/-0.0283, Final solve time: 25.845
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.05365217945873183): -0.0487/-0.0487, Final solve time: 20.989
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.05365217945873183): -0.0487/-0.0487, Final solve time: 58.973
+img 260: y: -0.0994; y_nat: -0.0537; y_lb/ub: -0.0818/-0.0049 natural MSE: 2.0969e-03 and certified MSE: 8.9321e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 14/100, nat MSE:  1.7670e-03/4.1303e-03, cert MSE: 6.4786e-03/8.7632e-03, time: 293.845; 377.166; 5280.330
+krelu: n 50 split_zero 11059 after cutoff 0 number of args 11059
+krelu: n 50 split_zero 687 after cutoff 0 number of args 687
+krelu: n 50 split_zero 135 after cutoff 43 number of args 356
+krelu: n 50 split_zero 183 after cutoff 7 number of args 190
+krelu: n 50 split_zero 64 after cutoff 0 number of args 64
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.12971094750427542): -0.0112/-0.0112, Final solve time: 27.211
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.12971094750427542): -0.0112/-0.0112, Final solve time: 28.667
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.12971094750427542): -0.0215/-0.0215, Final solve time: 48.295
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.12971094750427542): -0.0197/-0.0197, Final solve time: 67.976
+img 280: y: -0.0983; y_nat: -0.1297; y_lb/ub: -0.1400/-0.1096 natural MSE: 9.8455e-04 and certified MSE: 1.7344e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 15/100, nat MSE:  1.4370e-03/3.9206e-03, cert MSE: 5.5804e-03/8.2946e-03, time: 319.572; 373.327; 5599.902
+krelu: n 50 split_zero 14688 after cutoff 0 number of args 14688
+krelu: n 50 split_zero 676 after cutoff 1 number of args 677
+krelu: n 50 split_zero 123 after cutoff 27 number of args 224
+krelu: n 50 split_zero 130 after cutoff 0 number of args 130
+krelu: n 50 split_zero 39 after cutoff 0 number of args 39
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.07657983194999003): -0.0062/-0.0062, Final solve time: 40.924
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.07657983194999003): -0.0062/-0.0062, Final solve time: 38.888
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.07657983194999003): -0.0085/-0.0085, Final solve time: 20.549
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.07657983194999003): -0.0078/-0.0078, Final solve time: 52.446
+img 300: y: -0.0988; y_nat: -0.0766; y_lb/ub: -0.0826/-0.0687 natural MSE: 4.9550e-04 and certified MSE: 9.1049e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 16/100, nat MSE:  1.3581e-03/3.7065e-03, cert MSE: 5.4787e-03/7.8331e-03, time: 286.544; 367.903; 5886.446
+krelu: n 50 split_zero 12821 after cutoff 0 number of args 12821
+krelu: n 50 split_zero 622 after cutoff 0 number of args 622
+krelu: n 50 split_zero 93 after cutoff 31 number of args 248
+krelu: n 50 split_zero 106 after cutoff 1 number of args 107
+krelu: n 50 split_zero 68 after cutoff 0 number of args 68
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.07150799799604021): -0.0062/-0.0062, Final solve time: 24.721
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.07150799799604021): -0.0055/-0.0055, Final solve time: 30.182
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.07150799799604021): -0.0040/-0.0040, Final solve time: 23.563
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.07150799799604021): -0.0040/-0.0040, Final solve time: 12.612
+img 320: y: -0.0908; y_nat: -0.0715; y_lb/ub: -0.0768/-0.0674 natural MSE: 3.7384e-04 and certified MSE: 5.4774e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 17/100, nat MSE:  1.2791e-03/3.5105e-03, cert MSE: 5.3770e-03/7.4045e-03, time: 227.576; 359.648; 6114.022
+krelu: n 50 split_zero 10720 after cutoff 0 number of args 10720
+krelu: n 50 split_zero 1099 after cutoff 1 number of args 1100
+krelu: n 50 split_zero 83 after cutoff 13 number of args 105
+krelu: n 50 split_zero 151 after cutoff 0 number of args 151
+krelu: n 50 split_zero 44 after cutoff 0 number of args 44
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.061760513698767915): -0.0076/-0.0076, Final solve time: 33.428
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.061760513698767915): -0.0076/-0.0076, Final solve time: 13.423
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.061760513698767915): -0.0110/-0.0110, Final solve time: 27.759
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.061760513698767915): -0.0107/-0.0110, Final solve time: 120.041
+img 340: y: -0.0949; y_nat: -0.0618; y_lb/ub: -0.0693/-0.0507 natural MSE: 1.0976e-03 and certified MSE: 1.9504e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 18/100, nat MSE:  1.1909e-03/3.3764e-03, cert MSE: 4.6406e-03/7.1015e-03, time: 314.051; 357.115; 6428.073
+krelu: n 50 split_zero 9737 after cutoff 0 number of args 9737
+krelu: n 50 split_zero 770 after cutoff 1 number of args 771
+krelu: n 50 split_zero 120 after cutoff 30 number of args 260
+krelu: n 50 split_zero 179 after cutoff 8 number of args 186
+krelu: n 50 split_zero 84 after cutoff 0 number of args 84
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.07590150586891864): -0.0310/-0.0310, Final solve time: 31.959
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.07590150586891864): -0.0310/-0.0310, Final solve time: 15.096
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.07590150586891864): -0.0212/-0.0212, Final solve time: 25.115
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.07590150586891864): inf/-0.0212, Final solve time: 120.006
+img 360: y: -0.0906; y_nat: -0.0759; y_lb/ub: -0.1065/-0.0546 natural MSE: 2.1474e-04 and certified MSE: 1.2899e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 19/100, nat MSE:  1.1026e-03/3.2100e-03, cert MSE: 3.9042e-03/6.7956e-03, time: 325.350; 355.443; 6753.423
+krelu: n 50 split_zero 10611 after cutoff 0 number of args 10611
+krelu: n 50 split_zero 943 after cutoff 3 number of args 944
+krelu: n 50 split_zero 206 after cutoff 54 number of args 533
+krelu: n 50 split_zero 465 after cutoff 14 number of args 493
+krelu: n 50 split_zero 260 after cutoff 0 number of args 260
+krelu: n 50 split_zero 13 after cutoff 0 number of args 13
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.02273377609234407): -0.1229/-0.1229, Final solve time: 33.645
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.02273377609234407): -0.1213/-0.1213, Final solve time: 76.197
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.02273377609234407): -0.0778/-0.0778, Final solve time: 42.852
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.02273377609234407): -0.0776/-0.0778, Final solve time: 120.044
+img 380: y: -0.0607; y_nat: -0.0227; y_lb/ub: -0.1430/0.0551 natural MSE: 1.4449e-03 and certified MSE: 1.3410e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 20/100, nat MSE:  1.1909e-03/3.1218e-03, cert MSE: 4.6406e-03/7.1264e-03, time: 443.724; 359.857; 7197.146
+krelu: n 50 split_zero 11222 after cutoff 0 number of args 11222
+krelu: n 50 split_zero 802 after cutoff 0 number of args 802
+krelu: n 50 split_zero 206 after cutoff 50 number of args 532
+krelu: n 50 split_zero 324 after cutoff 4 number of args 325
+krelu: n 50 split_zero 128 after cutoff 0 number of args 128
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.010004940500917528): -0.0199/-0.0199, Final solve time: 30.426
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.010004940500917528): -0.0197/-0.0197, Final solve time: 117.107
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.010004940500917528): -0.0215/-0.0215, Final solve time: 32.279
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.010004940500917528): -0.0215/-0.0215, Final solve time: 16.489
+img 400: y: -0.0067; y_nat: -0.0100; y_lb/ub: -0.0297/0.0115 natural MSE: 1.1144e-05 and certified MSE: 5.3059e-04
+/home/mark/Projects/ERAN/eran/tf_verify/eran_light.py:197: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  fig, ax = plt.subplots(1, 1, figsize=(8, 4))
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 21/100, nat MSE:  1.1026e-03/2.9736e-03, cert MSE: 3.9042e-03/6.8123e-03, time: 357.904; 359.764; 7555.051
+krelu: n 50 split_zero 10812 after cutoff 0 number of args 10812
+krelu: n 50 split_zero 722 after cutoff 0 number of args 722
+krelu: n 50 split_zero 184 after cutoff 40 number of args 375
+krelu: n 50 split_zero 244 after cutoff 12 number of args 261
+krelu: n 50 split_zero 89 after cutoff 0 number of args 89
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.004155993207364327): -0.0391/-0.0391, Final solve time: 58.072
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, 0.004155993207364327): -0.0381/-0.0381, Final solve time: 98.613
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.004155993207364327): -0.0301/-0.0301, Final solve time: 60.190
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.004155993207364327): -0.0301/-0.0301, Final solve time: 22.499
+img 420: y: 0.0164; y_nat: 0.0042; y_lb/ub: -0.0339/0.0342 natural MSE: 1.4977e-04 and certified MSE: 2.5306e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 22/100, nat MSE:  1.1001e-03/2.8453e-03, cert MSE: 3.7793e-03/6.6177e-03, time: 385.233; 360.922; 7940.284
+krelu: n 50 split_zero 12062 after cutoff 0 number of args 12062
+krelu: n 50 split_zero 752 after cutoff 0 number of args 752
+krelu: n 50 split_zero 178 after cutoff 56 number of args 508
+krelu: n 50 split_zero 298 after cutoff 9 number of args 306
+krelu: n 50 split_zero 104 after cutoff 0 number of args 104
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.00963754629873585): -0.0260/-0.0260, Final solve time: 53.398
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.00963754629873585): -0.0247/-0.0247, Final solve time: 66.726
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.00963754629873585): -0.0325/-0.0325, Final solve time: 59.485
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.00963754629873585): -0.0325/-0.0325, Final solve time: 64.740
+img 440: y: 0.0057; y_nat: -0.0096; y_lb/ub: -0.0343/0.0228 natural MSE: 2.3615e-04 and certified MSE: 1.6020e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 23/100, nat MSE:  1.0976e-03/2.7318e-03, cert MSE: 3.6545e-03/6.3996e-03, time: 409.059; 363.015; 8349.343
+krelu: n 50 split_zero 13943 after cutoff 0 number of args 13943
+krelu: n 50 split_zero 623 after cutoff 0 number of args 623
+krelu: n 50 split_zero 158 after cutoff 51 number of args 485
+krelu: n 50 split_zero 294 after cutoff 14 number of args 322
+krelu: n 50 split_zero 115 after cutoff 0 number of args 115
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.024404347510207886): -0.0297/-0.0297, Final solve time: 55.462
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.024404347510207886): -0.0297/-0.0297, Final solve time: 56.208
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.024404347510207886): -0.0385/-0.0385, Final solve time: 39.138
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.024404347510207886): -0.0385/-0.0385, Final solve time: 39.623
+img 460: y: -0.0061; y_nat: -0.0244; y_lb/ub: -0.0541/0.0141 natural MSE: 3.3464e-04 and certified MSE: 2.3023e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 24/100, nat MSE:  1.0411e-03/2.6320e-03, cert MSE: 3.2908e-03/6.2289e-03, time: 358.685; 362.834; 8708.028
+krelu: n 50 split_zero 12786 after cutoff 0 number of args 12786
+krelu: n 50 split_zero 659 after cutoff 0 number of args 659
+krelu: n 50 split_zero 138 after cutoff 26 number of args 228
+krelu: n 50 split_zero 284 after cutoff 19 number of args 325
+krelu: n 50 split_zero 119 after cutoff 0 number of args 119
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.02068511240112245): -0.0338/-0.0338, Final solve time: 72.335
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.02068511240112245): -0.0338/-0.0338, Final solve time: 72.453
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.02068511240112245): -0.0320/-0.0320, Final solve time: 28.525
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.02068511240112245): -0.0320/-0.0320, Final solve time: 28.853
+img 480: y: -0.0011; y_nat: -0.0207; y_lb/ub: -0.0544/0.0114 natural MSE: 3.8314e-04 and certified MSE: 2.8414e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 25/100, nat MSE:  9.8455e-04/2.5420e-03, cert MSE: 2.9272e-03/6.0934e-03, time: 340.288; 361.933; 9048.316
+krelu: n 50 split_zero 10749 after cutoff 0 number of args 10749
+krelu: n 50 split_zero 807 after cutoff 2 number of args 808
+krelu: n 50 split_zero 171 after cutoff 42 number of args 381
+krelu: n 50 split_zero 320 after cutoff 12 number of args 337
+krelu: n 50 split_zero 126 after cutoff 0 number of args 126
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.0024593324403748757): -0.0316/-0.0316, Final solve time: 53.245
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.0024593324403748757): -0.0310/-0.0310, Final solve time: 118.639
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.0024593324403748757): -0.0297/-0.0297, Final solve time: 65.034
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.0024593324403748757): -0.0297/-0.0297, Final solve time: 27.616
+img 500: y: 0.0055; y_nat: -0.0025; y_lb/ub: -0.0335/0.0272 natural MSE: 6.3589e-05 and certified MSE: 1.5194e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 26/100, nat MSE:  9.6898e-04/2.4467e-03, cert MSE: 2.8843e-03/5.9174e-03, time: 413.307; 363.909; 9461.623
+krelu: n 50 split_zero 10664 after cutoff 0 number of args 10664
+krelu: n 50 split_zero 769 after cutoff 0 number of args 769
+krelu: n 50 split_zero 170 after cutoff 44 number of args 403
+krelu: n 50 split_zero 422 after cutoff 16 number of args 457
+krelu: n 50 split_zero 162 after cutoff 0 number of args 162
+krelu: n 50 split_zero 10 after cutoff 0 number of args 10
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.04301627938660715): -0.0307/-0.0307, Final solve time: 33.648
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.04301627938660715): -0.0307/-0.0307, Final solve time: 33.894
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.04301627938660715): -0.0392/-0.0392, Final solve time: 70.767
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.04301627938660715): -0.0392/-0.0392, Final solve time: 70.950
+img 520: y: 0.0006; y_nat: -0.0430; y_lb/ub: -0.0736/-0.0038 natural MSE: 1.8985e-03 and certified MSE: 5.5007e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 27/100, nat MSE:  9.8455e-04/2.4264e-03, cert MSE: 2.9272e-03/5.9020e-03, time: 363.785; 363.904; 9825.409
+krelu: n 50 split_zero 10873 after cutoff 0 number of args 10873
+krelu: n 50 split_zero 821 after cutoff 0 number of args 821
+krelu: n 50 split_zero 215 after cutoff 54 number of args 542
+krelu: n 50 split_zero 418 after cutoff 8 number of args 425
+krelu: n 50 split_zero 142 after cutoff 0 number of args 142
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.007242515145600728): -0.0319/-0.0319, Final solve time: 64.485
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.007242515145600728): -0.0307/-0.0307, Final solve time: 118.326
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.007242515145600728): -0.0260/-0.0260, Final solve time: 103.217
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.007242515145600728): -0.0260/-0.0260, Final solve time: 24.434
+img 540: y: -0.0028; y_nat: -0.0072; y_lb/ub: -0.0379/0.0187 natural MSE: 1.9934e-05 and certified MSE: 1.2350e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 28/100, nat MSE:  9.6898e-04/2.3404e-03, cert MSE: 2.8843e-03/5.7353e-03, time: 473.991; 367.836; 10299.399
+krelu: n 50 split_zero 11187 after cutoff 0 number of args 11187
+krelu: n 50 split_zero 936 after cutoff 0 number of args 936
+krelu: n 50 split_zero 242 after cutoff 52 number of args 569
+krelu: n 50 split_zero 432 after cutoff 8 number of args 439
+krelu: n 50 split_zero 174 after cutoff 0 number of args 174
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.029778019929270302): -0.0585/-0.0585, Final solve time: 45.876
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.029778019929270302): -0.0585/-0.0585, Final solve time: 46.009
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.029778019929270302): -0.0244/-0.0244, Final solve time: 65.620
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.029778019929270302): -0.0244/-0.0244, Final solve time: 65.598
+img 560: y: -0.0072; y_nat: -0.0298; y_lb/ub: -0.0880/-0.0054 natural MSE: 5.0876e-04 and certified MSE: 6.5291e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 29/100, nat MSE:  9.5341e-04/2.2773e-03, cert MSE: 2.9272e-03/5.7627e-03, time: 388.903; 368.562; 10688.303
+krelu: n 50 split_zero 10973 after cutoff 0 number of args 10973
+krelu: n 50 split_zero 902 after cutoff 2 number of args 903
+krelu: n 50 split_zero 225 after cutoff 42 number of args 435
+krelu: n 50 split_zero 364 after cutoff 5 number of args 366
+krelu: n 50 split_zero 132 after cutoff 0 number of args 132
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.023940442103014516): -0.0217/-0.0217, Final solve time: 41.635
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.023940442103014516): -0.0217/-0.0217, Final solve time: 41.701
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.023940442103014516): -0.0232/-0.0232, Final solve time: 59.299
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.023940442103014516): -0.0232/-0.0232, Final solve time: 59.452
+img 580: y: -0.0150; y_nat: -0.0239; y_lb/ub: -0.0456/-0.0007 natural MSE: 7.9932e-05 and certified MSE: 9.3941e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 30/100, nat MSE:  7.3109e-04/2.2040e-03, cert MSE: 2.8843e-03/5.6019e-03, time: 353.351; 368.055; 11041.654
+krelu: n 50 split_zero 10856 after cutoff 0 number of args 10856
+krelu: n 50 split_zero 838 after cutoff 0 number of args 838
+krelu: n 50 split_zero 228 after cutoff 60 number of args 564
+krelu: n 50 split_zero 352 after cutoff 4 number of args 353
+krelu: n 50 split_zero 110 after cutoff 0 number of args 110
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.0004408718649224966): -0.0230/-0.0230, Final solve time: 44.080
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.0004408718649224966): -0.0221/-0.0221, Final solve time: 89.805
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.0004408718649224966): -0.0154/-0.0154, Final solve time: 53.488
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.0004408718649224966): -0.0154/-0.0154, Final solve time: 40.302
+img 600: y: -0.0154; y_nat: -0.0004; y_lb/ub: -0.0226/0.0149 natural MSE: 2.2355e-04 and certified MSE: 9.1885e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 31/100, nat MSE:  5.0876e-04/2.1401e-03, cert MSE: 2.8414e-03/5.4509e-03, time: 390.369; 368.775; 11432.023
+krelu: n 50 split_zero 10838 after cutoff 0 number of args 10838
+krelu: n 50 split_zero 872 after cutoff 0 number of args 872
+krelu: n 50 split_zero 226 after cutoff 54 number of args 553
+krelu: n 50 split_zero 324 after cutoff 3 number of args 325
+krelu: n 50 split_zero 80 after cutoff 0 number of args 80
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.00984507859049258): -0.0202/-0.0202, Final solve time: 59.824
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.00984507859049258): -0.0194/-0.0194, Final solve time: 81.705
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.00984507859049258): -0.0189/-0.0189, Final solve time: 63.722
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.00984507859049258): -0.0189/-0.0189, Final solve time: 27.196
+img 620: y: -0.0128; y_nat: -0.0098; y_lb/ub: -0.0293/0.0091 natural MSE: 8.6130e-06 and certified MSE: 4.7814e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 32/100, nat MSE:  5.0213e-04/2.0735e-03, cert MSE: 2.6860e-03/5.2955e-03, time: 393.014; 369.532; 11825.037
+krelu: n 50 split_zero 10585 after cutoff 0 number of args 10585
+krelu: n 50 split_zero 798 after cutoff 0 number of args 798
+krelu: n 50 split_zero 225 after cutoff 51 number of args 552
+krelu: n 50 split_zero 325 after cutoff 4 number of args 326
+krelu: n 50 split_zero 87 after cutoff 0 number of args 87
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.0036212607140273865): -0.0238/-0.0238, Final solve time: 55.488
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.0036212607140273865): -0.0224/-0.0224, Final solve time: 67.740
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.0036212607140273865): -0.0137/-0.0137, Final solve time: 50.426
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.0036212607140273865): -0.0137/-0.0137, Final solve time: 17.248
+img 640: y: -0.0089; y_nat: -0.0036; y_lb/ub: -0.0260/0.0101 natural MSE: 2.7748e-05 and certified MSE: 3.6146e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 33/100, nat MSE:  4.9550e-04/2.0115e-03, cert MSE: 2.5306e-03/5.1459e-03, time: 351.471; 368.985; 12176.508
+krelu: n 50 split_zero 10329 after cutoff 0 number of args 10329
+krelu: n 50 split_zero 819 after cutoff 0 number of args 819
+krelu: n 50 split_zero 224 after cutoff 71 number of args 600
+krelu: n 50 split_zero 358 after cutoff 5 number of args 360
+krelu: n 50 split_zero 109 after cutoff 0 number of args 109
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.010209850619424116): -0.0276/-0.0276, Final solve time: 84.740
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.010209850619424116): -0.0266/-0.0266, Final solve time: 79.164
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.010209850619424116): -0.0179/-0.0179, Final solve time: 90.716
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.010209850619424116): -0.0179/-0.0179, Final solve time: 84.995
+img 660: y: -0.0033; y_nat: -0.0102; y_lb/ub: -0.0368/0.0077 natural MSE: 4.7286e-05 and certified MSE: 1.1193e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 34/100, nat MSE:  4.3932e-04/1.9538e-03, cert MSE: 2.4164e-03/5.0275e-03, time: 506.467; 373.029; 12682.975
+krelu: n 50 split_zero 10347 after cutoff 0 number of args 10347
+krelu: n 50 split_zero 898 after cutoff 0 number of args 898
+krelu: n 50 split_zero 238 after cutoff 65 number of args 599
+krelu: n 50 split_zero 347 after cutoff 3 number of args 348
+krelu: n 50 split_zero 123 after cutoff 0 number of args 123
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.02527814643390905): -0.0284/-0.0284, Final solve time: 111.732
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, -0.02527814643390905): -0.0272/-0.0272, Final solve time: 120.038
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.02527814643390905): -0.0261/-0.0261, Final solve time: 62.002
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.02527814643390905): -0.0261/-0.0261, Final solve time: 44.989
+img 680: y: -0.0046; y_nat: -0.0253; y_lb/ub: -0.0524/0.0008 natural MSE: 4.2919e-04 and certified MSE: 2.2913e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 35/100, nat MSE:  4.2919e-04/1.9102e-03, cert MSE: 2.3023e-03/4.9493e-03, time: 504.658; 376.790; 13187.633
+krelu: n 50 split_zero 10562 after cutoff 0 number of args 10562
+krelu: n 50 split_zero 881 after cutoff 0 number of args 881
+krelu: n 50 split_zero 257 after cutoff 76 number of args 673
+krelu: n 50 split_zero 397 after cutoff 3 number of args 398
+krelu: n 50 split_zero 141 after cutoff 0 number of args 141
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.027468342169729678): -0.0258/-0.0258, Final solve time: 70.886
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.027468342169729678): -0.0246/-0.0246, Final solve time: 117.062
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.027468342169729678): -0.0280/-0.0280, Final solve time: 44.888
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.027468342169729678): -0.0280/-0.0280, Final solve time: 53.894
+img 700: y: -0.0111; y_nat: -0.0275; y_lb/ub: -0.0520/0.0005 natural MSE: 2.6756e-04 and certified MSE: 1.6754e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 36/100, nat MSE:  4.0617e-04/1.8646e-03, cert MSE: 2.2968e-03/4.8584e-03, time: 464.704; 379.232; 13652.337
+krelu: n 50 split_zero 10746 after cutoff 0 number of args 10746
+krelu: n 50 split_zero 916 after cutoff 1 number of args 917
+krelu: n 50 split_zero 268 after cutoff 82 number of args 749
+krelu: n 50 split_zero 375 after cutoff 5 number of args 377
+krelu: n 50 split_zero 141 after cutoff 0 number of args 141
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.019192918828517567): -0.0263/-0.0263, Final solve time: 45.961
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.019192918828517567): -0.0236/-0.0236, Final solve time: 74.837
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.019192918828517567): -0.0251/-0.0251, Final solve time: 58.418
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.019192918828517567): -0.0251/-0.0251, Final solve time: 50.320
+img 720: y: -0.0111; y_nat: -0.0192; y_lb/ub: -0.0428/0.0059 natural MSE: 6.5316e-05 and certified MSE: 1.0031e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 37/100, nat MSE:  3.8314e-04/1.8159e-03, cert MSE: 2.2913e-03/4.7542e-03, time: 411.284; 380.098; 14063.620
+krelu: n 50 split_zero 10716 after cutoff 0 number of args 10716
+krelu: n 50 split_zero 885 after cutoff 0 number of args 885
+krelu: n 50 split_zero 250 after cutoff 73 number of args 639
+krelu: n 50 split_zero 378 after cutoff 5 number of args 380
+krelu: n 50 split_zero 137 after cutoff 0 number of args 137
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0021253409798143727): -0.0319/-0.0319, Final solve time: 38.788
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.0021253409798143727): -0.0292/-0.0292, Final solve time: 55.783
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0021253409798143727): -0.0107/-0.0107, Final solve time: 39.357
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.0021253409798143727): -0.0106/-0.0107, Final solve time: 120.063
+img 740: y: -0.0167; y_nat: 0.0021; y_lb/ub: -0.0271/0.0128 natural MSE: 3.5314e-04 and certified MSE: 8.6767e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 38/100, nat MSE:  3.7849e-04/1.7775e-03, cert MSE: 2.1208e-03/4.6519e-03, time: 424.104; 381.256; 14487.725
+krelu: n 50 split_zero 10972 after cutoff 0 number of args 10972
+krelu: n 50 split_zero 893 after cutoff 1 number of args 894
+krelu: n 50 split_zero 268 after cutoff 68 number of args 632
+krelu: n 50 split_zero 346 after cutoff 7 number of args 353
+krelu: n 50 split_zero 127 after cutoff 0 number of args 127
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0077684196484909184): -0.0193/-0.0193, Final solve time: 37.992
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.0077684196484909184): -0.0141/-0.0141, Final solve time: 32.071
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0077684196484909184): -0.0084/-0.0084, Final solve time: 36.961
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.0077684196484909184): -0.0079/-0.0083, Final solve time: 120.042
+img 760: y: -0.0050; y_nat: 0.0078; y_lb/ub: -0.0063/0.0161 natural MSE: 1.6303e-04 and certified MSE: 4.4586e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 39/100, nat MSE:  3.7384e-04/1.7361e-03, cert MSE: 1.9504e-03/4.5441e-03, time: 395.166; 381.613; 14882.890
+krelu: n 50 split_zero 11148 after cutoff 0 number of args 11148
+krelu: n 50 split_zero 839 after cutoff 2 number of args 840
+krelu: n 50 split_zero 251 after cutoff 54 number of args 578
+krelu: n 50 split_zero 364 after cutoff 7 number of args 371
+krelu: n 50 split_zero 116 after cutoff 0 number of args 116
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.00579020922855434): -0.0179/-0.0179, Final solve time: 38.220
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, 0.00579020922855434): -0.0133/-0.0133, Final solve time: 35.777
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.00579020922855434): -0.0113/-0.0113, Final solve time: 33.723
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.00579020922855434): -0.0111/-0.0113, Final solve time: 120.047
+img 780: y: -0.0003; y_nat: 0.0058; y_lb/ub: -0.0075/0.0171 natural MSE: 3.7374e-05 and certified MSE: 3.0397e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 40/100, nat MSE:  3.6349e-04/1.6936e-03, cert MSE: 1.8424e-03/4.4381e-03, time: 391.003; 381.847; 15273.893
+krelu: n 50 split_zero 10915 after cutoff 0 number of args 10915
+krelu: n 50 split_zero 864 after cutoff 0 number of args 864
+krelu: n 50 split_zero 231 after cutoff 50 number of args 557
+krelu: n 50 split_zero 396 after cutoff 13 number of args 418
+krelu: n 50 split_zero 141 after cutoff 0 number of args 141
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.008198409623260208): -0.0403/-0.0403, Final solve time: 36.481
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.008198409623260208): -0.0354/-0.0356, Final solve time: 120.047
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.008198409623260208): -0.0295/-0.0295, Final solve time: 33.923
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.008198409623260208): -0.0293/-0.0295, Final solve time: 120.044
+img 800: y: 0.0006; y_nat: 0.0082; y_lb/ub: -0.0274/0.0377 natural MSE: 5.8413e-05 and certified MSE: 1.3795e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 41/100, nat MSE:  3.5314e-04/1.6537e-03, cert MSE: 1.7344e-03/4.3635e-03, time: 476.504; 384.156; 15750.397
+krelu: n 50 split_zero 10671 after cutoff 0 number of args 10671
+krelu: n 50 split_zero 885 after cutoff 0 number of args 885
+krelu: n 50 split_zero 235 after cutoff 101 number of args 888
+krelu: n 50 split_zero 436 after cutoff 19 number of args 477
+krelu: n 50 split_zero 136 after cutoff 0 number of args 136
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.009613972040243663): -0.1085/-0.1085, Final solve time: 40.182
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.009613972040243663): inf/-0.1028, Final solve time: 120.014
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.009613972040243663): -0.0423/-0.0423, Final solve time: 46.352
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.009613972040243663): -0.0411/-0.0422, Final solve time: 120.043
+img 820: y: 0.0235; y_nat: 0.0096; y_lb/ub: -0.0930/0.0518 natural MSE: 1.9222e-04 and certified MSE: 1.3557e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 42/100, nat MSE:  3.4389e-04/1.6189e-03, cert MSE: 1.8424e-03/4.5824e-03, time: 535.522; 387.760; 16285.919
+krelu: n 50 split_zero 10894 after cutoff 0 number of args 10894
+krelu: n 50 split_zero 836 after cutoff 0 number of args 836
+krelu: n 50 split_zero 278 after cutoff 107 number of args 937
+krelu: n 50 split_zero 409 after cutoff 12 number of args 426
+krelu: n 50 split_zero 129 after cutoff 0 number of args 129
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.00666987817228229): -0.0283/-0.0283, Final solve time: 34.856
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.00666987817228229): -0.0253/-0.0253, Final solve time: 53.986
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.00666987817228229): -0.0296/-0.0296, Final solve time: 40.861
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.00666987817228229): -0.0292/-0.0296, Final solve time: 120.057
+img 840: y: -0.0189; y_nat: -0.0067; y_lb/ub: -0.0320/0.0229 natural MSE: 1.4930e-04 and certified MSE: 1.7496e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 43/100, nat MSE:  3.3464e-04/1.5847e-03, cert MSE: 1.7496e-03/4.5165e-03, time: 459.950; 389.439; 16745.869
+krelu: n 50 split_zero 11020 after cutoff 0 number of args 11020
+krelu: n 50 split_zero 883 after cutoff 0 number of args 883
+krelu: n 50 split_zero 266 after cutoff 96 number of args 852
+krelu: n 50 split_zero 423 after cutoff 12 number of args 440
+krelu: n 50 split_zero 125 after cutoff 0 number of args 125
+krelu: n 50 split_zero 10 after cutoff 0 number of args 10
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.03783984356570313): -0.1071/-0.1071, Final solve time: 46.429
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.03783984356570313): -0.1071/-0.1071, Final solve time: 27.359
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.03783984356570313): -0.0510/-0.0510, Final solve time: 59.767
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.03783984356570313): inf/-0.0510, Final solve time: 120.006
+img 860: y: -0.0420; y_nat: -0.0378; y_lb/ub: -0.1439/0.0131 natural MSE: 1.6994e-05 and certified MSE: 1.0393e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 44/100, nat MSE:  3.2492e-04/1.5491e-03, cert MSE: 1.8500e-03/4.6500e-03, time: 451.943; 390.859; 17197.812
+krelu: n 50 split_zero 11318 after cutoff 0 number of args 11318
+krelu: n 50 split_zero 844 after cutoff 0 number of args 844
+krelu: n 50 split_zero 253 after cutoff 84 number of args 737
+krelu: n 50 split_zero 422 after cutoff 21 number of args 472
+krelu: n 50 split_zero 110 after cutoff 0 number of args 110
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.04240501041825782): -0.0219/-0.0219, Final solve time: 43.378
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.04240501041825782): -0.0219/-0.0219, Final solve time: 19.192
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.04240501041825782): -0.0226/-0.0226, Final solve time: 39.092
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.04240501041825782): -0.0226/-0.0226, Final solve time: 56.899
+img 880: y: -0.0561; y_nat: -0.0424; y_lb/ub: -0.0643/-0.0198 natural MSE: 1.8786e-04 and certified MSE: 1.3209e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 45/100, nat MSE:  3.1519e-04/1.5189e-03, cert MSE: 1.7496e-03/4.5761e-03, time: 348.143; 389.910; 17545.955
+krelu: n 50 split_zero 12116 after cutoff 0 number of args 12116
+krelu: n 50 split_zero 884 after cutoff 0 number of args 884
+krelu: n 50 split_zero 215 after cutoff 72 number of args 597
+krelu: n 50 split_zero 400 after cutoff 38 number of args 576
+krelu: n 50 split_zero 154 after cutoff 0 number of args 154
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.031022516469470435): -0.0328/-0.0328, Final solve time: 46.030
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.031022516469470435): -0.0328/-0.0328, Final solve time: 25.636
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.031022516469470435): -0.0312/-0.0312, Final solve time: 39.801
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.031022516469470435): -0.0312/-0.0312, Final solve time: 55.335
+img 900: y: -0.0450; y_nat: -0.0310; y_lb/ub: -0.0637/0.0001 natural MSE: 1.9537e-04 and certified MSE: 2.0371e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 46/100, nat MSE:  2.9138e-04/1.4901e-03, cert MSE: 1.8500e-03/4.5209e-03, time: 363.301; 389.332; 17909.256
+krelu: n 50 split_zero 12468 after cutoff 0 number of args 12468
+krelu: n 50 split_zero 846 after cutoff 0 number of args 846
+krelu: n 50 split_zero 200 after cutoff 83 number of args 682
+krelu: n 50 split_zero 359 after cutoff 27 number of args 460
+krelu: n 50 split_zero 154 after cutoff 0 number of args 154
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.04583271478248905): -0.0565/-0.0565, Final solve time: 42.247
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.04583271478248905): -0.0564/-0.0564, Final solve time: 110.359
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.04583271478248905): -0.0441/-0.0441, Final solve time: 54.594
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.04583271478248905): -0.0433/-0.0441, Final solve time: 120.047
+img 920: y: -0.0340; y_nat: -0.0458; y_lb/ub: -0.1019/-0.0017 natural MSE: 1.4111e-04 and certified MSE: 4.6123e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 47/100, nat MSE:  2.6756e-04/1.4614e-03, cert MSE: 1.9504e-03/4.5228e-03, time: 525.732; 392.234; 18434.988
+krelu: n 50 split_zero 13180 after cutoff 0 number of args 13180
+krelu: n 50 split_zero 709 after cutoff 0 number of args 709
+krelu: n 50 split_zero 168 after cutoff 56 number of args 498
+krelu: n 50 split_zero 282 after cutoff 10 number of args 292
+krelu: n 50 split_zero 101 after cutoff 0 number of args 101
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.02612654193708551): -0.0199/-0.0199, Final solve time: 45.941
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.02612654193708551): -0.0148/-0.0148, Final solve time: 44.166
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.02612654193708551): -0.0194/-0.0194, Final solve time: 38.811
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.02612654193708551): inf/-0.0192, Final solve time: 120.011
+img 940: y: -0.0333; y_nat: -0.0261; y_lb/ub: -0.0409/-0.0069 natural MSE: 5.1938e-05 and certified MSE: 6.9620e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 48/100, nat MSE:  2.5844e-04/1.4320e-03, cert MSE: 1.8500e-03/4.4431e-03, time: 414.595; 392.700; 18849.583
+krelu: n 50 split_zero 13883 after cutoff 0 number of args 13883
+krelu: n 50 split_zero 688 after cutoff 1 number of args 689
+krelu: n 50 split_zero 171 after cutoff 54 number of args 498
+krelu: n 50 split_zero 250 after cutoff 28 number of args 363
+krelu: n 50 split_zero 118 after cutoff 0 number of args 118
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.025636767980938155): -0.0159/-0.0159, Final solve time: 56.029
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.025636767980938155): -0.0139/-0.0139, Final solve time: 79.465
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.025636767980938155): -0.0423/-0.0423, Final solve time: 53.643
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.025636767980938155): -0.0423/-0.0423, Final solve time: 29.880
+img 960: y: -0.0124; y_nat: -0.0256; y_lb/ub: -0.0395/0.0167 natural MSE: 1.7607e-04 and certified MSE: 8.4226e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 49/100, nat MSE:  2.4932e-04/1.4064e-03, cert MSE: 1.7496e-03/4.3696e-03, time: 399.041; 392.829; 19248.624
+krelu: n 50 split_zero 13257 after cutoff 0 number of args 13257
+krelu: n 50 split_zero 537 after cutoff 2 number of args 538
+krelu: n 50 split_zero 127 after cutoff 27 number of args 228
+krelu: n 50 split_zero 259 after cutoff 31 number of args 414
+krelu: n 50 split_zero 136 after cutoff 0 number of args 136
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.028518719784841995): -0.0375/-0.0375, Final solve time: 44.818
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, -0.028518719784841995): -0.0373/-0.0373, Final solve time: 120.040
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.028518719784841995): -0.0460/-0.0460, Final solve time: 38.750
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.028518719784841995): -0.0460/-0.0460, Final solve time: 18.348
+img 980: y: 0.0059; y_nat: -0.0285; y_lb/ub: -0.0657/0.0175 natural MSE: 1.1861e-03 and certified MSE: 5.1260e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 50/100, nat MSE:  2.5844e-04/1.4020e-03, cert MSE: 1.8500e-03/4.3847e-03, time: 378.474; 392.542; 19627.098
+krelu: n 50 split_zero 13487 after cutoff 0 number of args 13487
+krelu: n 50 split_zero 350 after cutoff 3 number of args 351
+krelu: n 50 split_zero 173 after cutoff 52 number of args 500
+krelu: n 50 split_zero 332 after cutoff 36 number of args 497
+krelu: n 50 split_zero 160 after cutoff 0 number of args 160
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.00424352307737356): -0.0307/-0.0307, Final solve time: 32.809
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, 0.00424352307737356): -0.0279/-0.0279, Final solve time: 56.170
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.00424352307737356): -0.0207/-0.0207, Final solve time: 45.898
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.00424352307737356): -0.0207/-0.0207, Final solve time: 19.433
+img 1000: y: -0.0122; y_nat: 0.0042; y_lb/ub: -0.0236/0.0249 natural MSE: 2.7112e-04 and certified MSE: 1.3783e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 51/100, nat MSE:  2.6756e-04/1.3798e-03, cert MSE: 1.7496e-03/4.3258e-03, time: 341.265; 391.537; 19968.363
+krelu: n 50 split_zero 14598 after cutoff 0 number of args 14598
+krelu: n 50 split_zero 402 after cutoff 2 number of args 403
+krelu: n 50 split_zero 173 after cutoff 59 number of args 507
+krelu: n 50 split_zero 289 after cutoff 31 number of args 444
+krelu: n 50 split_zero 107 after cutoff 0 number of args 107
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0032078088244769805): -0.0136/-0.0136, Final solve time: 50.225
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, 0.0032078088244769805): -0.0091/-0.0091, Final solve time: 41.783
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0032078088244769805): -0.0197/-0.0197, Final solve time: 59.725
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.0032078088244769805): inf/-0.0185, Final solve time: 120.017
+img 1020: y: 0.0150; y_nat: 0.0032; y_lb/ub: -0.0059/0.0218 natural MSE: 1.3946e-04 and certified MSE: 4.3796e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 52/100, nat MSE:  2.5844e-04/1.3560e-03, cert MSE: 1.7420e-03/4.2510e-03, time: 459.070; 392.835; 20427.434
+krelu: n 50 split_zero 13923 after cutoff 0 number of args 13923
+krelu: n 50 split_zero 422 after cutoff 0 number of args 422
+krelu: n 50 split_zero 173 after cutoff 65 number of args 534
+krelu: n 50 split_zero 253 after cutoff 32 number of args 408
+krelu: n 50 split_zero 119 after cutoff 0 number of args 119
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0020484860175192746): -0.0207/-0.0207, Final solve time: 40.805
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.0020484860175192746): -0.0164/-0.0164, Final solve time: 36.877
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0020484860175192746): -0.0131/-0.0131, Final solve time: 43.119
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.0020484860175192746): -0.0127/-0.0127, Final solve time: 115.405
+img 1040: y: -0.0053; y_nat: 0.0020; y_lb/ub: -0.0144/0.0148 natural MSE: 5.4228e-05 and certified MSE: 4.0275e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 53/100, nat MSE:  2.4932e-04/1.3314e-03, cert MSE: 1.7344e-03/4.1784e-03, time: 425.179; 393.446; 20852.612
+krelu: n 50 split_zero 13757 after cutoff 0 number of args 13757
+krelu: n 50 split_zero 367 after cutoff 0 number of args 367
+krelu: n 50 split_zero 144 after cutoff 55 number of args 472
+krelu: n 50 split_zero 219 after cutoff 34 number of args 377
+krelu: n 50 split_zero 122 after cutoff 0 number of args 122
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.008306974530564643): -0.0252/-0.0252, Final solve time: 57.633
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.008306974530564643): -0.0176/-0.0176, Final solve time: 52.612
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.008306974530564643): -0.0190/-0.0190, Final solve time: 43.052
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.008306974530564643): -0.0184/-0.0184, Final solve time: 120.044
+img 1060: y: -0.0015; y_nat: -0.0083; y_lb/ub: -0.0259/0.0101 natural MSE: 4.6265e-05 and certified MSE: 5.9617e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 54/100, nat MSE:  2.4273e-04/1.3076e-03, cert MSE: 1.7049e-03/4.1121e-03, time: 457.135; 394.625; 21309.747
+krelu: n 50 split_zero 12861 after cutoff 0 number of args 12861
+krelu: n 50 split_zero 349 after cutoff 0 number of args 349
+krelu: n 50 split_zero 77 after cutoff 36 number of args 242
+krelu: n 50 split_zero 176 after cutoff 43 number of args 397
+krelu: n 50 split_zero 110 after cutoff 0 number of args 110
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.033802300985870726): -0.0123/-0.0123, Final solve time: 54.629
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.033802300985870726): -0.0076/-0.0076, Final solve time: 66.206
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.033802300985870726): -0.0308/-0.0308, Final solve time: 43.739
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.033802300985870726): -0.0291/-0.0291, Final solve time: 120.049
+img 1080: y: -0.0436; y_nat: -0.0338; y_lb/ub: -0.0414/-0.0047 natural MSE: 9.6849e-05 and certified MSE: 1.5147e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 55/100, nat MSE:  2.3615e-04/1.2856e-03, cert MSE: 1.6754e-03/4.0648e-03, time: 453.680; 395.699; 21763.427
+krelu: n 50 split_zero 12042 after cutoff 0 number of args 12042
+krelu: n 50 split_zero 448 after cutoff 3 number of args 449
+krelu: n 50 split_zero 90 after cutoff 38 number of args 266
+krelu: n 50 split_zero 107 after cutoff 35 number of args 268
+krelu: n 50 split_zero 94 after cutoff 0 number of args 94
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.06394098755260172): -0.0184/-0.0184, Final solve time: 46.303
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.06394098755260172): -0.0179/-0.0179, Final solve time: 83.246
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.06394098755260172): -0.0210/-0.0210, Final solve time: 67.928
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.06394098755260172): -0.0194/-0.0194, Final solve time: 50.855
+img 1100: y: -0.0680; y_nat: -0.0639; y_lb/ub: -0.0817/-0.0445 natural MSE: 1.6549e-05 and certified MSE: 5.5227e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 56/100, nat MSE:  2.2985e-04/1.2629e-03, cert MSE: 1.6387e-03/4.0021e-03, time: 409.006; 395.936; 22172.433
+krelu: n 50 split_zero 11490 after cutoff 0 number of args 11490
+krelu: n 50 split_zero 451 after cutoff 3 number of args 452
+krelu: n 50 split_zero 113 after cutoff 38 number of args 289
+krelu: n 50 split_zero 127 after cutoff 48 number of args 418
+krelu: n 50 split_zero 88 after cutoff 0 number of args 88
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.0854355015928409): -0.0099/-0.0099, Final solve time: 48.194
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.0854355015928409): -0.0099/-0.0099, Final solve time: 24.225
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.0854355015928409): -0.0236/-0.0236, Final solve time: 38.398
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.0854355015928409): inf/-0.0206, Final solve time: 120.011
+img 1120: y: -0.0789; y_nat: -0.0854; y_lb/ub: -0.0951/-0.0648 natural MSE: 4.2858e-05 and certified MSE: 2.6156e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 57/100, nat MSE:  2.2355e-04/1.2415e-03, cert MSE: 1.6020e-03/3.9365e-03, time: 408.457; 396.156; 22580.890
+krelu: n 50 split_zero 11447 after cutoff 0 number of args 11447
+krelu: n 50 split_zero 413 after cutoff 0 number of args 413
+krelu: n 50 split_zero 124 after cutoff 47 number of args 399
+krelu: n 50 split_zero 151 after cutoff 45 number of args 397
+krelu: n 50 split_zero 91 after cutoff 0 number of args 91
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.017418777888944227): -0.0204/-0.0204, Final solve time: 57.790
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.017418777888944227): -0.0179/-0.0179, Final solve time: 53.624
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.017418777888944227): -0.0097/-0.0097, Final solve time: 37.892
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.017418777888944227): inf/-0.0086, Final solve time: 120.010
+img 1140: y: -0.0222; y_nat: -0.0174; y_lb/ub: -0.0353/-0.0088 natural MSE: 2.2473e-05 and certified MSE: 1.7823e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 58/100, nat MSE:  2.1914e-04/1.2205e-03, cert MSE: 1.5607e-03/3.8717e-03, time: 453.092; 397.138; 23033.982
+krelu: n 50 split_zero 11139 after cutoff 0 number of args 11139
+krelu: n 50 split_zero 394 after cutoff 0 number of args 394
+krelu: n 50 split_zero 109 after cutoff 47 number of args 384
+krelu: n 50 split_zero 176 after cutoff 49 number of args 484
+krelu: n 50 split_zero 106 after cutoff 0 number of args 106
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.03155392501579325): -0.0162/-0.0162, Final solve time: 37.156
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.03155392501579325): inf/-0.0162, Final solve time: 120.001
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.03155392501579325): -0.0253/-0.0253, Final solve time: 37.698
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.03155392501579325): inf/-0.0253, Final solve time: 120.050
+img 1160: y: 0.0188; y_nat: 0.0316; y_lb/ub: 0.0154/0.0568 natural MSE: 1.6168e-04 and certified MSE: 1.4397e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 59/100, nat MSE:  2.1474e-04/1.2025e-03, cert MSE: 1.5194e-03/3.8305e-03, time: 509.466; 399.041; 23543.448
+krelu: n 50 split_zero 11460 after cutoff 0 number of args 11460
+krelu: n 50 split_zero 404 after cutoff 0 number of args 404
+krelu: n 50 split_zero 112 after cutoff 54 number of args 439
+krelu: n 50 split_zero 160 after cutoff 37 number of args 330
+krelu: n 50 split_zero 103 after cutoff 0 number of args 103
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.017238556058121076): -0.0232/-0.0232, Final solve time: 54.876
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.017238556058121076): -0.0181/-0.0217, Final solve time: 77.278
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.017238556058121076): -0.0175/-0.0175, Final solve time: 42.188
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.017238556058121076): inf/-0.0175, Final solve time: 120.006
+img 1180: y: 0.0126; y_nat: 0.0172; y_lb/ub: -0.0045/0.0347 natural MSE: 2.1445e-05 and certified MSE: 4.8913e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 60/100, nat MSE:  2.0506e-04/1.1829e-03, cert MSE: 1.5170e-03/3.7748e-03, time: 474.339; 400.296; 24017.787
+krelu: n 50 split_zero 11183 after cutoff 0 number of args 11183
+krelu: n 50 split_zero 369 after cutoff 0 number of args 369
+krelu: n 50 split_zero 88 after cutoff 45 number of args 334
+krelu: n 50 split_zero 155 after cutoff 42 number of args 365
+krelu: n 50 split_zero 128 after cutoff 0 number of args 128
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.01987141719347209): -0.0349/-0.0349, Final solve time: 59.750
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.01987141719347209): inf/-0.0344, Final solve time: 120.010
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.01987141719347209): -0.0222/-0.0222, Final solve time: 50.494
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.01987141719347209): -0.0191/-0.0222, Final solve time: 55.839
+img 1200: y: 0.0188; y_nat: 0.0199; y_lb/ub: -0.0146/0.0420 natural MSE: 1.1634e-06 and certified MSE: 1.1132e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 61/100, nat MSE:  1.9537e-04/1.1635e-03, cert MSE: 1.5147e-03/3.7312e-03, time: 462.105; 401.310; 24479.892
+krelu: n 50 split_zero 11098 after cutoff 0 number of args 11098
+krelu: n 50 split_zero 405 after cutoff 0 number of args 405
+krelu: n 50 split_zero 104 after cutoff 46 number of args 364
+krelu: n 50 split_zero 160 after cutoff 31 number of args 315
+krelu: n 50 split_zero 141 after cutoff 0 number of args 141
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.004606489942580411): -0.1719/-0.1719, Final solve time: 41.631
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.004606489942580411): -0.1683/-0.1683, Final solve time: 120.047
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.004606489942580411): -0.0731/-0.0731, Final solve time: 52.417
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.004606489942580411): -0.0718/-0.0718, Final solve time: 100.457
+img 1220: y: 0.0743; y_nat: 0.0046; y_lb/ub: -0.1623/0.0763 natural MSE: 4.8577e-03 and certified MSE: 5.5975e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 62/100, nat MSE:  2.0506e-04/1.2231e-03, cert MSE: 1.5170e-03/4.5738e-03, time: 483.930; 402.642; 24963.822
+krelu: n 50 split_zero 11209 after cutoff 0 number of args 11209
+krelu: n 50 split_zero 385 after cutoff 0 number of args 385
+krelu: n 50 split_zero 133 after cutoff 55 number of args 461
+krelu: n 50 split_zero 135 after cutoff 22 number of args 191
+krelu: n 50 split_zero 108 after cutoff 0 number of args 108
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.055921220206633676): -0.0329/-0.0329, Final solve time: 46.074
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.055921220206633676): -0.0241/-0.0255, Final solve time: 120.047
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.055921220206633676): -0.0198/-0.0198, Final solve time: 39.474
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.055921220206633676): inf/-0.0187, Final solve time: 120.011
+img 1240: y: 0.1009; y_nat: 0.0559; y_lb/ub: 0.0304/0.0745 natural MSE: 2.0269e-03 and certified MSE: 4.9716e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 63/100, nat MSE:  2.1474e-04/1.2358e-03, cert MSE: 1.5194e-03/4.5801e-03, time: 489.388; 404.019; 25453.210
+krelu: n 50 split_zero 10700 after cutoff 0 number of args 10700
+krelu: n 50 split_zero 445 after cutoff 1 number of args 446
+krelu: n 50 split_zero 95 after cutoff 38 number of args 271
+krelu: n 50 split_zero 122 after cutoff 29 number of args 248
+krelu: n 50 split_zero 89 after cutoff 0 number of args 89
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.06894330861187845): -0.0443/-0.0443, Final solve time: 35.534
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.06894330861187845): -0.0362/-0.0362, Final solve time: 120.043
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.06894330861187845): -0.0351/-0.0351, Final solve time: 48.092
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.06894330861187845): -0.0351/-0.0351, Final solve time: 16.644
+img 1260: y: 0.1330; y_nat: 0.0689; y_lb/ub: 0.0327/0.1036 natural MSE: 4.1030e-03 and certified MSE: 1.0053e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 64/100, nat MSE:  2.1914e-04/1.2806e-03, cert MSE: 1.5607e-03/4.6656e-03, time: 375.566; 403.575; 25828.776
+krelu: n 50 split_zero 11928 after cutoff 0 number of args 11928
+krelu: n 50 split_zero 381 after cutoff 0 number of args 381
+krelu: n 50 split_zero 147 after cutoff 59 number of args 481
+krelu: n 50 split_zero 142 after cutoff 30 number of args 282
+krelu: n 50 split_zero 96 after cutoff 0 number of args 96
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.05900723628777281): -0.0483/-0.0483, Final solve time: 53.556
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.05900723628777281): -0.0423/-0.0426, Final solve time: 120.045
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.05900723628777281): -0.0311/-0.0311, Final solve time: 51.060
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.05900723628777281): -0.0298/-0.0298, Final solve time: 72.901
+img 1280: y: 0.1483; y_nat: 0.0590; y_lb/ub: 0.0164/0.0886 natural MSE: 7.9792e-03 and certified MSE: 1.7410e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 65/100, nat MSE:  2.2355e-04/1.3837e-03, cert MSE: 1.6020e-03/4.8617e-03, time: 478.221; 404.723; 26306.997
+krelu: n 50 split_zero 11513 after cutoff 0 number of args 11513
+krelu: n 50 split_zero 296 after cutoff 0 number of args 296
+krelu: n 50 split_zero 124 after cutoff 49 number of args 432
+krelu: n 50 split_zero 179 after cutoff 43 number of args 400
+krelu: n 50 split_zero 93 after cutoff 0 number of args 93
+krelu: n 50 split_zero 9 after cutoff 0 number of args 9
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.037604792652409444): -0.1453/-0.1453, Final solve time: 43.908
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.037604792652409444): inf/-0.1390, Final solve time: 120.008
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.037604792652409444): -0.0553/-0.0553, Final solve time: 58.131
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.037604792652409444): inf/-0.0540, Final solve time: 120.006
+img 1300: y: 0.1390; y_nat: 0.0376; y_lb/ub: -0.1011/0.0914 natural MSE: 1.0283e-02 and certified MSE: 5.7636e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 66/100, nat MSE:  2.2985e-04/1.5185e-03, cert MSE: 1.6387e-03/5.6613e-03, time: 527.162; 406.578; 26834.159
+krelu: n 50 split_zero 12626 after cutoff 0 number of args 12626
+krelu: n 50 split_zero 373 after cutoff 0 number of args 373
+krelu: n 50 split_zero 126 after cutoff 58 number of args 459
+krelu: n 50 split_zero 224 after cutoff 46 number of args 484
+krelu: n 50 split_zero 150 after cutoff 0 number of args 150
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.08376298749130098): -0.0506/-0.0506, Final solve time: 40.541
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.08376298749130098): inf/-0.0482, Final solve time: 120.004
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.08376298749130098): -0.0313/-0.0313, Final solve time: 42.171
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.08376298749130098): -0.0255/-0.0313, Final solve time: 49.928
+img 1320: y: 0.1508; y_nat: 0.0838; y_lb/ub: 0.0355/0.1145 natural MSE: 4.4961e-03 and certified MSE: 1.3293e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 67/100, nat MSE:  2.3615e-04/1.5630e-03, cert MSE: 1.6754e-03/5.7752e-03, time: 449.819; 407.224; 27283.977
+krelu: n 50 split_zero 12646 after cutoff 0 number of args 12646
+krelu: n 50 split_zero 703 after cutoff 4 number of args 704
+krelu: n 50 split_zero 140 after cutoff 60 number of args 476
+krelu: n 50 split_zero 195 after cutoff 13 number of args 217
+krelu: n 50 split_zero 97 after cutoff 0 number of args 97
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.042693611462616375): -0.0316/-0.0316, Final solve time: 43.021
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, -0.042693611462616375): -0.0288/-0.0288, Final solve time: 120.044
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.042693611462616375): -0.0659/-0.0659, Final solve time: 33.099
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.042693611462616375): -0.0627/-0.0638, Final solve time: 120.047
+img 1340: y: 0.1354; y_nat: -0.0427; y_lb/ub: -0.0714/0.0211 natural MSE: 3.1715e-02 and certified MSE: 4.2765e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 68/100, nat MSE:  2.4273e-04/2.0064e-03, cert MSE: 1.7049e-03/6.3192e-03, time: 481.708; 408.319; 27765.685
+krelu: n 50 split_zero 12822 after cutoff 0 number of args 12822
+krelu: n 50 split_zero 925 after cutoff 4 number of args 926
+krelu: n 50 split_zero 180 after cutoff 90 number of args 697
+krelu: n 50 split_zero 185 after cutoff 24 number of args 256
+krelu: n 50 split_zero 110 after cutoff 0 number of args 110
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.03695326754214479): -0.1016/-0.1016, Final solve time: 31.386
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.03695326754214479): -0.0975/-0.0980, Final solve time: 120.043
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.03695326754214479): -0.0235/-0.0235, Final solve time: 50.706
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.03695326754214479): -0.0226/-0.0235, Final solve time: 120.043
+img 1360: y: 0.1482; y_nat: 0.0370; y_lb/ub: -0.0610/0.0604 natural MSE: 1.2377e-02 and certified MSE: 4.3747e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 69/100, nat MSE:  2.4932e-04/2.1567e-03, cert MSE: 1.7344e-03/6.8616e-03, time: 519.584; 409.931; 28285.269
+krelu: n 50 split_zero 10502 after cutoff 0 number of args 10502
+krelu: n 50 split_zero 530 after cutoff 3 number of args 531
+krelu: n 50 split_zero 105 after cutoff 47 number of args 380
+krelu: n 50 split_zero 147 after cutoff 35 number of args 308
+krelu: n 50 split_zero 120 after cutoff 0 number of args 120
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.10039772450608561): -0.1120/-0.1120, Final solve time: 36.022
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.10039772450608561): -0.1085/-0.1085, Final solve time: 120.044
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.10039772450608561): -0.1137/-0.1137, Final solve time: 34.071
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.10039772450608561): -0.1137/-0.1137, Final solve time: 17.006
+img 1380: y: 0.1338; y_nat: 0.1004; y_lb/ub: -0.0081/0.2109 natural MSE: 1.1162e-03 and certified MSE: 2.0151e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 70/100, nat MSE:  2.5844e-04/2.1418e-03, cert MSE: 1.7420e-03/7.0515e-03, time: 379.041; 409.490; 28664.311
+krelu: n 50 split_zero 10127 after cutoff 0 number of args 10127
+krelu: n 50 split_zero 570 after cutoff 1 number of args 571
+krelu: n 50 split_zero 104 after cutoff 30 number of args 244
+krelu: n 50 split_zero 123 after cutoff 28 number of args 236
+krelu: n 50 split_zero 104 after cutoff 0 number of args 104
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.20760528723501187): -0.0840/-0.0840, Final solve time: 36.776
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.20760528723501187): inf/-0.0755, Final solve time: 120.011
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.20760528723501187): -0.0450/-0.0450, Final solve time: 34.336
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.20760528723501187): -0.0450/-0.0450, Final solve time: 16.526
+img 1400: y: 0.1433; y_nat: 0.2076; y_lb/ub: 0.1314/0.2473 natural MSE: 4.1309e-03 and certified MSE: 1.0816e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 71/100, nat MSE:  2.6756e-04/2.1698e-03, cert MSE: 1.7496e-03/7.1045e-03, time: 354.448; 408.715; 29018.759
+krelu: n 50 split_zero 9805 after cutoff 0 number of args 9805
+krelu: n 50 split_zero 906 after cutoff 4 number of args 907
+krelu: n 50 split_zero 116 after cutoff 40 number of args 307
+krelu: n 50 split_zero 127 after cutoff 12 number of args 144
+krelu: n 50 split_zero 123 after cutoff 0 number of args 123
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.03174920135461418): -0.1111/-0.1111, Final solve time: 37.669
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.03174920135461418): -0.1100/-0.1111, Final solve time: 76.911
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.03174920135461418): -0.0755/-0.0755, Final solve time: 44.050
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.03174920135461418): -0.0725/-0.0755, Final solve time: 78.809
+img 1420: y: 0.1667; y_nat: 0.0317; y_lb/ub: -0.0791/0.1068 natural MSE: 1.8203e-02 and certified MSE: 6.0422e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 72/100, nat MSE:  2.6934e-04/2.3925e-03, cert MSE: 1.8500e-03/7.8450e-03, time: 380.898; 408.329; 29399.656
+krelu: n 50 split_zero 10653 after cutoff 0 number of args 10653
+krelu: n 50 split_zero 787 after cutoff 2 number of args 788
+krelu: n 50 split_zero 155 after cutoff 61 number of args 494
+krelu: n 50 split_zero 131 after cutoff 27 number of args 232
+krelu: n 50 split_zero 106 after cutoff 0 number of args 106
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.05059786570523446): -0.0795/-0.0795, Final solve time: 33.680
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.05059786570523446): inf/-0.0752, Final solve time: 120.004
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.05059786570523446): -0.0327/-0.0327, Final solve time: 40.180
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.05059786570523446): -0.0316/-0.0316, Final solve time: 81.057
+img 1440: y: 0.1494; y_nat: 0.0506; y_lb/ub: -0.0246/0.0820 natural MSE: 9.7706e-03 and certified MSE: 3.0288e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 73/100, nat MSE:  2.7112e-04/2.4936e-03, cert MSE: 1.9504e-03/8.1525e-03, time: 452.484; 408.933; 29852.141
+krelu: n 50 split_zero 13772 after cutoff 0 number of args 13772
+krelu: n 50 split_zero 410 after cutoff 0 number of args 410
+krelu: n 50 split_zero 228 after cutoff 93 number of args 775
+krelu: n 50 split_zero 400 after cutoff 60 number of args 736
+krelu: n 50 split_zero 220 after cutoff 0 number of args 220
+krelu: n 50 split_zero 17 after cutoff 4 number of args 18
+krelu: n 50 split_zero 13 after cutoff 0 number of args 13
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+Model status: 2, Obj val/bound for constraint (0, -1, 0.16121950638237412): -0.3770/-0.3770, Final solve time: 71.511
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.16121950638237412): -0.3564/-0.3614, Final solve time: 100.328
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.16121950638237412): -0.2658/-0.2658, Final solve time: 65.537
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, 0.16121950638237412): -0.2631/-0.2631, Final solve time: 71.641
+img 1460: y: 0.0994; y_nat: 0.1612; y_lb/ub: -0.1975/0.4006 natural MSE: 3.8162e-03 and certified MSE: 9.0674e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 74/100, nat MSE:  2.9316e-04/2.5115e-03, cert MSE: 1.9937e-03/9.2676e-03, time: 550.759; 410.850; 30402.899
+krelu: n 50 split_zero 10963 after cutoff 0 number of args 10963
+krelu: n 50 split_zero 1036 after cutoff 1 number of args 1037
+krelu: n 50 split_zero 221 after cutoff 45 number of args 467
+krelu: n 50 split_zero 482 after cutoff 18 number of args 520
+krelu: n 50 split_zero 201 after cutoff 0 number of args 201
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 2 after cutoff 0 number of args 2
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.03362030910015439): -0.0365/-0.0365, Final solve time: 40.299
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, -0.03362030910015439): -0.0361/-0.0361, Final solve time: 120.038
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.03362030910015439): -0.0810/-0.0810, Final solve time: 60.909
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.03362030910015439): -0.0810/-0.0810, Final solve time: 65.792
+img 1480: y: 0.1432; y_nat: -0.0336; y_lb/ub: -0.0696/0.0474 natural MSE: 3.1267e-02 and certified MSE: 4.5292e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 75/100, nat MSE:  3.1519e-04/2.8949e-03, cert MSE: 2.0371e-03/9.7479e-03, time: 447.532; 411.339; 30850.432
+krelu: n 50 split_zero 9393 after cutoff 0 number of args 9393
+krelu: n 50 split_zero 273 after cutoff 1 number of args 274
+krelu: n 50 split_zero 99 after cutoff 18 number of args 137
+krelu: n 50 split_zero 181 after cutoff 19 number of args 222
+krelu: n 50 split_zero 126 after cutoff 0 number of args 126
+krelu: n 50 split_zero 9 after cutoff 0 number of args 9
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.04963057269963722): -0.0982/-0.0982, Final solve time: 26.509
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.04963057269963722): -0.0979/-0.0979, Final solve time: 75.062
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.04963057269963722): -0.1046/-0.1046, Final solve time: 24.514
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.04963057269963722): -0.1037/-0.1037, Final solve time: 98.901
+img 1500: y: 0.1326; y_nat: -0.0496; y_lb/ub: -0.1464/0.0540 natural MSE: 3.3210e-02 and certified MSE: 7.7863e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 76/100, nat MSE:  3.2492e-04/3.2938e-03, cert MSE: 2.1642e-03/1.0644e-02, time: 347.386; 410.498; 31197.818
+krelu: n 50 split_zero 11414 after cutoff 0 number of args 11414
+krelu: n 50 split_zero 382 after cutoff 0 number of args 382
+krelu: n 50 split_zero 145 after cutoff 29 number of args 271
+krelu: n 50 split_zero 237 after cutoff 31 number of args 392
+krelu: n 50 split_zero 203 after cutoff 0 number of args 203
+krelu: n 50 split_zero 14 after cutoff 0 number of args 14
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.03289562908997515): -0.1576/-0.1576, Final solve time: 29.041
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, -0.03289562908997515): -0.1561/-0.1561, Final solve time: 120.045
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.03289562908997515): -0.1140/-0.1140, Final solve time: 35.985
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.03289562908997515): inf/-0.1140, Final solve time: 120.012
+img 1520: y: 0.1340; y_nat: -0.0329; y_lb/ub: -0.1868/0.0809 natural MSE: 2.7860e-02 and certified MSE: 1.0292e-01
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 77/100, nat MSE:  3.3464e-04/3.6128e-03, cert MSE: 2.2913e-03/1.1843e-02, time: 460.285; 411.144; 31658.103
+krelu: n 50 split_zero 10945 after cutoff 0 number of args 10945
+krelu: n 50 split_zero 397 after cutoff 0 number of args 397
+krelu: n 50 split_zero 148 after cutoff 52 number of args 475
+krelu: n 50 split_zero 201 after cutoff 22 number of args 257
+krelu: n 50 split_zero 180 after cutoff 0 number of args 180
+krelu: n 50 split_zero 12 after cutoff 0 number of args 12
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.04044222949796392): -0.1990/-0.1990, Final solve time: 26.835
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.04044222949796392): inf/-0.1956, Final solve time: 120.008
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.04044222949796392): -0.0400/-0.0400, Final solve time: 34.306
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.04044222949796392): -0.0376/-0.0381, Final solve time: 120.042
+img 1540: y: 0.1500; y_nat: 0.0404; y_lb/ub: -0.1539/0.0783 natural MSE: 1.1993e-02 and certified MSE: 9.2331e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 78/100, nat MSE:  3.4389e-04/3.7202e-03, cert MSE: 2.2968e-03/1.2874e-02, time: 466.785; 411.858; 32124.888
+krelu: n 50 split_zero 10861 after cutoff 0 number of args 10861
+krelu: n 50 split_zero 446 after cutoff 0 number of args 446
+krelu: n 50 split_zero 129 after cutoff 41 number of args 329
+krelu: n 50 split_zero 271 after cutoff 17 number of args 307
+krelu: n 50 split_zero 179 after cutoff 0 number of args 179
+krelu: n 50 split_zero 11 after cutoff 0 number of args 11
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.05361852246389525): -0.1120/-0.1120, Final solve time: 23.513
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.05361852246389525): inf/-0.1091, Final solve time: 120.005
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.05361852246389525): -0.0322/-0.0322, Final solve time: 79.170
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.05361852246389525): -0.0306/-0.0306, Final solve time: 120.041
+img 1560: y: 0.1556; y_nat: 0.0536; y_lb/ub: -0.0554/0.0840 natural MSE: 1.0391e-02 and certified MSE: 4.4502e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 79/100, nat MSE:  3.5314e-04/3.8047e-03, cert MSE: 2.3023e-03/1.3275e-02, time: 491.263; 412.863; 32616.150
+krelu: n 50 split_zero 11395 after cutoff 0 number of args 11395
+krelu: n 50 split_zero 562 after cutoff 0 number of args 562
+krelu: n 50 split_zero 170 after cutoff 53 number of args 497
+krelu: n 50 split_zero 252 after cutoff 18 number of args 290
+krelu: n 50 split_zero 142 after cutoff 0 number of args 142
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.06529368959320714): -0.0558/-0.0558, Final solve time: 23.297
+Partial MILP model status: 9, Obj val/bound for constraint (0, -1, 0.06529368959320714): inf/-0.0467, Final solve time: 120.005
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.06529368959320714): -0.0219/-0.0219, Final solve time: 55.318
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, 0.06529368959320714): inf/-0.0197, Final solve time: 120.005
+img 1580: y: 0.1328; y_nat: 0.0653; y_lb/ub: 0.0186/0.0848 natural MSE: 4.5541e-03 and certified MSE: 1.3044e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 80/100, nat MSE:  3.6349e-04/3.8140e-03, cert MSE: 2.4164e-03/1.3272e-02, time: 484.011; 413.752; 33100.162
+krelu: n 50 split_zero 10856 after cutoff 0 number of args 10856
+krelu: n 50 split_zero 507 after cutoff 0 number of args 507
+krelu: n 50 split_zero 157 after cutoff 64 number of args 511
+krelu: n 50 split_zero 161 after cutoff 22 number of args 217
+krelu: n 50 split_zero 114 after cutoff 0 number of args 114
+krelu: n 50 split_zero 8 after cutoff 0 number of args 8
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.07588238167914226): -0.1426/-0.1426, Final solve time: 23.627
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.07588238167914226): -0.1277/-0.1385, Final solve time: 54.160
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.07588238167914226): -0.0434/-0.0434, Final solve time: 29.811
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.07588238167914226): -0.0357/-0.0434, Final solve time: 40.238
+img 1600: y: 0.1356; y_nat: 0.0759; y_lb/ub: -0.0626/0.1187 natural MSE: 3.5609e-03 and certified MSE: 3.9259e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 81/100, nat MSE:  3.7384e-04/3.8109e-03, cert MSE: 2.5306e-03/1.3593e-02, time: 315.809; 412.543; 33415.970
+krelu: n 50 split_zero 10665 after cutoff 0 number of args 10665
+krelu: n 50 split_zero 534 after cutoff 0 number of args 534
+krelu: n 50 split_zero 163 after cutoff 68 number of args 527
+krelu: n 50 split_zero 228 after cutoff 21 number of args 278
+krelu: n 50 split_zero 94 after cutoff 0 number of args 94
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.13248679269893157): -0.0211/-0.0211, Final solve time: 22.513
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.13248679269893157): -0.0191/-0.0191, Final solve time: 24.288
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.13248679269893157): -0.0259/-0.0259, Final solve time: 27.072
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.13248679269893157): -0.0253/-0.0253, Final solve time: 65.005
+img 1620: y: 0.1317; y_nat: 0.1325; y_lb/ub: 0.1129/0.1565 natural MSE: 6.7261e-07 and certified MSE: 6.1479e-04
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 82/100, nat MSE:  3.6349e-04/3.7645e-03, cert MSE: 2.4164e-03/1.3434e-02, time: 308.870; 411.279; 33724.840
+krelu: n 50 split_zero 11012 after cutoff 0 number of args 11012
+krelu: n 50 split_zero 572 after cutoff 2 number of args 573
+krelu: n 50 split_zero 208 after cutoff 92 number of args 744
+krelu: n 50 split_zero 307 after cutoff 42 number of args 517
+krelu: n 50 split_zero 193 after cutoff 0 number of args 193
+krelu: n 50 split_zero 12 after cutoff 0 number of args 12
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.09766858365625797): -0.2373/-0.2373, Final solve time: 29.306
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, 0.09766858365625797): -0.2285/-0.2373, Final solve time: 71.218
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.09766858365625797): -0.0356/-0.0356, Final solve time: 37.405
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.09766858365625797): -0.0297/-0.0321, Final solve time: 58.930
+img 1640: y: 0.1348; y_nat: 0.0977; y_lb/ub: -0.1387/0.1290 natural MSE: 1.3803e-03 and certified MSE: 7.4820e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 83/100, nat MSE:  3.7384e-04/3.7357e-03, cert MSE: 2.5306e-03/1.4174e-02, time: 413.774; 411.309; 34138.614
+krelu: n 50 split_zero 13658 after cutoff 0 number of args 13658
+krelu: n 50 split_zero 732 after cutoff 1 number of args 733
+krelu: n 50 split_zero 196 after cutoff 40 number of args 387
+krelu: n 50 split_zero 319 after cutoff 11 number of args 332
+krelu: n 50 split_zero 137 after cutoff 0 number of args 137
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.010398603645953018): -0.0330/-0.0330, Final solve time: 42.498
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, 0.010398603645953018): -0.0309/-0.0309, Final solve time: 116.258
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.010398603645953018): -0.0325/-0.0325, Final solve time: 29.352
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, 0.010398603645953018): -0.0325/-0.0325, Final solve time: 13.020
+img 1660: y: 0.0722; y_nat: 0.0104; y_lb/ub: -0.0205/0.0429 natural MSE: 3.8167e-03 and certified MSE: 8.5902e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 84/100, nat MSE:  3.7849e-04/3.7367e-03, cert MSE: 2.6860e-03/1.4108e-02, time: 351.798; 410.600; 34490.412
+krelu: n 50 split_zero 9629 after cutoff 0 number of args 9629
+krelu: n 50 split_zero 602 after cutoff 0 number of args 602
+krelu: n 50 split_zero 142 after cutoff 30 number of args 282
+krelu: n 50 split_zero 258 after cutoff 7 number of args 265
+krelu: n 50 split_zero 114 after cutoff 0 number of args 114
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.013722307014240915): -0.0441/-0.0441, Final solve time: 29.692
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.013722307014240915): -0.0441/-0.0441, Final solve time: 29.570
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.013722307014240915): -0.0257/-0.0257, Final solve time: 31.990
+Partial MILP model status: 2, Obj val/bound for constraint (-1, 0, -0.013722307014240915): -0.0257/-0.0257, Final solve time: 31.942
+img 1680: y: 0.0239; y_nat: -0.0137; y_lb/ub: -0.0578/0.0120 natural MSE: 1.4132e-03 and certified MSE: 6.6665e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 85/100, nat MSE:  3.8314e-04/3.7094e-03, cert MSE: 2.8414e-03/1.4020e-02, time: 260.930; 408.839; 34751.343
+krelu: n 50 split_zero 8936 after cutoff 0 number of args 8936
+krelu: n 50 split_zero 690 after cutoff 0 number of args 690
+krelu: n 50 split_zero 125 after cutoff 36 number of args 290
+krelu: n 50 split_zero 318 after cutoff 7 number of args 325
+krelu: n 50 split_zero 126 after cutoff 0 number of args 126
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.055700264329686694): -0.1783/-0.1783, Final solve time: 32.329
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.055700264329686694): -0.1783/-0.1783, Final solve time: 15.211
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.055700264329686694): -0.0533/-0.0533, Final solve time: 35.611
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.055700264329686694): inf/-0.0520, Final solve time: 120.006
+img 1700: y: 0.0139; y_nat: -0.0557; y_lb/ub: -0.2298/-0.0037 natural MSE: 4.8427e-03 and certified MSE: 5.9393e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 86/100, nat MSE:  4.0617e-04/3.7225e-03, cert MSE: 2.8843e-03/1.4548e-02, time: 339.679; 408.035; 35091.022
+krelu: n 50 split_zero 8780 after cutoff 0 number of args 8780
+krelu: n 50 split_zero 636 after cutoff 0 number of args 636
+krelu: n 50 split_zero 78 after cutoff 26 number of args 168
+krelu: n 50 split_zero 258 after cutoff 2 number of args 259
+krelu: n 50 split_zero 113 after cutoff 0 number of args 113
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.020469596421902072): -0.1299/-0.1299, Final solve time: 30.455
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.020469596421902072): -0.1294/-0.1294, Final solve time: 72.307
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.020469596421902072): -0.0186/-0.0186, Final solve time: 43.587
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.020469596421902072): -0.0180/-0.0180, Final solve time: 83.996
+img 1720: y: 0.0156; y_nat: -0.0205; y_lb/ub: -0.1488/-0.0025 natural MSE: 1.2978e-03 and certified MSE: 2.7006e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 87/100, nat MSE:  4.2919e-04/3.6947e-03, cert MSE: 2.9272e-03/1.4691e-02, time: 354.778; 407.423; 35445.799
+krelu: n 50 split_zero 9545 after cutoff 0 number of args 9545
+krelu: n 50 split_zero 585 after cutoff 0 number of args 585
+krelu: n 50 split_zero 79 after cutoff 7 number of args 86
+krelu: n 50 split_zero 196 after cutoff 5 number of args 198
+krelu: n 50 split_zero 97 after cutoff 0 number of args 97
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.017202213062375894): -0.1083/-0.1083, Final solve time: 26.611
+Partial MILP model status: 2, Obj val/bound for constraint (0, -1, -0.017202213062375894): -0.1083/-0.1083, Final solve time: 67.318
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.017202213062375894): -0.0071/-0.0071, Final solve time: 28.963
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.017202213062375894): -0.0063/-0.0063, Final solve time: 120.044
+img 1740: y: -0.0083; y_nat: -0.0172; y_lb/ub: -0.1248/-0.0109 natural MSE: 7.8657e-05 and certified MSE: 1.3576e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 88/100, nat MSE:  4.0617e-04/3.6536e-03, cert MSE: 3.2908e-03/1.4678e-02, time: 357.609; 406.857; 35803.408
+krelu: n 50 split_zero 9345 after cutoff 0 number of args 9345
+krelu: n 50 split_zero 602 after cutoff 0 number of args 602
+krelu: n 50 split_zero 71 after cutoff 3 number of args 72
+krelu: n 50 split_zero 221 after cutoff 0 number of args 221
+krelu: n 50 split_zero 90 after cutoff 0 number of args 90
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.06389303430649851): -0.1693/-0.1693, Final solve time: 27.356
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.06389303430649851): -0.1693/-0.1693, Final solve time: 22.073
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.06389303430649851): -0.0571/-0.0571, Final solve time: 40.778
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.06389303430649851): inf/-0.0546, Final solve time: 120.015
+img 1760: y: -0.0174; y_nat: -0.0639; y_lb/ub: -0.2291/-0.0093 natural MSE: 2.1570e-03 and certified MSE: 4.4779e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 89/100, nat MSE:  4.2919e-04/3.6368e-03, cert MSE: 3.6545e-03/1.5016e-02, time: 323.445; 405.920; 36126.853
+krelu: n 50 split_zero 9551 after cutoff 0 number of args 9551
+krelu: n 50 split_zero 408 after cutoff 0 number of args 408
+krelu: n 50 split_zero 52 after cutoff 1 number of args 53
+krelu: n 50 split_zero 200 after cutoff 0 number of args 200
+krelu: n 50 split_zero 91 after cutoff 0 number of args 91
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.04791178042493567): -0.1551/-0.1551, Final solve time: 28.974
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.04791178042493567): -0.1551/-0.1551, Final solve time: 11.998
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.04791178042493567): -0.0395/-0.0395, Final solve time: 31.565
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.04791178042493567): inf/-0.0387, Final solve time: 120.006
+img 1780: y: -0.0337; y_nat: -0.0479; y_lb/ub: -0.2003/-0.0093 natural MSE: 2.0244e-04 and certified MSE: 2.7753e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 90/100, nat MSE:  4.0617e-04/3.5986e-03, cert MSE: 3.7793e-03/1.5158e-02, time: 303.960; 404.787; 36430.813
+krelu: n 50 split_zero 9480 after cutoff 0 number of args 9480
+krelu: n 50 split_zero 396 after cutoff 0 number of args 396
+krelu: n 50 split_zero 61 after cutoff 2 number of args 62
+krelu: n 50 split_zero 234 after cutoff 0 number of args 234
+krelu: n 50 split_zero 98 after cutoff 0 number of args 98
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.09804765169391734): -0.0987/-0.0987, Final solve time: 38.320
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.09804765169391734): -0.0987/-0.0987, Final solve time: 20.584
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.09804765169391734): -0.0718/-0.0718, Final solve time: 28.902
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.09804765169391734): inf/-0.0711, Final solve time: 120.003
+img 1800: y: -0.0731; y_nat: -0.0980; y_lb/ub: -0.1942/-0.0270 natural MSE: 6.2310e-04 and certified MSE: 1.4679e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 91/100, nat MSE:  4.2919e-04/3.5659e-03, cert MSE: 3.9042e-03/1.5153e-02, time: 319.645; 403.851; 36750.458
+krelu: n 50 split_zero 9448 after cutoff 0 number of args 9448
+krelu: n 50 split_zero 525 after cutoff 0 number of args 525
+krelu: n 50 split_zero 61 after cutoff 1 number of args 62
+krelu: n 50 split_zero 265 after cutoff 0 number of args 265
+krelu: n 50 split_zero 140 after cutoff 0 number of args 140
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.1341169956421122): -0.1120/-0.1120, Final solve time: 54.366
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.1341169956421122): -0.1120/-0.1120, Final solve time: 30.098
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.1341169956421122): -0.0803/-0.0803, Final solve time: 38.596
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.1341169956421122): inf/-0.0795, Final solve time: 120.007
+img 1820: y: -0.0906; y_nat: -0.1341; y_lb/ub: -0.2413/-0.0545 natural MSE: 1.8976e-03 and certified MSE: 2.2725e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 92/100, nat MSE:  4.6235e-04/3.5478e-03, cert MSE: 4.2582e-03/1.5235e-02, time: 356.557; 403.337; 37107.015
+krelu: n 50 split_zero 9496 after cutoff 0 number of args 9496
+krelu: n 50 split_zero 672 after cutoff 0 number of args 672
+krelu: n 50 split_zero 111 after cutoff 5 number of args 113
+krelu: n 50 split_zero 311 after cutoff 0 number of args 311
+krelu: n 50 split_zero 182 after cutoff 0 number of args 182
+krelu: n 50 split_zero 7 after cutoff 0 number of args 7
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.1490447714999079): -0.1252/-0.1252, Final solve time: 77.867
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.1490447714999079): -0.1252/-0.1252, Final solve time: 32.838
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.1490447714999079): -0.1145/-0.1145, Final solve time: 39.936
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.1490447714999079): inf/-0.1145, Final solve time: 120.006
+img 1840: y: -0.0833; y_nat: -0.1490; y_lb/ub: -0.2676/-0.0346 natural MSE: 4.3180e-03 and certified MSE: 3.3954e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 93/100, nat MSE:  4.9550e-04/3.5561e-03, cert MSE: 4.6123e-03/1.5436e-02, time: 387.657; 403.169; 37494.672
+krelu: n 50 split_zero 9178 after cutoff 0 number of args 9178
+krelu: n 50 split_zero 781 after cutoff 0 number of args 781
+krelu: n 50 split_zero 145 after cutoff 9 number of args 153
+krelu: n 50 split_zero 285 after cutoff 0 number of args 285
+krelu: n 50 split_zero 107 after cutoff 0 number of args 107
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.09825472520404727): -0.0321/-0.0321, Final solve time: 36.277
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.09825472520404727): -0.0321/-0.0321, Final solve time: 20.275
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.09825472520404727): -0.0368/-0.0368, Final solve time: 22.686
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.09825472520404727): inf/-0.0368, Final solve time: 120.006
+img 1860: y: -0.1154; y_nat: -0.0983; y_lb/ub: -0.1297/-0.0614 natural MSE: 2.9297e-04 and certified MSE: 2.9152e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 94/100, nat MSE:  4.6235e-04/3.5213e-03, cert MSE: 4.2582e-03/1.5303e-02, time: 316.682; 402.248; 37811.354
+krelu: n 50 split_zero 9253 after cutoff 0 number of args 9253
+krelu: n 50 split_zero 872 after cutoff 0 number of args 872
+krelu: n 50 split_zero 161 after cutoff 10 number of args 171
+krelu: n 50 split_zero 341 after cutoff 0 number of args 341
+krelu: n 50 split_zero 167 after cutoff 0 number of args 167
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.10223121312385365): -0.0345/-0.0345, Final solve time: 34.948
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.10223121312385365): -0.0345/-0.0345, Final solve time: 23.230
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.10223121312385365): -0.0421/-0.0421, Final solve time: 54.686
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.10223121312385365): inf/-0.0421, Final solve time: 120.004
+img 1880: y: -0.0772; y_nat: -0.1022; y_lb/ub: -0.1359/-0.0601 natural MSE: 6.2545e-04 and certified MSE: 3.4425e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 95/100, nat MSE:  4.9550e-04/3.4909e-03, cert MSE: 3.9042e-03/1.5178e-02, time: 352.311; 401.723; 38163.664
+krelu: n 50 split_zero 10446 after cutoff 0 number of args 10446
+krelu: n 50 split_zero 824 after cutoff 0 number of args 824
+krelu: n 50 split_zero 139 after cutoff 8 number of args 146
+krelu: n 50 split_zero 311 after cutoff 0 number of args 311
+krelu: n 50 split_zero 104 after cutoff 0 number of args 104
+krelu: n 50 split_zero 1 after cutoff 0 number of args 1
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.14969356283941582): -0.0172/-0.0172, Final solve time: 29.585
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.14969356283941582): -0.0172/-0.0172, Final solve time: 24.002
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.14969356283941582): -0.0365/-0.0365, Final solve time: 24.980
+Partial MILP model status: 11, Obj val/bound for constraint (-1, 0, -0.14969356283941582): -0.0329/-0.0329, Final solve time: 103.638
+img 1900: y: -0.0896; y_nat: -0.1497; y_lb/ub: -0.1654/-0.1163 natural MSE: 3.6087e-03 and certified MSE: 5.7377e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 96/100, nat MSE:  5.0213e-04/3.4921e-03, cert MSE: 4.2582e-03/1.5080e-02, time: 306.180; 400.728; 38469.845
+krelu: n 50 split_zero 10473 after cutoff 0 number of args 10473
+krelu: n 50 split_zero 812 after cutoff 0 number of args 812
+krelu: n 50 split_zero 148 after cutoff 13 number of args 170
+krelu: n 50 split_zero 342 after cutoff 0 number of args 342
+krelu: n 50 split_zero 91 after cutoff 0 number of args 91
+krelu: n 50 split_zero 3 after cutoff 0 number of args 3
+krelu: n 50 split_zero 4 after cutoff 0 number of args 4
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.1442704670990058): -0.0210/-0.0210, Final solve time: 47.677
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.1442704670990058): -0.0210/-0.0210, Final solve time: 33.178
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.1442704670990058): -0.0343/-0.0343, Final solve time: 24.047
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.1442704670990058): inf/-0.0331, Final solve time: 120.018
+img 1920: y: -0.1078; y_nat: -0.1443; y_lb/ub: -0.1638/-0.1107 natural MSE: 1.3279e-03 and certified MSE: 3.1274e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 97/100, nat MSE:  5.0876e-04/3.4698e-03, cert MSE: 3.9042e-03/1.4957e-02, time: 346.425; 400.168; 38816.270
+krelu: n 50 split_zero 10273 after cutoff 0 number of args 10273
+krelu: n 50 split_zero 805 after cutoff 0 number of args 805
+krelu: n 50 split_zero 134 after cutoff 7 number of args 141
+krelu: n 50 split_zero 390 after cutoff 0 number of args 390
+krelu: n 50 split_zero 101 after cutoff 0 number of args 101
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.15105647007003814): -0.0307/-0.0307, Final solve time: 45.028
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.15105647007003814): -0.0307/-0.0307, Final solve time: 33.327
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.15105647007003814): -0.0550/-0.0550, Final solve time: 23.143
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.15105647007003814): inf/-0.0537, Final solve time: 120.009
+img 1940: y: -0.0750; y_nat: -0.1511; y_lb/ub: -0.1798/-0.0970 natural MSE: 5.7846e-03 and certified MSE: 1.0976e-02
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 98/100, nat MSE:  5.6593e-04/3.4934e-03, cert MSE: 4.2582e-03/1.4916e-02, time: 341.621; 399.570; 39157.890
+krelu: n 50 split_zero 9446 after cutoff 0 number of args 9446
+krelu: n 50 split_zero 741 after cutoff 0 number of args 741
+krelu: n 50 split_zero 150 after cutoff 5 number of args 152
+krelu: n 50 split_zero 349 after cutoff 0 number of args 349
+krelu: n 50 split_zero 105 after cutoff 0 number of args 105
+krelu: n 50 split_zero 5 after cutoff 0 number of args 5
+krelu: n 50 split_zero 6 after cutoff 0 number of args 6
+krelu: n 50 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.14193597524501733): -0.0215/-0.0215, Final solve time: 32.504
+Partial MILP model status: 11, Obj val/bound for constraint (0, -1, -0.14193597524501733): -0.0215/-0.0215, Final solve time: 23.860
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.14193597524501733): -0.0331/-0.0331, Final solve time: 35.428
+Partial MILP model status: 9, Obj val/bound for constraint (-1, 0, -0.14193597524501733): inf/-0.0300, Final solve time: 120.010
+img 1960: y: -0.1094; y_nat: -0.1419; y_lb/ub: -0.1620/-0.1115 natural MSE: 1.0557e-03 and certified MSE: 2.7599e-03
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+progress: 99/100, nat MSE:  6.2310e-04/3.4688e-03, cert MSE: 3.9042e-03/1.4793e-02, time: 329.187; 398.859; 39487.078
+certified images: 0; analysis precision  0 /  99
+
+Process finished with exit code 0

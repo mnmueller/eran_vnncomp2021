@@ -1,0 +1,269 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --instance_file /home/mark/Projects/VNN_COMP_2021/RESNET/vnncomp2021/benchmarks/cifar10_resnet/instance.csv --domain refinegpupoly --sparse_n 100 --k 3 --s -2 --partial_milp 2 --max_milp_neurons 100 --timeout_final_milp 200
+GPUPoly 0.12.0S Debug (built Apr 23 2021 09:33:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+{'approx_k': True,
+ 'complete': False,
+ 'debug': False,
+ 'domain': 'refinegpupoly',
+ 'from_test': 0,
+ 'initial_splits': 10,
+ 'instance_file': '/home/mark/Projects/VNN_COMP_2021/RESNET/vnncomp2021/benchmarks/cifar10_resnet/instance.csv',
+ 'k': 3,
+ 'max_gpu_batch': 500,
+ 'max_milp_neurons': 100,
+ 'max_split_depth': 10,
+ 'n_milp_refine': 1,
+ 'n_test': -1,
+ 'netname': None,
+ 'partial_milp': 2,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 100,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 200.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'vnnlib_spec': None}
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 0 (UNSAT): 1/72; SAT 0; UNSAT 1; unknown 0; time: 1.874; 1.874; 1.874
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 1 (UNSAT): 2/72; SAT 0; UNSAT 2; unknown 0; time: 0.187; 1.030; 2.060
+img 0 Verified UNSAT for constraints [[(5, 0, 0)], [(5, 1, 0)], [(5, 2, 0)], [(5, 3, 0)], [(5, 4, 0)], [(5, 6, 0)], [(5, 7, 0)], [(5, 8, 0)], [(5, 9, 0)]]
+progress: 1/1
+Spec 2 (UNSAT): 3/72; SAT 0; UNSAT 3; unknown 0; time: 0.172; 0.744; 2.232
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 3 (UNSAT): 4/72; SAT 0; UNSAT 4; unknown 0; time: 0.167; 0.600; 2.399
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 4 (UNSAT): 5/72; SAT 0; UNSAT 5; unknown 0; time: 0.169; 0.514; 2.568
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 5 (UNSAT): 6/72; SAT 0; UNSAT 6; unknown 0; time: 0.163; 0.455; 2.731
+img 0 Verified UNSAT for constraints [[(9, 0, 0)], [(9, 1, 0)], [(9, 2, 0)], [(9, 3, 0)], [(9, 4, 0)], [(9, 5, 0)], [(9, 6, 0)], [(9, 7, 0)], [(9, 8, 0)]]
+progress: 1/1
+Spec 6 (UNSAT): 7/72; SAT 0; UNSAT 7; unknown 0; time: 0.174; 0.415; 2.905
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 7 (UNSAT): 8/72; SAT 0; UNSAT 8; unknown 0; time: 0.166; 0.384; 3.071
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 8 (UNSAT): 9/72; SAT 0; UNSAT 9; unknown 0; time: 0.167; 0.360; 3.238
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 9 (UNSAT): 10/72; SAT 0; UNSAT 10; unknown 0; time: 0.163; 0.340; 3.401
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 10 (UNSAT): 11/72; SAT 0; UNSAT 11; unknown 0; time: 0.165; 0.324; 3.566
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 11 (UNSAT): 12/72; SAT 0; UNSAT 12; unknown 0; time: 0.161; 0.311; 3.726
+img 0 Verified UNSAT for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 12 (UNSAT): 13/72; SAT 0; UNSAT 13; unknown 0; time: 0.170; 0.300; 3.896
+img 0 Verified UNSAT for constraints [[(4, 0, 0)], [(4, 1, 0)], [(4, 2, 0)], [(4, 3, 0)], [(4, 5, 0)], [(4, 6, 0)], [(4, 7, 0)], [(4, 8, 0)], [(4, 9, 0)]]
+progress: 1/1
+Spec 13 (UNSAT): 14/72; SAT 0; UNSAT 14; unknown 0; time: 0.170; 0.290; 4.066
+No adex found via attack
+No adex found via attack
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -0.3138/-0.3138, Final solve time: 2.712
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): 0.0028/-0.0341, Final solve time: 200.015
+Model status: 6, Obj val/bound for constraint (2, 1, 0): 0.0000/failed, Final solve time: 1.299
+Model status: 2, Obj val/bound for constraint (2, 3, 0): -0.3797/-0.3797, Final solve time: 2.635
+Partial MILP model status: 11, Obj val/bound for constraint (2, 3, 0): -0.0368/-0.3675, Final solve time: 27.110
+Model status: 6, Obj val/bound for constraint (2, 4, 0): 0.0000/failed, Final solve time: 1.536
+Model status: 2, Obj val/bound for constraint (2, 5, 0): -0.4446/-0.4446, Final solve time: 2.603
+Partial MILP model status: 9, Obj val/bound for constraint (2, 5, 0): inf/-0.4353, Final solve time: 51.217
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 14 (UNKNOWN): 15/72; SAT 0; UNSAT 14; unknown 1; time: 300.162; 20.282; 304.228
+img 0 Verified UNSAT for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 15 (UNSAT): 16/72; SAT 0; UNSAT 15; unknown 1; time: 0.202; 19.027; 304.430
+No adex found via attack
+No adex found via attack
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -0.4997/-0.4997, Final solve time: 2.781
+Partial MILP model status: 9, Obj val/bound for constraint (0, 1, 0): inf/-0.3687, Final solve time: 200.008
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -0.0820/-0.0820, Final solve time: 3.641
+Partial MILP model status: 9, Obj val/bound for constraint (0, 2, 0): inf/-0.0815, Final solve time: 75.693
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 16 (UNKNOWN): 17/72; SAT 0; UNSAT 15; unknown 2; time: 300.189; 35.566; 604.619
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 17 (UNSAT): 18/72; SAT 0; UNSAT 16; unknown 2; time: 0.211; 33.602; 604.830
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 18 (UNSAT): 19/72; SAT 0; UNSAT 17; unknown 2; time: 0.175; 31.842; 605.004
+img 0 Verified UNSAT for constraints [[(4, 0, 0)], [(4, 1, 0)], [(4, 2, 0)], [(4, 3, 0)], [(4, 5, 0)], [(4, 6, 0)], [(4, 7, 0)], [(4, 8, 0)], [(4, 9, 0)]]
+progress: 1/1
+Spec 19 (UNSAT): 20/72; SAT 0; UNSAT 18; unknown 2; time: 0.177; 30.259; 605.182
+No adex found via attack
+No adex found via attack
+Model status: 6, Obj val/bound for constraint (9, 0, 0): 0.0000/failed, Final solve time: 3.651
+Model status: 6, Obj val/bound for constraint (9, 1, 0): 0.0000/failed, Final solve time: 4.352
+Model status: 2, Obj val/bound for constraint (9, 2, 0): -0.6222/-0.6222, Final solve time: 3.792
+Partial MILP model status: 9, Obj val/bound for constraint (9, 2, 0): inf/-0.4615, Final solve time: 200.012
+Model status: 2, Obj val/bound for constraint (9, 3, 0): -0.8852/-0.8852, Final solve time: 3.854
+Partial MILP model status: 9, Obj val/bound for constraint (9, 3, 0): inf/-6.6407, Final solve time: 61.178
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 20 (UNKNOWN): 21/72; SAT 0; UNSAT 18; unknown 3; time: 300.231; 43.115; 905.413
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 21 (UNSAT): 22/72; SAT 0; UNSAT 19; unknown 3; time: 0.189; 41.164; 905.602
+img 0 Verified UNSAT for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 22 (UNSAT): 23/72; SAT 0; UNSAT 20; unknown 3; time: 0.174; 39.382; 905.776
+img 0 Verified UNSAT for constraints [[(4, 0, 0)], [(4, 1, 0)], [(4, 2, 0)], [(4, 3, 0)], [(4, 5, 0)], [(4, 6, 0)], [(4, 7, 0)], [(4, 8, 0)], [(4, 9, 0)]]
+progress: 1/1
+Spec 23 (UNSAT): 24/72; SAT 0; UNSAT 21; unknown 3; time: 0.169; 37.748; 905.945
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 24 (UNSAT): 25/72; SAT 0; UNSAT 22; unknown 3; time: 0.167; 36.244; 906.112
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 25 (UNSAT): 26/72; SAT 0; UNSAT 23; unknown 3; time: 0.157; 34.856; 906.269
+img 0 Verified UNSAT for constraints [[(4, 0, 0)], [(4, 1, 0)], [(4, 2, 0)], [(4, 3, 0)], [(4, 5, 0)], [(4, 6, 0)], [(4, 7, 0)], [(4, 8, 0)], [(4, 9, 0)]]
+progress: 1/1
+Spec 26 (UNSAT): 27/72; SAT 0; UNSAT 24; unknown 3; time: 0.168; 33.572; 906.437
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 27 (UNSAT): 28/72; SAT 0; UNSAT 25; unknown 3; time: 0.172; 32.379; 906.609
+No adex found via attack
+No adex found via attack
+Model status: 2, Obj val/bound for constraint (3, 0, 0): -0.8571/-0.8571, Final solve time: 8.553
+Partial MILP model status: 9, Obj val/bound for constraint (3, 0, 0): inf/-0.8417, Final solve time: 200.010
+Model status: 2, Obj val/bound for constraint (3, 1, 0): -0.2373/-0.2373, Final solve time: 7.718
+Partial MILP model status: 9, Obj val/bound for constraint (3, 1, 0): inf/-9.9020, Final solve time: 42.135
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 28 (UNKNOWN): 29/72; SAT 0; UNSAT 25; unknown 4; time: 300.406; 41.621; 1207.015
+No adex found via attack
+No adex found via attack
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -1.0092/-1.0092, Final solve time: 3.950
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-0.9981, Final solve time: 200.008
+Model status: 2, Obj val/bound for constraint (8, 1, 0): -2.2744/-2.2744, Final solve time: 3.756
+Partial MILP model status: 9, Obj val/bound for constraint (8, 1, 0): inf/-8.7446, Final solve time: 67.626
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 29 (UNKNOWN): 30/72; SAT 0; UNSAT 25; unknown 5; time: 300.262; 50.243; 1507.276
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 30 (UNSAT): 31/72; SAT 0; UNSAT 26; unknown 5; time: 0.193; 48.628; 1507.470
+No adex found via attack
+No adex found via attack
+Model status: 6, Obj val/bound for constraint (1, 0, 0): 0.0000/failed, Final solve time: 3.750
+Model status: 2, Obj val/bound for constraint (1, 2, 0): -0.0038/-0.0038, Final solve time: 3.891
+Partial MILP model status: 6, Obj val/bound for constraint (1, 2, 0): inf/0.0100, Final solve time: 134.859
+Model status: 6, Obj val/bound for constraint (1, 3, 0): 0.0000/failed, Final solve time: 3.920
+Model status: 6, Obj val/bound for constraint (1, 4, 0): 0.0000/failed, Final solve time: 3.624
+Model status: 6, Obj val/bound for constraint (1, 5, 0): 0.0000/failed, Final solve time: 3.822
+Model status: 6, Obj val/bound for constraint (1, 6, 0): 0.0000/failed, Final solve time: 3.745
+Model status: 6, Obj val/bound for constraint (1, 7, 0): 0.0000/failed, Final solve time: 3.840
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -0.3931/-0.3931, Final solve time: 4.136
+Partial MILP model status: 9, Obj val/bound for constraint (1, 8, 0): inf/-0.3897, Final solve time: 112.354
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 31 (UNKNOWN): 32/72; SAT 0; UNSAT 26; unknown 6; time: 300.220; 56.490; 1807.689
+No adex found via attack
+No adex found via attack
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -0.8175/-0.8175, Final solve time: 4.024
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-0.7395, Final solve time: 200.008
+Model status: 6, Obj val/bound for constraint (8, 1, 0): 0.0000/failed, Final solve time: 3.725
+Model status: 6, Obj val/bound for constraint (8, 2, 0): 0.0000/failed, Final solve time: 3.258
+Model status: 6, Obj val/bound for constraint (8, 3, 0): 0.0000/failed, Final solve time: 3.449
+Model status: 6, Obj val/bound for constraint (8, 4, 0): 0.0000/failed, Final solve time: 3.221
+Model status: 6, Obj val/bound for constraint (8, 5, 0): 0.0000/failed, Final solve time: 3.450
+Model status: 6, Obj val/bound for constraint (8, 6, 0): 0.0000/failed, Final solve time: 3.268
+Model status: 6, Obj val/bound for constraint (8, 7, 0): 0.0000/failed, Final solve time: 3.407
+Model status: 6, Obj val/bound for constraint (8, 9, 0): 0.0000/failed, Final solve time: 3.401
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 32 (UNKNOWN): 33/72; SAT 0; UNSAT 26; unknown 7; time: 248.843; 62.319; 2056.532
+img 0 Verified UNSAT for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 33 (UNSAT): 34/72; SAT 0; UNSAT 27; unknown 7; time: 0.208; 60.492; 2056.740
+img 0 Verified UNSAT for constraints [[(9, 0, 0)], [(9, 1, 0)], [(9, 2, 0)], [(9, 3, 0)], [(9, 4, 0)], [(9, 5, 0)], [(9, 6, 0)], [(9, 7, 0)], [(9, 8, 0)]]
+progress: 1/1
+Spec 34 (UNSAT): 35/72; SAT 0; UNSAT 28; unknown 7; time: 0.165; 58.769; 2056.905
+img 0 Verified UNSAT for constraints [[(3, 0, 0)], [(3, 1, 0)], [(3, 2, 0)], [(3, 4, 0)], [(3, 5, 0)], [(3, 6, 0)], [(3, 7, 0)], [(3, 8, 0)], [(3, 9, 0)]]
+progress: 1/1
+Spec 35 (UNSAT): 36/72; SAT 0; UNSAT 29; unknown 7; time: 0.176; 57.141; 2057.081
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 36 (UNSAT): 37/72; SAT 0; UNSAT 30; unknown 7; time: 0.163; 55.601; 2057.243
+No adex found via attack
+No adex found via attack
+Model status: 6, Obj val/bound for constraint (8, 0, 0): 0.0000/failed, Final solve time: 3.317
+Model status: 6, Obj val/bound for constraint (8, 1, 0): 0.0000/failed, Final solve time: 3.451
+Model status: 6, Obj val/bound for constraint (8, 2, 0): 0.0000/failed, Final solve time: 3.083
+Model status: 6, Obj val/bound for constraint (8, 3, 0): 0.0000/failed, Final solve time: 3.337
+Model status: 6, Obj val/bound for constraint (8, 4, 0): 0.0000/failed, Final solve time: 3.173
+Model status: 6, Obj val/bound for constraint (8, 5, 0): 0.0000/failed, Final solve time: 3.121
+Model status: 6, Obj val/bound for constraint (8, 6, 0): 0.0000/failed, Final solve time: 3.018
+Model status: 6, Obj val/bound for constraint (8, 7, 0): 0.0000/failed, Final solve time: 3.016
+Model status: 6, Obj val/bound for constraint (8, 9, 0): 0.0000/failed, Final solve time: 3.201
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 37 (UNSAT): 38/72; SAT 0; UNSAT 31; unknown 7; time: 46.070; 55.350; 2103.313
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 38 (UNSAT): 39/72; SAT 0; UNSAT 32; unknown 7; time: 0.203; 53.936; 2103.517
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 39 (UNSAT): 40/72; SAT 0; UNSAT 33; unknown 7; time: 0.191; 52.593; 2103.708
+No adex found via attack
+No adex found via attack
+Model status: 6, Obj val/bound for constraint (1, 0, 0): 0.0000/failed, Final solve time: 2.984
+Model status: 6, Obj val/bound for constraint (1, 2, 0): 0.0000/failed, Final solve time: 2.907
+Model status: 6, Obj val/bound for constraint (1, 3, 0): 0.0000/failed, Final solve time: 2.815
+Model status: 6, Obj val/bound for constraint (1, 4, 0): 0.0000/failed, Final solve time: 2.783
+Model status: 6, Obj val/bound for constraint (1, 5, 0): 0.0000/failed, Final solve time: 2.814
+Model status: 6, Obj val/bound for constraint (1, 6, 0): 0.0000/failed, Final solve time: 2.735
+Model status: 6, Obj val/bound for constraint (1, 7, 0): 0.0000/failed, Final solve time: 2.712
+Model status: 6, Obj val/bound for constraint (1, 8, 0): 0.0000/failed, Final solve time: 2.983
+Model status: 6, Obj val/bound for constraint (1, 9, 0): 0.0000/failed, Final solve time: 3.013
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 40 (UNSAT): 41/72; SAT 0; UNSAT 34; unknown 7; time: 43.189; 52.363; 2146.897
+img 0 Verified UNSAT for constraints [[(9, 0, 0)], [(9, 1, 0)], [(9, 2, 0)], [(9, 3, 0)], [(9, 4, 0)], [(9, 5, 0)], [(9, 6, 0)], [(9, 7, 0)], [(9, 8, 0)]]
+progress: 1/1
+Spec 41 (UNSAT): 42/72; SAT 0; UNSAT 35; unknown 7; time: 0.200; 51.121; 2147.097
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 42 (UNSAT): 43/72; SAT 0; UNSAT 36; unknown 7; time: 0.188; 49.937; 2147.285
+img 0 Verified UNSAT for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 43 (UNSAT): 44/72; SAT 0; UNSAT 37; unknown 7; time: 0.162; 48.806; 2147.448
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 44 (UNSAT): 45/72; SAT 0; UNSAT 38; unknown 7; time: 0.174; 47.725; 2147.622
+img 0 Verified UNSAT for constraints [[(4, 0, 0)], [(4, 1, 0)], [(4, 2, 0)], [(4, 3, 0)], [(4, 5, 0)], [(4, 6, 0)], [(4, 7, 0)], [(4, 8, 0)], [(4, 9, 0)]]
+progress: 1/1
+Spec 45 (UNSAT): 46/72; SAT 0; UNSAT 39; unknown 7; time: 0.165; 46.691; 2147.786
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 46 (UNSAT): 47/72; SAT 0; UNSAT 40; unknown 7; time: 0.163; 45.701; 2147.950
+img 0 Verified UNSAT for constraints [[(9, 0, 0)], [(9, 1, 0)], [(9, 2, 0)], [(9, 3, 0)], [(9, 4, 0)], [(9, 5, 0)], [(9, 6, 0)], [(9, 7, 0)], [(9, 8, 0)]]
+progress: 1/1
+Spec 47 (UNSAT): 48/72; SAT 0; UNSAT 41; unknown 7; time: 0.157; 44.752; 2148.106
+This network has 14436 neurons.
+Traceback (most recent call last):
+  File "/home/mark/Projects/ERAN/eran/tf_verify/eran_light.py", line 940, in <module>
+    run_analysis()
+  File "/home/mark/Projects/ERAN/eran/tf_verify/eran_light.py", line 718, in run_analysis
+    status = run_analysis_instance(config=config)
+  File "/home/mark/Projects/ERAN/eran/tf_verify/eran_light.py", line 776, in run_analysis_instance
+    torch_net = convert_net(netname, [boxes[0][0], boxes[0][1]], input_shape, nchw=nchw)
+  File "/home/mark/Projects/ERAN/eran/tf_verify/eran_light.py", line 937, in convert_net
+    assert False, "Both nchw and nhwc lead to mismatched outputs"
+AssertionError: Both nchw and nhwc lead to mismatched outputs
+
+Process finished with exit code 1

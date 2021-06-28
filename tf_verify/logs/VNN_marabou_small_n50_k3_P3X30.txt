@@ -1,0 +1,445 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --instance_file /home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/marabou-cifar10/marabou-cifar10_instances.csv --domain refinegpupoly --sparse_n 50 --k 3 --s -2 --partial_milp 3 --max_milp_neurons 30 --timeout_final_milp 60 --from_test 24 --n_test 24 --debug --index_is_nchw False --attack_restarts 10
+GPUPoly 0.12.0S Debug (built Apr 23 2021 09:33:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+{'approx_k': True,
+ 'attack_restarts': 10,
+ 'complete': False,
+ 'debug': True,
+ 'domain': 'refinegpupoly',
+ 'from_test': 24,
+ 'index_is_nchw': False,
+ 'initial_splits': 10,
+ 'instance_file': '/home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/marabou-cifar10/marabou-cifar10_instances.csv',
+ 'k': 3,
+ 'max_gpu_batch': 500,
+ 'max_milp_neurons': 30,
+ 'max_split_depth': 10,
+ 'n_milp_refine': 1,
+ 'n_test': 24,
+ 'netname': None,
+ 'partial_milp': 3,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 50,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 60.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'vnnlib_spec': None}
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 32, 3, 32] and changed to: [1, 32, 3, 32]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 32, 32, 3] and changed to: [1, 32, 32, 3]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 15, 15, 8] and changed to: [1, 15, 15, 8]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 6, 6, 16] and changed to: [1, 6, 6, 16]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 6, 16, 6] and changed to: [1, 6, 16, 6]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [  0 576] and changed to: [1, 576]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 128] and changed to: [1, 128]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 64] and changed to: [1, 64]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+/home/mark/Projects/ERAN/eran/tf_verify/onnx_translator.py:428: RuntimeWarning: 0-sized dimension encountered: [0, 10] and changed to: [1, 10]
+  warnings.warn(f"0-sized dimension encountered: {shape_raw} and changed to: {shape_cleaned}",RuntimeWarning)
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-2.84756779 -5.1162711   0.83102448  2.09538048  1.4055745   2.21416869
+ -0.35192319  1.00205875 -2.73003003 -3.02046294] for constraints [[(0, 5, 0), (1, 5, 0), (2, 5, 0), (3, 5, 0), (4, 5, 0), (6, 5, 0), (7, 5, 0), (8, 5, 0), (9, 5, 0)]]
+progress: 1/1
+Spec 24 (SAT): 1/48; SAT 1; UNSAT 0; unknown 0; time: 1.843; 1.843; 1.843
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-3.57754808 -5.45627931  1.49218608  1.31973316  1.71015807  1.93349319
+  1.82911832 -0.65267857 -2.93588574 -4.71495039] for constraints [[(0, 5, 0), (1, 5, 0), (2, 5, 0), (3, 5, 0), (4, 5, 0), (6, 5, 0), (7, 5, 0), (8, 5, 0), (9, 5, 0)]]
+progress: 1/1
+Spec 25 (SAT): 2/48; SAT 2; UNSAT 0; unknown 0; time: 0.121; 0.982; 1.964
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-4.12943985 -3.74653348 -0.04805017  1.74187799  1.70767584  1.6060613
+  2.12232598  1.00158408 -5.05367074 -3.18477354] for constraints [[(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]]
+progress: 1/1
+Spec 26 (SAT): 3/48; SAT 3; UNSAT 0; unknown 0; time: 0.117; 0.694; 2.081
+No adex found via attack
+krelu: n 50 split_zero 732 after cutoff 0 number of args 732
+total size: 1464, number of groups 732, time since start: 15.096055030822754
+krelu: n 50 split_zero 395 after cutoff 72 number of args 777
+total size: 10722, number of groups 777, time since start: 15.80040955543518
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 16.880434036254883
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 18.56843113899231
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound for constraint (0, 8, 0): -25.3699/-25.3699, Final solve time: 3.107
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -34.1964/-34.1964, Final solve time: 1.454
+Model status: 2, Obj val/bound for constraint (2, 8, 0): -30.0556/-30.0556, Final solve time: 2.431
+Model status: 2, Obj val/bound for constraint (3, 8, 0): -33.1642/-33.1642, Final solve time: 1.489
+Model status: 2, Obj val/bound for constraint (4, 8, 0): -38.1773/-38.1773, Final solve time: 1.284
+Model status: 2, Obj val/bound for constraint (5, 8, 0): -34.8992/-34.8992, Final solve time: 1.468
+Model status: 2, Obj val/bound for constraint (6, 8, 0): -39.9361/-39.9361, Final solve time: 1.254
+Model status: 2, Obj val/bound for constraint (7, 8, 0): -39.8829/-39.8829, Final solve time: 1.358
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -32.6398/-32.6398, Final solve time: 2.557
+Model status: 2, Obj val/bound for constraint [(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]: -232.6586/-232.6586, Final solve time: 1.274
+Model status: 9, Obj val/bound for constraint [(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]: inf/-480.6045, Final solve time: 60.002
+Model status: 11, Obj val/bound for constraint (0, 8, 0): -0.2602/-51.9644, Final solve time: 2.508
+Model status: 11, Obj val/bound for constraint (1, 8, 0): -1.2802/-70.0046, Final solve time: 2.509
+Model status: 9, Obj val/bound for constraint (2, 8, 0): inf/-30.0556, Final solve time: 60.003
+Model status: 9, Obj val/bound for constraint (3, 8, 0): inf/-33.1642, Final solve time: 60.003
+Model status: 9, Obj val/bound for constraint (4, 8, 0): inf/-38.1773, Final solve time: 60.004
+Model status: 9, Obj val/bound for constraint (5, 8, 0): inf/-74.5329, Final solve time: 14.867
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 27 (UNKNOWN): 4/48; SAT 3; UNSAT 0; unknown 1; time: 300.139; 75.555; 302.220
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [ 2.11194269  0.81120985 -1.44454935 -0.78214476 -1.43922754 -3.00074377
+ -2.01365487 -3.27971718  1.62758177  1.24281375] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0), (5, 0, 0), (6, 0, 0), (7, 0, 0), (8, 0, 0), (9, 0, 0)]]
+progress: 1/1
+Spec 28 (SAT): 5/48; SAT 4; UNSAT 0; unknown 1; time: 0.114; 60.467; 302.334
+No adex found via attack
+krelu: n 50 split_zero 929 after cutoff 0 number of args 929
+total size: 1858, number of groups 929, time since start: 14.552342653274536
+krelu: n 50 split_zero 358 after cutoff 49 number of args 666
+total size: 8724, number of groups 666, time since start: 15.312958002090454
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 16.308266162872314
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 18.18228840827942
+Model status: 2, Obj val/bound for constraint (0, 6, 0): -33.4911/-33.4911, Final solve time: 1.321
+Model status: 2, Obj val/bound for constraint (1, 6, 0): -34.9386/-34.9386, Final solve time: 2.283
+Model status: 2, Obj val/bound for constraint (2, 6, 0): -23.3601/-23.3601, Final solve time: 1.297
+Model status: 2, Obj val/bound for constraint (3, 6, 0): -25.9769/-25.9769, Final solve time: 1.343
+Model status: 2, Obj val/bound for constraint (4, 6, 0): -29.5216/-29.5216, Final solve time: 1.188
+Model status: 2, Obj val/bound for constraint (5, 6, 0): -27.3755/-27.3755, Final solve time: 1.239
+Model status: 2, Obj val/bound for constraint (7, 6, 0): -34.3471/-34.3471, Final solve time: 1.220
+Model status: 2, Obj val/bound for constraint (8, 6, 0): -40.1035/-40.1035, Final solve time: 1.277
+Model status: 2, Obj val/bound for constraint (9, 6, 0): -35.0064/-35.0064, Final solve time: 1.188
+Model status: 2, Obj val/bound for constraint [(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]: -226.9434/-226.9434, Final solve time: 1.254
+Model status: 9, Obj val/bound for constraint [(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]: -0.8666/-226.9430, Final solve time: 60.005
+Model status: 11, Obj val/bound for constraint (0, 6, 0): -2.2619/-66.1960, Final solve time: 2.376
+Model status: 11, Obj val/bound for constraint (1, 6, 0): -3.0940/-68.9910, Final solve time: 2.380
+Model status: 11, Obj val/bound for constraint (2, 6, 0): -12.6159/-23.3601, Final solve time: 45.028
+Model status: 11, Obj val/bound for constraint (3, 6, 0): -9.5553/-25.9768, Final solve time: 53.191
+Model status: 11, Obj val/bound for constraint (4, 6, 0): -0.2239/-65.1277, Final solve time: 2.370
+Model status: 11, Obj val/bound for constraint (5, 6, 0): -11.4661/-27.3754, Final solve time: 45.679
+Model status: 11, Obj val/bound for constraint (7, 6, 0): -16.3444/-34.3444, Final solve time: 53.371
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 29 (UNKNOWN): 6/48; SAT 4; UNSAT 0; unknown 2; time: 300.101; 100.406; 602.434
+No adex found via attack
+krelu: n 50 split_zero 608 after cutoff 0 number of args 608
+total size: 1216, number of groups 608, time since start: 14.3371901512146
+krelu: n 50 split_zero 310 after cutoff 29 number of args 436
+total size: 3896, number of groups 436, time since start: 15.106953144073486
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 15.999991655349731
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 17.80553913116455
+Model status: 2, Obj val/bound for constraint (0, 7, 0): -28.4835/-28.4835, Final solve time: 1.115
+Model status: 2, Obj val/bound for constraint (1, 7, 0): -31.5630/-31.5630, Final solve time: 1.124
+Model status: 2, Obj val/bound for constraint (2, 7, 0): -23.7048/-23.7048, Final solve time: 1.121
+Model status: 2, Obj val/bound for constraint (3, 7, 0): -24.7802/-24.7802, Final solve time: 1.200
+Model status: 2, Obj val/bound for constraint (4, 7, 0): -25.2619/-25.2619, Final solve time: 1.803
+Model status: 2, Obj val/bound for constraint (5, 7, 0): -22.4726/-22.4726, Final solve time: 2.589
+Model status: 2, Obj val/bound for constraint (6, 7, 0): -32.4903/-32.4903, Final solve time: 1.114
+Model status: 2, Obj val/bound for constraint (8, 7, 0): -34.5594/-34.5594, Final solve time: 1.093
+Model status: 2, Obj val/bound for constraint (9, 7, 0): -27.4526/-27.4526, Final solve time: 1.147
+Model status: 2, Obj val/bound for constraint [(0, 7, 0), (1, 7, 0), (2, 7, 0), (3, 7, 0), (4, 7, 0), (5, 7, 0), (6, 7, 0), (8, 7, 0), (9, 7, 0)]: -203.7887/-203.7887, Final solve time: 1.107
+Model status: 9, Obj val/bound for constraint [(0, 7, 0), (1, 7, 0), (2, 7, 0), (3, 7, 0), (4, 7, 0), (5, 7, 0), (6, 7, 0), (8, 7, 0), (9, 7, 0)]: -77.7153/-203.7887, Final solve time: 60.002
+Model status: 11, Obj val/bound for constraint (0, 7, 0): -0.6116/-55.2153, Final solve time: 2.413
+Model status: 11, Obj val/bound for constraint (1, 7, 0): -2.4084/-62.1346, Final solve time: 2.401
+Model status: 11, Obj val/bound for constraint (2, 7, 0): -8.7975/-23.7048, Final solve time: 43.436
+Model status: 11, Obj val/bound for constraint (3, 7, 0): -8.8997/-24.7802, Final solve time: 39.333
+Model status: 11, Obj val/bound for constraint (4, 7, 0): -0.1912/-56.0362, Final solve time: 2.391
+Model status: 11, Obj val/bound for constraint (5, 7, 0): -10.0048/-22.4726, Final solve time: 44.229
+Model status: 11, Obj val/bound for constraint (6, 7, 0): -12.2259/-32.4903, Final solve time: 40.026
+Model status: 11, Obj val/bound for constraint (8, 7, 0): -1.0848/-69.8402, Final solve time: 2.385
+Model status: 11, Obj val/bound for constraint (9, 7, 0): -0.5081/-54.7856, Final solve time: 2.415
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 30 (UNKNOWN): 7/48; SAT 4; UNSAT 0; unknown 3; time: 273.999; 125.205; 876.433
+No adex found via attack
+krelu: n 50 split_zero 723 after cutoff 0 number of args 723
+total size: 1446, number of groups 723, time since start: 14.36409854888916
+krelu: n 50 split_zero 347 after cutoff 34 number of args 505
+total size: 4802, number of groups 505, time since start: 15.144695520401001
+krelu: n 50 split_zero 127 after cutoff 127 number of args 880
+total size: 19832, number of groups 880, time since start: 16.06848978996277
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 17.921196460723877
+Model status: 2, Obj val/bound for constraint (0, 8, 0): -18.8361/-18.8361, Final solve time: 1.288
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -25.3877/-25.3877, Final solve time: 1.522
+Model status: 2, Obj val/bound for constraint (2, 8, 0): -21.1642/-21.1642, Final solve time: 1.306
+Model status: 2, Obj val/bound for constraint (3, 8, 0): -23.3253/-23.3253, Final solve time: 1.224
+Model status: 2, Obj val/bound for constraint (4, 8, 0): -26.8112/-26.8112, Final solve time: 1.284
+Model status: 2, Obj val/bound for constraint (5, 8, 0): -23.8432/-23.8432, Final solve time: 1.608
+Model status: 2, Obj val/bound for constraint (6, 8, 0): -29.9091/-29.9091, Final solve time: 1.371
+Model status: 2, Obj val/bound for constraint (7, 8, 0): -28.1942/-28.1942, Final solve time: 1.279
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -23.9444/-23.9444, Final solve time: 1.182
+Model status: 2, Obj val/bound for constraint [(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]: -164.2322/-164.2322, Final solve time: 1.228
+Model status: 9, Obj val/bound for constraint [(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]: inf/-164.2006, Final solve time: 60.005
+Model status: 11, Obj val/bound for constraint (0, 8, 0): -8.8337/-18.8361, Final solve time: 31.737
+Model status: 11, Obj val/bound for constraint (1, 8, 0): -14.0821/-25.3852, Final solve time: 43.656
+Model status: 11, Obj val/bound for constraint (2, 8, 0): -8.2790/-21.1641, Final solve time: 37.535
+Model status: 11, Obj val/bound for constraint (3, 8, 0): -6.9130/-23.3232, Final solve time: 43.847
+Model status: 11, Obj val/bound for constraint (4, 8, 0): -10.1890/-26.8101, Final solve time: 40.361
+Model status: 9, Obj val/bound for constraint (5, 8, 0): inf/-51.8634, Final solve time: 7.938
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 31 (UNKNOWN): 8/48; SAT 4; UNSAT 0; unknown 4; time: 300.137; 147.071; 1176.570
+No adex found via attack
+krelu: n 50 split_zero 734 after cutoff 0 number of args 734
+total size: 1468, number of groups 734, time since start: 15.069943904876709
+krelu: n 50 split_zero 350 after cutoff 72 number of args 732
+total size: 10632, number of groups 732, time since start: 15.84046745300293
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 16.894362211227417
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 18.728044033050537
+Model status: 2, Obj val/bound for constraint (0, 4, 0): -28.7776/-28.7776, Final solve time: 1.269
+Model status: 2, Obj val/bound for constraint (1, 4, 0): -38.1703/-38.1703, Final solve time: 1.235
+Model status: 2, Obj val/bound for constraint (2, 4, 0): -20.8362/-20.8362, Final solve time: 1.234
+Model status: 2, Obj val/bound for constraint (3, 4, 0): -25.6778/-25.6778, Final solve time: 2.032
+Model status: 2, Obj val/bound for constraint (5, 4, 0): -26.4199/-26.4199, Final solve time: 1.301
+Model status: 2, Obj val/bound for constraint (6, 4, 0): -29.3603/-29.3603, Final solve time: 2.520
+Model status: 2, Obj val/bound for constraint (7, 4, 0): -25.9965/-25.9965, Final solve time: 1.502
+Model status: 2, Obj val/bound for constraint (8, 4, 0): -36.4495/-36.4495, Final solve time: 1.221
+Model status: 2, Obj val/bound for constraint (9, 4, 0): -35.0223/-35.0223, Final solve time: 1.289
+Model status: 2, Obj val/bound for constraint [(0, 4, 0), (1, 4, 0), (2, 4, 0), (3, 4, 0), (5, 4, 0), (6, 4, 0), (7, 4, 0), (8, 4, 0), (9, 4, 0)]: -204.8995/-204.8995, Final solve time: 1.180
+Model status: 9, Obj val/bound for constraint [(0, 4, 0), (1, 4, 0), (2, 4, 0), (3, 4, 0), (5, 4, 0), (6, 4, 0), (7, 4, 0), (8, 4, 0), (9, 4, 0)]: -132.1402/-204.8980, Final solve time: 60.011
+Model status: 11, Obj val/bound for constraint (0, 4, 0): -4.3020/-55.5077, Final solve time: 2.522
+Model status: 11, Obj val/bound for constraint (1, 4, 0): -5.6994/-73.9563, Final solve time: 2.507
+Model status: 11, Obj val/bound for constraint (2, 4, 0): -1.4885/-42.3752, Final solve time: 2.513
+Model status: 11, Obj val/bound for constraint (3, 4, 0): -11.2005/-25.6778, Final solve time: 48.938
+Model status: 11, Obj val/bound for constraint (5, 4, 0): -0.0907/-53.9174, Final solve time: 2.496
+Model status: 11, Obj val/bound for constraint (6, 4, 0): -0.6207/-58.8983, Final solve time: 2.500
+Model status: 11, Obj val/bound for constraint (7, 4, 0): -15.2220/-25.9965, Final solve time: 52.186
+Model status: 11, Obj val/bound for constraint (8, 4, 0): -6.4767/-72.1627, Final solve time: 2.492
+Model status: 11, Obj val/bound for constraint (9, 4, 0): -3.8697/-69.8126, Final solve time: 2.491
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 32 (UNKNOWN): 9/48; SAT 4; UNSAT 0; unknown 5; time: 216.467; 154.782; 1393.037
+No adex found via attack
+krelu: n 50 split_zero 567 after cutoff 0 number of args 567
+total size: 1134, number of groups 567, time since start: 14.194687843322754
+krelu: n 50 split_zero 246 after cutoff 10 number of args 256
+total size: 752, number of groups 256, time since start: 14.936656713485718
+krelu: n 50 split_zero 115 after cutoff 112 number of args 784
+total size: 17624, number of groups 784, time since start: 15.684622049331665
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 17.186856031417847
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -13.3334/-13.3334, Final solve time: 1.065
+Model status: 2, Obj val/bound for constraint (2, 1, 0): -15.1253/-15.1253, Final solve time: 1.102
+Model status: 2, Obj val/bound for constraint (3, 1, 0): -17.6135/-17.6135, Final solve time: 1.012
+Model status: 2, Obj val/bound for constraint (4, 1, 0): -17.9931/-17.9931, Final solve time: 1.069
+Model status: 2, Obj val/bound for constraint (5, 1, 0): -18.4013/-18.4013, Final solve time: 1.052
+Model status: 2, Obj val/bound for constraint (6, 1, 0): -19.4227/-19.4227, Final solve time: 0.997
+Model status: 2, Obj val/bound for constraint (7, 1, 0): -19.0371/-19.0371, Final solve time: 1.070
+Model status: 2, Obj val/bound for constraint (8, 1, 0): -16.1225/-16.1225, Final solve time: 1.153
+Model status: 2, Obj val/bound for constraint (9, 1, 0): -11.0880/-11.0880, Final solve time: 1.148
+Model status: 2, Obj val/bound for constraint [(0, 1, 0), (2, 1, 0), (3, 1, 0), (4, 1, 0), (5, 1, 0), (6, 1, 0), (7, 1, 0), (8, 1, 0), (9, 1, 0)]: -116.5379/-116.5379, Final solve time: 1.110
+Model status: 9, Obj val/bound for constraint [(0, 1, 0), (2, 1, 0), (3, 1, 0), (4, 1, 0), (5, 1, 0), (6, 1, 0), (7, 1, 0), (8, 1, 0), (9, 1, 0)]: -66.9559/-108.7540, Final solve time: 60.003
+Model status: 11, Obj val/bound for constraint (0, 1, 0): -4.2342/-13.3289, Final solve time: 28.893
+Model status: 11, Obj val/bound for constraint (2, 1, 0): -8.8048/-15.1253, Final solve time: 35.018
+Model status: 11, Obj val/bound for constraint (3, 1, 0): -0.4763/-39.2298, Final solve time: 1.934
+Model status: 11, Obj val/bound for constraint (4, 1, 0): -9.0519/-17.9931, Final solve time: 35.542
+Model status: 11, Obj val/bound for constraint (5, 1, 0): -1.8548/-38.8718, Final solve time: 1.928
+Model status: 11, Obj val/bound for constraint (6, 1, 0): -1.5204/-40.7222, Final solve time: 1.913
+Model status: 11, Obj val/bound for constraint (7, 1, 0): -0.5637/-40.5335, Final solve time: 1.926
+Model status: 11, Obj val/bound for constraint (8, 1, 0): -8.6410/-16.1225, Final solve time: 36.912
+Model status: 11, Obj val/bound for constraint (9, 1, 0): -5.2933/-11.0874, Final solve time: 32.236
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 33 (UNKNOWN): 10/48; SAT 4; UNSAT 0; unknown 6; time: 267.702; 166.074; 1660.739
+No adex found via attack
+krelu: n 50 split_zero 698 after cutoff 0 number of args 698
+total size: 1396, number of groups 698, time since start: 14.535974502563477
+krelu: n 50 split_zero 358 after cutoff 22 number of args 414
+total size: 2172, number of groups 414, time since start: 15.34818410873413
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 16.20015573501587
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 18.083617687225342
+Model status: 2, Obj val/bound for constraint (0, 6, 0): -29.9961/-29.9961, Final solve time: 1.109
+Model status: 2, Obj val/bound for constraint (1, 6, 0): -32.0553/-32.0553, Final solve time: 2.479
+Model status: 2, Obj val/bound for constraint (2, 6, 0): -22.5538/-22.5538, Final solve time: 1.342
+Model status: 2, Obj val/bound for constraint (3, 6, 0): -24.8106/-24.8106, Final solve time: 1.302
+Model status: 2, Obj val/bound for constraint (4, 6, 0): -29.1654/-29.1654, Final solve time: 1.066
+Model status: 2, Obj val/bound for constraint (5, 6, 0): -26.5589/-26.5589, Final solve time: 1.147
+Model status: 2, Obj val/bound for constraint (7, 6, 0): -32.8528/-32.8528, Final solve time: 1.142
+Model status: 2, Obj val/bound for constraint (8, 6, 0): -35.7427/-35.7427, Final solve time: 1.135
+Model status: 2, Obj val/bound for constraint (9, 6, 0): -31.7901/-31.7901, Final solve time: 1.442
+Model status: 2, Obj val/bound for constraint [(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]: -207.1723/-207.1723, Final solve time: 1.081
+Model status: 9, Obj val/bound for constraint [(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]: -6.4908/-207.1672, Final solve time: 60.003
+Model status: 11, Obj val/bound for constraint (0, 6, 0): -1.5708/-60.7774, Final solve time: 2.316
+Model status: 11, Obj val/bound for constraint (1, 6, 0): -15.0539/-32.0553, Final solve time: 48.141
+Model status: 11, Obj val/bound for constraint (2, 6, 0): -9.5598/-22.5534, Final solve time: 33.928
+Model status: 11, Obj val/bound for constraint (3, 6, 0): -0.2351/-55.8698, Final solve time: 2.332
+Model status: 11, Obj val/bound for constraint (4, 6, 0): -1.6611/-62.8832, Final solve time: 2.326
+Model status: 11, Obj val/bound for constraint (5, 6, 0): -0.2569/-56.5926, Final solve time: 2.320
+Model status: 11, Obj val/bound for constraint (7, 6, 0): -1.2249/-71.2831, Final solve time: 2.312
+Model status: 11, Obj val/bound for constraint (8, 6, 0): -2.2326/-73.1661, Final solve time: 2.322
+Model status: 11, Obj val/bound for constraint (9, 6, 0): -14.6349/-31.7862, Final solve time: 51.288
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 34 (UNKNOWN): 11/48; SAT 4; UNSAT 0; unknown 7; time: 242.298; 173.003; 1903.037
+No adex found via attack
+krelu: n 50 split_zero 390 after cutoff 0 number of args 390
+total size: 780, number of groups 390, time since start: 14.304204225540161
+krelu: n 50 split_zero 192 after cutoff 7 number of args 199
+total size: 566, number of groups 199, time since start: 15.112226486206055
+krelu: n 50 split_zero 65 after cutoff 64 number of args 419
+total size: 9334, number of groups 419, time since start: 15.936064004898071
+krelu: n 50 split_zero 51 after cutoff 51 number of args 378
+total size: 8580, number of groups 378, time since start: 17.192413091659546
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -4.9024/-4.9024, Final solve time: 2.131
+Model status: 2, Obj val/bound for constraint (1, 2, 0): -2.2349/-2.2349, Final solve time: 2.695
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -6.2449/-6.2449, Final solve time: 2.308
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -5.9674/-5.9674, Final solve time: 1.747
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -6.3452/-6.3452, Final solve time: 2.211
+Model status: 2, Obj val/bound for constraint (6, 2, 0): -7.0151/-7.0151, Final solve time: 2.044
+Model status: 2, Obj val/bound for constraint (7, 2, 0): -9.6829/-9.6829, Final solve time: 2.401
+Model status: 2, Obj val/bound for constraint (8, 2, 0): -6.4524/-6.4524, Final solve time: 1.134
+Model status: 2, Obj val/bound for constraint (9, 2, 0): -0.3186/-0.3186, Final solve time: 3.309
+Model status: 2, Obj val/bound for constraint [(0, 2, 0), (1, 2, 0), (3, 2, 0), (4, 2, 0), (5, 2, 0), (6, 2, 0), (7, 2, 0), (8, 2, 0), (9, 2, 0)]: -28.3370/-28.3370, Final solve time: 2.877
+Model status: 9, Obj val/bound for constraint [(0, 2, 0), (1, 2, 0), (3, 2, 0), (4, 2, 0), (5, 2, 0), (6, 2, 0), (7, 2, 0), (8, 2, 0), (9, 2, 0)]: -6.0801/-24.7384, Final solve time: 60.004
+Model status: 11, Obj val/bound for constraint (0, 2, 0): -2.0589/-4.9023, Final solve time: 23.540
+Model status: 6, Obj val/bound for constraint (1, 2, 0): inf/0.0100, Final solve time: 47.998
+img 0 Verified UNSAT for constraints [[(0, 2, 0), (1, 2, 0), (3, 2, 0), (4, 2, 0), (5, 2, 0), (6, 2, 0), (7, 2, 0), (8, 2, 0), (9, 2, 0)]]
+progress: 1/1
+Spec 35 (UNSAT): 12/48; SAT 4; UNSAT 1; unknown 7; time: 174.565; 173.134; 2077.603
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-1.59601536 -5.79818318  0.45322208  2.91405223  1.36032069  3.03075052
+ -0.91853592  0.96111244 -3.41608527 -3.04542759] for constraints [[(0, 5, 0), (1, 5, 0), (2, 5, 0), (3, 5, 0), (4, 5, 0), (6, 5, 0), (7, 5, 0), (8, 5, 0), (9, 5, 0)]]
+progress: 1/1
+Spec 36 (SAT): 13/48; SAT 5; UNSAT 1; unknown 7; time: 0.122; 159.825; 2077.724
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-3.05462721 -5.09985291  1.03351482  1.15300961  1.37407873  1.88881931
+  1.43353591 -0.44833312 -2.09637444 -4.3035104 ] for constraints [[(0, 5, 0), (1, 5, 0), (2, 5, 0), (3, 5, 0), (4, 5, 0), (6, 5, 0), (7, 5, 0), (8, 5, 0), (9, 5, 0)]]
+progress: 1/1
+Spec 37 (SAT): 14/48; SAT 6; UNSAT 1; unknown 7; time: 0.116; 148.417; 2077.841
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-4.1486754  -3.42499899 -0.1015847   1.64058475  1.84693037  1.25034753
+  2.29282282  1.17462788 -5.30784287 -3.21489908] for constraints [[(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]]
+progress: 1/1
+Spec 38 (SAT): 15/48; SAT 7; UNSAT 1; unknown 7; time: 0.116; 138.530; 2077.956
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-0.00481705 -1.77958636 -0.02532454 -0.78814364 -0.37344959 -1.37380398
+ -0.63093375 -1.60541217  0.19335074 -1.6962542 ] for constraints [[(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]]
+progress: 1/1
+Spec 39 (SAT): 16/48; SAT 8; UNSAT 1; unknown 7; time: 0.152; 129.882; 2078.109
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [ 1.49637574  0.19489306 -1.68487127 -0.41760191 -1.58518259 -2.28703662
+ -1.99186005 -2.14520276  0.69839789  1.41640561] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0), (5, 0, 0), (6, 0, 0), (7, 0, 0), (8, 0, 0), (9, 0, 0)]]
+progress: 1/1
+Spec 40 (SAT): 17/48; SAT 9; UNSAT 1; unknown 7; time: 0.111; 122.248; 2078.220
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-5.07895024 -4.25177681 -0.04317426  2.61361814  0.93097035  2.7543167
+  2.81756376  0.09956545 -4.66914091 -3.86465613] for constraints [[(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]]
+progress: 1/1
+Spec 41 (SAT): 18/48; SAT 10; UNSAT 1; unknown 7; time: 0.165; 115.466; 2078.385
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-1.43970656 -2.67308305 -0.32901745  0.8818538  -0.68329054  0.62567202
+ -1.08703345  0.91621777 -1.27385582  0.12454909] for constraints [[(0, 7, 0), (1, 7, 0), (2, 7, 0), (3, 7, 0), (4, 7, 0), (5, 7, 0), (6, 7, 0), (8, 7, 0), (9, 7, 0)]]
+progress: 1/1
+Spec 42 (SAT): 19/48; SAT 11; UNSAT 1; unknown 7; time: 0.131; 109.396; 2078.516
+No adex found via attack
+krelu: n 50 split_zero 1215 after cutoff 0 number of args 1215
+total size: 2430, number of groups 1215, time since start: 14.372759819030762
+krelu: n 50 split_zero 526 after cutoff 498 number of args 2156
+total size: 43432, number of groups 2156, time since start: 15.211195945739746
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 17.650418758392334
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 19.533177852630615
+Model status: 2, Obj val/bound for constraint (0, 8, 0): -64.1318/-64.1318, Final solve time: 6.173
+Model status: 2, Obj val/bound for constraint (1, 8, 0): -85.3607/-85.3607, Final solve time: 3.641
+Model status: 2, Obj val/bound for constraint (2, 8, 0): -73.1606/-73.1606, Final solve time: 3.680
+Model status: 2, Obj val/bound for constraint (3, 8, 0): -84.4607/-84.4607, Final solve time: 3.716
+Model status: 2, Obj val/bound for constraint (4, 8, 0): -96.5112/-96.5112, Final solve time: 3.837
+Model status: 2, Obj val/bound for constraint (5, 8, 0): -85.4000/-85.4000, Final solve time: 2.599
+Model status: 2, Obj val/bound for constraint (6, 8, 0): -100.7876/-100.7876, Final solve time: 1.567
+Model status: 2, Obj val/bound for constraint (7, 8, 0): -101.2979/-101.2979, Final solve time: 2.417
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -85.2825/-85.2825, Final solve time: 1.732
+Model status: 2, Obj val/bound for constraint [(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]: -599.9397/-599.9397, Final solve time: 2.610
+Model status: 9, Obj val/bound for constraint [(0, 8, 0), (1, 8, 0), (2, 8, 0), (3, 8, 0), (4, 8, 0), (5, 8, 0), (6, 8, 0), (7, 8, 0), (9, 8, 0)]: inf/-1192.1501, Final solve time: 60.007
+Model status: 9, Obj val/bound for constraint (0, 8, 0): inf/-64.1318, Final solve time: 60.004
+Model status: 9, Obj val/bound for constraint (1, 8, 0): inf/-85.3607, Final solve time: 60.006
+Model status: 9, Obj val/bound for constraint (2, 8, 0): inf/-147.4588, Final solve time: 60.003
+Model status: 9, Obj val/bound for constraint (3, 8, 0): inf/-174.5752, Final solve time: 3.329
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 43 (UNKNOWN): 20/48; SAT 11; UNSAT 1; unknown 8; time: 300.172; 118.934; 2378.688
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-1.60553096 -3.81892047  0.67798324  1.53031186  1.68220045  0.92019504
+ -0.3912387   1.21685232 -3.88152458 -2.55451753] for constraints [[(0, 4, 0), (1, 4, 0), (2, 4, 0), (3, 4, 0), (5, 4, 0), (6, 4, 0), (7, 4, 0), (8, 4, 0), (9, 4, 0)]]
+progress: 1/1
+Spec 44 (SAT): 21/48; SAT 12; UNSAT 1; unknown 8; time: 0.164; 113.279; 2378.852
+No adex found via attack
+krelu: n 50 split_zero 955 after cutoff 0 number of args 955
+total size: 1910, number of groups 955, time since start: 14.566282033920288
+krelu: n 50 split_zero 463 after cutoff 374 number of args 2093
+total size: 43306, number of groups 2093, time since start: 15.402504444122314
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 17.75327205657959
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 19.647350072860718
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -60.0958/-60.0958, Final solve time: 1.696
+Model status: 2, Obj val/bound for constraint (2, 1, 0): -65.7864/-65.7864, Final solve time: 1.873
+Model status: 2, Obj val/bound for constraint (3, 1, 0): -79.2824/-79.2824, Final solve time: 1.805
+Model status: 2, Obj val/bound for constraint (4, 1, 0): -86.0947/-86.0947, Final solve time: 2.735
+Model status: 2, Obj val/bound for constraint (5, 1, 0): -78.4071/-78.4071, Final solve time: 2.182
+Model status: 2, Obj val/bound for constraint (6, 1, 0): -79.3712/-79.3712, Final solve time: 1.567
+Model status: 2, Obj val/bound for constraint (7, 1, 0): -81.0981/-81.0981, Final solve time: 1.846
+Model status: 2, Obj val/bound for constraint (8, 1, 0): -74.1000/-74.1000, Final solve time: 3.470
+Model status: 2, Obj val/bound for constraint (9, 1, 0): -51.7109/-51.7109, Final solve time: 1.648
+Model status: 2, Obj val/bound for constraint [(0, 1, 0), (2, 1, 0), (3, 1, 0), (4, 1, 0), (5, 1, 0), (6, 1, 0), (7, 1, 0), (8, 1, 0), (9, 1, 0)]: -526.9667/-526.9667, Final solve time: 1.871
+Model status: 9, Obj val/bound for constraint [(0, 1, 0), (2, 1, 0), (3, 1, 0), (4, 1, 0), (5, 1, 0), (6, 1, 0), (7, 1, 0), (8, 1, 0), (9, 1, 0)]: -17.2712/-1115.7816, Final solve time: 60.003
+Model status: 9, Obj val/bound for constraint (0, 1, 0): inf/-60.0958, Final solve time: 60.003
+Model status: 11, Obj val/bound for constraint (2, 1, 0): -2.1131/-135.1851, Final solve time: 2.631
+Model status: 11, Obj val/bound for constraint (3, 1, 0): -3.2869/-167.4521, Final solve time: 2.604
+Model status: 9, Obj val/bound for constraint (4, 1, 0): inf/-86.0947, Final solve time: 60.005
+Model status: 11, Obj val/bound for constraint (5, 1, 0): -4.4428/-164.3390, Final solve time: 2.644
+Model status: 11, Obj val/bound for constraint (6, 1, 0): -4.0338/-166.6895, Final solve time: 2.607
+Model status: 11, Obj val/bound for constraint (7, 1, 0): -2.7817/-171.1001, Final solve time: 2.609
+Model status: 11, Obj val/bound for constraint (8, 1, 0): -0.9840/-161.6931, Final solve time: 2.623
+Model status: 11, Obj val/bound for constraint (9, 1, 0): -0.6571/-116.2902, Final solve time: 2.606
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 45 (UNKNOWN): 22/48; SAT 12; UNSAT 1; unknown 9; time: 244.079; 119.224; 2622.931
+Adex found via attack
+img 0 Verified SAT, with adversarial example with output [-2.97527383 -0.71453126 -0.11269626  0.13490041 -0.72777511  0.38556952
+  0.39433134 -0.39200064 -3.67276146 -0.83852708] for constraints [[(0, 6, 0), (1, 6, 0), (2, 6, 0), (3, 6, 0), (4, 6, 0), (5, 6, 0), (7, 6, 0), (8, 6, 0), (9, 6, 0)]]
+progress: 1/1
+Spec 46 (SAT): 23/48; SAT 13; UNSAT 1; unknown 9; time: 0.148; 114.047; 2623.079
+No adex found via attack
+krelu: n 50 split_zero 808 after cutoff 0 number of args 808
+total size: 1616, number of groups 808, time since start: 15.48968768119812
+krelu: n 50 split_zero 336 after cutoff 275 number of args 1966
+total size: 43052, number of groups 1966, time since start: 16.31932306289673
+krelu: n 50 split_zero 128 after cutoff 128 number of args 893
+total size: 20146, number of groups 893, time since start: 18.66762924194336
+krelu: n 50 split_zero 64 after cutoff 64 number of args 418
+total size: 9332, number of groups 418, time since start: 20.580896377563477
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -47.2547/-47.2547, Final solve time: 2.598
+Model status: 2, Obj val/bound for constraint (1, 2, 0): -65.7548/-65.7548, Final solve time: 1.937
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -50.3009/-50.3009, Final solve time: 2.791
+Model status: 2, Obj val/bound for constraint (4, 2, 0): -53.0570/-53.0570, Final solve time: 1.626
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -50.5982/-50.5982, Final solve time: 1.816
+Model status: 2, Obj val/bound for constraint (6, 2, 0): -59.3894/-59.3894, Final solve time: 2.294
+Model status: 2, Obj val/bound for constraint (7, 2, 0): -59.7885/-59.7885, Final solve time: 2.072
+Model status: 2, Obj val/bound for constraint (8, 2, 0): -63.4212/-63.4212, Final solve time: 1.607
+Model status: 2, Obj val/bound for constraint (9, 2, 0): -62.9226/-62.9226, Final solve time: 3.583
+Model status: 2, Obj val/bound for constraint [(0, 2, 0), (1, 2, 0), (3, 2, 0), (4, 2, 0), (5, 2, 0), (6, 2, 0), (7, 2, 0), (8, 2, 0), (9, 2, 0)]: -396.6500/-396.6500, Final solve time: 1.719
+Model status: 9, Obj val/bound for constraint [(0, 2, 0), (1, 2, 0), (3, 2, 0), (4, 2, 0), (5, 2, 0), (6, 2, 0), (7, 2, 0), (8, 2, 0), (9, 2, 0)]: inf/-899.2925, Final solve time: 60.003
+Model status: 11, Obj val/bound for constraint (0, 2, 0): -0.5520/-99.9322, Final solve time: 2.781
+Model status: 9, Obj val/bound for constraint (1, 2, 0): inf/-65.7548, Final solve time: 60.006
+Model status: 9, Obj val/bound for constraint (3, 2, 0): inf/-50.3009, Final solve time: 60.006
+Model status: 9, Obj val/bound for constraint (4, 2, 0): inf/-53.0570, Final solve time: 60.006
+Model status: 9, Obj val/bound for constraint (5, 2, 0): inf/-111.8207, Final solve time: 9.347
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 47 (UNKNOWN): 24/48; SAT 13; UNSAT 1; unknown 10; time: 300.171; 121.802; 2923.250
+
+Process finished with exit code 0

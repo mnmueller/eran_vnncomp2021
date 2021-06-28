@@ -1,0 +1,2410 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/__main__.py --netname ../nets/SDP_FO_nets/CNN_A_MNIST_ADV.onnx --dataset mnist --domain refinegpupoly --epsilon 0.1 --from_test 0 --num_test 1000 --k 3 --partial_milp 1 --max_milp_neurons 30 --timeout_final_milp 250 --mean 0 --std 1
+2021-03-23 18:15:23.130039: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S (built Mar 18 2021 17:32:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-03-23 18:15:24.003458: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-03-23 18:15:24.023206: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-23 18:15:24.023378: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-23 18:15:24.023389: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-23 18:15:24.023410: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-23 18:15:24.023422: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-23 18:15:24.023944: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-23 18:15:24.024068: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-23 18:15:24.025396: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-23 18:15:24.025707: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-23 18:15:24.025782: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-23 18:15:24.025827: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-23 18:15:24.026023: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-23 18:15:24.026187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-23 18:15:24.026202: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-23 18:15:24.325893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-23 18:15:24.325910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-03-23 18:15:24.325916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-03-23 18:15:24.326034: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-23 18:15:24.326219: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-23 18:15:24.326376: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-23 18:15:24.326575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 543 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-03-23 18:15:24.326799: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+{'approx_k': True,
+ 'attack': False,
+ 'complete': False,
+ 'data_dir': None,
+ 'dataset': 'mnist',
+ 'debug': True,
+ 'delta': 0.3,
+ 'domain': 'refinegpupoly',
+ 'epsfile': None,
+ 'epsilon': 0.1,
+ 'from_test': 0,
+ 'gamma': inf,
+ 'geometric': False,
+ 'geometric_config': None,
+ 'input_box': None,
+ 'k': 3,
+ 'logdir': None,
+ 'logname': None,
+ 'max_milp_neurons': 30,
+ 'mean': [0.0],
+ 'n_milp_refine': 1,
+ 'netname': '../nets/SDP_FO_nets/CNN_A_MNIST_ADV.onnx',
+ 'normalized_region': True,
+ 'num_params': 0,
+ 'num_tests': 1000,
+ 'numproc': 16,
+ 'output_constraints': None,
+ 'partial_milp': 1,
+ 'quant_step': None,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 70,
+ 'spatial': False,
+ 'specnumber': None,
+ 'std': [1.0],
+ 'subset': None,
+ 't_norm': 'inf',
+ 'target': None,
+ 'timeout_complete': 1,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 250.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'use_default_heuristic': True,
+ 'use_milp': True,
+ 'vnn_lib_spec': None,
+ 'zonotope': None}
+netname  ../nets/SDP_FO_nets/CNN_A_MNIST_ADV.onnx  epsilon  0.1  domain  refinegpupoly  dataset  mnist args complete  False  complete  False  timeout_lp  1
+img 0 Verified 7
+progress: 1/1000, correct:  1/1, verified: 1/1, unsafe: 0/1,  time: 0.003; 0.003; 0.003
+img 1 Verified 2
+progress: 2/1000, correct:  2/2, verified: 2/2, unsafe: 0/2,  time: 0.011; 0.007; 0.014
+img 2 Verified 1
+progress: 3/1000, correct:  3/3, verified: 3/3, unsafe: 0/3,  time: 0.012; 0.009; 0.026
+img 3 Verified 0
+progress: 4/1000, correct:  4/4, verified: 4/4, unsafe: 0/4,  time: 0.004; 0.007; 0.030
+img 4 Verified 4
+progress: 5/1000, correct:  5/5, verified: 5/5, unsafe: 0/5,  time: 0.004; 0.007; 0.033
+img 5 Verified 1
+progress: 6/1000, correct:  6/6, verified: 6/6, unsafe: 0/6,  time: 0.011; 0.007; 0.044
+img 6 Verified 4
+progress: 7/1000, correct:  7/7, verified: 7/7, unsafe: 0/7,  time: 0.011; 0.008; 0.056
+img 7 Verified 9
+progress: 8/1000, correct:  8/8, verified: 8/8, unsafe: 0/8,  time: 0.012; 0.008; 0.067
+krelu: n 70 split_zero 94 after cutoff 0 number of args 94
+krelu: n 70 split_zero 54 after cutoff 21 number of args 104
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Objval against label 6: -0.0025, Final solve time: 0.225
+Partial MILP model status: 11, Obj bound against label 6: 0.0285, Final solve time: 0.377
+img 8 Verified 5
+progress: 9/1000, correct:  9/9, verified: 9/9, unsafe: 0/9,  time: 3.131; 0.355; 3.198
+img 9 Verified 9
+progress: 10/1000, correct:  10/10, verified: 10/10, unsafe: 0/10,  time: 0.011; 0.321; 3.209
+img 10 Verified 0
+progress: 11/1000, correct:  11/11, verified: 11/11, unsafe: 0/11,  time: 0.004; 0.292; 3.213
+img 11 Verified 6
+progress: 12/1000, correct:  12/12, verified: 12/12, unsafe: 0/12,  time: 0.011; 0.269; 3.224
+img 12 Verified 9
+progress: 13/1000, correct:  13/13, verified: 13/13, unsafe: 0/13,  time: 0.011; 0.249; 3.235
+img 13 Verified 0
+progress: 14/1000, correct:  14/14, verified: 14/14, unsafe: 0/14,  time: 0.003; 0.231; 3.238
+img 14 Verified 1
+progress: 15/1000, correct:  15/15, verified: 15/15, unsafe: 0/15,  time: 0.004; 0.216; 3.242
+img 15 Verified 5
+progress: 16/1000, correct:  16/16, verified: 16/16, unsafe: 0/16,  time: 0.012; 0.203; 3.254
+img 16 Verified 9
+progress: 17/1000, correct:  17/17, verified: 17/17, unsafe: 0/17,  time: 0.011; 0.192; 3.265
+img 17 Verified 7
+progress: 18/1000, correct:  18/18, verified: 18/18, unsafe: 0/18,  time: 0.003; 0.182; 3.268
+krelu: n 70 split_zero 132 after cutoff 0 number of args 132
+krelu: n 70 split_zero 59 after cutoff 35 number of args 220
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 8: -0.0215, Final solve time: 0.314
+Partial MILP model status: 11, Obj bound against label 8: 0.0676, Final solve time: 0.529
+img 18 Verified 3
+progress: 19/1000, correct:  19/19, verified: 19/19, unsafe: 0/19,  time: 3.714; 0.367; 6.982
+img 19 Verified 4
+progress: 20/1000, correct:  20/20, verified: 20/20, unsafe: 0/20,  time: 0.004; 0.349; 6.986
+img 20 Verified 9
+progress: 21/1000, correct:  21/21, verified: 21/21, unsafe: 0/21,  time: 0.011; 0.333; 6.997
+img 21 Verified 6
+progress: 22/1000, correct:  22/22, verified: 22/22, unsafe: 0/22,  time: 0.004; 0.318; 7.001
+img 22 Verified 6
+progress: 23/1000, correct:  23/23, verified: 23/23, unsafe: 0/23,  time: 0.011; 0.305; 7.013
+img 23 Verified 5
+progress: 24/1000, correct:  24/24, verified: 24/24, unsafe: 0/24,  time: 0.003; 0.292; 7.016
+img 24 Verified 4
+progress: 25/1000, correct:  25/25, verified: 25/25, unsafe: 0/25,  time: 0.014; 0.281; 7.030
+img 25 Verified 0
+progress: 26/1000, correct:  26/26, verified: 26/26, unsafe: 0/26,  time: 0.003; 0.270; 7.033
+img 26 Verified 7
+progress: 27/1000, correct:  27/27, verified: 27/27, unsafe: 0/27,  time: 0.004; 0.261; 7.037
+img 27 Verified 4
+progress: 28/1000, correct:  28/28, verified: 28/28, unsafe: 0/28,  time: 0.003; 0.251; 7.040
+img 28 Verified 0
+progress: 29/1000, correct:  29/29, verified: 29/29, unsafe: 0/29,  time: 0.003; 0.243; 7.043
+img 29 Verified 1
+progress: 30/1000, correct:  30/30, verified: 30/30, unsafe: 0/30,  time: 0.011; 0.235; 7.054
+img 30 Verified 3
+progress: 31/1000, correct:  31/31, verified: 31/31, unsafe: 0/31,  time: 0.011; 0.228; 7.065
+img 31 Verified 1
+progress: 32/1000, correct:  32/32, verified: 32/32, unsafe: 0/32,  time: 0.011; 0.221; 7.076
+img 32 Verified 3
+progress: 33/1000, correct:  33/33, verified: 33/33, unsafe: 0/33,  time: 0.003; 0.215; 7.079
+img 33 not considered, incorrectly classified
+progress: 34/1000, correct:  33/34, verified: 33/33, unsafe: 0/33,  time: 0.001; 0.215; 7.079
+img 34 Verified 7
+progress: 35/1000, correct:  34/35, verified: 34/34, unsafe: 0/34,  time: 0.011; 0.209; 7.090
+img 35 Verified 2
+progress: 36/1000, correct:  35/36, verified: 35/35, unsafe: 0/35,  time: 0.004; 0.203; 7.094
+img 36 Verified 7
+progress: 37/1000, correct:  36/37, verified: 36/36, unsafe: 0/36,  time: 0.011; 0.197; 7.105
+img 37 Verified 1
+progress: 38/1000, correct:  37/38, verified: 37/37, unsafe: 0/37,  time: 0.011; 0.192; 7.116
+img 38 Verified 2
+progress: 39/1000, correct:  38/39, verified: 38/38, unsafe: 0/38,  time: 0.012; 0.188; 7.128
+img 39 Verified 1
+progress: 40/1000, correct:  39/40, verified: 39/39, unsafe: 0/39,  time: 0.011; 0.183; 7.139
+img 40 Verified 1
+progress: 41/1000, correct:  40/41, verified: 40/40, unsafe: 0/40,  time: 0.012; 0.179; 7.150
+img 41 Verified 7
+progress: 42/1000, correct:  41/42, verified: 41/41, unsafe: 0/41,  time: 0.012; 0.175; 7.162
+img 42 Verified 4
+progress: 43/1000, correct:  42/43, verified: 42/42, unsafe: 0/42,  time: 0.011; 0.171; 7.173
+img 43 Verified 2
+progress: 44/1000, correct:  43/44, verified: 43/43, unsafe: 0/43,  time: 0.013; 0.167; 7.186
+img 44 Verified 3
+progress: 45/1000, correct:  44/45, verified: 44/44, unsafe: 0/44,  time: 0.012; 0.164; 7.198
+img 45 Verified 5
+progress: 46/1000, correct:  45/46, verified: 45/45, unsafe: 0/45,  time: 0.012; 0.160; 7.210
+img 46 Verified 1
+progress: 47/1000, correct:  46/47, verified: 46/46, unsafe: 0/46,  time: 0.011; 0.157; 7.221
+img 47 Verified 2
+progress: 48/1000, correct:  47/48, verified: 47/47, unsafe: 0/47,  time: 0.012; 0.154; 7.233
+img 48 Verified 4
+progress: 49/1000, correct:  48/49, verified: 48/48, unsafe: 0/48,  time: 0.004; 0.151; 7.236
+img 49 Verified 4
+progress: 50/1000, correct:  49/50, verified: 49/49, unsafe: 0/49,  time: 0.003; 0.148; 7.240
+img 50 Verified 6
+progress: 51/1000, correct:  50/51, verified: 50/50, unsafe: 0/50,  time: 0.004; 0.145; 7.244
+img 51 Verified 3
+progress: 52/1000, correct:  51/52, verified: 51/51, unsafe: 0/51,  time: 0.011; 0.142; 7.255
+img 52 Verified 5
+progress: 53/1000, correct:  52/53, verified: 52/52, unsafe: 0/52,  time: 0.003; 0.140; 7.258
+img 53 Verified 5
+progress: 54/1000, correct:  53/54, verified: 53/53, unsafe: 0/53,  time: 0.010; 0.137; 7.267
+img 54 Verified 6
+progress: 55/1000, correct:  54/55, verified: 54/54, unsafe: 0/54,  time: 0.003; 0.135; 7.270
+img 55 Verified 0
+progress: 56/1000, correct:  55/56, verified: 55/55, unsafe: 0/55,  time: 0.003; 0.132; 7.273
+img 56 Verified 4
+progress: 57/1000, correct:  56/57, verified: 56/56, unsafe: 0/56,  time: 0.003; 0.130; 7.275
+img 57 Verified 1
+progress: 58/1000, correct:  57/58, verified: 57/57, unsafe: 0/57,  time: 0.003; 0.128; 7.278
+img 58 Verified 9
+progress: 59/1000, correct:  58/59, verified: 58/58, unsafe: 0/58,  time: 0.008; 0.126; 7.287
+img 59 Verified 5
+progress: 60/1000, correct:  59/60, verified: 59/59, unsafe: 0/59,  time: 0.010; 0.124; 7.296
+img 60 Verified 7
+progress: 61/1000, correct:  60/61, verified: 60/60, unsafe: 0/60,  time: 0.003; 0.122; 7.299
+img 61 Verified 8
+progress: 62/1000, correct:  61/62, verified: 61/61, unsafe: 0/61,  time: 0.008; 0.120; 7.307
+img 62 Verified 9
+progress: 63/1000, correct:  62/63, verified: 62/62, unsafe: 0/62,  time: 0.009; 0.118; 7.316
+krelu: n 70 split_zero 73 after cutoff 0 number of args 73
+krelu: n 70 split_zero 51 after cutoff 23 number of args 114
+krelu: n 70 split_zero 3 after cutoff 3 number of args 4
+Model status: 2, Objval against label 2: -0.4843, Final solve time: 0.199
+Counterexample found, partial MILP skipped.
+img 63 Verified unsafe against label  2 correct label  3
+progress: 64/1000, correct:  63/64, verified: 62/63, unsafe: 1/63,  time: 2.790; 0.160; 10.107
+img 64 Verified 7
+progress: 65/1000, correct:  64/65, verified: 63/64, unsafe: 1/64,  time: 0.012; 0.158; 10.118
+img 65 Verified 4
+progress: 66/1000, correct:  65/66, verified: 64/65, unsafe: 1/65,  time: 0.012; 0.156; 10.130
+img 66 Verified 6
+progress: 67/1000, correct:  66/67, verified: 65/66, unsafe: 1/66,  time: 0.012; 0.154; 10.142
+img 67 Verified 4
+progress: 68/1000, correct:  67/68, verified: 66/67, unsafe: 1/67,  time: 0.011; 0.152; 10.153
+img 68 Verified 3
+progress: 69/1000, correct:  68/69, verified: 67/68, unsafe: 1/68,  time: 0.003; 0.149; 10.156
+img 69 Verified 0
+progress: 70/1000, correct:  69/70, verified: 68/69, unsafe: 1/69,  time: 0.010; 0.147; 10.166
+img 70 Verified 7
+progress: 71/1000, correct:  70/71, verified: 69/70, unsafe: 1/70,  time: 0.003; 0.145; 10.169
+img 71 Verified 0
+progress: 72/1000, correct:  71/72, verified: 70/71, unsafe: 1/71,  time: 0.003; 0.143; 10.172
+img 72 Verified 2
+progress: 73/1000, correct:  72/73, verified: 71/72, unsafe: 1/72,  time: 0.010; 0.141; 10.183
+img 73 not considered, incorrectly classified
+progress: 74/1000, correct:  72/74, verified: 71/72, unsafe: 1/72,  time: 0.001; 0.141; 10.183
+img 74 Verified 1
+progress: 75/1000, correct:  73/75, verified: 72/73, unsafe: 1/73,  time: 0.011; 0.140; 10.194
+img 75 Verified 7
+progress: 76/1000, correct:  74/76, verified: 73/74, unsafe: 1/74,  time: 0.012; 0.138; 10.206
+img 76 Verified 3
+progress: 77/1000, correct:  75/77, verified: 74/75, unsafe: 1/75,  time: 0.011; 0.136; 10.217
+img 77 Verified 2
+progress: 78/1000, correct:  76/78, verified: 75/76, unsafe: 1/76,  time: 0.012; 0.135; 10.229
+img 78 Verified 9
+progress: 79/1000, correct:  77/79, verified: 76/77, unsafe: 1/77,  time: 0.012; 0.133; 10.240
+img 79 Verified 7
+progress: 80/1000, correct:  78/80, verified: 77/78, unsafe: 1/78,  time: 0.004; 0.131; 10.244
+img 80 Verified 7
+progress: 81/1000, correct:  79/81, verified: 78/79, unsafe: 1/79,  time: 0.011; 0.130; 10.255
+img 81 Verified 6
+progress: 82/1000, correct:  80/82, verified: 79/80, unsafe: 1/80,  time: 0.003; 0.128; 10.258
+img 82 Verified 2
+progress: 83/1000, correct:  81/83, verified: 80/81, unsafe: 1/81,  time: 0.002; 0.127; 10.260
+img 83 Verified 7
+progress: 84/1000, correct:  82/84, verified: 81/82, unsafe: 1/82,  time: 0.008; 0.125; 10.268
+img 84 Verified 8
+progress: 85/1000, correct:  83/85, verified: 82/83, unsafe: 1/83,  time: 0.009; 0.124; 10.278
+img 85 Verified 4
+progress: 86/1000, correct:  84/86, verified: 83/84, unsafe: 1/84,  time: 0.002; 0.122; 10.280
+img 86 Verified 7
+progress: 87/1000, correct:  85/87, verified: 84/85, unsafe: 1/85,  time: 0.003; 0.121; 10.284
+img 87 Verified 3
+progress: 88/1000, correct:  86/88, verified: 85/86, unsafe: 1/86,  time: 0.010; 0.120; 10.293
+img 88 Verified 6
+progress: 89/1000, correct:  87/89, verified: 86/87, unsafe: 1/87,  time: 0.003; 0.118; 10.296
+img 89 Verified 1
+progress: 90/1000, correct:  88/90, verified: 87/88, unsafe: 1/88,  time: 0.009; 0.117; 10.306
+img 90 Verified 3
+progress: 91/1000, correct:  89/91, verified: 88/89, unsafe: 1/89,  time: 0.003; 0.116; 10.309
+img 91 Verified 6
+progress: 92/1000, correct:  90/92, verified: 89/90, unsafe: 1/90,  time: 0.003; 0.115; 10.312
+krelu: n 70 split_zero 88 after cutoff 0 number of args 88
+krelu: n 70 split_zero 58 after cutoff 32 number of args 213
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 4: -0.7962, Final solve time: 0.299
+Counterexample found, partial MILP skipped.
+img 92 Verified unsafe against label  4 correct label  9
+progress: 93/1000, correct:  91/93, verified: 89/91, unsafe: 2/91,  time: 3.141; 0.148; 13.453
+img 93 Verified 3
+progress: 94/1000, correct:  92/94, verified: 90/92, unsafe: 2/92,  time: 0.010; 0.146; 13.463
+img 94 Verified 1
+progress: 95/1000, correct:  93/95, verified: 91/93, unsafe: 2/93,  time: 0.011; 0.145; 13.474
+img 95 Verified 4
+progress: 96/1000, correct:  94/96, verified: 92/94, unsafe: 2/94,  time: 0.012; 0.143; 13.486
+img 96 Verified 1
+progress: 97/1000, correct:  95/97, verified: 93/95, unsafe: 2/95,  time: 0.011; 0.142; 13.497
+img 97 Verified 7
+progress: 98/1000, correct:  96/98, verified: 94/96, unsafe: 2/96,  time: 0.012; 0.141; 13.509
+img 98 Verified 6
+progress: 99/1000, correct:  97/99, verified: 95/97, unsafe: 2/97,  time: 0.011; 0.139; 13.519
+img 99 Verified 9
+progress: 100/1000, correct:  98/100, verified: 96/98, unsafe: 2/98,  time: 0.004; 0.138; 13.523
+img 100 Verified 6
+progress: 101/1000, correct:  99/101, verified: 97/99, unsafe: 2/99,  time: 0.012; 0.137; 13.535
+img 101 Verified 0
+progress: 102/1000, correct:  100/102, verified: 98/100, unsafe: 2/100,  time: 0.003; 0.135; 13.538
+img 102 Verified 5
+progress: 103/1000, correct:  101/103, verified: 99/101, unsafe: 2/101,  time: 0.004; 0.134; 13.542
+img 103 Verified 4
+progress: 104/1000, correct:  102/104, verified: 100/102, unsafe: 2/102,  time: 0.003; 0.133; 13.545
+img 104 Verified 9
+progress: 105/1000, correct:  103/105, verified: 101/103, unsafe: 2/103,  time: 0.011; 0.132; 13.555
+img 105 Verified 9
+progress: 106/1000, correct:  104/106, verified: 102/104, unsafe: 2/104,  time: 0.011; 0.130; 13.567
+img 106 Verified 2
+progress: 107/1000, correct:  105/107, verified: 103/105, unsafe: 2/105,  time: 0.011; 0.129; 13.578
+img 107 Verified 1
+progress: 108/1000, correct:  106/108, verified: 104/106, unsafe: 2/106,  time: 0.011; 0.128; 13.589
+img 108 Verified 9
+progress: 109/1000, correct:  107/109, verified: 105/107, unsafe: 2/107,  time: 0.010; 0.127; 13.600
+img 109 Verified 4
+progress: 110/1000, correct:  108/110, verified: 106/108, unsafe: 2/108,  time: 0.011; 0.126; 13.611
+img 110 Verified 8
+progress: 111/1000, correct:  109/111, verified: 107/109, unsafe: 2/109,  time: 0.011; 0.125; 13.622
+img 111 Verified 7
+progress: 112/1000, correct:  110/112, verified: 108/110, unsafe: 2/110,  time: 0.011; 0.124; 13.632
+img 112 Verified 3
+progress: 113/1000, correct:  111/113, verified: 109/111, unsafe: 2/111,  time: 0.011; 0.123; 13.644
+img 113 Verified 9
+progress: 114/1000, correct:  112/114, verified: 110/112, unsafe: 2/112,  time: 0.009; 0.122; 13.652
+img 114 Verified 7
+progress: 115/1000, correct:  113/115, verified: 111/113, unsafe: 2/113,  time: 0.008; 0.121; 13.661
+krelu: n 70 split_zero 62 after cutoff 0 number of args 62
+krelu: n 70 split_zero 36 after cutoff 14 number of args 64
+krelu: n 70 split_zero 5 after cutoff 4 number of args 6
+Model status: 2, Objval against label 9: -0.1140, Final solve time: 0.182
+Counterexample found, partial MILP skipped.
+img 115 Verified unsafe against label  9 correct label  4
+progress: 116/1000, correct:  114/116, verified: 111/114, unsafe: 3/114,  time: 2.582; 0.142; 16.243
+img 116 Verified 4
+progress: 117/1000, correct:  115/117, verified: 112/115, unsafe: 3/115,  time: 0.011; 0.141; 16.254
+img 117 Verified 4
+progress: 118/1000, correct:  116/118, verified: 113/116, unsafe: 3/116,  time: 0.003; 0.140; 16.257
+img 118 Verified 9
+progress: 119/1000, correct:  117/119, verified: 114/117, unsafe: 3/117,  time: 0.012; 0.139; 16.269
+img 119 Verified 2
+progress: 120/1000, correct:  118/120, verified: 115/118, unsafe: 3/118,  time: 0.011; 0.138; 16.280
+img 120 Verified 5
+progress: 121/1000, correct:  119/121, verified: 116/119, unsafe: 3/119,  time: 0.004; 0.137; 16.284
+krelu: n 70 split_zero 79 after cutoff 0 number of args 79
+krelu: n 70 split_zero 48 after cutoff 21 number of args 98
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 6: -0.1183, Final solve time: 0.198
+Partial MILP model status: 2, Obj bound against label 6: -0.0034, Final solve time: 0.382
+img 121 Failed
+progress: 122/1000, correct:  120/122, verified: 116/120, unsafe: 3/120,  time: 3.181; 0.162; 19.464
+img 122 Verified 7
+progress: 123/1000, correct:  121/123, verified: 117/121, unsafe: 3/121,  time: 0.004; 0.161; 19.468
+img 123 Verified 6
+progress: 124/1000, correct:  122/124, verified: 118/122, unsafe: 3/122,  time: 0.004; 0.160; 19.472
+img 124 Verified 7
+progress: 125/1000, correct:  123/125, verified: 119/123, unsafe: 3/123,  time: 0.011; 0.158; 19.483
+img 125 Verified 9
+progress: 126/1000, correct:  124/126, verified: 120/124, unsafe: 3/124,  time: 0.012; 0.157; 19.495
+img 126 Verified 0
+progress: 127/1000, correct:  125/127, verified: 121/125, unsafe: 3/125,  time: 0.011; 0.156; 19.506
+img 127 Verified 5
+progress: 128/1000, correct:  126/128, verified: 122/126, unsafe: 3/126,  time: 0.003; 0.155; 19.509
+img 128 Verified 8
+progress: 129/1000, correct:  127/129, verified: 123/127, unsafe: 3/127,  time: 0.003; 0.154; 19.512
+img 129 Verified 5
+progress: 130/1000, correct:  128/130, verified: 124/128, unsafe: 3/128,  time: 0.003; 0.152; 19.516
+img 130 Verified 6
+progress: 131/1000, correct:  129/131, verified: 125/129, unsafe: 3/129,  time: 0.003; 0.151; 19.519
+img 131 Verified 6
+progress: 132/1000, correct:  130/132, verified: 126/130, unsafe: 3/130,  time: 0.003; 0.150; 19.522
+img 132 Verified 5
+progress: 133/1000, correct:  131/133, verified: 127/131, unsafe: 3/131,  time: 0.003; 0.149; 19.525
+img 133 Verified 7
+progress: 134/1000, correct:  132/134, verified: 128/132, unsafe: 3/132,  time: 0.011; 0.148; 19.536
+img 134 Verified 8
+progress: 135/1000, correct:  133/135, verified: 129/133, unsafe: 3/133,  time: 0.004; 0.147; 19.539
+img 135 Verified 1
+progress: 136/1000, correct:  134/136, verified: 130/134, unsafe: 3/134,  time: 0.011; 0.146; 19.550
+img 136 Verified 0
+progress: 137/1000, correct:  135/137, verified: 131/135, unsafe: 3/135,  time: 0.004; 0.145; 19.554
+img 137 Verified 1
+progress: 138/1000, correct:  136/138, verified: 132/136, unsafe: 3/136,  time: 0.010; 0.144; 19.564
+img 138 Verified 6
+progress: 139/1000, correct:  137/139, verified: 133/137, unsafe: 3/137,  time: 0.003; 0.143; 19.567
+img 139 Verified 4
+progress: 140/1000, correct:  138/140, verified: 134/138, unsafe: 3/138,  time: 0.011; 0.142; 19.579
+img 140 Verified 6
+progress: 141/1000, correct:  139/141, verified: 135/139, unsafe: 3/139,  time: 0.004; 0.141; 19.582
+img 141 Verified 7
+progress: 142/1000, correct:  140/142, verified: 136/140, unsafe: 3/140,  time: 0.003; 0.140; 19.586
+img 142 Verified 3
+progress: 143/1000, correct:  141/143, verified: 137/141, unsafe: 3/141,  time: 0.012; 0.139; 19.597
+img 143 Verified 1
+progress: 144/1000, correct:  142/144, verified: 138/142, unsafe: 3/142,  time: 0.011; 0.138; 19.609
+img 144 Verified 7
+progress: 145/1000, correct:  143/145, verified: 139/143, unsafe: 3/143,  time: 0.011; 0.137; 19.619
+img 145 Verified 1
+progress: 146/1000, correct:  144/146, verified: 140/144, unsafe: 3/144,  time: 0.011; 0.136; 19.630
+img 146 Verified 8
+progress: 147/1000, correct:  145/147, verified: 141/145, unsafe: 3/145,  time: 0.004; 0.135; 19.634
+img 147 Verified 2
+progress: 148/1000, correct:  146/148, verified: 142/146, unsafe: 3/146,  time: 0.003; 0.135; 19.637
+img 148 Verified 0
+progress: 149/1000, correct:  147/149, verified: 143/147, unsafe: 3/147,  time: 0.004; 0.134; 19.641
+img 149 Verified 2
+progress: 150/1000, correct:  148/150, verified: 144/148, unsafe: 3/148,  time: 0.010; 0.133; 19.651
+img 150 Verified 9
+progress: 151/1000, correct:  149/151, verified: 145/149, unsafe: 3/149,  time: 0.008; 0.132; 19.660
+img 151 not considered, incorrectly classified
+progress: 152/1000, correct:  149/152, verified: 145/149, unsafe: 3/149,  time: 0.000; 0.132; 19.660
+img 152 Verified 5
+progress: 153/1000, correct:  150/153, verified: 146/150, unsafe: 3/150,  time: 0.003; 0.131; 19.662
+img 153 Verified 5
+progress: 154/1000, correct:  151/154, verified: 147/151, unsafe: 3/151,  time: 0.008; 0.130; 19.671
+img 154 Verified 1
+progress: 155/1000, correct:  152/155, verified: 148/152, unsafe: 3/152,  time: 0.008; 0.129; 19.679
+img 155 Verified 5
+progress: 156/1000, correct:  153/156, verified: 149/153, unsafe: 3/153,  time: 0.003; 0.129; 19.681
+img 156 Verified 6
+progress: 157/1000, correct:  154/157, verified: 150/154, unsafe: 3/154,  time: 0.003; 0.128; 19.684
+img 157 Verified 0
+progress: 158/1000, correct:  155/158, verified: 151/155, unsafe: 3/155,  time: 0.008; 0.127; 19.692
+img 158 Verified 3
+progress: 159/1000, correct:  156/159, verified: 152/156, unsafe: 3/156,  time: 0.008; 0.126; 19.700
+img 159 Verified 4
+progress: 160/1000, correct:  157/160, verified: 153/157, unsafe: 3/157,  time: 0.009; 0.126; 19.710
+img 160 Verified 4
+progress: 161/1000, correct:  158/161, verified: 154/158, unsafe: 3/158,  time: 0.008; 0.125; 19.718
+img 161 Verified 6
+progress: 162/1000, correct:  159/162, verified: 155/159, unsafe: 3/159,  time: 0.008; 0.124; 19.726
+img 162 Verified 5
+progress: 163/1000, correct:  160/163, verified: 156/160, unsafe: 3/160,  time: 0.002; 0.123; 19.728
+img 163 Verified 4
+progress: 164/1000, correct:  161/164, verified: 157/161, unsafe: 3/161,  time: 0.002; 0.123; 19.731
+img 164 Verified 6
+progress: 165/1000, correct:  162/165, verified: 158/162, unsafe: 3/162,  time: 0.008; 0.122; 19.739
+img 165 Verified 5
+progress: 166/1000, correct:  163/166, verified: 159/163, unsafe: 3/163,  time: 0.003; 0.121; 19.742
+img 166 Verified 4
+progress: 167/1000, correct:  164/167, verified: 160/164, unsafe: 3/164,  time: 0.009; 0.120; 19.750
+img 167 Verified 5
+progress: 168/1000, correct:  165/168, verified: 161/165, unsafe: 3/165,  time: 0.009; 0.120; 19.760
+img 168 Verified 1
+progress: 169/1000, correct:  166/169, verified: 162/166, unsafe: 3/166,  time: 0.008; 0.119; 19.768
+img 169 Verified 4
+progress: 170/1000, correct:  167/170, verified: 163/167, unsafe: 3/167,  time: 0.008; 0.118; 19.776
+img 170 Verified 4
+progress: 171/1000, correct:  168/171, verified: 164/168, unsafe: 3/168,  time: 0.009; 0.118; 19.785
+img 171 Verified 7
+progress: 172/1000, correct:  169/172, verified: 165/169, unsafe: 3/169,  time: 0.008; 0.117; 19.792
+img 172 Verified 2
+progress: 173/1000, correct:  170/173, verified: 166/170, unsafe: 3/170,  time: 0.008; 0.116; 19.800
+img 173 Verified 3
+progress: 174/1000, correct:  171/174, verified: 167/171, unsafe: 3/171,  time: 0.009; 0.116; 19.809
+img 174 Verified 2
+progress: 175/1000, correct:  172/175, verified: 168/172, unsafe: 3/172,  time: 0.008; 0.115; 19.818
+krelu: n 70 split_zero 70 after cutoff 0 number of args 70
+krelu: n 70 split_zero 41 after cutoff 15 number of args 76
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 1: -0.5160, Final solve time: 0.200
+Counterexample found, partial MILP skipped.
+img 175 Verified unsafe against label  1 correct label  7
+progress: 176/1000, correct:  173/176, verified: 168/173, unsafe: 4/173,  time: 2.762; 0.131; 22.579
+img 176 Verified 1
+progress: 177/1000, correct:  174/177, verified: 169/174, unsafe: 4/174,  time: 0.012; 0.130; 22.591
+img 177 Verified 8
+progress: 178/1000, correct:  175/178, verified: 170/175, unsafe: 4/175,  time: 0.011; 0.129; 22.603
+img 178 Verified 1
+progress: 179/1000, correct:  176/179, verified: 171/176, unsafe: 4/176,  time: 0.004; 0.128; 22.607
+img 179 Verified 8
+progress: 180/1000, correct:  177/180, verified: 172/177, unsafe: 4/177,  time: 0.011; 0.128; 22.618
+img 180 Verified 1
+progress: 181/1000, correct:  178/181, verified: 173/178, unsafe: 4/178,  time: 0.011; 0.127; 22.629
+img 181 Verified 8
+progress: 182/1000, correct:  179/182, verified: 174/179, unsafe: 4/179,  time: 0.011; 0.126; 22.640
+img 182 Verified 5
+progress: 183/1000, correct:  180/183, verified: 175/180, unsafe: 4/180,  time: 0.011; 0.126; 22.651
+img 183 Verified 0
+progress: 184/1000, correct:  181/184, verified: 176/181, unsafe: 4/181,  time: 0.003; 0.125; 22.654
+krelu: n 70 split_zero 98 after cutoff 0 number of args 98
+krelu: n 70 split_zero 58 after cutoff 27 number of args 159
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 3: -0.4273, Final solve time: 0.239
+Counterexample found, partial MILP skipped.
+img 184 Verified unsafe against label  3 correct label  8
+progress: 185/1000, correct:  182/185, verified: 176/182, unsafe: 5/182,  time: 3.070; 0.141; 25.724
+krelu: n 70 split_zero 76 after cutoff 0 number of args 76
+krelu: n 70 split_zero 43 after cutoff 21 number of args 93
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 4: -0.1692, Final solve time: 0.191
+Counterexample found, partial MILP skipped.
+img 185 Verified unsafe against label  4 correct label  9
+progress: 186/1000, correct:  183/186, verified: 176/183, unsafe: 6/183,  time: 2.732; 0.155; 28.456
+img 186 Verified 2
+progress: 187/1000, correct:  184/187, verified: 177/184, unsafe: 6/184,  time: 0.004; 0.155; 28.459
+img 187 Verified 5
+progress: 188/1000, correct:  185/188, verified: 178/185, unsafe: 6/185,  time: 0.011; 0.154; 28.470
+img 188 Verified 0
+progress: 189/1000, correct:  186/189, verified: 179/186, unsafe: 6/186,  time: 0.003; 0.153; 28.473
+img 189 Verified 1
+progress: 190/1000, correct:  187/190, verified: 180/187, unsafe: 6/187,  time: 0.012; 0.152; 28.485
+img 190 Verified 1
+progress: 191/1000, correct:  188/191, verified: 181/188, unsafe: 6/188,  time: 0.011; 0.152; 28.496
+img 191 Verified 1
+progress: 192/1000, correct:  189/192, verified: 182/189, unsafe: 6/189,  time: 0.011; 0.151; 28.507
+img 192 Verified 0
+progress: 193/1000, correct:  190/193, verified: 183/190, unsafe: 6/190,  time: 0.011; 0.150; 28.518
+img 193 Verified 9
+progress: 194/1000, correct:  191/194, verified: 184/191, unsafe: 6/191,  time: 0.012; 0.149; 28.530
+img 194 Verified 0
+progress: 195/1000, correct:  192/195, verified: 185/192, unsafe: 6/192,  time: 0.004; 0.149; 28.534
+img 195 Verified 3
+progress: 196/1000, correct:  193/196, verified: 186/193, unsafe: 6/193,  time: 0.012; 0.148; 28.546
+img 196 Verified 1
+progress: 197/1000, correct:  194/197, verified: 187/194, unsafe: 6/194,  time: 0.011; 0.147; 28.557
+img 197 Verified 6
+progress: 198/1000, correct:  195/198, verified: 188/195, unsafe: 6/195,  time: 0.003; 0.146; 28.560
+img 198 Verified 4
+progress: 199/1000, correct:  196/199, verified: 189/196, unsafe: 6/196,  time: 0.004; 0.146; 28.564
+img 199 Verified 2
+progress: 200/1000, correct:  197/200, verified: 190/197, unsafe: 6/197,  time: 0.010; 0.145; 28.574
+krelu: n 70 split_zero 84 after cutoff 0 number of args 84
+krelu: n 70 split_zero 49 after cutoff 23 number of args 112
+krelu: n 70 split_zero 9 after cutoff 9 number of args 17
+Model status: 6, Objval against label 8: 0.0000, Final solve time: 0.169
+img 200 Verified 3
+progress: 201/1000, correct:  198/201, verified: 191/198, unsafe: 6/198,  time: 2.777; 0.158; 31.351
+img 201 Verified 6
+progress: 202/1000, correct:  199/202, verified: 192/199, unsafe: 6/199,  time: 0.003; 0.158; 31.354
+img 202 Verified 1
+progress: 203/1000, correct:  200/203, verified: 193/200, unsafe: 6/200,  time: 0.011; 0.157; 31.365
+img 203 Verified 1
+progress: 204/1000, correct:  201/204, verified: 194/201, unsafe: 6/201,  time: 0.012; 0.156; 31.377
+img 204 Verified 1
+progress: 205/1000, correct:  202/205, verified: 195/202, unsafe: 6/202,  time: 0.011; 0.155; 31.388
+img 205 Verified 3
+progress: 206/1000, correct:  203/206, verified: 196/203, unsafe: 6/203,  time: 0.012; 0.155; 31.400
+img 206 Verified 9
+progress: 207/1000, correct:  204/207, verified: 197/204, unsafe: 6/204,  time: 0.011; 0.154; 31.411
+img 207 Verified 5
+progress: 208/1000, correct:  205/208, verified: 198/205, unsafe: 6/205,  time: 0.012; 0.153; 31.423
+img 208 Verified 2
+progress: 209/1000, correct:  206/209, verified: 199/206, unsafe: 6/206,  time: 0.003; 0.153; 31.426
+img 209 Verified 9
+progress: 210/1000, correct:  207/210, verified: 200/207, unsafe: 6/207,  time: 0.003; 0.152; 31.429
+img 210 Verified 4
+progress: 211/1000, correct:  208/211, verified: 201/208, unsafe: 6/208,  time: 0.003; 0.151; 31.432
+img 211 Verified 5
+progress: 212/1000, correct:  209/212, verified: 202/209, unsafe: 6/209,  time: 0.012; 0.150; 31.444
+img 212 Verified 9
+progress: 213/1000, correct:  210/213, verified: 203/210, unsafe: 6/210,  time: 0.010; 0.150; 31.455
+img 213 Verified 3
+progress: 214/1000, correct:  211/214, verified: 204/211, unsafe: 6/211,  time: 0.012; 0.149; 31.466
+img 214 Verified 9
+progress: 215/1000, correct:  212/215, verified: 205/212, unsafe: 6/212,  time: 0.010; 0.148; 31.477
+img 215 Verified 0
+progress: 216/1000, correct:  213/216, verified: 206/213, unsafe: 6/213,  time: 0.004; 0.148; 31.480
+img 216 Verified 3
+progress: 217/1000, correct:  214/217, verified: 207/214, unsafe: 6/214,  time: 0.003; 0.147; 31.483
+krelu: n 70 split_zero 81 after cutoff 0 number of args 81
+krelu: n 70 split_zero 54 after cutoff 28 number of args 167
+krelu: n 70 split_zero 4 after cutoff 4 number of args 5
+Model status: 2, Objval against label 5: -0.0849, Final solve time: 0.262
+Partial MILP model status: 2, Obj bound against label 5: 0.0234, Final solve time: 0.393
+img 217 Verified 6
+progress: 218/1000, correct:  215/218, verified: 208/215, unsafe: 6/215,  time: 3.445; 0.162; 34.928
+img 218 Verified 5
+progress: 219/1000, correct:  216/219, verified: 209/216, unsafe: 6/216,  time: 0.012; 0.162; 34.940
+img 219 Verified 5
+progress: 220/1000, correct:  217/220, verified: 210/217, unsafe: 6/217,  time: 0.013; 0.161; 34.952
+img 220 Verified 7
+progress: 221/1000, correct:  218/221, verified: 211/218, unsafe: 6/218,  time: 0.011; 0.160; 34.963
+img 221 Verified 2
+progress: 222/1000, correct:  219/222, verified: 212/219, unsafe: 6/219,  time: 0.011; 0.160; 34.973
+img 222 Verified 2
+progress: 223/1000, correct:  220/223, verified: 213/220, unsafe: 6/220,  time: 0.004; 0.159; 34.977
+img 223 Verified 7
+progress: 224/1000, correct:  221/224, verified: 214/221, unsafe: 6/221,  time: 0.003; 0.158; 34.980
+img 224 Verified 1
+progress: 225/1000, correct:  222/225, verified: 215/222, unsafe: 6/222,  time: 0.011; 0.158; 34.992
+img 225 Verified 2
+progress: 226/1000, correct:  223/226, verified: 216/223, unsafe: 6/223,  time: 0.004; 0.157; 34.995
+img 226 Verified 8
+progress: 227/1000, correct:  224/227, verified: 217/224, unsafe: 6/224,  time: 0.011; 0.156; 35.007
+img 227 Verified 4
+progress: 228/1000, correct:  225/228, verified: 218/225, unsafe: 6/225,  time: 0.013; 0.156; 35.019
+img 228 Verified 1
+progress: 229/1000, correct:  226/229, verified: 219/226, unsafe: 6/226,  time: 0.011; 0.155; 35.030
+img 229 Verified 7
+progress: 230/1000, correct:  227/230, verified: 220/227, unsafe: 6/227,  time: 0.012; 0.154; 35.042
+img 230 Verified 3
+progress: 231/1000, correct:  228/231, verified: 221/228, unsafe: 6/228,  time: 0.011; 0.154; 35.053
+img 231 Verified 3
+progress: 232/1000, correct:  229/232, verified: 222/229, unsafe: 6/229,  time: 0.009; 0.153; 35.062
+krelu: n 70 split_zero 84 after cutoff 0 number of args 84
+krelu: n 70 split_zero 45 after cutoff 28 number of args 158
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 6: -0.4355, Final solve time: 0.232
+Counterexample found, partial MILP skipped.
+img 232 Verified unsafe against label  6 correct label  8
+progress: 233/1000, correct:  230/233, verified: 222/230, unsafe: 7/230,  time: 2.985; 0.165; 38.047
+krelu: n 70 split_zero 82 after cutoff 0 number of args 82
+krelu: n 70 split_zero 53 after cutoff 31 number of args 208
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 7: -0.3018, Final solve time: 0.283
+Counterexample found, partial MILP skipped.
+img 233 Verified unsafe against label  9 correct label  8
+progress: 234/1000, correct:  231/234, verified: 222/231, unsafe: 8/231,  time: 3.284; 0.179; 41.331
+img 234 Verified 7
+progress: 235/1000, correct:  232/235, verified: 223/232, unsafe: 8/232,  time: 0.011; 0.178; 41.342
+img 235 Verified 9
+progress: 236/1000, correct:  233/236, verified: 224/233, unsafe: 8/233,  time: 0.011; 0.177; 41.353
+img 236 Verified 2
+progress: 237/1000, correct:  234/237, verified: 225/234, unsafe: 8/234,  time: 0.004; 0.177; 41.357
+img 237 Verified 2
+progress: 238/1000, correct:  235/238, verified: 226/235, unsafe: 8/235,  time: 0.004; 0.176; 41.361
+img 238 Verified 4
+progress: 239/1000, correct:  236/239, verified: 227/236, unsafe: 8/236,  time: 0.003; 0.175; 41.364
+img 239 Verified 1
+progress: 240/1000, correct:  237/240, verified: 228/237, unsafe: 8/237,  time: 0.011; 0.175; 41.375
+img 240 Verified 5
+progress: 241/1000, correct:  238/241, verified: 229/238, unsafe: 8/238,  time: 0.011; 0.174; 41.386
+img 241 not considered, incorrectly classified
+progress: 242/1000, correct:  238/242, verified: 229/238, unsafe: 8/238,  time: 0.001; 0.174; 41.386
+img 242 Verified 8
+progress: 243/1000, correct:  239/243, verified: 230/239, unsafe: 8/239,  time: 0.011; 0.173; 41.397
+img 243 Verified 7
+progress: 244/1000, correct:  240/244, verified: 231/240, unsafe: 8/240,  time: 0.012; 0.173; 41.409
+img 244 Verified 2
+progress: 245/1000, correct:  241/245, verified: 232/241, unsafe: 8/241,  time: 0.012; 0.172; 41.421
+img 245 Verified 3
+progress: 246/1000, correct:  242/246, verified: 233/242, unsafe: 8/242,  time: 0.013; 0.171; 41.434
+img 246 Verified 0
+progress: 247/1000, correct:  243/247, verified: 234/243, unsafe: 8/243,  time: 0.003; 0.171; 41.438
+img 247 not considered, incorrectly classified
+progress: 248/1000, correct:  243/248, verified: 234/243, unsafe: 8/243,  time: 0.001; 0.171; 41.438
+img 248 Verified 4
+progress: 249/1000, correct:  244/249, verified: 235/244, unsafe: 8/244,  time: 0.003; 0.170; 41.441
+img 249 Verified 2
+progress: 250/1000, correct:  245/250, verified: 236/245, unsafe: 8/245,  time: 0.011; 0.169; 41.452
+krelu: n 70 split_zero 73 after cutoff 0 number of args 73
+krelu: n 70 split_zero 44 after cutoff 19 number of args 85
+krelu: n 70 split_zero 4 after cutoff 4 number of args 5
+Model status: 2, Objval against label 9: -0.3701, Final solve time: 0.194
+Counterexample found, partial MILP skipped.
+img 250 Verified unsafe against label  9 correct label  4
+progress: 251/1000, correct:  246/251, verified: 236/246, unsafe: 9/246,  time: 2.716; 0.180; 44.168
+img 251 Verified 1
+progress: 252/1000, correct:  247/252, verified: 237/247, unsafe: 9/247,  time: 0.012; 0.179; 44.180
+img 252 Verified 9
+progress: 253/1000, correct:  248/253, verified: 238/248, unsafe: 9/248,  time: 0.003; 0.178; 44.183
+img 253 Verified 5
+progress: 254/1000, correct:  249/254, verified: 239/249, unsafe: 9/249,  time: 0.012; 0.177; 44.195
+img 254 Verified 7
+progress: 255/1000, correct:  250/255, verified: 240/250, unsafe: 9/250,  time: 0.004; 0.177; 44.198
+img 255 Verified 7
+progress: 256/1000, correct:  251/256, verified: 241/251, unsafe: 9/251,  time: 0.011; 0.176; 44.209
+img 256 Verified 2
+progress: 257/1000, correct:  252/257, verified: 242/252, unsafe: 9/252,  time: 0.011; 0.175; 44.220
+krelu: n 70 split_zero 75 after cutoff 0 number of args 75
+krelu: n 70 split_zero 43 after cutoff 24 number of args 114
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 1: -0.3344, Final solve time: 0.225
+Counterexample found, partial MILP skipped.
+img 257 Verified unsafe against label  1 correct label  8
+progress: 258/1000, correct:  253/258, verified: 242/253, unsafe: 10/253,  time: 2.951; 0.186; 47.171
+img 258 Verified 2
+progress: 259/1000, correct:  254/259, verified: 243/254, unsafe: 10/254,  time: 0.003; 0.186; 47.174
+img 259 not considered, incorrectly classified
+progress: 260/1000, correct:  254/260, verified: 243/254, unsafe: 10/254,  time: 0.001; 0.186; 47.174
+img 260 Verified 8
+progress: 261/1000, correct:  255/261, verified: 244/255, unsafe: 10/255,  time: 0.004; 0.185; 47.178
+img 261 Verified 5
+progress: 262/1000, correct:  256/262, verified: 245/256, unsafe: 10/256,  time: 0.012; 0.184; 47.190
+img 262 Verified 7
+progress: 263/1000, correct:  257/263, verified: 246/257, unsafe: 10/257,  time: 0.003; 0.184; 47.193
+img 263 Verified 7
+progress: 264/1000, correct:  258/264, verified: 247/258, unsafe: 10/258,  time: 0.003; 0.183; 47.196
+krelu: n 70 split_zero 61 after cutoff 0 number of args 61
+krelu: n 70 split_zero 30 after cutoff 15 number of args 65
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 1: -0.9851, Final solve time: 0.220
+Counterexample found, partial MILP skipped.
+img 264 Verified unsafe against label  1 correct label  9
+progress: 265/1000, correct:  259/265, verified: 247/259, unsafe: 11/259,  time: 2.794; 0.193; 49.991
+img 265 Verified 1
+progress: 266/1000, correct:  260/266, verified: 248/260, unsafe: 11/260,  time: 0.011; 0.192; 50.002
+krelu: n 70 split_zero 120 after cutoff 0 number of args 120
+krelu: n 70 split_zero 53 after cutoff 24 number of args 124
+krelu: n 70 split_zero 9 after cutoff 9 number of args 17
+Model status: 2, Objval against label 0: -0.8029, Final solve time: 0.236
+Counterexample found, partial MILP skipped.
+img 266 Verified unsafe against label  0 correct label  8
+progress: 267/1000, correct:  261/267, verified: 248/261, unsafe: 12/261,  time: 3.003; 0.203; 53.005
+img 267 Verified 1
+progress: 268/1000, correct:  262/268, verified: 249/262, unsafe: 12/262,  time: 0.011; 0.202; 53.016
+img 268 Verified 8
+progress: 269/1000, correct:  263/269, verified: 250/263, unsafe: 12/263,  time: 0.011; 0.202; 53.027
+img 269 Verified 0
+progress: 270/1000, correct:  264/270, verified: 251/264, unsafe: 12/264,  time: 0.012; 0.201; 53.039
+img 270 Verified 3
+progress: 271/1000, correct:  265/271, verified: 252/265, unsafe: 12/265,  time: 0.004; 0.200; 53.043
+img 271 Verified 0
+progress: 272/1000, correct:  266/272, verified: 253/266, unsafe: 12/266,  time: 0.004; 0.199; 53.047
+img 272 Verified 1
+progress: 273/1000, correct:  267/273, verified: 254/267, unsafe: 12/267,  time: 0.011; 0.199; 53.058
+img 273 Verified 9
+progress: 274/1000, correct:  268/274, verified: 255/268, unsafe: 12/268,  time: 0.010; 0.198; 53.068
+img 274 Verified 9
+progress: 275/1000, correct:  269/275, verified: 256/269, unsafe: 12/269,  time: 0.011; 0.197; 53.079
+img 275 Verified 4
+progress: 276/1000, correct:  270/276, verified: 257/270, unsafe: 12/270,  time: 0.004; 0.197; 53.083
+img 276 Verified 1
+progress: 277/1000, correct:  271/277, verified: 258/271, unsafe: 12/271,  time: 0.004; 0.196; 53.086
+img 277 Verified 8
+progress: 278/1000, correct:  272/278, verified: 259/272, unsafe: 12/272,  time: 0.011; 0.195; 53.097
+img 278 Verified 2
+progress: 279/1000, correct:  273/279, verified: 260/273, unsafe: 12/273,  time: 0.011; 0.195; 53.108
+img 279 Verified 1
+progress: 280/1000, correct:  274/280, verified: 261/274, unsafe: 12/274,  time: 0.011; 0.194; 53.119
+img 280 Verified 2
+progress: 281/1000, correct:  275/281, verified: 262/275, unsafe: 12/275,  time: 0.004; 0.193; 53.122
+img 281 Verified 9
+progress: 282/1000, correct:  276/282, verified: 263/276, unsafe: 12/276,  time: 0.003; 0.192; 53.125
+img 282 Verified 7
+progress: 283/1000, correct:  277/283, verified: 264/277, unsafe: 12/277,  time: 0.012; 0.192; 53.137
+img 283 Verified 5
+progress: 284/1000, correct:  278/284, verified: 265/278, unsafe: 12/278,  time: 0.004; 0.191; 53.141
+img 284 Verified 9
+progress: 285/1000, correct:  279/285, verified: 266/279, unsafe: 12/279,  time: 0.011; 0.191; 53.152
+img 285 Verified 2
+progress: 286/1000, correct:  280/286, verified: 267/280, unsafe: 12/280,  time: 0.004; 0.190; 53.156
+img 286 Verified 6
+progress: 287/1000, correct:  281/287, verified: 268/281, unsafe: 12/281,  time: 0.004; 0.189; 53.159
+img 287 Verified 4
+progress: 288/1000, correct:  282/288, verified: 269/282, unsafe: 12/282,  time: 0.011; 0.189; 53.171
+img 288 Verified 1
+progress: 289/1000, correct:  283/289, verified: 270/283, unsafe: 12/283,  time: 0.011; 0.188; 53.182
+krelu: n 70 split_zero 98 after cutoff 0 number of args 98
+krelu: n 70 split_zero 64 after cutoff 38 number of args 240
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 6, Objval against label 6: 0.0000, Final solve time: 0.210
+img 289 Verified 5
+progress: 290/1000, correct:  284/290, verified: 271/284, unsafe: 12/284,  time: 3.204; 0.199; 56.385
+img 290 not considered, incorrectly classified
+progress: 291/1000, correct:  284/291, verified: 271/284, unsafe: 12/284,  time: 0.001; 0.199; 56.385
+img 291 Verified 2
+progress: 292/1000, correct:  285/292, verified: 272/285, unsafe: 12/285,  time: 0.011; 0.198; 56.396
+img 292 Verified 9
+progress: 293/1000, correct:  286/293, verified: 273/286, unsafe: 12/286,  time: 0.011; 0.197; 56.407
+img 293 Verified 2
+progress: 294/1000, correct:  287/294, verified: 274/287, unsafe: 12/287,  time: 0.003; 0.197; 56.410
+img 294 Verified 0
+progress: 295/1000, correct:  288/295, verified: 275/288, unsafe: 12/288,  time: 0.004; 0.196; 56.414
+img 295 Verified 4
+progress: 296/1000, correct:  289/296, verified: 276/289, unsafe: 12/289,  time: 0.011; 0.195; 56.425
+img 296 Verified 0
+progress: 297/1000, correct:  290/297, verified: 277/290, unsafe: 12/290,  time: 0.003; 0.195; 56.428
+img 297 Verified 0
+progress: 298/1000, correct:  291/298, verified: 278/291, unsafe: 12/291,  time: 0.009; 0.194; 56.437
+img 298 Verified 2
+progress: 299/1000, correct:  292/299, verified: 279/292, unsafe: 12/292,  time: 0.003; 0.193; 56.440
+img 299 Verified 8
+progress: 300/1000, correct:  293/300, verified: 280/293, unsafe: 12/293,  time: 0.011; 0.193; 56.452
+krelu: n 70 split_zero 60 after cutoff 0 number of args 60
+krelu: n 70 split_zero 55 after cutoff 32 number of args 210
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 6: -1.0284, Final solve time: 0.292
+Counterexample found, partial MILP skipped.
+img 300 Verified unsafe against label  6 correct label  4
+progress: 301/1000, correct:  294/301, verified: 280/294, unsafe: 13/294,  time: 3.277; 0.203; 59.729
+img 301 Verified 7
+progress: 302/1000, correct:  295/302, verified: 281/295, unsafe: 13/295,  time: 0.011; 0.203; 59.740
+img 302 Verified 1
+progress: 303/1000, correct:  296/303, verified: 282/296, unsafe: 13/296,  time: 0.011; 0.202; 59.751
+img 303 Verified 2
+progress: 304/1000, correct:  297/304, verified: 283/297, unsafe: 13/297,  time: 0.013; 0.201; 59.763
+img 304 Verified 4
+progress: 305/1000, correct:  298/305, verified: 284/298, unsafe: 13/298,  time: 0.011; 0.201; 59.775
+img 305 Verified 0
+progress: 306/1000, correct:  299/306, verified: 285/299, unsafe: 13/299,  time: 0.011; 0.200; 59.785
+img 306 Verified 2
+progress: 307/1000, correct:  300/307, verified: 286/300, unsafe: 13/300,  time: 0.003; 0.199; 59.789
+img 307 Verified 7
+progress: 308/1000, correct:  301/308, verified: 287/301, unsafe: 13/301,  time: 0.011; 0.199; 59.799
+img 308 Verified 4
+progress: 309/1000, correct:  302/309, verified: 288/302, unsafe: 13/302,  time: 0.011; 0.198; 59.810
+img 309 Verified 3
+progress: 310/1000, correct:  303/310, verified: 289/303, unsafe: 13/303,  time: 0.011; 0.197; 59.822
+img 310 Verified 3
+progress: 311/1000, correct:  304/311, verified: 290/304, unsafe: 13/304,  time: 0.004; 0.197; 59.825
+img 311 Verified 0
+progress: 312/1000, correct:  305/312, verified: 291/305, unsafe: 13/305,  time: 0.003; 0.196; 59.828
+img 312 Verified 0
+progress: 313/1000, correct:  306/313, verified: 292/306, unsafe: 13/306,  time: 0.003; 0.196; 59.831
+krelu: n 70 split_zero 103 after cutoff 0 number of args 103
+krelu: n 70 split_zero 63 after cutoff 26 number of args 153
+krelu: n 70 split_zero 2 after cutoff 2 number of args 3
+Model status: 2, Objval against label 5: -0.3696, Final solve time: 0.210
+Counterexample found, partial MILP skipped.
+img 313 Verified unsafe against label  5 correct label  3
+progress: 314/1000, correct:  307/314, verified: 292/307, unsafe: 14/307,  time: 2.888; 0.204; 62.719
+img 314 Verified 1
+progress: 315/1000, correct:  308/315, verified: 293/308, unsafe: 14/308,  time: 0.004; 0.204; 62.723
+img 315 Verified 9
+progress: 316/1000, correct:  309/316, verified: 294/309, unsafe: 14/309,  time: 0.011; 0.203; 62.734
+img 316 Verified 6
+progress: 317/1000, correct:  310/317, verified: 295/310, unsafe: 14/310,  time: 0.011; 0.202; 62.745
+img 317 Verified 5
+progress: 318/1000, correct:  311/318, verified: 296/311, unsafe: 14/311,  time: 0.012; 0.202; 62.757
+krelu: n 70 split_zero 124 after cutoff 0 number of args 124
+krelu: n 70 split_zero 64 after cutoff 29 number of args 190
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 3: -1.0101, Final solve time: 0.283
+Counterexample found, partial MILP skipped.
+img 318 Verified unsafe against label  3 correct label  2
+progress: 319/1000, correct:  312/319, verified: 296/312, unsafe: 15/312,  time: 3.282; 0.212; 66.039
+img 319 Verified 5
+progress: 320/1000, correct:  313/320, verified: 297/313, unsafe: 15/313,  time: 0.004; 0.211; 66.042
+img 320 not considered, incorrectly classified
+progress: 321/1000, correct:  313/321, verified: 297/313, unsafe: 15/313,  time: 0.001; 0.211; 66.042
+img 321 not considered, incorrectly classified
+progress: 322/1000, correct:  313/322, verified: 297/313, unsafe: 15/313,  time: 0.001; 0.211; 66.042
+img 322 Verified 9
+progress: 323/1000, correct:  314/323, verified: 298/314, unsafe: 15/314,  time: 0.011; 0.210; 66.053
+img 323 Verified 3
+progress: 324/1000, correct:  315/324, verified: 299/315, unsafe: 15/315,  time: 0.003; 0.210; 66.056
+img 324 Verified 0
+progress: 325/1000, correct:  316/325, verified: 300/316, unsafe: 15/316,  time: 0.013; 0.209; 66.069
+img 325 Verified 4
+progress: 326/1000, correct:  317/326, verified: 301/317, unsafe: 15/317,  time: 0.012; 0.208; 66.081
+img 326 Verified 2
+progress: 327/1000, correct:  318/327, verified: 302/318, unsafe: 15/318,  time: 0.011; 0.208; 66.093
+img 327 Verified 0
+progress: 328/1000, correct:  319/328, verified: 303/319, unsafe: 15/319,  time: 0.003; 0.207; 66.096
+img 328 Verified 7
+progress: 329/1000, correct:  320/329, verified: 304/320, unsafe: 15/320,  time: 0.011; 0.207; 66.107
+img 329 Verified 1
+progress: 330/1000, correct:  321/330, verified: 305/321, unsafe: 15/321,  time: 0.011; 0.206; 66.118
+img 330 Verified 1
+progress: 331/1000, correct:  322/331, verified: 306/322, unsafe: 15/322,  time: 0.004; 0.205; 66.122
+img 331 Verified 2
+progress: 332/1000, correct:  323/332, verified: 307/323, unsafe: 15/323,  time: 0.011; 0.205; 66.133
+img 332 Verified 1
+progress: 333/1000, correct:  324/333, verified: 308/324, unsafe: 15/324,  time: 0.004; 0.204; 66.137
+img 333 Verified 5
+progress: 334/1000, correct:  325/334, verified: 309/325, unsafe: 15/325,  time: 0.011; 0.204; 66.149
+img 334 Verified 3
+progress: 335/1000, correct:  326/335, verified: 310/326, unsafe: 15/326,  time: 0.003; 0.203; 66.152
+img 335 Verified 3
+progress: 336/1000, correct:  327/336, verified: 311/327, unsafe: 15/327,  time: 0.011; 0.202; 66.163
+img 336 Verified 9
+progress: 337/1000, correct:  328/337, verified: 312/328, unsafe: 15/328,  time: 0.004; 0.202; 66.167
+img 337 Verified 7
+progress: 338/1000, correct:  329/338, verified: 313/329, unsafe: 15/329,  time: 0.011; 0.201; 66.178
+img 338 Verified 8
+progress: 339/1000, correct:  330/339, verified: 314/330, unsafe: 15/330,  time: 0.011; 0.201; 66.189
+img 339 Verified 6
+progress: 340/1000, correct:  331/340, verified: 315/331, unsafe: 15/331,  time: 0.011; 0.200; 66.200
+img 340 not considered, incorrectly classified
+progress: 341/1000, correct:  331/341, verified: 315/331, unsafe: 15/331,  time: 0.001; 0.200; 66.200
+img 341 Verified 6
+progress: 342/1000, correct:  332/342, verified: 316/332, unsafe: 15/332,  time: 0.012; 0.199; 66.212
+img 342 Verified 1
+progress: 343/1000, correct:  333/343, verified: 317/333, unsafe: 15/333,  time: 0.011; 0.199; 66.223
+img 343 Verified 3
+progress: 344/1000, correct:  334/344, verified: 318/334, unsafe: 15/334,  time: 0.004; 0.198; 66.227
+krelu: n 70 split_zero 117 after cutoff 0 number of args 117
+krelu: n 70 split_zero 47 after cutoff 27 number of args 148
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 6: 0.0050, Final solve time: 0.249
+img 344 Verified 8
+progress: 345/1000, correct:  335/345, verified: 319/335, unsafe: 15/335,  time: 3.009; 0.207; 69.237
+img 345 Verified 1
+progress: 346/1000, correct:  336/346, verified: 320/336, unsafe: 15/336,  time: 0.011; 0.206; 69.248
+img 346 Verified 0
+progress: 347/1000, correct:  337/347, verified: 321/337, unsafe: 15/337,  time: 0.011; 0.206; 69.258
+img 347 Verified 5
+progress: 348/1000, correct:  338/348, verified: 322/338, unsafe: 15/338,  time: 0.011; 0.205; 69.269
+img 348 Verified 1
+progress: 349/1000, correct:  339/349, verified: 323/339, unsafe: 15/339,  time: 0.011; 0.204; 69.280
+krelu: n 70 split_zero 76 after cutoff 0 number of args 76
+krelu: n 70 split_zero 38 after cutoff 18 number of args 76
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 7: -0.8772, Final solve time: 0.188
+Counterexample found, partial MILP skipped.
+img 349 Verified unsafe against label  7 correct label  3
+progress: 350/1000, correct:  340/350, verified: 323/340, unsafe: 16/340,  time: 2.809; 0.212; 72.090
+img 350 Verified 1
+progress: 351/1000, correct:  341/351, verified: 324/341, unsafe: 16/341,  time: 0.011; 0.211; 72.101
+img 351 Verified 5
+progress: 352/1000, correct:  342/352, verified: 325/342, unsafe: 16/342,  time: 0.004; 0.211; 72.105
+krelu: n 70 split_zero 120 after cutoff 0 number of args 120
+krelu: n 70 split_zero 68 after cutoff 28 number of args 181
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 0: -0.9161, Final solve time: 0.229
+Counterexample found, partial MILP skipped.
+img 352 Verified unsafe against label  0 correct label  5
+progress: 353/1000, correct:  343/353, verified: 325/343, unsafe: 17/343,  time: 3.087; 0.219; 75.192
+img 353 Verified 6
+progress: 354/1000, correct:  344/354, verified: 326/344, unsafe: 17/344,  time: 0.004; 0.219; 75.196
+img 354 Verified 1
+progress: 355/1000, correct:  345/355, verified: 327/345, unsafe: 17/345,  time: 0.011; 0.218; 75.207
+img 355 Verified 8
+progress: 356/1000, correct:  346/356, verified: 328/346, unsafe: 17/346,  time: 0.011; 0.217; 75.218
+img 356 Verified 5
+progress: 357/1000, correct:  347/357, verified: 329/347, unsafe: 17/347,  time: 0.003; 0.217; 75.221
+img 357 Verified 1
+progress: 358/1000, correct:  348/358, verified: 330/348, unsafe: 17/348,  time: 0.012; 0.216; 75.233
+img 358 Verified 7
+progress: 359/1000, correct:  349/359, verified: 331/349, unsafe: 17/349,  time: 0.011; 0.216; 75.244
+img 359 Verified 9
+progress: 360/1000, correct:  350/360, verified: 332/350, unsafe: 17/350,  time: 0.011; 0.215; 75.256
+img 360 Verified 4
+progress: 361/1000, correct:  351/361, verified: 333/351, unsafe: 17/351,  time: 0.003; 0.214; 75.259
+img 361 Verified 6
+progress: 362/1000, correct:  352/362, verified: 334/352, unsafe: 17/352,  time: 0.004; 0.214; 75.262
+img 362 Verified 2
+progress: 363/1000, correct:  353/363, verified: 335/353, unsafe: 17/353,  time: 0.012; 0.213; 75.274
+img 363 Verified 2
+progress: 364/1000, correct:  354/364, verified: 336/354, unsafe: 17/354,  time: 0.011; 0.213; 75.285
+img 364 Verified 5
+progress: 365/1000, correct:  355/365, verified: 337/355, unsafe: 17/355,  time: 0.003; 0.212; 75.288
+img 365 Verified 0
+progress: 366/1000, correct:  356/366, verified: 338/356, unsafe: 17/356,  time: 0.011; 0.212; 75.299
+img 366 Verified 6
+progress: 367/1000, correct:  357/367, verified: 339/357, unsafe: 17/357,  time: 0.011; 0.211; 75.310
+img 367 Verified 5
+progress: 368/1000, correct:  358/368, verified: 340/358, unsafe: 17/358,  time: 0.011; 0.210; 75.320
+img 368 Verified 6
+progress: 369/1000, correct:  359/369, verified: 341/359, unsafe: 17/359,  time: 0.010; 0.210; 75.330
+img 369 Verified 3
+progress: 370/1000, correct:  360/370, verified: 342/360, unsafe: 17/360,  time: 0.011; 0.209; 75.341
+img 370 Verified 7
+progress: 371/1000, correct:  361/371, verified: 343/361, unsafe: 17/361,  time: 0.003; 0.209; 75.345
+img 371 Verified 2
+progress: 372/1000, correct:  362/372, verified: 344/362, unsafe: 17/362,  time: 0.003; 0.208; 75.348
+img 372 Verified 0
+progress: 373/1000, correct:  363/373, verified: 345/363, unsafe: 17/363,  time: 0.011; 0.208; 75.358
+img 373 Verified 8
+progress: 374/1000, correct:  364/374, verified: 346/364, unsafe: 17/364,  time: 0.010; 0.207; 75.368
+img 374 Verified 8
+progress: 375/1000, correct:  365/375, verified: 347/365, unsafe: 17/365,  time: 0.010; 0.207; 75.378
+img 375 Verified 5
+progress: 376/1000, correct:  366/376, verified: 348/366, unsafe: 17/366,  time: 0.003; 0.206; 75.381
+img 376 not considered, incorrectly classified
+progress: 377/1000, correct:  366/377, verified: 348/366, unsafe: 17/366,  time: 0.001; 0.206; 75.381
+img 377 Verified 1
+progress: 378/1000, correct:  367/378, verified: 349/367, unsafe: 17/367,  time: 0.010; 0.205; 75.391
+img 378 Verified 1
+progress: 379/1000, correct:  368/379, verified: 350/368, unsafe: 17/368,  time: 0.004; 0.205; 75.395
+img 379 Verified 4
+progress: 380/1000, correct:  369/380, verified: 351/369, unsafe: 17/369,  time: 0.003; 0.204; 75.398
+img 380 Verified 0
+progress: 381/1000, correct:  370/381, verified: 352/370, unsafe: 17/370,  time: 0.010; 0.204; 75.408
+img 381 not considered, incorrectly classified
+progress: 382/1000, correct:  370/382, verified: 352/370, unsafe: 17/370,  time: 0.001; 0.204; 75.408
+img 382 Verified 3
+progress: 383/1000, correct:  371/383, verified: 353/371, unsafe: 17/371,  time: 0.003; 0.203; 75.411
+img 383 Verified 7
+progress: 384/1000, correct:  372/384, verified: 354/372, unsafe: 17/372,  time: 0.003; 0.203; 75.415
+img 384 Verified 6
+progress: 385/1000, correct:  373/385, verified: 355/373, unsafe: 17/373,  time: 0.003; 0.202; 75.418
+img 385 Verified 1
+progress: 386/1000, correct:  374/386, verified: 356/374, unsafe: 17/374,  time: 0.004; 0.202; 75.421
+img 386 Verified 6
+progress: 387/1000, correct:  375/387, verified: 357/375, unsafe: 17/375,  time: 0.010; 0.201; 75.431
+img 387 Verified 2
+progress: 388/1000, correct:  376/388, verified: 358/376, unsafe: 17/376,  time: 0.010; 0.201; 75.442
+img 388 Verified 1
+progress: 389/1000, correct:  377/389, verified: 359/377, unsafe: 17/377,  time: 0.010; 0.200; 75.452
+img 389 Verified 9
+progress: 390/1000, correct:  378/390, verified: 360/378, unsafe: 17/378,  time: 0.010; 0.200; 75.462
+img 390 Verified 2
+progress: 391/1000, correct:  379/391, verified: 361/379, unsafe: 17/379,  time: 0.010; 0.199; 75.471
+img 391 Verified 8
+progress: 392/1000, correct:  380/392, verified: 362/380, unsafe: 17/380,  time: 0.010; 0.199; 75.482
+img 392 Verified 6
+progress: 393/1000, correct:  381/393, verified: 363/381, unsafe: 17/381,  time: 0.004; 0.198; 75.485
+img 393 Verified 1
+progress: 394/1000, correct:  382/394, verified: 364/382, unsafe: 17/382,  time: 0.009; 0.198; 75.494
+krelu: n 70 split_zero 90 after cutoff 0 number of args 90
+krelu: n 70 split_zero 51 after cutoff 27 number of args 152
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 7: -0.1519, Final solve time: 0.241
+Partial MILP model status: 2, Obj bound against label 7: -0.0258, Final solve time: 0.506
+img 394 Failed
+progress: 395/1000, correct:  383/395, verified: 364/383, unsafe: 17/383,  time: 3.512; 0.206; 79.005
+img 395 Verified 5
+progress: 396/1000, correct:  384/396, verified: 365/384, unsafe: 17/384,  time: 0.011; 0.206; 79.016
+img 396 Verified 2
+progress: 397/1000, correct:  385/397, verified: 366/385, unsafe: 17/385,  time: 0.003; 0.205; 79.020
+img 397 Verified 5
+progress: 398/1000, correct:  386/398, verified: 367/386, unsafe: 17/386,  time: 0.011; 0.205; 79.031
+img 398 Verified 4
+progress: 399/1000, correct:  387/399, verified: 368/387, unsafe: 17/387,  time: 0.003; 0.204; 79.034
+img 399 Verified 4
+progress: 400/1000, correct:  388/400, verified: 369/388, unsafe: 17/388,  time: 0.011; 0.204; 79.045
+krelu: n 70 split_zero 87 after cutoff 0 number of args 87
+krelu: n 70 split_zero 45 after cutoff 24 number of args 116
+krelu: n 70 split_zero 3 after cutoff 3 number of args 4
+Model status: 2, Objval against label 0: -0.0681, Final solve time: 0.210
+Partial MILP model status: 2, Obj bound against label 0: -0.0596, Final solve time: 0.357
+img 400 Failed
+progress: 401/1000, correct:  389/401, verified: 369/389, unsafe: 17/389,  time: 3.237; 0.212; 82.282
+img 401 Verified 8
+progress: 402/1000, correct:  390/402, verified: 370/390, unsafe: 17/390,  time: 0.012; 0.211; 82.293
+img 402 Verified 3
+progress: 403/1000, correct:  391/403, verified: 371/391, unsafe: 17/391,  time: 0.012; 0.210; 82.305
+krelu: n 70 split_zero 88 after cutoff 0 number of args 88
+krelu: n 70 split_zero 56 after cutoff 34 number of args 214
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 9: -0.2663, Final solve time: 0.252
+Counterexample found, partial MILP skipped.
+img 403 Verified unsafe against label  9 correct label  8
+progress: 404/1000, correct:  392/404, verified: 371/392, unsafe: 18/392,  time: 3.255; 0.218; 85.560
+img 404 Verified 2
+progress: 405/1000, correct:  393/405, verified: 372/393, unsafe: 18/393,  time: 0.011; 0.218; 85.571
+img 405 Verified 4
+progress: 406/1000, correct:  394/406, verified: 373/394, unsafe: 18/394,  time: 0.011; 0.217; 85.582
+img 406 Verified 5
+progress: 407/1000, correct:  395/407, verified: 374/395, unsafe: 18/395,  time: 0.011; 0.217; 85.593
+img 407 Verified 0
+progress: 408/1000, correct:  396/408, verified: 375/396, unsafe: 18/396,  time: 0.003; 0.216; 85.596
+img 408 Verified 3
+progress: 409/1000, correct:  397/409, verified: 376/397, unsafe: 18/397,  time: 0.011; 0.216; 85.607
+img 409 Verified 1
+progress: 410/1000, correct:  398/410, verified: 377/398, unsafe: 18/398,  time: 0.011; 0.215; 85.619
+img 410 Verified 7
+progress: 411/1000, correct:  399/411, verified: 378/399, unsafe: 18/399,  time: 0.003; 0.215; 85.622
+img 411 Verified 7
+progress: 412/1000, correct:  400/412, verified: 379/400, unsafe: 18/400,  time: 0.011; 0.214; 85.633
+img 412 not considered, incorrectly classified
+progress: 413/1000, correct:  400/413, verified: 379/400, unsafe: 18/400,  time: 0.001; 0.214; 85.633
+img 413 Verified 7
+progress: 414/1000, correct:  401/414, verified: 380/401, unsafe: 18/401,  time: 0.003; 0.214; 85.636
+img 414 Verified 9
+progress: 415/1000, correct:  402/415, verified: 381/402, unsafe: 18/402,  time: 0.011; 0.213; 85.648
+img 415 Verified 7
+progress: 416/1000, correct:  403/416, verified: 382/403, unsafe: 18/403,  time: 0.011; 0.213; 85.659
+img 416 Verified 1
+progress: 417/1000, correct:  404/417, verified: 383/404, unsafe: 18/404,  time: 0.011; 0.212; 85.669
+img 417 Verified 9
+progress: 418/1000, correct:  405/418, verified: 384/405, unsafe: 18/405,  time: 0.011; 0.212; 85.681
+img 418 Verified 2
+progress: 419/1000, correct:  406/419, verified: 385/406, unsafe: 18/406,  time: 0.004; 0.211; 85.684
+img 419 Verified 1
+progress: 420/1000, correct:  407/420, verified: 386/407, unsafe: 18/407,  time: 0.011; 0.211; 85.695
+krelu: n 70 split_zero 79 after cutoff 0 number of args 79
+krelu: n 70 split_zero 63 after cutoff 36 number of args 228
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 7: -0.5967, Final solve time: 0.309
+Counterexample found, partial MILP skipped.
+img 420 Verified unsafe against label  7 correct label  4
+progress: 421/1000, correct:  408/421, verified: 386/408, unsafe: 19/408,  time: 3.260; 0.218; 88.955
+img 421 Verified 2
+progress: 422/1000, correct:  409/422, verified: 387/409, unsafe: 19/409,  time: 0.011; 0.218; 88.967
+img 422 Verified 9
+progress: 423/1000, correct:  410/423, verified: 388/410, unsafe: 19/410,  time: 0.011; 0.217; 88.978
+img 423 Verified 2
+progress: 424/1000, correct:  411/424, verified: 389/411, unsafe: 19/411,  time: 0.004; 0.216; 88.981
+img 424 Verified 0
+progress: 425/1000, correct:  412/425, verified: 390/412, unsafe: 19/412,  time: 0.011; 0.216; 88.993
+img 425 Verified 4
+progress: 426/1000, correct:  413/426, verified: 391/413, unsafe: 19/413,  time: 0.011; 0.216; 89.004
+img 426 Verified 9
+progress: 427/1000, correct:  414/427, verified: 392/414, unsafe: 19/414,  time: 0.011; 0.215; 89.015
+img 427 Verified 1
+progress: 428/1000, correct:  415/428, verified: 393/415, unsafe: 19/415,  time: 0.011; 0.215; 89.026
+img 428 Verified 4
+progress: 429/1000, correct:  416/429, verified: 394/416, unsafe: 19/416,  time: 0.012; 0.214; 89.039
+img 429 Verified 8
+progress: 430/1000, correct:  417/430, verified: 395/417, unsafe: 19/417,  time: 0.011; 0.214; 89.050
+img 430 Verified 1
+progress: 431/1000, correct:  418/431, verified: 396/418, unsafe: 19/418,  time: 0.011; 0.213; 89.061
+krelu: n 70 split_zero 133 after cutoff 0 number of args 133
+krelu: n 70 split_zero 113 after cutoff 65 number of args 765
+krelu: n 70 split_zero 12 after cutoff 12 number of args 29
+Model status: 6, Objval against label 2: 0.0000, Final solve time: 0.429
+img 431 Verified 8
+progress: 432/1000, correct:  419/432, verified: 397/419, unsafe: 19/419,  time: 4.885; 0.224; 93.947
+img 432 Verified 4
+progress: 433/1000, correct:  420/433, verified: 398/420, unsafe: 19/420,  time: 0.011; 0.224; 93.958
+img 433 Verified 5
+progress: 434/1000, correct:  421/434, verified: 399/421, unsafe: 19/421,  time: 0.012; 0.223; 93.969
+img 434 Verified 9
+progress: 435/1000, correct:  422/435, verified: 400/422, unsafe: 19/422,  time: 0.011; 0.223; 93.980
+img 435 not considered, incorrectly classified
+progress: 436/1000, correct:  422/436, verified: 400/422, unsafe: 19/422,  time: 0.001; 0.223; 93.980
+img 436 Verified 8
+progress: 437/1000, correct:  423/437, verified: 401/423, unsafe: 19/423,  time: 0.011; 0.222; 93.992
+img 437 Verified 3
+progress: 438/1000, correct:  424/438, verified: 402/424, unsafe: 19/424,  time: 0.003; 0.222; 93.995
+img 438 Verified 7
+progress: 439/1000, correct:  425/439, verified: 403/425, unsafe: 19/425,  time: 0.004; 0.221; 93.998
+img 439 Verified 6
+progress: 440/1000, correct:  426/440, verified: 404/426, unsafe: 19/426,  time: 0.011; 0.221; 94.009
+img 440 Verified 0
+progress: 441/1000, correct:  427/441, verified: 405/427, unsafe: 19/427,  time: 0.003; 0.220; 94.012
+img 441 Verified 0
+progress: 442/1000, correct:  428/442, verified: 406/428, unsafe: 19/428,  time: 0.011; 0.220; 94.023
+img 442 Verified 3
+progress: 443/1000, correct:  429/443, verified: 407/429, unsafe: 19/429,  time: 0.003; 0.219; 94.026
+img 443 Verified 0
+progress: 444/1000, correct:  430/444, verified: 408/430, unsafe: 19/430,  time: 0.012; 0.219; 94.038
+img 444 Verified 2
+progress: 445/1000, correct:  431/445, verified: 409/431, unsafe: 19/431,  time: 0.011; 0.218; 94.049
+krelu: n 70 split_zero 103 after cutoff 0 number of args 103
+krelu: n 70 split_zero 62 after cutoff 37 number of args 232
+krelu: n 70 split_zero 9 after cutoff 9 number of args 17
+Model status: 2, Objval against label 0: -1.3576, Final solve time: 0.342
+Counterexample found, partial MILP skipped.
+img 445 Verified unsafe against label  0 correct label  6
+progress: 446/1000, correct:  432/446, verified: 409/432, unsafe: 20/432,  time: 3.269; 0.225; 97.318
+img 446 Verified 6
+progress: 447/1000, correct:  433/447, verified: 410/433, unsafe: 20/433,  time: 0.004; 0.225; 97.322
+krelu: n 70 split_zero 58 after cutoff 0 number of args 58
+krelu: n 70 split_zero 31 after cutoff 14 number of args 59
+krelu: n 70 split_zero 4 after cutoff 4 number of args 5
+Model status: 2, Objval against label 9: -0.2578, Final solve time: 0.186
+Counterexample found, partial MILP skipped.
+img 447 Verified unsafe against label  9 correct label  4
+progress: 448/1000, correct:  434/448, verified: 410/434, unsafe: 21/434,  time: 2.761; 0.231; 100.083
+img 448 not considered, incorrectly classified
+progress: 449/1000, correct:  434/449, verified: 410/434, unsafe: 21/434,  time: 0.001; 0.231; 100.083
+img 449 not considered, incorrectly classified
+progress: 450/1000, correct:  434/450, verified: 410/434, unsafe: 21/434,  time: 0.001; 0.231; 100.083
+img 450 Verified 3
+progress: 451/1000, correct:  435/451, verified: 411/435, unsafe: 21/435,  time: 0.010; 0.230; 100.093
+img 451 Verified 3
+progress: 452/1000, correct:  436/452, verified: 412/436, unsafe: 21/436,  time: 0.003; 0.230; 100.096
+img 452 Verified 2
+progress: 453/1000, correct:  437/453, verified: 413/437, unsafe: 21/437,  time: 0.010; 0.229; 100.107
+img 453 Verified 3
+progress: 454/1000, correct:  438/454, verified: 414/438, unsafe: 21/438,  time: 0.011; 0.229; 100.118
+img 454 Verified 9
+progress: 455/1000, correct:  439/455, verified: 415/439, unsafe: 21/439,  time: 0.011; 0.228; 100.130
+img 455 Verified 1
+progress: 456/1000, correct:  440/456, verified: 416/440, unsafe: 21/440,  time: 0.011; 0.228; 100.140
+img 456 Verified 2
+progress: 457/1000, correct:  441/457, verified: 417/441, unsafe: 21/441,  time: 0.012; 0.227; 100.152
+img 457 Verified 6
+progress: 458/1000, correct:  442/458, verified: 418/442, unsafe: 21/442,  time: 0.012; 0.227; 100.163
+img 458 Verified 8
+progress: 459/1000, correct:  443/459, verified: 419/443, unsafe: 21/443,  time: 0.004; 0.226; 100.167
+img 459 Verified 0
+progress: 460/1000, correct:  444/460, verified: 420/444, unsafe: 21/444,  time: 0.003; 0.226; 100.170
+img 460 Verified 5
+progress: 461/1000, correct:  445/461, verified: 421/445, unsafe: 21/445,  time: 0.012; 0.225; 100.182
+img 461 Verified 6
+progress: 462/1000, correct:  446/462, verified: 422/446, unsafe: 21/446,  time: 0.003; 0.225; 100.185
+img 462 Verified 6
+progress: 463/1000, correct:  447/463, verified: 423/447, unsafe: 21/447,  time: 0.003; 0.224; 100.188
+img 463 Verified 6
+progress: 464/1000, correct:  448/464, verified: 424/448, unsafe: 21/448,  time: 0.003; 0.224; 100.191
+krelu: n 70 split_zero 107 after cutoff 0 number of args 107
+krelu: n 70 split_zero 59 after cutoff 37 number of args 229
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 7: -0.7680, Final solve time: 0.322
+Counterexample found, partial MILP skipped.
+img 464 Verified unsafe against label  7 correct label  3
+progress: 465/1000, correct:  449/465, verified: 424/449, unsafe: 22/449,  time: 3.354; 0.231; 103.545
+img 465 Verified 8
+progress: 466/1000, correct:  450/466, verified: 425/450, unsafe: 22/450,  time: 0.010; 0.230; 103.556
+img 466 Verified 8
+progress: 467/1000, correct:  451/467, verified: 426/451, unsafe: 22/451,  time: 0.004; 0.230; 103.559
+img 467 Verified 2
+progress: 468/1000, correct:  452/468, verified: 427/452, unsafe: 22/452,  time: 0.011; 0.229; 103.570
+img 468 Verified 7
+progress: 469/1000, correct:  453/469, verified: 428/453, unsafe: 22/453,  time: 0.011; 0.229; 103.581
+img 469 Verified 5
+progress: 470/1000, correct:  454/470, verified: 429/454, unsafe: 22/454,  time: 0.011; 0.228; 103.592
+img 470 Verified 8
+progress: 471/1000, correct:  455/471, verified: 430/455, unsafe: 22/455,  time: 0.004; 0.228; 103.596
+krelu: n 70 split_zero 85 after cutoff 0 number of args 85
+krelu: n 70 split_zero 55 after cutoff 31 number of args 210
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 7: -0.7139, Final solve time: 0.275
+Counterexample found, partial MILP skipped.
+img 471 Verified unsafe against label  7 correct label  9
+progress: 472/1000, correct:  456/472, verified: 430/456, unsafe: 23/456,  time: 3.354; 0.235; 106.950
+img 472 Verified 6
+progress: 473/1000, correct:  457/473, verified: 431/457, unsafe: 23/457,  time: 0.011; 0.234; 106.961
+img 473 Verified 1
+progress: 474/1000, correct:  458/474, verified: 432/458, unsafe: 23/458,  time: 0.012; 0.234; 106.973
+img 474 Verified 8
+progress: 475/1000, correct:  459/475, verified: 433/459, unsafe: 23/459,  time: 0.004; 0.233; 106.977
+img 475 Verified 4
+progress: 476/1000, correct:  460/476, verified: 434/460, unsafe: 23/460,  time: 0.003; 0.233; 106.980
+img 476 Verified 1
+progress: 477/1000, correct:  461/477, verified: 435/461, unsafe: 23/461,  time: 0.004; 0.232; 106.984
+img 477 Verified 2
+progress: 478/1000, correct:  462/478, verified: 436/462, unsafe: 23/462,  time: 0.003; 0.232; 106.987
+img 478 Verified 5
+progress: 479/1000, correct:  463/479, verified: 437/463, unsafe: 23/463,  time: 0.013; 0.231; 106.999
+img 479 not considered, incorrectly classified
+progress: 480/1000, correct:  463/480, verified: 437/463, unsafe: 23/463,  time: 0.001; 0.231; 106.999
+img 480 Verified 1
+progress: 481/1000, correct:  464/481, verified: 438/464, unsafe: 23/464,  time: 0.011; 0.231; 107.011
+img 481 Verified 9
+progress: 482/1000, correct:  465/482, verified: 439/465, unsafe: 23/465,  time: 0.011; 0.230; 107.022
+img 482 Verified 7
+progress: 483/1000, correct:  466/483, verified: 440/466, unsafe: 23/466,  time: 0.003; 0.230; 107.025
+img 483 Verified 5
+progress: 484/1000, correct:  467/484, verified: 441/467, unsafe: 23/467,  time: 0.013; 0.229; 107.038
+img 484 Verified 4
+progress: 485/1000, correct:  468/485, verified: 442/468, unsafe: 23/468,  time: 0.011; 0.229; 107.049
+img 485 Verified 0
+progress: 486/1000, correct:  469/486, verified: 443/469, unsafe: 23/469,  time: 0.004; 0.228; 107.053
+img 486 Verified 8
+progress: 487/1000, correct:  470/487, verified: 444/470, unsafe: 23/470,  time: 0.011; 0.228; 107.064
+img 487 Verified 9
+progress: 488/1000, correct:  471/488, verified: 445/471, unsafe: 23/471,  time: 0.011; 0.227; 107.075
+img 488 Verified 9
+progress: 489/1000, correct:  472/489, verified: 446/472, unsafe: 23/472,  time: 0.011; 0.227; 107.086
+img 489 Verified 1
+progress: 490/1000, correct:  473/490, verified: 447/473, unsafe: 23/473,  time: 0.011; 0.226; 107.098
+img 490 Verified 0
+progress: 491/1000, correct:  474/491, verified: 448/474, unsafe: 23/474,  time: 0.011; 0.226; 107.109
+img 491 Verified 5
+progress: 492/1000, correct:  475/492, verified: 449/475, unsafe: 23/475,  time: 0.012; 0.226; 107.121
+img 492 Verified 2
+progress: 493/1000, correct:  476/493, verified: 450/476, unsafe: 23/476,  time: 0.008; 0.225; 107.129
+img 493 Verified 3
+progress: 494/1000, correct:  477/494, verified: 451/477, unsafe: 23/477,  time: 0.003; 0.225; 107.132
+img 494 Verified 7
+progress: 495/1000, correct:  478/495, verified: 452/478, unsafe: 23/478,  time: 0.002; 0.224; 107.134
+img 495 not considered, incorrectly classified
+progress: 496/1000, correct:  478/496, verified: 452/478, unsafe: 23/478,  time: 0.000; 0.224; 107.134
+img 496 Verified 9
+progress: 497/1000, correct:  479/497, verified: 453/479, unsafe: 23/479,  time: 0.009; 0.224; 107.143
+krelu: n 70 split_zero 59 after cutoff 0 number of args 59
+krelu: n 70 split_zero 37 after cutoff 15 number of args 72
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 6, Objval against label 1: 0.0000, Final solve time: 0.187
+img 497 Verified 4
+progress: 498/1000, correct:  480/498, verified: 454/480, unsafe: 23/480,  time: 2.822; 0.229; 109.965
+img 498 Verified 0
+progress: 499/1000, correct:  481/499, verified: 455/481, unsafe: 23/481,  time: 0.011; 0.229; 109.976
+img 499 Verified 6
+progress: 500/1000, correct:  482/500, verified: 456/482, unsafe: 23/482,  time: 0.012; 0.228; 109.989
+img 500 Verified 3
+progress: 501/1000, correct:  483/501, verified: 457/483, unsafe: 23/483,  time: 0.003; 0.228; 109.992
+img 501 Verified 9
+progress: 502/1000, correct:  484/502, verified: 458/484, unsafe: 23/484,  time: 0.003; 0.227; 109.995
+img 502 Verified 5
+progress: 503/1000, correct:  485/503, verified: 459/485, unsafe: 23/485,  time: 0.012; 0.227; 110.007
+img 503 Verified 2
+progress: 504/1000, correct:  486/504, verified: 460/486, unsafe: 23/486,  time: 0.003; 0.226; 110.010
+img 504 Verified 1
+progress: 505/1000, correct:  487/505, verified: 461/487, unsafe: 23/487,  time: 0.011; 0.226; 110.021
+img 505 Verified 3
+progress: 506/1000, correct:  488/506, verified: 462/488, unsafe: 23/488,  time: 0.011; 0.225; 110.031
+img 506 Verified 1
+progress: 507/1000, correct:  489/507, verified: 463/489, unsafe: 23/489,  time: 0.004; 0.225; 110.035
+img 507 Verified 3
+progress: 508/1000, correct:  490/508, verified: 464/490, unsafe: 23/490,  time: 0.011; 0.225; 110.047
+img 508 Verified 6
+progress: 509/1000, correct:  491/509, verified: 465/491, unsafe: 23/491,  time: 0.012; 0.224; 110.058
+img 509 Verified 5
+progress: 510/1000, correct:  492/510, verified: 466/492, unsafe: 23/492,  time: 0.011; 0.224; 110.070
+img 510 Verified 7
+progress: 511/1000, correct:  493/511, verified: 467/493, unsafe: 23/493,  time: 0.011; 0.223; 110.081
+krelu: n 70 split_zero 71 after cutoff 0 number of args 71
+krelu: n 70 split_zero 44 after cutoff 27 number of args 145
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 1: -0.3538, Final solve time: 0.233
+Counterexample found, partial MILP skipped.
+img 511 Verified unsafe against label  1 correct label  4
+progress: 512/1000, correct:  494/512, verified: 467/494, unsafe: 24/494,  time: 3.038; 0.229; 113.118
+img 512 Verified 2
+progress: 513/1000, correct:  495/513, verified: 468/495, unsafe: 24/495,  time: 0.011; 0.229; 113.129
+img 513 Verified 2
+progress: 514/1000, correct:  496/514, verified: 469/496, unsafe: 24/496,  time: 0.003; 0.228; 113.132
+img 514 Verified 6
+progress: 515/1000, correct:  497/515, verified: 470/497, unsafe: 24/497,  time: 0.004; 0.228; 113.136
+img 515 Verified 3
+progress: 516/1000, correct:  498/516, verified: 471/498, unsafe: 24/498,  time: 0.012; 0.227; 113.148
+img 516 Verified 2
+progress: 517/1000, correct:  499/517, verified: 472/499, unsafe: 24/499,  time: 0.012; 0.227; 113.159
+img 517 Verified 6
+progress: 518/1000, correct:  500/518, verified: 473/500, unsafe: 24/500,  time: 0.011; 0.226; 113.170
+img 518 Verified 5
+progress: 519/1000, correct:  501/519, verified: 474/501, unsafe: 24/501,  time: 0.003; 0.226; 113.174
+img 519 Verified 4
+progress: 520/1000, correct:  502/520, verified: 475/502, unsafe: 24/502,  time: 0.011; 0.225; 113.185
+img 520 Verified 8
+progress: 521/1000, correct:  503/521, verified: 476/503, unsafe: 24/503,  time: 0.012; 0.225; 113.196
+img 521 Verified 9
+progress: 522/1000, correct:  504/522, verified: 477/504, unsafe: 24/504,  time: 0.011; 0.225; 113.207
+img 522 Verified 7
+progress: 523/1000, correct:  505/523, verified: 478/505, unsafe: 24/505,  time: 0.011; 0.224; 113.218
+img 523 Verified 1
+progress: 524/1000, correct:  506/524, verified: 479/506, unsafe: 24/506,  time: 0.011; 0.224; 113.230
+img 524 Verified 3
+progress: 525/1000, correct:  507/525, verified: 480/507, unsafe: 24/507,  time: 0.011; 0.223; 113.241
+img 525 Verified 0
+progress: 526/1000, correct:  508/526, verified: 481/508, unsafe: 24/508,  time: 0.003; 0.223; 113.244
+img 526 Verified 3
+progress: 527/1000, correct:  509/527, verified: 482/509, unsafe: 24/509,  time: 0.004; 0.222; 113.248
+img 527 Verified 8
+progress: 528/1000, correct:  510/528, verified: 483/510, unsafe: 24/510,  time: 0.011; 0.222; 113.259
+img 528 Verified 3
+progress: 529/1000, correct:  511/529, verified: 484/511, unsafe: 24/511,  time: 0.012; 0.222; 113.271
+img 529 Verified 1
+progress: 530/1000, correct:  512/530, verified: 485/512, unsafe: 24/512,  time: 0.004; 0.221; 113.275
+krelu: n 70 split_zero 81 after cutoff 0 number of args 81
+krelu: n 70 split_zero 56 after cutoff 33 number of args 212
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 4: -0.0597, Final solve time: 0.324
+Partial MILP model status: 2, Obj bound against label 4: -0.0560, Final solve time: 0.574
+img 530 Failed
+progress: 531/1000, correct:  513/531, verified: 485/513, unsafe: 24/513,  time: 3.872; 0.228; 117.147
+krelu: n 70 split_zero 84 after cutoff 0 number of args 84
+krelu: n 70 split_zero 51 after cutoff 28 number of args 164
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 6: -0.2103, Final solve time: 0.245
+Partial MILP model status: 2, Obj bound against label 6: -0.0465, Final solve time: 0.456
+img 531 Failed
+progress: 532/1000, correct:  514/532, verified: 485/514, unsafe: 24/514,  time: 3.612; 0.235; 120.759
+krelu: n 70 split_zero 92 after cutoff 0 number of args 92
+krelu: n 70 split_zero 51 after cutoff 24 number of args 122
+krelu: n 70 split_zero 7 after cutoff 6 number of args 11
+Model status: 6, Objval against label 0: 0.0000, Final solve time: 0.240
+Model status: 2, Objval against label 9: -0.1244, Final solve time: 0.249
+Counterexample found, partial MILP skipped.
+img 532 Verified unsafe against label  9 correct label  4
+progress: 533/1000, correct:  515/533, verified: 485/515, unsafe: 25/515,  time: 3.192; 0.241; 123.951
+img 533 Verified 4
+progress: 534/1000, correct:  516/534, verified: 486/516, unsafe: 25/516,  time: 0.011; 0.240; 123.962
+img 534 Verified 6
+progress: 535/1000, correct:  517/535, verified: 487/517, unsafe: 25/517,  time: 0.003; 0.240; 123.965
+img 535 Verified 4
+progress: 536/1000, correct:  518/536, verified: 488/518, unsafe: 25/518,  time: 0.003; 0.239; 123.968
+img 536 Verified 2
+progress: 537/1000, correct:  519/537, verified: 489/519, unsafe: 25/519,  time: 0.011; 0.239; 123.979
+img 537 Verified 1
+progress: 538/1000, correct:  520/538, verified: 490/520, unsafe: 25/520,  time: 0.011; 0.238; 123.990
+img 538 Verified 8
+progress: 539/1000, correct:  521/539, verified: 491/521, unsafe: 25/521,  time: 0.013; 0.238; 124.002
+img 539 Verified 2
+progress: 540/1000, correct:  522/540, verified: 492/522, unsafe: 25/522,  time: 0.011; 0.238; 124.013
+img 540 Verified 5
+progress: 541/1000, correct:  523/541, verified: 493/523, unsafe: 25/523,  time: 0.004; 0.237; 124.017
+img 541 Verified 4
+progress: 542/1000, correct:  524/542, verified: 494/524, unsafe: 25/524,  time: 0.003; 0.237; 124.020
+krelu: n 70 split_zero 109 after cutoff 0 number of args 109
+krelu: n 70 split_zero 91 after cutoff 65 number of args 743
+krelu: n 70 split_zero 9 after cutoff 9 number of args 17
+Model status: 2, Objval against label 1: -0.6601, Final solve time: 0.584
+Partial MILP model status: 2, Obj bound against label 1: -0.0759, Final solve time: 2.820
+img 542 Failed
+progress: 543/1000, correct:  525/543, verified: 494/525, unsafe: 25/525,  time: 7.697; 0.251; 131.717
+img 543 not considered, incorrectly classified
+progress: 544/1000, correct:  525/544, verified: 494/525, unsafe: 25/525,  time: 0.001; 0.251; 131.717
+img 544 Verified 4
+progress: 545/1000, correct:  526/545, verified: 495/526, unsafe: 25/526,  time: 0.003; 0.250; 131.720
+img 545 Verified 0
+progress: 546/1000, correct:  527/546, verified: 496/527, unsafe: 25/527,  time: 0.011; 0.250; 131.732
+img 546 Verified 0
+progress: 547/1000, correct:  528/547, verified: 497/528, unsafe: 25/528,  time: 0.004; 0.249; 131.736
+img 547 Verified 2
+progress: 548/1000, correct:  529/548, verified: 498/529, unsafe: 25/529,  time: 0.010; 0.249; 131.746
+img 548 Verified 3
+progress: 549/1000, correct:  530/549, verified: 499/530, unsafe: 25/530,  time: 0.012; 0.249; 131.758
+img 549 Verified 2
+progress: 550/1000, correct:  531/550, verified: 500/531, unsafe: 25/531,  time: 0.011; 0.248; 131.768
+krelu: n 70 split_zero 76 after cutoff 0 number of args 76
+krelu: n 70 split_zero 58 after cutoff 31 number of args 213
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 9: -0.2192, Final solve time: 0.244
+Partial MILP model status: 11, Obj bound against label 9: -0.1178, Final solve time: 0.492
+img 550 Failed
+progress: 551/1000, correct:  532/551, verified: 500/532, unsafe: 25/532,  time: 3.679; 0.255; 135.447
+krelu: n 70 split_zero 52 after cutoff 0 number of args 52
+krelu: n 70 split_zero 48 after cutoff 20 number of args 93
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 3: -0.2927, Final solve time: 0.196
+Counterexample found, partial MILP skipped.
+img 551 Verified unsafe against label  3 correct label  7
+progress: 552/1000, correct:  533/552, verified: 500/533, unsafe: 26/533,  time: 2.811; 0.259; 138.258
+img 552 Verified 0
+progress: 553/1000, correct:  534/553, verified: 501/534, unsafe: 26/534,  time: 0.011; 0.259; 138.270
+krelu: n 70 split_zero 113 after cutoff 0 number of args 113
+krelu: n 70 split_zero 52 after cutoff 27 number of args 153
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 6: -0.2571, Final solve time: 0.223
+Counterexample found, partial MILP skipped.
+img 553 Verified unsafe against label  6 correct label  8
+progress: 554/1000, correct:  535/554, verified: 501/535, unsafe: 27/535,  time: 3.067; 0.264; 141.337
+img 554 Verified 7
+progress: 555/1000, correct:  536/555, verified: 502/536, unsafe: 27/536,  time: 0.012; 0.264; 141.349
+img 555 Verified 4
+progress: 556/1000, correct:  537/556, verified: 503/537, unsafe: 27/537,  time: 0.012; 0.263; 141.361
+img 556 Verified 4
+progress: 557/1000, correct:  538/557, verified: 504/538, unsafe: 27/538,  time: 0.003; 0.263; 141.364
+img 557 Verified 7
+progress: 558/1000, correct:  539/558, verified: 505/539, unsafe: 27/539,  time: 0.004; 0.262; 141.367
+img 558 Verified 9
+progress: 559/1000, correct:  540/559, verified: 506/540, unsafe: 27/540,  time: 0.011; 0.262; 141.378
+img 559 Verified 6
+progress: 560/1000, correct:  541/560, verified: 507/541, unsafe: 27/541,  time: 0.004; 0.261; 141.381
+img 560 Verified 9
+progress: 561/1000, correct:  542/561, verified: 508/542, unsafe: 27/542,  time: 0.012; 0.261; 141.393
+img 561 Verified 0
+progress: 562/1000, correct:  543/562, verified: 509/543, unsafe: 27/543,  time: 0.012; 0.260; 141.405
+img 562 Verified 9
+progress: 563/1000, correct:  544/563, verified: 510/544, unsafe: 27/544,  time: 0.012; 0.260; 141.417
+img 563 Verified 8
+progress: 564/1000, correct:  545/564, verified: 511/545, unsafe: 27/545,  time: 0.012; 0.260; 141.429
+img 564 Verified 0
+progress: 565/1000, correct:  546/565, verified: 512/546, unsafe: 27/546,  time: 0.011; 0.259; 141.439
+img 565 not considered, incorrectly classified
+progress: 566/1000, correct:  546/566, verified: 512/546, unsafe: 27/546,  time: 0.001; 0.259; 141.439
+img 566 Verified 6
+progress: 567/1000, correct:  547/567, verified: 513/547, unsafe: 27/547,  time: 0.012; 0.259; 141.451
+img 567 Verified 0
+progress: 568/1000, correct:  548/568, verified: 514/548, unsafe: 27/548,  time: 0.012; 0.258; 141.464
+img 568 Verified 6
+progress: 569/1000, correct:  549/569, verified: 515/549, unsafe: 27/549,  time: 0.004; 0.258; 141.467
+img 569 Verified 3
+progress: 570/1000, correct:  550/570, verified: 516/550, unsafe: 27/550,  time: 0.012; 0.257; 141.479
+img 570 Verified 5
+progress: 571/1000, correct:  551/571, verified: 517/551, unsafe: 27/551,  time: 0.011; 0.257; 141.490
+img 571 not considered, incorrectly classified
+progress: 572/1000, correct:  551/572, verified: 517/551, unsafe: 27/551,  time: 0.001; 0.257; 141.490
+img 572 Verified 8
+progress: 573/1000, correct:  552/573, verified: 518/552, unsafe: 27/552,  time: 0.011; 0.256; 141.501
+img 573 Verified 3
+progress: 574/1000, correct:  553/574, verified: 519/553, unsafe: 27/553,  time: 0.003; 0.256; 141.504
+img 574 Verified 3
+progress: 575/1000, correct:  554/575, verified: 520/554, unsafe: 27/554,  time: 0.011; 0.255; 141.516
+img 575 Verified 9
+progress: 576/1000, correct:  555/576, verified: 521/555, unsafe: 27/555,  time: 0.003; 0.255; 141.519
+img 576 Verified 3
+progress: 577/1000, correct:  556/577, verified: 522/556, unsafe: 27/556,  time: 0.003; 0.255; 141.522
+img 577 Verified 3
+progress: 578/1000, correct:  557/578, verified: 523/557, unsafe: 27/557,  time: 0.012; 0.254; 141.534
+krelu: n 70 split_zero 100 after cutoff 0 number of args 100
+krelu: n 70 split_zero 54 after cutoff 25 number of args 134
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 7: -0.2655, Final solve time: 0.217
+Partial MILP model status: 11, Obj bound against label 7: -0.1565, Final solve time: 0.365
+img 578 Failed
+progress: 579/1000, correct:  558/579, verified: 523/558, unsafe: 27/558,  time: 3.244; 0.259; 144.777
+img 579 Verified 7
+progress: 580/1000, correct:  559/580, verified: 524/559, unsafe: 27/559,  time: 0.012; 0.259; 144.789
+img 580 Verified 8
+progress: 581/1000, correct:  560/581, verified: 525/560, unsafe: 27/560,  time: 0.003; 0.259; 144.792
+img 581 Verified 0
+progress: 582/1000, correct:  561/582, verified: 526/561, unsafe: 27/561,  time: 0.010; 0.258; 144.803
+img 582 not considered, incorrectly classified
+progress: 583/1000, correct:  561/583, verified: 526/561, unsafe: 27/561,  time: 0.001; 0.258; 144.803
+krelu: n 70 split_zero 101 after cutoff 0 number of args 101
+krelu: n 70 split_zero 66 after cutoff 34 number of args 224
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 6, Objval against label 3: 0.0000, Final solve time: 0.230
+img 583 Verified 2
+progress: 584/1000, correct:  562/584, verified: 527/562, unsafe: 27/562,  time: 3.298; 0.264; 148.101
+img 584 Verified 1
+progress: 585/1000, correct:  563/585, verified: 528/563, unsafe: 27/563,  time: 0.011; 0.263; 148.112
+img 585 Verified 7
+progress: 586/1000, correct:  564/586, verified: 529/564, unsafe: 27/564,  time: 0.004; 0.263; 148.116
+img 586 Verified 0
+progress: 587/1000, correct:  565/587, verified: 530/565, unsafe: 27/565,  time: 0.011; 0.262; 148.128
+img 587 Verified 6
+progress: 588/1000, correct:  566/588, verified: 531/566, unsafe: 27/566,  time: 0.003; 0.262; 148.131
+img 588 Verified 5
+progress: 589/1000, correct:  567/589, verified: 532/567, unsafe: 27/567,  time: 0.011; 0.261; 148.141
+img 589 Verified 4
+progress: 590/1000, correct:  568/590, verified: 533/568, unsafe: 27/568,  time: 0.012; 0.261; 148.153
+img 590 Verified 3
+progress: 591/1000, correct:  569/591, verified: 534/569, unsafe: 27/569,  time: 0.003; 0.260; 148.156
+img 591 not considered, incorrectly classified
+progress: 592/1000, correct:  569/592, verified: 534/569, unsafe: 27/569,  time: 0.001; 0.260; 148.156
+img 592 Verified 0
+progress: 593/1000, correct:  570/593, verified: 535/570, unsafe: 27/570,  time: 0.003; 0.260; 148.159
+krelu: n 70 split_zero 78 after cutoff 0 number of args 78
+krelu: n 70 split_zero 34 after cutoff 12 number of args 51
+krelu: n 70 split_zero 4 after cutoff 4 number of args 5
+Model status: 2, Objval against label 7: -0.2403, Final solve time: 0.176
+Counterexample found, partial MILP skipped.
+img 593 Verified unsafe against label  7 correct label  9
+progress: 594/1000, correct:  571/594, verified: 535/571, unsafe: 28/571,  time: 2.687; 0.264; 150.846
+img 594 Verified 6
+progress: 595/1000, correct:  572/595, verified: 536/572, unsafe: 28/572,  time: 0.003; 0.264; 150.849
+img 595 Verified 3
+progress: 596/1000, correct:  573/596, verified: 537/573, unsafe: 28/573,  time: 0.004; 0.263; 150.853
+img 596 Verified 8
+progress: 597/1000, correct:  574/597, verified: 538/574, unsafe: 28/574,  time: 0.011; 0.263; 150.863
+img 597 Verified 0
+progress: 598/1000, correct:  575/598, verified: 539/575, unsafe: 28/575,  time: 0.012; 0.262; 150.875
+img 598 Verified 9
+progress: 599/1000, correct:  576/599, verified: 540/576, unsafe: 28/576,  time: 0.011; 0.262; 150.886
+img 599 Verified 9
+progress: 600/1000, correct:  577/600, verified: 541/577, unsafe: 28/577,  time: 0.004; 0.262; 150.890
+img 600 Verified 6
+progress: 601/1000, correct:  578/601, verified: 542/578, unsafe: 28/578,  time: 0.004; 0.261; 150.893
+img 601 Verified 8
+progress: 602/1000, correct:  579/602, verified: 543/579, unsafe: 28/579,  time: 0.011; 0.261; 150.904
+img 602 Verified 6
+progress: 603/1000, correct:  580/603, verified: 544/580, unsafe: 28/580,  time: 0.003; 0.260; 150.908
+img 603 Verified 8
+progress: 604/1000, correct:  581/604, verified: 545/581, unsafe: 28/581,  time: 0.012; 0.260; 150.920
+img 604 Verified 5
+progress: 605/1000, correct:  582/605, verified: 546/582, unsafe: 28/582,  time: 0.003; 0.259; 150.923
+img 605 Verified 7
+progress: 606/1000, correct:  583/606, verified: 547/583, unsafe: 28/583,  time: 0.011; 0.259; 150.934
+krelu: n 70 split_zero 122 after cutoff 0 number of args 122
+krelu: n 70 split_zero 70 after cutoff 34 number of args 228
+krelu: n 70 split_zero 10 after cutoff 10 number of args 20
+Model status: 2, Objval against label 3: -0.7483, Final solve time: 0.291
+Counterexample found, partial MILP skipped.
+img 606 Verified unsafe against label  3 correct label  8
+progress: 607/1000, correct:  584/607, verified: 547/584, unsafe: 29/584,  time: 3.234; 0.264; 154.168
+img 607 Verified 6
+progress: 608/1000, correct:  585/608, verified: 548/585, unsafe: 29/585,  time: 0.004; 0.264; 154.172
+img 608 Verified 0
+progress: 609/1000, correct:  586/609, verified: 549/586, unsafe: 29/586,  time: 0.011; 0.263; 154.183
+img 609 Verified 2
+progress: 610/1000, correct:  587/610, verified: 550/587, unsafe: 29/587,  time: 0.011; 0.263; 154.194
+img 610 not considered, incorrectly classified
+progress: 611/1000, correct:  587/611, verified: 550/587, unsafe: 29/587,  time: 0.001; 0.263; 154.194
+img 611 Verified 0
+progress: 612/1000, correct:  588/612, verified: 551/588, unsafe: 29/588,  time: 0.011; 0.262; 154.205
+img 612 Verified 2
+progress: 613/1000, correct:  589/613, verified: 552/589, unsafe: 29/589,  time: 0.004; 0.262; 154.208
+img 613 Verified 2
+progress: 614/1000, correct:  590/614, verified: 553/590, unsafe: 29/590,  time: 0.012; 0.261; 154.221
+img 614 Verified 3
+progress: 615/1000, correct:  591/615, verified: 554/591, unsafe: 29/591,  time: 0.011; 0.261; 154.232
+img 615 Verified 1
+progress: 616/1000, correct:  592/616, verified: 555/592, unsafe: 29/592,  time: 0.011; 0.261; 154.242
+img 616 Verified 9
+progress: 617/1000, correct:  593/617, verified: 556/593, unsafe: 29/593,  time: 0.011; 0.260; 154.253
+img 617 Verified 7
+progress: 618/1000, correct:  594/618, verified: 557/594, unsafe: 29/594,  time: 0.011; 0.260; 154.264
+img 618 Verified 5
+progress: 619/1000, correct:  595/619, verified: 558/595, unsafe: 29/595,  time: 0.011; 0.259; 154.275
+img 619 Verified 1
+progress: 620/1000, correct:  596/620, verified: 559/596, unsafe: 29/596,  time: 0.012; 0.259; 154.287
+img 620 Verified 0
+progress: 621/1000, correct:  597/621, verified: 560/597, unsafe: 29/597,  time: 0.011; 0.258; 154.298
+img 621 Verified 8
+progress: 622/1000, correct:  598/622, verified: 561/598, unsafe: 29/598,  time: 0.011; 0.258; 154.309
+img 622 Verified 4
+progress: 623/1000, correct:  599/623, verified: 562/599, unsafe: 29/599,  time: 0.011; 0.258; 154.320
+img 623 Verified 6
+progress: 624/1000, correct:  600/624, verified: 563/600, unsafe: 29/600,  time: 0.003; 0.257; 154.324
+img 624 Verified 2
+progress: 625/1000, correct:  601/625, verified: 564/601, unsafe: 29/601,  time: 0.012; 0.257; 154.335
+img 625 Verified 6
+progress: 626/1000, correct:  602/626, verified: 565/602, unsafe: 29/602,  time: 0.010; 0.256; 154.346
+img 626 Verified 7
+progress: 627/1000, correct:  603/627, verified: 566/603, unsafe: 29/603,  time: 0.004; 0.256; 154.349
+krelu: n 70 split_zero 86 after cutoff 0 number of args 86
+krelu: n 70 split_zero 68 after cutoff 36 number of args 233
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 4: -0.2711, Final solve time: 0.265
+Counterexample found, partial MILP skipped.
+img 627 Verified unsafe against label  4 correct label  9
+progress: 628/1000, correct:  604/628, verified: 566/604, unsafe: 30/604,  time: 3.127; 0.261; 157.476
+krelu: n 70 split_zero 82 after cutoff 0 number of args 82
+krelu: n 70 split_zero 48 after cutoff 24 number of args 119
+krelu: n 70 split_zero 3 after cutoff 3 number of args 4
+Model status: 2, Objval against label 9: -0.4048, Final solve time: 0.218
+Counterexample found, partial MILP skipped.
+img 628 Verified unsafe against label  9 correct label  3
+progress: 629/1000, correct:  605/629, verified: 566/605, unsafe: 31/605,  time: 2.924; 0.265; 160.400
+img 629 Verified 2
+progress: 630/1000, correct:  606/630, verified: 567/606, unsafe: 31/606,  time: 0.012; 0.265; 160.412
+img 630 Verified 9
+progress: 631/1000, correct:  607/631, verified: 568/607, unsafe: 31/607,  time: 0.012; 0.264; 160.424
+img 631 Verified 8
+progress: 632/1000, correct:  608/632, verified: 569/608, unsafe: 31/608,  time: 0.011; 0.264; 160.435
+img 632 Verified 2
+progress: 633/1000, correct:  609/633, verified: 570/609, unsafe: 31/609,  time: 0.003; 0.263; 160.438
+img 633 Verified 2
+progress: 634/1000, correct:  610/634, verified: 571/610, unsafe: 31/610,  time: 0.003; 0.263; 160.442
+img 634 Verified 9
+progress: 635/1000, correct:  611/635, verified: 572/611, unsafe: 31/611,  time: 0.003; 0.263; 160.445
+img 635 Verified 2
+progress: 636/1000, correct:  612/636, verified: 573/612, unsafe: 31/612,  time: 0.011; 0.262; 160.456
+img 636 Verified 7
+progress: 637/1000, correct:  613/637, verified: 574/613, unsafe: 31/613,  time: 0.012; 0.262; 160.468
+img 637 Verified 3
+progress: 638/1000, correct:  614/638, verified: 575/614, unsafe: 31/614,  time: 0.011; 0.261; 160.479
+img 638 Verified 5
+progress: 639/1000, correct:  615/639, verified: 576/615, unsafe: 31/615,  time: 0.012; 0.261; 160.491
+img 639 Verified 9
+progress: 640/1000, correct:  616/640, verified: 577/616, unsafe: 31/616,  time: 0.011; 0.261; 160.502
+img 640 Verified 1
+progress: 641/1000, correct:  617/641, verified: 578/617, unsafe: 31/617,  time: 0.011; 0.260; 160.513
+img 641 Verified 8
+progress: 642/1000, correct:  618/642, verified: 579/618, unsafe: 31/618,  time: 0.011; 0.260; 160.525
+img 642 Verified 0
+progress: 643/1000, correct:  619/643, verified: 580/619, unsafe: 31/619,  time: 0.011; 0.259; 160.536
+img 643 Verified 2
+progress: 644/1000, correct:  620/644, verified: 581/620, unsafe: 31/620,  time: 0.004; 0.259; 160.540
+img 644 Verified 0
+progress: 645/1000, correct:  621/645, verified: 582/621, unsafe: 31/621,  time: 0.003; 0.259; 160.543
+img 645 Verified 5
+progress: 646/1000, correct:  622/646, verified: 583/622, unsafe: 31/622,  time: 0.011; 0.258; 160.554
+krelu: n 70 split_zero 73 after cutoff 0 number of args 73
+krelu: n 70 split_zero 72 after cutoff 31 number of args 227
+krelu: n 70 split_zero 13 after cutoff 12 number of args 30
+Model status: 6, Objval against label 1: 0.0000, Final solve time: 0.332
+Model status: 2, Objval against label 6: -1.6640, Final solve time: 0.368
+Counterexample found, partial MILP skipped.
+img 646 Verified unsafe against label  6 correct label  2
+progress: 647/1000, correct:  623/647, verified: 583/623, unsafe: 32/623,  time: 3.659; 0.264; 164.213
+img 647 Verified 1
+progress: 648/1000, correct:  624/648, verified: 584/624, unsafe: 32/624,  time: 0.011; 0.263; 164.224
+img 648 Verified 3
+progress: 649/1000, correct:  625/649, verified: 585/625, unsafe: 32/625,  time: 0.003; 0.263; 164.227
+img 649 Verified 7
+progress: 650/1000, correct:  626/650, verified: 586/626, unsafe: 32/626,  time: 0.004; 0.262; 164.231
+img 650 Verified 6
+progress: 651/1000, correct:  627/651, verified: 587/627, unsafe: 32/627,  time: 0.011; 0.262; 164.242
+img 651 Verified 7
+progress: 652/1000, correct:  628/652, verified: 588/628, unsafe: 32/628,  time: 0.003; 0.262; 164.245
+img 652 Verified 1
+progress: 653/1000, correct:  629/653, verified: 589/629, unsafe: 32/629,  time: 0.004; 0.261; 164.249
+img 653 Verified 2
+progress: 654/1000, correct:  630/654, verified: 590/630, unsafe: 32/630,  time: 0.010; 0.261; 164.260
+img 654 Verified 5
+progress: 655/1000, correct:  631/655, verified: 591/631, unsafe: 32/631,  time: 0.011; 0.260; 164.271
+krelu: n 70 split_zero 125 after cutoff 0 number of args 125
+krelu: n 70 split_zero 54 after cutoff 29 number of args 180
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 2: -0.7596, Final solve time: 0.275
+Counterexample found, partial MILP skipped.
+img 655 Verified unsafe against label  2 correct label  8
+progress: 656/1000, correct:  632/656, verified: 591/632, unsafe: 33/632,  time: 3.217; 0.265; 167.488
+img 656 Verified 0
+progress: 657/1000, correct:  633/657, verified: 592/633, unsafe: 33/633,  time: 0.003; 0.265; 167.491
+img 657 Verified 3
+progress: 658/1000, correct:  634/658, verified: 593/634, unsafe: 33/634,  time: 0.003; 0.264; 167.494
+img 658 Verified 7
+progress: 659/1000, correct:  635/659, verified: 594/635, unsafe: 33/635,  time: 0.011; 0.264; 167.505
+krelu: n 70 split_zero 83 after cutoff 0 number of args 83
+krelu: n 70 split_zero 60 after cutoff 22 number of args 116
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 1: -1.1416, Final solve time: 0.204
+Counterexample found, partial MILP skipped.
+img 659 Verified unsafe against label  7 correct label  2
+progress: 660/1000, correct:  636/660, verified: 594/636, unsafe: 34/636,  time: 2.916; 0.268; 170.421
+img 660 Verified 4
+progress: 661/1000, correct:  637/661, verified: 595/637, unsafe: 34/637,  time: 0.012; 0.268; 170.432
+img 661 Verified 0
+progress: 662/1000, correct:  638/662, verified: 596/638, unsafe: 34/638,  time: 0.011; 0.267; 170.443
+img 662 Verified 9
+progress: 663/1000, correct:  639/663, verified: 597/639, unsafe: 34/639,  time: 0.004; 0.267; 170.447
+img 663 Verified 1
+progress: 664/1000, correct:  640/664, verified: 598/640, unsafe: 34/640,  time: 0.011; 0.266; 170.458
+img 664 Verified 8
+progress: 665/1000, correct:  641/665, verified: 599/641, unsafe: 34/641,  time: 0.011; 0.266; 170.470
+img 665 Verified 6
+progress: 666/1000, correct:  642/666, verified: 600/642, unsafe: 34/642,  time: 0.003; 0.266; 170.473
+img 666 Verified 7
+progress: 667/1000, correct:  643/667, verified: 601/643, unsafe: 34/643,  time: 0.004; 0.265; 170.477
+img 667 Verified 7
+progress: 668/1000, correct:  644/668, verified: 602/644, unsafe: 34/644,  time: 0.012; 0.265; 170.488
+img 668 Verified 4
+progress: 669/1000, correct:  645/669, verified: 603/645, unsafe: 34/645,  time: 0.011; 0.264; 170.500
+img 669 Verified 3
+progress: 670/1000, correct:  646/670, verified: 604/646, unsafe: 34/646,  time: 0.011; 0.264; 170.511
+img 670 Verified 4
+progress: 671/1000, correct:  647/671, verified: 605/647, unsafe: 34/647,  time: 0.012; 0.264; 170.522
+img 671 Verified 9
+progress: 672/1000, correct:  648/672, verified: 606/648, unsafe: 34/648,  time: 0.011; 0.263; 170.533
+img 672 Verified 1
+progress: 673/1000, correct:  649/673, verified: 607/649, unsafe: 34/649,  time: 0.004; 0.263; 170.537
+img 673 Verified 9
+progress: 674/1000, correct:  650/674, verified: 608/650, unsafe: 34/650,  time: 0.011; 0.262; 170.548
+krelu: n 70 split_zero 96 after cutoff 0 number of args 96
+krelu: n 70 split_zero 45 after cutoff 22 number of args 101
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 3: -0.6331, Final solve time: 0.215
+Counterexample found, partial MILP skipped.
+img 674 Verified unsafe against label  3 correct label  5
+progress: 675/1000, correct:  651/675, verified: 608/651, unsafe: 35/651,  time: 2.879; 0.266; 173.427
+img 675 Verified 1
+progress: 676/1000, correct:  652/676, verified: 609/652, unsafe: 35/652,  time: 0.011; 0.266; 173.439
+img 676 Verified 7
+progress: 677/1000, correct:  653/677, verified: 610/653, unsafe: 35/653,  time: 0.003; 0.266; 173.442
+img 677 Verified 3
+progress: 678/1000, correct:  654/678, verified: 611/654, unsafe: 35/654,  time: 0.011; 0.265; 173.453
+img 678 Verified 9
+progress: 679/1000, correct:  655/679, verified: 612/655, unsafe: 35/655,  time: 0.010; 0.265; 173.463
+img 679 Verified 7
+progress: 680/1000, correct:  656/680, verified: 613/656, unsafe: 35/656,  time: 0.004; 0.264; 173.467
+img 680 Verified 6
+progress: 681/1000, correct:  657/681, verified: 614/657, unsafe: 35/657,  time: 0.003; 0.264; 173.470
+img 681 Verified 9
+progress: 682/1000, correct:  658/682, verified: 615/658, unsafe: 35/658,  time: 0.004; 0.264; 173.473
+img 682 Verified 1
+progress: 683/1000, correct:  659/683, verified: 616/659, unsafe: 35/659,  time: 0.011; 0.263; 173.484
+img 683 Verified 3
+progress: 684/1000, correct:  660/684, verified: 617/660, unsafe: 35/660,  time: 0.012; 0.263; 173.496
+img 684 not considered, incorrectly classified
+progress: 685/1000, correct:  660/685, verified: 617/660, unsafe: 35/660,  time: 0.001; 0.263; 173.496
+img 685 Verified 8
+progress: 686/1000, correct:  661/686, verified: 618/661, unsafe: 35/661,  time: 0.011; 0.262; 173.507
+img 686 Verified 3
+progress: 687/1000, correct:  662/687, verified: 619/662, unsafe: 35/662,  time: 0.011; 0.262; 173.518
+img 687 Verified 3
+progress: 688/1000, correct:  663/688, verified: 620/663, unsafe: 35/663,  time: 0.004; 0.262; 173.522
+img 688 Verified 6
+progress: 689/1000, correct:  664/689, verified: 621/664, unsafe: 35/664,  time: 0.011; 0.261; 173.533
+krelu: n 70 split_zero 80 after cutoff 0 number of args 80
+krelu: n 70 split_zero 40 after cutoff 21 number of args 90
+krelu: n 70 split_zero 3 after cutoff 3 number of args 4
+Model status: 2, Objval against label 9: -0.0855, Final solve time: 0.212
+Partial MILP model status: 2, Obj bound against label 9: -0.0383, Final solve time: 0.353
+img 689 Failed
+progress: 690/1000, correct:  665/690, verified: 621/665, unsafe: 35/665,  time: 3.209; 0.266; 176.742
+img 690 Verified 2
+progress: 691/1000, correct:  666/691, verified: 622/666, unsafe: 35/666,  time: 0.010; 0.265; 176.753
+img 691 not considered, incorrectly classified
+progress: 692/1000, correct:  666/692, verified: 622/666, unsafe: 35/666,  time: 0.001; 0.265; 176.753
+img 692 Verified 5
+progress: 693/1000, correct:  667/693, verified: 623/667, unsafe: 35/667,  time: 0.012; 0.265; 176.765
+img 693 Verified 8
+progress: 694/1000, correct:  668/694, verified: 624/668, unsafe: 35/668,  time: 0.011; 0.265; 176.776
+img 694 Verified 5
+progress: 695/1000, correct:  669/695, verified: 625/669, unsafe: 35/669,  time: 0.011; 0.264; 176.787
+img 695 Verified 1
+progress: 696/1000, correct:  670/696, verified: 626/670, unsafe: 35/670,  time: 0.011; 0.264; 176.798
+img 696 Verified 1
+progress: 697/1000, correct:  671/697, verified: 627/671, unsafe: 35/671,  time: 0.012; 0.264; 176.809
+img 697 Verified 4
+progress: 698/1000, correct:  672/698, verified: 628/672, unsafe: 35/672,  time: 0.004; 0.263; 176.813
+img 698 Verified 4
+progress: 699/1000, correct:  673/699, verified: 629/673, unsafe: 35/673,  time: 0.011; 0.263; 176.824
+img 699 Verified 3
+progress: 700/1000, correct:  674/700, verified: 630/674, unsafe: 35/674,  time: 0.011; 0.262; 176.836
+img 700 Verified 1
+progress: 701/1000, correct:  675/701, verified: 631/675, unsafe: 35/675,  time: 0.011; 0.262; 176.847
+img 701 Verified 0
+progress: 702/1000, correct:  676/702, verified: 632/676, unsafe: 35/676,  time: 0.003; 0.262; 176.850
+img 702 Verified 7
+progress: 703/1000, correct:  677/703, verified: 633/677, unsafe: 35/677,  time: 0.004; 0.261; 176.853
+img 703 Verified 7
+progress: 704/1000, correct:  678/704, verified: 634/678, unsafe: 35/678,  time: 0.011; 0.261; 176.864
+img 704 Verified 0
+progress: 705/1000, correct:  679/705, verified: 635/679, unsafe: 35/679,  time: 0.011; 0.260; 176.876
+img 705 Verified 7
+progress: 706/1000, correct:  680/706, verified: 636/680, unsafe: 35/680,  time: 0.003; 0.260; 176.879
+img 706 Verified 9
+progress: 707/1000, correct:  681/707, verified: 637/681, unsafe: 35/681,  time: 0.011; 0.260; 176.890
+img 707 not considered, incorrectly classified
+progress: 708/1000, correct:  681/708, verified: 637/681, unsafe: 35/681,  time: 0.001; 0.260; 176.890
+img 708 Verified 4
+progress: 709/1000, correct:  682/709, verified: 638/682, unsafe: 35/682,  time: 0.011; 0.259; 176.901
+img 709 Verified 8
+progress: 710/1000, correct:  683/710, verified: 639/683, unsafe: 35/683,  time: 0.010; 0.259; 176.911
+img 710 Verified 5
+progress: 711/1000, correct:  684/711, verified: 640/684, unsafe: 35/684,  time: 0.003; 0.259; 176.914
+img 711 Verified 5
+progress: 712/1000, correct:  685/712, verified: 641/685, unsafe: 35/685,  time: 0.003; 0.258; 176.917
+img 712 Verified 4
+progress: 713/1000, correct:  686/713, verified: 642/686, unsafe: 35/686,  time: 0.012; 0.258; 176.930
+img 713 Verified 0
+progress: 714/1000, correct:  687/714, verified: 643/687, unsafe: 35/687,  time: 0.011; 0.258; 176.941
+img 714 Verified 8
+progress: 715/1000, correct:  688/715, verified: 644/688, unsafe: 35/688,  time: 0.012; 0.257; 176.953
+img 715 Verified 2
+progress: 716/1000, correct:  689/716, verified: 645/689, unsafe: 35/689,  time: 0.003; 0.257; 176.956
+img 716 Verified 1
+progress: 717/1000, correct:  690/717, verified: 646/690, unsafe: 35/690,  time: 0.011; 0.256; 176.967
+img 717 not considered, incorrectly classified
+progress: 718/1000, correct:  690/718, verified: 646/690, unsafe: 35/690,  time: 0.001; 0.256; 176.967
+img 718 Verified 8
+progress: 719/1000, correct:  691/719, verified: 647/691, unsafe: 35/691,  time: 0.004; 0.256; 176.971
+img 719 Verified 4
+progress: 720/1000, correct:  692/720, verified: 648/692, unsafe: 35/692,  time: 0.003; 0.256; 176.974
+img 720 not considered, incorrectly classified
+progress: 721/1000, correct:  692/721, verified: 648/692, unsafe: 35/692,  time: 0.001; 0.256; 176.974
+img 721 Verified 0
+progress: 722/1000, correct:  693/722, verified: 649/693, unsafe: 35/693,  time: 0.010; 0.255; 176.985
+img 722 Verified 4
+progress: 723/1000, correct:  694/723, verified: 650/694, unsafe: 35/694,  time: 0.003; 0.255; 176.988
+img 723 Verified 0
+progress: 724/1000, correct:  695/724, verified: 651/695, unsafe: 35/695,  time: 0.011; 0.255; 176.999
+img 724 Verified 6
+progress: 725/1000, correct:  696/725, verified: 652/696, unsafe: 35/696,  time: 0.012; 0.254; 177.011
+img 725 Verified 1
+progress: 726/1000, correct:  697/726, verified: 653/697, unsafe: 35/697,  time: 0.008; 0.254; 177.019
+img 726 Verified 7
+progress: 727/1000, correct:  698/727, verified: 654/698, unsafe: 35/698,  time: 0.009; 0.254; 177.028
+img 727 Verified 3
+progress: 728/1000, correct:  699/728, verified: 655/699, unsafe: 35/699,  time: 0.008; 0.253; 177.036
+img 728 Verified 2
+progress: 729/1000, correct:  700/729, verified: 656/700, unsafe: 35/700,  time: 0.008; 0.253; 177.044
+img 729 Verified 6
+progress: 730/1000, correct:  701/730, verified: 657/701, unsafe: 35/701,  time: 0.003; 0.253; 177.047
+img 730 Verified 7
+progress: 731/1000, correct:  702/731, verified: 658/702, unsafe: 35/702,  time: 0.008; 0.252; 177.056
+img 731 Verified 2
+progress: 732/1000, correct:  703/732, verified: 659/703, unsafe: 35/703,  time: 0.002; 0.252; 177.058
+img 732 Verified 6
+progress: 733/1000, correct:  704/733, verified: 660/704, unsafe: 35/704,  time: 0.002; 0.252; 177.060
+img 733 Verified 9
+progress: 734/1000, correct:  705/734, verified: 661/705, unsafe: 35/705,  time: 0.008; 0.251; 177.069
+img 734 Verified 3
+progress: 735/1000, correct:  706/735, verified: 662/706, unsafe: 35/706,  time: 0.008; 0.251; 177.077
+img 735 Verified 1
+progress: 736/1000, correct:  707/736, verified: 663/707, unsafe: 35/707,  time: 0.009; 0.250; 177.086
+img 736 Verified 4
+progress: 737/1000, correct:  708/737, verified: 664/708, unsafe: 35/708,  time: 0.003; 0.250; 177.088
+img 737 Verified 6
+progress: 738/1000, correct:  709/738, verified: 665/709, unsafe: 35/709,  time: 0.002; 0.250; 177.090
+img 738 Verified 2
+progress: 739/1000, correct:  710/739, verified: 666/710, unsafe: 35/710,  time: 0.008; 0.249; 177.099
+img 739 Verified 5
+progress: 740/1000, correct:  711/740, verified: 667/711, unsafe: 35/711,  time: 0.008; 0.249; 177.107
+img 740 not considered, incorrectly classified
+progress: 741/1000, correct:  711/741, verified: 667/711, unsafe: 35/711,  time: 0.000; 0.249; 177.107
+img 741 Verified 2
+progress: 742/1000, correct:  712/742, verified: 668/712, unsafe: 35/712,  time: 0.008; 0.249; 177.115
+img 742 Verified 0
+progress: 743/1000, correct:  713/743, verified: 669/713, unsafe: 35/713,  time: 0.002; 0.248; 177.118
+img 743 Verified 6
+progress: 744/1000, correct:  714/744, verified: 670/714, unsafe: 35/714,  time: 0.003; 0.248; 177.121
+img 744 Verified 2
+progress: 745/1000, correct:  715/745, verified: 671/715, unsafe: 35/715,  time: 0.003; 0.248; 177.124
+img 745 Verified 1
+progress: 746/1000, correct:  716/746, verified: 672/716, unsafe: 35/716,  time: 0.003; 0.247; 177.127
+img 746 Verified 7
+progress: 747/1000, correct:  717/747, verified: 673/717, unsafe: 35/717,  time: 0.003; 0.247; 177.130
+img 747 Verified 3
+progress: 748/1000, correct:  718/748, verified: 674/718, unsafe: 35/718,  time: 0.008; 0.247; 177.138
+img 748 Verified 4
+progress: 749/1000, correct:  719/749, verified: 675/719, unsafe: 35/719,  time: 0.009; 0.246; 177.146
+img 749 Verified 1
+progress: 750/1000, correct:  720/750, verified: 676/720, unsafe: 35/720,  time: 0.009; 0.246; 177.155
+img 750 Verified 0
+progress: 751/1000, correct:  721/751, verified: 677/721, unsafe: 35/721,  time: 0.003; 0.246; 177.158
+img 751 Verified 5
+progress: 752/1000, correct:  722/752, verified: 678/722, unsafe: 35/722,  time: 0.008; 0.245; 177.166
+img 752 Verified 4
+progress: 753/1000, correct:  723/753, verified: 679/723, unsafe: 35/723,  time: 0.008; 0.245; 177.175
+img 753 Verified 3
+progress: 754/1000, correct:  724/754, verified: 680/724, unsafe: 35/724,  time: 0.008; 0.245; 177.183
+img 754 Verified 1
+progress: 755/1000, correct:  725/755, verified: 681/725, unsafe: 35/725,  time: 0.003; 0.244; 177.186
+img 755 Verified 1
+progress: 756/1000, correct:  726/756, verified: 682/726, unsafe: 35/726,  time: 0.008; 0.244; 177.194
+img 756 Verified 7
+progress: 757/1000, correct:  727/757, verified: 683/727, unsafe: 35/727,  time: 0.003; 0.244; 177.197
+img 757 Verified 4
+progress: 758/1000, correct:  728/758, verified: 684/728, unsafe: 35/728,  time: 0.003; 0.243; 177.200
+img 758 Verified 9
+progress: 759/1000, correct:  729/759, verified: 685/729, unsafe: 35/729,  time: 0.008; 0.243; 177.208
+img 759 Verified 9
+progress: 760/1000, correct:  730/760, verified: 686/730, unsafe: 35/730,  time: 0.009; 0.243; 177.217
+img 760 not considered, incorrectly classified
+progress: 761/1000, correct:  730/761, verified: 686/730, unsafe: 35/730,  time: 0.000; 0.243; 177.217
+img 761 Verified 8
+progress: 762/1000, correct:  731/762, verified: 687/731, unsafe: 35/731,  time: 0.003; 0.242; 177.219
+img 762 Verified 4
+progress: 763/1000, correct:  732/763, verified: 688/732, unsafe: 35/732,  time: 0.003; 0.242; 177.222
+img 763 Verified 0
+progress: 764/1000, correct:  733/764, verified: 689/733, unsafe: 35/733,  time: 0.008; 0.242; 177.230
+img 764 Verified 2
+progress: 765/1000, correct:  734/765, verified: 690/734, unsafe: 35/734,  time: 0.003; 0.241; 177.233
+img 765 Verified 4
+progress: 766/1000, correct:  735/766, verified: 691/735, unsafe: 35/735,  time: 0.008; 0.241; 177.242
+img 766 Verified 5
+progress: 767/1000, correct:  736/767, verified: 692/736, unsafe: 35/736,  time: 0.003; 0.241; 177.244
+img 767 Verified 1
+progress: 768/1000, correct:  737/768, verified: 693/737, unsafe: 35/737,  time: 0.008; 0.241; 177.253
+img 768 Verified 1
+progress: 769/1000, correct:  738/769, verified: 694/738, unsafe: 35/738,  time: 0.008; 0.240; 177.261
+img 769 Verified 6
+progress: 770/1000, correct:  739/770, verified: 695/739, unsafe: 35/739,  time: 0.008; 0.240; 177.269
+img 770 Verified 4
+progress: 771/1000, correct:  740/771, verified: 696/740, unsafe: 35/740,  time: 0.003; 0.240; 177.272
+img 771 Verified 7
+progress: 772/1000, correct:  741/772, verified: 697/741, unsafe: 35/741,  time: 0.003; 0.239; 177.275
+img 772 Verified 1
+progress: 773/1000, correct:  742/773, verified: 698/742, unsafe: 35/742,  time: 0.008; 0.239; 177.283
+img 773 Verified 9
+progress: 774/1000, correct:  743/774, verified: 699/743, unsafe: 35/743,  time: 0.008; 0.239; 177.291
+krelu: n 70 split_zero 71 after cutoff 0 number of args 71
+krelu: n 70 split_zero 57 after cutoff 29 number of args 183
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 9: -0.3192, Final solve time: 0.279
+Counterexample found, partial MILP skipped.
+img 774 Verified unsafe against label  9 correct label  4
+progress: 775/1000, correct:  744/775, verified: 699/744, unsafe: 36/744,  time: 3.168; 0.243; 180.459
+img 775 Verified 2
+progress: 776/1000, correct:  745/776, verified: 700/745, unsafe: 36/745,  time: 0.010; 0.242; 180.469
+img 776 Verified 4
+progress: 777/1000, correct:  746/777, verified: 701/746, unsafe: 36/746,  time: 0.011; 0.242; 180.480
+img 777 Verified 1
+progress: 778/1000, correct:  747/778, verified: 702/747, unsafe: 36/747,  time: 0.011; 0.242; 180.491
+img 778 Verified 5
+progress: 779/1000, correct:  748/779, verified: 703/748, unsafe: 36/748,  time: 0.004; 0.241; 180.494
+img 779 Verified 5
+progress: 780/1000, correct:  749/780, verified: 704/749, unsafe: 36/749,  time: 0.004; 0.241; 180.498
+img 780 Verified 3
+progress: 781/1000, correct:  750/781, verified: 705/750, unsafe: 36/750,  time: 0.012; 0.241; 180.510
+krelu: n 70 split_zero 122 after cutoff 0 number of args 122
+krelu: n 70 split_zero 64 after cutoff 39 number of args 247
+krelu: n 70 split_zero 9 after cutoff 9 number of args 17
+Model status: 2, Objval against label 3: -0.4133, Final solve time: 0.293
+Partial MILP model status: 2, Obj bound against label 3: -0.3427, Final solve time: 0.626
+img 781 Failed
+progress: 782/1000, correct:  751/782, verified: 705/751, unsafe: 36/751,  time: 4.013; 0.246; 184.524
+img 782 Verified 3
+progress: 783/1000, correct:  752/783, verified: 706/752, unsafe: 36/752,  time: 0.003; 0.245; 184.527
+img 783 Verified 1
+progress: 784/1000, correct:  753/784, verified: 707/753, unsafe: 36/753,  time: 0.012; 0.245; 184.539
+img 784 Verified 4
+progress: 785/1000, correct:  754/785, verified: 708/754, unsafe: 36/754,  time: 0.004; 0.245; 184.542
+img 785 Verified 5
+progress: 786/1000, correct:  755/786, verified: 709/755, unsafe: 36/755,  time: 0.012; 0.244; 184.554
+img 786 Verified 6
+progress: 787/1000, correct:  756/787, verified: 710/756, unsafe: 36/756,  time: 0.011; 0.244; 184.565
+img 787 Verified 8
+progress: 788/1000, correct:  757/788, verified: 711/757, unsafe: 36/757,  time: 0.011; 0.244; 184.576
+img 788 Verified 9
+progress: 789/1000, correct:  758/789, verified: 712/758, unsafe: 36/758,  time: 0.004; 0.244; 184.580
+img 789 Verified 4
+progress: 790/1000, correct:  759/790, verified: 713/759, unsafe: 36/759,  time: 0.012; 0.243; 184.591
+img 790 Verified 1
+progress: 791/1000, correct:  760/791, verified: 714/760, unsafe: 36/760,  time: 0.011; 0.243; 184.602
+img 791 Verified 5
+progress: 792/1000, correct:  761/792, verified: 715/761, unsafe: 36/761,  time: 0.012; 0.243; 184.615
+img 792 Verified 3
+progress: 793/1000, correct:  762/793, verified: 716/762, unsafe: 36/762,  time: 0.003; 0.242; 184.618
+img 793 Verified 8
+progress: 794/1000, correct:  763/794, verified: 717/763, unsafe: 36/763,  time: 0.004; 0.242; 184.622
+img 794 Verified 0
+progress: 795/1000, correct:  764/795, verified: 718/764, unsafe: 36/764,  time: 0.003; 0.242; 184.625
+krelu: n 70 split_zero 51 after cutoff 0 number of args 51
+krelu: n 70 split_zero 49 after cutoff 24 number of args 120
+krelu: n 70 split_zero 4 after cutoff 4 number of args 5
+Model status: 6, Objval against label 1: 0.0000, Final solve time: 0.202
+img 795 Verified 3
+progress: 796/1000, correct:  765/796, verified: 719/765, unsafe: 36/765,  time: 2.940; 0.245; 187.564
+img 796 Verified 2
+progress: 797/1000, correct:  766/797, verified: 720/766, unsafe: 36/766,  time: 0.003; 0.245; 187.568
+img 797 Verified 5
+progress: 798/1000, correct:  767/798, verified: 721/767, unsafe: 36/767,  time: 0.012; 0.245; 187.579
+img 798 Verified 1
+progress: 799/1000, correct:  768/799, verified: 722/768, unsafe: 36/768,  time: 0.011; 0.244; 187.590
+img 799 Verified 2
+progress: 800/1000, correct:  769/800, verified: 723/769, unsafe: 36/769,  time: 0.003; 0.244; 187.593
+krelu: n 70 split_zero 92 after cutoff 0 number of args 92
+krelu: n 70 split_zero 62 after cutoff 30 number of args 202
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 0: -0.5643, Final solve time: 0.270
+Counterexample found, partial MILP skipped.
+img 800 Verified unsafe against label  0 correct label  8
+progress: 801/1000, correct:  770/801, verified: 723/770, unsafe: 37/770,  time: 3.280; 0.248; 190.873
+img 801 Verified 3
+progress: 802/1000, correct:  771/802, verified: 724/771, unsafe: 37/771,  time: 0.003; 0.248; 190.876
+img 802 Verified 4
+progress: 803/1000, correct:  772/803, verified: 725/772, unsafe: 37/772,  time: 0.004; 0.247; 190.880
+img 803 Verified 4
+progress: 804/1000, correct:  773/804, verified: 726/773, unsafe: 37/773,  time: 0.011; 0.247; 190.891
+img 804 Verified 0
+progress: 805/1000, correct:  774/805, verified: 727/774, unsafe: 37/774,  time: 0.011; 0.247; 190.902
+img 805 Verified 8
+progress: 806/1000, correct:  775/806, verified: 728/775, unsafe: 37/775,  time: 0.003; 0.246; 190.905
+img 806 Verified 8
+progress: 807/1000, correct:  776/807, verified: 729/776, unsafe: 37/776,  time: 0.011; 0.246; 190.916
+img 807 Verified 3
+progress: 808/1000, correct:  777/808, verified: 730/777, unsafe: 37/777,  time: 0.012; 0.246; 190.928
+img 808 Verified 3
+progress: 809/1000, correct:  778/809, verified: 731/778, unsafe: 37/778,  time: 0.011; 0.245; 190.939
+img 809 Verified 1
+progress: 810/1000, correct:  779/810, verified: 732/779, unsafe: 37/779,  time: 0.012; 0.245; 190.951
+img 810 not considered, incorrectly classified
+progress: 811/1000, correct:  779/811, verified: 732/779, unsafe: 37/779,  time: 0.001; 0.245; 190.951
+img 811 Verified 3
+progress: 812/1000, correct:  780/812, verified: 733/780, unsafe: 37/780,  time: 0.004; 0.245; 190.955
+img 812 Verified 5
+progress: 813/1000, correct:  781/813, verified: 734/781, unsafe: 37/781,  time: 0.003; 0.245; 190.958
+img 813 Verified 9
+progress: 814/1000, correct:  782/814, verified: 735/782, unsafe: 37/782,  time: 0.011; 0.244; 190.969
+img 814 Verified 6
+progress: 815/1000, correct:  783/815, verified: 736/783, unsafe: 37/783,  time: 0.003; 0.244; 190.972
+img 815 Verified 3
+progress: 816/1000, correct:  784/816, verified: 737/784, unsafe: 37/784,  time: 0.011; 0.244; 190.983
+img 816 Verified 2
+progress: 817/1000, correct:  785/817, verified: 738/785, unsafe: 37/785,  time: 0.004; 0.243; 190.987
+img 817 Verified 6
+progress: 818/1000, correct:  786/818, verified: 739/786, unsafe: 37/786,  time: 0.010; 0.243; 190.997
+img 818 Verified 1
+progress: 819/1000, correct:  787/819, verified: 740/787, unsafe: 37/787,  time: 0.009; 0.243; 191.006
+img 819 Verified 3
+progress: 820/1000, correct:  788/820, verified: 741/788, unsafe: 37/788,  time: 0.003; 0.242; 191.008
+img 820 Verified 6
+progress: 821/1000, correct:  789/821, verified: 742/789, unsafe: 37/789,  time: 0.003; 0.242; 191.011
+img 821 Verified 0
+progress: 822/1000, correct:  790/822, verified: 743/790, unsafe: 37/790,  time: 0.009; 0.242; 191.020
+img 822 Verified 7
+progress: 823/1000, correct:  791/823, verified: 744/791, unsafe: 37/791,  time: 0.003; 0.241; 191.022
+img 823 Verified 2
+progress: 824/1000, correct:  792/824, verified: 745/792, unsafe: 37/792,  time: 0.009; 0.241; 191.032
+img 824 Verified 1
+progress: 825/1000, correct:  793/825, verified: 746/793, unsafe: 37/793,  time: 0.003; 0.241; 191.035
+img 825 Verified 7
+progress: 826/1000, correct:  794/826, verified: 747/794, unsafe: 37/794,  time: 0.003; 0.241; 191.037
+img 826 Verified 1
+progress: 827/1000, correct:  795/827, verified: 748/795, unsafe: 37/795,  time: 0.003; 0.240; 191.040
+img 827 Verified 4
+progress: 828/1000, correct:  796/828, verified: 749/796, unsafe: 37/796,  time: 0.010; 0.240; 191.050
+img 828 Verified 2
+progress: 829/1000, correct:  797/829, verified: 750/797, unsafe: 37/797,  time: 0.009; 0.240; 191.059
+krelu: n 70 split_zero 99 after cutoff 0 number of args 99
+krelu: n 70 split_zero 44 after cutoff 24 number of args 115
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 8: -1.0145, Final solve time: 0.252
+Counterexample found, partial MILP skipped.
+img 829 Verified unsafe against label  8 correct label  4
+progress: 830/1000, correct:  798/830, verified: 750/798, unsafe: 38/798,  time: 2.992; 0.243; 194.052
+img 830 Verified 2
+progress: 831/1000, correct:  799/831, verified: 751/799, unsafe: 38/799,  time: 0.013; 0.243; 194.064
+img 831 Verified 1
+progress: 832/1000, correct:  800/832, verified: 752/800, unsafe: 38/800,  time: 0.011; 0.243; 194.075
+img 832 Verified 7
+progress: 833/1000, correct:  801/833, verified: 753/801, unsafe: 38/801,  time: 0.011; 0.242; 194.087
+img 833 Verified 9
+progress: 834/1000, correct:  802/834, verified: 754/802, unsafe: 38/802,  time: 0.011; 0.242; 194.098
+img 834 Verified 6
+progress: 835/1000, correct:  803/835, verified: 755/803, unsafe: 38/803,  time: 0.011; 0.242; 194.109
+img 835 Verified 1
+progress: 836/1000, correct:  804/836, verified: 756/804, unsafe: 38/804,  time: 0.011; 0.241; 194.121
+img 836 Verified 1
+progress: 837/1000, correct:  805/837, verified: 757/805, unsafe: 38/805,  time: 0.004; 0.241; 194.124
+img 837 Verified 2
+progress: 838/1000, correct:  806/838, verified: 758/806, unsafe: 38/806,  time: 0.011; 0.241; 194.136
+img 838 Verified 4
+progress: 839/1000, correct:  807/839, verified: 759/807, unsafe: 38/807,  time: 0.011; 0.241; 194.147
+img 839 not considered, incorrectly classified
+progress: 840/1000, correct:  807/840, verified: 759/807, unsafe: 38/807,  time: 0.001; 0.241; 194.147
+img 840 Verified 1
+progress: 841/1000, correct:  808/841, verified: 760/808, unsafe: 38/808,  time: 0.011; 0.240; 194.158
+img 841 Verified 7
+progress: 842/1000, correct:  809/842, verified: 761/809, unsafe: 38/809,  time: 0.012; 0.240; 194.170
+img 842 Verified 7
+progress: 843/1000, correct:  810/843, verified: 762/810, unsafe: 38/810,  time: 0.012; 0.240; 194.182
+img 843 Verified 4
+progress: 844/1000, correct:  811/844, verified: 763/811, unsafe: 38/811,  time: 0.003; 0.239; 194.185
+img 844 not considered, incorrectly classified
+progress: 845/1000, correct:  811/845, verified: 763/811, unsafe: 38/811,  time: 0.001; 0.239; 194.185
+img 845 Verified 0
+progress: 846/1000, correct:  812/846, verified: 764/812, unsafe: 38/812,  time: 0.004; 0.239; 194.189
+img 846 Verified 7
+progress: 847/1000, correct:  813/847, verified: 765/813, unsafe: 38/813,  time: 0.009; 0.239; 194.198
+img 847 Verified 3
+progress: 848/1000, correct:  814/848, verified: 766/814, unsafe: 38/814,  time: 0.009; 0.239; 194.206
+img 848 Verified 1
+progress: 849/1000, correct:  815/849, verified: 767/815, unsafe: 38/815,  time: 0.003; 0.238; 194.209
+img 849 Verified 3
+progress: 850/1000, correct:  816/850, verified: 768/816, unsafe: 38/816,  time: 0.008; 0.238; 194.217
+img 850 Verified 1
+progress: 851/1000, correct:  817/851, verified: 769/817, unsafe: 38/817,  time: 0.008; 0.238; 194.225
+img 851 Verified 0
+progress: 852/1000, correct:  818/852, verified: 770/818, unsafe: 38/818,  time: 0.003; 0.237; 194.228
+img 852 Verified 7
+progress: 853/1000, correct:  819/853, verified: 771/819, unsafe: 38/819,  time: 0.003; 0.237; 194.231
+img 853 Verified 7
+progress: 854/1000, correct:  820/854, verified: 772/820, unsafe: 38/820,  time: 0.003; 0.237; 194.234
+img 854 Verified 0
+progress: 855/1000, correct:  821/855, verified: 773/821, unsafe: 38/821,  time: 0.002; 0.237; 194.237
+img 855 Verified 3
+progress: 856/1000, correct:  822/856, verified: 774/822, unsafe: 38/822,  time: 0.003; 0.236; 194.240
+img 856 Verified 5
+progress: 857/1000, correct:  823/857, verified: 775/823, unsafe: 38/823,  time: 0.003; 0.236; 194.243
+img 857 Verified 5
+progress: 858/1000, correct:  824/858, verified: 776/824, unsafe: 38/824,  time: 0.009; 0.236; 194.252
+img 858 Verified 2
+progress: 859/1000, correct:  825/859, verified: 777/825, unsafe: 38/825,  time: 0.003; 0.235; 194.255
+img 859 Verified 7
+progress: 860/1000, correct:  826/860, verified: 778/826, unsafe: 38/826,  time: 0.008; 0.235; 194.263
+img 860 Verified 6
+progress: 861/1000, correct:  827/861, verified: 779/827, unsafe: 38/827,  time: 0.002; 0.235; 194.265
+img 861 Verified 6
+progress: 862/1000, correct:  828/862, verified: 780/828, unsafe: 38/828,  time: 0.003; 0.235; 194.268
+img 862 Verified 9
+progress: 863/1000, correct:  829/863, verified: 781/829, unsafe: 38/829,  time: 0.003; 0.234; 194.271
+img 863 Verified 2
+progress: 864/1000, correct:  830/864, verified: 782/830, unsafe: 38/830,  time: 0.009; 0.234; 194.280
+img 864 Verified 8
+progress: 865/1000, correct:  831/865, verified: 783/831, unsafe: 38/831,  time: 0.002; 0.234; 194.282
+img 865 Verified 3
+progress: 866/1000, correct:  832/866, verified: 784/832, unsafe: 38/832,  time: 0.008; 0.234; 194.290
+krelu: n 70 split_zero 90 after cutoff 0 number of args 90
+krelu: n 70 split_zero 62 after cutoff 34 number of args 220
+krelu: n 70 split_zero 8 after cutoff 8 number of args 15
+Model status: 2, Objval against label 6: -0.4974, Final solve time: 0.330
+Counterexample found, partial MILP skipped.
+img 866 Verified unsafe against label  6 correct label  5
+progress: 867/1000, correct:  833/867, verified: 784/833, unsafe: 39/833,  time: 3.278; 0.237; 197.569
+img 867 Verified 2
+progress: 868/1000, correct:  834/868, verified: 785/834, unsafe: 39/834,  time: 0.011; 0.237; 197.579
+img 868 Verified 2
+progress: 869/1000, correct:  835/869, verified: 786/835, unsafe: 39/835,  time: 0.004; 0.237; 197.583
+img 869 Verified 5
+progress: 870/1000, correct:  836/870, verified: 787/836, unsafe: 39/836,  time: 0.003; 0.236; 197.586
+img 870 Verified 6
+progress: 871/1000, correct:  837/871, verified: 788/837, unsafe: 39/837,  time: 0.011; 0.236; 197.597
+img 871 Verified 0
+progress: 872/1000, correct:  838/872, verified: 789/838, unsafe: 39/838,  time: 0.003; 0.236; 197.600
+img 872 Verified 8
+progress: 873/1000, correct:  839/873, verified: 790/839, unsafe: 39/839,  time: 0.011; 0.236; 197.612
+img 873 Verified 2
+progress: 874/1000, correct:  840/874, verified: 791/840, unsafe: 39/840,  time: 0.003; 0.235; 197.615
+img 874 Verified 9
+progress: 875/1000, correct:  841/875, verified: 792/841, unsafe: 39/841,  time: 0.011; 0.235; 197.625
+img 875 Verified 2
+progress: 876/1000, correct:  842/876, verified: 793/842, unsafe: 39/842,  time: 0.011; 0.235; 197.636
+img 876 Verified 8
+progress: 877/1000, correct:  843/877, verified: 794/843, unsafe: 39/843,  time: 0.010; 0.234; 197.647
+krelu: n 70 split_zero 115 after cutoff 0 number of args 115
+krelu: n 70 split_zero 74 after cutoff 43 number of args 295
+krelu: n 70 split_zero 7 after cutoff 7 number of args 14
+Model status: 2, Objval against label 6: -0.3706, Final solve time: 0.314
+Partial MILP model status: 2, Obj bound against label 6: -0.2437, Final solve time: 0.546
+img 877 Failed
+progress: 878/1000, correct:  844/878, verified: 794/844, unsafe: 39/844,  time: 4.120; 0.239; 201.767
+img 878 Verified 8
+progress: 879/1000, correct:  845/879, verified: 795/845, unsafe: 39/845,  time: 0.003; 0.239; 201.770
+img 879 Verified 8
+progress: 880/1000, correct:  846/880, verified: 796/846, unsafe: 39/846,  time: 0.011; 0.239; 201.781
+img 880 Verified 7
+progress: 881/1000, correct:  847/881, verified: 797/847, unsafe: 39/847,  time: 0.011; 0.238; 201.792
+img 881 not considered, incorrectly classified
+progress: 882/1000, correct:  847/882, verified: 797/847, unsafe: 39/847,  time: 0.001; 0.238; 201.792
+krelu: n 70 split_zero 99 after cutoff 0 number of args 99
+krelu: n 70 split_zero 61 after cutoff 31 number of args 216
+krelu: n 70 split_zero 6 after cutoff 6 number of args 10
+Model status: 2, Objval against label 4: -0.9007, Final solve time: 0.262
+Counterexample found, partial MILP skipped.
+img 882 Verified unsafe against label  4 correct label  9
+progress: 883/1000, correct:  848/883, verified: 797/848, unsafe: 40/848,  time: 3.269; 0.242; 205.061
+img 883 Verified 3
+progress: 884/1000, correct:  849/884, verified: 798/849, unsafe: 40/849,  time: 0.012; 0.242; 205.073
+img 884 Verified 0
+progress: 885/1000, correct:  850/885, verified: 799/850, unsafe: 40/850,  time: 0.011; 0.241; 205.084
+img 885 Verified 6
+progress: 886/1000, correct:  851/886, verified: 800/851, unsafe: 40/851,  time: 0.004; 0.241; 205.088
+img 886 Verified 6
+progress: 887/1000, correct:  852/887, verified: 801/852, unsafe: 40/852,  time: 0.004; 0.241; 205.091
+img 887 Verified 3
+progress: 888/1000, correct:  853/888, verified: 802/853, unsafe: 40/853,  time: 0.011; 0.240; 205.102
+img 888 Verified 2
+progress: 889/1000, correct:  854/889, verified: 803/854, unsafe: 40/854,  time: 0.003; 0.240; 205.105
+img 889 Verified 1
+progress: 890/1000, correct:  855/890, verified: 804/855, unsafe: 40/855,  time: 0.004; 0.240; 205.109
+img 890 Verified 3
+progress: 891/1000, correct:  856/891, verified: 805/856, unsafe: 40/856,  time: 0.011; 0.240; 205.121
+img 891 Verified 2
+progress: 892/1000, correct:  857/892, verified: 806/857, unsafe: 40/857,  time: 0.003; 0.239; 205.124
+img 892 Verified 2
+progress: 893/1000, correct:  858/893, verified: 807/858, unsafe: 40/858,  time: 0.003; 0.239; 205.127
+img 893 Verified 9
+progress: 894/1000, correct:  859/894, verified: 808/859, unsafe: 40/859,  time: 0.012; 0.239; 205.139
+img 894 Verified 3
+progress: 895/1000, correct:  860/895, verified: 809/860, unsafe: 40/860,  time: 0.003; 0.239; 205.142
+img 895 Verified 0
+progress: 896/1000, correct:  861/896, verified: 810/861, unsafe: 40/861,  time: 0.011; 0.238; 205.153
+img 896 Verified 0
+progress: 897/1000, correct:  862/897, verified: 811/862, unsafe: 40/862,  time: 0.011; 0.238; 205.164
+img 897 Verified 5
+progress: 898/1000, correct:  863/898, verified: 812/863, unsafe: 40/863,  time: 0.003; 0.238; 205.167
+krelu: n 70 split_zero 83 after cutoff 0 number of args 83
+krelu: n 70 split_zero 60 after cutoff 35 number of args 221
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 3: -0.0939, Final solve time: 0.330
+Partial MILP model status: 2, Obj bound against label 3: -0.0354, Final solve time: 0.486
+img 898 Failed
+progress: 899/1000, correct:  864/899, verified: 812/864, unsafe: 40/864,  time: 3.820; 0.242; 208.987
+img 899 Verified 8
+progress: 900/1000, correct:  865/900, verified: 813/865, unsafe: 40/865,  time: 0.011; 0.242; 208.997
+krelu: n 70 split_zero 50 after cutoff 0 number of args 50
+krelu: n 70 split_zero 38 after cutoff 21 number of args 88
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 6, Objval against label 3: 0.0000, Final solve time: 0.152
+img 900 Verified 1
+progress: 901/1000, correct:  866/901, verified: 814/866, unsafe: 40/866,  time: 2.803; 0.245; 211.800
+img 901 Verified 4
+progress: 902/1000, correct:  867/902, verified: 815/867, unsafe: 40/867,  time: 0.004; 0.244; 211.804
+img 902 Verified 4
+progress: 903/1000, correct:  868/903, verified: 816/868, unsafe: 40/868,  time: 0.012; 0.244; 211.816
+img 903 Verified 6
+progress: 904/1000, correct:  869/904, verified: 817/869, unsafe: 40/869,  time: 0.003; 0.244; 211.819
+img 904 Verified 0
+progress: 905/1000, correct:  870/905, verified: 818/870, unsafe: 40/870,  time: 0.004; 0.243; 211.823
+img 905 Verified 2
+progress: 906/1000, correct:  871/906, verified: 819/871, unsafe: 40/871,  time: 0.003; 0.243; 211.826
+img 906 Verified 9
+progress: 907/1000, correct:  872/907, verified: 820/872, unsafe: 40/872,  time: 0.010; 0.243; 211.836
+img 907 Verified 1
+progress: 908/1000, correct:  873/908, verified: 821/873, unsafe: 40/873,  time: 0.011; 0.243; 211.847
+img 908 Verified 4
+progress: 909/1000, correct:  874/909, verified: 822/874, unsafe: 40/874,  time: 0.003; 0.242; 211.850
+img 909 Verified 7
+progress: 910/1000, correct:  875/910, verified: 823/875, unsafe: 40/875,  time: 0.012; 0.242; 211.863
+img 910 Verified 4
+progress: 911/1000, correct:  876/911, verified: 824/876, unsafe: 40/876,  time: 0.003; 0.242; 211.866
+img 911 Verified 7
+progress: 912/1000, correct:  877/912, verified: 825/877, unsafe: 40/877,  time: 0.004; 0.242; 211.870
+img 912 Verified 3
+progress: 913/1000, correct:  878/913, verified: 826/878, unsafe: 40/878,  time: 0.003; 0.241; 211.873
+img 913 Verified 9
+progress: 914/1000, correct:  879/914, verified: 827/879, unsafe: 40/879,  time: 0.011; 0.241; 211.884
+img 914 Verified 8
+progress: 915/1000, correct:  880/915, verified: 828/880, unsafe: 40/880,  time: 0.011; 0.241; 211.895
+krelu: n 70 split_zero 86 after cutoff 0 number of args 86
+krelu: n 70 split_zero 55 after cutoff 29 number of args 181
+krelu: n 70 split_zero 6 after cutoff 5 number of args 8
+Model status: 6, Objval against label 6: 0.0000, Final solve time: 0.248
+img 915 Verified 8
+progress: 916/1000, correct:  881/916, verified: 829/881, unsafe: 40/881,  time: 3.153; 0.244; 215.048
+img 916 Verified 4
+progress: 917/1000, correct:  882/917, verified: 830/882, unsafe: 40/882,  time: 0.011; 0.244; 215.059
+img 917 Verified 7
+progress: 918/1000, correct:  883/918, verified: 831/883, unsafe: 40/883,  time: 0.003; 0.244; 215.063
+img 918 Verified 1
+progress: 919/1000, correct:  884/919, verified: 832/884, unsafe: 40/884,  time: 0.012; 0.243; 215.074
+img 919 Verified 2
+progress: 920/1000, correct:  885/920, verified: 833/885, unsafe: 40/885,  time: 0.011; 0.243; 215.086
+img 920 Verified 1
+progress: 921/1000, correct:  886/921, verified: 834/886, unsafe: 40/886,  time: 0.011; 0.243; 215.097
+img 921 Verified 2
+progress: 922/1000, correct:  887/922, verified: 835/887, unsafe: 40/887,  time: 0.003; 0.243; 215.100
+img 922 Verified 2
+progress: 923/1000, correct:  888/923, verified: 836/888, unsafe: 40/888,  time: 0.011; 0.242; 215.111
+img 923 Verified 3
+progress: 924/1000, correct:  889/924, verified: 837/889, unsafe: 40/889,  time: 0.003; 0.242; 215.114
+img 924 not considered, incorrectly classified
+progress: 925/1000, correct:  889/925, verified: 837/889, unsafe: 40/889,  time: 0.001; 0.242; 215.114
+img 925 Verified 3
+progress: 926/1000, correct:  890/926, verified: 838/890, unsafe: 40/890,  time: 0.003; 0.242; 215.117
+img 926 not considered, incorrectly classified
+progress: 927/1000, correct:  890/927, verified: 838/890, unsafe: 40/890,  time: 0.001; 0.242; 215.117
+img 927 Verified 3
+progress: 928/1000, correct:  891/928, verified: 839/891, unsafe: 40/891,  time: 0.011; 0.241; 215.129
+img 928 Verified 9
+progress: 929/1000, correct:  892/929, verified: 840/892, unsafe: 40/892,  time: 0.011; 0.241; 215.140
+img 929 Verified 1
+progress: 930/1000, correct:  893/930, verified: 841/893, unsafe: 40/893,  time: 0.011; 0.241; 215.151
+img 930 Verified 7
+progress: 931/1000, correct:  894/931, verified: 842/894, unsafe: 40/894,  time: 0.011; 0.241; 215.162
+img 931 Verified 4
+progress: 932/1000, correct:  895/932, verified: 843/895, unsafe: 40/895,  time: 0.012; 0.240; 215.174
+img 932 Verified 0
+progress: 933/1000, correct:  896/933, verified: 844/896, unsafe: 40/896,  time: 0.011; 0.240; 215.186
+img 933 Verified 3
+progress: 934/1000, correct:  897/934, verified: 845/897, unsafe: 40/897,  time: 0.003; 0.240; 215.189
+img 934 Verified 5
+progress: 935/1000, correct:  898/935, verified: 846/898, unsafe: 40/898,  time: 0.011; 0.240; 215.200
+img 935 Verified 5
+progress: 936/1000, correct:  899/936, verified: 847/899, unsafe: 40/899,  time: 0.010; 0.239; 215.210
+img 936 Verified 8
+progress: 937/1000, correct:  900/937, verified: 848/900, unsafe: 40/900,  time: 0.009; 0.239; 215.219
+img 937 Verified 6
+progress: 938/1000, correct:  901/938, verified: 849/901, unsafe: 40/901,  time: 0.002; 0.239; 215.221
+img 938 not considered, incorrectly classified
+progress: 939/1000, correct:  901/939, verified: 849/901, unsafe: 40/901,  time: 0.000; 0.239; 215.221
+img 939 not considered, incorrectly classified
+progress: 940/1000, correct:  901/940, verified: 849/901, unsafe: 40/901,  time: 0.000; 0.239; 215.221
+img 940 Verified 6
+progress: 941/1000, correct:  902/941, verified: 850/902, unsafe: 40/902,  time: 0.008; 0.239; 215.229
+img 941 Verified 7
+progress: 942/1000, correct:  903/942, verified: 851/903, unsafe: 40/903,  time: 0.002; 0.238; 215.232
+img 942 Verified 6
+progress: 943/1000, correct:  904/943, verified: 852/904, unsafe: 40/904,  time: 0.003; 0.238; 215.235
+img 943 Verified 6
+progress: 944/1000, correct:  905/944, verified: 853/905, unsafe: 40/905,  time: 0.009; 0.238; 215.243
+img 944 Verified 3
+progress: 945/1000, correct:  906/945, verified: 854/906, unsafe: 40/906,  time: 0.009; 0.238; 215.252
+img 945 Verified 2
+progress: 946/1000, correct:  907/946, verified: 855/907, unsafe: 40/907,  time: 0.008; 0.237; 215.260
+img 946 Verified 7
+progress: 947/1000, correct:  908/947, verified: 856/908, unsafe: 40/908,  time: 0.003; 0.237; 215.263
+img 947 not considered, incorrectly classified
+progress: 948/1000, correct:  908/948, verified: 856/908, unsafe: 40/908,  time: 0.000; 0.237; 215.263
+img 948 Verified 1
+progress: 949/1000, correct:  909/949, verified: 857/909, unsafe: 40/909,  time: 0.008; 0.237; 215.272
+img 949 Verified 1
+progress: 950/1000, correct:  910/950, verified: 858/910, unsafe: 40/910,  time: 0.008; 0.237; 215.280
+img 950 not considered, incorrectly classified
+progress: 951/1000, correct:  910/951, verified: 858/910, unsafe: 40/910,  time: 0.000; 0.237; 215.280
+krelu: n 70 split_zero 83 after cutoff 0 number of args 83
+krelu: n 70 split_zero 51 after cutoff 27 number of args 152
+krelu: n 70 split_zero 5 after cutoff 5 number of args 7
+Model status: 2, Objval against label 7: -0.7338, Final solve time: 0.252
+Counterexample found, partial MILP skipped.
+img 951 Verified unsafe against label  7 correct label  5
+progress: 952/1000, correct:  911/952, verified: 858/911, unsafe: 41/911,  time: 3.051; 0.240; 218.331
+img 952 Verified 6
+progress: 953/1000, correct:  912/953, verified: 859/912, unsafe: 41/912,  time: 0.012; 0.239; 218.343
+img 953 Verified 4
+progress: 954/1000, correct:  913/954, verified: 860/913, unsafe: 41/913,  time: 0.004; 0.239; 218.347
+img 954 Verified 9
+progress: 955/1000, correct:  914/955, verified: 861/914, unsafe: 41/914,  time: 0.011; 0.239; 218.358
+img 955 Verified 5
+progress: 956/1000, correct:  915/956, verified: 862/915, unsafe: 41/915,  time: 0.010; 0.239; 218.368
+krelu: n 70 split_zero 56 after cutoff 0 number of args 56
+krelu: n 70 split_zero 44 after cutoff 24 number of args 115
+krelu: n 70 split_zero 6 after cutoff 5 number of args 8
+Model status: 2, Objval against label 2: -0.4479, Final solve time: 0.222
+Counterexample found, partial MILP skipped.
+img 956 Verified unsafe against label  6 correct label  1
+progress: 957/1000, correct:  916/957, verified: 862/916, unsafe: 42/916,  time: 2.998; 0.242; 221.365
+img 957 Verified 3
+progress: 958/1000, correct:  917/958, verified: 863/917, unsafe: 42/917,  time: 0.012; 0.241; 221.377
+krelu: n 70 split_zero 93 after cutoff 0 number of args 93
+krelu: n 70 split_zero 55 after cutoff 27 number of args 156
+krelu: n 70 split_zero 9 after cutoff 9 number of args 17
+Model status: 2, Objval against label 0: 0.0062, Final solve time: 0.244
+img 958 Verified 3
+progress: 959/1000, correct:  918/959, verified: 864/918, unsafe: 42/918,  time: 3.115; 0.245; 224.492
+img 959 not considered, incorrectly classified
+progress: 960/1000, correct:  918/960, verified: 864/918, unsafe: 42/918,  time: 0.001; 0.245; 224.492
+img 960 Verified 7
+progress: 961/1000, correct:  919/961, verified: 865/919, unsafe: 42/919,  time: 0.012; 0.244; 224.504
+img 961 Verified 8
+progress: 962/1000, correct:  920/962, verified: 866/920, unsafe: 42/920,  time: 0.003; 0.244; 224.507
+img 962 Verified 9
+progress: 963/1000, correct:  921/963, verified: 867/921, unsafe: 42/921,  time: 0.011; 0.244; 224.518
+img 963 Verified 1
+progress: 964/1000, correct:  922/964, verified: 868/922, unsafe: 42/922,  time: 0.012; 0.244; 224.530
+img 964 Verified 1
+progress: 965/1000, correct:  923/965, verified: 869/923, unsafe: 42/923,  time: 0.011; 0.243; 224.541
+img 965 not considered, incorrectly classified
+progress: 966/1000, correct:  923/966, verified: 869/923, unsafe: 42/923,  time: 0.001; 0.243; 224.541
+img 966 Verified 9
+progress: 967/1000, correct:  924/967, verified: 870/924, unsafe: 42/924,  time: 0.010; 0.243; 224.551
+img 967 Verified 1
+progress: 968/1000, correct:  925/968, verified: 871/925, unsafe: 42/925,  time: 0.004; 0.243; 224.555
+img 968 Verified 4
+progress: 969/1000, correct:  926/969, verified: 872/926, unsafe: 42/926,  time: 0.004; 0.243; 224.559
+img 969 Verified 4
+progress: 970/1000, correct:  927/970, verified: 873/927, unsafe: 42/927,  time: 0.012; 0.242; 224.571
+img 970 Verified 5
+progress: 971/1000, correct:  928/971, verified: 874/928, unsafe: 42/928,  time: 0.003; 0.242; 224.575
+img 971 Verified 4
+progress: 972/1000, correct:  929/972, verified: 875/929, unsafe: 42/929,  time: 0.004; 0.242; 224.578
+img 972 Verified 0
+progress: 973/1000, correct:  930/973, verified: 876/930, unsafe: 42/930,  time: 0.003; 0.241; 224.581
+img 973 Verified 6
+progress: 974/1000, correct:  931/974, verified: 877/931, unsafe: 42/931,  time: 0.003; 0.241; 224.584
+img 974 Verified 2
+progress: 975/1000, correct:  932/975, verified: 878/932, unsafe: 42/932,  time: 0.003; 0.241; 224.587
+img 975 Verified 2
+progress: 976/1000, correct:  933/976, verified: 879/933, unsafe: 42/933,  time: 0.012; 0.241; 224.600
+img 976 Verified 3
+progress: 977/1000, correct:  934/977, verified: 880/934, unsafe: 42/934,  time: 0.011; 0.240; 224.611
+img 977 Verified 1
+progress: 978/1000, correct:  935/978, verified: 881/935, unsafe: 42/935,  time: 0.009; 0.240; 224.620
+img 978 Verified 5
+progress: 979/1000, correct:  936/979, verified: 882/936, unsafe: 42/936,  time: 0.003; 0.240; 224.623
+img 979 Verified 1
+progress: 980/1000, correct:  937/980, verified: 883/937, unsafe: 42/937,  time: 0.009; 0.240; 224.632
+img 980 Verified 2
+progress: 981/1000, correct:  938/981, verified: 884/938, unsafe: 42/938,  time: 0.003; 0.239; 224.635
+img 981 Verified 0
+progress: 982/1000, correct:  939/982, verified: 885/939, unsafe: 42/939,  time: 0.003; 0.239; 224.637
+img 982 not considered, incorrectly classified
+progress: 983/1000, correct:  939/983, verified: 885/939, unsafe: 42/939,  time: 0.000; 0.239; 224.637
+img 983 Verified 8
+progress: 984/1000, correct:  940/984, verified: 886/940, unsafe: 42/940,  time: 0.009; 0.239; 224.646
+img 984 Verified 1
+progress: 985/1000, correct:  941/985, verified: 887/941, unsafe: 42/941,  time: 0.010; 0.239; 224.656
+img 985 Verified 2
+progress: 986/1000, correct:  942/986, verified: 888/942, unsafe: 42/942,  time: 0.008; 0.238; 224.664
+img 986 Verified 6
+progress: 987/1000, correct:  943/987, verified: 889/943, unsafe: 42/943,  time: 0.003; 0.238; 224.667
+img 987 Verified 7
+progress: 988/1000, correct:  944/988, verified: 890/944, unsafe: 42/944,  time: 0.010; 0.238; 224.677
+img 988 Verified 1
+progress: 989/1000, correct:  945/989, verified: 891/945, unsafe: 42/945,  time: 0.010; 0.238; 224.687
+img 989 Verified 6
+progress: 990/1000, correct:  946/990, verified: 892/946, unsafe: 42/946,  time: 0.009; 0.238; 224.695
+img 990 Verified 2
+progress: 991/1000, correct:  947/991, verified: 893/947, unsafe: 42/947,  time: 0.010; 0.237; 224.705
+img 991 Verified 3
+progress: 992/1000, correct:  948/992, verified: 894/948, unsafe: 42/948,  time: 0.003; 0.237; 224.709
+img 992 Verified 9
+progress: 993/1000, correct:  949/993, verified: 895/949, unsafe: 42/949,  time: 0.009; 0.237; 224.717
+img 993 Verified 0
+progress: 994/1000, correct:  950/994, verified: 896/950, unsafe: 42/950,  time: 0.009; 0.237; 224.726
+img 994 Verified 1
+progress: 995/1000, correct:  951/995, verified: 897/951, unsafe: 42/951,  time: 0.009; 0.236; 224.735
+img 995 Verified 2
+progress: 996/1000, correct:  952/996, verified: 898/952, unsafe: 42/952,  time: 0.008; 0.236; 224.743
+img 996 Verified 2
+progress: 997/1000, correct:  953/997, verified: 899/953, unsafe: 42/953,  time: 0.003; 0.236; 224.746
+img 997 Verified 0
+progress: 998/1000, correct:  954/998, verified: 900/954, unsafe: 42/954,  time: 0.002; 0.236; 224.748
+img 998 Verified 8
+progress: 999/1000, correct:  955/999, verified: 901/955, unsafe: 42/955,  time: 0.008; 0.235; 224.756
+img 999 Verified 9
+progress: 1000/1000, correct:  956/1000, verified: 902/956, unsafe: 42/956,  time: 0.009; 0.235; 224.766
+analysis precision  902 /  956
+
+Process finished with exit code 0

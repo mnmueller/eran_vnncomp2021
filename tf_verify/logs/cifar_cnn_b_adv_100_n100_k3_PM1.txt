@@ -1,0 +1,713 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/__main__.py --netname ../nets/SDP_FO_nets/CNN_B_CIFAR_ADV.onnx --dataset cifar10 --domain refinegpupoly --epsilon 0.00784313725 --from_test 0 --num_test 100 --k 3 --s -2 --sparse_n 100 --partial_milp 1 --max_milp_neurons 30 --timeout_final_milp 250 --mean 0.49137255 0.48235294 0.44666667 --std 0.24705882 0.24352941 0.26156863 --subset b_adv
+2021-03-26 18:19:01.086837: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Mar 26 2021 15:01:40) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-03-26 18:19:01.953437: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-03-26 18:19:01.987069: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-26 18:19:01.987352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-03-26 18:19:01.987365: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-26 18:19:01.987389: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-03-26 18:19:01.987402: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-03-26 18:19:01.988048: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-03-26 18:19:01.988193: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-03-26 18:19:01.989620: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-03-26 18:19:01.989951: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-03-26 18:19:01.990028: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-03-26 18:19:01.990074: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-26 18:19:01.990354: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-26 18:19:01.990604: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-03-26 18:19:01.990619: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-03-26 18:19:02.303864: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-26 18:19:02.303901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-03-26 18:19:02.303905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-03-26 18:19:02.304042: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-26 18:19:02.304384: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-26 18:19:02.304639: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-03-26 18:19:02.304879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9929 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-03-26 18:19:02.305135: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+{'approx_k': True,
+ 'attack': False,
+ 'complete': False,
+ 'data_dir': None,
+ 'dataset': 'cifar10',
+ 'debug': True,
+ 'delta': 0.3,
+ 'domain': 'refinegpupoly',
+ 'epsfile': None,
+ 'epsilon': 0.00784313725,
+ 'from_test': 0,
+ 'gamma': inf,
+ 'geometric': False,
+ 'geometric_config': None,
+ 'input_box': None,
+ 'k': 3,
+ 'logdir': None,
+ 'logname': None,
+ 'max_milp_neurons': 30,
+ 'mean': [0.49137255, 0.48235294, 0.44666667],
+ 'n_milp_refine': 1,
+ 'netname': '../nets/SDP_FO_nets/CNN_B_CIFAR_ADV.onnx',
+ 'normalized_region': True,
+ 'num_params': 0,
+ 'num_tests': 100,
+ 'numproc': 16,
+ 'output_constraints': None,
+ 'partial_milp': 1,
+ 'quant_step': None,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 100,
+ 'spatial': False,
+ 'specnumber': None,
+ 'std': [0.24705882, 0.24352941, 0.26156863],
+ 'subset': 'b_adv',
+ 't_norm': 'inf',
+ 'target': None,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 250.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'use_default_heuristic': True,
+ 'use_milp': True,
+ 'vnn_lib_spec': None,
+ 'zonotope': None}
+netname  ../nets/SDP_FO_nets/CNN_B_CIFAR_ADV.onnx  epsilon  0.00784313725  domain  refinegpupoly  dataset  cifar10 args complete  False  complete  False  timeout_lp  1
+img 0 Verified 3
+progress: 1/100, correct:  1/1, verified: 1/1, unsafe: 0/1,  time: 0.148; 0.148; 0.148
+krelu: n 100 split_zero 1871 after cutoff 0 number of args 1871
+krelu: n 100 split_zero 784 after cutoff 50 number of args 1110
+krelu: n 100 split_zero 55 after cutoff 55 number of args 486
+
+--------------------------------------------
+Warning: your license will expire in 14 days
+--------------------------------------------
+
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound against label 0: -1.5987/-1.5987, Final solve time: 56.743
+Partial MILP model status: 11, Obj val/bound against label 0: -1.2999/-1.5987, Final solve time: 51.432
+img 1 Failed
+progress: 2/100, correct:  2/2, verified: 1/2, unsafe: 0/2,  time: 141.297; 70.723; 141.445
+krelu: n 100 split_zero 1191 after cutoff 0 number of args 1191
+krelu: n 100 split_zero 691 after cutoff 44 number of args 924
+krelu: n 100 split_zero 37 after cutoff 37 number of args 207
+Model status: 2, Obj val/bound against label 7: -1.9672/-1.9672, Final solve time: 15.754
+Counterexample found, partial MILP skipped.
+img 2 Verified unsafe against label  7 correct label  4
+progress: 3/100, correct:  3/3, verified: 1/3, unsafe: 1/3,  time: 41.991; 61.146; 183.437
+krelu: n 100 split_zero 1305 after cutoff 0 number of args 1305
+krelu: n 100 split_zero 787 after cutoff 43 number of args 1008
+krelu: n 100 split_zero 62 after cutoff 62 number of args 682
+Model status: 9, Objval retrival failed, Final solve time: 100.469
+Partial MILP model status: 11, Obj val/bound against label 1: -0.9884/-2.0799, Final solve time: 89.653
+img 3 Failed
+progress: 4/100, correct:  4/4, verified: 1/4, unsafe: 1/4,  time: 226.486; 102.481; 409.923
+krelu: n 100 split_zero 1381 after cutoff 0 number of args 1381
+krelu: n 100 split_zero 780 after cutoff 63 number of args 1431
+krelu: n 100 split_zero 80 after cutoff 80 number of args 867
+Model status: 2, Obj val/bound against label 4: -0.1715/-0.1715, Final solve time: 98.714
+Partial MILP model status: 11, Obj val/bound against label 4: -0.0291/-0.0569, Final solve time: 103.091
+img 4 Failed
+progress: 5/100, correct:  5/5, verified: 1/5, unsafe: 1/5,  time: 248.974; 131.779; 658.897
+img 5 Verified 0
+progress: 6/100, correct:  6/6, verified: 2/6, unsafe: 1/6,  time: 0.165; 109.844; 659.062
+krelu: n 100 split_zero 1444 after cutoff 0 number of args 1444
+krelu: n 100 split_zero 747 after cutoff 51 number of args 1092
+krelu: n 100 split_zero 70 after cutoff 70 number of args 742
+Model status: 2, Obj val/bound against label 4: -0.3818/-0.3818, Final solve time: 66.911
+Partial MILP model status: 11, Obj val/bound against label 4: -0.1118/-0.3818, Final solve time: 73.383
+img 6 Failed
+progress: 7/100, correct:  7/7, verified: 2/7, unsafe: 1/7,  time: 180.029; 119.870; 839.091
+krelu: n 100 split_zero 1447 after cutoff 0 number of args 1447
+krelu: n 100 split_zero 634 after cutoff 17 number of args 670
+krelu: n 100 split_zero 59 after cutoff 59 number of args 592
+Model status: 6, Objval retrival failed, Final solve time: 51.162
+img 7 Verified 1
+progress: 8/100, correct:  8/8, verified: 3/8, unsafe: 1/8,  time: 82.422; 115.189; 921.512
+krelu: n 100 split_zero 1134 after cutoff 0 number of args 1134
+krelu: n 100 split_zero 686 after cutoff 50 number of args 1012
+krelu: n 100 split_zero 65 after cutoff 65 number of args 717
+Model status: 6, Objval retrival failed, Final solve time: 71.963
+img 8 Verified 9
+progress: 9/100, correct:  9/9, verified: 4/9, unsafe: 1/9,  time: 110.534; 114.672; 1032.046
+img 9 Verified 1
+progress: 10/100, correct:  10/10, verified: 5/10, unsafe: 1/10,  time: 0.224; 103.227; 1032.270
+krelu: n 100 split_zero 1094 after cutoff 0 number of args 1094
+krelu: n 100 split_zero 896 after cutoff 59 number of args 1429
+krelu: n 100 split_zero 76 after cutoff 76 number of args 805
+Model status: 2, Obj val/bound against label 2: -1.1104/-1.1104, Final solve time: 76.541
+Partial MILP model status: 11, Obj val/bound against label 2: -0.4476/-1.1101, Final solve time: 64.775
+img 10 Failed
+progress: 11/100, correct:  11/11, verified: 5/11, unsafe: 1/11,  time: 185.318; 110.690; 1217.588
+krelu: n 100 split_zero 1678 after cutoff 0 number of args 1678
+krelu: n 100 split_zero 958 after cutoff 102 number of args 2276
+krelu: n 100 split_zero 67 after cutoff 67 number of args 724
+Model status: 9, Objval retrival failed, Final solve time: 100.671
+Partial MILP model status: 11, Obj val/bound against label 2: -0.6784/-0.8994, Final solve time: 64.676
+img 11 Failed
+progress: 12/100, correct:  12/12, verified: 5/12, unsafe: 1/12,  time: 219.655; 119.770; 1437.243
+img 12 Verified 6
+progress: 13/100, correct:  13/13, verified: 6/13, unsafe: 1/13,  time: 0.229; 110.575; 1437.472
+krelu: n 100 split_zero 1313 after cutoff 0 number of args 1313
+krelu: n 100 split_zero 650 after cutoff 59 number of args 1183
+krelu: n 100 split_zero 54 after cutoff 54 number of args 462
+Model status: 6, Objval retrival failed, Final solve time: 33.444
+Model status: 2, Obj val/bound against label 4: -0.0368/-0.0368, Final solve time: 50.298
+Partial MILP model status: 6, Obj val/bound against label 4: inf/0.0100, Final solve time: 83.930
+Used simplex terminate
+Model status: 11, Obj val/bound against label 7: 0.0000/-inf, Final solve time: 43.152
+Partial MILP model status: 11, Obj val/bound against label 7: -1.1855/-1.6247, Final solve time: 36.823
+img 13 Failed
+progress: 14/100, correct:  14/14, verified: 6/14, unsafe: 1/14,  time: 283.158; 122.902; 1720.630
+img 14 Verified 8
+progress: 15/100, correct:  15/15, verified: 7/15, unsafe: 1/15,  time: 0.214; 114.723; 1720.844
+img 15 Verified 5
+progress: 16/100, correct:  16/16, verified: 8/16, unsafe: 1/16,  time: 0.178; 107.564; 1721.022
+krelu: n 100 split_zero 1894 after cutoff 0 number of args 1894
+krelu: n 100 split_zero 890 after cutoff 31 number of args 1045
+krelu: n 100 split_zero 75 after cutoff 75 number of args 792
+Model status: 9, Objval retrival failed, Final solve time: 100.341
+Partial MILP model status: 11, Obj val/bound against label 0: -3.7585/-4.3538, Final solve time: 39.621
+img 16 Failed
+progress: 17/100, correct:  17/17, verified: 8/17, unsafe: 1/17,  time: 178.382; 111.730; 1899.404
+img 17 Verified 7
+progress: 18/100, correct:  18/18, verified: 9/18, unsafe: 1/18,  time: 0.225; 105.535; 1899.629
+img 18 Verified 0
+progress: 19/100, correct:  19/19, verified: 10/19, unsafe: 1/19,  time: 0.133; 99.988; 1899.763
+img 19 Verified 0
+progress: 20/100, correct:  20/20, verified: 11/20, unsafe: 1/20,  time: 0.134; 94.995; 1899.897
+img 20 Verified 4
+progress: 21/100, correct:  21/21, verified: 12/21, unsafe: 1/21,  time: 0.159; 90.479; 1900.056
+img 21 Verified 0
+progress: 22/100, correct:  22/22, verified: 13/22, unsafe: 1/22,  time: 0.138; 86.372; 1900.194
+krelu: n 100 split_zero 1453 after cutoff 0 number of args 1453
+krelu: n 100 split_zero 924 after cutoff 96 number of args 2103
+krelu: n 100 split_zero 82 after cutoff 82 number of args 904
+Model status: 9, Objval retrival failed, Final solve time: 100.438
+Partial MILP model status: 6, Obj val/bound against label 1: inf/0.0100, Final solve time: 72.020
+Model status: 9, Objval retrival failed, Final solve time: 100.447
+Partial MILP model status: 11, Obj val/bound against label 2: -0.4460/-1.4186, Final solve time: 74.321
+img 22 Failed
+progress: 23/100, correct:  23/23, verified: 13/23, unsafe: 1/23,  time: 403.469; 100.159; 2303.663
+krelu: n 100 split_zero 1422 after cutoff 0 number of args 1422
+krelu: n 100 split_zero 959 after cutoff 106 number of args 2280
+krelu: n 100 split_zero 67 after cutoff 67 number of args 724
+Model status: 9, Objval retrival failed, Final solve time: 100.438
+Partial MILP model status: 11, Obj val/bound against label 6: -1.0741/-1.3934, Final solve time: 71.455
+img 23 Failed
+progress: 24/100, correct:  24/24, verified: 13/24, unsafe: 1/24,  time: 226.047; 105.405; 2529.709
+img 24 Verified 7
+progress: 25/100, correct:  25/25, verified: 14/25, unsafe: 1/25,  time: 0.182; 101.196; 2529.892
+krelu: n 100 split_zero 1371 after cutoff 0 number of args 1371
+krelu: n 100 split_zero 597 after cutoff 18 number of args 635
+krelu: n 100 split_zero 54 after cutoff 54 number of args 462
+Model status: 2, Obj val/bound against label 1: -1.4076/-1.4076, Final solve time: 56.908
+Partial MILP model status: 11, Obj val/bound against label 1: -0.4299/-1.4064, Final solve time: 20.095
+img 25 Failed
+progress: 26/100, correct:  26/26, verified: 14/26, unsafe: 1/26,  time: 105.560; 101.364; 2635.451
+krelu: n 100 split_zero 1107 after cutoff 0 number of args 1107
+krelu: n 100 split_zero 884 after cutoff 59 number of args 1417
+krelu: n 100 split_zero 64 after cutoff 64 number of args 715
+Model status: 9, Objval retrival failed, Final solve time: 100.116
+Partial MILP model status: 11, Obj val/bound against label 2: -1.4071/-2.0431, Final solve time: 70.934
+img 26 Failed
+progress: 27/100, correct:  27/27, verified: 14/27, unsafe: 1/27,  time: 213.574; 105.519; 2849.025
+krelu: n 100 split_zero 1181 after cutoff 0 number of args 1181
+krelu: n 100 split_zero 854 after cutoff 73 number of args 1550
+krelu: n 100 split_zero 68 after cutoff 68 number of args 729
+Model status: 9, Objval retrival failed, Final solve time: 100.461
+Partial MILP model status: 6, Obj val/bound against label 2: inf/0.0100, Final solve time: 110.751
+Model status: 6, Objval retrival failed, Final solve time: 94.242
+Model status: 9, Objval retrival failed, Final solve time: 100.390
+Partial MILP model status: 11, Obj val/bound against label 4: -0.4192/-0.8341, Final solve time: 74.162
+img 27 Failed
+progress: 28/100, correct:  28/28, verified: 14/28, unsafe: 1/28,  time: 525.059; 120.503; 3374.084
+img 28 Verified 0
+progress: 29/100, correct:  29/29, verified: 15/29, unsafe: 1/29,  time: 0.206; 116.355; 3374.291
+img 29 Verified 8
+progress: 30/100, correct:  30/30, verified: 16/30, unsafe: 1/30,  time: 0.149; 112.481; 3374.439
+krelu: n 100 split_zero 1307 after cutoff 0 number of args 1307
+krelu: n 100 split_zero 812 after cutoff 67 number of args 1469
+krelu: n 100 split_zero 74 after cutoff 74 number of args 780
+Model status: 9, Objval retrival failed, Final solve time: 100.744
+Partial MILP model status: 6, Obj val/bound against label 2: inf/0.0100, Final solve time: 84.057
+Model status: 9, Objval retrival failed, Final solve time: 101.356
+Partial MILP model status: 11, Obj val/bound against label 3: -0.5858/-0.7687, Final solve time: 64.929
+img 30 Failed
+progress: 31/100, correct:  31/31, verified: 16/31, unsafe: 1/31,  time: 396.578; 121.646; 3771.018
+krelu: n 100 split_zero 2126 after cutoff 0 number of args 2126
+krelu: n 100 split_zero 927 after cutoff 70 number of args 1599
+krelu: n 100 split_zero 90 after cutoff 90 number of args 1092
+Model status: 9, Objval retrival failed, Final solve time: 100.511
+Partial MILP model status: 11, Obj val/bound against label 0: -0.9655/-1.6535, Final solve time: 89.098
+img 31 Failed
+progress: 32/100, correct:  32/32, verified: 16/32, unsafe: 1/32,  time: 244.267; 125.478; 4015.285
+img 32 Verified 8
+progress: 33/100, correct:  33/33, verified: 17/33, unsafe: 1/33,  time: 0.172; 121.680; 4015.456
+krelu: n 100 split_zero 1532 after cutoff 0 number of args 1532
+krelu: n 100 split_zero 812 after cutoff 95 number of args 1959
+krelu: n 100 split_zero 57 after cutoff 57 number of args 537
+Model status: 6, Objval retrival failed, Final solve time: 59.746
+Model status: 6, Objval retrival failed, Final solve time: 63.345
+Model status: 6, Objval retrival failed, Final solve time: 66.686
+Model status: 2, Obj val/bound against label 6: -1.1611/-1.1611, Final solve time: 82.879
+Partial MILP model status: 11, Obj val/bound against label 6: -0.0824/-1.1611, Final solve time: 57.361
+img 33 Failed
+progress: 34/100, correct:  34/34, verified: 17/34, unsafe: 1/34,  time: 376.992; 129.190; 4392.448
+krelu: n 100 split_zero 1337 after cutoff 0 number of args 1337
+krelu: n 100 split_zero 830 after cutoff 33 number of args 986
+krelu: n 100 split_zero 66 after cutoff 66 number of args 720
+Model status: 6, Objval retrival failed, Final solve time: 79.282
+Model status: 6, Objval retrival failed, Final solve time: 86.881
+Model status: 9, Objval retrival failed, Final solve time: 100.305
+Partial MILP model status: 6, Obj val/bound against label 8: inf/0.0100, Final solve time: 82.721
+img 34 Verified 1
+progress: 35/100, correct:  35/35, verified: 18/35, unsafe: 1/35,  time: 385.745; 136.520; 4778.193
+krelu: n 100 split_zero 2120 after cutoff 0 number of args 2120
+krelu: n 100 split_zero 826 after cutoff 50 number of args 1152
+krelu: n 100 split_zero 58 after cutoff 58 number of args 564
+Model status: 2, Obj val/bound against label 0: -2.6930/-2.6930, Final solve time: 88.301
+Counterexample found, partial MILP skipped.
+img 35 Verified unsafe against label  2 correct label  5
+progress: 36/100, correct:  36/36, verified: 18/36, unsafe: 2/36,  time: 123.735; 136.165; 4901.928
+krelu: n 100 split_zero 1376 after cutoff 0 number of args 1376
+krelu: n 100 split_zero 573 after cutoff 18 number of args 611
+krelu: n 100 split_zero 37 after cutoff 37 number of args 207
+Model status: 2, Obj val/bound against label 4: 0.0037/0.0037, Final solve time: 11.065
+img 36 Verified 0
+progress: 37/100, correct:  37/37, verified: 19/37, unsafe: 2/37,  time: 33.424; 133.388; 4935.352
+krelu: n 100 split_zero 1498 after cutoff 0 number of args 1498
+krelu: n 100 split_zero 845 after cutoff 54 number of args 1253
+krelu: n 100 split_zero 64 after cutoff 64 number of args 715
+Model status: 6, Objval retrival failed, Final solve time: 86.473
+Model status: 9, Objval retrival failed, Final solve time: 100.851
+Partial MILP model status: 11, Obj val/bound against label 3: -0.2316/-0.4332, Final solve time: 155.919
+img 37 Failed
+progress: 38/100, correct:  38/38, verified: 19/38, unsafe: 2/38,  time: 383.534; 139.971; 5318.886
+krelu: n 100 split_zero 1156 after cutoff 0 number of args 1156
+krelu: n 100 split_zero 568 after cutoff 27 number of args 669
+krelu: n 100 split_zero 42 after cutoff 42 number of args 252
+Used simplex terminate
+Model status: 11, Objval retrival failed, Final solve time: 15.993
+Partial MILP model status: 11, Obj val/bound against label 2: -0.8276/-1.0721, Final solve time: 40.661
+img 38 Failed
+progress: 39/100, correct:  39/39, verified: 19/39, unsafe: 2/39,  time: 80.887; 138.456; 5399.773
+krelu: n 100 split_zero 1530 after cutoff 0 number of args 1530
+krelu: n 100 split_zero 751 after cutoff 41 number of args 951
+krelu: n 100 split_zero 53 after cutoff 53 number of args 439
+Model status: 6, Objval retrival failed, Final solve time: 29.088
+Model status: 6, Objval retrival failed, Final solve time: 28.821
+Model status: 6, Objval retrival failed, Final solve time: 29.065
+Model status: 2, Obj val/bound against label 7: -0.9861/-0.9861, Final solve time: 40.663
+Partial MILP model status: 11, Obj val/bound against label 7: -0.2583/-0.7590, Final solve time: 70.264
+img 39 Failed
+progress: 40/100, correct:  40/40, verified: 19/40, unsafe: 2/40,  time: 228.371; 140.704; 5628.144
+krelu: n 100 split_zero 1369 after cutoff 0 number of args 1369
+krelu: n 100 split_zero 969 after cutoff 71 number of args 1648
+krelu: n 100 split_zero 78 after cutoff 78 number of args 834
+Model status: 9, Objval retrival failed, Final solve time: 100.140
+Partial MILP model status: 9, Obj val/bound against label 2: -0.0001/-0.2304, Final solve time: 250.036
+img 40 Failed
+progress: 41/100, correct:  41/41, verified: 19/41, unsafe: 2/41,  time: 398.224; 146.985; 6026.368
+krelu: n 100 split_zero 1416 after cutoff 0 number of args 1416
+krelu: n 100 split_zero 654 after cutoff 21 number of args 704
+krelu: n 100 split_zero 51 after cutoff 51 number of args 396
+Model status: 2, Obj val/bound against label 8: -1.2830/-1.2830, Final solve time: 32.264
+Partial MILP model status: 11, Obj val/bound against label 8: -0.6933/-1.2830, Final solve time: 20.690
+img 41 Failed
+progress: 42/100, correct:  42/42, verified: 19/42, unsafe: 2/42,  time: 80.658; 145.405; 6107.027
+krelu: n 100 split_zero 1471 after cutoff 0 number of args 1471
+krelu: n 100 split_zero 858 after cutoff 51 number of args 1203
+krelu: n 100 split_zero 70 after cutoff 70 number of args 742
+Model status: 9, Objval retrival failed, Final solve time: 100.239
+Partial MILP model status: 11, Obj val/bound against label 2: -1.7011/-2.4115, Final solve time: 50.093
+img 42 Failed
+progress: 43/100, correct:  43/43, verified: 19/43, unsafe: 2/43,  time: 190.884; 146.463; 6297.911
+krelu: n 100 split_zero 1130 after cutoff 0 number of args 1130
+krelu: n 100 split_zero 745 after cutoff 27 number of args 846
+krelu: n 100 split_zero 53 after cutoff 53 number of args 439
+Model status: 2, Obj val/bound against label 0: -1.0330/-1.0330, Final solve time: 41.082
+Partial MILP model status: 11, Obj val/bound against label 0: -0.4134/-1.0325, Final solve time: 29.071
+img 43 Failed
+progress: 44/100, correct:  44/44, verified: 19/44, unsafe: 2/44,  time: 99.091; 145.386; 6397.002
+krelu: n 100 split_zero 1852 after cutoff 0 number of args 1852
+krelu: n 100 split_zero 813 after cutoff 41 number of args 1013
+krelu: n 100 split_zero 79 after cutoff 79 number of args 850
+Model status: 2, Obj val/bound against label 2: -0.5649/-0.5649, Final solve time: 63.059
+Partial MILP model status: 11, Obj val/bound against label 2: -0.2299/-0.5329, Final solve time: 93.133
+img 44 Failed
+progress: 45/100, correct:  45/45, verified: 19/45, unsafe: 2/45,  time: 196.798; 146.529; 6593.800
+img 45 Verified 1
+progress: 46/100, correct:  46/46, verified: 20/46, unsafe: 2/46,  time: 0.170; 143.347; 6593.970
+krelu: n 100 split_zero 1489 after cutoff 0 number of args 1489
+krelu: n 100 split_zero 574 after cutoff 9 number of args 582
+krelu: n 100 split_zero 38 after cutoff 38 number of args 214
+Model status: 2, Obj val/bound against label 0: -1.6019/-1.6019, Final solve time: 8.021
+Partial MILP model status: 11, Obj val/bound against label 0: -1.4313/-1.6019, Final solve time: 9.735
+img 46 Failed
+progress: 47/100, correct:  47/47, verified: 20/47, unsafe: 2/47,  time: 39.860; 141.145; 6633.830
+krelu: n 100 split_zero 1961 after cutoff 0 number of args 1961
+krelu: n 100 split_zero 784 after cutoff 44 number of args 1017
+krelu: n 100 split_zero 68 after cutoff 67 number of args 725
+Model status: 2, Obj val/bound against label 4: -0.0740/-0.0740, Final solve time: 38.457
+Partial MILP model status: 6, Obj val/bound against label 4: inf/0.0100, Final solve time: 56.810
+img 47 Verified 2
+progress: 48/100, correct:  48/48, verified: 21/48, unsafe: 2/48,  time: 133.081; 140.977; 6766.910
+krelu: n 100 split_zero 1178 after cutoff 0 number of args 1178
+krelu: n 100 split_zero 854 after cutoff 65 number of args 1506
+krelu: n 100 split_zero 75 after cutoff 75 number of args 792
+Model status: 6, Objval retrival failed, Final solve time: 93.227
+Model status: 2, Obj val/bound against label 2: -1.3443/-1.3443, Final solve time: 99.285
+Partial MILP model status: 11, Obj val/bound against label 2: -0.0637/-1.3443, Final solve time: 48.471
+img 48 Failed
+progress: 49/100, correct:  49/49, verified: 21/49, unsafe: 2/49,  time: 286.883; 143.955; 7053.794
+krelu: n 100 split_zero 1936 after cutoff 0 number of args 1936
+krelu: n 100 split_zero 710 after cutoff 49 number of args 1018
+krelu: n 100 split_zero 67 after cutoff 67 number of args 724
+Model status: 2, Obj val/bound against label 4: -1.2089/-1.2089, Final solve time: 36.730
+Partial MILP model status: 11, Obj val/bound against label 4: -0.9759/-1.2089, Final solve time: 29.325
+img 49 Failed
+progress: 50/100, correct:  50/50, verified: 21/50, unsafe: 2/50,  time: 105.028; 143.176; 7158.822
+img 50 Verified 7
+progress: 51/100, correct:  51/51, verified: 22/51, unsafe: 2/51,  time: 0.216; 140.373; 7159.039
+krelu: n 100 split_zero 1612 after cutoff 0 number of args 1612
+krelu: n 100 split_zero 689 after cutoff 51 number of args 1034
+krelu: n 100 split_zero 68 after cutoff 68 number of args 729
+Model status: 6, Objval retrival failed, Final solve time: 45.820
+Model status: 2, Obj val/bound against label 4: -0.8332/-0.8332, Final solve time: 48.516
+Partial MILP model status: 11, Obj val/bound against label 4: -0.6870/-0.8320, Final solve time: 60.873
+img 51 Failed
+progress: 52/100, correct:  52/52, verified: 22/52, unsafe: 2/52,  time: 195.240; 141.428; 7354.278
+img 52 Verified 0
+progress: 53/100, correct:  53/53, verified: 23/53, unsafe: 2/53,  time: 0.192; 138.764; 7354.471
+krelu: n 100 split_zero 1374 after cutoff 0 number of args 1374
+krelu: n 100 split_zero 764 after cutoff 79 number of args 1535
+krelu: n 100 split_zero 79 after cutoff 79 number of args 850
+Model status: 2, Obj val/bound against label 0: -3.0092/-3.0092, Final solve time: 75.251
+Partial MILP model status: 11, Obj val/bound against label 0: -2.4850/-3.0092, Final solve time: 63.462
+img 53 Failed
+progress: 54/100, correct:  54/54, verified: 23/54, unsafe: 2/54,  time: 187.404; 139.664; 7541.875
+krelu: n 100 split_zero 1382 after cutoff 0 number of args 1382
+krelu: n 100 split_zero 990 after cutoff 62 number of args 1610
+krelu: n 100 split_zero 77 after cutoff 77 number of args 819
+Model status: 6, Objval retrival failed, Final solve time: 88.989
+Model status: 6, Objval retrival failed, Final solve time: 95.710
+Model status: 6, Objval retrival failed, Final solve time: 89.690
+img 54 Verified 6
+progress: 55/100, correct:  55/55, verified: 24/55, unsafe: 2/55,  time: 320.129; 142.946; 7862.004
+img 55 Verified 7
+progress: 56/100, correct:  56/56, verified: 25/56, unsafe: 2/56,  time: 0.220; 140.397; 7862.224
+krelu: n 100 split_zero 1347 after cutoff 0 number of args 1347
+krelu: n 100 split_zero 653 after cutoff 41 number of args 853
+krelu: n 100 split_zero 58 after cutoff 58 number of args 564
+Model status: 2, Obj val/bound against label 1: -0.1053/-0.1053, Final solve time: 68.430
+Partial MILP model status: 6, Obj val/bound against label 1: inf/0.0100, Final solve time: 58.323
+Model status: 6, Obj val/bound against label 4: 0.4877/-inf, Final solve time: 47.451
+Used simplex terminate
+Model status: 11, Obj val/bound against label 8: 0.0000/-inf, Final solve time: 62.709
+Partial MILP model status: 11, Obj val/bound against label 8: -1.5591/-1.8692, Final solve time: 36.926
+img 56 Failed
+progress: 57/100, correct:  57/57, verified: 25/57, unsafe: 2/57,  time: 307.031; 143.320; 8169.254
+krelu: n 100 split_zero 1376 after cutoff 0 number of args 1376
+krelu: n 100 split_zero 858 after cutoff 59 number of args 1391
+krelu: n 100 split_zero 71 after cutoff 71 number of args 750
+Model status: 9, Objval retrival failed, Final solve time: 100.106
+Partial MILP model status: 11, Obj val/bound against label 2: -0.9446/-1.7366, Final solve time: 76.120
+img 57 Failed
+progress: 58/100, correct:  58/58, verified: 25/58, unsafe: 2/58,  time: 219.063; 144.626; 8388.318
+img 58 Verified 9
+progress: 59/100, correct:  59/59, verified: 26/59, unsafe: 2/59,  time: 0.195; 142.178; 8388.513
+krelu: n 100 split_zero 1333 after cutoff 0 number of args 1333
+krelu: n 100 split_zero 978 after cutoff 79 number of args 1749
+krelu: n 100 split_zero 86 after cutoff 86 number of args 990
+Model status: 9, Objval retrival failed, Final solve time: 100.463
+Partial MILP model status: 6, Obj val/bound against label 0: inf/0.0100, Final solve time: 127.301
+Model status: 9, Objval retrival failed, Final solve time: 100.573
+Partial MILP model status: 6, Obj val/bound against label 1: inf/0.0100, Final solve time: 86.751
+Model status: 9, Objval retrival failed, Final solve time: 100.279
+Partial MILP model status: 11, Obj val/bound against label 2: -1.5069/-1.9904, Final solve time: 100.211
+img 59 Failed
+progress: 60/100, correct:  60/60, verified: 26/60, unsafe: 2/60,  time: 667.742; 150.938; 9056.255
+krelu: n 100 split_zero 1034 after cutoff 0 number of args 1034
+krelu: n 100 split_zero 720 after cutoff 54 number of args 1128
+krelu: n 100 split_zero 59 after cutoff 59 number of args 592
+Model status: 6, Objval retrival failed, Final solve time: 54.233
+img 60 Verified 7
+progress: 61/100, correct:  61/61, verified: 27/61, unsafe: 2/61,  time: 91.288; 149.960; 9147.543
+krelu: n 100 split_zero 1825 after cutoff 0 number of args 1825
+krelu: n 100 split_zero 952 after cutoff 47 number of args 1227
+krelu: n 100 split_zero 89 after cutoff 89 number of args 1065
+Model status: 6, Objval retrival failed, Final solve time: 92.791
+Model status: 9, Objval retrival failed, Final solve time: 100.333
+Partial MILP model status: 11, Obj val/bound against label 2: -1.6078/-2.8028, Final solve time: 68.461
+img 61 Failed
+progress: 62/100, correct:  62/62, verified: 27/62, unsafe: 2/62,  time: 308.241; 152.513; 9455.784
+krelu: n 100 split_zero 1709 after cutoff 0 number of args 1709
+krelu: n 100 split_zero 510 after cutoff 8 number of args 517
+krelu: n 100 split_zero 44 after cutoff 44 number of args 277
+Model status: 2, Obj val/bound against label 4: -0.8619/-0.8619, Final solve time: 5.535
+Partial MILP model status: 11, Obj val/bound against label 4: -0.7427/-0.8619, Final solve time: 9.782
+img 62 Failed
+progress: 63/100, correct:  63/63, verified: 27/63, unsafe: 2/63,  time: 38.828; 150.708; 9494.613
+krelu: n 100 split_zero 1745 after cutoff 0 number of args 1745
+krelu: n 100 split_zero 934 after cutoff 85 number of args 1816
+krelu: n 100 split_zero 67 after cutoff 67 number of args 724
+Model status: 6, Objval retrival failed, Final solve time: 84.630
+Model status: 9, Objval retrival failed, Final solve time: 100.395
+Partial MILP model status: 11, Obj val/bound against label 2: -0.5871/-1.6056, Final solve time: 78.012
+img 63 Failed
+progress: 64/100, correct:  64/64, verified: 27/64, unsafe: 2/64,  time: 310.743; 153.209; 9805.356
+krelu: n 100 split_zero 1384 after cutoff 0 number of args 1384
+krelu: n 100 split_zero 768 after cutoff 70 number of args 1440
+krelu: n 100 split_zero 77 after cutoff 77 number of args 819
+Model status: 9, Objval retrival failed, Final solve time: 100.428
+Partial MILP model status: 6, Obj val/bound against label 0: inf/0.0100, Final solve time: 114.775
+Model status: 9, Objval retrival failed, Final solve time: 100.406
+Partial MILP model status: 11, Obj val/bound against label 1: -0.1587/-1.4132, Final solve time: 58.630
+img 64 Failed
+progress: 65/100, correct:  65/65, verified: 27/65, unsafe: 2/65,  time: 421.996; 157.344; 10227.352
+krelu: n 100 split_zero 1370 after cutoff 0 number of args 1370
+krelu: n 100 split_zero 619 after cutoff 47 number of args 894
+krelu: n 100 split_zero 38 after cutoff 38 number of args 214
+Model status: 6, Objval retrival failed, Final solve time: 10.581
+Used simplex terminate
+Model status: 11, Objval retrival failed, Final solve time: 16.029
+Partial MILP model status: 11, Obj val/bound against label 6: -0.9636/-1.2107, Final solve time: 27.805
+img 65 Failed
+progress: 66/100, correct:  66/66, verified: 27/66, unsafe: 2/66,  time: 81.668; 156.197; 10309.020
+krelu: n 100 split_zero 1264 after cutoff 0 number of args 1264
+krelu: n 100 split_zero 760 after cutoff 19 number of args 801
+krelu: n 100 split_zero 65 after cutoff 65 number of args 717
+Model status: 2, Obj val/bound against label 0: -0.1807/-0.1807, Final solve time: 88.726
+Partial MILP model status: 6, Obj val/bound against label 0: inf/0.0100, Final solve time: 78.321
+Used simplex terminate
+Model status: 11, Obj val/bound against label 8: 0.0000/-inf, Final solve time: 29.471
+Partial MILP model status: 11, Obj val/bound against label 8: -1.1081/-2.3795, Final solve time: 75.704
+img 66 Failed
+progress: 67/100, correct:  67/67, verified: 27/67, unsafe: 2/67,  time: 306.912; 158.447; 10615.932
+img 67 Verified 2
+progress: 68/100, correct:  68/68, verified: 28/68, unsafe: 2/68,  time: 0.223; 156.120; 10616.155
+krelu: n 100 split_zero 918 after cutoff 0 number of args 918
+krelu: n 100 split_zero 584 after cutoff 28 number of args 697
+krelu: n 100 split_zero 38 after cutoff 38 number of args 214
+Model status: 6, Objval retrival failed, Final solve time: 10.438
+Model status: 6, Objval retrival failed, Final solve time: 9.707
+Used simplex terminate
+Model status: 11, Objval retrival failed, Final solve time: 14.514
+Partial MILP model status: 11, Obj val/bound against label 3: -0.8111/-0.9811, Final solve time: 30.254
+img 68 Failed
+progress: 69/100, correct:  69/69, verified: 28/69, unsafe: 2/69,  time: 88.638; 155.142; 10704.793
+img 69 Verified 1
+progress: 70/100, correct:  70/70, verified: 29/70, unsafe: 2/70,  time: 0.220; 152.929; 10705.013
+krelu: n 100 split_zero 1525 after cutoff 0 number of args 1525
+krelu: n 100 split_zero 685 after cutoff 47 number of args 960
+krelu: n 100 split_zero 53 after cutoff 53 number of args 439
+Model status: 2, Obj val/bound against label 9: -2.8888/-2.8888, Final solve time: 42.072
+Counterexample found, partial MILP skipped.
+img 70 Verified unsafe against label  9 correct label  1
+progress: 71/100, correct:  71/71, verified: 29/71, unsafe: 3/71,  time: 73.444; 151.809; 10778.457
+krelu: n 100 split_zero 1357 after cutoff 0 number of args 1357
+krelu: n 100 split_zero 717 after cutoff 41 number of args 917
+krelu: n 100 split_zero 48 after cutoff 48 number of args 339
+Model status: 2, Obj val/bound against label 3: -0.7234/-0.7234, Final solve time: 28.500
+Counterexample found, partial MILP skipped.
+img 71 Verified unsafe against label  3 correct label  5
+progress: 72/100, correct:  72/72, verified: 29/72, unsafe: 4/72,  time: 56.476; 150.485; 10834.933
+krelu: n 100 split_zero 1480 after cutoff 0 number of args 1480
+krelu: n 100 split_zero 693 after cutoff 46 number of args 953
+krelu: n 100 split_zero 56 after cutoff 56 number of args 511
+Used simplex terminate
+Model status: 11, Objval retrival failed, Final solve time: 49.701
+Partial MILP model status: 11, Obj val/bound against label 8: -1.1462/-1.9859, Final solve time: 33.005
+img 72 Failed
+progress: 73/100, correct:  73/73, verified: 29/73, unsafe: 4/73,  time: 116.414; 150.018; 10951.347
+krelu: n 100 split_zero 1151 after cutoff 0 number of args 1151
+krelu: n 100 split_zero 652 after cutoff 19 number of args 693
+krelu: n 100 split_zero 47 after cutoff 47 number of args 322
+Model status: 6, Objval retrival failed, Final solve time: 17.191
+Model status: 2, Obj val/bound against label 2: -0.1260/-0.1260, Final solve time: 24.926
+Partial MILP model status: 6, Obj val/bound against label 2: inf/0.0100, Final solve time: 40.862
+Used simplex terminate
+Model status: 11, Obj val/bound against label 3: 0.0000/-inf, Final solve time: 10.975
+Partial MILP model status: 11, Obj val/bound against label 3: -0.3630/-0.5162, Final solve time: 55.896
+img 73 Failed
+progress: 74/100, correct:  74/74, verified: 29/74, unsafe: 4/74,  time: 174.961; 150.356; 11126.308
+krelu: n 100 split_zero 1176 after cutoff 0 number of args 1176
+krelu: n 100 split_zero 783 after cutoff 45 number of args 1029
+krelu: n 100 split_zero 61 after cutoff 61 number of args 651
+Model status: 6, Objval retrival failed, Final solve time: 66.901
+Model status: 2, Obj val/bound against label 2: -2.8855/-2.8855, Final solve time: 85.569
+Counterexample found, partial MILP skipped.
+img 74 Verified unsafe against label  2 correct label  6
+progress: 75/100, correct:  75/75, verified: 29/75, unsafe: 5/75,  time: 189.744; 150.881; 11316.051
+krelu: n 100 split_zero 1973 after cutoff 0 number of args 1973
+krelu: n 100 split_zero 1054 after cutoff 82 number of args 1876
+krelu: n 100 split_zero 89 after cutoff 89 number of args 1065
+Model status: 2, Obj val/bound against label 0: -0.6256/-0.6256, Final solve time: 63.937
+Partial MILP model status: 6, Obj val/bound against label 0: inf/0.0100, Final solve time: 141.927
+Model status: 9, Obj val/bound against label 3: 0.0000/-inf, Final solve time: 100.001
+Partial MILP model status: 11, Obj val/bound against label 3: -1.2198/-1.6110, Final solve time: 71.502
+img 75 Failed
+progress: 76/100, correct:  76/76, verified: 29/76, unsafe: 5/76,  time: 432.881; 154.591; 11748.932
+krelu: n 100 split_zero 1652 after cutoff 0 number of args 1652
+krelu: n 100 split_zero 780 after cutoff 67 number of args 1437
+krelu: n 100 split_zero 76 after cutoff 76 number of args 805
+Model status: 6, Objval retrival failed, Final solve time: 81.394
+Model status: 2, Obj val/bound against label 2: -0.1823/-0.1823, Final solve time: 94.204
+Counterexample found, partial MILP skipped.
+img 76 Verified unsafe against label  3 correct label  5
+progress: 77/100, correct:  77/77, verified: 29/77, unsafe: 6/77,  time: 221.798; 155.464; 11970.730
+krelu: n 100 split_zero 1803 after cutoff 0 number of args 1803
+krelu: n 100 split_zero 658 after cutoff 27 number of args 759
+krelu: n 100 split_zero 76 after cutoff 76 number of args 805
+Model status: 2, Obj val/bound against label 2: -1.6052/-1.6052, Final solve time: 43.042
+Partial MILP model status: 11, Obj val/bound against label 2: -1.4042/-1.6021, Final solve time: 24.266
+img 77 Failed
+progress: 78/100, correct:  78/78, verified: 29/78, unsafe: 6/78,  time: 104.982; 154.817; 12075.712
+krelu: n 100 split_zero 1872 after cutoff 0 number of args 1872
+krelu: n 100 split_zero 558 after cutoff 20 number of args 603
+krelu: n 100 split_zero 50 after cutoff 50 number of args 376
+Used simplex terminate
+Model status: 11, Objval retrival failed, Final solve time: 26.482
+Partial MILP model status: 11, Obj val/bound against label 0: -1.5414/-1.9179, Final solve time: 18.859
+img 78 Failed
+progress: 79/100, correct:  79/79, verified: 29/79, unsafe: 6/79,  time: 71.876; 153.767; 12147.588
+krelu: n 100 split_zero 1455 after cutoff 0 number of args 1455
+krelu: n 100 split_zero 838 after cutoff 51 number of args 1183
+krelu: n 100 split_zero 56 after cutoff 56 number of args 511
+Model status: 6, Objval retrival failed, Final solve time: 38.819
+Model status: 2, Obj val/bound against label 2: -1.7966/-1.7966, Final solve time: 60.917
+Partial MILP model status: 11, Obj val/bound against label 2: -1.1571/-1.7966, Final solve time: 68.456
+img 79 Failed
+progress: 80/100, correct:  80/80, verified: 29/80, unsafe: 6/80,  time: 202.462; 154.376; 12350.049
+krelu: n 100 split_zero 1916 after cutoff 0 number of args 1916
+krelu: n 100 split_zero 827 after cutoff 57 number of args 1307
+krelu: n 100 split_zero 64 after cutoff 64 number of args 715
+Model status: 2, Obj val/bound against label 2: -1.3421/-1.3421, Final solve time: 52.631
+Partial MILP model status: 11, Obj val/bound against label 2: -0.7654/-1.3421, Final solve time: 30.047
+img 80 Failed
+progress: 81/100, correct:  81/81, verified: 29/81, unsafe: 6/81,  time: 124.800; 154.010; 12474.849
+krelu: n 100 split_zero 1706 after cutoff 0 number of args 1706
+krelu: n 100 split_zero 893 after cutoff 66 number of args 1547
+krelu: n 100 split_zero 68 after cutoff 68 number of args 729
+Model status: 9, Objval retrival failed, Final solve time: 100.499
+Partial MILP model status: 6, Obj val/bound against label 2: inf/0.0100, Final solve time: 100.665
+img 81 Verified 5
+progress: 82/100, correct:  82/82, verified: 30/82, unsafe: 6/82,  time: 246.281; 155.136; 12721.130
+krelu: n 100 split_zero 1629 after cutoff 0 number of args 1629
+krelu: n 100 split_zero 759 after cutoff 46 number of args 1019
+krelu: n 100 split_zero 66 after cutoff 66 number of args 720
+Model status: 6, Objval retrival failed, Final solve time: 95.611
+Model status: 9, Objval retrival failed, Final solve time: 100.524
+Partial MILP model status: 11, Obj val/bound against label 8: -0.6803/-1.6273, Final solve time: 65.651
+img 82 Failed
+progress: 83/100, correct:  83/83, verified: 30/83, unsafe: 6/83,  time: 300.180; 156.883; 13021.310
+krelu: n 100 split_zero 1550 after cutoff 0 number of args 1550
+krelu: n 100 split_zero 774 after cutoff 31 number of args 929
+krelu: n 100 split_zero 74 after cutoff 74 number of args 780
+Model status: 2, Obj val/bound against label 2: -0.0038/-0.0038, Final solve time: 90.274
+Partial MILP model status: 6, Obj val/bound against label 2: inf/0.0100, Final solve time: 55.232
+Model status: 6, Obj val/bound against label 4: 0.0424/-inf, Final solve time: 61.219
+Model status: 6, Obj val/bound against label 7: 0.6947/-inf, Final solve time: 18.116
+Model status: 9, Obj val/bound against label 8: 0.0000/-inf, Final solve time: 100.002
+Partial MILP model status: 6, Obj val/bound against label 8: inf/0.0100, Final solve time: 164.384
+img 83 Verified 0
+progress: 84/100, correct:  84/84, verified: 31/84, unsafe: 6/84,  time: 526.955; 161.289; 13548.265
+img 84 Verified 0
+progress: 85/100, correct:  85/85, verified: 32/85, unsafe: 6/85,  time: 0.199; 159.394; 13548.464
+img 85 Verified 6
+progress: 86/100, correct:  86/86, verified: 33/86, unsafe: 6/86,  time: 0.175; 157.542; 13548.639
+krelu: n 100 split_zero 1473 after cutoff 0 number of args 1473
+krelu: n 100 split_zero 792 after cutoff 42 number of args 1002
+krelu: n 100 split_zero 77 after cutoff 77 number of args 819
+Model status: 6, Objval retrival failed, Final solve time: 72.341
+Model status: 2, Obj val/bound against label 2: -1.6752/-1.6752, Final solve time: 53.540
+Partial MILP model status: 11, Obj val/bound against label 2: -0.7418/-1.6752, Final solve time: 41.883
+img 86 Failed
+progress: 87/100, correct:  87/87, verified: 33/87, unsafe: 6/87,  time: 207.408; 158.115; 13756.047
+krelu: n 100 split_zero 1489 after cutoff 0 number of args 1489
+krelu: n 100 split_zero 727 after cutoff 53 number of args 1113
+krelu: n 100 split_zero 46 after cutoff 46 number of args 306
+Model status: 6, Objval retrival failed, Final solve time: 17.432
+Model status: 2, Obj val/bound against label 2: -1.0024/-1.0024, Final solve time: 24.729
+Partial MILP model status: 11, Obj val/bound against label 2: -0.2816/-1.0024, Final solve time: 40.285
+img 87 Failed
+progress: 88/100, correct:  88/88, verified: 33/88, unsafe: 6/88,  time: 112.574; 157.598; 13868.621
+img 88 Verified 0
+progress: 89/100, correct:  89/89, verified: 34/89, unsafe: 6/89,  time: 0.193; 155.829; 13868.814
+krelu: n 100 split_zero 1737 after cutoff 0 number of args 1737
+krelu: n 100 split_zero 921 after cutoff 60 number of args 1482
+krelu: n 100 split_zero 77 after cutoff 77 number of args 819
+Model status: 6, Objval retrival failed, Final solve time: 44.518
+Model status: 9, Objval retrival failed, Final solve time: 100.411
+Partial MILP model status: 6, Obj val/bound against label 2: inf/0.0100, Final solve time: 64.543
+Model status: 6, Objval retrival failed, Final solve time: 93.587
+Model status: 9, Objval retrival failed, Final solve time: 100.582
+Partial MILP model status: 6, Obj val/bound against label 7: inf/0.0100, Final solve time: 149.799
+img 89 Verified 4
+progress: 90/100, correct:  90/90, verified: 35/90, unsafe: 6/90,  time: 598.682; 160.750; 14467.496
+img 90 Verified 8
+progress: 91/100, correct:  91/91, verified: 36/91, unsafe: 6/91,  time: 0.195; 158.986; 14467.691
+img 91 Verified 1
+progress: 92/100, correct:  92/92, verified: 37/92, unsafe: 6/92,  time: 0.165; 157.259; 14467.856
+krelu: n 100 split_zero 1622 after cutoff 0 number of args 1622
+krelu: n 100 split_zero 977 after cutoff 64 number of args 1628
+krelu: n 100 split_zero 87 after cutoff 87 number of args 1014
+Model status: 9, Objval retrival failed, Final solve time: 100.447
+Partial MILP model status: 11, Obj val/bound against label 0: -0.1865/-0.4512, Final solve time: 122.925
+img 92 Failed
+progress: 93/100, correct:  93/93, verified: 37/93, unsafe: 6/93,  time: 274.525; 158.520; 14742.381
+krelu: n 100 split_zero 1636 after cutoff 0 number of args 1636
+krelu: n 100 split_zero 389 after cutoff 8 number of args 396
+krelu: n 100 split_zero 15 after cutoff 15 number of args 50
+Model status: 6, Objval retrival failed, Final solve time: 11.111
+img 93 Verified 0
+progress: 94/100, correct:  94/94, verified: 38/94, unsafe: 6/94,  time: 29.602; 157.149; 14771.983
+img 94 Verified 1
+progress: 95/100, correct:  95/95, verified: 39/95, unsafe: 6/95,  time: 0.225; 155.497; 14772.208
+krelu: n 100 split_zero 1268 after cutoff 0 number of args 1268
+krelu: n 100 split_zero 711 after cutoff 28 number of args 824
+krelu: n 100 split_zero 56 after cutoff 56 number of args 511
+Model status: 6, Objval retrival failed, Final solve time: 35.813
+Model status: 2, Obj val/bound against label 8: -1.9277/-1.9277, Final solve time: 62.501
+Partial MILP model status: 11, Obj val/bound against label 8: -1.2346/-1.9277, Final solve time: 55.448
+img 95 Failed
+progress: 96/100, correct:  96/96, verified: 39/96, unsafe: 6/96,  time: 184.425; 155.798; 14956.633
+krelu: n 100 split_zero 1504 after cutoff 0 number of args 1504
+krelu: n 100 split_zero 925 after cutoff 89 number of args 1901
+krelu: n 100 split_zero 65 after cutoff 65 number of args 717
+Model status: 6, Objval retrival failed, Final solve time: 93.124
+Model status: 9, Objval retrival failed, Final solve time: 100.220
+Partial MILP model status: 6, Obj val/bound against label 1: inf/0.0100, Final solve time: 111.848
+Model status: 9, Objval retrival failed, Final solve time: 100.256
+Partial MILP model status: 11, Obj val/bound against label 2: -1.0436/-1.5772, Final solve time: 158.651
+img 96 Failed
+progress: 97/100, correct:  97/97, verified: 39/97, unsafe: 6/97,  time: 613.146; 160.513; 15569.779
+krelu: n 100 split_zero 1427 after cutoff 0 number of args 1427
+krelu: n 100 split_zero 670 after cutoff 19 number of args 711
+krelu: n 100 split_zero 61 after cutoff 61 number of args 651
+Model status: 2, Obj val/bound against label 0: -1.4948/-1.4948, Final solve time: 86.875
+Counterexample found, partial MILP skipped.
+img 97 Verified unsafe against label  8 correct label  9
+progress: 98/100, correct:  98/98, verified: 39/98, unsafe: 7/98,  time: 124.688; 160.148; 15694.468
+krelu: n 100 split_zero 1340 after cutoff 0 number of args 1340
+krelu: n 100 split_zero 753 after cutoff 62 number of args 1373
+krelu: n 100 split_zero 78 after cutoff 78 number of args 834
+Model status: 9, Objval retrival failed, Final solve time: 100.454
+Partial MILP model status: 11, Obj val/bound against label 2: -1.9043/-2.5954, Final solve time: 84.362
+img 98 Failed
+progress: 99/100, correct:  99/99, verified: 39/99, unsafe: 7/99,  time: 231.730; 160.871; 15926.198
+krelu: n 100 split_zero 1822 after cutoff 0 number of args 1822
+krelu: n 100 split_zero 801 after cutoff 42 number of args 1011
+krelu: n 100 split_zero 65 after cutoff 65 number of args 717
+Model status: 2, Obj val/bound against label 0: -1.1056/-1.1056, Final solve time: 88.399
+Partial MILP model status: 11, Obj val/bound against label 0: -0.2300/-0.4704, Final solve time: 154.872
+img 99 Failed
+progress: 100/100, correct:  100/100, verified: 39/100, unsafe: 7/100,  time: 282.031; 162.082; 16208.229
+analysis precision  39 /  100
+
+Process finished with exit code 0

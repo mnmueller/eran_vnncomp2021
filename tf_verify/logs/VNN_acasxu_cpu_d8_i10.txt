@@ -1,0 +1,1455 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --instance_file /home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/acasxu/acasxu_instances.csv --domain deeppoly --timeout_final_milp 5 --complete True --from_test 0 --max_split_depth 8 --initial_splits 10
+GPUPoly 0.12.0S Debug (built Apr 23 2021 09:33:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+{'approx_k': True,
+ 'complete': True,
+ 'debug': False,
+ 'domain': 'deeppoly',
+ 'from_test': 0,
+ 'initial_splits': 10,
+ 'instance_file': '/home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/acasxu/acasxu_instances.csv',
+ 'k': 3,
+ 'max_gpu_batch': 500,
+ 'max_milp_neurons': 30,
+ 'max_split_depth': 8,
+ 'n_milp_refine': 1,
+ 'netname': None,
+ 'partial_milp': 0,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 70,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 5.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'vnnlib_spec': None}
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 0 (UNSAT): 1/186; SAT 0; UNSAT 1; unkown 0; time: 1.409; 1.409; 1.409
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 1 (UNSAT): 2/186; SAT 0; UNSAT 2; unkown 0; time: 7.789; 4.599; 9.198
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 2 (UNSAT): 3/186; SAT 0; UNSAT 3; unkown 0; time: 2.729; 3.976; 11.928
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 3 (UNSAT): 4/186; SAT 0; UNSAT 4; unkown 0; time: 9.141; 5.267; 21.069
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 4 (UNSAT): 5/186; SAT 0; UNSAT 5; unkown 0; time: 0.944; 4.402; 22.012
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 5 (UNSAT): 6/186; SAT 0; UNSAT 6; unkown 0; time: 7.826; 4.973; 29.838
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 6 (UNSAT): 7/186; SAT 0; UNSAT 7; unkown 0; time: 0.884; 4.389; 30.722
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 7 (UNSAT): 8/186; SAT 0; UNSAT 8; unkown 0; time: 1.720; 4.055; 32.442
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 8 (UNSAT): 9/186; SAT 0; UNSAT 9; unkown 0; time: 1.541; 3.776; 33.982
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 9 (UNSAT): 10/186; SAT 0; UNSAT 10; unkown 0; time: 1.909; 3.589; 35.892
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 10 (UNSAT): 11/186; SAT 0; UNSAT 11; unkown 0; time: 16.490; 4.762; 52.382
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 11 (UNSAT): 12/186; SAT 0; UNSAT 12; unkown 0; time: 13.068; 5.454; 65.449
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 12 (UNSAT): 13/186; SAT 0; UNSAT 13; unkown 0; time: 2.368; 5.217; 67.817
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 13 (UNSAT): 14/186; SAT 0; UNSAT 14; unkown 0; time: 28.202; 6.859; 96.020
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 14 (UNSAT): 15/186; SAT 0; UNSAT 15; unkown 0; time: 26.358; 8.159; 122.378
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 15 (UNSAT): 16/186; SAT 0; UNSAT 16; unkown 0; time: 52.045; 10.901; 174.423
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 16 (UNSAT): 17/186; SAT 0; UNSAT 17; unkown 0; time: 47.261; 13.040; 221.684
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 17 (UNSAT): 18/186; SAT 0; UNSAT 18; unkown 0; time: 56.227; 15.439; 277.911
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 18 (UNSAT): 19/186; SAT 0; UNSAT 19; unkown 0; time: 2.737; 14.771; 280.648
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 19 (UNSAT): 20/186; SAT 0; UNSAT 20; unkown 0; time: 12.890; 14.677; 293.538
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 20 (UNSAT): 21/186; SAT 0; UNSAT 21; unkown 0; time: 2.728; 14.108; 296.266
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 21 (UNSAT): 22/186; SAT 0; UNSAT 22; unkown 0; time: 7.613; 13.813; 303.879
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 22 (UNSAT): 23/186; SAT 0; UNSAT 23; unkown 0; time: 18.761; 14.028; 322.640
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 23 (UNSAT): 24/186; SAT 0; UNSAT 24; unkown 0; time: 12.578; 13.967; 335.218
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 24 (UNSAT): 25/186; SAT 0; UNSAT 25; unkown 0; time: 15.372; 14.024; 350.589
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 25 (UNSAT): 26/186; SAT 0; UNSAT 26; unkown 0; time: 45.445; 15.232; 396.034
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 26 (UNSAT): 27/186; SAT 0; UNSAT 27; unkown 0; time: 19.707; 15.398; 415.742
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 27 (UNSAT): 28/186; SAT 0; UNSAT 28; unkown 0; time: 20.412; 15.577; 436.153
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 28 (UNSAT): 29/186; SAT 0; UNSAT 29; unkown 0; time: 2.788; 15.136; 438.941
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 29 (UNSAT): 30/186; SAT 0; UNSAT 30; unkown 0; time: 12.429; 15.046; 451.370
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 30 (UNSAT): 31/186; SAT 0; UNSAT 31; unkown 0; time: 11.509; 14.932; 462.879
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 31 (UNSAT): 32/186; SAT 0; UNSAT 32; unkown 0; time: 24.720; 15.237; 487.599
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 32 (UNSAT): 33/186; SAT 0; UNSAT 33; unkown 0; time: 34.063; 15.808; 521.663
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 33 (UNKNOWN): 34/186; SAT 0; UNSAT 33; unkown 1; time: 116.492; 18.769; 638.155
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 34 (UNSAT): 35/186; SAT 0; UNSAT 34; unkown 1; time: 26.469; 18.989; 664.624
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 35 (UNSAT): 36/186; SAT 0; UNSAT 35; unkown 1; time: 94.807; 21.095; 759.431
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 36 (UNSAT): 37/186; SAT 0; UNSAT 36; unkown 1; time: 2.477; 20.592; 761.907
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 37 (UNSAT): 38/186; SAT 0; UNSAT 37; unkown 1; time: 2.019; 20.103; 763.926
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 38 (UNSAT): 39/186; SAT 0; UNSAT 38; unkown 1; time: 1.369; 19.623; 765.295
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 39 (UNSAT): 40/186; SAT 0; UNSAT 39; unkown 1; time: 8.468; 19.344; 773.763
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 40 (UNSAT): 41/186; SAT 0; UNSAT 40; unkown 1; time: 23.214; 19.438; 796.977
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 41 (UNSAT): 42/186; SAT 0; UNSAT 41; unkown 1; time: 31.669; 19.730; 828.646
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 42 (UNSAT): 43/186; SAT 0; UNSAT 42; unkown 1; time: 31.950; 20.014; 860.596
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 43 (UNSAT): 44/186; SAT 0; UNSAT 43; unkown 1; time: 57.589; 20.868; 918.184
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(-1, 0, 3.991125645861615)]]
+progress: 1/1
+Spec 44 (UNSAT): 45/186; SAT 0; UNSAT 44; unkown 1; time: 46.915; 21.447; 965.100
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 45 (UNSAT): 46/186; SAT 0; UNSAT 45; unkown 1; time: 12.753; 21.258; 977.852
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [-0.01748626 -0.01820032 -0.01778223 -0.01757758 -0.01787624] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 46 (SAT): 47/186; SAT 1; UNSAT 45; unkown 1; time: 45.248; 21.768; 1023.101
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [-0.01738616 -0.01739314 -0.01823956 -0.01824424 -0.01808161] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 47 (SAT): 48/186; SAT 2; UNSAT 45; unkown 1; time: 7.002; 21.460; 1030.102
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [-0.01844276 -0.01917959 -0.01880335 -0.01844276 -0.01870243] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 48 (SAT): 49/186; SAT 3; UNSAT 45; unkown 1; time: 19.391; 21.418; 1049.493
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [-0.01702552 -0.01768315 -0.01767754 -0.01702552 -0.01702552] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 49 (SAT): 50/186; SAT 4; UNSAT 45; unkown 1; time: 11.180; 21.213; 1060.673
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [-0.01701942 -0.01843838 -0.01769439 -0.01846296 -0.0170377 ] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 50 (SAT): 51/186; SAT 5; UNSAT 45; unkown 1; time: 18.902; 21.168; 1079.575
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 51 (UNSAT): 52/186; SAT 5; UNSAT 46; unkown 1; time: 10.591; 20.965; 1090.166
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 52 (UNSAT): 53/186; SAT 5; UNSAT 47; unkown 1; time: 48.534; 21.485; 1138.700
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 53 (UNSAT): 54/186; SAT 5; UNSAT 48; unkown 1; time: 40.677; 21.840; 1179.376
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02755933 -0.02308251  0.02256922 -0.01841842  0.022912  ] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 54 (SAT): 55/186; SAT 6; UNSAT 48; unkown 1; time: 5.226; 21.538; 1184.603
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02130126 -0.02240627  0.0212781  -0.01506493  0.02050699] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 55 (SAT): 56/186; SAT 7; UNSAT 48; unkown 1; time: 12.337; 21.374; 1196.940
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 56 (SAT): 57/186; SAT 8; UNSAT 48; unkown 1; time: 0.019; 20.999; 1196.959
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02272786 -0.02190109  0.02161827 -0.01589076  0.02243201] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 57 (SAT): 58/186; SAT 9; UNSAT 48; unkown 1; time: 9.025; 20.793; 1205.983
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 58 (SAT): 59/186; SAT 10; UNSAT 48; unkown 1; time: 0.017; 20.441; 1206.001
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 59 (SAT): 60/186; SAT 11; UNSAT 48; unkown 1; time: 0.018; 20.100; 1206.019
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 60 (SAT): 61/186; SAT 12; UNSAT 48; unkown 1; time: 0.016; 19.771; 1206.035
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 61 (SAT): 62/186; SAT 13; UNSAT 48; unkown 1; time: 0.016; 19.452; 1206.051
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02117352 -0.02022188  0.0192493  -0.01644767  0.02006253] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 62 (SAT): 63/186; SAT 14; UNSAT 48; unkown 1; time: 66.911; 20.206; 1272.962
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 63 (SAT): 64/186; SAT 15; UNSAT 48; unkown 1; time: 0.018; 19.890; 1272.980
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02311098  0.02177664 -0.02094012  0.02305296 -0.01609784] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 64 (SAT): 65/186; SAT 16; UNSAT 48; unkown 1; time: 19.233; 19.880; 1292.212
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 65 (UNSAT): 66/186; SAT 16; UNSAT 49; unkown 1; time: 79.028; 20.776; 1371.240
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 66 (SAT): 67/186; SAT 17; UNSAT 49; unkown 1; time: 0.035; 20.467; 1371.275
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 67 (SAT): 68/186; SAT 18; UNSAT 49; unkown 1; time: 0.018; 20.166; 1371.293
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02116999  0.01997152 -0.01946564  0.02105187 -0.01406939] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 68 (SAT): 69/186; SAT 19; UNSAT 49; unkown 1; time: 24.242; 20.225; 1395.536
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.03175587  0.0222974  -0.02087347  0.0236069  -0.01306686] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 69 (SAT): 70/186; SAT 20; UNSAT 49; unkown 1; time: 22.800; 20.262; 1418.336
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02166868  0.02030123 -0.02095605  0.02159249 -0.01288982] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 70 (SAT): 71/186; SAT 21; UNSAT 49; unkown 1; time: 38.439; 20.518; 1456.775
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 71 (SAT): 72/186; SAT 22; UNSAT 49; unkown 1; time: 0.018; 20.233; 1456.794
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02601578 -0.01942559  0.02399422 -0.01844499  0.02146506] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 72 (SAT): 73/186; SAT 23; UNSAT 49; unkown 1; time: 20.087; 20.231; 1476.881
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 73 (UNSAT): 74/186; SAT 23; UNSAT 50; unkown 1; time: 95.006; 21.242; 1571.886
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 74 (SAT): 75/186; SAT 24; UNSAT 50; unkown 1; time: 0.030; 20.959; 1571.916
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02297172 -0.01846523  0.0220703  -0.01888728  0.0229716 ] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 75 (SAT): 76/186; SAT 25; UNSAT 50; unkown 1; time: 13.624; 20.862; 1585.540
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 76 (SAT): 77/186; SAT 26; UNSAT 50; unkown 1; time: 0.017; 20.592; 1585.557
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 77 (SAT): 78/186; SAT 27; UNSAT 50; unkown 1; time: 0.016; 20.328; 1585.573
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 78 (SAT): 79/186; SAT 28; UNSAT 50; unkown 1; time: 0.017; 20.071; 1585.590
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 79 (SAT): 80/186; SAT 29; UNSAT 50; unkown 1; time: 0.036; 19.820; 1585.627
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.01954541 -0.01848593  0.01865665 -0.01975092  0.01953032] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 80 (SAT): 81/186; SAT 30; UNSAT 50; unkown 1; time: 89.889; 20.685; 1675.516
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 81 (SAT): 82/186; SAT 31; UNSAT 50; unkown 1; time: 0.023; 20.433; 1675.538
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 82 (SAT): 83/186; SAT 32; UNSAT 50; unkown 1; time: 0.015; 20.187; 1675.554
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [ 0.02271318  0.02264594 -0.01837292  0.02221553 -0.01666015] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 83 (SAT): 84/186; SAT 33; UNSAT 50; unkown 1; time: 14.080; 20.115; 1689.634
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 84 (SAT): 85/186; SAT 34; UNSAT 50; unkown 1; time: 0.039; 19.879; 1689.673
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 85 (SAT): 86/186; SAT 35; UNSAT 50; unkown 1; time: 0.029; 19.648; 1689.702
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 86 (SAT): 87/186; SAT 36; UNSAT 50; unkown 1; time: 0.072; 19.423; 1689.774
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 87 (SAT): 88/186; SAT 37; UNSAT 50; unkown 1; time: 0.041; 19.202; 1689.815
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 88 (SAT): 89/186; SAT 38; UNSAT 50; unkown 1; time: 0.015; 18.987; 1689.830
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 89 (SAT): 90/186; SAT 39; UNSAT 50; unkown 1; time: 0.032; 18.776; 1689.862
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 90 (UNKNOWN): 91/186; SAT 39; UNSAT 50; unkown 2; time: 116.442; 19.849; 1806.304
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 91 (UNSAT): 92/186; SAT 39; UNSAT 51; unkown 2; time: 7.063; 19.711; 1813.367
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 92 (UNSAT): 93/186; SAT 39; UNSAT 52; unkown 2; time: 9.399; 19.600; 1822.766
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 93 (UNSAT): 94/186; SAT 39; UNSAT 53; unkown 2; time: 0.726; 19.399; 1823.492
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 94 (UNSAT): 95/186; SAT 39; UNSAT 54; unkown 2; time: 0.778; 19.203; 1824.270
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 95 (UNSAT): 96/186; SAT 39; UNSAT 55; unkown 2; time: 0.035; 19.003; 1824.305
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 96 (SAT): 97/186; SAT 40; UNSAT 55; unkown 2; time: 0.020; 18.807; 1824.325
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 97 (SAT): 98/186; SAT 41; UNSAT 55; unkown 2; time: 0.035; 18.616; 1824.360
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 98 (SAT): 99/186; SAT 42; UNSAT 55; unkown 2; time: 0.015; 18.428; 1824.375
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 99 (UNSAT): 100/186; SAT 42; UNSAT 56; unkown 2; time: 3.848; 18.282; 1828.223
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 100 (UNSAT): 101/186; SAT 42; UNSAT 57; unkown 2; time: 5.035; 18.151; 1833.258
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 101 (UNSAT): 102/186; SAT 42; UNSAT 58; unkown 2; time: 2.313; 17.996; 1835.571
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 102 (UNSAT): 103/186; SAT 42; UNSAT 59; unkown 2; time: 0.025; 17.821; 1835.595
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 103 (UNSAT): 104/186; SAT 42; UNSAT 60; unkown 2; time: 0.839; 17.658; 1836.435
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 104 (UNSAT): 105/186; SAT 42; UNSAT 61; unkown 2; time: 0.025; 17.490; 1836.460
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 105 (UNSAT): 106/186; SAT 42; UNSAT 62; unkown 2; time: 0.024; 17.325; 1836.484
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 106 (UNSAT): 107/186; SAT 42; UNSAT 63; unkown 2; time: 0.024; 17.164; 1836.508
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 107 (UNSAT): 108/186; SAT 42; UNSAT 64; unkown 2; time: 0.036; 17.005; 1836.543
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 108 (UNSAT): 109/186; SAT 42; UNSAT 65; unkown 2; time: 0.741; 16.856; 1837.285
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 109 (UNSAT): 110/186; SAT 42; UNSAT 66; unkown 2; time: 2.594; 16.726; 1839.879
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 110 (UNSAT): 111/186; SAT 42; UNSAT 67; unkown 2; time: 1.028; 16.585; 1840.907
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 111 (UNSAT): 112/186; SAT 42; UNSAT 68; unkown 2; time: 0.882; 16.445; 1841.789
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 112 (UNSAT): 113/186; SAT 42; UNSAT 69; unkown 2; time: 0.839; 16.306; 1842.629
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 113 (UNSAT): 114/186; SAT 42; UNSAT 70; unkown 2; time: 0.763; 16.170; 1843.391
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 114 (UNSAT): 115/186; SAT 42; UNSAT 71; unkown 2; time: 0.025; 16.030; 1843.416
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 115 (UNSAT): 116/186; SAT 42; UNSAT 72; unkown 2; time: 0.687; 15.897; 1844.103
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 116 (UNSAT): 117/186; SAT 42; UNSAT 73; unkown 2; time: 0.710; 15.768; 1844.813
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 117 (UNSAT): 118/186; SAT 42; UNSAT 74; unkown 2; time: 3.240; 15.661; 1848.053
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 118 (UNSAT): 119/186; SAT 42; UNSAT 75; unkown 2; time: 5.826; 15.579; 1853.879
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 119 (UNSAT): 120/186; SAT 42; UNSAT 76; unkown 2; time: 3.589; 15.479; 1857.468
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 120 (UNSAT): 121/186; SAT 42; UNSAT 77; unkown 2; time: 0.845; 15.358; 1858.313
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 121 (UNSAT): 122/186; SAT 42; UNSAT 78; unkown 2; time: 0.027; 15.232; 1858.340
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 122 (UNSAT): 123/186; SAT 42; UNSAT 79; unkown 2; time: 0.710; 15.114; 1859.050
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 123 (UNSAT): 124/186; SAT 42; UNSAT 80; unkown 2; time: 0.645; 14.998; 1859.695
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 124 (UNSAT): 125/186; SAT 42; UNSAT 81; unkown 2; time: 0.024; 14.878; 1859.719
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 125 (UNSAT): 126/186; SAT 42; UNSAT 82; unkown 2; time: 0.862; 14.767; 1860.581
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 126 (UNSAT): 127/186; SAT 42; UNSAT 83; unkown 2; time: 6.320; 14.700; 1866.901
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 127 (UNSAT): 128/186; SAT 42; UNSAT 84; unkown 2; time: 1.414; 14.596; 1868.315
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 128 (UNSAT): 129/186; SAT 42; UNSAT 85; unkown 2; time: 0.795; 14.489; 1869.109
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 129 (UNSAT): 130/186; SAT 42; UNSAT 86; unkown 2; time: 0.772; 14.384; 1869.882
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 130 (UNSAT): 131/186; SAT 42; UNSAT 87; unkown 2; time: 0.776; 14.280; 1870.657
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 131 (UNSAT): 132/186; SAT 42; UNSAT 88; unkown 2; time: 0.700; 14.177; 1871.358
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 132 (UNSAT): 133/186; SAT 42; UNSAT 89; unkown 2; time: 0.028; 14.071; 1871.386
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 133 (UNSAT): 134/186; SAT 42; UNSAT 90; unkown 2; time: 0.852; 13.972; 1872.237
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 134 (UNSAT): 135/186; SAT 42; UNSAT 91; unkown 2; time: 0.039; 13.869; 1872.276
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 135 (UNSAT): 136/186; SAT 42; UNSAT 92; unkown 2; time: 23.682; 13.941; 1895.958
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 136 (UNSAT): 137/186; SAT 42; UNSAT 93; unkown 2; time: 5.975; 13.883; 1901.933
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 137 (UNSAT): 138/186; SAT 42; UNSAT 94; unkown 2; time: 4.376; 13.814; 1906.309
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 138 (UNSAT): 139/186; SAT 42; UNSAT 95; unkown 2; time: 1.124; 13.723; 1907.433
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 139 (UNSAT): 140/186; SAT 42; UNSAT 96; unkown 2; time: 0.902; 13.631; 1908.335
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 140 (UNSAT): 141/186; SAT 42; UNSAT 97; unkown 2; time: 1.055; 13.542; 1909.391
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 141 (SAT): 142/186; SAT 43; UNSAT 97; unkown 2; time: 0.020; 13.447; 1909.411
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 142 (SAT): 143/186; SAT 44; UNSAT 97; unkown 2; time: 0.018; 13.353; 1909.429
+This network has 300 neurons.
+Box 0 SAT
+progress: 1/1
+Spec 143 (SAT): 144/186; SAT 45; UNSAT 97; unkown 2; time: 0.018; 13.260; 1909.447
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 144 (UNSAT): 145/186; SAT 45; UNSAT 98; unkown 2; time: 0.744; 13.174; 1910.190
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 145 (UNSAT): 146/186; SAT 45; UNSAT 99; unkown 2; time: 0.762; 13.089; 1910.953
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 146 (UNSAT): 147/186; SAT 45; UNSAT 100; unkown 2; time: 1.014; 13.007; 1911.967
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 147 (UNSAT): 148/186; SAT 45; UNSAT 101; unkown 2; time: 0.874; 12.925; 1912.840
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 148 (UNSAT): 149/186; SAT 45; UNSAT 102; unkown 2; time: 0.762; 12.843; 1913.603
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 149 (UNSAT): 150/186; SAT 45; UNSAT 103; unkown 2; time: 0.809; 12.763; 1914.411
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 150 (UNSAT): 151/186; SAT 45; UNSAT 104; unkown 2; time: 0.774; 12.683; 1915.185
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 151 (UNSAT): 152/186; SAT 45; UNSAT 105; unkown 2; time: 0.689; 12.604; 1915.874
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 152 (UNSAT): 153/186; SAT 45; UNSAT 106; unkown 2; time: 0.025; 12.522; 1915.899
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 153 (UNSAT): 154/186; SAT 45; UNSAT 107; unkown 2; time: 1.146; 12.448; 1917.045
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 154 (UNSAT): 155/186; SAT 45; UNSAT 108; unkown 2; time: 0.787; 12.373; 1917.832
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 155 (UNSAT): 156/186; SAT 45; UNSAT 109; unkown 2; time: 0.029; 12.294; 1917.861
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 156 (UNSAT): 157/186; SAT 45; UNSAT 110; unkown 2; time: 0.907; 12.221; 1918.768
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 157 (UNSAT): 158/186; SAT 45; UNSAT 111; unkown 2; time: 0.781; 12.149; 1919.549
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 158 (UNSAT): 159/186; SAT 45; UNSAT 112; unkown 2; time: 0.630; 12.077; 1920.179
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 159 (UNSAT): 160/186; SAT 45; UNSAT 113; unkown 2; time: 0.654; 12.005; 1920.833
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 160 (UNSAT): 161/186; SAT 45; UNSAT 114; unkown 2; time: 0.660; 11.935; 1921.492
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 161 (UNSAT): 162/186; SAT 45; UNSAT 115; unkown 2; time: 0.799; 11.866; 1922.292
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 162 (UNSAT): 163/186; SAT 45; UNSAT 116; unkown 2; time: 0.029; 11.793; 1922.321
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 163 (UNSAT): 164/186; SAT 45; UNSAT 117; unkown 2; time: 1.009; 11.728; 1923.330
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 164 (UNSAT): 165/186; SAT 45; UNSAT 118; unkown 2; time: 1.134; 11.663; 1924.464
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 165 (UNSAT): 166/186; SAT 45; UNSAT 119; unkown 2; time: 0.791; 11.598; 1925.255
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 166 (UNSAT): 167/186; SAT 45; UNSAT 120; unkown 2; time: 0.812; 11.533; 1926.068
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 167 (UNSAT): 168/186; SAT 45; UNSAT 121; unkown 2; time: 0.751; 11.469; 1926.819
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 168 (UNSAT): 169/186; SAT 45; UNSAT 122; unkown 2; time: 0.676; 11.405; 1927.494
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 169 (UNSAT): 170/186; SAT 45; UNSAT 123; unkown 2; time: 0.884; 11.343; 1928.378
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 170 (UNSAT): 171/186; SAT 45; UNSAT 124; unkown 2; time: 0.915; 11.282; 1929.293
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 171 (UNSAT): 172/186; SAT 45; UNSAT 125; unkown 2; time: 0.764; 11.221; 1930.057
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 172 (UNSAT): 173/186; SAT 45; UNSAT 126; unkown 2; time: 0.800; 11.161; 1930.857
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 173 (UNSAT): 174/186; SAT 45; UNSAT 127; unkown 2; time: 0.801; 11.101; 1931.658
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 174 (UNSAT): 175/186; SAT 45; UNSAT 128; unkown 2; time: 0.791; 11.043; 1932.449
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 175 (UNSAT): 176/186; SAT 45; UNSAT 129; unkown 2; time: 0.887; 10.985; 1933.336
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 176 (UNSAT): 177/186; SAT 45; UNSAT 130; unkown 2; time: 0.033; 10.923; 1933.369
+This network has 300 neurons.
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 177 (UNSAT): 178/186; SAT 45; UNSAT 131; unkown 2; time: 0.025; 10.862; 1933.394
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 178 (UNSAT): 179/186; SAT 45; UNSAT 132; unkown 2; time: 0.749; 10.805; 1934.143
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 179 (UNSAT): 180/186; SAT 45; UNSAT 133; unkown 2; time: 0.773; 10.750; 1934.916
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(0, 4, 0)], [(1, 4, 0)], [(2, 4, 0)], [(3, 4, 0)]]
+progress: 1/1
+Spec 180 (UNSAT): 181/186; SAT 45; UNSAT 134; unkown 2; time: 49.285; 10.962; 1984.201
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(1, 0, 0)], [(2, 0, 0)], [(3, 0, 0)], [(4, 0, 0)]]
+progress: 1/2
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 1 Failed, without a adversarial example
+progress: 2/2
+Spec 181 (UNKNOWN): 182/186; SAT 45; UNSAT 134; unkown 3; time: 116.477; 11.542; 2100.678
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 182 (UNKNOWN): 183/186; SAT 45; UNSAT 134; unkown 4; time: 116.236; 12.114; 2216.915
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified SAT, with adversarial example with output [-0.00280239 -0.02003434  0.02147168 -0.02003434  0.01961209] for constraints [[(2, 0, 0), (2, 1, 0)], [(3, 0, 0), (3, 1, 0)], [(4, 0, 0), (4, 1, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 183 (SAT): 184/186; SAT 46; UNSAT 134; unkown 4; time: 116.426; 12.681; 2333.341
+This network has 300 neurons.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Verified UNSAT for constraints [[(0, 3, 0)], [(1, 3, 0)], [(2, 3, 0)], [(4, 3, 0)]]
+progress: 1/1
+Spec 184 (UNSAT): 185/186; SAT 46; UNSAT 135; unkown 4; time: 49.055; 12.878; 2382.395
+This network has 300 neurons.
+Box 0 Verified UNSAT for constraints [[(1, 0, 0)], [(2, 0, 0)], [(3, 0, 0)], [(4, 0, 0)]]
+progress: 1/1
+Spec 185 (UNSAT): 186/186; SAT 46; UNSAT 136; unkown 4; time: 34.327; 12.993; 2416.722
+
+Process finished with exit code 0

@@ -1,0 +1,4497 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --instance_file /home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/nn4sys/nn4sys_instances.csv --domain gpupoly --timeout_final_milp 20 --complete True --from_test 0 --max_split_depth 4 --initial_splits 1 --n_test -1
+GPUPoly 0.12.0S Debug (built Apr 23 2021 09:33:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+{'approx_k': True,
+ 'complete': True,
+ 'debug': False,
+ 'domain': 'gpupoly',
+ 'from_test': 0,
+ 'initial_splits': 1,
+ 'instance_file': '/home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/nn4sys/nn4sys_instances.csv',
+ 'k': 3,
+ 'max_gpu_batch': 500,
+ 'max_milp_neurons': 30,
+ 'max_split_depth': 4,
+ 'n_milp_refine': 1,
+ 'n_test': -1,
+ 'netname': None,
+ 'partial_milp': 0,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 70,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 20.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'vnnlib_spec': None}
+img 0 Verified UNSAT for constraints [[(0, -1, -5.0)], [(-1, 0, 157.0)]]
+progress: 1/1
+Spec 0 (UNSAT): 1/71; SAT 0; UNSAT 1; unknown 0; time: 17.820; 17.820; 17.820
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 1 (UNKNOWN): 2/71; SAT 0; UNSAT 1; unknown 1; time: 123.530; 70.675; 141.350
+img 0 Verified UNSAT for constraints [[(0, -1, -57.0)], [(-1, 0, 202.0)]]
+progress: 1/1
+Spec 2 (UNSAT): 3/71; SAT 0; UNSAT 2; unknown 1; time: 11.428; 50.926; 152.777
+Box 0 SAT
+progress: 1/1
+Spec 3 (SAT): 4/71; SAT 1; UNSAT 2; unknown 1; time: 0.816; 38.398; 153.593
+img 0 Verified UNSAT for constraints [[(0, -1, 590.0827456147906)], [(-1, 0, 1970.0699544348208)]]
+progress: 1/1
+Spec 4 (UNSAT): 5/71; SAT 1; UNSAT 3; unknown 1; time: 11.434; 33.005; 165.027
+Box 0 SAT
+progress: 1/1
+Spec 5 (SAT): 6/71; SAT 2; UNSAT 3; unknown 1; time: 0.785; 27.635; 165.812
+Box 0 Verified UNSAT for constraints [[(0, -1, 102.0)], [(-1, 0, 1420.0)]]
+progress: 1/1
+Spec 6 (UNSAT): 7/71; SAT 2; UNSAT 4; unknown 1; time: 15.553; 25.909; 181.365
+Box 0 Verified UNSAT for constraints [[(0, -1, 29073.0)], [(-1, 0, 30292.0)]]
+progress: 1/1
+Spec 7 (UNSAT): 8/71; SAT 2; UNSAT 5; unknown 1; time: 30.504; 26.484; 211.870
+img 0 Verified UNSAT for constraints [[(0, -1, 44.0)], [(-1, 0, 1405.0)]]
+progress: 1/1
+Spec 8 (UNSAT): 9/71; SAT 2; UNSAT 6; unknown 1; time: 4.244; 24.013; 216.113
+Box 0 SAT
+progress: 1/1
+Spec 9 (SAT): 10/71; SAT 3; UNSAT 6; unknown 1; time: 0.493; 21.661; 216.606
+Box 0 Verified UNSAT for constraints [[(0, -1, 2412.798071136597)], [(-1, 0, 23595.50029640977)]]
+progress: 1/1
+Spec 10 (UNSAT): 11/71; SAT 3; UNSAT 7; unknown 1; time: 23.035; 21.786; 239.641
+Box 0 SAT
+progress: 1/1
+Spec 11 (SAT): 12/71; SAT 4; UNSAT 7; unknown 1; time: 0.484; 20.010; 240.125
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Failed, without a adversarial example
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 309.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 614.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 766.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 918.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1070.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 2288.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 2440.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 2593.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 2897.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 3201.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 3354.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 3506.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 3810.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 3963.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 4115.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 4267.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 4419.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 4571.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 4724.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 4876.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 5028.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 5180.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 5332.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 5485.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 5637.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 5789.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 5941.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 6094.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 6246.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 6398.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 6550.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 6702.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 6855.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 7007.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 7159.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 7311.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 7464.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 7616.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 7768.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 7920.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 8072.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 8225.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 8377.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 8529.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 8681.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 8834.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 8986.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 9138.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 9290.0)]]
+progress: 50/50
+Spec 12 (UNKNOWN): 13/71; SAT 4; UNSAT 7; unknown 2; time: 703.053; 72.552; 943.179
+img 0 Verified UNSAT for constraints [[(-1, 0, 9442.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 9595.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 9747.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 9899.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 10051.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 10204.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 10356.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 10508.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 10660.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 10812.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 10965.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 11117.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 11269.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 11421.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 11573.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 11726.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 11878.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 12030.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 12182.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 12335.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 12487.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 12639.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 12791.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 12943.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 13096.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 13248.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 13400.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 13552.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 13705.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 13857.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 14009.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 14161.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 14313.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 14466.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 14618.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 14770.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 14922.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 15075.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 15227.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 15379.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 15531.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 15683.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 15836.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 15988.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 16140.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 16292.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 16444.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 16597.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 16749.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 16901.0)]]
+progress: 50/50
+Spec 13 (UNSAT): 14/71; SAT 4; UNSAT 8; unknown 2; time: 533.444; 105.473; 1476.622
+img 0 Verified UNSAT for constraints [[(-1, 0, 17053.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 17206.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 17358.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 17510.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 17662.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 17814.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 17967.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 18119.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 18271.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 18423.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 18576.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 18728.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 18880.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 19032.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 19184.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 19337.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 19489.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 19641.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 19793.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 19946.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 20098.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 20250.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 20402.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 20554.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 20707.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 20859.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 21011.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 21163.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 21315.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 21468.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 21620.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 21772.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 21924.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 22077.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 22229.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 22381.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 22533.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 22685.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 22838.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 22990.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 23142.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 23294.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 23447.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 23599.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 23751.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 23903.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 24055.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 24208.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 24360.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 24512.0)]]
+progress: 50/50
+Spec 14 (UNSAT): 15/71; SAT 4; UNSAT 9; unknown 2; time: 533.360; 133.999; 2009.982
+img 0 Verified UNSAT for constraints [[(-1, 0, 24664.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 24817.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 24969.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 25121.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 25273.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 25425.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 25578.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 25730.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 25882.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 26034.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 26187.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 26339.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 26491.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 26643.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 26795.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 26948.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 27100.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 27252.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 27404.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 27556.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 27709.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 27861.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 28013.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 28165.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 28318.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 28470.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 28622.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 28774.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 28926.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 29079.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 29231.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 29383.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 29535.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 29688.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 29840.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 29992.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 30144.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 30296.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 30449.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 30601.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 30753.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 30905.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 31058.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 31210.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 31362.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 31514.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 31666.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 31819.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 31971.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 32123.0)]]
+progress: 50/50
+Spec 15 (UNSAT): 16/71; SAT 4; UNSAT 10; unknown 2; time: 533.362; 158.959; 2543.344
+img 0 Verified UNSAT for constraints [[(-1, 0, 32275.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 32427.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 32580.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 32732.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 32884.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 33036.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 33189.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 33341.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 33493.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 33645.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 33797.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 33950.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 34102.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 34254.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 34406.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 34559.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 34711.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 34863.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 35015.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 35167.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 35320.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 35472.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 35624.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 35776.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 35929.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 36081.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 36233.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 36385.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 36537.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 36690.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 36842.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 36994.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 37146.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 37298.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 37451.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 37603.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 37755.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 37907.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 38060.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 38212.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 38364.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 38516.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 38668.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 38821.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 38973.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 39125.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 39277.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 39430.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 39582.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 39734.0)]]
+progress: 50/50
+Spec 16 (UNSAT): 17/71; SAT 4; UNSAT 11; unknown 2; time: 533.345; 180.982; 3076.689
+img 0 Verified UNSAT for constraints [[(-1, 0, 39886.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 40038.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 40191.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 40343.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 40495.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 40647.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 40800.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 40952.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 41104.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 41408.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 41561.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 41713.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 41865.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 42017.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 42169.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 42322.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 42474.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 42778.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 42931.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 43083.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 43235.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 43387.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 43539.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 43692.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 43844.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 43996.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 44148.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 44301.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 44453.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 44605.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 44757.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 44909.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 45062.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 45214.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 45366.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 45518.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 45671.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 45823.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 45975.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 46127.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 46279.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 46432.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 46584.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 46736.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 46888.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 47041.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 47193.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 47345.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 47497.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 47649.0)]]
+progress: 50/50
+Spec 17 (UNSAT): 18/71; SAT 4; UNSAT 12; unknown 2; time: 533.314; 200.556; 3610.003
+img 0 Verified UNSAT for constraints [[(-1, 0, 47802.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 47954.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 48106.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 48258.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 48410.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 48563.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 48867.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 49019.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 49172.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 49324.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 49476.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 49628.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 49780.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 49933.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 50085.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 50237.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 50389.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 50542.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 50694.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 50846.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 50998.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 51150.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 51303.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 51455.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 51607.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 51759.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 51912.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 52064.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 52216.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 52368.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 52520.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 52673.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 53586.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 53738.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 53890.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 54043.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 54195.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 54347.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 54499.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 54651.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 54804.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 54956.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 55108.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 55260.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 55413.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 55565.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 55717.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 55869.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 56021.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 56174.0)]]
+progress: 50/50
+Spec 18 (UNSAT): 19/71; SAT 4; UNSAT 13; unknown 2; time: 533.278; 218.067; 4143.281
+img 0 Verified UNSAT for constraints [[(-1, 0, 56326.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 56478.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 56630.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 56783.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 56935.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 57087.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 57239.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 57391.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 57544.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 57696.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 57848.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 58000.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 58152.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 58305.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 58457.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 58609.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 58761.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 58914.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 59066.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 59218.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 59370.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 59522.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 59675.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 59827.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 59979.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 60131.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 60284.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 60436.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 60588.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 60740.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 60892.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 61045.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 61197.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 61349.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 61501.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 61654.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 61806.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 61958.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 62110.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 62262.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 62415.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 62567.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 62719.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 62871.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 63024.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 63176.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 63328.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 63480.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 63632.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 63785.0)]]
+progress: 50/50
+Spec 19 (UNSAT): 20/71; SAT 4; UNSAT 14; unknown 2; time: 533.249; 233.826; 4676.530
+img 0 Verified UNSAT for constraints [[(-1, 0, 63937.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 64089.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 64241.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 64393.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 64546.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 64698.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 64850.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 65002.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 65155.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 65307.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 65459.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 65611.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 65763.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 65916.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 66068.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 66220.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 66372.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 66525.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 66677.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 66829.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 66981.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 67133.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 67286.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 67438.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 67590.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 67742.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 67895.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 68047.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 68199.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 68351.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 68503.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 68656.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 68808.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 68960.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 69112.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 69264.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 69417.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 69569.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 69721.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 69873.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 70026.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 70178.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 70330.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 70482.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 70634.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 70787.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 70939.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 71091.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 71243.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 71396.0)]]
+progress: 50/50
+Spec 20 (UNSAT): 21/71; SAT 4; UNSAT 15; unknown 2; time: 533.220; 248.083; 5209.750
+img 0 Verified UNSAT for constraints [[(-1, 0, 71548.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 71700.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 71852.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 72004.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 72157.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 72309.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 72461.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 72613.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 72766.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 72918.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 73070.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 73222.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 73374.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 73527.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 73679.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 73831.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 73983.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 74135.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 75658.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 75810.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 75962.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 76114.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 76267.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 77332.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 77484.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 77637.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 77789.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 77941.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 78398.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 78550.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 78702.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 78854.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 79006.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 79159.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 79311.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 79463.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 79615.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 79768.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 79920.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 80224.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 80376.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 80529.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 80681.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 80833.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 80985.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 81290.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 81442.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 86009.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 86161.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 86313.0)]]
+progress: 50/50
+Spec 21 (UNSAT): 22/71; SAT 4; UNSAT 16; unknown 2; time: 533.248; 261.045; 5742.998
+img 0 Verified UNSAT for constraints [[(-1, 0, 86465.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 86617.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 86770.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 86922.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 87379.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 87683.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 87835.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 87987.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 88140.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 88292.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 88444.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 88596.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 88749.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 88901.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 89053.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 89205.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 89357.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 89510.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 89662.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 89814.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 89966.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 90118.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 90271.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 90423.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 90575.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 90727.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 90880.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 91032.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 91184.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 91336.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 91488.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 91641.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 94685.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 95294.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 95446.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 96359.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 96512.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 96664.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 96816.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 96968.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 97121.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 97273.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 97425.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 97577.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 97729.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 97882.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 98034.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 98186.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 98338.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 98491.0)]]
+progress: 50/50
+Spec 22 (UNSAT): 23/71; SAT 4; UNSAT 17; unknown 2; time: 533.192; 272.878; 6276.190
+img 0 Verified UNSAT for constraints [[(-1, 0, 98643.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 98795.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 98947.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 99099.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 99252.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 99404.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 99556.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 99708.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 99860.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 100013.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 100317.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 100469.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 100622.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 100774.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 100926.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 101078.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 101230.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 101383.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 101535.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 101687.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 101839.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 102144.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 103057.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 103362.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 103514.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 103666.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 103818.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 103970.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 104123.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 104275.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 104427.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 104579.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 104732.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 104884.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 105036.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 105188.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 105340.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 105493.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 105645.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 105797.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 105949.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 106101.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 106254.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 106406.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 106558.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 106710.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 106863.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 107015.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 107167.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 107928.0)]]
+progress: 50/50
+Spec 23 (UNSAT): 24/71; SAT 4; UNSAT 18; unknown 2; time: 533.261; 283.727; 6809.451
+img 0 Verified UNSAT for constraints [[(-1, 0, 108080.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 108233.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 108385.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 108537.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 108689.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 108841.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 108994.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 109146.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 109298.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 109450.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 109603.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 109755.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 109907.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 110059.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 110211.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 110364.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 110516.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 110668.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 110820.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 110972.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 111125.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 111277.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 111429.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 111581.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 111734.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 111886.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 112038.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 112190.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 112342.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 112495.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 112647.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 112799.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 112951.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 113104.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 113256.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 113408.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 113560.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 113712.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 113865.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 114017.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 114169.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 114321.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 114474.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 114626.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 114778.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 114930.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 115082.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 115235.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 115387.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 115539.0)]]
+progress: 50/50
+Spec 24 (UNSAT): 25/71; SAT 4; UNSAT 19; unknown 2; time: 533.184; 293.705; 7342.635
+img 0 Verified UNSAT for constraints [[(-1, 0, 115691.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 115843.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 115996.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 116148.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 116300.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 116452.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 116605.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 116757.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 116909.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 117061.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 117213.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 117366.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 117518.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 117670.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 117822.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 117975.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 118127.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 118279.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 118431.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 118583.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 118736.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 118888.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 119040.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 119192.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 119345.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 119497.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 119649.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 119801.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 119953.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 120106.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 120258.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 120410.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 120562.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 120715.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 120867.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 121019.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 121171.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 121323.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 121476.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 121780.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 121932.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 122084.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 122237.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 122389.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 122541.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 122693.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 122846.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 123150.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 123302.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 123454.0)]]
+progress: 50/50
+Spec 25 (UNSAT): 26/71; SAT 4; UNSAT 20; unknown 2; time: 533.176; 302.916; 7875.810
+img 0 Verified UNSAT for constraints [[(-1, 0, 123607.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 123759.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 123911.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 124063.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 124216.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 124368.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 124520.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 124672.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 124824.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 124977.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 125129.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 125281.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 125433.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 125586.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 125738.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 125890.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 126042.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 126194.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 126347.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 126499.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 126651.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 126803.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 126955.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 127108.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 127260.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 127412.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 127564.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 127717.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 127869.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 128021.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 128173.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 128325.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 128478.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 128630.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 128782.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 128934.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 129087.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 129239.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 129391.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 129543.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 129695.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 129848.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 130000.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 130152.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 130304.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 130457.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 130609.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 130761.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 130913.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 131065.0)]]
+progress: 50/50
+Spec 26 (UNSAT): 27/71; SAT 4; UNSAT 21; unknown 2; time: 533.187; 311.444; 8408.997
+img 0 Verified UNSAT for constraints [[(-1, 0, 131218.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 131370.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 131522.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 131674.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 131826.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 131979.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 132131.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 132283.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 132435.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 132588.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 132740.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 132892.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 133044.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 133196.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 133349.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 133501.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 133653.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 133805.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 133958.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 134110.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 134262.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 134414.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 134566.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 134719.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 134871.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 135632.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 135784.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 136241.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 136393.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 136545.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 136697.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 136850.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 137002.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 137154.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 137306.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 137459.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 137611.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 137763.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 137915.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 138067.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 138220.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 138372.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 138524.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 138676.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 138829.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 139894.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 140046.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 140199.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 140351.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 140503.0)]]
+progress: 50/50
+Spec 27 (UNSAT): 28/71; SAT 4; UNSAT 22; unknown 2; time: 533.161; 319.363; 8942.158
+img 0 Verified UNSAT for constraints [[(-1, 0, 202.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 492.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 637.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 927.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1072.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1217.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1362.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1507.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1652.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1797.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1942.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 2087.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 2232.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 2377.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 2667.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 2812.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 3102.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 3247.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 3537.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 3827.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 4117.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 4407.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 4697.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 4987.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 5277.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 5422.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 5712.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 5857.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 6002.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 6292.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 6437.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 6727.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 6872.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 7162.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 7307.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 7452.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 7742.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 7887.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 8032.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 8322.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 8467.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 8612.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 8902.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 9047.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 9192.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 9337.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 9627.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 9772.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 9917.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 10352.0)]]
+progress: 50/50
+Spec 28 (UNSAT): 29/71; SAT 4; UNSAT 23; unknown 2; time: 533.060; 326.732; 9475.218
+img 0 Verified UNSAT for constraints [[(-1, 0, 10497.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 10642.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 10932.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 11077.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 11222.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 11367.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 11657.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 11802.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 11947.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 12092.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 12382.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 12527.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 12672.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 12817.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 13252.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 13397.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 13542.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 13687.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 13977.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 14122.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 14267.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 14412.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 14557.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 14992.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 15137.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 15282.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 15427.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 15862.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 16007.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 16152.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 16297.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 16442.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 17022.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 17167.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 17312.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 17457.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 17602.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 17747.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 17892.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 18472.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 18617.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 18762.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 18907.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 19052.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 19197.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 19342.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 19487.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 20647.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 20792.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 20937.0)]]
+progress: 50/50
+Spec 29 (UNSAT): 30/71; SAT 4; UNSAT 24; unknown 2; time: 533.087; 333.610; 10008.305
+img 0 Verified UNSAT for constraints [[(-1, 0, 21082.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 21227.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 21372.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 21517.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 21662.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 21807.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 21952.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 22097.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 22242.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 22387.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 22532.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 22677.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 22822.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 22967.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 25577.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 25722.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 25867.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 26012.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 26157.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 26302.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 26447.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 26592.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 27317.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 27462.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 27607.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 27752.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 28042.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 28767.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 28912.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 29057.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 29202.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 29347.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 30072.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 30217.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 30652.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 30797.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 30942.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 31087.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 31522.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 31667.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 31812.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 32247.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 32392.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 32827.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 32972.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 33407.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 33552.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 33697.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 33842.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 33987.0)]]
+progress: 50/50
+Spec 30 (UNSAT): 31/71; SAT 4; UNSAT 25; unknown 2; time: 533.094; 340.045; 10541.399
+img 0 Verified UNSAT for constraints [[(-1, 0, 34857.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 35002.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 35147.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 35872.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 36017.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 36162.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 36452.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 36597.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 37467.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 37612.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 37757.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 37902.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 38047.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 38917.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 39062.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 39352.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 39497.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 39642.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 39787.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 39932.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 40077.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 40222.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 40367.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 40512.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 40657.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 40802.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 40947.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 41092.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 41237.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 41382.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 41527.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 41672.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 41817.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 41962.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 42107.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 42252.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 42397.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 43412.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 43557.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 43702.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 43847.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 43992.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 44137.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 44282.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 44427.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 44572.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 44717.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 44862.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 45007.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 45152.0)]]
+progress: 50/50
+Spec 31 (UNSAT): 32/71; SAT 4; UNSAT 26; unknown 2; time: 533.191; 346.081; 11074.591
+img 0 Verified UNSAT for constraints [[(-1, 0, 45297.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 45442.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 45732.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 46602.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 46747.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 46892.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 47037.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 47182.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 47327.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 47472.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 47617.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 47762.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 48052.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 48197.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 48342.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 48487.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 48632.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 48922.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 49647.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 49792.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 49937.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 50082.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 50227.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 50807.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 50952.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 51097.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 51242.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 51387.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 51532.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 51822.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 51967.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 52112.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 52257.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 52402.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 52547.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 52837.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 52982.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 53127.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 53272.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 53417.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 53707.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 54577.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 54867.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 55012.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 55592.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 55882.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 56027.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 56172.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 56317.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 56462.0)]]
+progress: 50/50
+Spec 32 (UNSAT): 33/71; SAT 4; UNSAT 27; unknown 2; time: 533.205; 351.751; 11607.796
+img 0 Verified UNSAT for constraints [[(-1, 0, 56607.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 58492.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 58637.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 58782.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 58927.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 59217.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 59362.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 59652.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 59942.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 60087.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 60812.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 62407.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 63277.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 63422.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 63567.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 63712.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 64002.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 64582.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 64727.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 65017.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 65162.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 66757.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 66902.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 67337.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 67917.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 68062.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 68207.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 68352.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 68497.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 68787.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 68932.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 69077.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 69222.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 69367.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 69512.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 71397.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 71542.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 72412.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 72991.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 73136.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 73281.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 73571.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 73716.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 74006.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 74296.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 74586.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 74876.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 75311.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 75456.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 77196.0)]]
+progress: 50/50
+Spec 33 (UNSAT): 34/71; SAT 4; UNSAT 28; unknown 2; time: 533.217; 357.089; 12141.012
+img 0 Verified UNSAT for constraints [[(-1, 0, 77341.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 77631.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 77776.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 78211.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 78501.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 78646.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 78791.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 78936.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 79081.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 79226.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 79516.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 79661.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 79806.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 79951.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 80096.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 80241.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 80386.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 81401.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 81546.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 81691.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 81836.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 81981.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 82126.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 82271.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 82416.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 82706.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 82851.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 82996.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 83141.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 83286.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 83431.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 83576.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 83866.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 84011.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 84156.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 84301.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 84591.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 84736.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 85026.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 85171.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 85316.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 85606.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 85751.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 85896.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 86041.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 86186.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 86331.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 86476.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 86621.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 86766.0)]]
+progress: 50/50
+Spec 34 (UNSAT): 35/71; SAT 4; UNSAT 29; unknown 2; time: 533.215; 362.121; 12674.227
+img 0 Verified UNSAT for constraints [[(-1, 0, 87056.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 87201.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 87491.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 87636.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 87781.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 87926.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 88071.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 88216.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 88361.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 88506.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 88651.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 88796.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 88941.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 89086.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 89521.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 89666.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 89811.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 90536.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 90681.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 91116.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 91841.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 92566.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 92856.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 93001.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 93146.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 93291.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 93436.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 93581.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 93726.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 93871.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 94596.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 94741.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 94886.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 95031.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 95176.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 95901.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 96046.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 96191.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 96481.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 96626.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 96771.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 97061.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 97351.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 98076.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 98221.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 98366.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 98511.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 98656.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 99381.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 99526.0)]]
+progress: 50/50
+Spec 35 (UNSAT): 36/71; SAT 4; UNSAT 30; unknown 2; time: 533.201; 366.873; 13207.428
+img 0 Verified UNSAT for constraints [[(-1, 0, 99671.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 99961.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 100106.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 100396.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 100541.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 100831.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 100976.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 101121.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 101556.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 101701.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 101846.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 102426.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 102571.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 102716.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 102861.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 103296.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 103441.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 103586.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 103731.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 103876.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 104601.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 104746.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 104891.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 105036.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 105181.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 105326.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 105471.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 105616.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 105761.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 105906.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 106051.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 106196.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 106341.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 106486.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 106631.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 106776.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 106921.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 107066.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 107356.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 107936.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 108081.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 108226.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 108371.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 109096.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 109241.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 109386.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 109821.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 109966.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 110546.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 110981.0)]]
+progress: 50/50
+Spec 36 (UNSAT): 37/71; SAT 4; UNSAT 31; unknown 2; time: 533.186; 371.368; 13740.614
+img 0 Verified UNSAT for constraints [[(-1, 0, 111126.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 111416.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 111706.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 111851.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 112286.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 112576.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 112866.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 113156.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 113301.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 113591.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 114026.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 114316.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 114751.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 115041.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 115186.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 115331.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 115476.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 115621.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 115766.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 116056.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 116346.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 116491.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 116781.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 116926.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 117071.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 117216.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 117361.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 117506.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 117651.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 117796.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 118086.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 118231.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 118376.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 118521.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 118666.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 118956.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 119101.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 119246.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 119681.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 119826.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 119971.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 120696.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 120841.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 120986.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 121131.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 121276.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 124031.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 124176.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 124321.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 124466.0)]]
+progress: 50/50
+Spec 37 (UNSAT): 38/71; SAT 4; UNSAT 32; unknown 2; time: 533.166; 375.626; 14273.780
+img 0 Verified UNSAT for constraints [[(-1, 0, 125046.0)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 125191.0)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 125336.0)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 125481.0)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 125626.0)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 126351.0)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 126496.0)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 126641.0)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 126786.0)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 126931.0)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 127076.0)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 127221.0)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 127366.0)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 127511.0)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 127656.0)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 127801.0)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 127946.0)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 128381.0)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 128526.0)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 128671.0)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 128816.0)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 129106.0)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 129251.0)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 129396.0)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 129541.0)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 129686.0)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 129831.0)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 129976.0)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 130121.0)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 130266.0)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 132441.0)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 132586.0)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 132731.0)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 132876.0)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 133311.0)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 133456.0)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 133601.0)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 133746.0)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 133891.0)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 134036.0)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 134181.0)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 134326.0)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 134471.0)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 134616.0)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 134761.0)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 134906.0)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 135051.0)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 135196.0)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 135341.0)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 135486.0)]]
+progress: 50/50
+Spec 38 (UNSAT): 39/71; SAT 4; UNSAT 33; unknown 2; time: 533.214; 379.667; 14806.994
+img 0 Verified UNSAT for constraints [[(-1, 0, 1970.0699544348208)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 4619.157717646643)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 7215.517708464618)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 9803.823953351324)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 12397.71819126078)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 15002.480377937825)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 17545.26727049765)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 20209.465491743733)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 22820.0471075588)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 25368.23041766866)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 27948.870981542077)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 30578.50693137331)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 33206.69824128907)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 35818.27579392493)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 38414.29918469063)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 41007.51016837245)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 43612.36545814861)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 46181.6526728379)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 48799.34954377085)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 51412.089286967166)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 54012.907023068045)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 56591.90379044364)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 59219.17770957496)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 64408.180383932246)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 69618.15966794826)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 74815.3593723686)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 79979.33801165957)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 85212.01710949698)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 90415.87005858697)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 95569.69718745901)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 100748.37965228655)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 106007.70215000531)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 111148.22335763085)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 116410.91917378255)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 121552.71098353714)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 126817.43696750325)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 131997.9592170537)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 137146.58567970584)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 142415.12782704446)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 147597.5132931848)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 152796.4462850021)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 155375.6098629786)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 157934.13650338404)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 160616.06560251385)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 163183.92441094542)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 165810.56412548514)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 168355.39246124498)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 170997.86486301315)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 173537.603054321)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 176179.31715694955)]]
+progress: 50/50
+Spec 39 (UNSAT): 40/71; SAT 4; UNSAT 34; unknown 2; time: 533.331; 383.508; 15340.325
+img 0 Verified UNSAT for constraints [[(-1, 0, 178799.9809698968)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 181418.28662841397)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 183998.03577009522)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 186593.9636409678)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 189203.37913129333)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 191767.53663328526)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 194350.14196590806)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 196983.1480396048)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 199607.2074981162)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 202186.66771439553)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 204761.5805851708)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 207356.09373407107)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 210013.07698668406)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 212556.18381257588)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 215187.89069827605)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 217816.3200583214)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 220404.11798139403)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 223003.18399246986)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 225563.07701316924)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 228187.32652579696)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 230777.71101492707)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 233395.8119501831)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 235995.14935462005)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 238580.00819410395)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 241206.57028696014)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 243748.69157856004)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 246410.23753735257)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 248997.3669764448)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 262000.0681285478)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 267194.2329275517)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 272339.55834244756)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 277618.7469826357)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 282794.24155221053)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 288012.36965798005)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 293214.5132697317)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 295750.7319962349)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 298412.75300502736)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 301004.53947180527)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 306211.89977417083)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 308801.90785980027)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 314005.63554011495)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 316611.19781175914)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 319211.01633972273)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 321758.8134184801)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 327010.3431992149)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 329577.63386467495)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 332214.28401063127)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 334769.8391284182)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 340010.5762243627)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 342611.325938999)]]
+progress: 50/50
+Spec 40 (UNSAT): 41/71; SAT 4; UNSAT 35; unknown 2; time: 533.397; 387.164; 15873.722
+img 0 Verified UNSAT for constraints [[(-1, 0, 347799.3124959033)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 350405.84907563287)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 352972.36782749486)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 355617.0477511616)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 360749.4708931958)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 363397.52269650745)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 366001.3352962105)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 368575.79178288963)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 373813.5057820441)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 376407.713315337)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 381604.14081407414)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 384201.98006958613)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 386765.91383472795)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 389386.4415491987)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 394580.7176435257)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 397169.05682163907)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 399814.3078324167)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 402384.4833242735)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 407611.3463407244)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 410205.21259788447)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 415357.12314811395)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 418001.3413181976)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 420595.5242347714)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 423170.53757659986)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 428409.1508983589)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 430963.5997534428)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 433597.110416295)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 436193.77298786736)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 441382.6493140183)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 444008.7259480896)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 449182.79271974775)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 451801.54419096455)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 454389.755427737)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 456995.91546081554)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 462201.1968683387)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 464804.6667691397)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 467397.4145886783)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 469991.9991894808)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 475211.04098054767)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 477808.6014946647)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 480337.06566724787)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 483013.39000200946)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 485584.94906664646)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 488191.53455602174)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 490752.57355422224)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 495999.23674851883)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 501212.6488302799)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 503769.2199995719)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 506379.82754306647)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 509010.76275713777)]]
+progress: 50/50
+Spec 41 (UNSAT): 42/71; SAT 4; UNSAT 36; unknown 2; time: 533.355; 390.645; 16407.077
+img 0 Verified UNSAT for constraints [[(-1, 0, 524598.276831382)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 529756.1139702292)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 534884.4995753206)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 540210.797016579)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 542789.728170652)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 545341.4548226168)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 547997.6847514492)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 550584.5786336812)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 553159.9470656576)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 558372.9567601943)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 563584.0034769266)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 566212.5753237781)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 568802.6110453727)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 571408.5032449325)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 573994.9097661336)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 576605.8517483643)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 581792.0773055343)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 586979.3305630651)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 589606.6811589176)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 592185.1343151559)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 594746.0079956109)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 597403.9939413425)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 600000.3097256981)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 605190.6822147736)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 610371.555837282)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 612993.9161452543)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 615596.0970580517)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 618208.8480332878)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 620787.2467190286)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 623409.7607877217)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 628612.131953737)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 633808.4691399895)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 636410.2770284847)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 639004.3955303556)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 641564.9952207543)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 644162.8608966084)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 646808.1139149114)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 652007.7012631522)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 657143.4693556979)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 659774.3753123326)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 662402.7276797076)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 664955.3310013963)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 667581.0095176201)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 670212.3994865946)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 675407.1738648084)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 680554.7598782314)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 683171.2333337665)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 685731.3821157553)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 688400.3324307677)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 691007.7007761613)]]
+progress: 50/50
+Spec 42 (UNSAT): 43/71; SAT 4; UNSAT 37; unknown 2; time: 533.300; 393.962; 16940.377
+img 0 Verified UNSAT for constraints [[(-1, 0, 693615.2071651627)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 698785.8112898534)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 703900.8278176297)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 706571.6161793275)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 709200.5736768033)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 711789.9689245668)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 714406.3039377453)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 716990.9975304869)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 722191.344285539)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 727405.2088882923)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 729965.0437325847)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 732602.8354524374)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 735196.2804078679)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 737781.116805433)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 740343.8795562191)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 745590.6782964135)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 750800.2828281154)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 753382.3187773228)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 756013.8732418034)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 758542.8203934904)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 761176.4972910204)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 763792.9820005326)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 768996.456504374)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 784613.7016621252)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 787200.4123343477)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 789784.3551385885)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 792323.9006600712)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 795014.303798287)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 797595.3553591822)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 800125.6552350188)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 802786.7468542858)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 805382.6726756385)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 808011.1462582161)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 810608.1891435843)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 813196.8747793837)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 815791.3089945668)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 818409.43514737)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 820992.1661054092)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 823583.3333277137)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 826202.12339473)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 828779.6574885319)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 831409.2676271681)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 833974.1649307094)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 836609.0116390625)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 839201.2001193326)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 841779.7079022734)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 844354.3242257551)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 846997.2493624544)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 849612.3454981146)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 854783.7081716259)]]
+progress: 50/50
+Spec 43 (UNSAT): 44/71; SAT 4; UNSAT 38; unknown 2; time: 533.270; 397.128; 17473.648
+img 0 Verified UNSAT for constraints [[(-1, 0, 859993.2833383031)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 865213.1110496006)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 870386.2433334789)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 875610.4970464599)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 880809.1135144096)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 883391.0291478084)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 885948.6140452737)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 888613.0999995361)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 891147.4501081122)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 893805.9986889522)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 896403.1365259448)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 899005.6508780395)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 901577.0656641258)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 904155.2534435892)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 906754.3397561894)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 909368.2676700121)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 912010.7100122704)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 914612.6008478694)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 917212.1756071914)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 919778.0277897243)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 922408.2868188814)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 924968.911038059)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 927521.1858798319)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 930169.9168311681)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 935403.1784193648)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 940596.9173462712)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 945784.4531883479)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 950990.5603166218)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 956190.026888528)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 958812.726827895)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 961398.5626735992)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 964011.5065498049)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 966601.3900190361)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 969199.0413838851)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 971788.7364705794)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 974393.1543663929)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 976953.0787377661)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 979610.8565411638)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 982163.0019535441)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 984779.3552910816)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 987370.8517141619)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 989984.9839536778)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 992609.5254552194)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 995170.0261649191)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 997808.4333763451)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 1000369.8042512003)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 1005569.8220841374)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 1010782.0683039442)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 1015999.1495118546)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 1021201.5737189209)]]
+progress: 50/50
+Spec 44 (UNSAT): 45/71; SAT 4; UNSAT 39; unknown 2; time: 533.253; 400.153; 18006.900
+img 0 Verified UNSAT for constraints [[(-1, 0, 1026354.5266453647)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 1041994.7216969826)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 1044610.4614302478)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 1047186.7241687732)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1049805.2490283852)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1052394.424908853)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1055008.8668204267)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1057603.7336787924)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1060208.649667851)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1062794.7975690383)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1067985.757527939)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 1073196.1285691748)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 1078412.2351900437)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 1083567.1215565724)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 1086191.2081352111)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 1088760.6774373183)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 1091377.9283045963)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 1093999.064142149)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 1096592.843823702)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 1099211.704500279)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 1101811.4471916123)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 1104401.8676258563)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 1107010.350462232)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 1109587.735184852)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 1112199.3614713766)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 1117399.5534526845)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 1122588.37966426)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 1127801.8647797392)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 1132964.6596080489)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 1135581.8012494608)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 1138204.507613529)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 1140793.2561800089)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 1143409.5273759894)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 1145979.0871254473)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 1148517.8642652722)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 1151170.1052793737)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 1153744.4150931376)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 1156330.714183218)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 1158986.64851557)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 1161607.2234526798)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 1166773.9753371654)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 1171967.8426566906)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 1177211.1544268527)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 1182358.5031653112)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 1184978.0404519937)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 1187603.8653061201)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 1190178.7084722908)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 1192806.3385362742)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 1195396.0712625068)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 1198001.1229899586)]]
+progress: 50/50
+Spec 45 (UNSAT): 46/71; SAT 4; UNSAT 40; unknown 2; time: 533.224; 403.046; 18540.124
+img 0 Verified UNSAT for constraints [[(-1, 0, 1200605.8870624788)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 1203201.7393081607)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 1205800.140245784)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 1208399.4902053634)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1211005.829655425)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1216197.7135041254)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1221410.8107760402)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1226575.082382667)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1231652.9872505488)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1234362.3167628252)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1236979.3617313332)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 1239609.5982859458)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 1242202.0756776386)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 1244806.1071013461)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 1247344.1101874905)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 1249982.614618745)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 1252594.6505034948)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 1255172.5488614608)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 1257800.7055460145)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 1260408.0281404727)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 1265597.9191452537)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 1270728.3748797034)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 1275999.729686956)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 1281133.4235004308)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 1283804.2380076027)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 1286341.8760173412)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 1289004.2288115702)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 1301991.508840922)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 1307172.4039354366)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 1312319.6444872506)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 1317599.7313217528)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 1320195.4122199903)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 1322794.03946252)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 1325399.8568026745)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 1327993.41291303)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 1330605.409372813)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 1333198.6298430378)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 1335774.3856350998)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 1338349.930346763)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 1341008.2948652385)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 1343602.867346297)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 1346208.563758872)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 1351395.4288585198)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 1356602.011516325)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 1361808.7775933845)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 1366952.1285907463)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 1369590.5439366316)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 1372198.950450027)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 1374792.3707511574)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 1377391.412194116)]]
+progress: 50/50
+Spec 46 (UNSAT): 47/71; SAT 4; UNSAT 41; unknown 2; time: 533.225; 405.816; 19073.349
+img 0 Verified UNSAT for constraints [[(-1, 0, 1379978.7818214346)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 1382587.4123999635)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 1385200.4573021545)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 1387772.64095699)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1390396.7494614797)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1395604.0969447829)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1400756.5768788336)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1405991.1234054414)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1408591.9305272116)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1411175.24961735)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1413765.690194287)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 1416374.2832050594)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 1419004.8870893733)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 1421575.4474508576)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 1424189.9600669616)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 1429381.1341320947)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 1434581.0213318272)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 1439776.285896996)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 1442388.3738626146)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 1445002.680963608)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 1447601.9264602442)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 1450167.0413582977)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 1452807.046123966)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 1455383.2187460265)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 1457997.468479986)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 1460608.0956261056)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 1463197.873128222)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 1468331.601006751)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 1473602.7818088369)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 1478774.4196301945)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 1481406.148767855)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 1483991.9033197681)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 1486586.9175093235)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 1489175.2022578018)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 1491803.2471655556)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 1494405.3914414768)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 1496974.0404090567)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 1499595.746782633)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 1502152.0527563682)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 1507395.7613482142)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 1512493.2626794777)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 1517788.2652569162)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 1520399.603567244)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 1523006.3165742108)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 1525568.3182153085)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 1528178.8440455114)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 1530743.2936579003)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 1533338.9646067682)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 1535993.7021273882)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 1538585.2369612078)]]
+progress: 50/50
+Spec 47 (UNSAT): 48/71; SAT 4; UNSAT 42; unknown 2; time: 533.210; 408.470; 19606.559
+img 0 Verified UNSAT for constraints [[(-1, 0, 1541196.465204952)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 1546395.7293155757)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 1561993.3553728145)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 1567197.3442535144)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1572389.80865647)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1577533.6084054383)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1580178.6726625138)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1582790.631519551)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1585377.655423292)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1587943.4015125358)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1590580.1301228204)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 1593203.3366742795)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 1595736.0302298232)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 1598386.7769730939)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 1600984.6824802407)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 1606175.1064983099)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 1611402.2397271143)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 1616601.0679411269)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 1621783.9867990967)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 1624406.9958895897)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 1627006.4922340252)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 1629576.9092447935)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 1632194.4139483334)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 1634795.3628281476)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 1637379.055354441)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 1639977.5298052924)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 1642606.8774191723)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 1645105.5829125885)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 1650397.9562999543)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 1655594.6006437875)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 1660799.6099098162)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 1666005.8937007529)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 1668577.1116085073)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 1671188.8884786735)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 1673801.759210423)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 1676379.97038372)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 1678997.1648005596)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 1681590.4115877093)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 1684203.5238784328)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 1686786.4183156218)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 1689379.1991396304)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 1691982.9928815803)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 1694564.18913324)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 1699783.80499537)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 1704993.8671777104)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 1710200.70641942)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 1712777.7359192977)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 1715362.2734732544)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 1718004.4958144464)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 1720524.394874027)]]
+progress: 50/50
+Spec 48 (UNSAT): 49/71; SAT 4; UNSAT 43; unknown 2; time: 533.161; 411.015; 20139.721
+img 0 Verified UNSAT for constraints [[(-1, 0, 1723192.8228304014)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 1725763.769988487)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 1728371.9325258485)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 1731002.0291211214)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1733562.8459630338)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1736202.2821851666)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1738740.2628820664)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1744000.0415169038)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1749184.8270832687)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1754364.1303367154)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1756990.9900279369)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 1759557.204220634)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 1762171.7189220404)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 1764776.8687063847)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 1767399.3117466362)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 1769953.2159000929)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 1772599.8087526597)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 1775154.793612282)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 1777784.2407949776)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 1780404.4463187512)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 1782885.969505173)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 1788159.6127815174)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 1793372.9559627404)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 1798594.5749060246)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 1801196.3484476346)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 1803789.1069513708)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 1806405.989608727)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 1808996.4220915092)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 1821990.785137081)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 1824560.3893609557)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 1827206.1153860055)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 1829775.5119515806)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 1832402.729548109)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 1834988.8246545065)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 1837565.4748061849)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 1840193.8648397694)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 1842709.4758970425)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 1845388.650696617)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 1847987.864322016)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 1850578.5822203634)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 1853138.5776513421)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 1855801.7371394471)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 1858398.1819593343)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 1860941.137229452)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 1866203.0742081297)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 1871390.6047430201)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 1873985.3307393948)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 1876600.3478957703)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 1879191.2470090478)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 1884341.6838988326)]]
+progress: 50/50
+Spec 49 (UNSAT): 50/71; SAT 4; UNSAT 44; unknown 2; time: 533.170; 413.458; 20672.890
+img 0 Verified UNSAT for constraints [[(-1, 0, 1886989.24942271)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 1889601.9784650854)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 1892199.3494593168)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 1894788.5751713715)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 1897351.8853873606)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 1902598.896212287)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 1905193.9827083768)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 1907795.3367794238)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 1910358.8932892443)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 1912990.1679911606)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 1915579.437906268)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 1920802.8841087876)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 1923396.8122474472)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 1925990.2918936699)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 1928573.6146943802)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 1933795.5146662537)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 1939001.1919403195)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 1941573.549101803)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 1944171.0348305493)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 1946805.018381219)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 1951976.857785935)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 1957196.2010427397)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 1959792.7047899263)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 1962385.264733063)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 1964998.6569782558)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 1970100.814316453)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 1972793.6300849183)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 1975396.8753562765)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 1977939.3559984253)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 1980593.4117374253)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 1983198.0231647533)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 1988314.035943932)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 1990883.8045405722)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 1993571.8919302374)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 1996184.0073411413)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 1998796.9320580359)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 2001371.8519173774)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 2006603.4736511067)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 2009196.148331556)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 2011799.4209349263)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 2014371.1335277164)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 2019597.646970975)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 2024798.751746708)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 2027404.456590592)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 2030001.6812871997)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 2032541.8849867834)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 2037757.2970522307)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 2042985.8446150152)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 2045556.0063234894)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 2048190.7188812257)]]
+progress: 50/50
+Spec 50 (UNSAT): 51/71; SAT 4; UNSAT 45; unknown 2; time: 533.117; 415.804; 21206.008
+img 0 Verified UNSAT for constraints [[(-1, 0, 2050783.5353040826)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 2053350.0933186822)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 2055936.3825270599)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 2061199.320770422)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 2066403.1054495487)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 2081997.2875129837)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 2084587.0597062006)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 2087200.9745404492)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 2089789.4590694197)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 2092337.8782779935)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 2094961.535131195)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 2097585.960687788)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 2100199.0009323275)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 2102770.9232202717)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 2105401.0340185403)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 2110538.939595919)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 2115740.2917462075)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 2118389.186528117)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 2120985.3334200648)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 2123586.707267176)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 2126191.802554236)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 2128798.6949418206)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 2131392.6432145853)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 2134002.5095020966)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 2136598.8405249114)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 2139159.824945935)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 2144371.0431357175)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 2149574.927104029)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 2152199.7064344287)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 2154775.71700217)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 2157398.2878688667)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 2159985.781382953)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 2162435.7953938292)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 2165201.2755733975)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 2167784.5891358624)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 2170354.438466819)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 2173000.882266983)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 2178129.6351916958)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 2183362.9997873385)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 2185996.099639917)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 2188591.618864107)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 2191174.396382343)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 2193795.364939882)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 2196392.633311458)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 2198997.071968793)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 2201588.343999015)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 2204114.7874872186)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 2206766.5914380085)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 2211949.382685447)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 2217200.6536431657)]]
+progress: 50/50
+Spec 51 (UNSAT): 52/71; SAT 4; UNSAT 46; unknown 2; time: 533.117; 418.060; 21739.125
+img 0 Verified UNSAT for constraints [[(-1, 0, 2219791.198891768)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 2222379.6791271954)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 2224992.2835215554)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 2227600.0012737974)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 2230199.8118111594)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 2232796.434616374)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 2235343.0353070204)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 2240529.3201619093)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 2245786.363030242)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 2250939.9080251567)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 2253597.9967691433)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 2256194.1055833376)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 2258797.272724727)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 2261347.394724802)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 2263906.9215787873)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 2266556.730420496)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 2269194.5071952865)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 2274395.8545855423)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 2279572.6527812434)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 2284770.914489496)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 2287388.7423745207)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 2289994.5921813897)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 2292598.009698129)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 2295199.6243521366)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 2297797.540869047)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 2300402.017013984)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 2302980.209099189)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 2308166.7490048767)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 2313339.6654958786)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 2318591.8187408857)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 2321180.3326375606)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 2323794.5128865093)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 2326394.8106335104)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 2328980.074596458)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 2341989.9651034963)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 2347139.1460051266)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 2352368.1628035177)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 2354953.9556409973)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 2357587.044792644)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 2360196.3690487337)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 2362716.133942185)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 2365384.187605276)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 2367980.6945706843)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 2370550.253228292)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 2373199.16890986)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 2375786.8370769257)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 2380869.810634914)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 2386181.3594510583)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 2391378.878631623)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 2393979.5007417435)]]
+progress: 50/50
+Spec 52 (UNSAT): 53/71; SAT 4; UNSAT 47; unknown 2; time: 533.139; 420.231; 22272.264
+img 0 Verified UNSAT for constraints [[(-1, 0, 2396596.382996387)]]
+progress: 1/50
+img 1 Verified UNSAT for constraints [[(-1, 0, 2399168.4482147587)]]
+progress: 2/50
+img 2 Verified UNSAT for constraints [[(-1, 0, 2401742.4154690276)]]
+progress: 3/50
+img 3 Verified UNSAT for constraints [[(-1, 0, 2404383.161334847)]]
+progress: 4/50
+img 4 Verified UNSAT for constraints [[(-1, 0, 2406991.157635175)]]
+progress: 5/50
+img 5 Verified UNSAT for constraints [[(-1, 0, 2409497.739732436)]]
+progress: 6/50
+img 6 Verified UNSAT for constraints [[(-1, 0, 2412191.5500438446)]]
+progress: 7/50
+img 7 Verified UNSAT for constraints [[(-1, 0, 2414790.037527931)]]
+progress: 8/50
+img 8 Verified UNSAT for constraints [[(-1, 0, 2419980.461421633)]]
+progress: 9/50
+img 9 Verified UNSAT for constraints [[(-1, 0, 2425197.07360213)]]
+progress: 10/50
+img 10 Verified UNSAT for constraints [[(-1, 0, 2430362.1222287924)]]
+progress: 11/50
+img 11 Verified UNSAT for constraints [[(-1, 0, 2432963.5996804712)]]
+progress: 12/50
+img 12 Verified UNSAT for constraints [[(-1, 0, 2435583.888923288)]]
+progress: 13/50
+img 13 Verified UNSAT for constraints [[(-1, 0, 2438129.752220254)]]
+progress: 14/50
+img 14 Verified UNSAT for constraints [[(-1, 0, 2440790.2831734917)]]
+progress: 15/50
+img 15 Verified UNSAT for constraints [[(-1, 0, 2443360.2016858067)]]
+progress: 16/50
+img 16 Verified UNSAT for constraints [[(-1, 0, 2445936.844980716)]]
+progress: 17/50
+img 17 Verified UNSAT for constraints [[(-1, 0, 2448572.4983668523)]]
+progress: 18/50
+img 18 Verified UNSAT for constraints [[(-1, 0, 2451178.185171892)]]
+progress: 19/50
+img 19 Verified UNSAT for constraints [[(-1, 0, 2453784.056266903)]]
+progress: 20/50
+img 20 Verified UNSAT for constraints [[(-1, 0, 2458967.357954224)]]
+progress: 21/50
+img 21 Verified UNSAT for constraints [[(-1, 0, 2464169.878963437)]]
+progress: 22/50
+img 22 Verified UNSAT for constraints [[(-1, 0, 2469358.8154443693)]]
+progress: 23/50
+img 23 Verified UNSAT for constraints [[(-1, 0, 2471987.7198971524)]]
+progress: 24/50
+img 24 Verified UNSAT for constraints [[(-1, 0, 2474526.700581216)]]
+progress: 25/50
+img 25 Verified UNSAT for constraints [[(-1, 0, 2477190.9667926356)]]
+progress: 26/50
+img 26 Verified UNSAT for constraints [[(-1, 0, 2479762.3679169486)]]
+progress: 27/50
+img 27 Verified UNSAT for constraints [[(-1, 0, 2482397.837047639)]]
+progress: 28/50
+img 28 Verified UNSAT for constraints [[(-1, 0, 2484993.978702812)]]
+progress: 29/50
+img 29 Verified UNSAT for constraints [[(-1, 0, 2487593.83685806)]]
+progress: 30/50
+img 30 Verified UNSAT for constraints [[(-1, 0, 2490183.124718623)]]
+progress: 31/50
+img 31 Verified UNSAT for constraints [[(-1, 0, 2492776.063670469)]]
+progress: 32/50
+img 32 Verified UNSAT for constraints [[(-1, 0, 2497991.297192086)]]
+progress: 33/50
+img 33 Verified UNSAT for constraints [[(-1, 0, 2503172.775134655)]]
+progress: 34/50
+img 34 Verified UNSAT for constraints [[(-1, 0, 2508391.6172755975)]]
+progress: 35/50
+img 35 Verified UNSAT for constraints [[(-1, 0, 2510974.1004997594)]]
+progress: 36/50
+img 36 Verified UNSAT for constraints [[(-1, 0, 2513599.6799450275)]]
+progress: 37/50
+img 37 Verified UNSAT for constraints [[(-1, 0, 2516176.381691149)]]
+progress: 38/50
+img 38 Verified UNSAT for constraints [[(-1, 0, 2518800.4624053924)]]
+progress: 39/50
+img 39 Verified UNSAT for constraints [[(-1, 0, 2521395.9096669285)]]
+progress: 40/50
+img 40 Verified UNSAT for constraints [[(-1, 0, 2523984.39691119)]]
+progress: 41/50
+img 41 Verified UNSAT for constraints [[(-1, 0, 2526593.1018735)]]
+progress: 42/50
+img 42 Verified UNSAT for constraints [[(-1, 0, 2529170.380180004)]]
+progress: 43/50
+img 43 Verified UNSAT for constraints [[(-1, 0, 2531717.863649923)]]
+progress: 44/50
+img 44 Verified UNSAT for constraints [[(-1, 0, 2536992.2605190696)]]
+progress: 45/50
+img 45 Verified UNSAT for constraints [[(-1, 0, 2542198.416989087)]]
+progress: 46/50
+img 46 Verified UNSAT for constraints [[(-1, 0, 2547368.4507248686)]]
+progress: 47/50
+img 47 Verified UNSAT for constraints [[(-1, 0, 2552515.150076691)]]
+progress: 48/50
+img 48 Verified UNSAT for constraints [[(-1, 0, 2555192.0688124876)]]
+progress: 49/50
+img 49 Verified UNSAT for constraints [[(-1, 0, 2557796.2047189064)]]
+progress: 50/50
+Spec 53 (UNSAT): 54/71; SAT 4; UNSAT 48; unknown 2; time: 533.052; 422.321; 22805.316
+img 0 Verified UNSAT for constraints [[(-1, 0, 1420.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 2943.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 4465.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 5987.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 7509.0)]]
+progress: 5/5
+Spec 54 (UNSAT): 55/71; SAT 4; UNSAT 49; unknown 2; time: 64.509; 415.815; 22869.825
+Box 0 Verified UNSAT for constraints [[(-1, 0, 9031.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 10554.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 12076.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 13598.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 15120.0)]]
+progress: 5/5
+Spec 55 (UNSAT): 56/71; SAT 4; UNSAT 50; unknown 2; time: 75.656; 409.741; 22945.481
+Box 0 Verified UNSAT for constraints [[(-1, 0, 16642.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 18165.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 19687.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 21209.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 22731.0)]]
+progress: 5/5
+Spec 56 (UNSAT): 57/71; SAT 4; UNSAT 51; unknown 2; time: 75.672; 403.880; 23021.153
+Box 0 Verified UNSAT for constraints [[(-1, 0, 24253.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 25776.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 27298.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 28820.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 30342.0)]]
+progress: 5/5
+Spec 57 (UNSAT): 58/71; SAT 4; UNSAT 52; unknown 2; time: 75.625; 398.220; 23096.778
+Box 0 Verified UNSAT for constraints [[(-1, 0, 31864.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 33386.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 34909.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 36431.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 37953.0)]]
+progress: 5/5
+Spec 58 (UNSAT): 59/71; SAT 4; UNSAT 53; unknown 2; time: 75.636; 392.753; 23172.414
+Box 0 Verified UNSAT for constraints [[(-1, 0, 39475.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 40997.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 42520.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 44042.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 45564.0)]]
+progress: 5/5
+Spec 59 (UNSAT): 60/71; SAT 4; UNSAT 54; unknown 2; time: 75.613; 387.467; 23248.027
+Box 0 Verified UNSAT for constraints [[(-1, 0, 47086.0)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 48608.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 50131.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 51653.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 53175.0)]]
+progress: 5/5
+Spec 60 (UNSAT): 61/71; SAT 4; UNSAT 55; unknown 2; time: 75.580; 382.354; 23323.607
+img 0 Verified UNSAT for constraints [[(-1, 0, 1405.0)]]
+progress: 1/5
+img 1 Verified UNSAT for constraints [[(-1, 0, 2855.0)]]
+progress: 2/5
+img 2 Verified UNSAT for constraints [[(-1, 0, 5755.0)]]
+progress: 3/5
+img 3 Verified UNSAT for constraints [[(-1, 0, 10105.0)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 11555.0)]]
+progress: 5/5
+Spec 61 (UNSAT): 62/71; SAT 4; UNSAT 56; unknown 2; time: 30.492; 376.679; 23354.100
+img 0 Verified UNSAT for constraints [[(-1, 0, 18805.0)]]
+progress: 1/5
+img 1 Verified UNSAT for constraints [[(-1, 0, 20255.0)]]
+progress: 2/5
+img 2 Verified UNSAT for constraints [[(-1, 0, 21705.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 27505.0)]]
+progress: 4/5
+img 4 Verified UNSAT for constraints [[(-1, 0, 28955.0)]]
+progress: 5/5
+Spec 62 (UNSAT): 63/71; SAT 4; UNSAT 57; unknown 2; time: 30.500; 371.184; 23384.600
+Box 0 Verified UNSAT for constraints [[(-1, 0, 37655.0)]]
+progress: 1/5
+img 1 Verified UNSAT for constraints [[(-1, 0, 39105.0)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 40555.0)]]
+progress: 3/5
+img 3 Verified UNSAT for constraints [[(-1, 0, 68105.0)]]
+progress: 4/5
+img 4 Verified UNSAT for constraints [[(-1, 0, 69555.0)]]
+progress: 5/5
+Spec 63 (UNSAT): 64/71; SAT 4; UNSAT 58; unknown 2; time: 45.178; 366.090; 23429.778
+img 0 Verified UNSAT for constraints [[(-1, 0, 71005.0)]]
+progress: 1/5
+img 1 Verified UNSAT for constraints [[(-1, 0, 72455.0)]]
+progress: 2/5
+img 2 Verified UNSAT for constraints [[(-1, 0, 73905.0)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 75355.0)]]
+progress: 4/5
+img 4 Verified UNSAT for constraints [[(-1, 0, 76805.0)]]
+progress: 5/5
+Spec 64 (UNSAT): 65/71; SAT 4; UNSAT 59; unknown 2; time: 30.543; 360.928; 23460.321
+Box 0 Verified UNSAT for constraints [[(-1, 0, 78255.0)]]
+progress: 1/5
+img 1 Verified UNSAT for constraints [[(-1, 0, 79705.0)]]
+progress: 2/5
+img 2 Verified UNSAT for constraints [[(-1, 0, 104355.0)]]
+progress: 3/5
+img 3 Verified UNSAT for constraints [[(-1, 0, 105805.0)]]
+progress: 4/5
+img 4 Verified UNSAT for constraints [[(-1, 0, 107255.0)]]
+progress: 5/5
+Spec 65 (UNSAT): 66/71; SAT 4; UNSAT 60; unknown 2; time: 30.529; 355.922; 23490.850
+Box 0 Verified UNSAT for constraints [[(-1, 0, 23595.50029640977)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 75582.57794259426)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 127565.40009254112)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 179576.7233687976)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 231598.08092591583)]]
+progress: 5/5
+Spec 66 (UNSAT): 67/71; SAT 4; UNSAT 61; unknown 2; time: 105.574; 352.185; 23596.424
+Box 0 Verified UNSAT for constraints [[(-1, 0, 283573.0290452903)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 335582.4708104688)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 387536.7199998625)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 413583.60264827806)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 465565.44953098847)]]
+progress: 5/5
+Spec 67 (UNSAT): 68/71; SAT 4; UNSAT 62; unknown 2; time: 98.148; 348.450; 23694.573
+Box 0 Verified UNSAT for constraints [[(-1, 0, 543593.7937669179)]]
+progress: 1/4
+Box 1 Verified UNSAT for constraints [[(-1, 0, 465565.44953098847)]]
+progress: 2/4
+Box 2 Verified UNSAT for constraints [[(-1, 0, 595595.777393961)]]
+progress: 3/4
+Box 3 Verified UNSAT for constraints [[(-1, 0, 647530.8026932111)]]
+progress: 4/4
+Spec 68 (UNSAT): 1/3; SAT 0; UNSAT 1; unknown 0; time: 83.192; 83.192; 83.192
+Box 0 Verified UNSAT for constraints [[(-1, 0, 699588.6200028269)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 725594.5145231776)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 803585.5162356985)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 855581.7353136485)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 907569.2322079601)]]
+progress: 5/5
+Spec 69 (UNSAT): 2/3; SAT 0; UNSAT 2; unknown 0; time: 105.574; 94.383; 188.766
+Box 0 Verified UNSAT for constraints [[(-1, 0, 933578.0862244724)]]
+progress: 1/5
+Box 1 Verified UNSAT for constraints [[(-1, 0, 959533.8588956953)]]
+progress: 2/5
+Box 2 Verified UNSAT for constraints [[(-1, 0, 985574.3301933194)]]
+progress: 3/5
+Box 3 Verified UNSAT for constraints [[(-1, 0, 1011590.3244211632)]]
+progress: 4/5
+Box 4 Verified UNSAT for constraints [[(-1, 0, 1063564.3834509356)]]
+progress: 5/5
+Spec 70 (UNSAT): 3/3; SAT 0; UNSAT 3; unknown 0; time: 113.061; 100.609; 301.827
+
+Process finished with exit code 0
+
+COMBINED LOG !!!!

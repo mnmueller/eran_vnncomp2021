@@ -1,0 +1,1838 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/__main__.py --netname ../nets/mnist/mnist_relu_6_200.tf --dataset mnist --domain refinepoly --epsilon 0.015 --from_test 0 --num_test 100 --k 1 --refine_neurons --timeout_milp 1 --timeout_lp 1 --n_milp_refine 2
+2021-02-22 08:46:12.069742: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Dec 25 2020 17:51:09) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-02-22 08:46:12.959746: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-22 08:46:12.960167: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-02-22 08:46:12.982562: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:12.982812: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-22 08:46:12.982823: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-22 08:46:12.982845: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-02-22 08:46:12.982858: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-02-22 08:46:12.983417: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-22 08:46:12.983548: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-22 08:46:12.984988: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-22 08:46:12.985317: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-02-22 08:46:12.985393: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-22 08:46:12.985439: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:12.985698: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:12.985925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-02-22 08:46:12.985939: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-22 08:46:13.283977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-22 08:46:13.283998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-02-22 08:46:13.284003: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-02-22 08:46:13.284126: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:13.284406: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:13.284662: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:13.284906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9029 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+{'approx_k': True,
+ 'attack': False,
+ 'complete': False,
+ 'data_dir': None,
+ 'dataset': 'mnist',
+ 'debug': True,
+ 'delta': 0.3,
+ 'domain': 'refinepoly',
+ 'epsfile': None,
+ 'epsilon': 0.015,
+ 'from_test': 0,
+ 'gamma': inf,
+ 'geometric': False,
+ 'geometric_config': None,
+ 'input_box': None,
+ 'k': 1,
+ 'logdir': None,
+ 'logname': None,
+ 'max_milp_neurons': 30,
+ 'mean': None,
+ 'n_milp_refine': 2,
+ 'netname': '../nets/mnist/mnist_relu_6_200.tf',
+ 'normalized_region': True,
+ 'num_params': 0,
+ 'num_tests': 100,
+ 'numproc': 16,
+ 'output_constraints': None,
+ 'partial_milp': 0,
+ 'quant_step': None,
+ 'refine_neurons': True,
+ 's': -2,
+ 'sparse_n': 70,
+ 'spatial': False,
+ 'specnumber': None,
+ 'std': None,
+ 'subset': None,
+ 't_norm': 'inf',
+ 'target': None,
+ 'timeout_complete': 1,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 100,
+ 'timeout_lp': 1.0,
+ 'timeout_milp': 1.0,
+ 'use_default_heuristic': True,
+ 'use_milp': True,
+ 'zonotope': None}
+netname  ../nets/mnist/mnist_relu_6_200.tf  epsilon  0.015  domain  refinepoly  dataset  mnist args complete  False  complete  False  timeout_lp  1.0
+ReLU
+	OutShape:  (1, 200)
+	WShape:  (784, 200)
+	BShape:  (200,)
+ReLU
+	OutShape:  (1, 200)
+	WShape:  (200, 200)
+	BShape:  (200,)
+ReLU
+	OutShape:  (1, 200)
+	WShape:  (200, 200)
+	BShape:  (200,)
+ReLU
+	OutShape:  (1, 200)
+	WShape:  (200, 200)
+	BShape:  (200,)
+ReLU
+	OutShape:  (1, 200)
+	WShape:  (200, 200)
+	BShape:  (200,)
+ReLU
+	OutShape:  (1, 10)
+	WShape:  (200, 10)
+	BShape:  (10,)
+WARNING:tensorflow:From /home/mark/Projects/ERAN/eran/tf_verify/tensorflow_translator.py:123: convert_variables_to_constants (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.convert_variables_to_constants`
+WARNING:tensorflow:From /home/mark/anaconda3/envs/eran/lib/python3.6/site-packages/tensorflow/python/framework/convert_to_constants.py:856: extract_sub_graph (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.extract_sub_graph`
+WARNING:tensorflow:From /home/mark/Projects/ERAN/eran/tf_verify/tensorflow_translator.py:124: remove_training_nodes (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.remove_training_nodes`
+2021-02-22 08:46:14.194711: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-22 08:46:14.194822: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.195113: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-22 08:46:14.195132: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-22 08:46:14.195156: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-02-22 08:46:14.195166: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-02-22 08:46:14.195176: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-22 08:46:14.195185: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-22 08:46:14.195195: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-22 08:46:14.195204: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-02-22 08:46:14.195214: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-22 08:46:14.195251: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.195495: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.195833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-02-22 08:46:14.195953: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-02-22 08:46:14.196000: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.196223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-02-22 08:46:14.196234: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-02-22 08:46:14.196245: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-02-22 08:46:14.196254: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-02-22 08:46:14.196263: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-02-22 08:46:14.196272: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-02-22 08:46:14.196281: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-02-22 08:46:14.196291: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-02-22 08:46:14.196300: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-02-22 08:46:14.196328: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.196568: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.196782: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-02-22 08:46:14.196800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-02-22 08:46:14.196804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-02-22 08:46:14.196806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-02-22 08:46:14.196883: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.197126: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-02-22 08:46:14.197348: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9029 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-02-22 08:46:14.202145: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2021-02-22 08:46:14.202966: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3600000000 Hz
+This network has 1010 neurons.
+concrete  [0.0, 0.10566472437566266, 2.5767120267585346, 2.0372619851496716, 0.0, 0.0, 0.0, 13.932356147621318, 0.0, 4.468305952358853]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.6051827870811115, 0.0, 0.0]  nub  [4.318634867987472, 6.550832329920601, 8.690826493827748, 8.66923983901869, 2.585114078654168, 4.770822122710138, 1.4891576189829494, 22.908283472058777, 4.992021886114022, 10.758648474825751] adv labels  None
+krelu: n 70 split_zero 49 after cutoff 42 number of args 49
+total k-activation time: 0.294. Time for input: 0.001. Time for k-activation constraints 0.293.
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Refinement of bounds time: 12.537. MILP used: True. 31 bounds refined.
+krelu: n 70 split_zero 68 after cutoff 64 number of args 68
+total k-activation time: 0.273. Time for input: 0.002. Time for k-activation constraints 0.270.
+Refinement of bounds time: 16.576. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 68 after cutoff 66 number of args 68
+total k-activation time: 0.298. Time for input: 0.002. Time for k-activation constraints 0.296.
+Refinement of bounds time: 16.607. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 91 after cutoff 90 number of args 91
+total k-activation time: 0.311. Time for input: 0.002. Time for k-activation constraints 0.308.
+Refinement of bounds time: 24.700. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 137 after cutoff 135 number of args 137
+total k-activation time: 0.287. Time for input: 0.003. Time for k-activation constraints 0.284.
+Refinement of bounds time: 2.518. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.322. Time for input: 0.001. Time for k-activation constraints 0.321.
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.559377128319571, 0.0, 0.0]  nub  [3.503371983841052, 5.533496430317023, 7.795731798552406, 7.8795521286497445, 1.83310894152008, 3.7497328689320915, 0.5436813701286678, 21.894766799660186, 3.8777945259555704, 9.813167775150825] adv labels  None
+img 0 Verified 7
+progress: 1/100, correct:  1/1, verified: 1/1, unsafe: 0/1,  time: 75.986; 75.986; 75.986
+concrete  [0.0, 0.0, 10.111173609754834, 1.8551088516846583, 0.0, 0.0, 0.0, 1.6887830414535892, 0.0, 0.0]
+nlb  [0.0, 0.0, 4.1012878930383945, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [3.389525254880046, 5.565623815263303, 15.29945573720795, 6.944973071038288, 3.3202141906412956, 1.3246378653681838, 4.88167375173066, 6.814091640361497, 4.720564124286791, 2.323441042656458] adv labels  None
+krelu: n 70 split_zero 37 after cutoff 31 number of args 37
+total k-activation time: 0.294. Time for input: 0.001. Time for k-activation constraints 0.293.
+Refinement of bounds time: 12.429. MILP used: True. 38 bounds refined.
+krelu: n 70 split_zero 50 after cutoff 44 number of args 50
+total k-activation time: 0.264. Time for input: 0.002. Time for k-activation constraints 0.262.
+Refinement of bounds time: 12.565. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 59 after cutoff 53 number of args 59
+total k-activation time: 0.328. Time for input: 0.003. Time for k-activation constraints 0.326.
+Refinement of bounds time: 16.650. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 97 after cutoff 89 number of args 97
+total k-activation time: 0.314. Time for input: 0.002. Time for k-activation constraints 0.312.
+Refinement of bounds time: 18.654. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 118 after cutoff 115 number of args 118
+total k-activation time: 0.331. Time for input: 0.004. Time for k-activation constraints 0.326.
+Refinement of bounds time: 2.567. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.329. Time for input: 0.001. Time for k-activation constraints 0.328.
+nlb  [0.0, 0.0, 5.275373975230089, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [2.0748867179649935, 3.9932894901624523, 14.255754309150932, 5.672416719117771, 2.0042024615576417, 0.1033178425768199, 3.51406263323437, 5.474262800044967, 3.2305540058056637, 1.0213343263894392] adv labels  None
+img 1 Verified 2
+progress: 2/100, correct:  2/2, verified: 2/2, unsafe: 0/2,  time: 65.910; 70.948; 141.896
+concrete  [0.0, 8.674559282564203, 0.6035626463531568, 0.0, 0.0, 0.0, 0.0, 1.7248639666429424, 1.8523387730578584, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [45.7967588634536, 78.57879345692642, 80.24665923389689, 78.3496855110733, 70.34662524400504, 67.16599057818398, 73.07945868426648, 88.9523951030265, 86.6853678314642, 84.48990018637645] adv labels  None
+krelu: n 70 split_zero 71 after cutoff 58 number of args 71
+total k-activation time: 0.273. Time for input: 0.002. Time for k-activation constraints 0.271.
+Refinement of bounds time: 16.654. MILP used: True. 19 bounds refined.
+krelu: n 70 split_zero 103 after cutoff 99 number of args 103
+total k-activation time: 0.314. Time for input: 0.003. Time for k-activation constraints 0.311.
+Refinement of bounds time: 24.605. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 177 after cutoff 174 number of args 177
+total k-activation time: 0.312. Time for input: 0.004. Time for k-activation constraints 0.308.
+Refinement of bounds time: 32.647. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.299. Time for input: 0.005. Time for k-activation constraints 0.295.
+Refinement of bounds time: 32.823. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.304. Time for input: 0.005. Time for k-activation constraints 0.300.
+Refinement of bounds time: 2.534. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.343. Time for input: 0.001. Time for k-activation constraints 0.342.
+Model status: 2, Objval against label 0: -44.1948, Final solve time: 0.446
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [44.49591354448487, 76.44324282462925, 77.88694694737069, 76.25544375494778, 68.71286566483379, 65.1994049827929, 70.9194532679718, 86.35297175444184, 84.18083215464989, 81.99450635229405] adv labels  None
+img 2 Failed
+progress: 3/100, correct:  3/3, verified: 2/3, unsafe: 0/3,  time: 113.014; 84.970; 254.910
+concrete  [7.565320677040319, 0.0, 0.0, 0.0, 0.0, 0.011452968446742068, 0.0, 0.0, 0.0, 0.5834421863638619]
+nlb  [4.289271262231609, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [10.040901144006872, 0.0, 2.295983689570322, 0.28076378738148716, 0.0336397185364505, 1.4682261458903962, 2.3131704994543067, 2.302200210852431, 1.2080142861958214, 1.884894490352852] adv labels  None
+img 3 Verified 0
+progress: 4/100, correct:  4/4, verified: 3/4, unsafe: 0/4,  time: 0.349; 63.815; 255.259
+concrete  [0.0, 0.0, 0.0, 0.0, 8.637975137141519, 0.0, 0.0, 1.6986336978771301, 0.0, 4.548830823095974]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [6.13136812799775, 5.947035790809857, 7.8548175451208735, 6.905651047014518, 14.98544784516294, 6.631488648040814, 5.71387058096209, 11.522099365988657, 7.819444128843419, 14.487221461118088] adv labels  None
+krelu: n 70 split_zero 46 after cutoff 44 number of args 46
+total k-activation time: 0.314. Time for input: 0.001. Time for k-activation constraints 0.313.
+Refinement of bounds time: 10.459. MILP used: True. 39 bounds refined.
+krelu: n 70 split_zero 41 after cutoff 39 number of args 41
+total k-activation time: 0.297. Time for input: 0.002. Time for k-activation constraints 0.295.
+Refinement of bounds time: 12.582. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 75 after cutoff 66 number of args 75
+total k-activation time: 0.339. Time for input: 0.002. Time for k-activation constraints 0.336.
+Refinement of bounds time: 16.645. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 110 after cutoff 106 number of args 110
+total k-activation time: 0.284. Time for input: 0.003. Time for k-activation constraints 0.282.
+Refinement of bounds time: 24.685. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 178 after cutoff 178 number of args 178
+total k-activation time: 0.304. Time for input: 0.004. Time for k-activation constraints 0.299.
+Refinement of bounds time: 2.537. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.347. Time for input: 0.001. Time for k-activation constraints 0.346.
+Model status: 2, Objval against label 0: -4.1524, Final solve time: 0.177
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [4.301445873625522, 3.523426687567509, 5.5369786099262095, 4.42380567899369, 13.442711550062299, 4.236260469895134, 3.316934562125171, 8.72574087255785, 5.090058361456101, 11.995914990622211] adv labels  None
+img 4 Failed
+progress: 5/100, correct:  5/5, verified: 3/5, unsafe: 0/5,  time: 70.103; 65.072; 325.361
+concrete  [0.0, 9.54955824518348, 0.7830135058725346, 0.0, 0.0, 0.0, 0.0, 2.5038706525595313, 1.7631490012821585, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.407902369904074, 27.49475447003358, 24.871184284092063, 21.59404706771485, 20.35778497354051, 17.27588432956674, 21.309340524308553, 26.622324374075404, 24.631076512884267, 23.793150015762937] adv labels  None
+krelu: n 70 split_zero 45 after cutoff 38 number of args 45
+total k-activation time: 0.327. Time for input: 0.001. Time for k-activation constraints 0.326.
+Refinement of bounds time: 16.592. MILP used: True. 38 bounds refined.
+krelu: n 70 split_zero 80 after cutoff 65 number of args 80
+total k-activation time: 0.330. Time for input: 0.002. Time for k-activation constraints 0.328.
+Refinement of bounds time: 16.708. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 105 after cutoff 99 number of args 105
+total k-activation time: 0.327. Time for input: 0.003. Time for k-activation constraints 0.324.
+Refinement of bounds time: 24.697. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 178 after cutoff 177 number of args 178
+total k-activation time: 0.353. Time for input: 0.004. Time for k-activation constraints 0.349.
+Refinement of bounds time: 32.738. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.298. Time for input: 0.005. Time for k-activation constraints 0.294.
+Refinement of bounds time: 2.557. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.326. Time for input: 0.001. Time for k-activation constraints 0.325.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.322
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.891658955893462, 24.36700342472844, 21.051490645356548, 17.72934984921183, 16.673211104654666, 13.978292825691254, 17.781268354260813, 22.396512956642116, 20.608656538381382, 19.627769884140974] adv labels  None
+img 5 Failed
+progress: 6/100, correct:  6/6, verified: 3/6, unsafe: 0/6,  time: 97.042; 70.401; 422.404
+concrete  [0.0, 0.0, 0.4011113566412638, 0.0, 7.161096657794267, 0.0, 0.0, 2.1591853721164687, 0.0, 1.3794666018445771]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [4.198693068892724, 4.78881432859181, 5.846608418188971, 4.634150850779798, 12.839560633337996, 5.264249018115021, 4.7753252459512785, 8.741290124325456, 6.46903439682065, 8.399071629126965] adv labels  None
+krelu: n 70 split_zero 32 after cutoff 29 number of args 32
+total k-activation time: 0.334. Time for input: 0.001. Time for k-activation constraints 0.333.
+Refinement of bounds time: 12.269. MILP used: True. 58 bounds refined.
+krelu: n 70 split_zero 45 after cutoff 40 number of args 45
+total k-activation time: 0.301. Time for input: 0.002. Time for k-activation constraints 0.299.
+Refinement of bounds time: 16.622. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 68 after cutoff 59 number of args 68
+total k-activation time: 0.334. Time for input: 0.002. Time for k-activation constraints 0.332.
+Refinement of bounds time: 16.665. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 84 after cutoff 81 number of args 84
+total k-activation time: 0.334. Time for input: 0.002. Time for k-activation constraints 0.332.
+Refinement of bounds time: 24.703. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 143 after cutoff 143 number of args 143
+total k-activation time: 0.337. Time for input: 0.003. Time for k-activation constraints 0.334.
+Refinement of bounds time: 2.558. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.363. Time for input: 0.001. Time for k-activation constraints 0.362.
+Model status: 2, Objval against label 0: -2.3373, Final solve time: 0.186
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [2.5663208761814613, 2.8185435489582824, 4.112218884795606, 2.7012050082678325, 11.487429441988702, 3.174623796763452, 2.825797558167985, 6.717417509452698, 4.162025975621695, 6.312983590597094] adv labels  None
+img 6 Failed
+progress: 7/100, correct:  7/7, verified: 3/7, unsafe: 0/7,  time: 75.998; 71.200; 498.402
+concrete  [0.0, 0.0, 0.0, 0.27023063197528097, 0.926492537750469, 0.047041469949792795, 0.0, 1.2095961140510014, 0.28525080634511524, 6.543022047265235]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [20.182446794850428, 30.491464167253312, 32.15539361429443, 32.15109494895612, 29.379772956806832, 28.347930985313848, 29.29869507064208, 35.73249731670338, 34.82375046532089, 36.82987920988472] adv labels  None
+krelu: n 70 split_zero 41 after cutoff 39 number of args 41
+total k-activation time: 0.342. Time for input: 0.001. Time for k-activation constraints 0.341.
+Refinement of bounds time: 12.599. MILP used: True. 84 bounds refined.
+krelu: n 70 split_zero 53 after cutoff 43 number of args 53
+total k-activation time: 0.356. Time for input: 0.002. Time for k-activation constraints 0.354.
+Refinement of bounds time: 18.768. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 129 after cutoff 114 number of args 129
+total k-activation time: 0.348. Time for input: 0.007. Time for k-activation constraints 0.342.
+Refinement of bounds time: 26.796. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 190 after cutoff 190 number of args 190
+total k-activation time: 0.340. Time for input: 0.004. Time for k-activation constraints 0.336.
+Refinement of bounds time: 32.829. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.311. Time for input: 0.005. Time for k-activation constraints 0.306.
+Refinement of bounds time: 2.577. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.370. Time for input: 0.001. Time for k-activation constraints 0.368.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.216
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.525207473325986, 19.45979202251655, 20.244950365481223, 20.7910454572335, 19.3951584605373, 18.767995889234612, 18.17406107162403, 23.310323554015604, 22.369008684426948, 25.494978424320056] adv labels  None
+img 7 Failed
+progress: 8/100, correct:  8/8, verified: 3/8, unsafe: 0/8,  time: 97.182; 74.448; 595.584
+concrete  [0.0, 0.0, 0.0, 1.1401023924264555, 0.0, 5.8324622798943, 1.633973553195536, 0.0, 1.1805170760944563, 0.3714444800362087]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [9.771502736117347, 12.408001118668238, 14.228133163203815, 13.957747541511901, 11.859208809554802, 16.46267854622356, 13.828017647193338, 14.255975468233823, 15.940155325931896, 15.388169082194489] adv labels  None
+krelu: n 70 split_zero 35 after cutoff 32 number of args 35
+total k-activation time: 0.351. Time for input: 0.001. Time for k-activation constraints 0.350.
+Refinement of bounds time: 8.577. MILP used: True. 26 bounds refined.
+krelu: n 70 split_zero 36 after cutoff 34 number of args 36
+total k-activation time: 0.348. Time for input: 0.001. Time for k-activation constraints 0.347.
+Refinement of bounds time: 16.623. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 98 after cutoff 85 number of args 98
+total k-activation time: 0.352. Time for input: 0.002. Time for k-activation constraints 0.350.
+Refinement of bounds time: 24.784. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 165 after cutoff 164 number of args 165
+total k-activation time: 0.353. Time for input: 0.004. Time for k-activation constraints 0.349.
+Refinement of bounds time: 32.797. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.346. Time for input: 0.005. Time for k-activation constraints 0.341.
+Refinement of bounds time: 2.584. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.370. Time for input: 0.001. Time for k-activation constraints 0.368.
+Model status: 2, Objval against label 0: -8.5300, Final solve time: 0.191
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [8.736121605206911, 11.226470380597991, 13.086558138351588, 12.524768409342247, 10.523354404088169, 15.295250881074187, 12.652136697225064, 12.54335155627103, 14.472729875041965, 13.898464046360578] adv labels  None
+img 8 Failed
+progress: 9/100, correct:  9/9, verified: 3/9, unsafe: 0/9,  time: 88.725; 76.034; 684.309
+concrete  [0.0, 0.0, 0.0, 0.0, 2.633946333117218, 0.0, 0.0, 0.6542172207342857, 0.363605680145965, 9.624389998378348]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [5.787942317219842, 6.017052268041119, 7.520204270988729, 8.908300925303916, 12.834518018139718, 7.542669553505439, 5.6256531825744664, 12.130488401273082, 10.235307800891828, 18.717932904044208] adv labels  None
+krelu: n 70 split_zero 28 after cutoff 26 number of args 28
+total k-activation time: 0.354. Time for input: 0.001. Time for k-activation constraints 0.353.
+Refinement of bounds time: 12.298. MILP used: True. 80 bounds refined.
+krelu: n 70 split_zero 36 after cutoff 24 number of args 36
+total k-activation time: 0.323. Time for input: 0.001. Time for k-activation constraints 0.322.
+Refinement of bounds time: 16.634. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 70 after cutoff 56 number of args 70
+total k-activation time: 0.363. Time for input: 0.002. Time for k-activation constraints 0.360.
+Refinement of bounds time: 16.683. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 112 after cutoff 102 number of args 112
+total k-activation time: 0.359. Time for input: 0.003. Time for k-activation constraints 0.356.
+Refinement of bounds time: 24.818. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 167 after cutoff 166 number of args 167
+total k-activation time: 0.359. Time for input: 0.004. Time for k-activation constraints 0.355.
+Refinement of bounds time: 2.579. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.373. Time for input: 0.001. Time for k-activation constraints 0.372.
+Model status: 2, Objval against label 4: -2.3637, Final solve time: 0.160
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.068581174259935]  nub  [1.924662996490138, 1.5099226090799733, 2.6208089839115836, 4.178623271588527, 8.92380456044642, 3.1646559049919865, 0.9229319026112416, 6.754183641022429, 5.205807338090913, 14.85838337147407] adv labels  None
+img 9 Failed
+progress: 10/100, correct:  10/10, verified: 3/10, unsafe: 0/10,  time: 76.237; 76.055; 760.546
+concrete  [10.843403912812255, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8203499667809386, 0.7881584551217043]
+nlb  [7.968303696878581, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.768370611403409, 0.0, 0.3863891863533999, 0.0, 0.0, 0.4098197250932149, 1.4072018097845107, 0.027599871795048993, 2.1478163188718176, 1.791519642207423] adv labels  None
+img 10 Verified 0
+progress: 11/100, correct:  11/11, verified: 4/11, unsafe: 0/11,  time: 0.437; 69.180; 760.983
+concrete  [0.0, 0.0, 1.220451839629877, 0.0, 1.5511937488047585, 2.1560434191979874, 10.933463423181832, 0.0, 0.8585672900782746, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [24.595539658364512, 30.471610353436592, 33.18113698920229, 29.99718246543936, 29.58102159390856, 30.341025198238114, 37.42204384090271, 34.78463914684543, 37.47556204352835, 31.617132291911318] adv labels  None
+krelu: n 70 split_zero 43 after cutoff 43 number of args 43
+total k-activation time: 0.358. Time for input: 0.002. Time for k-activation constraints 0.357.
+Refinement of bounds time: 16.605. MILP used: True. 75 bounds refined.
+krelu: n 70 split_zero 76 after cutoff 71 number of args 77
+total k-activation time: 0.360. Time for input: 0.002. Time for k-activation constraints 0.358.
+Refinement of bounds time: 16.783. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 112 after cutoff 107 number of args 112
+total k-activation time: 0.363. Time for input: 0.003. Time for k-activation constraints 0.360.
+Refinement of bounds time: 24.793. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 170 after cutoff 169 number of args 170
+total k-activation time: 0.357. Time for input: 0.004. Time for k-activation constraints 0.353.
+Refinement of bounds time: 32.810. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 199 after cutoff 199 number of args 199
+total k-activation time: 0.360. Time for input: 0.005. Time for k-activation constraints 0.356.
+Refinement of bounds time: 2.595. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.320. Time for input: 0.001. Time for k-activation constraints 0.320.
+Model status: 2, Objval against label 0: -15.5404, Final solve time: 0.253
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [16.205189928124284, 18.550282148185154, 21.67860740207017, 18.137757954206233, 19.629033905123684, 20.542621078816545, 27.90436651613317, 21.307328271436035, 24.38860322666243, 18.817893680057846] adv labels  None
+img 11 Failed
+progress: 12/100, correct:  12/12, verified: 4/12, unsafe: 0/12,  time: 97.046; 71.502; 858.029
+concrete  [0.0, 0.0, 0.0, 0.0, 2.118340865268963, 0.0, 0.0, 1.17866903295746, 0.17585386928146704, 9.219206075392679]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [15.891131647218847, 19.588170582704386, 20.593789538101863, 22.414224805465853, 22.76953427518129, 20.729291838919863, 19.016217966794365, 26.893523660308624, 23.899889959858815, 29.9212109159769] adv labels  None
+krelu: n 70 split_zero 35 after cutoff 32 number of args 35
+total k-activation time: 0.366. Time for input: 0.001. Time for k-activation constraints 0.365.
+Refinement of bounds time: 12.513. MILP used: True. 61 bounds refined.
+krelu: n 70 split_zero 53 after cutoff 46 number of args 53
+total k-activation time: 0.365. Time for input: 0.001. Time for k-activation constraints 0.363.
+Refinement of bounds time: 16.752. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 107 after cutoff 102 number of args 107
+total k-activation time: 0.361. Time for input: 0.005. Time for k-activation constraints 0.356.
+Refinement of bounds time: 24.803. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 164 after cutoff 160 number of args 164
+total k-activation time: 0.372. Time for input: 0.004. Time for k-activation constraints 0.368.
+Refinement of bounds time: 32.753. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 199 after cutoff 199 number of args 199
+total k-activation time: 0.370. Time for input: 0.005. Time for k-activation constraints 0.365.
+Refinement of bounds time: 2.603. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.389. Time for input: 0.001. Time for k-activation constraints 0.388.
+Model status: 2, Objval against label 0: -9.1155, Final solve time: 0.219
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [9.717801552797845, 10.573408959492712, 11.352885476038317, 13.782782158302128, 15.596889169742292, 12.807511090927592, 10.039162124470352, 17.09995641715676, 14.509243940756118, 21.80603805019769] adv labels  None
+img 12 Failed
+progress: 13/100, correct:  13/13, verified: 4/13, unsafe: 0/13,  time: 92.869; 73.146; 950.897
+concrete  [11.597814664673923, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.006652925819697342, 0.4442540673689025, 1.4307214133182726]
+nlb  [8.442823673923561, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.08243442918639454]  nub  [13.494944148316383, 0.0, 0.0, 0.0, 0.0, 0.651379912683886, 0.8653681697347331, 2.3014550923072887, 2.057943995138802, 2.7815906693823966] adv labels  None
+img 13 Verified 0
+progress: 14/100, correct:  14/14, verified: 5/14, unsafe: 0/14,  time: 0.393; 67.949; 951.290
+concrete  [0.0, 11.640762639548969, 0.8802105090617759, 0.0, 0.0, 0.0, 0.0, 1.7570449926228295, 2.290177670638959, 0.0]
+nlb  [0.0, 3.1317851140090975, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.5432585036644088, 16.13503079813681, 6.339864514983793, 4.077801429021337, 2.8987151513433322, 2.1601985186584702, 3.4329095810996026, 6.4635567003708525, 6.984016456789462, 4.743088809590843] adv labels  None
+krelu: n 70 split_zero 35 after cutoff 31 number of args 35
+total k-activation time: 0.372. Time for input: 0.001. Time for k-activation constraints 0.371.
+Refinement of bounds time: 12.510. MILP used: True. 33 bounds refined.
+krelu: n 70 split_zero 50 after cutoff 38 number of args 50
+total k-activation time: 0.372. Time for input: 0.002. Time for k-activation constraints 0.370.
+Refinement of bounds time: 16.647. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 80 after cutoff 69 number of args 80
+total k-activation time: 0.372. Time for input: 0.002. Time for k-activation constraints 0.370.
+Refinement of bounds time: 16.700. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 93 after cutoff 87 number of args 93
+total k-activation time: 0.420. Time for input: 0.002. Time for k-activation constraints 0.418.
+Refinement of bounds time: 18.861. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 123 after cutoff 120 number of args 123
+total k-activation time: 0.389. Time for input: 0.004. Time for k-activation constraints 0.385.
+Refinement of bounds time: 2.601. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 8 after cutoff 8 number of args 8
+total k-activation time: 0.362. Time for input: 0.001. Time for k-activation constraints 0.361.
+nlb  [0.0, 4.898434526360452, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.0, 14.988526972599047, 4.687674849245459, 2.456118457101486, 1.521774670054833, 0.7416925449241993, 2.067191858611239, 4.959096073297854, 5.337244562062513, 2.9576768540107095] adv labels  None
+img 14 Verified 1
+progress: 15/100, correct:  15/15, verified: 6/15, unsafe: 0/15,  time: 70.687; 68.132; 1021.977
+concrete  [0.0, 0.0, 0.0, 3.513793521048699, 0.0, 6.177678317174026, 0.0, 0.0, 0.05898197792336363, 1.476884511409348]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [17.906832948236122, 27.935848796205477, 27.790901443106478, 30.059764190422595, 23.99734358088986, 27.01411053253529, 25.664668592356662, 30.521394821800563, 30.611524619857214, 30.908009983928547] adv labels  None
+krelu: n 70 split_zero 46 after cutoff 41 number of args 46
+total k-activation time: 0.373. Time for input: 0.001. Time for k-activation constraints 0.371.
+Refinement of bounds time: 12.622. MILP used: True. 27 bounds refined.
+krelu: n 70 split_zero 57 after cutoff 55 number of args 57
+total k-activation time: 0.437. Time for input: 0.003. Time for k-activation constraints 0.434.
+Refinement of bounds time: 18.764. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 125 after cutoff 120 number of args 125
+total k-activation time: 0.375. Time for input: 0.003. Time for k-activation constraints 0.372.
+Refinement of bounds time: 24.801. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 180 after cutoff 180 number of args 180
+total k-activation time: 0.374. Time for input: 0.004. Time for k-activation constraints 0.370.
+Refinement of bounds time: 32.857. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.348. Time for input: 0.005. Time for k-activation constraints 0.343.
+Refinement of bounds time: 2.608. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.359. Time for input: 0.001. Time for k-activation constraints 0.358.
+Model status: 2, Objval against label 0: -14.6963, Final solve time: 0.207
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [15.02448072806329, 23.79115757738068, 23.555819423901834, 26.13605485157108, 20.260873103766812, 23.886012284656804, 22.023036553324992, 25.806654680633713, 26.08963216545601, 26.51451722632593] adv labels  None
+img 15 Failed
+progress: 16/100, correct:  16/16, verified: 6/16, unsafe: 0/16,  time: 95.248; 69.827; 1117.225
+concrete  [0.0, 0.0, 0.0, 0.0, 3.07654904505287, 0.0, 0.0, 1.2859390692959487, 0.0, 11.510703363145726]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.48892160092255]  nub  [1.7240043934055205, 0.0, 0.1468928652849894, 2.869819334840452, 8.173567572266863, 2.897336897118806, 0.0, 5.885606654869058, 3.1815339507909655, 15.791397583071149] adv labels  None
+img 16 Verified 9
+progress: 17/100, correct:  17/17, verified: 7/17, unsafe: 0/17,  time: 0.441; 65.745; 1117.666
+concrete  [0.0, 0.0, 2.6451900215737694, 1.2850219639420652, 0.0, 0.0, 0.0, 14.51881333093742, 0.0, 4.00757748524713]
+nlb  [0.0, 0.0, 0.6973415352434402, 0.0, 0.0, 0.0, 0.0, 10.401682138410772, 0.0, 1.6779723764189074]  nub  [1.7428096073562944, 0.9203422572306929, 4.881461298036316, 3.9068096209487755, 0.0, 0.2849364582824013, 0.0, 18.78913116499076, 0.0, 6.309020869581117] adv labels  None
+img 17 Verified 7
+progress: 18/100, correct:  18/18, verified: 8/18, unsafe: 0/18,  time: 0.497; 62.120; 1118.163
+concrete  [0.0, 0.0, 0.9965531260044376, 5.4563232197782305, 0.0, 1.3507000651643333, 0.0, 0.0, 0.8972785616893169, 0.5200285187532095]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [25.41799206692501, 37.77912590543248, 40.03842777414484, 39.58056156406654, 33.612672054539615, 34.20970063733093, 36.004950961833735, 44.186310345012856, 42.876997271353105, 42.03562739217171] adv labels  None
+krelu: n 70 split_zero 35 after cutoff 33 number of args 35
+total k-activation time: 0.375. Time for input: 0.001. Time for k-activation constraints 0.373.
+Refinement of bounds time: 16.421. MILP used: True. 60 bounds refined.
+krelu: n 70 split_zero 75 after cutoff 64 number of args 75
+total k-activation time: 0.342. Time for input: 0.002. Time for k-activation constraints 0.340.
+Refinement of bounds time: 20.691. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 134 after cutoff 131 number of args 134
+total k-activation time: 0.386. Time for input: 0.003. Time for k-activation constraints 0.383.
+Refinement of bounds time: 32.825. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 199 after cutoff 199 number of args 199
+total k-activation time: 0.375. Time for input: 0.005. Time for k-activation constraints 0.371.
+Refinement of bounds time: 32.780. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.385. Time for input: 0.005. Time for k-activation constraints 0.380.
+Refinement of bounds time: 2.611. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.365. Time for input: 0.001. Time for k-activation constraints 0.364.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.224
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [20.4284289358239, 30.246506641428052, 32.5106583341643, 32.751012056463125, 26.97286790259244, 27.890799081643472, 28.755958117316652, 35.5260913582308, 34.579407743923184, 34.200249179680874] adv labels  None
+img 18 Failed
+progress: 19/100, correct:  19/19, verified: 8/19, unsafe: 0/19,  time: 109.103; 64.593; 1227.266
+concrete  [0.0, 0.0, 1.2056111386200883, 0.0, 10.278749992629766, 0.0, 0.0, 2.057667146395418, 0.0, 1.2705624117395222]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [6.346411605955089, 8.850472882992976, 11.497160452412098, 8.682670101777115, 17.882079037380123, 7.894681333159452, 8.704327712752837, 12.596207706034752, 9.634506056742108, 12.679148019678633] adv labels  None
+krelu: n 70 split_zero 45 after cutoff 40 number of args 45
+total k-activation time: 0.372. Time for input: 0.001. Time for k-activation constraints 0.371.
+Refinement of bounds time: 12.516. MILP used: True. 21 bounds refined.
+krelu: n 70 split_zero 50 after cutoff 48 number of args 50
+total k-activation time: 0.376. Time for input: 0.002. Time for k-activation constraints 0.374.
+Refinement of bounds time: 16.670. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 83 after cutoff 79 number of args 83
+total k-activation time: 0.376. Time for input: 0.002. Time for k-activation constraints 0.374.
+Refinement of bounds time: 18.822. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 126 after cutoff 123 number of args 126
+total k-activation time: 0.389. Time for input: 0.008. Time for k-activation constraints 0.381.
+Refinement of bounds time: 24.754. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 183 after cutoff 183 number of args 183
+total k-activation time: 0.377. Time for input: 0.004. Time for k-activation constraints 0.372.
+Refinement of bounds time: 2.625. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.400. Time for input: 0.001. Time for k-activation constraints 0.399.
+Model status: 2, Objval against label 0: -4.9597, Final solve time: 0.201
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [5.092981993343252, 7.008172912431847, 9.742733079015077, 6.970834800585494, 16.88073802674493, 6.318116441912676, 7.08664406913765, 10.809798989010398, 7.707448696219187, 10.861372749440067] adv labels  None
+img 19 Failed
+progress: 20/100, correct:  20/20, verified: 8/20, unsafe: 0/20,  time: 78.965; 65.312; 1306.231
+concrete  [0.0, 0.0, 0.0, 0.0, 1.546298145825232, 0.0, 0.0, 2.983871336074817, 0.02470175994562938, 7.701269335943771]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.965832764709704, 19.535296790163603, 19.759114772248935, 20.515774117882874, 20.541271087859418, 19.055504760547745, 17.573114119830425, 26.599983062718287, 22.67339951549622, 27.496976455464395] adv labels  None
+krelu: n 70 split_zero 34 after cutoff 31 number of args 34
+total k-activation time: 0.376. Time for input: 0.001. Time for k-activation constraints 0.375.
+Refinement of bounds time: 12.622. MILP used: True. 50 bounds refined.
+krelu: n 70 split_zero 61 after cutoff 49 number of args 61
+total k-activation time: 0.394. Time for input: 0.003. Time for k-activation constraints 0.391.
+Refinement of bounds time: 18.765. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 113 after cutoff 102 number of args 113
+total k-activation time: 0.366. Time for input: 0.005. Time for k-activation constraints 0.362.
+Refinement of bounds time: 24.852. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 174 after cutoff 172 number of args 174
+total k-activation time: 0.376. Time for input: 0.004. Time for k-activation constraints 0.371.
+Refinement of bounds time: 32.832. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.344. Time for input: 0.005. Time for k-activation constraints 0.339.
+Refinement of bounds time: 2.605. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Model status: 2, Objval against label 0: -11.2822, Final solve time: 0.220
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.92779518091566, 14.570217299317148, 14.597551863068603, 15.774817445898123, 16.646900268246714, 14.65616920168226, 12.646249098856357, 21.356110834570174, 17.333674432647577, 23.01806731020571] adv labels  None
+img 20 Failed
+progress: 21/100, correct:  21/21, verified: 8/21, unsafe: 0/21,  time: 95.152; 66.732; 1401.382
+concrete  [0.0, 0.0, 0.31146451109261886, 0.0, 0.0, 4.052817196863244, 9.204194496505442, 0.0, 1.648641300838867, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.4008917456053174, 0.0, 0.0, 0.0]  nub  [4.169301532178131, 3.645614034172341, 6.377978760679618, 4.485188688938299, 5.305329919547872, 10.293301621814063, 14.334615037157208, 4.237724499642485, 8.74887877566487, 3.8110466210193006] adv labels  None
+krelu: n 70 split_zero 34 after cutoff 29 number of args 34
+total k-activation time: 0.379. Time for input: 0.001. Time for k-activation constraints 0.378.
+Refinement of bounds time: 12.636. MILP used: True. 54 bounds refined.
+krelu: n 70 split_zero 45 after cutoff 38 number of args 45
+total k-activation time: 0.383. Time for input: 0.003. Time for k-activation constraints 0.380.
+Refinement of bounds time: 12.656. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 68 after cutoff 57 number of args 68
+total k-activation time: 0.388. Time for input: 0.002. Time for k-activation constraints 0.385.
+Refinement of bounds time: 18.841. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 107 after cutoff 98 number of args 107
+total k-activation time: 0.394. Time for input: 0.007. Time for k-activation constraints 0.387.
+Refinement of bounds time: 24.769. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 144 after cutoff 143 number of args 144
+total k-activation time: 0.356. Time for input: 0.004. Time for k-activation constraints 0.352.
+Refinement of bounds time: 2.594. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.378. Time for input: 0.001. Time for k-activation constraints 0.377.
+Model status: 2, Objval against label 5: -2.6516, Final solve time: 0.186
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.264204633620324, 0.0, 0.0, 0.0]  nub  [2.7122229660856, 1.9438064294110222, 4.663846356407585, 2.8498605653599363, 3.7445374074037616, 8.872608646573735, 13.236602570692488, 2.418999925472159, 6.931349882422378, 2.136875725799327] adv labels  None
+img 21 Failed
+progress: 22/100, correct:  22/22, verified: 8/22, unsafe: 0/22,  time: 75.002; 67.108; 1476.385
+concrete  [0.0, 0.0, 0.39332836056486153, 0.0, 0.8830062816743247, 2.1476440877412273, 10.420550032605808, 0.0, 1.7755227322624494, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.238669182615771, 0.0, 0.0, 0.0]  nub  [5.502756797091944, 4.447594338313937, 7.077684383834637, 3.5787001258287723, 6.951960775302178, 8.615795269497982, 16.399579483700247, 5.318780394720613, 9.046599776144962, 3.120276083152898] adv labels  None
+krelu: n 70 split_zero 43 after cutoff 39 number of args 43
+total k-activation time: 0.380. Time for input: 0.001. Time for k-activation constraints 0.379.
+Refinement of bounds time: 12.636. MILP used: True. 43 bounds refined.
+krelu: n 70 split_zero 51 after cutoff 42 number of args 51
+total k-activation time: 0.381. Time for input: 0.003. Time for k-activation constraints 0.378.
+Refinement of bounds time: 12.653. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 65 after cutoff 60 number of args 65
+total k-activation time: 0.366. Time for input: 0.003. Time for k-activation constraints 0.363.
+Refinement of bounds time: 18.814. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 107 after cutoff 100 number of args 107
+total k-activation time: 0.383. Time for input: 0.005. Time for k-activation constraints 0.378.
+Refinement of bounds time: 20.742. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 133 after cutoff 131 number of args 133
+total k-activation time: 0.381. Time for input: 0.004. Time for k-activation constraints 0.378.
+Refinement of bounds time: 2.705. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.367. Time for input: 0.001. Time for k-activation constraints 0.366.
+Model status: 6, Objval against label 8: 0.0000, Final solve time: 0.130
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.189081271930811, 0.0, 0.0, 0.0]  nub  [3.809537106823349, 2.4800214710986097, 5.0778384926379845, 1.6467514482279015, 5.337842641546067, 6.854278052529447, 14.926879175910697, 3.082685851688753, 6.930522263299115, 1.3840415393030217] adv labels  None
+img 22 Verified 6
+progress: 23/100, correct:  23/23, verified: 9/23, unsafe: 0/23,  time: 70.932; 67.275; 1547.316
+concrete  [0.0, 0.0, 0.0, 4.705853106447613, 0.0, 14.068678533882537, 0.0, 0.0, 1.0621811292820147, 2.108648809862683]
+nlb  [0.0, 0.0, 0.0, 0.24306384017403657, 0.0, 8.861266670785977, 0.0, 0.0, 0.0, 0.0]  nub  [0.0, 0.0, 1.47903347277914, 8.462374526692633, 0.0, 17.817495608928088, 4.989330585850857, 1.7668756546931532, 4.927239945828036, 5.871316669800086] adv labels  None
+img 23 Verified 5
+progress: 24/100, correct:  24/24, verified: 10/24, unsafe: 0/24,  time: 0.464; 64.491; 1547.780
+concrete  [0.0, 0.0, 0.22438638499169825, 0.0, 8.327223130300329, 0.0, 0.0, 1.5678133933129863, 0.0, 2.2458527894517863]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.412215526962893, 16.95809535383949, 18.768815312395713, 16.918935581908187, 21.168956997473053, 15.811470203454444, 17.340911023315616, 22.468074940198903, 18.54738566093179, 22.814266685494847] adv labels  None
+krelu: n 70 split_zero 60 after cutoff 53 number of args 60
+total k-activation time: 0.400. Time for input: 0.002. Time for k-activation constraints 0.399.
+Refinement of bounds time: 12.635. MILP used: True. 17 bounds refined.
+krelu: n 70 split_zero 63 after cutoff 61 number of args 63
+total k-activation time: 0.370. Time for input: 0.003. Time for k-activation constraints 0.367.
+Refinement of bounds time: 16.760. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 103 after cutoff 95 number of args 103
+total k-activation time: 0.382. Time for input: 0.003. Time for k-activation constraints 0.379.
+Refinement of bounds time: 24.715. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 179 after cutoff 178 number of args 179
+total k-activation time: 0.381. Time for input: 0.004. Time for k-activation constraints 0.376.
+Refinement of bounds time: 32.768. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.382. Time for input: 0.005. Time for k-activation constraints 0.377.
+Refinement of bounds time: 2.613. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.379. Time for input: 0.001. Time for k-activation constraints 0.378.
+Model status: 2, Objval against label 0: -11.5971, Final solve time: 0.226
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.782455177144696, 15.923449944008432, 17.75255524200319, 15.896057127186218, 20.633004192864465, 14.952433960439745, 16.354640320954267, 21.384918470310865, 17.46947596821195, 21.88507952036452] adv labels  None
+img 24 Failed
+progress: 25/100, correct:  25/25, verified: 10/25, unsafe: 0/25,  time: 93.129; 65.636; 1640.909
+concrete  [11.620066929018698, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.35192135975723254, 0.9417292860484167]
+nlb  [9.4813878014858, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.14089567404679054]  nub  [13.274061864497224, 0.0, 0.0, 0.0, 0.0, 0.03019906931424185, 0.8473869695072159, 0.9448539730446852, 1.170927370374992, 1.72297535169175] adv labels  None
+img 25 Verified 0
+progress: 26/100, correct:  26/26, verified: 11/26, unsafe: 0/26,  time: 0.334; 63.125; 1641.243
+concrete  [0.0, 0.0, 1.1062576780298432, 0.5977917500080285, 0.0, 0.0, 0.0, 11.751558489184584, 0.0, 4.937167643616353]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.1517332682236683, 0.0, 0.0]  nub  [5.187311496093084, 5.237903149055053, 7.574764439365623, 7.380241005752021, 3.732882608379817, 5.879265124524487, 1.395796153246091, 19.856923693260832, 4.306359148118576, 11.870605172597166] adv labels  None
+krelu: n 70 split_zero 49 after cutoff 43 number of args 49
+total k-activation time: 0.367. Time for input: 0.002. Time for k-activation constraints 0.365.
+Refinement of bounds time: 12.633. MILP used: True. 27 bounds refined.
+krelu: n 70 split_zero 50 after cutoff 49 number of args 50
+total k-activation time: 0.395. Time for input: 0.002. Time for k-activation constraints 0.393.
+Refinement of bounds time: 16.674. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 70 after cutoff 65 number of args 70
+total k-activation time: 0.397. Time for input: 0.002. Time for k-activation constraints 0.395.
+Refinement of bounds time: 16.601. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 94 after cutoff 92 number of args 94
+total k-activation time: 0.397. Time for input: 0.003. Time for k-activation constraints 0.395.
+Refinement of bounds time: 24.781. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 152 after cutoff 149 number of args 152
+total k-activation time: 0.393. Time for input: 0.004. Time for k-activation constraints 0.389.
+Refinement of bounds time: 2.629. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.379. Time for input: 0.001. Time for k-activation constraints 0.378.
+Model status: 2, Objval against label 3: -0.4874, Final solve time: 0.184
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.6895683280903517, 0.0, 0.0]  nub  [4.726690592207539, 4.677118269333366, 7.0912609504998105, 6.824887347890481, 3.2054771288053456, 5.3364241909976275, 0.8909415965894713, 19.316238416721887, 3.6819973220719318, 11.257548500600858] adv labels  None
+img 26 Failed
+progress: 27/100, correct:  27/27, verified: 11/27, unsafe: 0/27,  time: 76.962; 63.637; 1718.205
+concrete  [0.0, 0.0, 0.4849064122456492, 0.0, 9.96244351973459, 0.0, 0.0, 1.8010246894128, 0.0, 2.206317541095484]
+nlb  [0.0, 0.0, 0.0, 0.0, 5.019424955378903, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.012392506763671705, 0.0, 2.424329597378038, 0.0, 12.418990727882443, 0.06694774458928868, 0.3390539592848563, 3.868046173118247, 0.8329307886485334, 5.703454191741256] adv labels  None
+img 27 Verified 4
+progress: 28/100, correct:  28/28, verified: 12/28, unsafe: 0/28,  time: 0.437; 61.380; 1718.642
+concrete  [12.383675789718941, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6148581554756626, 0.9015282265695508]
+nlb  [9.03122756450334, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.400365479384623, 0.0, 0.1630359019310189, 0.0, 0.0, 0.6244080423572893, 0.9570272620877202, 1.381744427694779, 1.916759315851958, 2.0045595752677805] adv labels  None
+img 28 Verified 0
+progress: 29/100, correct:  29/29, verified: 13/29, unsafe: 0/29,  time: 0.375; 59.276; 1719.017
+concrete  [0.0, 9.845882034738926, 1.1157155919548756, 0.0, 0.0, 0.0, 0.0, 1.0827692498053993, 2.120449954814742, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [22.629172956710402, 39.1468769363481, 36.60758223863731, 35.146756523379864, 33.175680966477316, 30.35562341343112, 33.171500360740595, 38.74176748343078, 38.81344880162142, 37.54116204204591] adv labels  None
+krelu: n 70 split_zero 60 after cutoff 54 number of args 60
+total k-activation time: 0.397. Time for input: 0.001. Time for k-activation constraints 0.395.
+Refinement of bounds time: 12.631. MILP used: True. 21 bounds refined.
+krelu: n 70 split_zero 78 after cutoff 74 number of args 78
+total k-activation time: 0.367. Time for input: 0.003. Time for k-activation constraints 0.364.
+Refinement of bounds time: 24.920. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 142 after cutoff 136 number of args 142
+total k-activation time: 0.398. Time for input: 0.004. Time for k-activation constraints 0.394.
+Refinement of bounds time: 32.734. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 198 after cutoff 198 number of args 198
+total k-activation time: 0.358. Time for input: 0.005. Time for k-activation constraints 0.353.
+Refinement of bounds time: 32.800. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.402. Time for input: 0.005. Time for k-activation constraints 0.397.
+Refinement of bounds time: 2.632. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.390. Time for input: 0.001. Time for k-activation constraints 0.389.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.259
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [20.579959050415454, 36.62211151742102, 33.68106079680014, 32.196346393796595, 30.2786179345816, 27.836226406667947, 30.455151476619736, 35.51361522769943, 35.72398701730772, 34.32149293902643] adv labels  None
+img 29 Failed
+progress: 30/100, correct:  30/30, verified: 13/30, unsafe: 0/30,  time: 109.750; 60.959; 1828.767
+concrete  [0.0, 0.0, 0.0, 10.830505056717953, 0.0, 4.516078570162605, 0.0, 0.0, 0.0, 2.466778408378041]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [4.5513161259065145, 9.245935075159982, 10.230466596309961, 20.45424721667885, 7.122959842026049, 13.919181696385547, 5.069301127117976, 12.277625420380096, 10.266998337146045, 13.9385883883962] adv labels  None
+krelu: n 70 split_zero 49 after cutoff 45 number of args 49
+total k-activation time: 0.391. Time for input: 0.001. Time for k-activation constraints 0.390.
+Refinement of bounds time: 12.631. MILP used: True. 21 bounds refined.
+krelu: n 70 split_zero 65 after cutoff 60 number of args 65
+total k-activation time: 0.396. Time for input: 0.002. Time for k-activation constraints 0.394.
+Refinement of bounds time: 16.775. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 89 after cutoff 86 number of args 89
+total k-activation time: 0.364. Time for input: 0.002. Time for k-activation constraints 0.361.
+Refinement of bounds time: 18.822. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 123 after cutoff 119 number of args 123
+total k-activation time: 0.364. Time for input: 0.003. Time for k-activation constraints 0.361.
+Refinement of bounds time: 24.790. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 182 after cutoff 181 number of args 182
+total k-activation time: 0.373. Time for input: 0.005. Time for k-activation constraints 0.368.
+Refinement of bounds time: 2.621. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.388. Time for input: 0.001. Time for k-activation constraints 0.386.
+Model status: 2, Objval against label 0: -3.0923, Final solve time: 0.235
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [3.7510659691423003, 8.244944767574232, 9.295854760695654, 19.740415513581507, 6.3178873933864725, 13.127118247993236, 4.067722659418515, 11.211883408339178, 9.292093685049105, 13.048784993330038] adv labels  None
+img 30 Failed
+progress: 31/100, correct:  31/31, verified: 13/31, unsafe: 0/31,  time: 79.191; 61.547; 1907.958
+concrete  [0.0, 7.005614448218297, 0.07021797472828506, 0.0, 0.0, 0.0, 0.0, 1.117147479912642, 1.4317321240223955, 0.027882785273493988]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [39.75981439620323, 70.27238386682724, 69.1524483049253, 68.76225583345895, 62.04547846516795, 60.11634903668031, 65.28104392272988, 76.69743300095988, 75.76813666583287, 74.05747945892273] adv labels  None
+krelu: n 70 split_zero 64 after cutoff 56 number of args 64
+total k-activation time: 0.400. Time for input: 0.002. Time for k-activation constraints 0.398.
+Refinement of bounds time: 16.635. MILP used: True. 25 bounds refined.
+krelu: n 70 split_zero 87 after cutoff 82 number of args 87
+total k-activation time: 0.394. Time for input: 0.003. Time for k-activation constraints 0.391.
+Refinement of bounds time: 30.773. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 192 after cutoff 186 number of args 192
+total k-activation time: 0.398. Time for input: 0.004. Time for k-activation constraints 0.394.
+Refinement of bounds time: 32.756. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.369. Time for input: 0.005. Time for k-activation constraints 0.364.
+Refinement of bounds time: 32.893. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.367. Time for input: 0.004. Time for k-activation constraints 0.362.
+Refinement of bounds time: 2.659. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.392. Time for input: 0.001. Time for k-activation constraints 0.391.
+Model status: 2, Objval against label 0: -37.9745, Final solve time: 0.286
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [38.23055601424988, 67.78570675756464, 66.55245629256423, 66.21989668175792, 59.700741008228235, 57.87488311779908, 62.70362901834019, 73.76335280989021, 72.97962138668558, 71.32757880237303] adv labels  None
+img 31 Failed
+progress: 32/100, correct:  32/32, verified: 13/32, unsafe: 0/32,  time: 119.611; 63.362; 2027.570
+concrete  [0.0, 0.0, 0.0, 13.64543077739554, 0.0, 4.783553382947907, 0.0, 0.0, 0.5656868958450506, 2.550352365909085]
+nlb  [0.0, 0.0, 0.0, 7.168929325731266, 0.0, 0.38808662240128816, 0.0, 0.0, 0.0, 0.0]  nub  [0.0, 1.0521531459703803, 3.149765229051869, 17.77711691849049, 0.09410630920030513, 8.291585645257463, 0.0, 2.1073831723112084, 3.3948902267605368, 6.422429828182614] adv labels  None
+img 32 Verified 3
+progress: 33/100, correct:  33/33, verified: 14/33, unsafe: 0/33,  time: 0.456; 61.455; 2028.026
+concrete  [1.4391579692738548, 0.0, 0.0, 0.0, 3.2989298417011654, 0.0, 1.0082554717481362, 0.0, 0.12703141716877084, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [17.17751339600254, 19.892506065570927, 23.100454044275725, 19.795043715229326, 21.94270573231115, 19.86809794397086, 23.410212243728516, 24.171737924228225, 24.281290249940263, 24.02612248033036] adv labels  None
+krelu: n 70 split_zero 43 after cutoff 40 number of args 43
+total k-activation time: 0.367. Time for input: 0.001. Time for k-activation constraints 0.365.
+Refinement of bounds time: 12.532. MILP used: True. 34 bounds refined.
+krelu: n 70 split_zero 49 after cutoff 45 number of args 49
+total k-activation time: 0.397. Time for input: 0.002. Time for k-activation constraints 0.395.
+Refinement of bounds time: 16.700. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 93 after cutoff 89 number of args 93
+total k-activation time: 0.365. Time for input: 0.002. Time for k-activation constraints 0.363.
+Refinement of bounds time: 24.870. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 181 after cutoff 179 number of args 181
+total k-activation time: 0.387. Time for input: 0.006. Time for k-activation constraints 0.380.
+Refinement of bounds time: 32.777. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.364. Time for input: 0.005. Time for k-activation constraints 0.360.
+Refinement of bounds time: 2.623. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Model status: 2, Objval against label 0: -13.8082, Final solve time: 0.246
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.145945429988902, 14.732041407497142, 17.93971514315954, 14.903901679439267, 17.784626335145195, 15.679228869691158, 18.92254505906714, 18.611689389344185, 18.913220025299356, 18.752918357460338] adv labels  None
+img 33 Failed
+progress: 34/100, correct:  34/34, verified: 14/34, unsafe: 0/34,  time: 93.132; 62.387; 2121.158
+concrete  [0.0, 1.0504853511933196, 3.0093652208435895, 2.721619006045357, 0.0, 0.0, 0.0, 10.727605772464205, 0.0, 2.6481088198083573]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.236456329301647, 0.0, 0.0]  nub  [2.7437418295950295, 8.198997706465805, 9.807218437044202, 9.849996762418154, 3.430498762043904, 3.6944439299872323, 2.2819594660908424, 18.772663239967883, 8.32280409116678, 9.838786616247257] adv labels  None
+krelu: n 70 split_zero 33 after cutoff 31 number of args 33
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Refinement of bounds time: 12.674. MILP used: True. 72 bounds refined.
+krelu: n 70 split_zero 54 after cutoff 45 number of args 54
+total k-activation time: 0.399. Time for input: 0.003. Time for k-activation constraints 0.396.
+Refinement of bounds time: 16.670. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 73 after cutoff 65 number of args 73
+total k-activation time: 0.401. Time for input: 0.002. Time for k-activation constraints 0.399.
+Refinement of bounds time: 16.706. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 89 after cutoff 85 number of args 89
+total k-activation time: 0.395. Time for input: 0.003. Time for k-activation constraints 0.393.
+Refinement of bounds time: 24.794. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 147 after cutoff 146 number of args 147
+total k-activation time: 0.398. Time for input: 0.003. Time for k-activation constraints 0.394.
+Refinement of bounds time: 2.612. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.383. Time for input: 0.001. Time for k-activation constraints 0.382.
+Model status: 2, Objval against label 2: -0.2573, Final solve time: 0.157
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.5069474763587145, 0.0, 0.0]  nub  [0.9627203050189539, 5.864895335132486, 7.589580843484233, 7.547401172206006, 1.3941649061634933, 1.4462312804928263, 0.01729720644869566, 16.64104955592078, 5.587003081187288, 7.517560839968121] adv labels  None
+img 34 Failed
+progress: 35/100, correct:  35/35, verified: 14/35, unsafe: 0/35,  time: 76.952; 62.803; 2198.110
+concrete  [0.0, 1.9006014968089606, 7.137138766199838, 0.7717498132086464, 0.0, 0.0, 0.6400381168721662, 0.8997214709584953, 0.0, 0.0]
+nlb  [0.0, 0.0, 1.8320037008010484, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [2.205112082518149, 7.254450609675448, 12.306336807101733, 6.033637254098385, 2.8239976196656347, 3.1992622801257684, 5.214199424711929, 5.74732712674371, 3.961013224824034, 2.243373349576197] adv labels  None
+krelu: n 70 split_zero 33 after cutoff 31 number of args 33
+total k-activation time: 0.399. Time for input: 0.001. Time for k-activation constraints 0.398.
+Refinement of bounds time: 12.433. MILP used: True. 69 bounds refined.
+krelu: n 70 split_zero 36 after cutoff 27 number of args 36
+total k-activation time: 0.366. Time for input: 0.001. Time for k-activation constraints 0.365.
+Refinement of bounds time: 12.613. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 49 after cutoff 44 number of args 49
+total k-activation time: 0.415. Time for input: 0.001. Time for k-activation constraints 0.414.
+Refinement of bounds time: 16.817. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 75 after cutoff 71 number of args 76
+total k-activation time: 0.398. Time for input: 0.002. Time for k-activation constraints 0.396.
+Refinement of bounds time: 18.749. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 124 after cutoff 119 number of args 124
+total k-activation time: 0.435. Time for input: 0.003. Time for k-activation constraints 0.432.
+Refinement of bounds time: 2.611. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Model status: 2, Objval against label 1: -0.5330, Final solve time: 0.143
+nlb  [0.0, 0.0, 3.163838269796333, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.7877854919691393, 5.780478092107609, 11.003157848622546, 4.505933132436181, 1.5681247362963586, 1.7380565788102462, 3.6981286488373093, 4.056833402293115, 2.2503779375201445, 0.5798098662350029] adv labels  None
+img 35 Failed
+progress: 36/100, correct:  36/36, verified: 14/36, unsafe: 0/36,  time: 66.718; 62.912; 2264.828
+concrete  [0.0, 0.5985623316501, 2.9112803431990133, 2.087117156927253, 0.0, 0.0, 0.0, 10.793484437848518, 0.0, 2.83121076897596]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.9914971853236505, 0.0, 0.0]  nub  [2.2759556483989525, 6.173334749756291, 8.302933809925316, 7.008202951205545, 2.2239899866199373, 3.1260181466976387, 2.0249222886592797, 17.658209359357564, 4.898281233499879, 8.101682860536657] adv labels  None
+krelu: n 70 split_zero 39 after cutoff 34 number of args 39
+total k-activation time: 0.398. Time for input: 0.001. Time for k-activation constraints 0.396.
+Refinement of bounds time: 12.076. MILP used: True. 40 bounds refined.
+krelu: n 70 split_zero 41 after cutoff 36 number of args 41
+total k-activation time: 0.398. Time for input: 0.002. Time for k-activation constraints 0.397.
+Refinement of bounds time: 12.702. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 64 after cutoff 59 number of args 64
+total k-activation time: 0.378. Time for input: 0.002. Time for k-activation constraints 0.375.
+Refinement of bounds time: 16.704. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 96 after cutoff 89 number of args 96
+total k-activation time: 0.400. Time for input: 0.003. Time for k-activation constraints 0.397.
+Refinement of bounds time: 24.758. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 146 after cutoff 146 number of args 146
+total k-activation time: 0.400. Time for input: 0.004. Time for k-activation constraints 0.396.
+Refinement of bounds time: 2.617. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.401. Time for input: 0.001. Time for k-activation constraints 0.400.
+Model status: 6, Objval against label 2: 0.0000, Final solve time: 0.151
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.7432459857003755, 0.0, 0.0]  nub  [1.7440181686176335, 5.49873099684339, 7.6293807379339516, 6.373314592327297, 1.7405955105209567, 2.4130118311532187, 1.2563459437899929, 17.092487990375183, 4.124246468887323, 7.624424566591835] adv labels  None
+img 36 Verified 7
+progress: 37/100, correct:  37/37, verified: 15/37, unsafe: 0/37,  time: 72.459; 63.170; 2337.287
+concrete  [0.0, 10.107023280790164, 0.80004567878732, 0.0, 0.0, 0.0, 0.0, 1.4278376064582654, 2.17518492943703, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.54564709411147, 26.753314968805448, 21.65427428509206, 19.749558893532665, 18.901268379300973, 16.32754767774303, 19.391051723395453, 22.566212816975288, 23.46446381775285, 21.69647703837878] adv labels  None
+krelu: n 70 split_zero 51 after cutoff 47 number of args 51
+total k-activation time: 0.393. Time for input: 0.001. Time for k-activation constraints 0.391.
+Refinement of bounds time: 12.645. MILP used: True. 27 bounds refined.
+krelu: n 70 split_zero 61 after cutoff 57 number of args 61
+total k-activation time: 0.379. Time for input: 0.002. Time for k-activation constraints 0.376.
+Refinement of bounds time: 18.877. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 116 after cutoff 108 number of args 116
+total k-activation time: 0.368. Time for input: 0.003. Time for k-activation constraints 0.364.
+Refinement of bounds time: 24.731. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 176 after cutoff 176 number of args 176
+total k-activation time: 0.398. Time for input: 0.004. Time for k-activation constraints 0.394.
+Refinement of bounds time: 32.796. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 199 after cutoff 199 number of args 199
+total k-activation time: 0.362. Time for input: 0.005. Time for k-activation constraints 0.358.
+Refinement of bounds time: 2.622. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.379. Time for input: 0.001. Time for k-activation constraints 0.378.
+Model status: 2, Objval against label 0: -10.6687, Final solve time: 0.239
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [10.944226879932542, 24.772269117278988, 19.171029012228125, 17.282323627075854, 16.388614328102282, 14.230881364882958, 17.07692705037056, 19.748211452982826, 20.932458139433887, 18.988043834388527] adv labels  None
+img 37 Failed
+progress: 38/100, correct:  38/38, verified: 15/38, unsafe: 0/38,  time: 95.289; 64.015; 2432.576
+concrete  [0.0, 0.0, 2.3202333446936247, 3.1061372003569914, 0.0, 1.3672424480016212, 0.0, 0.0, 0.0, 0.0]
+img 38 not considered, incorrectly classified
+progress: 39/100, correct:  38/39, verified: 15/38, unsafe: 0/38,  time: 0.288; 64.015; 2432.576
+concrete  [0.0, 10.81895636463428, 0.2583383244523272, 0.0, 0.0, 0.0, 0.0, 2.015059665215445, 2.6774929422208293, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [5.342938354225448, 19.17276861468786, 11.007671250136355, 8.866035506988135, 7.7747695592035075, 7.005758404805774, 9.094850441726782, 12.006411733994163, 12.898699713263914, 9.994276449186943] adv labels  None
+krelu: n 70 split_zero 45 after cutoff 41 number of args 45
+total k-activation time: 0.397. Time for input: 0.001. Time for k-activation constraints 0.395.
+Refinement of bounds time: 12.573. MILP used: True. 31 bounds refined.
+krelu: n 70 split_zero 52 after cutoff 46 number of args 52
+total k-activation time: 0.362. Time for input: 0.001. Time for k-activation constraints 0.360.
+Refinement of bounds time: 16.795. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 85 after cutoff 81 number of args 85
+total k-activation time: 0.402. Time for input: 0.005. Time for k-activation constraints 0.397.
+Refinement of bounds time: 24.833. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 130 after cutoff 124 number of args 130
+total k-activation time: 0.398. Time for input: 0.004. Time for k-activation constraints 0.394.
+Refinement of bounds time: 24.818. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 178 after cutoff 177 number of args 178
+total k-activation time: 0.377. Time for input: 0.006. Time for k-activation constraints 0.372.
+Refinement of bounds time: 2.624. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.386. Time for input: 0.001. Time for k-activation constraints 0.385.
+Model status: 2, Objval against label 0: -2.0227, Final solve time: 0.202
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [2.8831132305168325, 16.70388318103207, 7.603730457737199, 5.572520676319706, 4.467483934852055, 4.123339891319184, 5.863022159238498, 8.624886741242618, 9.521871839247211, 6.587680599857844] adv labels  None
+img 39 Failed
+progress: 40/100, correct:  39/40, verified: 15/39, unsafe: 0/39,  time: 85.196; 64.558; 2517.773
+concrete  [0.0, 7.914244272697975, 0.5799396424769402, 0.0, 0.0, 0.0, 0.0, 1.2404020041516883, 1.7161122886882223, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [63.34730418383533, 108.28679791923184, 110.96088662204431, 108.58748588456247, 96.48170862382483, 93.07947386047633, 100.99598868596148, 122.93637288316778, 119.9576484939344, 117.39373483957021] adv labels  None
+krelu: n 70 split_zero 102 after cutoff 88 number of args 102
+total k-activation time: 0.399. Time for input: 0.002. Time for k-activation constraints 0.396.
+Refinement of bounds time: 18.902. MILP used: True. 6 bounds refined.
+krelu: n 70 split_zero 123 after cutoff 120 number of args 123
+total k-activation time: 0.376. Time for input: 0.004. Time for k-activation constraints 0.372.
+Refinement of bounds time: 32.835. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 196 after cutoff 196 number of args 196
+total k-activation time: 0.402. Time for input: 0.005. Time for k-activation constraints 0.397.
+Refinement of bounds time: 32.957. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.368. Time for input: 0.005. Time for k-activation constraints 0.363.
+Refinement of bounds time: 33.105. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.409. Time for input: 0.005. Time for k-activation constraints 0.404.
+Refinement of bounds time: 2.634. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.384. Time for input: 0.001. Time for k-activation constraints 0.382.
+Model status: 2, Objval against label 0: -62.8193, Final solve time: 0.324
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [63.15168510860256, 107.99007188111086, 110.64273767765626, 108.26547658087678, 96.20484164855316, 92.79119127047328, 100.68175584775871, 122.57291247043432, 119.61065689087218, 117.05121159210896] adv labels  None
+img 40 Failed
+progress: 41/100, correct:  40/41, verified: 15/40, unsafe: 0/40,  time: 124.518; 66.057; 2642.291
+concrete  [0.0, 0.03096404316278054, 2.377859580194873, 2.552645459234835, 0.0, 0.0, 0.0, 11.526624011337836, 0.0, 3.6231859813926195]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.335800942757636, 20.33363928901704, 21.703490066816787, 23.17566033692807, 16.17006085094663, 18.88843020963364, 16.157410132384125, 32.271015839887376, 21.808265478016196, 25.077247137620837] adv labels  None
+krelu: n 70 split_zero 53 after cutoff 48 number of args 53
+total k-activation time: 0.399. Time for input: 0.002. Time for k-activation constraints 0.397.
+Refinement of bounds time: 12.636. MILP used: True. 34 bounds refined.
+krelu: n 70 split_zero 69 after cutoff 66 number of args 69
+total k-activation time: 0.398. Time for input: 0.002. Time for k-activation constraints 0.396.
+Refinement of bounds time: 16.779. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 101 after cutoff 100 number of args 101
+total k-activation time: 0.401. Time for input: 0.002. Time for k-activation constraints 0.399.
+Refinement of bounds time: 24.729. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 155 after cutoff 152 number of args 155
+total k-activation time: 0.400. Time for input: 0.004. Time for k-activation constraints 0.397.
+Refinement of bounds time: 32.892. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 198 after cutoff 198 number of args 198
+total k-activation time: 0.405. Time for input: 0.005. Time for k-activation constraints 0.401.
+Refinement of bounds time: 2.633. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.403. Time for input: 0.001. Time for k-activation constraints 0.401.
+Model status: 2, Objval against label 0: -11.8491, Final solve time: 0.287
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.401065734057871, 17.856221529779006, 19.24034849282138, 20.552797433477973, 13.86140875994461, 16.38303310903541, 13.575141266394763, 29.834339765650544, 18.898380230343157, 22.227793940693918] adv labels  None
+img 41 Failed
+progress: 42/100, correct:  41/42, verified: 15/41, unsafe: 0/41,  time: 93.494; 66.726; 2735.785
+concrete  [0.0, 0.0, 0.42700462625930646, 0.0, 9.393373699811358, 0.0, 0.0, 1.6839046669163333, 0.0, 1.906944496182081]
+nlb  [0.0, 0.0, 0.0, 0.0, 3.9136554240374126, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.5446149920974495, 0.0, 2.512156055770003, 0.0049933253627906585, 11.984229526749282, 0.41808699252456083, 0.8989544743897415, 4.061650652889741, 1.1691002650747555, 5.239685013954408] adv labels  None
+img 42 Verified 4
+progress: 43/100, correct:  42/43, verified: 16/42, unsafe: 0/42,  time: 0.428; 65.148; 2736.213
+concrete  [0.0, 1.4105532305766948, 8.11211863281546, 0.7855122221592817, 0.0, 0.0, 0.11143839222984508, 1.679396152870594, 0.0, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [30.350103841305586, 48.95841101061814, 51.54324661282982, 47.00789061594208, 41.936037461692315, 39.99962973198463, 46.99036583330878, 54.179912596949315, 50.55280210589416, 49.988837827693494] adv labels  None
+krelu: n 70 split_zero 55 after cutoff 49 number of args 55
+total k-activation time: 0.401. Time for input: 0.001. Time for k-activation constraints 0.399.
+Refinement of bounds time: 16.649. MILP used: True. 33 bounds refined.
+krelu: n 70 split_zero 94 after cutoff 84 number of args 94
+total k-activation time: 0.367. Time for input: 0.002. Time for k-activation constraints 0.365.
+Refinement of bounds time: 22.791. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 138 after cutoff 134 number of args 138
+total k-activation time: 0.402. Time for input: 0.003. Time for k-activation constraints 0.398.
+Refinement of bounds time: 32.783. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.410. Time for input: 0.005. Time for k-activation constraints 0.405.
+Refinement of bounds time: 32.884. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.373. Time for input: 0.005. Time for k-activation constraints 0.369.
+Refinement of bounds time: 2.630. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.365. Time for input: 0.001. Time for k-activation constraints 0.364.
+Model status: 2, Objval against label 0: -27.4551, Final solve time: 0.345
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [28.257426752244836, 45.989208161726786, 48.33875997318104, 43.74425430658241, 38.88660741679965, 37.52819183859896, 43.7890685834094, 50.4661956002447, 46.897469650537744, 46.247330968449496] adv labels  None
+img 43 Failed
+progress: 44/100, correct:  43/44, verified: 16/43, unsafe: 0/43,  time: 111.580; 66.228; 2847.794
+concrete  [0.0, 0.0, 0.9897079622177366, 7.371247138065357, 0.0, 3.887186019261338, 0.0, 0.0, 0.0, 0.27591869024683674]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.25419968035546, 23.372807392289584, 23.760541274265826, 27.54995642044731, 18.907036582338332, 22.74856461388673, 20.721398718655237, 24.794603624009508, 23.850996859985205, 24.431078404523] adv labels  None
+krelu: n 70 split_zero 44 after cutoff 41 number of args 44
+total k-activation time: 0.401. Time for input: 0.001. Time for k-activation constraints 0.400.
+Refinement of bounds time: 16.647. MILP used: True. 28 bounds refined.
+krelu: n 70 split_zero 77 after cutoff 73 number of args 77
+total k-activation time: 0.400. Time for input: 0.002. Time for k-activation constraints 0.398.
+Refinement of bounds time: 18.908. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 109 after cutoff 105 number of args 109
+total k-activation time: 0.407. Time for input: 0.007. Time for k-activation constraints 0.400.
+Refinement of bounds time: 24.834. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 168 after cutoff 166 number of args 168
+total k-activation time: 0.387. Time for input: 0.006. Time for k-activation constraints 0.381.
+Refinement of bounds time: 32.882. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.403. Time for input: 0.005. Time for k-activation constraints 0.398.
+Refinement of bounds time: 2.623. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.379. Time for input: 0.001. Time for k-activation constraints 0.378.
+Model status: 2, Objval against label 0: -12.0658, Final solve time: 0.280
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.346134423542228, 21.05428207629084, 21.422472484487486, 25.449449939378894, 16.698900382209484, 20.847401078100887, 18.223802040740214, 22.03741173106839, 21.286864359150467, 21.93318520296993] adv labels  None
+img 44 Failed
+progress: 45/100, correct:  44/45, verified: 16/44, unsafe: 0/44,  time: 99.667; 66.988; 2947.460
+concrete  [0.0, 0.0, 0.0, 3.044759685543643, 0.0, 8.237795806128537, 0.0, 0.0, 0.2740921335445458, 1.0057245677835691]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [17.239332117220247, 27.01371010513244, 26.722485741148677, 28.66039198432608, 22.232241467646997, 27.974258199737523, 25.438027576584794, 29.420804397607306, 29.637541867949118, 30.31932366956948] adv labels  None
+krelu: n 70 split_zero 40 after cutoff 34 number of args 40
+total k-activation time: 0.401. Time for input: 0.001. Time for k-activation constraints 0.400.
+Refinement of bounds time: 16.642. MILP used: True. 74 bounds refined.
+krelu: n 70 split_zero 74 after cutoff 64 number of args 74
+total k-activation time: 0.397. Time for input: 0.002. Time for k-activation constraints 0.395.
+Refinement of bounds time: 24.797. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 126 after cutoff 118 number of args 126
+total k-activation time: 0.403. Time for input: 0.006. Time for k-activation constraints 0.397.
+Refinement of bounds time: 24.851. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 168 after cutoff 168 number of args 168
+total k-activation time: 0.402. Time for input: 0.004. Time for k-activation constraints 0.398.
+Refinement of bounds time: 32.892. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.402. Time for input: 0.005. Time for k-activation constraints 0.397.
+Refinement of bounds time: 2.628. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.366. Time for input: 0.001. Time for k-activation constraints 0.365.
+Model status: 2, Objval against label 0: -11.2909, Final solve time: 0.232
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.556512608830097, 17.9364676981834, 18.250879085362563, 20.813659365613553, 14.718529520333739, 22.01393055515378, 17.94924023439517, 20.2008153780992, 20.71690364163978, 21.631036717021082] adv labels  None
+img 45 Failed
+progress: 46/100, correct:  45/46, verified: 16/45, unsafe: 0/45,  time: 105.459; 67.843; 3052.919
+concrete  [0.0, 7.940686392715196, 0.4988913871901529, 0.11425485587175227, 0.0, 0.0, 0.0, 0.9876377676464835, 1.5587595357643234, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [23.367823198075772, 39.72226144575139, 36.88891090339802, 37.36185509155914, 33.923237543292, 31.19228834120578, 33.306673867644264, 39.55342160630519, 39.4747917578185, 38.19160032451905] adv labels  None
+krelu: n 70 split_zero 52 after cutoff 45 number of args 52
+total k-activation time: 0.399. Time for input: 0.001. Time for k-activation constraints 0.398.
+Refinement of bounds time: 12.640. MILP used: True. 28 bounds refined.
+krelu: n 70 split_zero 67 after cutoff 58 number of args 67
+total k-activation time: 0.408. Time for input: 0.002. Time for k-activation constraints 0.406.
+Refinement of bounds time: 18.886. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 129 after cutoff 125 number of args 129
+total k-activation time: 0.380. Time for input: 0.004. Time for k-activation constraints 0.376.
+Refinement of bounds time: 32.846. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 198 after cutoff 197 number of args 198
+total k-activation time: 0.372. Time for input: 0.005. Time for k-activation constraints 0.367.
+Refinement of bounds time: 32.784. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.370. Time for input: 0.005. Time for k-activation constraints 0.365.
+Refinement of bounds time: 2.631. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.384. Time for input: 0.001. Time for k-activation constraints 0.383.
+Model status: 2, Objval against label 0: -19.7180, Final solve time: 0.226
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [20.592814190501155, 35.262797609056236, 32.00413317777137, 32.55353300820626, 29.281738392103808, 27.09750387247116, 28.704808355677663, 34.29190644121193, 34.369511243874406, 33.223777140162646] adv labels  None
+img 46 Failed
+progress: 47/100, correct:  46/47, verified: 16/46, unsafe: 0/46,  time: 103.471; 68.617; 3156.390
+concrete  [0.0, 0.0, 8.346922783521647, 0.6857795454663129, 0.0, 0.0, 0.652111795445411, 0.8216556609528911, 0.0, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [21.0227723593807, 31.298754785307214, 35.370135899729554, 29.636388534836975, 26.492047103574833, 25.24685699416884, 31.178213934605004, 33.76295689433803, 32.13547140086115, 30.429746469625552] adv labels  None
+krelu: n 70 split_zero 57 after cutoff 52 number of args 57
+total k-activation time: 0.400. Time for input: 0.001. Time for k-activation constraints 0.398.
+Refinement of bounds time: 16.643. MILP used: True. 27 bounds refined.
+krelu: n 70 split_zero 81 after cutoff 77 number of args 81
+total k-activation time: 0.368. Time for input: 0.002. Time for k-activation constraints 0.365.
+Refinement of bounds time: 16.810. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 114 after cutoff 111 number of args 114
+total k-activation time: 0.404. Time for input: 0.003. Time for k-activation constraints 0.401.
+Refinement of bounds time: 26.741. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 188 after cutoff 188 number of args 188
+total k-activation time: 0.409. Time for input: 0.004. Time for k-activation constraints 0.405.
+Refinement of bounds time: 32.812. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.405. Time for input: 0.005. Time for k-activation constraints 0.400.
+Refinement of bounds time: 2.648. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.366. Time for input: 0.001. Time for k-activation constraints 0.365.
+Model status: 2, Objval against label 0: -18.5750, Final solve time: 0.242
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [19.380046904908358, 28.845705208263794, 33.07929816339431, 27.267210321767095, 24.254633297821563, 23.44860272373884, 29.103924274437922, 30.95035953650387, 29.44518005573975, 27.621240153481626] adv labels  None
+img 47 Failed
+progress: 48/100, correct:  47/48, verified: 16/47, unsafe: 0/47,  time: 99.383; 69.272; 3255.773
+concrete  [0.0, 0.0, 0.2718401273412853, 0.0, 10.441483276994607, 0.0, 0.0, 3.691441397527166, 0.0, 2.520562067459224]
+nlb  [0.0, 0.0, 0.0, 0.0, 7.943704676739337, 0.0, 0.0, 2.4264971500108916, 0.0, 1.1945760224407875]  nub  [0.0, 0.0, 1.1716938683139115, 0.0, 12.240252567217906, 0.0, 0.0, 4.538844268610499, 0.0, 4.02795573701101] adv labels  None
+img 48 Verified 4
+progress: 49/100, correct:  48/49, verified: 17/48, unsafe: 0/48,  time: 0.347; 67.836; 3256.119
+concrete  [0.0, 0.0, 0.06591461244501493, 0.0, 10.076030432110002, 0.0, 0.0, 2.03576155008235, 0.0, 3.0716896168371304]
+nlb  [0.0, 0.0, 0.0, 0.0, 4.487790554929593, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.5547815559843968, 0.0, 3.1500656544456147, 0.0, 13.010018333932063, 0.0, 0.5863975286608527, 4.441405364694704, 0.6445186941112108, 7.1193336143323505] adv labels  None
+img 49 Verified 4
+progress: 50/100, correct:  49/50, verified: 18/49, unsafe: 0/49,  time: 0.472; 66.461; 3256.591
+concrete  [0.0, 0.0, 1.8938657791792564, 0.0, 1.285536103685067, 2.103130601929566, 11.540647971858107, 0.0, 0.9404567636720323, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3.3074587147345116, 0.0, 0.0, 0.0]  nub  [6.76207059764332, 2.377281129598573, 7.706166537287068, 3.244876593032017, 5.797311912727825, 7.663831615454488, 16.65557577808245, 3.5400800573864943, 6.021431551684431, 1.5074196540261062] adv labels  None
+krelu: n 70 split_zero 41 after cutoff 34 number of args 41
+total k-activation time: 0.383. Time for input: 0.002. Time for k-activation constraints 0.381.
+Refinement of bounds time: 12.640. MILP used: True. 42 bounds refined.
+krelu: n 70 split_zero 48 after cutoff 38 number of args 48
+total k-activation time: 0.377. Time for input: 0.002. Time for k-activation constraints 0.375.
+Refinement of bounds time: 16.689. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 77 after cutoff 69 number of args 77
+total k-activation time: 0.405. Time for input: 0.002. Time for k-activation constraints 0.403.
+Refinement of bounds time: 16.732. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 84 after cutoff 81 number of args 84
+total k-activation time: 0.382. Time for input: 0.002. Time for k-activation constraints 0.380.
+Refinement of bounds time: 18.746. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 125 after cutoff 124 number of args 125
+total k-activation time: 0.373. Time for input: 0.003. Time for k-activation constraints 0.369.
+Refinement of bounds time: 2.624. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.387. Time for input: 0.001. Time for k-activation constraints 0.386.
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.809637439316887, 0.0, 0.0, 0.0]  nub  [5.355149058586656, 0.8137759075798995, 6.118457623593475, 1.7562837772714632, 4.6886436821047965, 6.246490221844063, 15.572614886893408, 2.0373182490774533, 4.457614299808666, 0.3301694216852476] adv labels  None
+img 50 Verified 6
+progress: 51/100, correct:  50/51, verified: 19/50, unsafe: 0/50,  time: 70.798; 66.548; 3327.389
+concrete  [0.0, 0.0, 0.5253391870499966, 8.651097527300896, 0.0, 2.1473407117091274, 0.0, 0.0, 0.881111809645357, 1.0944570057247534]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [5.1970918924610245, 10.147911484565734, 11.619635302172593, 16.899903770030786, 7.646793167733678, 10.25088340296693, 6.1198723230483525, 11.280688785334604, 10.805651661355007, 12.252234750401279] adv labels  None
+krelu: n 70 split_zero 26 after cutoff 25 number of args 26
+total k-activation time: 0.402. Time for input: 0.001. Time for k-activation constraints 0.401.
+Refinement of bounds time: 12.332. MILP used: True. 90 bounds refined.
+krelu: n 70 split_zero 48 after cutoff 30 number of args 48
+total k-activation time: 0.368. Time for input: 0.002. Time for k-activation constraints 0.367.
+Refinement of bounds time: 16.689. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 78 after cutoff 60 number of args 78
+total k-activation time: 0.378. Time for input: 0.004. Time for k-activation constraints 0.374.
+Refinement of bounds time: 16.707. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 104 after cutoff 100 number of args 104
+total k-activation time: 0.398. Time for input: 0.003. Time for k-activation constraints 0.395.
+Refinement of bounds time: 24.875. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 160 after cutoff 159 number of args 160
+total k-activation time: 0.370. Time for input: 0.004. Time for k-activation constraints 0.366.
+Refinement of bounds time: 2.624. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.380. Time for input: 0.001. Time for k-activation constraints 0.379.
+Model status: 2, Objval against label 1: -1.0941, Final solve time: 0.190
+nlb  [0.0, 0.0, 0.0, 1.6510906800897156, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.9113087793541884, 4.779494466524237, 6.548792380605363, 13.346402962681902, 3.0877083742052913, 6.392083753789803, 0.8988985059399004, 5.6416833517802285, 5.640552211833169, 7.095525096839563] adv labels  None
+img 51 Failed
+progress: 52/100, correct:  51/52, verified: 19/51, unsafe: 0/51,  time: 76.644; 66.746; 3404.033
+concrete  [0.0, 0.0, 0.0, 2.953233069363342, 0.0, 11.337209997191591, 0.18692784509130556, 0.0, 1.403136905606796, 1.590275083227855]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.7682374087103063, 0.0, 0.0, 0.0, 0.0]  nub  [4.87198686430897, 6.048686862067297, 6.995978789622737, 11.320262163924186, 4.907295433231841, 18.499428832847286, 9.784566062082696, 9.247932814233192, 10.736829817561395, 11.675405537303046] adv labels  None
+krelu: n 70 split_zero 38 after cutoff 34 number of args 38
+total k-activation time: 0.401. Time for input: 0.001. Time for k-activation constraints 0.399.
+Refinement of bounds time: 12.658. MILP used: True. 41 bounds refined.
+krelu: n 70 split_zero 51 after cutoff 45 number of args 51
+total k-activation time: 0.400. Time for input: 0.003. Time for k-activation constraints 0.397.
+Refinement of bounds time: 16.685. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 89 after cutoff 81 number of args 89
+total k-activation time: 0.404. Time for input: 0.002. Time for k-activation constraints 0.402.
+Refinement of bounds time: 16.870. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 113 after cutoff 111 number of args 113
+total k-activation time: 0.409. Time for input: 0.007. Time for k-activation constraints 0.402.
+Refinement of bounds time: 24.861. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 167 after cutoff 164 number of args 167
+total k-activation time: 0.373. Time for input: 0.005. Time for k-activation constraints 0.368.
+Refinement of bounds time: 2.625. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.383. Time for input: 0.001. Time for k-activation constraints 0.382.
+Model status: 2, Objval against label 2: -0.0500, Final solve time: 0.225
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 2.925590048708435, 0.0, 0.0, 0.0, 0.0]  nub  [3.1616713366753486, 3.6743117714541595, 4.745388745604516, 9.383626040205415, 2.6012288721192256, 17.098363380280468, 7.590783328005316, 6.495561100852352, 8.374935105108023, 9.249316700817912] adv labels  None
+img 52 Failed
+progress: 53/100, correct:  52/53, verified: 19/52, unsafe: 0/52,  time: 77.281; 66.948; 3481.313
+concrete  [0.0, 0.0, 0.0, 2.2161210353889693, 0.0, 6.465076228281533, 0.0, 0.0, 0.3671630097178885, 1.5830510245203862]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [23.811170436966556, 34.20884131475704, 34.66893951056016, 35.63178688258005, 31.036987851263774, 32.548817786471375, 33.47524815889156, 39.64975374120526, 38.38817234537751, 39.148726091679094] adv labels  None
+krelu: n 70 split_zero 54 after cutoff 49 number of args 54
+total k-activation time: 0.396. Time for input: 0.002. Time for k-activation constraints 0.395.
+Refinement of bounds time: 12.645. MILP used: True. 32 bounds refined.
+krelu: n 70 split_zero 77 after cutoff 72 number of args 77
+total k-activation time: 0.414. Time for input: 0.002. Time for k-activation constraints 0.412.
+Refinement of bounds time: 24.897. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 141 after cutoff 137 number of args 141
+total k-activation time: 0.416. Time for input: 0.003. Time for k-activation constraints 0.413.
+Refinement of bounds time: 32.742. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 197 after cutoff 197 number of args 197
+total k-activation time: 0.399. Time for input: 0.004. Time for k-activation constraints 0.394.
+Refinement of bounds time: 32.808. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.365. Time for input: 0.004. Time for k-activation constraints 0.361.
+Refinement of bounds time: 2.632. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.392. Time for input: 0.001. Time for k-activation constraints 0.391.
+Model status: 2, Objval against label 0: -21.2045, Final solve time: 0.238
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [21.898771499255872, 31.463245877893783, 31.85112204507592, 33.004202052076934, 28.542636349991312, 30.41217818118577, 30.790156395851255, 36.38729611747191, 35.67617112862689, 36.41679564333006] adv labels  None
+img 53 Failed
+progress: 54/100, correct:  53/54, verified: 19/53, unsafe: 0/53,  time: 109.526; 67.752; 3590.839
+concrete  [0.0, 0.0, 1.7961033113702214, 0.0, 0.9652544299434089, 2.3212995474137297, 13.545188290685783, 0.0, 1.6081706116641896, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.10543532204387054, 9.816337861620267, 0.0, 0.0, 0.0]  nub  [0.8465458979724104, 0.5287933302606976, 4.529553287533701, 0.0, 2.963878211677463, 4.482996539381013, 16.323359511151825, 0.23418507740061562, 4.1555819017017726, 0.0] adv labels  None
+img 54 Verified 6
+progress: 55/100, correct:  54/55, verified: 20/54, unsafe: 0/54,  time: 0.469; 66.506; 3591.308
+concrete  [10.026673811166175, 0.0, 0.0, 0.0, 0.0, 0.0, 1.1190801268909716, 0.0, 1.1688706867672476, 0.0]
+nlb  [5.9421683051125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.101496902051931, 0.0, 1.1212309731565782, 0.0, 0.2628145950555068, 1.8176485801156101, 3.7004529708746854, 1.326427107854429, 3.7683909406171177, 2.03354687579791] adv labels  None
+img 55 Verified 0
+progress: 56/100, correct:  55/56, verified: 21/55, unsafe: 0/55,  time: 0.381; 65.303; 3591.690
+concrete  [0.0, 0.0, 0.7813938409416216, 0.0, 10.441833126553256, 0.0, 0.0, 2.7188271504450445, 0.0, 1.6041304119097934]
+nlb  [0.0, 0.0, 0.0, 0.0, 5.504130171415753, 0.0, 0.0, 0.5205955576354456, 0.0, 0.0]  nub  [0.0, 0.0, 2.5963009961967285, 0.0, 13.261636911968473, 0.032380220207951706, 0.00990645103201173, 4.9711880381538025, 0.3599613125469025, 4.746682680312427] adv labels  None
+img 56 Verified 4
+progress: 57/100, correct:  56/57, verified: 22/56, unsafe: 0/56,  time: 0.423; 64.145; 3592.113
+concrete  [0.0, 9.714566790194366, 0.5575597405967107, 0.0, 0.0, 0.0, 0.0, 2.2357258760011858, 1.9882792047874263, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [31.574291907270215, 53.72538361764147, 53.17506427191283, 50.312465496685476, 47.14148250455021, 43.08870750576853, 48.70861676913217, 58.565425898016684, 56.17740334806471, 55.02238652308495] adv labels  None
+krelu: n 70 split_zero 65 after cutoff 59 number of args 65
+total k-activation time: 0.409. Time for input: 0.002. Time for k-activation constraints 0.407.
+Refinement of bounds time: 16.671. MILP used: True. 14 bounds refined.
+krelu: n 70 split_zero 100 after cutoff 90 number of args 100
+total k-activation time: 0.405. Time for input: 0.002. Time for k-activation constraints 0.403.
+Refinement of bounds time: 24.699. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 150 after cutoff 146 number of args 150
+total k-activation time: 0.400. Time for input: 0.004. Time for k-activation constraints 0.396.
+Refinement of bounds time: 32.845. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.411. Time for input: 0.005. Time for k-activation constraints 0.407.
+Refinement of bounds time: 32.879. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.375. Time for input: 0.005. Time for k-activation constraints 0.370.
+Refinement of bounds time: 2.644. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.367. Time for input: 0.001. Time for k-activation constraints 0.366.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.288
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [31.11746300589685, 53.02833446425286, 52.38655620014751, 49.821046075249306, 47.23973264411703, 42.41260876544463, 47.9465642536829, 57.7175986228599, 55.35738862359686, 54.19179835674529] adv labels  None
+img 57 Failed
+progress: 58/100, correct:  57/58, verified: 22/57, unsafe: 0/57,  time: 113.902; 65.018; 3706.015
+concrete  [0.0, 0.0, 0.0, 0.0, 2.406921053334533, 0.0, 0.0, 2.0359337014807153, 0.0, 10.679219194043636]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.744751606929897]  nub  [3.8383243274097456, 2.089268752092729, 2.4307577230539295, 5.5166629239574245, 9.340845288589673, 5.068196939885401, 1.0181073087176284, 9.237607204046732, 5.211270913285928, 16.745212410560388] adv labels  None
+krelu: n 70 split_zero 37 after cutoff 32 number of args 37
+total k-activation time: 0.367. Time for input: 0.001. Time for k-activation constraints 0.366.
+Refinement of bounds time: 8.533. MILP used: True. 46 bounds refined.
+krelu: n 70 split_zero 37 after cutoff 31 number of args 37
+total k-activation time: 0.367. Time for input: 0.001. Time for k-activation constraints 0.366.
+Refinement of bounds time: 16.685. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 77 after cutoff 68 number of args 77
+total k-activation time: 0.401. Time for input: 0.002. Time for k-activation constraints 0.399.
+Refinement of bounds time: 16.713. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 91 after cutoff 85 number of args 91
+total k-activation time: 0.374. Time for input: 0.003. Time for k-activation constraints 0.371.
+Refinement of bounds time: 24.804. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 152 after cutoff 147 number of args 152
+total k-activation time: 0.367. Time for input: 0.004. Time for k-activation constraints 0.363.
+Refinement of bounds time: 2.619. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 8 after cutoff 8 number of args 8
+total k-activation time: 0.382. Time for input: 0.001. Time for k-activation constraints 0.381.
+Model status: 6, Objval against label 4: 0.0000, Final solve time: 0.132
+Model status: 6, Objval against label 7: 0.0000, Final solve time: 0.131
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.324973158895575]  nub  [2.289931233252924, 0.5287339803426521, 0.7799597137598768, 3.6790894137464916, 7.712890900749416, 3.366720472312495, 0.0, 7.318458825250837, 3.4102009613151103, 15.294558845133412] adv labels  None
+img 58 Verified 9
+progress: 59/100, correct:  58/59, verified: 23/58, unsafe: 0/58,  time: 72.838; 65.153; 3778.853
+concrete  [0.08783111330524149, 0.0, 0.0, 1.1045897435982652, 0.0, 6.035841640936673, 0.0, 1.6241289190578747, 0.0, 0.48968874825163855]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [26.740662741320303, 35.95365146030811, 36.87642370654071, 36.98806580988093, 31.390947064043516, 35.543444201128885, 35.82328245930355, 45.42828456748522, 40.83905114446659, 40.10256286445983] adv labels  None
+krelu: n 70 split_zero 50 after cutoff 46 number of args 50
+total k-activation time: 0.388. Time for input: 0.001. Time for k-activation constraints 0.386.
+Refinement of bounds time: 16.682. MILP used: True. 45 bounds refined.
+krelu: n 70 split_zero 79 after cutoff 72 number of args 79
+total k-activation time: 0.372. Time for input: 0.002. Time for k-activation constraints 0.370.
+Refinement of bounds time: 20.825. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 134 after cutoff 131 number of args 134
+total k-activation time: 0.375. Time for input: 0.003. Time for k-activation constraints 0.371.
+Refinement of bounds time: 24.766. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 189 after cutoff 189 number of args 189
+total k-activation time: 0.418. Time for input: 0.006. Time for k-activation constraints 0.412.
+Refinement of bounds time: 32.924. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.371. Time for input: 0.005. Time for k-activation constraints 0.366.
+Refinement of bounds time: 2.646. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.406. Time for input: 0.001. Time for k-activation constraints 0.404.
+Model status: 2, Objval against label 0: -21.7445, Final solve time: 0.259
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [22.53029310029078, 29.76720038310774, 30.36995858192643, 31.07997372401051, 26.0769953702709, 30.79345849391545, 29.955470545359532, 39.01270136020993, 33.923119642612264, 33.57874099578681] adv labels  None
+img 59 Failed
+progress: 60/100, correct:  59/60, verified: 23/59, unsafe: 0/59,  time: 101.607; 65.771; 3880.460
+concrete  [0.0, 0.0, 2.5167015411118525, 1.131686817642901, 0.0, 0.0, 0.0, 14.596137479841694, 0.0, 3.968980704708799]
+nlb  [0.0, 0.0, 1.0070677207843133, 0.0, 0.0, 0.0, 0.0, 10.565921361106522, 0.0, 1.8627053221248222]  nub  [2.126943321748247, 0.5783222909647432, 3.9152296636813007, 3.334728099744199, 0.0, 1.1271794560276114, 0.0, 18.310063080105124, 0.0, 5.990356928011524] adv labels  None
+img 60 Verified 7
+progress: 61/100, correct:  60/61, verified: 24/60, unsafe: 0/60,  time: 0.505; 64.683; 3880.965
+concrete  [0.0, 0.0, 1.0741565076917436, 2.7220740316805028, 0.0, 0.0, 0.0, 0.0, 7.923977127722284, 0.17082638226568195]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.576093663762197, 15.663270496244627, 18.30251911600643, 17.650874234432045, 12.929760063122611, 13.733409275231745, 14.781783344570814, 16.29952768209335, 22.06454975265058, 16.60867471807097] adv labels  None
+krelu: n 70 split_zero 29 after cutoff 25 number of args 29
+total k-activation time: 0.400. Time for input: 0.001. Time for k-activation constraints 0.399.
+Refinement of bounds time: 12.052. MILP used: True. 81 bounds refined.
+krelu: n 70 split_zero 44 after cutoff 29 number of args 44
+total k-activation time: 0.370. Time for input: 0.002. Time for k-activation constraints 0.368.
+Refinement of bounds time: 16.686. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 97 after cutoff 76 number of args 97
+total k-activation time: 0.402. Time for input: 0.002. Time for k-activation constraints 0.400.
+Refinement of bounds time: 24.742. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 146 after cutoff 135 number of args 146
+total k-activation time: 0.408. Time for input: 0.004. Time for k-activation constraints 0.404.
+Refinement of bounds time: 32.932. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 195 after cutoff 195 number of args 195
+total k-activation time: 0.405. Time for input: 0.005. Time for k-activation constraints 0.400.
+Refinement of bounds time: 2.626. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.386. Time for input: 0.001. Time for k-activation constraints 0.385.
+Model status: 2, Objval against label 0: -4.7199, Final solve time: 0.280
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [6.000793580129253, 7.6717197059587, 10.337469402514532, 10.207139332712483, 5.571615080685829, 6.84688856575034, 7.141749665711331, 7.078913242037801, 15.2601427543563, 8.48958196006919] adv labels  None
+img 61 Failed
+progress: 62/100, correct:  61/62, verified: 24/61, unsafe: 0/61,  time: 92.599; 65.140; 3973.564
+concrete  [0.0, 0.0, 0.0, 0.0, 2.2967534157078218, 0.4590576784209138, 0.0, 0.3839190487368945, 0.18680620287601585, 5.0894981403347765]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [66.94630087241202, 111.33568596318351, 113.1049224697475, 112.87688180076474, 102.46439143003137, 97.71469681570554, 105.34578078937969, 128.2362798857458, 125.77805228317906, 123.42281934054905] adv labels  None
+krelu: n 70 split_zero 72 after cutoff 64 number of args 72
+total k-activation time: 0.398. Time for input: 0.002. Time for k-activation constraints 0.396.
+Refinement of bounds time: 16.651. MILP used: True. 16 bounds refined.
+krelu: n 70 split_zero 108 after cutoff 107 number of args 108
+total k-activation time: 0.365. Time for input: 0.003. Time for k-activation constraints 0.362.
+Refinement of bounds time: 32.835. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.400. Time for input: 0.005. Time for k-activation constraints 0.395.
+Refinement of bounds time: 32.752. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.370. Time for input: 0.005. Time for k-activation constraints 0.366.
+Refinement of bounds time: 32.842. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.407. Time for input: 0.005. Time for k-activation constraints 0.403.
+Refinement of bounds time: 2.640. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.393. Time for input: 0.001. Time for k-activation constraints 0.392.
+Model status: 2, Objval against label 0: -64.1763, Final solve time: 0.393
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [64.60136928578426, 109.02871161585952, 113.04939030925539, 109.25444264588987, 99.07309810008657, 94.58001023652645, 103.45067149019087, 123.53991271108502, 121.22846850591603, 119.45963659295401] adv labels  None
+img 62 Failed
+progress: 63/100, correct:  62/63, verified: 24/62, unsafe: 0/62,  time: 121.707; 66.053; 4095.271
+concrete  [0.0, 0.0, 3.2775286834496837, 4.798007267841669, 0.0, 0.0, 0.0, 0.9590087159127854, 0.7619455255795553, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [27.5829928031015, 43.09739796797265, 45.24926213318383, 44.75251615264029, 37.107595052873215, 37.58379649265417, 40.3136435827802, 49.034696184136436, 46.95790263948316, 45.95021290427036] adv labels  None
+krelu: n 70 split_zero 38 after cutoff 36 number of args 38
+total k-activation time: 0.378. Time for input: 0.001. Time for k-activation constraints 0.376.
+Refinement of bounds time: 16.649. MILP used: True. 54 bounds refined.
+krelu: n 70 split_zero 79 after cutoff 69 number of args 79
+total k-activation time: 0.375. Time for input: 0.002. Time for k-activation constraints 0.372.
+Refinement of bounds time: 18.979. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 132 after cutoff 129 number of args 132
+total k-activation time: 0.411. Time for input: 0.010. Time for k-activation constraints 0.401.
+Refinement of bounds time: 32.876. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.408. Time for input: 0.005. Time for k-activation constraints 0.403.
+Refinement of bounds time: 32.927. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.380. Time for input: 0.005. Time for k-activation constraints 0.375.
+Refinement of bounds time: 2.636. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.391. Time for input: 0.001. Time for k-activation constraints 0.390.
+Model status: 2, Objval against label 0: -21.8812, Final solve time: 0.226
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [22.52193808203014, 35.83477177097743, 37.90334641961208, 37.67030167135795, 30.251793054498158, 31.31684473031232, 32.85184464139196, 40.36782296832315, 38.863279145158096, 37.73322647271858] adv labels  None
+img 63 Failed
+progress: 64/100, correct:  63/64, verified: 24/63, unsafe: 0/63,  time: 107.688; 66.714; 4202.959
+concrete  [0.0, 0.0, 2.1635199923981636, 3.712050319469221, 0.0, 0.0, 0.0, 8.673982185701652, 0.0, 2.427813470217009]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [16.38169718370826, 23.787946450960927, 24.916886627519578, 27.439454074072614, 19.953554257482317, 21.581816722305472, 19.108457429836523, 33.29884835074927, 25.967718935265054, 28.064185140591242] adv labels  None
+krelu: n 70 split_zero 34 after cutoff 31 number of args 34
+total k-activation time: 0.407. Time for input: 0.001. Time for k-activation constraints 0.406.
+Refinement of bounds time: 16.447. MILP used: True. 48 bounds refined.
+krelu: n 70 split_zero 72 after cutoff 62 number of args 72
+total k-activation time: 0.372. Time for input: 0.002. Time for k-activation constraints 0.370.
+Refinement of bounds time: 16.714. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 108 after cutoff 101 number of args 108
+total k-activation time: 0.396. Time for input: 0.003. Time for k-activation constraints 0.393.
+Refinement of bounds time: 24.957. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 170 after cutoff 167 number of args 170
+total k-activation time: 0.420. Time for input: 0.010. Time for k-activation constraints 0.409.
+Refinement of bounds time: 32.885. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.374. Time for input: 0.006. Time for k-activation constraints 0.368.
+Refinement of bounds time: 2.639. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.395. Time for input: 0.001. Time for k-activation constraints 0.394.
+Model status: 2, Objval against label 0: -12.6002, Final solve time: 0.298
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [13.141596274780333, 19.244723016927036, 20.539447673668164, 23.678442247281158, 15.982063140680555, 17.642395667041182, 14.738938991864172, 28.95692524273252, 21.260361709334557, 23.654003875332705] adv labels  None
+img 64 Failed
+progress: 65/100, correct:  64/65, verified: 24/64, unsafe: 0/64,  time: 97.358; 67.192; 4300.317
+concrete  [0.0, 0.0, 0.28621331000827643, 0.0, 5.608009096261108, 0.0, 0.0, 0.2460904657806193, 0.0, 1.8030366330750134]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [61.044373701381694, 103.22752715706416, 107.88570875955178, 104.74289793055954, 88.80264375147442, 90.64484619728955, 97.65384644856088, 116.94199081493826, 114.84712025729577, 114.16772147835874] adv labels  None
+krelu: n 70 split_zero 68 after cutoff 61 number of args 68
+total k-activation time: 0.406. Time for input: 0.002. Time for k-activation constraints 0.404.
+Refinement of bounds time: 18.756. MILP used: True. 25 bounds refined.
+krelu: n 70 split_zero 119 after cutoff 111 number of args 119
+total k-activation time: 0.410. Time for input: 0.003. Time for k-activation constraints 0.407.
+Refinement of bounds time: 32.824. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 197 after cutoff 197 number of args 197
+total k-activation time: 0.409. Time for input: 0.005. Time for k-activation constraints 0.404.
+Refinement of bounds time: 32.801. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.410. Time for input: 0.005. Time for k-activation constraints 0.405.
+Refinement of bounds time: 32.889. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.374. Time for input: 0.005. Time for k-activation constraints 0.369.
+Refinement of bounds time: 2.642. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.403. Time for input: 0.001. Time for k-activation constraints 0.401.
+Model status: 2, Objval against label 0: -58.9596, Final solve time: 0.256
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [59.38576817994472, 100.35853974337935, 104.8794665883608, 101.92567212565754, 86.46118691964102, 88.25238480903586, 94.92185407147078, 113.67807424902233, 111.73639711571245, 111.15513284303664] adv labels  None
+img 65 Failed
+progress: 66/100, correct:  65/66, verified: 24/65, unsafe: 0/65,  time: 123.767; 68.063; 4424.084
+concrete  [0.10110631001072068, 0.0, 1.1687293241871828, 0.0, 0.9692447722832392, 1.8152321626642909, 8.278851476666997, 0.0, 0.9438820131571216, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [23.269219631032957, 30.736620042076943, 32.76790992319984, 29.907529910827257, 27.09564629630222, 28.78459638614337, 33.02818923743329, 34.40621964923957, 34.90888054285415, 30.936834096423887] adv labels  None
+krelu: n 70 split_zero 45 after cutoff 43 number of args 45
+total k-activation time: 0.407. Time for input: 0.001. Time for k-activation constraints 0.406.
+Refinement of bounds time: 16.664. MILP used: True. 40 bounds refined.
+krelu: n 70 split_zero 72 after cutoff 67 number of args 72
+total k-activation time: 0.372. Time for input: 0.002. Time for k-activation constraints 0.370.
+Refinement of bounds time: 18.902. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 125 after cutoff 119 number of args 125
+total k-activation time: 0.376. Time for input: 0.003. Time for k-activation constraints 0.373.
+Refinement of bounds time: 32.977. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 194 after cutoff 193 number of args 194
+total k-activation time: 0.380. Time for input: 0.004. Time for k-activation constraints 0.375.
+Refinement of bounds time: 32.900. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.376. Time for input: 0.005. Time for k-activation constraints 0.371.
+Refinement of bounds time: 2.640. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.409. Time for input: 0.001. Time for k-activation constraints 0.407.
+Model status: 2, Objval against label 0: -18.4586, Final solve time: 0.227
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [19.35740976396746, 24.391984335923034, 26.70467721675199, 23.637438468718976, 21.889588901899835, 23.645548168869876, 28.048794423585296, 27.219917128770767, 28.2854274358812, 24.264324893338443] adv labels  None
+img 66 Failed
+progress: 67/100, correct:  66/67, verified: 24/66, unsafe: 0/66,  time: 107.708; 68.664; 4531.792
+concrete  [0.0, 0.0, 0.8946408879094976, 0.0, 11.761898492944724, 0.0, 0.0, 2.5394031286171095, 0.0, 2.2112576713238496]
+nlb  [0.0, 0.0, 0.0, 0.0, 7.270145540326342, 0.0, 0.0, 0.31814719339668707, 0.0, 0.0]  nub  [0.0, 0.0, 2.662927096565189, 0.0, 14.063251764592827, 0.0, 0.0, 4.224160879002626, 0.0, 4.847206393288773] adv labels  None
+img 67 Verified 4
+progress: 68/100, correct:  67/68, verified: 25/67, unsafe: 0/67,  time: 0.472; 67.646; 4532.264
+concrete  [0.0, 0.0, 0.0, 15.238827818414398, 0.0, 3.7997851413076433, 0.0, 0.0, 2.533417878606625, 2.6049534525461855]
+nlb  [0.0, 0.0, 0.0, 12.161897010140665, 0.0, 2.38274012465475, 0.0, 0.0, 0.9124472436459738, 1.2022047744041617]  nub  [0.0, 0.0, 1.2512348477944142, 17.14731702946047, 0.0, 5.258689514348213, 0.0, 0.0, 3.671899151599792, 3.7938604006942604] adv labels  None
+img 68 Verified 3
+progress: 69/100, correct:  68/69, verified: 26/68, unsafe: 0/68,  time: 0.357; 66.656; 4532.620
+concrete  [10.500754567270533, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.10750795198350449, 0.0, 0.6132562733847331]
+nlb  [6.978459899245377, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.610872120730862, 0.0, 0.8071894201523192, 0.0, 0.0, 1.4025106468327533, 2.042782433830259, 2.503158954418945, 1.1162537928610556, 1.9170114178500037] adv labels  None
+img 69 Verified 0
+progress: 70/100, correct:  69/70, verified: 27/69, unsafe: 0/69,  time: 0.419; 65.696; 4533.039
+concrete  [0.0, 0.0, 2.836773206462628, 1.392584476919318, 0.0, 0.0, 0.0, 15.00361685149573, 0.0, 4.263368717561932]
+nlb  [0.0, 0.0, 0.7737647756296224, 0.0, 0.0, 0.0, 0.0, 10.650590916227934, 0.0, 1.66864861918826]  nub  [1.7217805724288677, 1.5441575643437482, 5.223499445744748, 4.159622672404298, 0.0, 0.3969504394767017, 0.0, 19.770445793069353, 0.0, 6.7011441153598845] adv labels  None
+img 70 Verified 7
+progress: 71/100, correct:  70/71, verified: 28/70, unsafe: 0/70,  time: 0.502; 64.765; 4533.541
+concrete  [15.35359296266039, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.44944233200211925, 0.7538011403611127]
+nlb  [13.047931515197131, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2800882265216657]  nub  [16.683157375113858, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8552235554724129, 0.0, 1.0282493482302393, 1.2303528840195626] adv labels  None
+img 71 Verified 0
+progress: 72/100, correct:  71/72, verified: 29/71, unsafe: 0/71,  time: 0.401; 63.858; 4533.942
+concrete  [0.0, 0.0, 6.3608598593624315, 2.774181927605766, 0.0, 0.0, 0.0, 1.253585790596005, 0.004031866055205169, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.069962269348542, 13.757248633292624, 19.397862414363843, 16.193166689303084, 11.431763849376363, 11.499133911970098, 12.907462928916598, 15.667454015023576, 15.470899262162087, 13.77451360419299] adv labels  None
+krelu: n 70 split_zero 38 after cutoff 34 number of args 38
+total k-activation time: 0.371. Time for input: 0.001. Time for k-activation constraints 0.370.
+Refinement of bounds time: 8.643. MILP used: True. 30 bounds refined.
+krelu: n 70 split_zero 42 after cutoff 39 number of args 42
+total k-activation time: 0.394. Time for input: 0.002. Time for k-activation constraints 0.392.
+Refinement of bounds time: 16.678. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 86 after cutoff 80 number of args 86
+total k-activation time: 0.379. Time for input: 0.002. Time for k-activation constraints 0.377.
+Refinement of bounds time: 24.831. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 165 after cutoff 160 number of args 165
+total k-activation time: 0.379. Time for input: 0.004. Time for k-activation constraints 0.375.
+Refinement of bounds time: 32.898. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.375. Time for input: 0.005. Time for k-activation constraints 0.370.
+Refinement of bounds time: 2.634. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.403. Time for input: 0.001. Time for k-activation constraints 0.402.
+Model status: 2, Objval against label 0: -8.5461, Final solve time: 0.204
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [9.152570156011116, 11.476412191002717, 17.422857237183003, 14.049379089635567, 9.336258028516466, 9.480008351394659, 10.667953347515525, 13.127715804789343, 12.961940592629354, 11.261386695297787] adv labels  None
+img 72 Failed
+progress: 73/100, correct:  72/73, verified: 29/72, unsafe: 0/72,  time: 89.196; 64.210; 4623.138
+concrete  [0.0, 0.0, 0.0, 0.8855418392130047, 0.0, 0.0, 0.0, 3.7710468974592777, 0.7403981671863638, 8.29346552337295]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [5.473255225322711, 8.940864544111527, 9.975838369263204, 11.99592773903357, 9.33719791993789, 8.287683830727072, 5.883777429533723, 16.205386472177924, 11.96757598901414, 18.589566174765945] adv labels  None
+krelu: n 70 split_zero 31 after cutoff 26 number of args 31
+total k-activation time: 0.407. Time for input: 0.001. Time for k-activation constraints 0.406.
+Refinement of bounds time: 12.656. MILP used: True. 94 bounds refined.
+krelu: n 70 split_zero 50 after cutoff 29 number of args 50
+total k-activation time: 0.398. Time for input: 0.003. Time for k-activation constraints 0.395.
+Refinement of bounds time: 16.682. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 70 after cutoff 62 number of args 70
+total k-activation time: 0.409. Time for input: 0.002. Time for k-activation constraints 0.407.
+Refinement of bounds time: 16.742. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 109 after cutoff 102 number of args 109
+total k-activation time: 0.407. Time for input: 0.003. Time for k-activation constraints 0.404.
+Refinement of bounds time: 24.887. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 178 after cutoff 174 number of args 178
+total k-activation time: 0.384. Time for input: 0.005. Time for k-activation constraints 0.378.
+Refinement of bounds time: 2.629. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.385. Time for input: 0.001. Time for k-activation constraints 0.384.
+Model status: 6, Objval against label 0: 0.0000, Final solve time: 0.127
+Model status: 2, Objval against label 1: -1.5172, Final solve time: 0.152
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4850829562410935]  nub  [1.4559286735475818, 3.967361391360347, 5.184534223008661, 7.3404984817555095, 5.140598891934645, 4.133612083343831, 1.133556661423493, 10.866096132929107, 6.885917441464771, 14.451620062730912] adv labels  None
+img 73 Failed
+progress: 74/100, correct:  73/74, verified: 29/73, unsafe: 0/73,  time: 77.211; 64.388; 4700.349
+concrete  [0.0, 10.558177299510445, 0.6981065955339721, 0.0, 0.0, 0.0, 0.0, 1.502000510821734, 2.343124610301353, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [13.401393272609655, 28.04237882374408, 22.01022003549976, 20.470358823558943, 20.0519100021488, 17.321343111813942, 20.260002412828353, 23.335561366361798, 24.45040010080073, 22.564169763263035] adv labels  None
+krelu: n 70 split_zero 52 after cutoff 50 number of args 52
+total k-activation time: 0.374. Time for input: 0.001. Time for k-activation constraints 0.373.
+Refinement of bounds time: 12.649. MILP used: True. 28 bounds refined.
+krelu: n 70 split_zero 63 after cutoff 57 number of args 63
+total k-activation time: 0.402. Time for input: 0.003. Time for k-activation constraints 0.400.
+Refinement of bounds time: 18.903. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 113 after cutoff 108 number of args 113
+total k-activation time: 0.402. Time for input: 0.005. Time for k-activation constraints 0.396.
+Refinement of bounds time: 24.852. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 172 after cutoff 172 number of args 172
+total k-activation time: 0.412. Time for input: 0.010. Time for k-activation constraints 0.403.
+Refinement of bounds time: 32.811. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 199 after cutoff 199 number of args 199
+total k-activation time: 0.381. Time for input: 0.005. Time for k-activation constraints 0.377.
+Refinement of bounds time: 2.641. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.394. Time for input: 0.001. Time for k-activation constraints 0.393.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.229
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [11.270490384524932, 25.664071403803305, 19.03179299477913, 17.475450377022735, 17.084559919563098, 14.749687953268786, 17.39077339214495, 20.03551339170268, 21.494436485595983, 19.425153325662563] adv labels  None
+img 74 Failed
+progress: 75/100, correct:  74/75, verified: 29/74, unsafe: 0/74,  time: 95.872; 64.814; 4796.221
+concrete  [0.0, 0.4619369759794227, 2.9011900738489773, 1.7852904380444004, 0.0, 0.0, 0.0, 11.0669630933641, 0.0, 2.958056757955972]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.308440052064224, 0.0, 0.0]  nub  [2.9111635843920123, 6.827156449492285, 8.620484379785735, 6.7937205606305495, 3.0117103466038344, 2.845502462787618, 1.5693031524637888, 17.94558856976041, 4.4033330111625055, 8.559029267550988] adv labels  None
+krelu: n 70 split_zero 36 after cutoff 34 number of args 36
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Refinement of bounds time: 12.667. MILP used: True. 56 bounds refined.
+krelu: n 70 split_zero 57 after cutoff 50 number of args 57
+total k-activation time: 0.400. Time for input: 0.003. Time for k-activation constraints 0.397.
+Refinement of bounds time: 16.690. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 72 after cutoff 66 number of args 72
+total k-activation time: 0.408. Time for input: 0.002. Time for k-activation constraints 0.406.
+Refinement of bounds time: 16.737. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 93 after cutoff 90 number of args 93
+total k-activation time: 0.378. Time for input: 0.003. Time for k-activation constraints 0.375.
+Refinement of bounds time: 24.734. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 134 after cutoff 133 number of args 134
+total k-activation time: 0.423. Time for input: 0.003. Time for k-activation constraints 0.420.
+Refinement of bounds time: 2.629. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.381. Time for input: 0.001. Time for k-activation constraints 0.380.
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5.77492501251835, 0.0, 0.0]  nub  [1.5510151736255855, 5.1701619853303455, 7.205631548608684, 5.424197872375106, 1.7122996142249434, 1.2559076162883915, 0.09547066231307333, 16.518413007220172, 2.7221332454106677, 6.934525265528002] adv labels  None
+img 75 Verified 7
+progress: 76/100, correct:  75/76, verified: 30/75, unsafe: 0/75,  time: 76.817; 64.974; 4873.038
+concrete  [0.0, 0.0, 0.0, 11.963523296036126, 0.0, 3.8193990825491486, 0.0, 0.0, 0.8158557690879693, 1.8498372106311376]
+nlb  [0.0, 0.0, 0.0, 1.727461013524052, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.9114980002979304, 8.42445589222333, 8.640028080916514, 19.49380225130801, 4.692414160308154, 11.075086648345996, 1.8897607055878027, 7.435630386014324, 8.923447212812713, 10.023611260525652] adv labels  None
+krelu: n 70 split_zero 46 after cutoff 43 number of args 46
+total k-activation time: 0.375. Time for input: 0.001. Time for k-activation constraints 0.374.
+Refinement of bounds time: 12.664. MILP used: True. 28 bounds refined.
+krelu: n 70 split_zero 64 after cutoff 58 number of args 64
+total k-activation time: 0.405. Time for input: 0.002. Time for k-activation constraints 0.404.
+Refinement of bounds time: 16.790. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 78 after cutoff 75 number of args 78
+total k-activation time: 0.410. Time for input: 0.002. Time for k-activation constraints 0.408.
+Refinement of bounds time: 16.711. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 102 after cutoff 101 number of args 102
+total k-activation time: 0.411. Time for input: 0.003. Time for k-activation constraints 0.408.
+Refinement of bounds time: 24.790. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 158 after cutoff 158 number of args 158
+total k-activation time: 0.410. Time for input: 0.004. Time for k-activation constraints 0.407.
+Refinement of bounds time: 2.629. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.391. Time for input: 0.001. Time for k-activation constraints 0.390.
+Model status: 2, Objval against label 1: -2.0127, Final solve time: 0.186
+nlb  [0.0, 0.0, 0.0, 2.5351564124573107, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [0.14495067823880697, 7.408335187784117, 7.728823713359346, 18.834357341375156, 3.8926542423888413, 10.332725666313324, 0.9553287275605772, 6.41562451862291, 7.9811309543696565, 9.131547595075366] adv labels  None
+img 76 Failed
+progress: 77/100, correct:  76/77, verified: 30/76, unsafe: 0/76,  time: 77.261; 65.136; 4950.299
+concrete  [0.0, 1.132507331735181, 6.245103759652392, 0.07539230842455387, 0.0, 0.0, 1.4006199727783655, 1.2303272235913596, 0.0, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [13.139938554960892, 19.865756844886015, 22.900107277469182, 18.057985091528998, 15.363177426133797, 15.077979608637268, 18.600918814172843, 22.367621565569788, 19.451289672321277, 18.714487527424414] adv labels  None
+krelu: n 70 split_zero 43 after cutoff 40 number of args 43
+total k-activation time: 0.374. Time for input: 0.002. Time for k-activation constraints 0.373.
+Refinement of bounds time: 12.652. MILP used: True. 27 bounds refined.
+krelu: n 70 split_zero 70 after cutoff 61 number of args 70
+total k-activation time: 0.412. Time for input: 0.002. Time for k-activation constraints 0.410.
+Refinement of bounds time: 16.683. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 85 after cutoff 82 number of args 85
+total k-activation time: 0.409. Time for input: 0.002. Time for k-activation constraints 0.407.
+Refinement of bounds time: 24.850. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 176 after cutoff 174 number of args 176
+total k-activation time: 0.412. Time for input: 0.005. Time for k-activation constraints 0.407.
+Refinement of bounds time: 32.804. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.411. Time for input: 0.005. Time for k-activation constraints 0.406.
+Refinement of bounds time: 2.638. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Model status: 2, Objval against label 0: -11.5937, Final solve time: 0.238
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [12.231484863736773, 18.058546067865603, 21.256674686954593, 16.262682470941165, 13.79444543029849, 13.529575026224181, 17.096590393670365, 20.372009565235604, 17.5359305808198, 16.7112732094601] adv labels  None
+img 77 Failed
+progress: 78/100, correct:  77/78, verified: 30/77, unsafe: 0/77,  time: 93.324; 65.502; 5043.622
+concrete  [0.0, 0.0, 0.0, 0.5738532732247992, 1.3853161510851644, 0.0, 0.0, 0.92839179663253, 0.7202448730545338, 8.550275535627575]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [27.94184817680417, 43.294880592820896, 45.6243952476945, 45.066869698429194, 39.45693902120295, 39.600685018606946, 41.81406598959098, 51.40617983081081, 49.043833663064035, 51.164689694248786] adv labels  None
+krelu: n 70 split_zero 48 after cutoff 41 number of args 48
+total k-activation time: 0.375. Time for input: 0.001. Time for k-activation constraints 0.373.
+Refinement of bounds time: 16.672. MILP used: True. 45 bounds refined.
+krelu: n 70 split_zero 77 after cutoff 70 number of args 77
+total k-activation time: 0.386. Time for input: 0.002. Time for k-activation constraints 0.384.
+Refinement of bounds time: 25.019. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 171 after cutoff 166 number of args 171
+total k-activation time: 0.378. Time for input: 0.004. Time for k-activation constraints 0.374.
+Refinement of bounds time: 32.877. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.379. Time for input: 0.005. Time for k-activation constraints 0.374.
+Refinement of bounds time: 32.899. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.380. Time for input: 0.005. Time for k-activation constraints 0.375.
+Refinement of bounds time: 2.641. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.396. Time for input: 0.001. Time for k-activation constraints 0.395.
+Model status: 2, Objval against label 0: -24.5027, Final solve time: 0.239
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [25.010632754311093, 38.060032015012006, 40.05313877464888, 39.83734285227456, 35.14404642781462, 35.3664378855624, 37.190967631228446, 45.44357713930914, 43.58251495999007, 45.860710437644755] adv labels  None
+img 78 Failed
+progress: 79/100, correct:  78/79, verified: 30/78, unsafe: 0/78,  time: 113.735; 66.120; 5157.357
+concrete  [0.0, 1.0068163986852483, 2.6750977833002696, 1.3077255725142316, 0.0, 0.0, 0.0, 12.723703238155313, 0.0, 3.7230221384303737]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 7.70422495210518, 0.0, 0.060138814245197805]  nub  [0.8165175314728521, 4.441350702713752, 6.00041666608265, 4.743809605233673, 0.3022589652896139, 1.4178663388089596, 0.0, 18.003382322812968, 2.6202324874590546, 6.861099847678363] adv labels  None
+img 79 Verified 7
+progress: 80/100, correct:  79/80, verified: 31/79, unsafe: 0/79,  time: 0.431; 65.288; 5157.789
+concrete  [0.0, 0.0, 0.300633448720134, 0.0, 0.0, 0.0, 0.0, 8.814179824595927, 0.0, 4.5045079584807235]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [7.369101393376539, 8.139019023147778, 8.96400421108082, 8.747829474833834, 8.091686119289907, 8.817532863144027, 5.009338876281632, 18.999689740336954, 7.930852121584138, 14.64484687770484] adv labels  None
+krelu: n 70 split_zero 41 after cutoff 38 number of args 41
+total k-activation time: 0.372. Time for input: 0.001. Time for k-activation constraints 0.371.
+Refinement of bounds time: 12.617. MILP used: True. 27 bounds refined.
+krelu: n 70 split_zero 52 after cutoff 48 number of args 52
+total k-activation time: 0.382. Time for input: 0.003. Time for k-activation constraints 0.379.
+Refinement of bounds time: 16.809. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 89 after cutoff 83 number of args 89
+total k-activation time: 0.424. Time for input: 0.006. Time for k-activation constraints 0.418.
+Refinement of bounds time: 18.854. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 118 after cutoff 115 number of args 118
+total k-activation time: 0.413. Time for input: 0.007. Time for k-activation constraints 0.407.
+Refinement of bounds time: 24.772. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 180 after cutoff 179 number of args 180
+total k-activation time: 0.413. Time for input: 0.004. Time for k-activation constraints 0.408.
+Refinement of bounds time: 2.762. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.385. Time for input: 0.001. Time for k-activation constraints 0.383.
+Model status: 2, Objval against label 0: -4.9004, Final solve time: 0.275
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [6.157377612731487, 6.634843828936603, 7.684140595875408, 7.258113829989371, 6.6025663269721315, 7.367710837262837, 3.5196631487333545, 17.544818607545174, 6.148252185113983, 12.977536825422131] adv labels  None
+img 80 Failed
+progress: 81/100, correct:  80/81, verified: 31/80, unsafe: 0/80,  time: 79.481; 65.466; 5237.270
+concrete  [0.0, 0.0, 0.7856416072187542, 0.0, 1.023489740204913, 2.0708655794767097, 8.7076840641311, 0.0, 1.057819545582411, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.6678000957298056, 0.0, 0.0, 0.0]  nub  [3.050783982477075, 2.7412778531407582, 5.361358322142399, 2.666033692566685, 5.058457396476827, 6.596389894200115, 12.94711373916278, 2.4767033019540268, 5.344194394623529, 1.9024977552083282] adv labels  None
+krelu: n 70 split_zero 30 after cutoff 28 number of args 30
+total k-activation time: 0.371. Time for input: 0.001. Time for k-activation constraints 0.370.
+Refinement of bounds time: 12.436. MILP used: True. 70 bounds refined.
+krelu: n 70 split_zero 33 after cutoff 24 number of args 33
+total k-activation time: 0.382. Time for input: 0.001. Time for k-activation constraints 0.381.
+Refinement of bounds time: 12.573. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 47 after cutoff 40 number of args 47
+total k-activation time: 0.406. Time for input: 0.002. Time for k-activation constraints 0.405.
+Refinement of bounds time: 16.714. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 83 after cutoff 72 number of args 83
+total k-activation time: 0.371. Time for input: 0.002. Time for k-activation constraints 0.369.
+Refinement of bounds time: 16.742. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 102 after cutoff 95 number of args 102
+total k-activation time: 0.406. Time for input: 0.003. Time for k-activation constraints 0.403.
+Refinement of bounds time: 2.621. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.384. Time for input: 0.001. Time for k-activation constraints 0.383.
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.82380657975685, 0.0, 0.0, 0.0]  nub  [1.2578204305965486, 0.5778413732807437, 3.3142473325246016, 0.6844533471404057, 3.2318498996465403, 4.889738459849482, 11.569064922007652, 0.4744591606024674, 3.3600047098385573, 0.230951105149549] adv labels  None
+img 81 Verified 6
+progress: 82/100, correct:  81/82, verified: 32/81, unsafe: 0/81,  time: 64.356; 65.452; 5301.626
+concrete  [0.0, 0.0, 14.912157922091652, 1.901849526983968, 0.0, 0.0, 0.3300455575500646, 2.06493537085978, 0.0, 0.0]
+nlb  [0.0, 0.0, 11.98859557414386, 0.7621205883423592, 0.0, 0.0, 0.0, 0.8131955104853629, 0.0, 0.0]  nub  [0.0, 0.9419834479094334, 16.979245437740474, 3.220414537024456, 0.0, 0.0, 1.6409360614416022, 3.291705734992068, 0.2443729719842094, 0.0] adv labels  None
+img 82 Verified 2
+progress: 83/100, correct:  82/83, verified: 33/82, unsafe: 0/82,  time: 0.413; 64.659; 5302.039
+concrete  [0.0, 0.0, 1.187140733888703, 0.7505856970174932, 0.0, 0.0, 0.0, 11.585343452071397, 0.0, 5.121511026245618]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.051470385737787, 0.0, 0.8395706583581204]  nub  [1.7243597101245796, 2.324043191765018, 5.202602208977378, 4.554853981675258, 1.4015474082208836, 2.2453501317641087, 0.0, 16.711689029271223, 1.6682138555140977, 9.341018516609278] adv labels  None
+krelu: n 70 split_zero 47 after cutoff 40 number of args 47
+total k-activation time: 0.371. Time for input: 0.001. Time for k-activation constraints 0.369.
+Refinement of bounds time: 8.541. MILP used: True. 15 bounds refined.
+krelu: n 70 split_zero 39 after cutoff 35 number of args 39
+total k-activation time: 0.403. Time for input: 0.002. Time for k-activation constraints 0.401.
+Refinement of bounds time: 12.815. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 61 after cutoff 57 number of args 61
+total k-activation time: 0.402. Time for input: 0.002. Time for k-activation constraints 0.401.
+Refinement of bounds time: 12.725. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 73 after cutoff 70 number of args 73
+total k-activation time: 0.373. Time for input: 0.002. Time for k-activation constraints 0.370.
+Refinement of bounds time: 18.689. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 117 after cutoff 111 number of args 117
+total k-activation time: 0.404. Time for input: 0.003. Time for k-activation constraints 0.401.
+Refinement of bounds time: 2.625. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 7 after cutoff 7 number of args 7
+total k-activation time: 0.385. Time for input: 0.001. Time for k-activation constraints 0.384.
+Model status: 6, Objval against label 9: 0.0000, Final solve time: 0.136
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.108647559573868, 0.0, 0.8894983099701359]  nub  [1.6726009788383445, 2.2867434166676803, 5.141915663241773, 4.488428962390507, 1.3407223445850385, 2.098414175266918, 0.0, 16.641682017188334, 1.6216222148260988, 9.221329882490203] adv labels  None
+img 83 Verified 7
+progress: 84/100, correct:  83/84, verified: 34/83, unsafe: 0/83,  time: 58.956; 64.590; 5360.995
+concrete  [0.05587797523387352, 0.0, 0.0, 0.9370136175701554, 0.0, 1.3309170188535084, 0.0, 0.0, 8.077290369325304, 1.0603891738251807]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [17.767325108359103, 23.496809754766247, 24.47412734281988, 25.074307980406076, 21.922760704624658, 23.187933761293845, 24.058274840073423, 26.326559515021028, 30.03988235847629, 26.349345673365104] adv labels  None
+krelu: n 70 split_zero 42 after cutoff 38 number of args 42
+total k-activation time: 0.403. Time for input: 0.001. Time for k-activation constraints 0.402.
+Refinement of bounds time: 12.649. MILP used: True. 36 bounds refined.
+krelu: n 70 split_zero 61 after cutoff 50 number of args 61
+total k-activation time: 0.378. Time for input: 0.002. Time for k-activation constraints 0.376.
+Refinement of bounds time: 24.791. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 126 after cutoff 120 number of args 126
+total k-activation time: 0.371. Time for input: 0.003. Time for k-activation constraints 0.368.
+Refinement of bounds time: 24.883. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 178 after cutoff 172 number of args 178
+total k-activation time: 0.407. Time for input: 0.004. Time for k-activation constraints 0.403.
+Refinement of bounds time: 32.886. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.405. Time for input: 0.004. Time for k-activation constraints 0.401.
+Refinement of bounds time: 2.632. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.384. Time for input: 0.001. Time for k-activation constraints 0.382.
+Model status: 2, Objval against label 0: -13.4926, Final solve time: 0.222
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [14.203147490557349, 18.027189021511607, 18.895603819092667, 20.237557396318163, 17.0563235597993, 18.90563553075428, 18.917784070279225, 20.143436870493186, 25.191386233044295, 21.24176996211003] adv labels  None
+img 84 Failed
+progress: 85/100, correct:  84/85, verified: 34/84, unsafe: 0/84,  time: 101.362; 65.028; 5462.358
+concrete  [0.0, 0.0, 1.1009094331877445, 0.0, 10.861397404373339, 0.0, 0.0, 3.2929004745671695, 0.0, 1.0499392316283263]
+nlb  [0.0, 0.0, 0.0, 0.0, 7.2643932151797515, 0.0, 0.0, 1.7147744944344752, 0.0, 0.0]  nub  [0.0, 0.0, 2.24349941874997, 0.0, 13.117684280531272, 0.0, 0.0, 4.756850098114862, 0.0, 2.933897394851203] adv labels  None
+img 85 Verified 4
+progress: 86/100, correct:  85/86, verified: 35/85, unsafe: 0/85,  time: 0.382; 64.268; 5462.740
+concrete  [0.0, 0.8362050566506747, 3.8267359771284255, 2.7636281876313396, 0.0, 0.0, 0.0, 13.50666060306909, 0.0, 3.23495838190686]
+nlb  [0.0, 0.0, 2.3355614874844206, 0.9781726455312252, 0.0, 0.0, 0.0, 9.602002055621567, 0.0, 1.0928923339677374]  nub  [0.0, 2.296406966130766, 5.790508517371609, 4.373530156153951, 0.0, 0.0, 0.0, 16.38324023893395, 0.14431591175200276, 4.603281504775007] adv labels  None
+img 86 Verified 7
+progress: 87/100, correct:  86/87, verified: 36/86, unsafe: 0/86,  time: 0.424; 63.525; 5463.163
+concrete  [0.0, 0.0, 0.07368307509804488, 7.824776298087909, 0.0, 4.5185441337788745, 0.0, 0.0, 0.0, 0.7046449970767822]
+nlb  [0.0, 0.0, 0.0, 3.063738476828322, 0.0, 1.0906958493975585, 0.0, 0.0, 0.0, 0.0]  nub  [0.0, 1.889172999137948, 3.0902198753704964, 11.836419567806276, 0.029353402723735163, 7.268814597618161, 0.0, 2.879558758096909, 1.0059713072124685, 3.5731855950736944] adv labels  None
+krelu: n 70 split_zero 34 after cutoff 31 number of args 34
+total k-activation time: 0.373. Time for input: 0.001. Time for k-activation constraints 0.372.
+Refinement of bounds time: 12.345. MILP used: True. 32 bounds refined.
+krelu: n 70 split_zero 44 after cutoff 36 number of args 44
+total k-activation time: 0.372. Time for input: 0.001. Time for k-activation constraints 0.371.
+Refinement of bounds time: 12.683. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 56 after cutoff 49 number of args 56
+total k-activation time: 0.382. Time for input: 0.002. Time for k-activation constraints 0.380.
+Refinement of bounds time: 12.710. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 60 after cutoff 54 number of args 60
+total k-activation time: 0.380. Time for input: 0.002. Time for k-activation constraints 0.378.
+Refinement of bounds time: 16.749. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 96 after cutoff 90 number of args 96
+total k-activation time: 0.373. Time for input: 0.003. Time for k-activation constraints 0.370.
+Refinement of bounds time: 2.652. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 5 after cutoff 5 number of args 5
+total k-activation time: 0.372. Time for input: 0.001. Time for k-activation constraints 0.371.
+Model status: 2, Objval against label 5: -0.5072, Final solve time: 0.148
+nlb  [0.0, 0.0, 0.0, 3.639978961635448, 0.0, 1.6855719222659562, 0.0, 0.0, 0.0, 0.0]  nub  [0.0, 1.203272409892304, 2.474120729915438, 11.292621931937418, 0.0, 6.769260215848012, 0.0, 2.1621162363328135, 0.4415689581773758, 2.923700048711571] adv labels  None
+img 87 Failed
+progress: 88/100, correct:  87/88, verified: 36/87, unsafe: 0/87,  time: 60.529; 63.491; 5523.693
+concrete  [0.0, 0.0, 0.0, 0.0, 1.782055971468903, 2.2491706718318167, 14.637565508155328, 0.0, 2.4422470225090445, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.7782823720059691, 11.864744144651498, 0.0, 1.1145845772589713, 0.0]  nub  [0.05647586448672819, 0.0, 1.4639037805068262, 0.0, 3.463843432955765, 3.8168383190014965, 17.080182855363642, 0.0, 3.616274836485907, 0.0] adv labels  None
+img 88 Verified 6
+progress: 89/100, correct:  88/89, verified: 37/88, unsafe: 0/88,  time: 0.433; 62.774; 5524.126
+concrete  [0.0, 7.327255075012454, 1.0787958481437225, 0.0, 0.0, 0.0, 0.20114199976638986, 1.2620685556943059, 1.7547145097734944, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [35.49104092904121, 60.483388329817096, 61.0545257226489, 58.662864024148895, 54.64546412446876, 51.0294777957117, 55.98402882629824, 66.19834671081114, 65.1307900684858, 63.426261136499676] adv labels  None
+krelu: n 70 split_zero 49 after cutoff 45 number of args 49
+total k-activation time: 0.373. Time for input: 0.001. Time for k-activation constraints 0.372.
+Refinement of bounds time: 16.655. MILP used: True. 25 bounds refined.
+krelu: n 70 split_zero 90 after cutoff 83 number of args 90
+total k-activation time: 0.409. Time for input: 0.002. Time for k-activation constraints 0.407.
+Refinement of bounds time: 24.928. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 159 after cutoff 156 number of args 159
+total k-activation time: 0.376. Time for input: 0.004. Time for k-activation constraints 0.372.
+Refinement of bounds time: 32.777. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.379. Time for input: 0.004. Time for k-activation constraints 0.374.
+Refinement of bounds time: 32.890. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.375. Time for input: 0.005. Time for k-activation constraints 0.371.
+Refinement of bounds time: 2.646. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.402. Time for input: 0.001. Time for k-activation constraints 0.401.
+Used simplex terminate
+Model status: 11, Objval against label 0: 0.0000, Final solve time: 0.401
+Model was not successful status is 11
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [33.67405844084577, 57.438737792548636, 57.711069039267045, 55.39417911320598, 51.82984223550739, 48.25660827552245, 52.980488279741635, 62.492555084288036, 61.589956772428415, 59.80751563341233] adv labels  None
+img 89 Failed
+progress: 90/100, correct:  89/90, verified: 37/89, unsafe: 0/89,  time: 114.039; 63.350; 5638.165
+concrete  [0.0, 0.0, 0.0, 11.069776306688647, 0.0, 3.104211828527395, 0.0, 0.0, 1.6120906121449405, 2.2173795681145854]
+nlb  [0.0, 0.0, 0.0, 7.864696502489999, 0.0, 0.9154710321622966, 0.0, 0.0, 0.0, 0.13204085180142605]  nub  [0.0, 0.3493515612513173, 1.3009800583092515, 14.148595575952788, 0.0, 5.105698766882423, 0.0, 0.19601351427594738, 3.422606043478648, 3.8211614848772983] adv labels  None
+img 90 Verified 3
+progress: 91/100, correct:  90/91, verified: 38/90, unsafe: 0/90,  time: 0.385; 62.651; 5638.550
+concrete  [0.0, 0.0, 0.8725770800207643, 0.0, 0.8102138410458462, 2.014401541238256, 10.990811297506612, 0.0, 1.8225960875226634, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6.913564349869589, 0.0, 0.0, 0.0]  nub  [0.05649575988906817, 0.937640119995393, 3.294845298317393, 0.30858975483578416, 3.175045332749926, 4.495370538829652, 14.355963722840178, 0.49855694183032967, 4.695594855181556, 0.0] adv labels  None
+img 91 Verified 6
+progress: 92/100, correct:  91/92, verified: 39/91, unsafe: 0/91,  time: 0.439; 61.967; 5638.988
+concrete  [0.0, 0.0, 0.0, 0.9084124961390819, 0.8871273395909824, 0.0, 0.0, 0.0, 1.9044591647317188, 5.305722307560528]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [60.21142659361395, 103.92999322213711, 107.29601832829744, 102.86370000506268, 91.50513571224616, 88.05125914205843, 96.68362270870153, 115.04373936192162, 114.40970392008174, 112.080437887494] adv labels  None
+krelu: n 70 split_zero 61 after cutoff 49 number of args 61
+total k-activation time: 0.411. Time for input: 0.002. Time for k-activation constraints 0.409.
+Refinement of bounds time: 18.772. MILP used: True. 42 bounds refined.
+krelu: n 70 split_zero 126 after cutoff 115 number of args 126
+total k-activation time: 0.385. Time for input: 0.004. Time for k-activation constraints 0.381.
+Refinement of bounds time: 32.954. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 199 after cutoff 199 number of args 199
+total k-activation time: 0.378. Time for input: 0.005. Time for k-activation constraints 0.373.
+Refinement of bounds time: 32.788. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.383. Time for input: 0.005. Time for k-activation constraints 0.379.
+Refinement of bounds time: 32.897. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.411. Time for input: 0.005. Time for k-activation constraints 0.406.
+Refinement of bounds time: 2.645. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.401. Time for input: 0.001. Time for k-activation constraints 0.400.
+Model status: 2, Objval against label 0: -57.5093, Final solve time: 0.265
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [57.8381856724753, 99.86845786807612, 103.24332691426665, 99.56554878234658, 90.59645177641832, 85.02564399595958, 93.0095293232303, 110.77792617823776, 110.0823641963353, 108.39646133144872] adv labels  None
+img 92 Failed
+progress: 93/100, correct:  92/93, verified: 39/92, unsafe: 0/92,  time: 123.892; 62.640; 5762.880
+concrete  [0.0, 0.0, 0.0, 7.786518125100852, 0.0, 3.709171290894325, 0.0, 0.0, 0.0, 2.2193419870438515]
+nlb  [0.0, 0.0, 0.0, 3.935224732872098, 0.0, 0.9146610611238348, 0.0, 0.0, 0.0, 0.0]  nub  [0.0, 0.9273872426200999, 1.4093881942002453, 11.044788859728195, 0.4108243535030575, 6.036168190493168, 0.0, 1.1898648533951033, 1.923109926451538, 4.8338249268087266] adv labels  None
+img 93 Verified 3
+progress: 94/100, correct:  93/94, verified: 40/93, unsafe: 0/93,  time: 0.353; 61.970; 5763.233
+concrete  [0.0, 9.62227056691701, 1.5509603894714927, 0.0, 0.0, 0.0, 0.0, 0.9495853261813682, 2.388085933912852, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [4.061749759445622, 16.444088982626948, 10.887704966169588, 7.199069533141992, 6.068074602832996, 5.464144235102686, 9.039236342373645, 8.892471610018566, 11.411253598830905, 6.875341868925503] adv labels  None
+krelu: n 70 split_zero 33 after cutoff 28 number of args 33
+total k-activation time: 0.374. Time for input: 0.001. Time for k-activation constraints 0.372.
+Refinement of bounds time: 12.332. MILP used: True. 56 bounds refined.
+krelu: n 70 split_zero 46 after cutoff 37 number of args 46
+total k-activation time: 0.367. Time for input: 0.002. Time for k-activation constraints 0.365.
+Refinement of bounds time: 16.691. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 86 after cutoff 73 number of args 86
+total k-activation time: 0.404. Time for input: 0.002. Time for k-activation constraints 0.402.
+Refinement of bounds time: 18.733. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 118 after cutoff 113 number of args 118
+total k-activation time: 0.400. Time for input: 0.003. Time for k-activation constraints 0.397.
+Refinement of bounds time: 24.794. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 163 after cutoff 160 number of args 163
+total k-activation time: 0.403. Time for input: 0.004. Time for k-activation constraints 0.399.
+Refinement of bounds time: 2.626. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.385. Time for input: 0.001. Time for k-activation constraints 0.384.
+Model status: 2, Objval against label 2: -3.3783, Final solve time: 0.200
+nlb  [0.0, 1.5732344389127233, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [1.5676905477198877, 14.125312216999935, 7.586483154295547, 3.9420043986702473, 2.489409958015332, 2.6177687408951105, 5.555815557851555, 5.42544946352344, 7.941920318628732, 3.3525160441625323] adv labels  None
+img 94 Failed
+progress: 95/100, correct:  94/95, verified: 40/94, unsafe: 0/94,  time: 78.654; 62.148; 5841.887
+concrete  [0.0, 0.0, 0.7244938071815024, 0.0, 7.712290564676877, 0.0, 0.0, 1.0569442052031892, 0.0, 1.25751964941013]
+nlb  [0.0, 0.0, 0.0, 0.0, 2.4885547062161635, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [1.0537865194393488, 0.37056584639387147, 2.782858180601076, 0.4711574747918307, 10.218628390552203, 0.8895218404683037, 1.7291765859256074, 3.1829974307205604, 1.8127584559964451, 3.9811576884055833] adv labels  None
+img 95 Verified 4
+progress: 96/100, correct:  95/96, verified: 41/95, unsafe: 0/95,  time: 0.339; 61.497; 5842.226
+concrete  [0.0, 4.198885956456417, 0.0, 0.0, 0.0, 0.0, 0.0, 0.40822438395328253, 1.0737875952350193, 0.6102315338380373]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [51.37900636276042, 88.05054602033906, 88.47981260628148, 88.28433176812464, 79.33477368764044, 75.90581964908623, 82.8150843653954, 98.35070428948572, 96.74036994627645, 94.86395062925521] adv labels  None
+krelu: n 70 split_zero 65 after cutoff 58 number of args 65
+total k-activation time: 0.404. Time for input: 0.002. Time for k-activation constraints 0.402.
+Refinement of bounds time: 16.766. MILP used: True. 20 bounds refined.
+krelu: n 70 split_zero 108 after cutoff 100 number of args 108
+total k-activation time: 0.408. Time for input: 0.006. Time for k-activation constraints 0.402.
+Refinement of bounds time: 32.733. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 195 after cutoff 193 number of args 195
+total k-activation time: 0.408. Time for input: 0.005. Time for k-activation constraints 0.403.
+Refinement of bounds time: 32.747. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.375. Time for input: 0.005. Time for k-activation constraints 0.370.
+Refinement of bounds time: 32.888. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 200 after cutoff 200 number of args 200
+total k-activation time: 0.376. Time for input: 0.005. Time for k-activation constraints 0.372.
+Refinement of bounds time: 2.639. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 10 after cutoff 10 number of args 10
+total k-activation time: 0.404. Time for input: 0.001. Time for k-activation constraints 0.402.
+Model status: 2, Objval against label 0: -49.7066, Final solve time: 0.378
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [50.13147411075817, 86.01141608359299, 86.35327354421744, 86.1927930828728, 77.42363488763007, 74.0785882493608, 80.77289936548054, 95.9798612084888, 94.42368765102943, 92.60110969824004] adv labels  None
+img 96 Failed
+progress: 97/100, correct:  96/97, verified: 41/96, unsafe: 0/96,  time: 121.760; 62.125; 5963.986
+concrete  [0.0, 0.39339546317137586, 3.4485256710960273, 2.5682697768027274, 0.0, 0.0, 0.0, 10.151693120419504, 0.0, 1.8279867977387123]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  nub  [7.881191841011689, 13.540212117382044, 15.501769102801203, 13.43726135146712, 9.330633474810849, 8.60369821958563, 8.977222351051573, 22.000303926198608, 12.229408940061944, 14.04180797704356] adv labels  None
+krelu: n 70 split_zero 36 after cutoff 35 number of args 36
+total k-activation time: 0.380. Time for input: 0.001. Time for k-activation constraints 0.378.
+Refinement of bounds time: 16.545. MILP used: True. 105 bounds refined.
+krelu: n 70 split_zero 66 after cutoff 46 number of args 66
+total k-activation time: 0.367. Time for input: 0.002. Time for k-activation constraints 0.365.
+Refinement of bounds time: 16.674. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 78 after cutoff 74 number of args 78
+total k-activation time: 0.380. Time for input: 0.002. Time for k-activation constraints 0.378.
+Refinement of bounds time: 18.830. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 116 after cutoff 113 number of args 116
+total k-activation time: 0.396. Time for input: 0.005. Time for k-activation constraints 0.390.
+Refinement of bounds time: 24.795. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 183 after cutoff 183 number of args 183
+total k-activation time: 0.409. Time for input: 0.005. Time for k-activation constraints 0.404.
+Refinement of bounds time: 2.629. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.390. Time for input: 0.001. Time for k-activation constraints 0.388.
+Model status: 2, Objval against label 0: -1.2754, Final solve time: 0.166
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.029866491712825, 0.0, 0.0]  nub  [3.7255051590809733, 8.212566514385337, 10.313273623838764, 8.24360443821993, 4.673181565624849, 3.4376267580391575, 3.5396645023004085, 17.28281480570222, 6.107628601195531, 8.51956605174421] adv labels  None
+img 97 Failed
+progress: 98/100, correct:  97/98, verified: 41/97, unsafe: 0/97,  time: 82.913; 62.339; 6046.899
+concrete  [0.0, 0.0, 3.0211831763650485, 0.0, 0.8065520145184071, 1.0299711921917265, 7.348135669088782, 0.0, 0.13380212231640015, 0.0]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3736459358503526, 0.0, 0.0, 0.0]  nub  [4.783553281655634, 5.007026716840703, 9.594239893340035, 3.70349009836154, 5.450217913073668, 7.241117691558, 12.811492448607028, 4.139293082563283, 5.858398765584405, 2.1935110845917243] adv labels  None
+krelu: n 70 split_zero 35 after cutoff 33 number of args 35
+total k-activation time: 0.370. Time for input: 0.001. Time for k-activation constraints 0.369.
+Refinement of bounds time: 10.470. MILP used: True. 12 bounds refined.
+krelu: n 70 split_zero 45 after cutoff 42 number of args 45
+total k-activation time: 0.370. Time for input: 0.002. Time for k-activation constraints 0.368.
+Refinement of bounds time: 12.677. MILP used: True. 0 bounds refined.
+krelu: n 70 split_zero 70 after cutoff 61 number of args 70
+total k-activation time: 0.384. Time for input: 0.003. Time for k-activation constraints 0.381.
+Refinement of bounds time: 18.829. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 112 after cutoff 108 number of args 112
+total k-activation time: 0.375. Time for input: 0.003. Time for k-activation constraints 0.372.
+Refinement of bounds time: 24.773. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 159 after cutoff 157 number of args 159
+total k-activation time: 0.407. Time for input: 0.004. Time for k-activation constraints 0.404.
+Refinement of bounds time: 2.625. MILP used: 0. 0 bounds refined.
+krelu: n 70 split_zero 9 after cutoff 9 number of args 9
+total k-activation time: 0.386. Time for input: 0.001. Time for k-activation constraints 0.385.
+Model status: 2, Objval against label 0: -1.7198, Final solve time: 0.200
+nlb  [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.8471846178526745, 0.0, 0.0, 0.0]  nub  [4.418128036040344, 4.515222573240148, 9.148395376984078, 3.259699889720966, 5.085232242956468, 6.85822031761895, 12.481767880511951, 3.6968287459007665, 5.381851498193471, 1.764930633402888] adv labels  None
+img 98 Failed
+progress: 99/100, correct:  98/99, verified: 41/98, unsafe: 0/98,  time: 72.894; 62.447; 6119.793
+concrete  [0.0, 0.0, 0.0, 0.06618882612036209, 1.6015152326850501, 0.0, 0.0, 2.349623021630468, 0.039226079470286536, 14.729615695070999]
+nlb  [0.0, 0.0, 0.0, 0.0, 0.2926116577472742, 0.0, 0.0, 1.115161494719262, 0.0, 11.612364200301409]  nub  [0.0, 0.0, 0.0, 0.8173718962146905, 2.5985349569898437, 0.06835110683358994, 0.0, 3.530678203805874, 0.8678263401738298, 16.53749172248909] adv labels  None
+img 99 Verified 9
+progress: 100/100, correct:  99/100, verified: 42/99, unsafe: 0/99,  time: 0.409; 61.820; 6120.202
+analysis precision  42 /  99
+
+Process finished with exit code 0

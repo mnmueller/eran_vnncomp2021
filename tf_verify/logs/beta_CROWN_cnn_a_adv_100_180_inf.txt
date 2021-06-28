@@ -1,0 +1,1969 @@
+/home/mark/anaconda3/envs/BETAC/bin/python /home/mark/Projects/BETA_CROWN/Beta-CROWN/src/bab_verification.py --device cuda --load models/mnist_cnn_a_adv.model --model mnist_cnn_4layer --data MNIST_SAMPLE --batch_size 32 --timeout 180 --mode verified-acc
+complete verification for verified accuracy, set decision_thresh to be 0
+Sequential(
+  (0): Conv2d(1, 16, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (1): ReLU()
+  (2): Conv2d(16, 32, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1))
+  (3): ReLU()
+  (4): Flatten()
+  (5): Linear(in_features=1568, out_features=100, bias=True)
+  (6): ReLU()
+  (7): Linear(in_features=100, out_features=10, bias=True)
+)
+############################
+Shape: torch.Size([100, 1, 28, 28]) torch.Size([100]) torch.Size([100])
+X range: tensor(1.) tensor(0.) tensor(0.1357)
+############################
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 0 img ID: 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+/home/mark/Projects/BETA_CROWN/Beta-CROWN/src/bab_verification.py:59: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  data_ub = torch.min(data + eps.view(1,-1,1,1), torch.tensor(data_max))
+/home/mark/Projects/BETA_CROWN/Beta-CROWN/src/bab_verification.py:60: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  data_lb = torch.max(data - eps.view(1,-1,1,1), torch.tensor(data_min))
+Image 0, property 0 verify end, min bound 2.71785306930542, Time cost: 1.652747631072998
+Image 0, property 1 verify end, min bound 3.5732626914978027, Time cost: 0.1306607723236084
+Image 0, property 2 verify end, min bound 1.8943965435028076, Time cost: 2.0123136043548584
+Image 0, property 3 verify end, min bound 2.054899215698242, Time cost: 0.13250136375427246
+Image 0, property 4 verify end, min bound 2.7140917778015137, Time cost: 2.027883529663086
+Image 0, property 5 verify end, min bound 1.3613126277923584, Time cost: 0.1310882568359375
+correct label, skip!
+Image 0, property 7 verify end, min bound 1.5467772483825684, Time cost: 0.1338660717010498
+Image 0, property 8 verify end, min bound 1.612678050994873, Time cost: 0.13410019874572754
+Image 0, property 9 verify end, min bound 1.7156355381011963, Time cost: 0.13163042068481445
+Correct: 1/1, verified corr: 1/1
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 1 img ID: 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 1, property 0 verify end, min bound 0.6561050415039062, Time cost: 2.0235750675201416
+No domains left, verification finished!
+Image 1, property 1 verify end, min bound 999, Time cost: 2.040693521499634
+[W accumulate_grad.h:170] Warning: grad and param do not obey the gradient layout contract. This is not an error, but may impair performance.
+grad.sizes() = [1, 2, 100], strides() = [100, 100, 1]
+param.sizes() = [1, 2, 100], strides() = [200, 100, 1] (function operator())
+No domains left, verification finished!
+Image 1, property 2 verify end, min bound 999, Time cost: 3.0915331840515137
+No domains left, verification finished!
+Image 1, property 3 verify end, min bound 999, Time cost: 2.8005590438842773
+correct label, skip!
+No domains left, verification finished!
+Image 1, property 5 verify end, min bound 999, Time cost: 2.314739227294922
+No domains left, verification finished!
+Image 1, property 6 verify end, min bound 999, Time cost: 2.2061774730682373
+No domains left, verification finished!
+Image 1, property 7 verify end, min bound 999, Time cost: 2.5489799976348877
+Image 1, property 8 verify end, min bound 0.16102027893066406, Time cost: 2.00565242767334
+Image 1, property 9 verify end, min bound 0.05413079261779785, Time cost: 2.023900032043457
+Correct: 2/2, verified corr: 2/2
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 2 img ID: 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+No domains left, verification finished!
+Image 2, property 0 verify end, min bound 999, Time cost: 3.142134666442871
+No domains left, verification finished!
+Image 2, property 1 verify end, min bound 999, Time cost: 2.20920991897583
+No domains left, verification finished!
+Image 2, property 2 verify end, min bound 999, Time cost: 4.423858165740967
+No domains left, verification finished!
+Image 2, property 3 verify end, min bound 999, Time cost: 5.7474353313446045
+No domains left, verification finished!
+Image 2, property 4 verify end, min bound 999, Time cost: 4.904709100723267
+No domains left, verification finished!
+Image 2, property 5 verify end, min bound 999, Time cost: 14.556029558181763
+No domains left, verification finished!
+Image 2, property 6 verify end, min bound 999, Time cost: 5.562538385391235
+No domains left, verification finished!
+Image 2, property 7 verify end, min bound 999, Time cost: 6.648186683654785
+No domains left, verification finished!
+Image 2, property 8 verify end, min bound 999, Time cost: 9.939995050430298
+correct label, skip!
+Correct: 3/3, verified corr: 3/3
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 3 img ID: 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 3, property 0 verify end, min bound 0.622582197189331, Time cost: 0.12761688232421875
+correct label, skip!
+Image 3, property 2 verify end, min bound 1.1145050525665283, Time cost: 1.962235450744629
+Image 3, property 3 verify end, min bound 0.8133184909820557, Time cost: 1.9703097343444824
+Image 3, property 4 verify end, min bound 1.6173882484436035, Time cost: 1.9675946235656738
+Image 3, property 5 verify end, min bound 0.2748847007751465, Time cost: 1.9685249328613281
+No domains left, verification finished!
+Image 3, property 6 verify end, min bound 999, Time cost: 2.132436990737915
+Image 3, property 7 verify end, min bound 1.8636999130249023, Time cost: 1.9443533420562744
+Image 3, property 8 verify end, min bound 0.3407091498374939, Time cost: 1.9446640014648438
+Image 3, property 9 verify end, min bound 1.7602882385253906, Time cost: 1.9699935913085938
+Correct: 4/4, verified corr: 4/4
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 4 img ID: 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 4, property 1 verify end, min bound 1.9680709838867188, Time cost: 1.9669544696807861
+Image 4, property 2 verify end, min bound 0.2327442169189453, Time cost: 1.9676949977874756
+No domains left, verification finished!
+Image 4, property 3 verify end, min bound 999, Time cost: 2.1689705848693848
+Image 4, property 4 verify end, min bound 0.5225257873535156, Time cost: 1.9540667533874512
+No domains left, verification finished!
+Image 4, property 5 verify end, min bound 999, Time cost: 2.152240753173828
+Image 4, property 6 verify end, min bound 0.6257610321044922, Time cost: 1.9631059169769287
+No domains left, verification finished!
+Image 4, property 7 verify end, min bound 999, Time cost: 1.9951400756835938
+No domains left, verification finished!
+Image 4, property 8 verify end, min bound 999, Time cost: 1.9896323680877686
+Image 4, property 9 verify end, min bound 0.04453611373901367, Time cost: 1.954568862915039
+Correct: 5/5, verified corr: 5/5
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 5 img ID: 5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+No domains left, verification finished!
+Image 5, property 0 verify end, min bound 999, Time cost: 7.46025824546814
+No domains left, verification finished!
+Image 5, property 1 verify end, min bound 999, Time cost: 34.83503842353821
+Image 5, property 2 verify end, min bound -1.3757505416870117, Time cost: 180.2865731716156
+No domains left, verification finished!
+Image 5, property 3 verify end, min bound 999, Time cost: 130.41495180130005
+Domain infeasible with margin -0.0020986199378967285, lb is tensor([-1.9464], device='cuda:0')
+Image 5, property 4 verify end, min bound -2.388782501220703, Time cost: 180.5152039527893
+Image 5, property 5 verify end, min bound -0.5360469818115234, Time cost: 180.56994652748108
+Image 5, property 6 verify end, min bound -1.0943479537963867, Time cost: 180.63244247436523
+Image 5, property 7 verify end, min bound -2.1208651065826416, Time cost: 180.46853828430176
+Image 5, property 8 verify end, min bound -0.61065673828125, Time cost: 180.36266994476318
+correct label, skip!
+Correct: 6/6, verified corr: 5/6
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 6 img ID: 6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 6, property 0 verify end, min bound 2.9907779693603516, Time cost: 1.9597578048706055
+Image 6, property 1 verify end, min bound 0.02683115005493164, Time cost: 1.9622776508331299
+Image 6, property 2 verify end, min bound 2.075937271118164, Time cost: 1.9572858810424805
+Image 6, property 3 verify end, min bound 0.40340518951416016, Time cost: 1.9634370803833008
+correct label, skip!
+Image 6, property 5 verify end, min bound 0.04336833953857422, Time cost: 1.9678592681884766
+Image 6, property 6 verify end, min bound 1.264969825744629, Time cost: 1.9561131000518799
+Image 6, property 7 verify end, min bound 0.05125617980957031, Time cost: 1.9579405784606934
+Image 6, property 8 verify end, min bound 0.4617891311645508, Time cost: 1.9552116394042969
+Image 6, property 9 verify end, min bound 0.9532672166824341, Time cost: 1.948317527770996
+Correct: 7/7, verified corr: 6/7
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 7 img ID: 7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 7, property 0 verify end, min bound 0.022503376007080078, Time cost: 1.9507055282592773
+No domains left, verification finished!
+Image 7, property 1 verify end, min bound 999, Time cost: 2.9605560302734375
+correct label, skip!
+No domains left, verification finished!
+Image 7, property 3 verify end, min bound 999, Time cost: 2.6042888164520264
+No domains left, verification finished!
+Image 7, property 4 verify end, min bound 999, Time cost: 6.779852867126465
+No domains left, verification finished!
+Image 7, property 5 verify end, min bound 999, Time cost: 2.4649434089660645
+No domains left, verification finished!
+Image 7, property 6 verify end, min bound 999, Time cost: 3.041015863418579
+Image 7, property 7 verify end, min bound -2.816307544708252, Time cost: 180.51582980155945
+No domains left, verification finished!
+Image 7, property 8 verify end, min bound 999, Time cost: 5.700314521789551
+No domains left, verification finished!
+Image 7, property 9 verify end, min bound 999, Time cost: 3.5413668155670166
+Correct: 8/8, verified corr: 6/8
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 8 img ID: 8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 8, property 0 verify end, min bound 0.523409366607666, Time cost: 1.9766860008239746
+No domains left, verification finished!
+Image 8, property 1 verify end, min bound 999, Time cost: 7.365654230117798
+No domains left, verification finished!
+Image 8, property 2 verify end, min bound 999, Time cost: 2.9116737842559814
+No domains left, verification finished!
+Image 8, property 3 verify end, min bound 999, Time cost: 4.44559645652771
+No domains left, verification finished!
+Image 8, property 4 verify end, min bound 999, Time cost: 3.9376463890075684
+No domains left, verification finished!
+Image 8, property 5 verify end, min bound 999, Time cost: 2.871093511581421
+Image 8, property 6 verify end, min bound 0.07171773910522461, Time cost: 1.983717918395996
+Image 8, property 7 verify end, min bound -0.20400333404541016, Time cost: 180.5717852115631
+No domains left, verification finished!
+Image 8, property 8 verify end, min bound 999, Time cost: 4.914532661437988
+correct label, skip!
+Correct: 9/9, verified corr: 6/9
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 9 img ID: 9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 9, property 0 verify end, min bound 0.46486878395080566, Time cost: 0.1338489055633545
+correct label, skip!
+No domains left, verification finished!
+Image 9, property 2 verify end, min bound 999, Time cost: 1.985525369644165
+No domains left, verification finished!
+Image 9, property 3 verify end, min bound 999, Time cost: 1.9831774234771729
+Image 9, property 4 verify end, min bound 0.4099942445755005, Time cost: 1.935741901397705
+Image 9, property 5 verify end, min bound 0.5492534637451172, Time cost: 1.943572998046875
+No domains left, verification finished!
+Image 9, property 6 verify end, min bound 999, Time cost: 1.9817023277282715
+Image 9, property 7 verify end, min bound 0.005421638488769531, Time cost: 1.957312822341919
+Image 9, property 8 verify end, min bound 0.5302724838256836, Time cost: 1.9367516040802002
+Image 9, property 9 verify end, min bound 0.11336207389831543, Time cost: 1.9440786838531494
+Correct: 10/10, verified corr: 7/10
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 10 img ID: 10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+No domains left, verification finished!
+Image 10, property 0 verify end, min bound 999, Time cost: 17.40673303604126
+Image 10, property 1 verify end, min bound 1.8957228660583496, Time cost: 1.9652254581451416
+No domains left, verification finished!
+Image 10, property 2 verify end, min bound 999, Time cost: 94.53580951690674
+No domains left, verification finished!
+Image 10, property 3 verify end, min bound 999, Time cost: 2.3127787113189697
+No domains left, verification finished!
+Image 10, property 4 verify end, min bound 999, Time cost: 2.4878885746002197
+No domains left, verification finished!
+Image 10, property 5 verify end, min bound 999, Time cost: 2.6561684608459473
+No domains left, verification finished!
+Image 10, property 6 verify end, min bound 999, Time cost: 4.041945695877075
+No domains left, verification finished!
+Image 10, property 7 verify end, min bound 999, Time cost: 4.703067064285278
+No domains left, verification finished!
+Image 10, property 8 verify end, min bound 999, Time cost: 2.155120611190796
+correct label, skip!
+Correct: 11/11, verified corr: 8/11
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 11 img ID: 11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+No domains left, verification finished!
+Image 11, property 1 verify end, min bound 999, Time cost: 2.1597797870635986
+No domains left, verification finished!
+Image 11, property 2 verify end, min bound 999, Time cost: 6.781270742416382
+No domains left, verification finished!
+Image 11, property 3 verify end, min bound 999, Time cost: 2.845564365386963
+No domains left, verification finished!
+Image 11, property 4 verify end, min bound 999, Time cost: 2.8441498279571533
+No domains left, verification finished!
+Image 11, property 5 verify end, min bound 999, Time cost: 3.582216501235962
+No domains left, verification finished!
+Image 11, property 6 verify end, min bound 999, Time cost: 5.166837692260742
+No domains left, verification finished!
+Image 11, property 7 verify end, min bound 999, Time cost: 2.341719150543213
+No domains left, verification finished!
+Image 11, property 8 verify end, min bound 999, Time cost: 2.176460027694702
+No domains left, verification finished!
+Image 11, property 9 verify end, min bound 999, Time cost: 2.5088775157928467
+Correct: 12/12, verified corr: 9/12
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 12 img ID: 12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 12, property 0 verify end, min bound -2.7387218475341797, Time cost: 180.37522864341736
+No domains left, verification finished!
+Image 12, property 1 verify end, min bound 999, Time cost: 3.6900105476379395
+Image 12, property 2 verify end, min bound -0.38041043281555176, Time cost: 180.6345772743225
+Domain infeasible with margin -0.06724429130554199, lb is tensor([-0.0247], device='cuda:0')
+Domain infeasible with margin -0.07069802284240723, lb is tensor([-0.0247], device='cuda:0')
+Image 12, property 3 verify end, min bound -0.010207176208496094, Time cost: 180.3709557056427
+correct label, skip!
+Image 12, property 5 verify end, min bound -0.12733006477355957, Time cost: 180.53160738945007
+Image 12, property 6 verify end, min bound -0.8699545860290527, Time cost: 180.33678936958313
+No domains left, verification finished!
+Image 12, property 7 verify end, min bound 999, Time cost: 3.5509889125823975
+Domain infeasible with margin -0.0003485679626464844, lb is tensor([-1.7001], device='cuda:0')
+Image 12, property 8 verify end, min bound -1.7001392841339111, Time cost: 180.62284064292908
+No domains left, verification finished!
+Image 12, property 9 verify end, min bound 999, Time cost: 2.0138580799102783
+Correct: 13/13, verified corr: 9/13
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 13 img ID: 13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 13, property 0 verify end, min bound 2.9903554916381836, Time cost: 1.9831101894378662
+Image 13, property 1 verify end, min bound 2.4156532287597656, Time cost: 1.97879958152771
+correct label, skip!
+Image 13, property 3 verify end, min bound 1.0365550518035889, Time cost: 1.9559550285339355
+Image 13, property 4 verify end, min bound 1.2866754531860352, Time cost: 1.9766216278076172
+Image 13, property 5 verify end, min bound 1.5210132598876953, Time cost: 1.9675047397613525
+No domains left, verification finished!
+Image 13, property 6 verify end, min bound 999, Time cost: 1.9866394996643066
+Image 13, property 7 verify end, min bound 4.634779453277588, Time cost: 1.9783744812011719
+Image 13, property 8 verify end, min bound 2.618967056274414, Time cost: 1.9832603931427002
+Image 13, property 9 verify end, min bound 2.1887190341949463, Time cost: 1.9700827598571777
+Correct: 14/14, verified corr: 10/14
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 14 img ID: 14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 14, property 0 verify end, min bound 0.020438194274902344, Time cost: 1.9831132888793945
+No domains left, verification finished!
+Image 14, property 1 verify end, min bound 999, Time cost: 4.096188545227051
+No domains left, verification finished!
+Image 14, property 2 verify end, min bound 999, Time cost: 3.207284927368164
+No domains left, verification finished!
+Image 14, property 3 verify end, min bound 999, Time cost: 3.045197010040283
+correct label, skip!
+No domains left, verification finished!
+Image 14, property 5 verify end, min bound 999, Time cost: 3.364351511001587
+No domains left, verification finished!
+Image 14, property 6 verify end, min bound 999, Time cost: 3.3760597705841064
+No domains left, verification finished!
+Image 14, property 7 verify end, min bound 999, Time cost: 3.842613935470581
+No domains left, verification finished!
+Image 14, property 8 verify end, min bound 999, Time cost: 5.268901824951172
+Image 14, property 9 verify end, min bound 1.5340471267700195, Time cost: 1.9811534881591797
+Correct: 15/15, verified corr: 11/15
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 15 img ID: 15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+No domains left, verification finished!
+Image 15, property 0 verify end, min bound 999, Time cost: 6.608399152755737
+No domains left, verification finished!
+Image 15, property 1 verify end, min bound 999, Time cost: 2.32904052734375
+No domains left, verification finished!
+Image 15, property 2 verify end, min bound 999, Time cost: 7.847868204116821
+No domains left, verification finished!
+Image 15, property 3 verify end, min bound 999, Time cost: 32.067511558532715
+No domains left, verification finished!
+Image 15, property 4 verify end, min bound 999, Time cost: 4.028299331665039
+Image 15, property 5 verify end, min bound -1.6319808959960938, Time cost: 180.34216737747192
+No domains left, verification finished!
+Image 15, property 6 verify end, min bound 999, Time cost: 21.72135639190674
+No domains left, verification finished!
+Image 15, property 7 verify end, min bound 999, Time cost: 2.1234018802642822
+correct label, skip!
+No domains left, verification finished!
+Image 15, property 9 verify end, min bound 999, Time cost: 2.651276111602783
+Correct: 16/16, verified corr: 11/16
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 16 img ID: 16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+No domains left, verification finished!
+Image 16, property 0 verify end, min bound 999, Time cost: 1.9766192436218262
+No domains left, verification finished!
+Image 16, property 1 verify end, min bound 999, Time cost: 1.9858677387237549
+No domains left, verification finished!
+Image 16, property 2 verify end, min bound 999, Time cost: 2.8270294666290283
+correct label, skip!
+No domains left, verification finished!
+Image 16, property 4 verify end, min bound 999, Time cost: 1.9789109230041504
+Image 16, property 5 verify end, min bound -0.15303099155426025, Time cost: 180.3622648715973
+No domains left, verification finished!
+Image 16, property 6 verify end, min bound 999, Time cost: 2.2101340293884277
+No domains left, verification finished!
+Image 16, property 7 verify end, min bound 999, Time cost: 2.705172300338745
+Image 16, property 8 verify end, min bound 0.0007491111755371094, Time cost: 2.0157690048217773
+No domains left, verification finished!
+Image 16, property 9 verify end, min bound 999, Time cost: 2.171609878540039
+Correct: 17/17, verified corr: 11/17
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 17 img ID: 17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+No domains left, verification finished!
+Image 17, property 0 verify end, min bound 999, Time cost: 5.751891613006592
+No domains left, verification finished!
+Image 17, property 1 verify end, min bound 999, Time cost: 2.0206985473632812
+Domain infeasible with margin -0.003113657236099243, lb is tensor([-0.1033], device='cuda:0')
+Domain infeasible with margin -0.0031137168407440186, lb is tensor([-0.0271], device='cuda:0')
+Image 17, property 2 verify end, min bound -0.20824813842773438, Time cost: 180.211190700531
+No domains left, verification finished!
+Image 17, property 3 verify end, min bound 999, Time cost: 2.498047351837158
+correct label, skip!
+No domains left, verification finished!
+Image 17, property 5 verify end, min bound 999, Time cost: 2.6843819618225098
+No domains left, verification finished!
+Image 17, property 6 verify end, min bound 999, Time cost: 4.072071552276611
+No domains left, verification finished!
+Image 17, property 7 verify end, min bound 999, Time cost: 2.548595428466797
+No domains left, verification finished!
+Image 17, property 8 verify end, min bound 999, Time cost: 3.197866916656494
+Image 17, property 9 verify end, min bound 0.057830095291137695, Time cost: 1.9884042739868164
+Correct: 18/18, verified corr: 11/18
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 18 img ID: 18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+No domains left, verification finished!
+Image 18, property 1 verify end, min bound 999, Time cost: 2.018831729888916
+No domains left, verification finished!
+Image 18, property 2 verify end, min bound 999, Time cost: 4.103745460510254
+No domains left, verification finished!
+Image 18, property 3 verify end, min bound 999, Time cost: 2.1795530319213867
+No domains left, verification finished!
+Image 18, property 4 verify end, min bound 999, Time cost: 2.3291494846343994
+No domains left, verification finished!
+Image 18, property 5 verify end, min bound 999, Time cost: 3.462864398956299
+No domains left, verification finished!
+Image 18, property 6 verify end, min bound 999, Time cost: 3.7502894401550293
+No domains left, verification finished!
+Image 18, property 7 verify end, min bound 999, Time cost: 2.0328376293182373
+No domains left, verification finished!
+Image 18, property 8 verify end, min bound 999, Time cost: 2.3632659912109375
+No domains left, verification finished!
+Image 18, property 9 verify end, min bound 999, Time cost: 2.181025743484497
+Correct: 19/19, verified corr: 12/19
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 19 img ID: 19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 19, property 1 verify end, min bound 2.903409004211426, Time cost: 1.997915267944336
+No domains left, verification finished!
+Image 19, property 2 verify end, min bound 999, Time cost: 2.3721210956573486
+Image 19, property 3 verify end, min bound 0.25762510299682617, Time cost: 2.0027434825897217
+No domains left, verification finished!
+Image 19, property 4 verify end, min bound 999, Time cost: 2.0286762714385986
+No domains left, verification finished!
+Image 19, property 5 verify end, min bound 999, Time cost: 2.0379176139831543
+No domains left, verification finished!
+Image 19, property 6 verify end, min bound 999, Time cost: 2.69311785697937
+No domains left, verification finished!
+Image 19, property 7 verify end, min bound 999, Time cost: 2.0112922191619873
+Image 19, property 8 verify end, min bound 0.6499600410461426, Time cost: 1.9857964515686035
+No domains left, verification finished!
+Image 19, property 9 verify end, min bound 999, Time cost: 2.002285957336426
+Correct: 20/20, verified corr: 13/20
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 20 img ID: 20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 20, property 0 verify end, min bound 3.341549873352051, Time cost: 1.9912445545196533
+No domains left, verification finished!
+Image 20, property 1 verify end, min bound 999, Time cost: 2.0121705532073975
+Image 20, property 2 verify end, min bound 1.670949935913086, Time cost: 1.990065574645996
+No domains left, verification finished!
+Image 20, property 3 verify end, min bound 999, Time cost: 2.375566005706787
+Image 20, property 4 verify end, min bound 0.24737411737442017, Time cost: 2.0183091163635254
+Image 20, property 5 verify end, min bound 0.21927237510681152, Time cost: 2.0011749267578125
+Image 20, property 6 verify end, min bound 2.304022789001465, Time cost: 2.0048367977142334
+No domains left, verification finished!
+Image 20, property 7 verify end, min bound 999, Time cost: 2.0359466075897217
+Image 20, property 8 verify end, min bound 0.2212522029876709, Time cost: 1.9942753314971924
+correct label, skip!
+Correct: 21/21, verified corr: 14/21
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 21 img ID: 21 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+Image 21, property 0 verify end, min bound 0.0872507095336914, Time cost: 2.0217905044555664
+Image 21, property 1 verify end, min bound 2.2131776809692383, Time cost: 2.012281894683838
+No domains left, verification finished!
+Image 21, property 2 verify end, min bound 999, Time cost: 5.931534767150879
+Image 21, property 3 verify end, min bound 1.1019887924194336, Time cost: 1.996875524520874
+No domains left, verification finished!
+Image 21, property 4 verify end, min bound 999, Time cost: 2.8547582626342773
+Image 21, property 5 verify end, min bound 1.3429415225982666, Time cost: 1.9901878833770752
+correct label, skip!
+No domains left, verification finished!
+Image 21, property 7 verify end, min bound 999, Time cost: 2.194298505783081
+Image 21, property 8 verify end, min bound 1.0044901371002197, Time cost: 1.9890804290771484
+Image 21, property 9 verify end, min bound 0.1339719295501709, Time cost: 1.996246337890625
+Correct: 22/22, verified corr: 15/22
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 22 img ID: 22 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+No domains left, verification finished!
+Image 22, property 0 verify end, min bound 999, Time cost: 2.166294574737549
+Image 22, property 1 verify end, min bound 1.7256879806518555, Time cost: 1.9870197772979736
+No domains left, verification finished!
+Image 22, property 2 verify end, min bound 999, Time cost: 2.162569999694824
+Image 22, property 3 verify end, min bound 1.32096529006958, Time cost: 1.987015724182129
+correct label, skip!
+Image 22, property 5 verify end, min bound 0.1490764617919922, Time cost: 2.0006394386291504
+No domains left, verification finished!
+Image 22, property 6 verify end, min bound 999, Time cost: 4.524378538131714
+No domains left, verification finished!
+Image 22, property 7 verify end, min bound 999, Time cost: 2.1801087856292725
+No domains left, verification finished!
+Image 22, property 8 verify end, min bound 999, Time cost: 2.0452208518981934
+Image 22, property 9 verify end, min bound 0.12716364860534668, Time cost: 0.13202834129333496
+Correct: 23/23, verified corr: 16/23
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 23 img ID: 23 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 23, property 1 verify end, min bound 3.633251667022705, Time cost: 2.0067687034606934
+Image 23, property 2 verify end, min bound 1.2469799518585205, Time cost: 1.9961543083190918
+No domains left, verification finished!
+Image 23, property 3 verify end, min bound 999, Time cost: 2.192357063293457
+Image 23, property 4 verify end, min bound 0.6419773101806641, Time cost: 1.9791953563690186
+No domains left, verification finished!
+Image 23, property 5 verify end, min bound 999, Time cost: 2.022829294204712
+Image 23, property 6 verify end, min bound 1.917527675628662, Time cost: 1.993476390838623
+No domains left, verification finished!
+Image 23, property 7 verify end, min bound 999, Time cost: 2.862828493118286
+Image 23, property 8 verify end, min bound 0.13402605056762695, Time cost: 2.0053176879882812
+No domains left, verification finished!
+Image 23, property 9 verify end, min bound 999, Time cost: 2.0243113040924072
+Correct: 24/24, verified corr: 17/24
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 24 img ID: 24 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+Image 24, property 0 verify end, min bound 2.864274501800537, Time cost: 2.002708673477173
+Image 24, property 1 verify end, min bound 0.14055681228637695, Time cost: 1.9888463020324707
+No domains left, verification finished!
+Image 24, property 2 verify end, min bound 999, Time cost: 3.2613441944122314
+Image 24, property 3 verify end, min bound 0.09731817245483398, Time cost: 1.9956743717193604
+Image 24, property 4 verify end, min bound 0.08537530899047852, Time cost: 2.0045576095581055
+Image 24, property 5 verify end, min bound 0.011176347732543945, Time cost: 1.998375415802002
+correct label, skip!
+Image 24, property 7 verify end, min bound 1.0123615264892578, Time cost: 2.003300189971924
+Image 24, property 8 verify end, min bound 0.24832308292388916, Time cost: 2.0024492740631104
+Image 24, property 9 verify end, min bound 1.1215863227844238, Time cost: 1.9989724159240723
+Correct: 25/25, verified corr: 18/25
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 25 img ID: 25 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 25, property 1 verify end, min bound 1.1964244842529297, Time cost: 1.9957664012908936
+No domains left, verification finished!
+Image 25, property 2 verify end, min bound 999, Time cost: 2.3466718196868896
+No domains left, verification finished!
+Image 25, property 3 verify end, min bound 999, Time cost: 2.3562562465667725
+No domains left, verification finished!
+Image 25, property 4 verify end, min bound 999, Time cost: 2.1917777061462402
+No domains left, verification finished!
+Image 25, property 5 verify end, min bound 999, Time cost: 6.480025053024292
+No domains left, verification finished!
+Image 25, property 6 verify end, min bound 999, Time cost: 2.210975170135498
+No domains left, verification finished!
+Image 25, property 7 verify end, min bound 999, Time cost: 3.0911598205566406
+No domains left, verification finished!
+Image 25, property 8 verify end, min bound 999, Time cost: 4.569787263870239
+No domains left, verification finished!
+Image 25, property 9 verify end, min bound 999, Time cost: 3.029266834259033
+Correct: 26/26, verified corr: 19/26
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 26 img ID: 26 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+Image 26, property 0 verify end, min bound 0.8715975284576416, Time cost: 2.0199716091156006
+Image 26, property 1 verify end, min bound 2.8172760009765625, Time cost: 2.012648344039917
+Image 26, property 2 verify end, min bound 1.0601239204406738, Time cost: 2.006010055541992
+Image 26, property 3 verify end, min bound -0.25677645206451416, Time cost: 180.43305087089539
+Image 26, property 4 verify end, min bound 2.0163021087646484, Time cost: 1.9851336479187012
+correct label, skip!
+No domains left, verification finished!
+Image 26, property 6 verify end, min bound 999, Time cost: 2.3349010944366455
+Image 26, property 7 verify end, min bound 3.963684320449829, Time cost: 1.9824388027191162
+Image 26, property 8 verify end, min bound 0.6017887592315674, Time cost: 1.9780750274658203
+Image 26, property 9 verify end, min bound 2.533806085586548, Time cost: 1.9693503379821777
+Correct: 27/27, verified corr: 19/27
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 27 img ID: 27 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+Image 27, property 0 verify end, min bound -3.9576163291931152, Time cost: 180.50454092025757
+No domains left, verification finished!
+Image 27, property 1 verify end, min bound 999, Time cost: 2.3066904544830322
+Image 27, property 2 verify end, min bound -1.6483378410339355, Time cost: 180.36522817611694
+Image 27, property 3 verify end, min bound -1.300431251525879, Time cost: 180.58437490463257
+Image 27, property 4 verify end, min bound -0.8520584106445312, Time cost: 180.32069635391235
+No domains left, verification finished!
+Image 27, property 5 verify end, min bound 999, Time cost: 155.48823165893555
+Image 27, property 6 verify end, min bound -1.4498391151428223, Time cost: 180.5998227596283
+No domains left, verification finished!
+Image 27, property 7 verify end, min bound 999, Time cost: 3.21803617477417
+correct label, skip!
+No domains left, verification finished!
+Image 27, property 9 verify end, min bound 999, Time cost: 34.921972036361694
+Correct: 28/28, verified corr: 19/28
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 28 img ID: 28 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 28, property 0 verify end, min bound 1.8723931312561035, Time cost: 0.12958955764770508
+Image 28, property 1 verify end, min bound 1.1070432662963867, Time cost: 0.13158822059631348
+Image 28, property 2 verify end, min bound 0.4393043518066406, Time cost: 0.13024425506591797
+No domains left, verification finished!
+Image 28, property 3 verify end, min bound 999, Time cost: 1.9975216388702393
+No domains left, verification finished!
+Image 28, property 4 verify end, min bound 999, Time cost: 4.2446746826171875
+Image 28, property 5 verify end, min bound 0.11114501953125, Time cost: 1.9625346660614014
+Image 28, property 6 verify end, min bound 3.3360390663146973, Time cost: 1.9651193618774414
+No domains left, verification finished!
+Image 28, property 7 verify end, min bound 999, Time cost: 3.4608254432678223
+Image 28, property 8 verify end, min bound 0.35557079315185547, Time cost: 1.9653465747833252
+correct label, skip!
+Correct: 29/29, verified corr: 20/29
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 29 img ID: 29 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+Image 29, property 0 verify end, min bound 0.5301976203918457, Time cost: 1.9658305644989014
+Image 29, property 1 verify end, min bound -1.797551155090332, Time cost: 180.39421010017395
+No domains left, verification finished!
+Image 29, property 2 verify end, min bound 999, Time cost: 2.16502046585083
+No domains left, verification finished!
+Image 29, property 3 verify end, min bound 999, Time cost: 5.783356666564941
+Image 29, property 4 verify end, min bound -3.081483840942383, Time cost: 180.40966963768005
+Image 29, property 5 verify end, min bound -0.7027173042297363, Time cost: 180.50044178962708
+Image 29, property 6 verify end, min bound -0.27254676818847656, Time cost: 180.2892622947693
+Image 29, property 7 verify end, min bound -0.12646245956420898, Time cost: 180.32956099510193
+correct label, skip!
+Image 29, property 9 verify end, min bound -2.280874252319336, Time cost: 180.50158977508545
+Correct: 30/30, verified corr: 20/30
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 30 img ID: 30 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 30, property 0 verify end, min bound -0.7959918975830078, Time cost: 180.39608883857727
+No domains left, verification finished!
+Image 30, property 1 verify end, min bound 999, Time cost: 2.0461809635162354
+No domains left, verification finished!
+Image 30, property 2 verify end, min bound 999, Time cost: 7.492841720581055
+No domains left, verification finished!
+Image 30, property 3 verify end, min bound 999, Time cost: 5.1610426902771
+Image 30, property 4 verify end, min bound -1.1805312633514404, Time cost: 180.56063747406006
+No domains left, verification finished!
+Image 30, property 5 verify end, min bound 999, Time cost: 21.59503173828125
+No domains left, verification finished!
+Image 30, property 6 verify end, min bound 999, Time cost: 7.332900524139404
+Image 30, property 7 verify end, min bound -1.3070974349975586, Time cost: 180.54323744773865
+No domains left, verification finished!
+Image 30, property 8 verify end, min bound 999, Time cost: 14.504088640213013
+correct label, skip!
+Correct: 31/31, verified corr: 20/31
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 31 img ID: 31 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+Image 31, property 0 verify end, min bound 0.7161526679992676, Time cost: 1.9577655792236328
+No domains left, verification finished!
+Image 31, property 1 verify end, min bound 999, Time cost: 2.780719041824341
+Image 31, property 2 verify end, min bound -2.9902939796447754, Time cost: 180.65350461006165
+correct label, skip!
+Image 31, property 4 verify end, min bound 1.671511173248291, Time cost: 2.0047192573547363
+Image 31, property 5 verify end, min bound 0.8686127662658691, Time cost: 2.023193597793579
+No domains left, verification finished!
+Image 31, property 6 verify end, min bound 999, Time cost: 2.549826145172119
+Image 31, property 7 verify end, min bound 0.0177001953125, Time cost: 2.01513934135437
+No domains left, verification finished!
+Image 31, property 8 verify end, min bound 999, Time cost: 13.338961124420166
+Image 31, property 9 verify end, min bound 0.7205410003662109, Time cost: 2.0032734870910645
+Correct: 32/32, verified corr: 20/32
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 32 img ID: 32 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 32, property 0 verify end, min bound 3.270984649658203, Time cost: 0.13698959350585938
+correct label, skip!
+No domains left, verification finished!
+Image 32, property 2 verify end, min bound 999, Time cost: 2.0466794967651367
+No domains left, verification finished!
+Image 32, property 3 verify end, min bound 999, Time cost: 4.440187692642212
+No domains left, verification finished!
+Image 32, property 4 verify end, min bound 999, Time cost: 2.2073562145233154
+No domains left, verification finished!
+Image 32, property 5 verify end, min bound 999, Time cost: 2.7119898796081543
+Image 32, property 6 verify end, min bound 0.399977445602417, Time cost: 2.0107421875
+No domains left, verification finished!
+Image 32, property 7 verify end, min bound 999, Time cost: 2.6194846630096436
+Image 32, property 8 verify end, min bound 1.032768964767456, Time cost: 2.0127575397491455
+No domains left, verification finished!
+Image 32, property 9 verify end, min bound 999, Time cost: 2.0379445552825928
+Correct: 33/33, verified corr: 21/33
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 33 img ID: 33 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+No domains left, verification finished!
+Image 33, property 0 verify end, min bound 999, Time cost: 3.432922124862671
+No domains left, verification finished!
+Image 33, property 1 verify end, min bound 999, Time cost: 5.095255613327026
+No domains left, verification finished!
+Image 33, property 2 verify end, min bound 999, Time cost: 7.381215572357178
+correct label, skip!
+No domains left, verification finished!
+Image 33, property 4 verify end, min bound 999, Time cost: 26.74730896949768
+Image 33, property 5 verify end, min bound -1.5926995277404785, Time cost: 180.41492557525635
+Image 33, property 6 verify end, min bound -2.9015960693359375, Time cost: 180.43359088897705
+No domains left, verification finished!
+Image 33, property 7 verify end, min bound 999, Time cost: 5.127025604248047
+No domains left, verification finished!
+Image 33, property 8 verify end, min bound 999, Time cost: 3.005679130554199
+No domains left, verification finished!
+Image 33, property 9 verify end, min bound 999, Time cost: 9.124887704849243
+Correct: 34/34, verified corr: 21/34
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 34 img ID: 34 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+Image 34, property 0 verify end, min bound 0.838282585144043, Time cost: 1.993561029434204
+No domains left, verification finished!
+Image 34, property 1 verify end, min bound 999, Time cost: 4.587981939315796
+No domains left, verification finished!
+Image 34, property 2 verify end, min bound 999, Time cost: 2.0197227001190186
+No domains left, verification finished!
+Image 34, property 3 verify end, min bound 999, Time cost: 2.3715076446533203
+No domains left, verification finished!
+Image 34, property 4 verify end, min bound 999, Time cost: 10.637355327606201
+No domains left, verification finished!
+Image 34, property 5 verify end, min bound 999, Time cost: 2.6997311115264893
+Image 34, property 6 verify end, min bound 0.08373212814331055, Time cost: 1.9682073593139648
+No domains left, verification finished!
+Image 34, property 7 verify end, min bound 999, Time cost: 4.928748369216919
+correct label, skip!
+Image 34, property 9 verify end, min bound -0.13977843523025513, Time cost: 180.32764840126038
+Correct: 35/35, verified corr: 21/35
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 35 img ID: 35 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+No domains left, verification finished!
+Image 35, property 0 verify end, min bound 999, Time cost: 1.9954369068145752
+No domains left, verification finished!
+Image 35, property 1 verify end, min bound 999, Time cost: 5.793006658554077
+No domains left, verification finished!
+Image 35, property 2 verify end, min bound 999, Time cost: 5.827713966369629
+No domains left, verification finished!
+Image 35, property 3 verify end, min bound 999, Time cost: 2.1573827266693115
+No domains left, verification finished!
+Image 35, property 4 verify end, min bound 999, Time cost: 77.00650906562805
+No domains left, verification finished!
+Image 35, property 5 verify end, min bound 999, Time cost: 2.2091257572174072
+No domains left, verification finished!
+Image 35, property 6 verify end, min bound 999, Time cost: 2.190805196762085
+No domains left, verification finished!
+Image 35, property 7 verify end, min bound 999, Time cost: 5.01640772819519
+correct label, skip!
+No domains left, verification finished!
+Image 35, property 9 verify end, min bound 999, Time cost: 6.082147598266602
+Correct: 36/36, verified corr: 22/36
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 36 img ID: 36 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+No domains left, verification finished!
+Image 36, property 0 verify end, min bound 999, Time cost: 2.8267934322357178
+Image 36, property 1 verify end, min bound 1.9352140426635742, Time cost: 1.968278169631958
+No domains left, verification finished!
+Image 36, property 2 verify end, min bound 999, Time cost: 6.60565972328186
+No domains left, verification finished!
+Image 36, property 3 verify end, min bound 999, Time cost: 1.9735376834869385
+No domains left, verification finished!
+Image 36, property 4 verify end, min bound 999, Time cost: 3.447094202041626
+Image 36, property 5 verify end, min bound 0.01502227783203125, Time cost: 1.9522104263305664
+correct label, skip!
+No domains left, verification finished!
+Image 36, property 7 verify end, min bound 999, Time cost: 2.1515488624572754
+No domains left, verification finished!
+Image 36, property 8 verify end, min bound 999, Time cost: 2.15022611618042
+No domains left, verification finished!
+Image 36, property 9 verify end, min bound 999, Time cost: 2.8012709617614746
+Correct: 37/37, verified corr: 23/37
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 37 img ID: 37 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 37, property 0 verify end, min bound 0.000980377197265625, Time cost: 1.9671554565429688
+correct label, skip!
+Image 37, property 2 verify end, min bound -1.6780498027801514, Time cost: 180.4716715812683
+Image 37, property 3 verify end, min bound -1.6545311212539673, Time cost: 180.41926050186157
+No domains left, verification finished!
+Image 37, property 4 verify end, min bound 999, Time cost: 2.3105101585388184
+Image 37, property 5 verify end, min bound -2.418588876724243, Time cost: 180.37134718894958
+Image 37, property 6 verify end, min bound -1.2350924015045166, Time cost: 180.40201377868652
+Image 37, property 7 verify end, min bound -0.2165513038635254, Time cost: 180.4822850227356
+No domains left, verification finished!
+Image 37, property 8 verify end, min bound 999, Time cost: 2.3594844341278076
+No domains left, verification finished!
+Image 37, property 9 verify end, min bound 999, Time cost: 2.870537281036377
+Correct: 38/38, verified corr: 23/38
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 38 img ID: 38 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+Image 38, property 0 verify end, min bound 3.4731624126434326, Time cost: 1.9982051849365234
+Image 38, property 1 verify end, min bound 0.9418771266937256, Time cost: 1.995661973953247
+Image 38, property 2 verify end, min bound 1.6077361106872559, Time cost: 2.008711099624634
+No domains left, verification finished!
+Image 38, property 3 verify end, min bound 999, Time cost: 2.202580451965332
+Image 38, property 4 verify end, min bound 0.0397036075592041, Time cost: 2.0021090507507324
+correct label, skip!
+Image 38, property 6 verify end, min bound 1.2537586688995361, Time cost: 1.992920160293579
+Image 38, property 7 verify end, min bound 0.031479835510253906, Time cost: 1.9966609477996826
+Image 38, property 8 verify end, min bound 0.06807899475097656, Time cost: 1.9896738529205322
+Image 38, property 9 verify end, min bound 0.5408132076263428, Time cost: 1.9821412563323975
+Correct: 39/39, verified corr: 24/39
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 39 img ID: 39 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 39, property 0 verify end, min bound 3.240644931793213, Time cost: 0.13381004333496094
+correct label, skip!
+Image 39, property 2 verify end, min bound 2.1066253185272217, Time cost: 1.9767658710479736
+Image 39, property 3 verify end, min bound 1.6984323263168335, Time cost: 1.9783689975738525
+Image 39, property 4 verify end, min bound 3.314232587814331, Time cost: 1.980802297592163
+Image 39, property 5 verify end, min bound 1.5569863319396973, Time cost: 1.981022834777832
+Image 39, property 6 verify end, min bound 0.4505603313446045, Time cost: 1.9818296432495117
+Image 39, property 7 verify end, min bound 2.0106661319732666, Time cost: 1.9713821411132812
+Image 39, property 8 verify end, min bound 2.499636173248291, Time cost: 1.9695277214050293
+Image 39, property 9 verify end, min bound 0.030573129653930664, Time cost: 0.13355779647827148
+Correct: 40/40, verified corr: 25/40
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 40 img ID: 40 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+Image 40, property 0 verify end, min bound 1.1422967910766602, Time cost: 1.960996150970459
+Image 40, property 1 verify end, min bound 3.285501480102539, Time cost: 1.9748847484588623
+No domains left, verification finished!
+Image 40, property 2 verify end, min bound 999, Time cost: 2.148688793182373
+Image 40, property 3 verify end, min bound 2.652942180633545, Time cost: 1.944559097290039
+Image 40, property 4 verify end, min bound 0.27394533157348633, Time cost: 1.9543874263763428
+Image 40, property 5 verify end, min bound 1.8073406219482422, Time cost: 1.957474946975708
+correct label, skip!
+Image 40, property 7 verify end, min bound 1.7233915328979492, Time cost: 1.9660067558288574
+Image 40, property 8 verify end, min bound 1.9536099433898926, Time cost: 1.9742798805236816
+Image 40, property 9 verify end, min bound 2.33758544921875, Time cost: 1.9721202850341797
+Correct: 41/41, verified corr: 26/41
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 41 img ID: 41 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 41, property 0 verify end, min bound 3.021759033203125, Time cost: 1.9666438102722168
+No domains left, verification finished!
+Image 41, property 1 verify end, min bound 999, Time cost: 3.9366822242736816
+Image 41, property 2 verify end, min bound 1.5232138633728027, Time cost: 1.9558799266815186
+No domains left, verification finished!
+Image 41, property 3 verify end, min bound 999, Time cost: 2.993527889251709
+No domains left, verification finished!
+Image 41, property 4 verify end, min bound 999, Time cost: 3.404910087585449
+No domains left, verification finished!
+Image 41, property 5 verify end, min bound 999, Time cost: 4.580250024795532
+Image 41, property 6 verify end, min bound 1.4042682647705078, Time cost: 1.9720854759216309
+No domains left, verification finished!
+Image 41, property 7 verify end, min bound 999, Time cost: 11.726460695266724
+No domains left, verification finished!
+Image 41, property 8 verify end, min bound 999, Time cost: 2.324164867401123
+correct label, skip!
+Correct: 42/42, verified corr: 27/42
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 42 img ID: 42 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+No domains left, verification finished!
+Image 42, property 0 verify end, min bound 999, Time cost: 2.119540214538574
+Image 42, property 1 verify end, min bound 3.2380571365356445, Time cost: 1.953364372253418
+No domains left, verification finished!
+Image 42, property 2 verify end, min bound 999, Time cost: 1.976517677307129
+correct label, skip!
+Image 42, property 4 verify end, min bound 1.2514758110046387, Time cost: 1.9567835330963135
+Image 42, property 5 verify end, min bound 0.18965983390808105, Time cost: 1.9509172439575195
+Image 42, property 6 verify end, min bound 2.3355417251586914, Time cost: 1.9423727989196777
+Image 42, property 7 verify end, min bound 1.8186402320861816, Time cost: 1.965662956237793
+No domains left, verification finished!
+Image 42, property 8 verify end, min bound 999, Time cost: 2.966599941253662
+Image 42, property 9 verify end, min bound 0.7113893032073975, Time cost: 1.964005947113037
+Correct: 43/43, verified corr: 28/43
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 43 img ID: 43 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 43, property 0 verify end, min bound -4.035804748535156, Time cost: 180.5045304298401
+Domain infeasible with margin -0.006689280271530151, lb is tensor([-4.3620], device='cuda:0')
+Domain infeasible with margin -0.019410252571105957, lb is tensor([-4.3218], device='cuda:0')
+Domain infeasible with margin -0.002222806215286255, lb is tensor([-4.0126], device='cuda:0')
+Domain infeasible with margin -0.0337216854095459, lb is tensor([-4.0167], device='cuda:0')
+Domain infeasible with margin -0.04421031475067139, lb is tensor([-3.9632], device='cuda:0')
+Domain infeasible with margin -0.021291017532348633, lb is tensor([-4.2575], device='cuda:0')
+Domain infeasible with margin -0.02186793088912964, lb is tensor([-4.0272], device='cuda:0')
+Domain infeasible with margin -0.010932862758636475, lb is tensor([-4.1790], device='cuda:0')
+Domain infeasible with margin -0.036021649837493896, lb is tensor([-4.0069], device='cuda:0')
+Domain infeasible with margin -0.004351437091827393, lb is tensor([-4.1031], device='cuda:0')
+Domain infeasible with margin -0.017277300357818604, lb is tensor([-4.1426], device='cuda:0')
+Domain infeasible with margin -0.022901326417922974, lb is tensor([-3.6760], device='cuda:0')
+Domain infeasible with margin -0.05923950672149658, lb is tensor([-4.0494], device='cuda:0')
+Domain infeasible with margin -0.03936314582824707, lb is tensor([-3.6718], device='cuda:0')
+Domain infeasible with margin -0.04294276237487793, lb is tensor([-3.6873], device='cuda:0')
+Domain infeasible with margin -0.019323676824569702, lb is tensor([-3.8819], device='cuda:0')
+Domain infeasible with margin -0.046015381813049316, lb is tensor([-3.8200], device='cuda:0')
+Domain infeasible with margin -0.011098504066467285, lb is tensor([-3.9938], device='cuda:0')
+Domain infeasible with margin -0.030089855194091797, lb is tensor([-3.7887], device='cuda:0')
+Domain infeasible with margin -0.001613318920135498, lb is tensor([-3.6939], device='cuda:0')
+Domain infeasible with margin -0.007464110851287842, lb is tensor([-3.8885], device='cuda:0')
+Domain infeasible with margin -0.02767157554626465, lb is tensor([-3.7864], device='cuda:0')
+Domain infeasible with margin -0.03992372751235962, lb is tensor([-3.6663], device='cuda:0')
+Image 43, property 1 verify end, min bound -4.122200012207031, Time cost: 180.41380429267883
+Image 43, property 2 verify end, min bound -4.581286430358887, Time cost: 180.63545489311218
+Domain infeasible with margin -0.017884790897369385, lb is tensor([-4.4175], device='cuda:0')
+Domain infeasible with margin -0.005436718463897705, lb is tensor([-4.4084], device='cuda:0')
+Domain infeasible with margin -0.0044692158699035645, lb is tensor([-4.0120], device='cuda:0')
+Domain infeasible with margin -0.015202641487121582, lb is tensor([-4.2355], device='cuda:0')
+Image 43, property 3 verify end, min bound -4.42506742477417, Time cost: 180.5663754940033
+Domain infeasible with margin -0.0006518959999084473, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.000770270824432373, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.0021691322326660156, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.0022197365760803223, lb is tensor([-2.7673], device='cuda:0')
+Domain infeasible with margin -0.001299738883972168, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.0014080405235290527, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.002129673957824707, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.0021259188652038574, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.0021350979804992676, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.0021268725395202637, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.002211451530456543, lb is tensor([-2.7832], device='cuda:0')
+Domain infeasible with margin -0.002226710319519043, lb is tensor([-2.7832], device='cuda:0')
+Image 43, property 4 verify end, min bound -2.7832231521606445, Time cost: 180.23554158210754
+Image 43, property 5 verify end, min bound -4.96102237701416, Time cost: 180.6961305141449
+Image 43, property 6 verify end, min bound -5.653878211975098, Time cost: 180.45109009742737
+Domain infeasible with margin -0.0007105767726898193, lb is tensor([-3.7352], device='cuda:0')
+Domain infeasible with margin -0.01675468683242798, lb is tensor([-3.6928], device='cuda:0')
+Domain infeasible with margin -0.02320238947868347, lb is tensor([-3.5815], device='cuda:0')
+Domain infeasible with margin -0.02480947971343994, lb is tensor([-3.6514], device='cuda:0')
+Image 43, property 7 verify end, min bound -3.7618303298950195, Time cost: 180.49831199645996
+Domain infeasible with margin -0.016372770071029663, lb is tensor([-3.1842], device='cuda:0')
+Domain infeasible with margin -0.016372770071029663, lb is tensor([-2.9930], device='cuda:0')
+Domain infeasible with margin -0.016372770071029663, lb is tensor([-2.8483], device='cuda:0')
+Domain infeasible with margin -0.016372770071029663, lb is tensor([-2.8566], device='cuda:0')
+Image 43, property 8 verify end, min bound -2.936206579208374, Time cost: 180.43038153648376
+correct label, skip!
+Correct: 44/44, verified corr: 28/44
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 44 img ID: 44 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+Image 44, property 0 verify end, min bound 0.0022089481353759766, Time cost: 2.019150972366333
+Image 44, property 1 verify end, min bound 0.11692142486572266, Time cost: 2.0104658603668213
+No domains left, verification finished!
+Image 44, property 2 verify end, min bound 999, Time cost: 2.366488456726074
+Image 44, property 3 verify end, min bound 0.49520206451416016, Time cost: 2.008532762527466
+Image 44, property 4 verify end, min bound 0.333843469619751, Time cost: 2.0142605304718018
+correct label, skip!
+Image 44, property 6 verify end, min bound -1.8334264755249023, Time cost: 180.45206570625305
+Image 44, property 7 verify end, min bound 2.070448875427246, Time cost: 1.9720664024353027
+No domains left, verification finished!
+Image 44, property 8 verify end, min bound 999, Time cost: 3.930067300796509
+Image 44, property 9 verify end, min bound 2.171729564666748, Time cost: 1.9696471691131592
+Correct: 45/45, verified corr: 28/45
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 45 img ID: 45 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+Image 45, property 0 verify end, min bound -1.5475568771362305, Time cost: 180.61011171340942
+No domains left, verification finished!
+Image 45, property 1 verify end, min bound 999, Time cost: 2.7596752643585205
+No domains left, verification finished!
+Image 45, property 2 verify end, min bound 999, Time cost: 3.894049644470215
+Image 45, property 3 verify end, min bound -0.47850513458251953, Time cost: 180.47346806526184
+No domains left, verification finished!
+Image 45, property 4 verify end, min bound 999, Time cost: 5.191596984863281
+No domains left, verification finished!
+Image 45, property 5 verify end, min bound 999, Time cost: 7.246279001235962
+Image 45, property 6 verify end, min bound -0.38162803649902344, Time cost: 180.53845405578613
+No domains left, verification finished!
+Image 45, property 7 verify end, min bound 999, Time cost: 2.186494827270508
+correct label, skip!
+No domains left, verification finished!
+Image 45, property 9 verify end, min bound 999, Time cost: 4.788534641265869
+Correct: 46/46, verified corr: 28/46
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 46 img ID: 46 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 46, property 0 verify end, min bound 2.5931756496429443, Time cost: 0.13323283195495605
+correct label, skip!
+Image 46, property 2 verify end, min bound 0.021974563598632812, Time cost: 2.0041801929473877
+No domains left, verification finished!
+Image 46, property 3 verify end, min bound 999, Time cost: 2.164375066757202
+Image 46, property 4 verify end, min bound 0.4294840097427368, Time cost: 1.9687154293060303
+No domains left, verification finished!
+Image 46, property 5 verify end, min bound 999, Time cost: 1.9928441047668457
+Image 46, property 6 verify end, min bound 0.5529348850250244, Time cost: 1.9549062252044678
+No domains left, verification finished!
+Image 46, property 7 verify end, min bound 999, Time cost: 2.3255794048309326
+Image 46, property 8 verify end, min bound 0.15513908863067627, Time cost: 1.9546267986297607
+No domains left, verification finished!
+Image 46, property 9 verify end, min bound 999, Time cost: 1.9871819019317627
+Correct: 47/47, verified corr: 29/47
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 47 img ID: 47 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  7  correct label  7
+Image 47, property 0 verify end, min bound 4.611941814422607, Time cost: 1.958075761795044
+Image 47, property 1 verify end, min bound 0.8313760757446289, Time cost: 1.9664592742919922
+No domains left, verification finished!
+Image 47, property 2 verify end, min bound 999, Time cost: 2.1544430255889893
+Image 47, property 3 verify end, min bound 0.2870607376098633, Time cost: 1.964207410812378
+Image 47, property 4 verify end, min bound 3.1680057048797607, Time cost: 1.9694719314575195
+Image 47, property 5 verify end, min bound 3.5850114822387695, Time cost: 1.9586796760559082
+Image 47, property 6 verify end, min bound 5.080833435058594, Time cost: 1.9717473983764648
+correct label, skip!
+Image 47, property 8 verify end, min bound 1.3722442388534546, Time cost: 1.9632318019866943
+Image 47, property 9 verify end, min bound 1.8548132181167603, Time cost: 1.96415114402771
+Correct: 48/48, verified corr: 30/48
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 48 img ID: 48 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 48, property 0 verify end, min bound 1.0149641036987305, Time cost: 0.13037371635437012
+Image 48, property 1 verify end, min bound 1.0493578910827637, Time cost: 1.9666893482208252
+No domains left, verification finished!
+Image 48, property 2 verify end, min bound 999, Time cost: 2.323530435562134
+No domains left, verification finished!
+Image 48, property 3 verify end, min bound 999, Time cost: 6.910054683685303
+No domains left, verification finished!
+Image 48, property 4 verify end, min bound 999, Time cost: 2.1271257400512695
+No domains left, verification finished!
+Image 48, property 5 verify end, min bound 999, Time cost: 3.1505560874938965
+Image 48, property 6 verify end, min bound 1.842017650604248, Time cost: 1.9842841625213623
+No domains left, verification finished!
+Image 48, property 7 verify end, min bound 999, Time cost: 2.1663143634796143
+No domains left, verification finished!
+Image 48, property 8 verify end, min bound 999, Time cost: 2.4970314502716064
+correct label, skip!
+Correct: 49/49, verified corr: 31/49
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 49 img ID: 49 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 49, property 0 verify end, min bound 0.6036133766174316, Time cost: 1.975113868713379
+Image 49, property 1 verify end, min bound -0.027820110321044922, Time cost: 180.39968633651733
+correct label, skip!
+No domains left, verification finished!
+Image 49, property 3 verify end, min bound 999, Time cost: 2.3219361305236816
+No domains left, verification finished!
+Image 49, property 4 verify end, min bound 999, Time cost: 2.162541389465332
+No domains left, verification finished!
+Image 49, property 5 verify end, min bound 999, Time cost: 2.6780428886413574
+Image 49, property 6 verify end, min bound -0.22662639617919922, Time cost: 180.5212278366089
+Image 49, property 7 verify end, min bound 1.3899152278900146, Time cost: 2.0109052658081055
+No domains left, verification finished!
+Image 49, property 8 verify end, min bound 999, Time cost: 2.3678109645843506
+Image 49, property 9 verify end, min bound 2.769536256790161, Time cost: 2.0147571563720703
+Correct: 50/50, verified corr: 31/50
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 50 img ID: 50 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+Image 50, property 0 verify end, min bound 1.8845853805541992, Time cost: 2.0159542560577393
+No domains left, verification finished!
+Image 50, property 1 verify end, min bound 999, Time cost: 2.0355305671691895
+No domains left, verification finished!
+Image 50, property 2 verify end, min bound 999, Time cost: 2.385035276412964
+correct label, skip!
+Image 50, property 4 verify end, min bound 0.045609474182128906, Time cost: 2.0323288440704346
+No domains left, verification finished!
+Image 50, property 5 verify end, min bound 999, Time cost: 2.799933671951294
+Image 50, property 6 verify end, min bound 0.0499114990234375, Time cost: 2.018123149871826
+Image 50, property 7 verify end, min bound 0.34102535247802734, Time cost: 2.034315824508667
+Image 50, property 8 verify end, min bound 0.482388973236084, Time cost: 2.0390777587890625
+Image 50, property 9 verify end, min bound 0.29723644256591797, Time cost: 2.0276567935943604
+Correct: 51/51, verified corr: 32/51
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 51 img ID: 51 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+No domains left, verification finished!
+Image 51, property 0 verify end, min bound 999, Time cost: 2.035968065261841
+Image 51, property 1 verify end, min bound 0.6368145942687988, Time cost: 2.0020201206207275
+No domains left, verification finished!
+Image 51, property 2 verify end, min bound 999, Time cost: 2.3380517959594727
+No domains left, verification finished!
+Image 51, property 3 verify end, min bound 999, Time cost: 2.6792492866516113
+No domains left, verification finished!
+Image 51, property 4 verify end, min bound 999, Time cost: 2.011956214904785
+correct label, skip!
+No domains left, verification finished!
+Image 51, property 6 verify end, min bound 999, Time cost: 1.989431619644165
+No domains left, verification finished!
+Image 51, property 7 verify end, min bound 999, Time cost: 2.2983150482177734
+No domains left, verification finished!
+Image 51, property 8 verify end, min bound 999, Time cost: 2.3590502738952637
+No domains left, verification finished!
+Image 51, property 9 verify end, min bound 999, Time cost: 2.0429811477661133
+Correct: 52/52, verified corr: 33/52
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 52 img ID: 52 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+Image 52, property 0 verify end, min bound 2.336733102798462, Time cost: 1.9918005466461182
+Image 52, property 1 verify end, min bound 3.7121965885162354, Time cost: 2.001262664794922
+Image 52, property 2 verify end, min bound 8.821487426757812e-05, Time cost: 1.9914655685424805
+Image 52, property 3 verify end, min bound 1.8841428756713867, Time cost: 1.9827990531921387
+Image 52, property 4 verify end, min bound 2.3271219730377197, Time cost: 1.9912950992584229
+Image 52, property 5 verify end, min bound 0.7509346008300781, Time cost: 1.9958527088165283
+correct label, skip!
+Image 52, property 7 verify end, min bound 3.552523612976074, Time cost: 1.9864201545715332
+Image 52, property 8 verify end, min bound 1.68711256980896, Time cost: 1.9901316165924072
+Image 52, property 9 verify end, min bound 3.0736799240112305, Time cost: 1.968322515487671
+Correct: 53/53, verified corr: 34/53
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 53 img ID: 53 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 53, property 0 verify end, min bound 4.219346046447754, Time cost: 1.9590120315551758
+Image 53, property 1 verify end, min bound 0.5001611709594727, Time cost: 1.962834358215332
+correct label, skip!
+Image 53, property 3 verify end, min bound 0.27979445457458496, Time cost: 1.9570698738098145
+Image 53, property 4 verify end, min bound 1.2031478881835938, Time cost: 1.965416669845581
+Image 53, property 5 verify end, min bound 3.431650161743164, Time cost: 1.9528305530548096
+Image 53, property 6 verify end, min bound 2.4665164947509766, Time cost: 1.969273328781128
+Image 53, property 7 verify end, min bound 1.7647919654846191, Time cost: 1.9718573093414307
+Image 53, property 8 verify end, min bound 1.254913091659546, Time cost: 1.96592116355896
+Image 53, property 9 verify end, min bound 4.464288711547852, Time cost: 1.9720585346221924
+Correct: 54/54, verified corr: 35/54
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 54 img ID: 54 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+Image 54, property 0 verify end, min bound 1.007981777191162, Time cost: 1.9756042957305908
+Image 54, property 1 verify end, min bound 0.16395854949951172, Time cost: 0.13123011589050293
+Image 54, property 2 verify end, min bound 2.5700502395629883, Time cost: 1.9819083213806152
+No domains left, verification finished!
+Image 54, property 3 verify end, min bound 999, Time cost: 1.9980182647705078
+Image 54, property 4 verify end, min bound 2.3786087036132812, Time cost: 1.971768856048584
+correct label, skip!
+Image 54, property 6 verify end, min bound 0.03792762756347656, Time cost: 1.9801757335662842
+Image 54, property 7 verify end, min bound 2.628355026245117, Time cost: 1.9750325679779053
+Image 54, property 8 verify end, min bound 1.14219331741333, Time cost: 1.9691414833068848
+Image 54, property 9 verify end, min bound 2.0422587394714355, Time cost: 1.9767568111419678
+Correct: 55/55, verified corr: 36/55
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 55 img ID: 55 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+No domains left, verification finished!
+Image 55, property 0 verify end, min bound 999, Time cost: 2.3371944427490234
+No domains left, verification finished!
+Image 55, property 1 verify end, min bound 999, Time cost: 2.494225263595581
+correct label, skip!
+No domains left, verification finished!
+Image 55, property 3 verify end, min bound 999, Time cost: 7.967052698135376
+No domains left, verification finished!
+Image 55, property 4 verify end, min bound 999, Time cost: 3.390594959259033
+No domains left, verification finished!
+Image 55, property 5 verify end, min bound 999, Time cost: 5.047990560531616
+Image 55, property 6 verify end, min bound -0.44773197174072266, Time cost: 180.5914430618286
+No domains left, verification finished!
+Image 55, property 7 verify end, min bound 999, Time cost: 2.0584518909454346
+No domains left, verification finished!
+Image 55, property 8 verify end, min bound 999, Time cost: 2.5806829929351807
+Image 55, property 9 verify end, min bound 0.05090951919555664, Time cost: 2.009793758392334
+Correct: 56/56, verified corr: 36/56
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 56 img ID: 56 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+No domains left, verification finished!
+Image 56, property 1 verify end, min bound 999, Time cost: 2.200774669647217
+No domains left, verification finished!
+Image 56, property 2 verify end, min bound 999, Time cost: 5.214735984802246
+No domains left, verification finished!
+Image 56, property 3 verify end, min bound 999, Time cost: 4.742959976196289
+No domains left, verification finished!
+Image 56, property 4 verify end, min bound 999, Time cost: 3.2101354598999023
+Domain infeasible with margin -0.02610260248184204, lb is tensor([-0.2911], device='cuda:0')
+Domain infeasible with margin -0.00956106185913086, lb is tensor([-0.1558], device='cuda:0')
+No domains left, verification finished!
+Image 56, property 5 verify end, min bound 999, Time cost: 14.991679191589355
+No domains left, verification finished!
+Image 56, property 6 verify end, min bound 999, Time cost: 2.8755478858947754
+No domains left, verification finished!
+Image 56, property 7 verify end, min bound 999, Time cost: 4.193827152252197
+No domains left, verification finished!
+Image 56, property 8 verify end, min bound 999, Time cost: 2.496721029281616
+No domains left, verification finished!
+Image 56, property 9 verify end, min bound 999, Time cost: 2.831259250640869
+Correct: 57/57, verified corr: 37/57
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 57 img ID: 57 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 57, property 0 verify end, min bound 3.6601195335388184, Time cost: 1.9745502471923828
+correct label, skip!
+No domains left, verification finished!
+Image 57, property 2 verify end, min bound 999, Time cost: 3.546212911605835
+No domains left, verification finished!
+Image 57, property 3 verify end, min bound 999, Time cost: 2.99552845954895
+Image 57, property 4 verify end, min bound 0.5510897636413574, Time cost: 1.9647331237792969
+Image 57, property 5 verify end, min bound 0.07933473587036133, Time cost: 1.9474751949310303
+Image 57, property 6 verify end, min bound 0.01764702796936035, Time cost: 1.9626929759979248
+No domains left, verification finished!
+Image 57, property 7 verify end, min bound 999, Time cost: 2.1681902408599854
+No domains left, verification finished!
+Image 57, property 8 verify end, min bound 999, Time cost: 2.6681149005889893
+No domains left, verification finished!
+Image 57, property 9 verify end, min bound 999, Time cost: 1.9964771270751953
+Correct: 58/58, verified corr: 38/58
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 58 img ID: 58 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+Image 58, property 0 verify end, min bound -1.506948471069336, Time cost: 180.2456920146942
+No domains left, verification finished!
+Image 58, property 1 verify end, min bound 999, Time cost: 3.0379369258880615
+Image 58, property 2 verify end, min bound -2.408080577850342, Time cost: 180.42067575454712
+Image 58, property 3 verify end, min bound -0.49355268478393555, Time cost: 180.55739665031433
+No domains left, verification finished!
+Image 58, property 4 verify end, min bound 999, Time cost: 41.016162157058716
+No domains left, verification finished!
+Image 58, property 5 verify end, min bound 999, Time cost: 22.871522426605225
+No domains left, verification finished!
+Image 58, property 6 verify end, min bound 999, Time cost: 10.711307525634766
+No domains left, verification finished!
+Image 58, property 7 verify end, min bound 999, Time cost: 3.618009328842163
+correct label, skip!
+No domains left, verification finished!
+Image 58, property 9 verify end, min bound 999, Time cost: 5.685190439224243
+Correct: 59/59, verified corr: 38/59
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 59 img ID: 59 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 59, property 0 verify end, min bound 4.956636905670166, Time cost: 0.13464713096618652
+correct label, skip!
+Image 59, property 2 verify end, min bound 1.4043800830841064, Time cost: 2.0207784175872803
+Image 59, property 3 verify end, min bound 0.1120445728302002, Time cost: 2.016860008239746
+Image 59, property 4 verify end, min bound 1.952735424041748, Time cost: 2.0037763118743896
+Image 59, property 5 verify end, min bound 1.0652329921722412, Time cost: 2.0102956295013428
+Image 59, property 6 verify end, min bound 0.10036182403564453, Time cost: 0.13217902183532715
+Image 59, property 7 verify end, min bound 0.15705108642578125, Time cost: 2.0095980167388916
+Image 59, property 8 verify end, min bound 0.6529752016067505, Time cost: 0.13319659233093262
+Image 59, property 9 verify end, min bound 1.448132872581482, Time cost: 2.0100510120391846
+Correct: 60/60, verified corr: 39/60
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 60 img ID: 60 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+No domains left, verification finished!
+Image 60, property 0 verify end, min bound 999, Time cost: 2.03096342086792
+Image 60, property 1 verify end, min bound 1.0490875244140625, Time cost: 2.014173746109009
+No domains left, verification finished!
+Image 60, property 2 verify end, min bound 999, Time cost: 3.8087337017059326
+No domains left, verification finished!
+Image 60, property 3 verify end, min bound 999, Time cost: 2.4040400981903076
+No domains left, verification finished!
+Image 60, property 4 verify end, min bound 999, Time cost: 2.211883306503296
+No domains left, verification finished!
+Image 60, property 5 verify end, min bound 999, Time cost: 2.2170250415802
+correct label, skip!
+No domains left, verification finished!
+Image 60, property 7 verify end, min bound 999, Time cost: 2.0589306354522705
+No domains left, verification finished!
+Image 60, property 8 verify end, min bound 999, Time cost: 2.0751240253448486
+Image 60, property 9 verify end, min bound 0.026167869567871094, Time cost: 2.057161331176758
+Correct: 61/61, verified corr: 40/61
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 61 img ID: 61 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+No domains left, verification finished!
+Image 61, property 1 verify end, min bound 999, Time cost: 2.9318296909332275
+Image 61, property 2 verify end, min bound -0.09977245330810547, Time cost: 180.24132776260376
+No domains left, verification finished!
+Image 61, property 3 verify end, min bound 999, Time cost: 23.51821231842041
+No domains left, verification finished!
+Image 61, property 4 verify end, min bound 999, Time cost: 3.743864059448242
+No domains left, verification finished!
+Image 61, property 5 verify end, min bound 999, Time cost: 104.24991607666016
+No domains left, verification finished!
+Image 61, property 6 verify end, min bound 999, Time cost: 2.541476249694824
+Image 61, property 7 verify end, min bound -2.2573461532592773, Time cost: 180.35033893585205
+No domains left, verification finished!
+Image 61, property 8 verify end, min bound 999, Time cost: 2.5269112586975098
+No domains left, verification finished!
+Image 61, property 9 verify end, min bound 999, Time cost: 5.754563331604004
+Correct: 62/62, verified corr: 40/62
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 62 img ID: 62 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  7  correct label  7
+Image 62, property 0 verify end, min bound 0.0042438507080078125, Time cost: 1.9854638576507568
+No domains left, verification finished!
+Image 62, property 1 verify end, min bound 999, Time cost: 4.134474992752075
+Domain infeasible with margin -0.03947046399116516, lb is tensor([-2.8277], device='cuda:0')
+Domain infeasible with margin -0.016081511974334717, lb is tensor([-2.8205], device='cuda:0')
+Domain infeasible with margin -0.0036641359329223633, lb is tensor([-2.8882], device='cuda:0')
+Domain infeasible with margin -0.0024914443492889404, lb is tensor([-2.7624], device='cuda:0')
+Domain infeasible with margin -0.003662288188934326, lb is tensor([-2.4960], device='cuda:0')
+Domain infeasible with margin -0.008271187543869019, lb is tensor([-2.7422], device='cuda:0')
+Domain infeasible with margin -0.004195600748062134, lb is tensor([-2.4919], device='cuda:0')
+Domain infeasible with margin -0.008362829685211182, lb is tensor([-2.7141], device='cuda:0')
+Domain infeasible with margin -0.02857106924057007, lb is tensor([-2.6194], device='cuda:0')
+Domain infeasible with margin -0.024132460355758667, lb is tensor([-2.7506], device='cuda:0')
+Domain infeasible with margin -0.0028376877307891846, lb is tensor([-2.6940], device='cuda:0')
+Domain infeasible with margin -0.02623605728149414, lb is tensor([-2.6063], device='cuda:0')
+Domain infeasible with margin -0.011285960674285889, lb is tensor([-2.6705], device='cuda:0')
+Domain infeasible with margin -0.02878284454345703, lb is tensor([-2.6189], device='cuda:0')
+Domain infeasible with margin -0.01758250594139099, lb is tensor([-2.3326], device='cuda:0')
+Domain infeasible with margin -0.03254351019859314, lb is tensor([-2.6637], device='cuda:0')
+Domain infeasible with margin -0.026362836360931396, lb is tensor([-2.4713], device='cuda:0')
+Domain infeasible with margin -0.023146390914916992, lb is tensor([-2.4677], device='cuda:0')
+Domain infeasible with margin -0.02300053834915161, lb is tensor([-2.4247], device='cuda:0')
+Domain infeasible with margin -0.02014443278312683, lb is tensor([-2.4369], device='cuda:0')
+Domain infeasible with margin -0.03381726145744324, lb is tensor([-2.4566], device='cuda:0')
+Image 62, property 2 verify end, min bound -2.523037910461426, Time cost: 180.60718631744385
+Image 62, property 3 verify end, min bound -1.2490928173065186, Time cost: 180.54927372932434
+No domains left, verification finished!
+Image 62, property 4 verify end, min bound 999, Time cost: 2.1489832401275635
+No domains left, verification finished!
+Image 62, property 5 verify end, min bound 999, Time cost: 3.751493215560913
+No domains left, verification finished!
+Image 62, property 6 verify end, min bound 999, Time cost: 2.3001632690429688
+correct label, skip!
+Image 62, property 8 verify end, min bound -0.6092815399169922, Time cost: 180.35465478897095
+No domains left, verification finished!
+Image 62, property 9 verify end, min bound 999, Time cost: 3.2478225231170654
+Correct: 63/63, verified corr: 40/63
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 63 img ID: 63 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 63, property 0 verify end, min bound 0.9787454605102539, Time cost: 2.0090384483337402
+Image 63, property 1 verify end, min bound 3.6086668968200684, Time cost: 2.002931594848633
+Image 63, property 2 verify end, min bound 1.5001463890075684, Time cost: 2.00752854347229
+Image 63, property 3 verify end, min bound 1.161005973815918, Time cost: 2.025726795196533
+correct label, skip!
+Image 63, property 5 verify end, min bound 0.6275286674499512, Time cost: 2.021679401397705
+No domains left, verification finished!
+Image 63, property 6 verify end, min bound 999, Time cost: 2.024348497390747
+No domains left, verification finished!
+Image 63, property 7 verify end, min bound 999, Time cost: 2.0589277744293213
+Image 63, property 8 verify end, min bound 0.26094818115234375, Time cost: 2.0250909328460693
+Image 63, property 9 verify end, min bound 0.9488976001739502, Time cost: 2.018038272857666
+Correct: 64/64, verified corr: 41/64
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 64 img ID: 64 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+Image 64, property 0 verify end, min bound 0.10394001007080078, Time cost: 2.0080251693725586
+Image 64, property 1 verify end, min bound 0.41059017181396484, Time cost: 1.9986352920532227
+No domains left, verification finished!
+Image 64, property 2 verify end, min bound 999, Time cost: 3.2505290508270264
+Image 64, property 3 verify end, min bound 0.6342649459838867, Time cost: 1.9894518852233887
+No domains left, verification finished!
+Image 64, property 4 verify end, min bound 999, Time cost: 2.531715154647827
+Image 64, property 5 verify end, min bound 0.3382854461669922, Time cost: 1.9939501285552979
+correct label, skip!
+No domains left, verification finished!
+Image 64, property 7 verify end, min bound 999, Time cost: 2.0107979774475098
+Image 64, property 8 verify end, min bound 0.10519218444824219, Time cost: 2.00567626953125
+Image 64, property 9 verify end, min bound 0.03690910339355469, Time cost: 2.0083229541778564
+Correct: 65/65, verified corr: 42/65
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 65 img ID: 65 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+No domains left, verification finished!
+Image 65, property 0 verify end, min bound 999, Time cost: 2.0463926792144775
+Image 65, property 1 verify end, min bound 1.799487590789795, Time cost: 2.0057461261749268
+No domains left, verification finished!
+Image 65, property 2 verify end, min bound 999, Time cost: 2.3937551975250244
+Image 65, property 3 verify end, min bound 0.2084641456604004, Time cost: 2.0114169120788574
+Image 65, property 4 verify end, min bound 0.28273534774780273, Time cost: 2.0061161518096924
+No domains left, verification finished!
+Image 65, property 5 verify end, min bound 999, Time cost: 2.0358333587646484
+correct label, skip!
+Image 65, property 7 verify end, min bound 1.4007172584533691, Time cost: 2.0207974910736084
+No domains left, verification finished!
+Image 65, property 8 verify end, min bound 999, Time cost: 2.375934600830078
+Image 65, property 9 verify end, min bound 0.836266279220581, Time cost: 2.0285885334014893
+Correct: 66/66, verified corr: 43/66
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 66 img ID: 66 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  7  correct label  7
+Image 66, property 0 verify end, min bound 2.376471757888794, Time cost: 1.9539835453033447
+Image 66, property 1 verify end, min bound -0.33026838302612305, Time cost: 180.50043392181396
+Image 66, property 2 verify end, min bound -0.0814354419708252, Time cost: 180.4229736328125
+No domains left, verification finished!
+Image 66, property 3 verify end, min bound 999, Time cost: 3.858522891998291
+Image 66, property 4 verify end, min bound 1.6177211999893188, Time cost: 1.9911184310913086
+Image 66, property 5 verify end, min bound 0.161529541015625, Time cost: 1.9836015701293945
+Image 66, property 6 verify end, min bound 4.758527755737305, Time cost: 1.9806091785430908
+correct label, skip!
+Domain infeasible with margin -0.023163795471191406, lb is tensor([-0.0100], device='cuda:0')
+Image 66, property 8 verify end, min bound -0.4734005928039551, Time cost: 180.37502551078796
+Image 66, property 9 verify end, min bound 0.40598607063293457, Time cost: 1.9886281490325928
+Correct: 67/67, verified corr: 43/67
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 67 img ID: 67 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  7  correct label  7
+Image 67, property 0 verify end, min bound 0.27197933197021484, Time cost: 1.982405424118042
+Image 67, property 1 verify end, min bound 0.8170971870422363, Time cost: 1.9809012413024902
+Image 67, property 2 verify end, min bound 0.9502782821655273, Time cost: 1.9753105640411377
+Image 67, property 3 verify end, min bound 0.01655101776123047, Time cost: 1.9837985038757324
+No domains left, verification finished!
+Image 67, property 4 verify end, min bound 999, Time cost: 2.1698732376098633
+No domains left, verification finished!
+Image 67, property 5 verify end, min bound 999, Time cost: 2.000864028930664
+Image 67, property 6 verify end, min bound 2.5728940963745117, Time cost: 1.9940500259399414
+correct label, skip!
+No domains left, verification finished!
+Image 67, property 8 verify end, min bound 999, Time cost: 5.02581524848938
+No domains left, verification finished!
+Image 67, property 9 verify end, min bound 999, Time cost: 20.456035137176514
+Correct: 68/68, verified corr: 44/68
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 68 img ID: 68 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 68, property 0 verify end, min bound 1.7867755889892578, Time cost: 0.13122797012329102
+Image 68, property 1 verify end, min bound -0.9341551065444946, Time cost: 180.33642601966858
+No domains left, verification finished!
+Image 68, property 2 verify end, min bound 999, Time cost: 1.9973931312561035
+No domains left, verification finished!
+Image 68, property 3 verify end, min bound 999, Time cost: 4.496861219406128
+Image 68, property 4 verify end, min bound 0.8162511587142944, Time cost: 1.9825184345245361
+No domains left, verification finished!
+Image 68, property 5 verify end, min bound 999, Time cost: 2.6535627841949463
+Image 68, property 6 verify end, min bound 1.2924489974975586, Time cost: 0.12954974174499512
+Domain infeasible with margin -0.08665972948074341, lb is tensor([-0.6669], device='cuda:0')
+Domain infeasible with margin -0.06170654296875, lb is tensor([-0.7148], device='cuda:0')
+Domain infeasible with margin -0.08265054225921631, lb is tensor([-0.6532], device='cuda:0')
+Domain infeasible with margin -0.06005126237869263, lb is tensor([-0.5721], device='cuda:0')
+Domain infeasible with margin -0.06950497627258301, lb is tensor([-0.1707], device='cuda:0')
+Domain infeasible with margin -0.17621088027954102, lb is tensor([-0.3704], device='cuda:0')
+Image 68, property 7 verify end, min bound -1.5874764919281006, Time cost: 180.48952221870422
+No domains left, verification finished!
+Image 68, property 8 verify end, min bound 999, Time cost: 2.49949312210083
+correct label, skip!
+Correct: 69/69, verified corr: 44/69
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 69 img ID: 69 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 69, property 0 verify end, min bound 2.936251640319824, Time cost: 1.9738481044769287
+Image 69, property 1 verify end, min bound 0.5980973243713379, Time cost: 1.970724105834961
+Image 69, property 2 verify end, min bound 2.7579541206359863, Time cost: 1.9687044620513916
+No domains left, verification finished!
+Image 69, property 3 verify end, min bound 999, Time cost: 2.6596314907073975
+Image 69, property 4 verify end, min bound 0.1052018404006958, Time cost: 1.9778990745544434
+No domains left, verification finished!
+Image 69, property 5 verify end, min bound 999, Time cost: 2.5051307678222656
+Image 69, property 6 verify end, min bound 4.680240631103516, Time cost: 1.9684197902679443
+Image 69, property 7 verify end, min bound -0.3799872398376465, Time cost: 180.44059419631958
+No domains left, verification finished!
+Image 69, property 8 verify end, min bound 999, Time cost: 2.18251895904541
+correct label, skip!
+Correct: 70/70, verified corr: 44/70
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 70 img ID: 70 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 70, property 0 verify end, min bound 2.1479403972625732, Time cost: 0.13695693016052246
+correct label, skip!
+Image 70, property 2 verify end, min bound 0.8370450735092163, Time cost: 2.0035223960876465
+Image 70, property 3 verify end, min bound 2.1890206336975098, Time cost: 2.013110876083374
+Image 70, property 4 verify end, min bound 1.4946353435516357, Time cost: 1.9980027675628662
+Image 70, property 5 verify end, min bound 2.2163500785827637, Time cost: 1.9887316226959229
+Image 70, property 6 verify end, min bound 1.8530467748641968, Time cost: 1.9799673557281494
+Image 70, property 7 verify end, min bound 1.6251206398010254, Time cost: 1.9766180515289307
+Image 70, property 8 verify end, min bound 1.7568532228469849, Time cost: 1.9565579891204834
+Image 70, property 9 verify end, min bound 1.6822566986083984, Time cost: 0.12988972663879395
+Correct: 71/71, verified corr: 45/71
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 71 img ID: 71 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 71, property 0 verify end, min bound 1.6121363639831543, Time cost: 1.9603416919708252
+Domain infeasible with margin -0.047939181327819824, lb is tensor([-2.6023], device='cuda:0')
+Domain infeasible with margin -0.047939181327819824, lb is tensor([-2.5747], device='cuda:0')
+Image 71, property 1 verify end, min bound -3.3377132415771484, Time cost: 180.22770500183105
+No domains left, verification finished!
+Image 71, property 2 verify end, min bound 999, Time cost: 2.0209240913391113
+Image 71, property 3 verify end, min bound -0.40650272369384766, Time cost: 180.29447674751282
+Domain infeasible with margin -0.003742992877960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.003742992877960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.0037434399127960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.0037434399127960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.004602909088134766, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.003742992877960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.003742992877960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.0037434399127960205, lb is tensor([-1.1420], device='cuda:0')
+Domain infeasible with margin -0.0037434399127960205, lb is tensor([-1.1420], device='cuda:0')
+Image 71, property 4 verify end, min bound -1.1420354843139648, Time cost: 180.66785955429077
+Image 71, property 5 verify end, min bound -1.021268367767334, Time cost: 180.53799104690552
+Image 71, property 6 verify end, min bound -0.12303018569946289, Time cost: 180.52246594429016
+No domains left, verification finished!
+Image 71, property 7 verify end, min bound 999, Time cost: 2.650279998779297
+Image 71, property 8 verify end, min bound -0.38053739070892334, Time cost: 180.71713733673096
+correct label, skip!
+Correct: 72/72, verified corr: 45/72
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 72 img ID: 72 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+Image 72, property 0 verify end, min bound -0.5632944107055664, Time cost: 180.55450820922852
+Image 72, property 1 verify end, min bound 0.44411325454711914, Time cost: 1.9695370197296143
+No domains left, verification finished!
+Image 72, property 2 verify end, min bound 999, Time cost: 3.1676578521728516
+correct label, skip!
+No domains left, verification finished!
+Image 72, property 4 verify end, min bound 999, Time cost: 2.154292345046997
+Image 72, property 5 verify end, min bound -0.38825929164886475, Time cost: 180.25740385055542
+No domains left, verification finished!
+Image 72, property 6 verify end, min bound 999, Time cost: 2.8187718391418457
+Image 72, property 7 verify end, min bound 0.01648569107055664, Time cost: 1.9620227813720703
+No domains left, verification finished!
+Image 72, property 8 verify end, min bound 999, Time cost: 4.08955979347229
+No domains left, verification finished!
+Image 72, property 9 verify end, min bound 999, Time cost: 1.9956235885620117
+Correct: 73/73, verified corr: 45/73
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 73 img ID: 73 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 73, property 0 verify end, min bound 3.9542078971862793, Time cost: 1.9749794006347656
+No domains left, verification finished!
+Image 73, property 1 verify end, min bound 999, Time cost: 1.9846155643463135
+correct label, skip!
+No domains left, verification finished!
+Image 73, property 3 verify end, min bound 999, Time cost: 2.141493082046509
+Image 73, property 4 verify end, min bound 6.376646041870117, Time cost: 1.9798071384429932
+Image 73, property 5 verify end, min bound 0.9647173881530762, Time cost: 1.9697036743164062
+No domains left, verification finished!
+Image 73, property 6 verify end, min bound 999, Time cost: 2.321838140487671
+Image 73, property 7 verify end, min bound 3.9069669246673584, Time cost: 2.000847339630127
+Image 73, property 8 verify end, min bound 1.3940601348876953, Time cost: 1.9960260391235352
+Image 73, property 9 verify end, min bound 0.1812572479248047, Time cost: 0.13277196884155273
+Correct: 74/74, verified corr: 46/74
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 74 img ID: 74 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 74, property 0 verify end, min bound 1.1565637588500977, Time cost: 2.003065586090088
+Image 74, property 1 verify end, min bound 0.3508436679840088, Time cost: 2.0109829902648926
+correct label, skip!
+No domains left, verification finished!
+Image 74, property 3 verify end, min bound 999, Time cost: 4.306945085525513
+Image 74, property 4 verify end, min bound 3.0755181312561035, Time cost: 2.011615753173828
+Image 74, property 5 verify end, min bound 1.5961542129516602, Time cost: 2.006920099258423
+Image 74, property 6 verify end, min bound 2.252379894256592, Time cost: 1.9993603229522705
+Image 74, property 7 verify end, min bound 0.028385639190673828, Time cost: 2.0016772747039795
+Image 74, property 8 verify end, min bound 1.6528445482254028, Time cost: 1.99580979347229
+Image 74, property 9 verify end, min bound 2.866349935531616, Time cost: 2.0040154457092285
+Correct: 75/75, verified corr: 47/75
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 75 img ID: 75 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 75, property 0 verify end, min bound 4.462037563323975, Time cost: 1.992649793624878
+Image 75, property 1 verify end, min bound 2.717957019805908, Time cost: 1.9909381866455078
+correct label, skip!
+Image 75, property 3 verify end, min bound 1.2441426515579224, Time cost: 1.9796226024627686
+Image 75, property 4 verify end, min bound 3.9365806579589844, Time cost: 1.988696813583374
+Image 75, property 5 verify end, min bound 3.1508164405822754, Time cost: 1.9897973537445068
+Image 75, property 6 verify end, min bound 3.855398178100586, Time cost: 2.008310079574585
+Image 75, property 7 verify end, min bound 3.186332941055298, Time cost: 2.0146608352661133
+Image 75, property 8 verify end, min bound 2.228260040283203, Time cost: 1.9983370304107666
+Image 75, property 9 verify end, min bound 3.9917304515838623, Time cost: 2.012153148651123
+Correct: 76/76, verified corr: 48/76
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 76 img ID: 76 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+Image 76, property 0 verify end, min bound 2.2211523056030273, Time cost: 2.014432191848755
+Image 76, property 1 verify end, min bound 3.2933340072631836, Time cost: 2.0051465034484863
+Image 76, property 2 verify end, min bound 0.8693914413452148, Time cost: 1.9935243129730225
+No domains left, verification finished!
+Image 76, property 3 verify end, min bound 999, Time cost: 2.1752192974090576
+Image 76, property 4 verify end, min bound 1.3054437637329102, Time cost: 1.986433506011963
+correct label, skip!
+Image 76, property 6 verify end, min bound 1.5136585235595703, Time cost: 2.0022666454315186
+Image 76, property 7 verify end, min bound 0.42943382263183594, Time cost: 1.9963603019714355
+No domains left, verification finished!
+Image 76, property 8 verify end, min bound 999, Time cost: 2.0075626373291016
+Image 76, property 9 verify end, min bound 0.5442945957183838, Time cost: 1.986116886138916
+Correct: 77/77, verified corr: 49/77
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 77 img ID: 77 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  7  correct label  7
+Image 77, property 0 verify end, min bound 2.9006118774414062, Time cost: 1.9865288734436035
+Image 77, property 1 verify end, min bound 0.08610153198242188, Time cost: 1.9885404109954834
+No domains left, verification finished!
+Image 77, property 2 verify end, min bound 999, Time cost: 2.182356595993042
+No domains left, verification finished!
+Image 77, property 3 verify end, min bound 999, Time cost: 2.024536371231079
+Image 77, property 4 verify end, min bound 2.403388500213623, Time cost: 1.9997336864471436
+Image 77, property 5 verify end, min bound 1.3546123504638672, Time cost: 2.000913381576538
+Image 77, property 6 verify end, min bound 4.988740921020508, Time cost: 2.002354383468628
+correct label, skip!
+No domains left, verification finished!
+Image 77, property 8 verify end, min bound 999, Time cost: 2.1950626373291016
+Image 77, property 9 verify end, min bound 0.12169277667999268, Time cost: 2.00920033454895
+Correct: 78/78, verified corr: 50/78
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 78 img ID: 78 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  7  correct label  7
+Image 78, property 0 verify end, min bound 0.024514198303222656, Time cost: 2.014533758163452
+No domains left, verification finished!
+Image 78, property 1 verify end, min bound 999, Time cost: 2.0239288806915283
+Image 78, property 2 verify end, min bound -2.3661956787109375, Time cost: 180.50868439674377
+No domains left, verification finished!
+Image 78, property 3 verify end, min bound 999, Time cost: 33.27671146392822
+Image 78, property 4 verify end, min bound 1.06201171875, Time cost: 1.958202600479126
+No domains left, verification finished!
+Image 78, property 5 verify end, min bound 999, Time cost: 2.3191723823547363
+No domains left, verification finished!
+Image 78, property 6 verify end, min bound 999, Time cost: 1.9856162071228027
+correct label, skip!
+No domains left, verification finished!
+Image 78, property 8 verify end, min bound 999, Time cost: 3.7183406352996826
+Image 78, property 9 verify end, min bound 0.03130483627319336, Time cost: 1.9713690280914307
+Correct: 79/79, verified corr: 50/79
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 79 img ID: 79 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 79, property 0 verify end, min bound 3.6383047103881836, Time cost: 1.9714903831481934
+Image 79, property 1 verify end, min bound 0.3968183994293213, Time cost: 1.9838263988494873
+Image 79, property 2 verify end, min bound 0.22206449508666992, Time cost: 0.13335013389587402
+Image 79, property 3 verify end, min bound 0.17593860626220703, Time cost: 1.9871032238006592
+Image 79, property 4 verify end, min bound 0.9301137924194336, Time cost: 1.959061622619629
+Image 79, property 5 verify end, min bound 1.4730892181396484, Time cost: 1.9705314636230469
+Image 79, property 6 verify end, min bound 0.07982206344604492, Time cost: 0.13155722618103027
+Image 79, property 7 verify end, min bound 0.10019493103027344, Time cost: 1.970268964767456
+No domains left, verification finished!
+Image 79, property 8 verify end, min bound 999, Time cost: 3.625206708908081
+correct label, skip!
+Correct: 80/80, verified corr: 51/80
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 80 img ID: 80 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+Image 80, property 0 verify end, min bound 0.28753137588500977, Time cost: 1.9956061840057373
+Image 80, property 1 verify end, min bound 0.03381538391113281, Time cost: 1.9785645008087158
+No domains left, verification finished!
+Image 80, property 2 verify end, min bound 999, Time cost: 2.4779298305511475
+No domains left, verification finished!
+Image 80, property 3 verify end, min bound 999, Time cost: 3.9468154907226562
+Image 80, property 4 verify end, min bound -0.7659809589385986, Time cost: 180.37264680862427
+correct label, skip!
+No domains left, verification finished!
+Image 80, property 6 verify end, min bound 999, Time cost: 26.296993017196655
+No domains left, verification finished!
+Image 80, property 7 verify end, min bound 999, Time cost: 2.663604974746704
+No domains left, verification finished!
+Image 80, property 8 verify end, min bound 999, Time cost: 7.608461618423462
+Image 80, property 9 verify end, min bound -0.25223302841186523, Time cost: 180.4171359539032
+Correct: 81/81, verified corr: 51/81
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 81 img ID: 81 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+Image 81, property 0 verify end, min bound 0.027549028396606445, Time cost: 2.0275025367736816
+Image 81, property 1 verify end, min bound -4.756875514984131, Time cost: 180.40111351013184
+Image 81, property 2 verify end, min bound -2.038578510284424, Time cost: 180.4108021259308
+correct label, skip!
+Image 81, property 4 verify end, min bound -0.650068998336792, Time cost: 180.4043526649475
+Image 81, property 5 verify end, min bound -1.406181812286377, Time cost: 180.26832628250122
+Domain infeasible with margin -0.005207449197769165, lb is tensor([-2.1289], device='cuda:0')
+Domain infeasible with margin -0.015336275100708008, lb is tensor([-2.1210], device='cuda:0')
+Domain infeasible with margin -0.005825221538543701, lb is tensor([-2.0733], device='cuda:0')
+Domain infeasible with margin -0.0046294331550598145, lb is tensor([-2.0672], device='cuda:0')
+Domain infeasible with margin -0.0029871463775634766, lb is tensor([-1.7862], device='cuda:0')
+Domain infeasible with margin -0.0007601678371429443, lb is tensor([-1.7860], device='cuda:0')
+Domain infeasible with margin -0.009706377983093262, lb is tensor([-1.7488], device='cuda:0')
+Domain infeasible with margin -0.009395569562911987, lb is tensor([-1.6799], device='cuda:0')
+Domain infeasible with margin -0.01579102873802185, lb is tensor([-1.6781], device='cuda:0')
+Domain infeasible with margin -0.005821198225021362, lb is tensor([-1.4169], device='cuda:0')
+Domain infeasible with margin -0.011679232120513916, lb is tensor([-1.4869], device='cuda:0')
+Domain infeasible with margin -0.01901775598526001, lb is tensor([-1.4568], device='cuda:0')
+Domain infeasible with margin -0.019444257020950317, lb is tensor([-1.4481], device='cuda:0')
+Domain infeasible with margin -0.0016230642795562744, lb is tensor([-1.3949], device='cuda:0')
+Domain infeasible with margin -0.0001144707202911377, lb is tensor([-1.3218], device='cuda:0')
+Domain infeasible with margin -0.008027613162994385, lb is tensor([-1.2632], device='cuda:0')
+Domain infeasible with margin -0.011836886405944824, lb is tensor([-1.3207], device='cuda:0')
+Domain infeasible with margin -0.004771560430526733, lb is tensor([-1.2839], device='cuda:0')
+Image 81, property 6 verify end, min bound -1.2710387706756592, Time cost: 180.65681290626526
+Image 81, property 7 verify end, min bound -2.413931369781494, Time cost: 180.38711023330688
+No domains left, verification finished!
+Image 81, property 8 verify end, min bound 999, Time cost: 24.477412939071655
+Image 81, property 9 verify end, min bound -0.12665939331054688, Time cost: 180.50681161880493
+Correct: 82/82, verified corr: 51/82
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 82 img ID: 82 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 82, property 0 verify end, min bound 2.903325319290161, Time cost: 0.13508200645446777
+correct label, skip!
+Image 82, property 2 verify end, min bound 2.07206392288208, Time cost: 2.0034358501434326
+Image 82, property 3 verify end, min bound 2.22914719581604, Time cost: 2.0075113773345947
+Image 82, property 4 verify end, min bound 3.0900068283081055, Time cost: 2.0004074573516846
+Image 82, property 5 verify end, min bound 2.80023193359375, Time cost: 2.0054776668548584
+Image 82, property 6 verify end, min bound 3.3840527534484863, Time cost: 2.0160179138183594
+Image 82, property 7 verify end, min bound 0.2813378572463989, Time cost: 2.0159752368927
+Image 82, property 8 verify end, min bound 2.9143245220184326, Time cost: 2.016653299331665
+Image 82, property 9 verify end, min bound 0.3283696174621582, Time cost: 0.13858485221862793
+Correct: 83/83, verified corr: 52/83
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 83 img ID: 83 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 83, property 1 verify end, min bound 2.2216663360595703, Time cost: 2.006944179534912
+No domains left, verification finished!
+Image 83, property 2 verify end, min bound 999, Time cost: 2.733252763748169
+No domains left, verification finished!
+Image 83, property 3 verify end, min bound 999, Time cost: 2.0615499019622803
+Image 83, property 4 verify end, min bound 1.1386833190917969, Time cost: 2.025068998336792
+No domains left, verification finished!
+Image 83, property 5 verify end, min bound 999, Time cost: 2.048759698867798
+No domains left, verification finished!
+Image 83, property 6 verify end, min bound 999, Time cost: 2.2290093898773193
+No domains left, verification finished!
+Image 83, property 7 verify end, min bound 999, Time cost: 2.061856508255005
+Image 83, property 8 verify end, min bound 0.018271446228027344, Time cost: 2.01875376701355
+Image 83, property 9 verify end, min bound 0.025028705596923828, Time cost: 2.028270721435547
+Correct: 84/84, verified corr: 53/84
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 84 img ID: 84 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 84, property 0 verify end, min bound 0.3338022232055664, Time cost: 2.03220796585083
+Image 84, property 1 verify end, min bound 0.806145191192627, Time cost: 2.0375139713287354
+correct label, skip!
+Image 84, property 3 verify end, min bound -0.4189004898071289, Time cost: 180.37374091148376
+Image 84, property 4 verify end, min bound 2.2060556411743164, Time cost: 1.9832491874694824
+No domains left, verification finished!
+Image 84, property 5 verify end, min bound 999, Time cost: 2.8202147483825684
+No domains left, verification finished!
+Image 84, property 6 verify end, min bound 999, Time cost: 2.1616969108581543
+Image 84, property 7 verify end, min bound 0.6252827644348145, Time cost: 1.9560139179229736
+No domains left, verification finished!
+Image 84, property 8 verify end, min bound 999, Time cost: 3.1373727321624756
+Image 84, property 9 verify end, min bound 3.1942529678344727, Time cost: 1.990586519241333
+Correct: 85/85, verified corr: 53/85
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 85 img ID: 85 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+No domains left, verification finished!
+Image 85, property 0 verify end, min bound 999, Time cost: 2.682413339614868
+No domains left, verification finished!
+Image 85, property 1 verify end, min bound 999, Time cost: 2.3415651321411133
+No domains left, verification finished!
+Image 85, property 2 verify end, min bound 999, Time cost: 3.4084973335266113
+No domains left, verification finished!
+Image 85, property 3 verify end, min bound 999, Time cost: 3.1164934635162354
+No domains left, verification finished!
+Image 85, property 4 verify end, min bound 999, Time cost: 5.066337823867798
+Image 85, property 5 verify end, min bound -0.37919092178344727, Time cost: 180.3152916431427
+No domains left, verification finished!
+Image 85, property 6 verify end, min bound 999, Time cost: 7.983624458312988
+Image 85, property 7 verify end, min bound 0.0028204917907714844, Time cost: 1.9953052997589111
+correct label, skip!
+No domains left, verification finished!
+Image 85, property 9 verify end, min bound 999, Time cost: 2.7079813480377197
+Correct: 86/86, verified corr: 53/86
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 86 img ID: 86 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  3  correct label  3
+No domains left, verification finished!
+Image 86, property 0 verify end, min bound 999, Time cost: 146.50845670700073
+Image 86, property 1 verify end, min bound 0.11714935302734375, Time cost: 1.9613840579986572
+No domains left, verification finished!
+Image 86, property 2 verify end, min bound 999, Time cost: 4.607914924621582
+correct label, skip!
+No domains left, verification finished!
+Image 86, property 4 verify end, min bound 999, Time cost: 1.9757750034332275
+No domains left, verification finished!
+Image 86, property 5 verify end, min bound 999, Time cost: 2.9674105644226074
+No domains left, verification finished!
+Image 86, property 6 verify end, min bound 999, Time cost: 5.179595470428467
+Image 86, property 7 verify end, min bound 0.6690130233764648, Time cost: 1.9660115242004395
+Image 86, property 8 verify end, min bound 0.06662392616271973, Time cost: 1.9985268115997314
+Image 86, property 9 verify end, min bound 0.005680561065673828, Time cost: 1.9691150188446045
+Correct: 87/87, verified corr: 54/87
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 87 img ID: 87 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  6  correct label  6
+No domains left, verification finished!
+Image 87, property 0 verify end, min bound 999, Time cost: 2.1537513732910156
+No domains left, verification finished!
+Image 87, property 1 verify end, min bound 999, Time cost: 1.9855842590332031
+No domains left, verification finished!
+Image 87, property 2 verify end, min bound 999, Time cost: 4.120571136474609
+No domains left, verification finished!
+Image 87, property 3 verify end, min bound 999, Time cost: 2.3299033641815186
+No domains left, verification finished!
+Image 87, property 4 verify end, min bound 999, Time cost: 3.3713300228118896
+No domains left, verification finished!
+Image 87, property 5 verify end, min bound 999, Time cost: 3.5455007553100586
+correct label, skip!
+No domains left, verification finished!
+Image 87, property 7 verify end, min bound 999, Time cost: 3.1795709133148193
+Image 87, property 8 verify end, min bound 0.38533496856689453, Time cost: 1.9814369678497314
+No domains left, verification finished!
+Image 87, property 9 verify end, min bound 999, Time cost: 3.4022915363311768
+Correct: 88/88, verified corr: 55/88
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 88 img ID: 88 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  5  correct label  5
+No domains left, verification finished!
+Image 88, property 0 verify end, min bound 999, Time cost: 3.3642473220825195
+Image 88, property 1 verify end, min bound 0.017447948455810547, Time cost: 1.9546620845794678
+No domains left, verification finished!
+Image 88, property 2 verify end, min bound 999, Time cost: 3.000762462615967
+Image 88, property 3 verify end, min bound -0.006978511810302734, Time cost: 180.20332670211792
+No domains left, verification finished!
+Image 88, property 4 verify end, min bound 999, Time cost: 2.346390724182129
+correct label, skip!
+No domains left, verification finished!
+Image 88, property 6 verify end, min bound 999, Time cost: 3.0201034545898438
+No domains left, verification finished!
+Image 88, property 7 verify end, min bound 999, Time cost: 3.572084903717041
+No domains left, verification finished!
+Image 88, property 8 verify end, min bound 999, Time cost: 2.7126197814941406
+No domains left, verification finished!
+Image 88, property 9 verify end, min bound 999, Time cost: 2.535116672515869
+Correct: 89/89, verified corr: 55/89
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 89 img ID: 89 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 89, property 1 verify end, min bound 4.181154251098633, Time cost: 2.0341172218322754
+No domains left, verification finished!
+Image 89, property 2 verify end, min bound 999, Time cost: 2.058908462524414
+Image 89, property 3 verify end, min bound 1.2893705368041992, Time cost: 2.009251356124878
+Image 89, property 4 verify end, min bound 0.0006814002990722656, Time cost: 2.0256502628326416
+Image 89, property 5 verify end, min bound 1.3837852478027344, Time cost: 2.0260517597198486
+Image 89, property 6 verify end, min bound 0.023333072662353516, Time cost: 2.0163307189941406
+Image 89, property 7 verify end, min bound 0.018585205078125, Time cost: 2.019836664199829
+Image 89, property 8 verify end, min bound 0.3202486038208008, Time cost: 2.0187504291534424
+Image 89, property 9 verify end, min bound 0.1804976463317871, Time cost: 2.0135016441345215
+Correct: 90/90, verified corr: 56/90
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 90 img ID: 90 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 90, property 0 verify end, min bound 0.04403877258300781, Time cost: 2.01792573928833
+No domains left, verification finished!
+Image 90, property 1 verify end, min bound 999, Time cost: 4.710662364959717
+No domains left, verification finished!
+Image 90, property 2 verify end, min bound 999, Time cost: 3.09999418258667
+No domains left, verification finished!
+Image 90, property 3 verify end, min bound 999, Time cost: 9.95402193069458
+correct label, skip!
+No domains left, verification finished!
+Image 90, property 5 verify end, min bound 999, Time cost: 5.339794158935547
+No domains left, verification finished!
+Image 90, property 6 verify end, min bound 999, Time cost: 2.3441460132598877
+No domains left, verification finished!
+Image 90, property 7 verify end, min bound 999, Time cost: 9.786159753799438
+No domains left, verification finished!
+Image 90, property 8 verify end, min bound 999, Time cost: 13.039306402206421
+Image 90, property 9 verify end, min bound -0.5150547027587891, Time cost: 180.38367128372192
+Correct: 91/91, verified corr: 56/91
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 91 img ID: 91 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 91, property 0 verify end, min bound 0.13007354736328125, Time cost: 1.9818158149719238
+No domains left, verification finished!
+Image 91, property 1 verify end, min bound 999, Time cost: 4.375718593597412
+No domains left, verification finished!
+Image 91, property 2 verify end, min bound 999, Time cost: 2.340186357498169
+No domains left, verification finished!
+Image 91, property 3 verify end, min bound 999, Time cost: 7.272624969482422
+correct label, skip!
+No domains left, verification finished!
+Image 91, property 5 verify end, min bound 999, Time cost: 89.14380955696106
+No domains left, verification finished!
+Image 91, property 6 verify end, min bound 999, Time cost: 8.06613540649414
+No domains left, verification finished!
+Image 91, property 7 verify end, min bound 999, Time cost: 4.058561086654663
+Domain infeasible with margin -0.0006728172302246094, lb is tensor([-1.2469], device='cuda:0')
+Domain infeasible with margin -0.0006726980209350586, lb is tensor([-1.0611], device='cuda:0')
+Domain infeasible with margin -0.0006728172302246094, lb is tensor([-0.8413], device='cuda:0')
+Domain infeasible with margin -0.0006726980209350586, lb is tensor([-0.7074], device='cuda:0')
+Domain infeasible with margin -0.0006726980209350586, lb is tensor([-0.6096], device='cuda:0')
+Domain infeasible with margin -0.0006728172302246094, lb is tensor([-0.5483], device='cuda:0')
+Domain infeasible with margin -0.0006728172302246094, lb is tensor([-0.5197], device='cuda:0')
+Domain infeasible with margin -0.0006726980209350586, lb is tensor([-0.4669], device='cuda:0')
+Image 91, property 8 verify end, min bound -1.501962661743164, Time cost: 180.4595606327057
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9974], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9957], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9970], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-1.0205], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9838], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9874], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9183], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9527], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9532], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-1.0459], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-1.0459], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-1.0459], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-1.0189], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-1.0027], device='cuda:0')
+Domain infeasible with margin -0.0003479012520983815, lb is tensor([-0.9426], device='cuda:0')
+Image 91, property 9 verify end, min bound -1.0458621978759766, Time cost: 180.52525520324707
+Correct: 92/92, verified corr: 56/92
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 92 img ID: 92 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  0  correct label  0
+correct label, skip!
+Image 92, property 1 verify end, min bound 4.746903419494629, Time cost: 1.9565706253051758
+No domains left, verification finished!
+Image 92, property 2 verify end, min bound 999, Time cost: 2.163048267364502
+Image 92, property 3 verify end, min bound 1.0833611488342285, Time cost: 1.955293893814087
+Image 92, property 4 verify end, min bound 1.074878215789795, Time cost: 1.9675178527832031
+Image 92, property 5 verify end, min bound 0.7058117389678955, Time cost: 1.973205804824829
+No domains left, verification finished!
+Image 92, property 6 verify end, min bound 999, Time cost: 2.0122921466827393
+Image 92, property 7 verify end, min bound 0.001819610595703125, Time cost: 1.9836876392364502
+Image 92, property 8 verify end, min bound 0.8876841068267822, Time cost: 1.9927549362182617
+Image 92, property 9 verify end, min bound 0.5246963500976562, Time cost: 1.9803802967071533
+Correct: 93/93, verified corr: 57/93
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 93 img ID: 93 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 93, property 0 verify end, min bound 2.4628896713256836, Time cost: 1.9794063568115234
+No domains left, verification finished!
+Image 93, property 1 verify end, min bound 999, Time cost: 2.0164554119110107
+Image 93, property 2 verify end, min bound 2.3704705238342285, Time cost: 1.9755444526672363
+No domains left, verification finished!
+Image 93, property 3 verify end, min bound 999, Time cost: 2.353733539581299
+No domains left, verification finished!
+Image 93, property 4 verify end, min bound 999, Time cost: 2.876267433166504
+No domains left, verification finished!
+Image 93, property 5 verify end, min bound 999, Time cost: 2.0139076709747314
+Image 93, property 6 verify end, min bound 4.016951084136963, Time cost: 1.9869472980499268
+No domains left, verification finished!
+Image 93, property 7 verify end, min bound 999, Time cost: 6.192846059799194
+No domains left, verification finished!
+Image 93, property 8 verify end, min bound 999, Time cost: 2.5025079250335693
+correct label, skip!
+Correct: 94/94, verified corr: 58/94
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 94 img ID: 94 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  4  correct label  4
+Image 94, property 0 verify end, min bound 1.706355094909668, Time cost: 1.9792392253875732
+Image 94, property 1 verify end, min bound 4.038655757904053, Time cost: 1.9819426536560059
+Image 94, property 2 verify end, min bound 0.9721927642822266, Time cost: 2.0175037384033203
+Image 94, property 3 verify end, min bound 1.4369268417358398, Time cost: 2.04219651222229
+correct label, skip!
+Image 94, property 5 verify end, min bound 0.579805850982666, Time cost: 2.0280418395996094
+No domains left, verification finished!
+Image 94, property 6 verify end, min bound 999, Time cost: 2.2132723331451416
+Image 94, property 7 verify end, min bound 0.14762496948242188, Time cost: 2.0265204906463623
+No domains left, verification finished!
+Image 94, property 8 verify end, min bound 999, Time cost: 2.0458099842071533
+Image 94, property 9 verify end, min bound 1.120895266532898, Time cost: 2.0300071239471436
+Correct: 95/95, verified corr: 59/95
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 95 img ID: 95 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  2  correct label  2
+Image 95, property 0 verify end, min bound 2.8608312606811523, Time cost: 2.0177958011627197
+Image 95, property 1 verify end, min bound 0.3884754180908203, Time cost: 0.1349928379058838
+correct label, skip!
+Image 95, property 3 verify end, min bound 2.156731367111206, Time cost: 2.020382881164551
+Image 95, property 4 verify end, min bound 2.5577502250671387, Time cost: 2.0423662662506104
+Image 95, property 5 verify end, min bound 1.4176044464111328, Time cost: 2.0424749851226807
+Image 95, property 6 verify end, min bound 0.0761251449584961, Time cost: 2.041016101837158
+Image 95, property 7 verify end, min bound 1.0871529579162598, Time cost: 0.13578391075134277
+Image 95, property 8 verify end, min bound 1.6537647247314453, Time cost: 2.0412352085113525
+Image 95, property 9 verify end, min bound 4.2107462882995605, Time cost: 2.0347306728363037
+Correct: 96/96, verified corr: 60/96
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 96 img ID: 96 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+Image 96, property 0 verify end, min bound 0.07831287384033203, Time cost: 2.0314600467681885
+Image 96, property 1 verify end, min bound 2.2593908309936523, Time cost: 2.0223851203918457
+No domains left, verification finished!
+Image 96, property 2 verify end, min bound 999, Time cost: 2.2290616035461426
+No domains left, verification finished!
+Image 96, property 3 verify end, min bound 999, Time cost: 3.5044422149658203
+No domains left, verification finished!
+Image 96, property 4 verify end, min bound 999, Time cost: 2.7370431423187256
+No domains left, verification finished!
+Image 96, property 5 verify end, min bound 999, Time cost: 2.0411670207977295
+Image 96, property 6 verify end, min bound 0.09625673294067383, Time cost: 2.0031192302703857
+No domains left, verification finished!
+Image 96, property 7 verify end, min bound 999, Time cost: 2.9969701766967773
+No domains left, verification finished!
+Image 96, property 8 verify end, min bound 999, Time cost: 3.6378114223480225
+correct label, skip!
+Correct: 97/97, verified corr: 61/97
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 97 img ID: 97 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  8  correct label  8
+Image 97, property 0 verify end, min bound 0.1444549560546875, Time cost: 2.0075509548187256
+No domains left, verification finished!
+Image 97, property 1 verify end, min bound 999, Time cost: 2.04811429977417
+No domains left, verification finished!
+Image 97, property 2 verify end, min bound 999, Time cost: 2.9372141361236572
+No domains left, verification finished!
+Image 97, property 3 verify end, min bound 999, Time cost: 2.585491895675659
+No domains left, verification finished!
+Image 97, property 4 verify end, min bound 999, Time cost: 2.2139813899993896
+No domains left, verification finished!
+Image 97, property 5 verify end, min bound 999, Time cost: 2.032080888748169
+Image 97, property 6 verify end, min bound 0.36594104766845703, Time cost: 2.0054402351379395
+No domains left, verification finished!
+Image 97, property 7 verify end, min bound 999, Time cost: 3.3253743648529053
+correct label, skip!
+No domains left, verification finished!
+Image 97, property 9 verify end, min bound 999, Time cost: 2.218857765197754
+Correct: 98/98, verified corr: 62/98
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 98 img ID: 98 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  1  correct label  1
+Image 98, property 0 verify end, min bound 3.8782243728637695, Time cost: 2.018366813659668
+correct label, skip!
+Image 98, property 2 verify end, min bound 0.5689504146575928, Time cost: 1.9963088035583496
+Image 98, property 3 verify end, min bound 1.0147068500518799, Time cost: 2.008495569229126
+Image 98, property 4 verify end, min bound 1.2675830125808716, Time cost: 2.011096715927124
+Image 98, property 5 verify end, min bound 0.09891819953918457, Time cost: 2.0137224197387695
+No domains left, verification finished!
+Image 98, property 6 verify end, min bound 999, Time cost: 2.2128140926361084
+Image 98, property 7 verify end, min bound 1.0379223823547363, Time cost: 2.006546974182129
+Image 98, property 8 verify end, min bound 0.16672205924987793, Time cost: 2.0086686611175537
+Image 98, property 9 verify end, min bound 1.9431846141815186, Time cost: 1.998467206954956
+Correct: 99/99, verified corr: 63/99
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% idx: 99 img ID: 99 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+predicted label  9  correct label  9
+No domains left, verification finished!
+Image 99, property 0 verify end, min bound 999, Time cost: 2.034435272216797
+No domains left, verification finished!
+Image 99, property 1 verify end, min bound 999, Time cost: 2.0247139930725098
+Image 99, property 2 verify end, min bound 0.02804708480834961, Time cost: 2.0108370780944824
+No domains left, verification finished!
+Image 99, property 3 verify end, min bound 999, Time cost: 3.0842905044555664
+Image 99, property 4 verify end, min bound 0.03240323066711426, Time cost: 2.0067670345306396
+No domains left, verification finished!
+Image 99, property 5 verify end, min bound 999, Time cost: 2.564997911453247
+Image 99, property 6 verify end, min bound 0.13312339782714844, Time cost: 1.9982507228851318
+No domains left, verification finished!
+Image 99, property 7 verify end, min bound 999, Time cost: 5.916045904159546
+No domains left, verification finished!
+Image 99, property 8 verify end, min bound 999, Time cost: 4.288091659545898
+correct label, skip!
+Correct: 100/100, verified corr: 64/100
+Correct: 100/100, verified corr: 64/100
+time mean: 20.3647541577816, branches mean: 2980.594, number of timeout: 95
+time median: 2.019920587539673, branches median: 1.0, number of timeout: 95
+final verified acc: 64.0 %[100]
+
+Process finished with exit code 0

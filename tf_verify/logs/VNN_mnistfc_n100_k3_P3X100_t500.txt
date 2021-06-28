@@ -1,0 +1,601 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --instance_file /home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/mnistfc/mnistfc_instances.csv --domain refinegpupoly --sparse_n 100 --k 3 --s -2 --partial_milp 3 --max_milp_neurons 100 --from_test 0 --timeout_final_milp 500
+GPUPoly 0.12.0S Debug (built Apr 23 2021 09:33:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+{'approx_k': True,
+ 'complete': False,
+ 'debug': False,
+ 'domain': 'refinegpupoly',
+ 'from_test': 0,
+ 'initial_splits': 10,
+ 'instance_file': '/home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/mnistfc/mnistfc_instances.csv',
+ 'k': 3,
+ 'max_gpu_batch': 500,
+ 'max_milp_neurons': 100,
+ 'max_split_depth': 10,
+ 'n_milp_refine': 1,
+ 'n_test': -1,
+ 'netname': None,
+ 'partial_milp': 3,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 100,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 100,
+ 'timeout_final_milp': 500.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'vnnlib_spec': None}
+img 0 Verified UNSAT for constraints [[(5, 0, 0)], [(5, 1, 0)], [(5, 2, 0)], [(5, 3, 0)], [(5, 4, 0)], [(5, 6, 0)], [(5, 7, 0)], [(5, 8, 0)], [(5, 9, 0)]]
+progress: 1/1
+Spec 0 (UNSAT): 1/90; SAT 0; UNSAT 1; unknown 0; time: 0.321; 0.321; 0.321
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 1 (UNSAT): 2/90; SAT 0; UNSAT 2; unknown 0; time: 0.045; 0.183; 0.366
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound for constraint (7, 0, 0): -0.0450/-0.0450, Final solve time: 0.398
+Partial MILP model status: 6, Obj val/bound for constraint (7, 0, 0): inf/0.0100, Final solve time: 2.715
+Model status: 2, Obj val/bound for constraint (7, 1, 0): -0.1620/-0.1620, Final solve time: 0.368
+Partial MILP model status: 6, Obj val/bound for constraint (7, 1, 0): inf/0.0100, Final solve time: 3.595
+Model status: 2, Obj val/bound for constraint (7, 2, 0): -0.8526/-0.8526, Final solve time: 0.451
+Partial MILP model status: 11, Obj val/bound for constraint (7, 2, 0): -0.2874/-0.7753, Final solve time: 3.511
+img 0 Verified SAT, with adversarial example with output [-0.01971231 -0.01123982  0.60623791  0.05977259  0.00166831  0.01015128
+  0.00203446  0.31885725 -0.00305817 -0.01149638] for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 2 (SAT): 3/90; SAT 1; UNSAT 2; unknown 0; time: 13.795; 4.720; 14.161
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 3 (UNSAT): 4/90; SAT 1; UNSAT 3; unknown 0; time: 0.046; 3.552; 14.207
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -0.2520/-0.2520, Final solve time: 0.694
+Partial MILP model status: 6, Obj val/bound for constraint (0, 1, 0): inf/0.0100, Final solve time: 10.637
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -0.4914/-0.4914, Final solve time: 0.660
+Partial MILP model status: 6, Obj val/bound for constraint (0, 2, 0): inf/0.0100, Final solve time: 15.318
+Model status: 2, Obj val/bound for constraint (0, 3, 0): -0.4111/-0.4111, Final solve time: 0.714
+Partial MILP model status: 6, Obj val/bound for constraint (0, 3, 0): inf/0.0100, Final solve time: 13.111
+Model status: 2, Obj val/bound for constraint (0, 4, 0): -0.3606/-0.3606, Final solve time: 0.647
+Partial MILP model status: 6, Obj val/bound for constraint (0, 4, 0): inf/0.0100, Final solve time: 16.452
+Model status: 2, Obj val/bound for constraint (0, 5, 0): -0.6721/-0.6721, Final solve time: 0.646
+Partial MILP model status: 6, Obj val/bound for constraint (0, 5, 0): inf/0.0100, Final solve time: 17.362
+Model status: 2, Obj val/bound for constraint (0, 6, 0): -0.3432/-0.3432, Final solve time: 0.680
+Partial MILP model status: 6, Obj val/bound for constraint (0, 6, 0): inf/0.0100, Final solve time: 14.062
+Model status: 2, Obj val/bound for constraint (0, 7, 0): -0.5011/-0.5011, Final solve time: 0.669
+Partial MILP model status: 6, Obj val/bound for constraint (0, 7, 0): inf/0.0100, Final solve time: 17.795
+Model status: 2, Obj val/bound for constraint (0, 8, 0): -1.1600/-1.1600, Final solve time: 0.716
+Partial MILP model status: 11, Obj val/bound for constraint (0, 8, 0): -0.4366/-0.7936, Final solve time: 17.576
+img 0 Verified SAT, with adversarial example with output [ 0.31235969 -0.03778101 -0.00259789 -0.07394414  0.00964354  0.0642784
+ -0.01212528  0.01275169  0.74413501 -0.04219365] for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 4 (SAT): 5/90; SAT 2; UNSAT 3; unknown 0; time: 132.736; 29.389; 146.943
+img 0 Verified UNSAT for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 5 (UNSAT): 6/90; SAT 2; UNSAT 4; unknown 0; time: 0.049; 24.499; 146.992
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 6 (UNSAT): 7/90; SAT 2; UNSAT 5; unknown 0; time: 0.046; 21.005; 147.038
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -0.0194/-0.0194, Final solve time: 0.711
+Partial MILP model status: 6, Obj val/bound for constraint (9, 0, 0): inf/0.0100, Final solve time: 3.672
+Model status: 6, Obj val/bound for constraint (9, 1, 0): 0.0000/failed, Final solve time: 0.729
+Model status: 2, Obj val/bound for constraint (9, 2, 0): -0.0523/-0.0523, Final solve time: 0.715
+Partial MILP model status: 6, Obj val/bound for constraint (9, 2, 0): inf/0.0100, Final solve time: 5.055
+Model status: 2, Obj val/bound for constraint (9, 3, 0): -0.2390/-0.2390, Final solve time: 0.526
+Partial MILP model status: 11, Obj val/bound for constraint (9, 3, 0): inf/0.0100, Final solve time: 7.156
+Model status: 2, Obj val/bound for constraint (9, 4, 0): -0.0031/-0.0031, Final solve time: 0.699
+Partial MILP model status: 6, Obj val/bound for constraint (9, 4, 0): inf/0.0100, Final solve time: 2.541
+Model status: 2, Obj val/bound for constraint (9, 5, 0): -0.1265/-0.1265, Final solve time: 0.700
+Partial MILP model status: 6, Obj val/bound for constraint (9, 5, 0): inf/0.0100, Final solve time: 9.039
+Model status: 6, Obj val/bound for constraint (9, 6, 0): 0.0000/failed, Final solve time: 0.707
+Model status: 2, Obj val/bound for constraint (9, 7, 0): -0.0167/-0.0167, Final solve time: 0.747
+Partial MILP model status: 6, Obj val/bound for constraint (9, 7, 0): inf/0.0100, Final solve time: 3.101
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -0.8928/-0.8928, Final solve time: 0.547
+Partial MILP model status: 11, Obj val/bound for constraint (9, 8, 0): -0.1177/-0.8914, Final solve time: 3.034
+img 0 Verified SAT, with adversarial example with output [-0.02645894  0.01988083  0.02397956 -0.0358258  -0.01890746  0.06911939
+  0.02380691 -0.02124334  0.53028134  0.41256468] for constraints [[(9, 0, 0)], [(9, 1, 0)], [(9, 2, 0)], [(9, 3, 0)], [(9, 4, 0)], [(9, 5, 0)], [(9, 6, 0)], [(9, 7, 0)], [(9, 8, 0)]]
+progress: 1/1
+Spec 7 (SAT): 8/90; SAT 3; UNSAT 5; unknown 0; time: 43.099; 23.767; 190.137
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 8 (UNSAT): 9/90; SAT 3; UNSAT 6; unknown 0; time: 0.046; 21.131; 190.183
+img 0 Verified UNSAT for constraints [[(3, 0, 0)], [(3, 1, 0)], [(3, 2, 0)], [(3, 4, 0)], [(3, 5, 0)], [(3, 6, 0)], [(3, 7, 0)], [(3, 8, 0)], [(3, 9, 0)]]
+progress: 1/1
+Spec 9 (UNSAT): 10/90; SAT 3; UNSAT 7; unknown 0; time: 0.045; 19.023; 190.228
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 10 (UNSAT): 11/90; SAT 3; UNSAT 8; unknown 0; time: 0.045; 17.298; 190.273
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -0.4297/-0.4297, Final solve time: 0.706
+Partial MILP model status: 6, Obj val/bound for constraint (9, 0, 0): inf/0.0100, Final solve time: 26.630
+Model status: 2, Obj val/bound for constraint (9, 1, 0): -0.4524/-0.4524, Final solve time: 1.005
+Partial MILP model status: 6, Obj val/bound for constraint (9, 1, 0): inf/0.0100, Final solve time: 31.381
+Model status: 2, Obj val/bound for constraint (9, 2, 0): -0.5585/-0.5585, Final solve time: 0.879
+Partial MILP model status: 6, Obj val/bound for constraint (9, 2, 0): inf/0.0100, Final solve time: 41.918
+Model status: 2, Obj val/bound for constraint (9, 3, 0): -0.6608/-0.6608, Final solve time: 0.761
+Partial MILP model status: 6, Obj val/bound for constraint (9, 3, 0): inf/0.0100, Final solve time: 33.383
+Model status: 2, Obj val/bound for constraint (9, 4, 0): -0.4760/-0.4760, Final solve time: 0.743
+Partial MILP model status: 11, Obj val/bound for constraint (9, 4, 0): inf/0.0100, Final solve time: 72.748
+Model status: 2, Obj val/bound for constraint (9, 5, 0): -0.9043/-0.9043, Final solve time: 0.673
+Partial MILP model status: 11, Obj val/bound for constraint (9, 5, 0): inf/0.0100, Final solve time: 96.737
+Model status: 2, Obj val/bound for constraint (9, 6, 0): -0.5109/-0.5109, Final solve time: 0.773
+Partial MILP model status: 6, Obj val/bound for constraint (9, 6, 0): inf/0.0100, Final solve time: 27.779
+Model status: 2, Obj val/bound for constraint (9, 7, 0): -0.5222/-0.5222, Final solve time: 0.901
+Partial MILP model status: 6, Obj val/bound for constraint (9, 7, 0): inf/0.0100, Final solve time: 29.553
+Model status: 2, Obj val/bound for constraint (9, 8, 0): -1.2517/-1.2517, Final solve time: 0.818
+Partial MILP model status: 11, Obj val/bound for constraint (9, 8, 0): -0.6513/-1.1276, Final solve time: 14.138
+img 0 Verified SAT, with adversarial example with output [-0.01663599  0.0026306   0.02273089 -0.03322263 -0.01557595  0.04366929
+ -0.01952094 -0.00650727  0.82096001  0.17201503] for constraints [[(9, 0, 0)], [(9, 1, 0)], [(9, 2, 0)], [(9, 3, 0)], [(9, 4, 0)], [(9, 5, 0)], [(9, 6, 0)], [(9, 7, 0)], [(9, 8, 0)]]
+progress: 1/1
+Spec 11 (SAT): 12/90; SAT 4; UNSAT 8; unknown 0; time: 386.349; 48.052; 576.622
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 12 (UNSAT): 13/90; SAT 4; UNSAT 9; unknown 0; time: 0.047; 44.359; 576.668
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 13 (UNSAT): 14/90; SAT 4; UNSAT 10; unknown 0; time: 0.046; 41.194; 576.714
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 14 (UNSAT): 15/90; SAT 4; UNSAT 11; unknown 0; time: 0.045; 38.451; 576.759
+Model status: 6, Obj val/bound for constraint (5, 0, 0): 0.0000/failed, Final solve time: 0.546
+Model status: 6, Obj val/bound for constraint (5, 1, 0): 0.0000/failed, Final solve time: 0.458
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -0.0302/-0.0302, Final solve time: 0.501
+Partial MILP model status: 6, Obj val/bound for constraint (5, 2, 0): inf/0.0100, Final solve time: 1.416
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.2568/-0.2568, Final solve time: 0.472
+Partial MILP model status: 6, Obj val/bound for constraint (5, 3, 0): inf/0.0100, Final solve time: 1.976
+Model status: 6, Obj val/bound for constraint (5, 4, 0): 0.0000/failed, Final solve time: 0.487
+Model status: 6, Obj val/bound for constraint (5, 6, 0): 0.0000/failed, Final solve time: 0.508
+Model status: 6, Obj val/bound for constraint (5, 7, 0): 0.0000/failed, Final solve time: 0.514
+Model status: 2, Obj val/bound for constraint (5, 8, 0): -1.0852/-1.0852, Final solve time: 0.477
+Partial MILP model status: 11, Obj val/bound for constraint (5, 8, 0): -0.5052/-1.0203, Final solve time: 2.336
+img 0 Verified SAT, with adversarial example with output [-0.04342398 -0.05004935 -0.02853402  0.02687448 -0.02201207  0.34330564
+ -0.03061594 -0.03459167  0.84850392 -0.03858627] for constraints [[(5, 0, 0)], [(5, 1, 0)], [(5, 2, 0)], [(5, 3, 0)], [(5, 4, 0)], [(5, 6, 0)], [(5, 7, 0)], [(5, 8, 0)], [(5, 9, 0)]]
+progress: 1/1
+Spec 15 (SAT): 16/90; SAT 5; UNSAT 11; unknown 0; time: 12.245; 36.813; 589.004
+Model status: 6, Obj val/bound for constraint (6, 0, 0): 0.0000/failed, Final solve time: 0.086
+Model status: 6, Obj val/bound for constraint (6, 1, 0): 0.0000/failed, Final solve time: 0.083
+Model status: 6, Obj val/bound for constraint (6, 2, 0): 0.0000/failed, Final solve time: 0.087
+Model status: 6, Obj val/bound for constraint (6, 3, 0): 0.0000/failed, Final solve time: 0.061
+Model status: 6, Obj val/bound for constraint (6, 4, 0): 0.0000/failed, Final solve time: 0.060
+Model status: 6, Obj val/bound for constraint (6, 5, 0): 0.0000/failed, Final solve time: 0.052
+Model status: 6, Obj val/bound for constraint (6, 7, 0): 0.0000/failed, Final solve time: 0.088
+Model status: 2, Obj val/bound for constraint (6, 8, 0): -0.4448/-0.4448, Final solve time: 0.117
+Partial MILP model status: 11, Obj val/bound for constraint (6, 8, 0): -0.0964/-0.4442, Final solve time: 0.506
+img 0 Verified SAT, with adversarial example with output [-0.00525339  0.00432639  0.01348659  0.02674828  0.00459909  0.00733364
+  0.4113321   0.02488988  0.50771563  0.00565984] for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 16 (SAT): 17/90; SAT 6; UNSAT 11; unknown 0; time: 3.146; 34.832; 592.150
+Box 0 SAT
+progress: 1/1
+Spec 17 (SAT): 18/90; SAT 7; UNSAT 11; unknown 0; time: 0.025; 32.899; 592.175
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -0.4256/-0.4256, Final solve time: 0.566
+Partial MILP model status: 2, Obj val/bound for constraint (2, 0, 0): -0.0058/-0.0058, Final solve time: 15.781
+img 0 Verified SAT, with adversarial example with output [ 0.01473946 -0.02528948  0.00898492 -0.01474623 -0.01042067  0.012482
+ -0.01508197 -0.0314461   1.02761947 -0.01307407] for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 18 (SAT): 19/90; SAT 8; UNSAT 11; unknown 0; time: 19.579; 32.198; 611.754
+Box 0 SAT
+progress: 1/1
+Spec 19 (SAT): 20/90; SAT 9; UNSAT 11; unknown 0; time: 0.024; 30.589; 611.779
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -1.1093/-1.1093, Final solve time: 1.354
+Partial MILP model status: 11, Obj val/bound for constraint (1, 0, 0): -0.0902/-0.5896, Final solve time: 478.732
+img 0 Verified SAT, with adversarial example with output [-0.01440175  0.18050738  0.00112405 -0.04751975  0.01032814 -0.02623072
+ -0.05215857  0.34232464  0.5408956   0.0369608 ] for constraints [[(1, 0, 0)], [(1, 2, 0)], [(1, 3, 0)], [(1, 4, 0)], [(1, 5, 0)], [(1, 6, 0)], [(1, 7, 0)], [(1, 8, 0)], [(1, 9, 0)]]
+progress: 1/1
+Spec 20 (SAT): 21/90; SAT 10; UNSAT 11; unknown 0; time: 487.777; 52.360; 1099.556
+Model status: 6, Obj val/bound for constraint (8, 0, 0): 0.0000/failed, Final solve time: 0.489
+Model status: 6, Obj val/bound for constraint (8, 1, 0): 0.0000/failed, Final solve time: 0.462
+Model status: 2, Obj val/bound for constraint (8, 2, 0): -0.3314/-0.3314, Final solve time: 0.713
+Partial MILP model status: 6, Obj val/bound for constraint (8, 2, 0): inf/0.0100, Final solve time: 4.202
+Model status: 2, Obj val/bound for constraint (8, 3, 0): -0.0847/-0.0847, Final solve time: 0.459
+Partial MILP model status: 6, Obj val/bound for constraint (8, 3, 0): inf/0.0100, Final solve time: 2.799
+Model status: 6, Obj val/bound for constraint (8, 4, 0): 0.0000/failed, Final solve time: 0.463
+Model status: 2, Obj val/bound for constraint (8, 5, 0): -0.0582/-0.0582, Final solve time: 0.486
+Partial MILP model status: 6, Obj val/bound for constraint (8, 5, 0): inf/0.0100, Final solve time: 2.730
+Model status: 6, Obj val/bound for constraint (8, 6, 0): 0.0000/failed, Final solve time: 0.623
+Model status: 2, Obj val/bound for constraint (8, 7, 0): 0.0077/0.0077, Final solve time: 0.489
+Model status: 2, Obj val/bound for constraint (8, 9, 0): -0.2812/-0.2812, Final solve time: 0.511
+Partial MILP model status: 6, Obj val/bound for constraint (8, 9, 0): inf/0.0100, Final solve time: 4.689
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 21 (UNSAT): 22/90; SAT 10; UNSAT 12; unknown 0; time: 22.943; 51.023; 1122.499
+Box 0 SAT
+progress: 1/1
+Spec 22 (SAT): 23/90; SAT 11; UNSAT 12; unknown 0; time: 0.028; 48.806; 1122.527
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 23 (UNSAT): 24/90; SAT 11; UNSAT 13; unknown 0; time: 0.046; 46.774; 1122.573
+Model status: 2, Obj val/bound for constraint (3, 0, 0): -0.1691/-0.1691, Final solve time: 0.510
+Partial MILP model status: 6, Obj val/bound for constraint (3, 0, 0): inf/0.0100, Final solve time: 3.861
+Model status: 2, Obj val/bound for constraint (3, 1, 0): -0.1649/-0.1649, Final solve time: 0.510
+Partial MILP model status: 6, Obj val/bound for constraint (3, 1, 0): inf/0.0100, Final solve time: 4.332
+Model status: 2, Obj val/bound for constraint (3, 2, 0): -0.7516/-0.7516, Final solve time: 0.404
+Partial MILP model status: 6, Obj val/bound for constraint (3, 2, 0): inf/0.0100, Final solve time: 10.658
+Model status: 2, Obj val/bound for constraint (3, 4, 0): -0.1440/-0.1440, Final solve time: 0.449
+Partial MILP model status: 6, Obj val/bound for constraint (3, 4, 0): inf/0.0100, Final solve time: 3.588
+Model status: 2, Obj val/bound for constraint (3, 5, 0): -0.3359/-0.3359, Final solve time: 0.409
+Partial MILP model status: 6, Obj val/bound for constraint (3, 5, 0): inf/0.0100, Final solve time: 4.263
+Model status: 2, Obj val/bound for constraint (3, 6, 0): -0.1831/-0.1831, Final solve time: 0.418
+Partial MILP model status: 6, Obj val/bound for constraint (3, 6, 0): inf/0.0100, Final solve time: 4.083
+Model status: 2, Obj val/bound for constraint (3, 7, 0): -0.3203/-0.3203, Final solve time: 0.446
+Partial MILP model status: 6, Obj val/bound for constraint (3, 7, 0): inf/0.0100, Final solve time: 4.308
+Model status: 2, Obj val/bound for constraint (3, 8, 0): -0.8774/-0.8774, Final solve time: 0.383
+Partial MILP model status: 6, Obj val/bound for constraint (3, 8, 0): inf/0.0100, Final solve time: 9.202
+Model status: 2, Obj val/bound for constraint (3, 9, 0): -0.3429/-0.3429, Final solve time: 0.422
+Partial MILP model status: 6, Obj val/bound for constraint (3, 9, 0): inf/0.0100, Final solve time: 4.288
+img 0 Verified UNSAT for constraints [[(3, 0, 0)], [(3, 1, 0)], [(3, 2, 0)], [(3, 4, 0)], [(3, 5, 0)], [(3, 6, 0)], [(3, 7, 0)], [(3, 8, 0)], [(3, 9, 0)]]
+progress: 1/1
+Spec 24 (UNSAT): 25/90; SAT 11; UNSAT 14; unknown 0; time: 55.841; 47.137; 1178.414
+Box 0 SAT
+progress: 1/1
+Spec 25 (SAT): 26/90; SAT 12; UNSAT 14; unknown 0; time: 0.034; 45.325; 1178.448
+Box 0 SAT
+progress: 1/1
+Spec 26 (SAT): 27/90; SAT 13; UNSAT 14; unknown 0; time: 0.023; 43.647; 1178.471
+Model status: 6, Obj val/bound for constraint (0, 1, 0): 0.0000/failed, Final solve time: 0.496
+Model status: 6, Obj val/bound for constraint (0, 2, 0): 0.0000/failed, Final solve time: 0.485
+Model status: 2, Obj val/bound for constraint (0, 3, 0): -0.1430/-0.1430, Final solve time: 0.508
+Partial MILP model status: 6, Obj val/bound for constraint (0, 3, 0): inf/0.0100, Final solve time: 2.315
+Model status: 6, Obj val/bound for constraint (0, 4, 0): 0.0000/failed, Final solve time: 0.448
+Model status: 6, Obj val/bound for constraint (0, 5, 0): 0.0000/failed, Final solve time: 0.450
+Model status: 6, Obj val/bound for constraint (0, 6, 0): 0.0000/failed, Final solve time: 0.511
+Model status: 6, Obj val/bound for constraint (0, 7, 0): 0.0000/failed, Final solve time: 0.474
+Model status: 2, Obj val/bound for constraint (0, 8, 0): -0.0500/-0.0500, Final solve time: 0.512
+Partial MILP model status: 6, Obj val/bound for constraint (0, 8, 0): inf/0.0100, Final solve time: 1.999
+Model status: 6, Obj val/bound for constraint (0, 9, 0): 0.0000/failed, Final solve time: 0.484
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 27 (UNSAT): 28/90; SAT 13; UNSAT 15; unknown 0; time: 11.691; 42.506; 1190.162
+Box 0 SAT
+progress: 1/1
+Spec 28 (SAT): 29/90; SAT 14; UNSAT 15; unknown 0; time: 0.024; 41.041; 1190.187
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -0.5176/-0.5176, Final solve time: 0.801
+Partial MILP model status: 6, Obj val/bound for constraint (8, 0, 0): inf/0.0100, Final solve time: 41.080
+Model status: 2, Obj val/bound for constraint (8, 1, 0): -0.5556/-0.5556, Final solve time: 0.824
+Partial MILP model status: 6, Obj val/bound for constraint (8, 1, 0): inf/0.0100, Final solve time: 44.331
+Model status: 2, Obj val/bound for constraint (8, 2, 0): -0.8016/-0.8016, Final solve time: 0.759
+Partial MILP model status: 6, Obj val/bound for constraint (8, 2, 0): inf/0.0100, Final solve time: 63.141
+Model status: 2, Obj val/bound for constraint (8, 3, 0): -0.9605/-0.9605, Final solve time: 0.745
+Partial MILP model status: 6, Obj val/bound for constraint (8, 3, 0): inf/0.0100, Final solve time: 45.676
+Model status: 2, Obj val/bound for constraint (8, 4, 0): -0.7621/-0.7621, Final solve time: 0.806
+Partial MILP model status: 6, Obj val/bound for constraint (8, 4, 0): inf/0.0100, Final solve time: 42.750
+Model status: 2, Obj val/bound for constraint (8, 5, 0): -0.9105/-0.9105, Final solve time: 0.694
+Partial MILP model status: 11, Obj val/bound for constraint (8, 5, 0): inf/0.0100, Final solve time: 39.751
+Model status: 2, Obj val/bound for constraint (8, 6, 0): -0.5520/-0.5520, Final solve time: 0.794
+Partial MILP model status: 6, Obj val/bound for constraint (8, 6, 0): inf/0.0100, Final solve time: 39.843
+Model status: 2, Obj val/bound for constraint (8, 7, 0): -0.8548/-0.8548, Final solve time: 0.762
+Partial MILP model status: 6, Obj val/bound for constraint (8, 7, 0): inf/0.0100, Final solve time: 47.672
+Model status: 2, Obj val/bound for constraint (8, 9, 0): -1.3948/-1.3948, Final solve time: 0.783
+Partial MILP model status: 6, Obj val/bound for constraint (8, 9, 0): inf/0.0100, Final solve time: 78.280
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 29 (UNSAT): 30/90; SAT 14; UNSAT 16; unknown 0; time: 454.987; 54.839; 1645.174
+img 0 Verified UNSAT for constraints [[(5, 0, 0)], [(5, 1, 0)], [(5, 2, 0)], [(5, 3, 0)], [(5, 4, 0)], [(5, 6, 0)], [(5, 7, 0)], [(5, 8, 0)], [(5, 9, 0)]]
+progress: 1/1
+Spec 30 (UNSAT): 31/90; SAT 14; UNSAT 17; unknown 0; time: 0.097; 53.073; 1645.271
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 31 (UNSAT): 32/90; SAT 14; UNSAT 18; unknown 0; time: 0.090; 51.418; 1645.361
+Model status: 6, Obj val/bound for constraint (7, 0, 0): 0.0000/failed, Final solve time: 0.516
+Model status: 6, Obj val/bound for constraint (7, 1, 0): 0.0000/failed, Final solve time: 0.527
+Model status: 2, Obj val/bound for constraint (7, 2, 0): 0.0017/0.0017, Final solve time: 0.509
+Model status: 6, Obj val/bound for constraint (7, 3, 0): 0.0000/failed, Final solve time: 0.527
+Model status: 6, Obj val/bound for constraint (7, 4, 0): 0.0000/failed, Final solve time: 0.525
+Model status: 6, Obj val/bound for constraint (7, 5, 0): 0.0000/failed, Final solve time: 0.521
+Model status: 6, Obj val/bound for constraint (7, 6, 0): 0.0000/failed, Final solve time: 0.530
+Model status: 6, Obj val/bound for constraint (7, 8, 0): 0.0000/failed, Final solve time: 0.621
+Model status: 6, Obj val/bound for constraint (7, 9, 0): 0.0000/failed, Final solve time: 0.579
+img 0 Verified UNSAT for constraints [[(7, 0, 0)], [(7, 1, 0)], [(7, 2, 0)], [(7, 3, 0)], [(7, 4, 0)], [(7, 5, 0)], [(7, 6, 0)], [(7, 8, 0)], [(7, 9, 0)]]
+progress: 1/1
+Spec 32 (UNSAT): 33/90; SAT 14; UNSAT 19; unknown 0; time: 9.373; 50.143; 1654.734
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -2.4912/-2.4912, Final solve time: 2.388
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): inf/-1.8024, Final solve time: 500.041
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 33 (UNKNOWN): 34/90; SAT 14; UNSAT 19; unknown 1; time: 517.860; 63.900; 2172.595
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -0.5839/-0.5839, Final solve time: 1.391
+Partial MILP model status: 6, Obj val/bound for constraint (0, 1, 0): inf/0.0100, Final solve time: 210.002
+Model status: 2, Obj val/bound for constraint (0, 2, 0): -0.6754/-0.6754, Final solve time: 1.407
+Partial MILP model status: 11, Obj val/bound for constraint (0, 2, 0): inf/0.0100, Final solve time: 155.771
+Model status: 2, Obj val/bound for constraint (0, 3, 0): -0.7263/-0.7263, Final solve time: 1.207
+Partial MILP model status: 6, Obj val/bound for constraint (0, 3, 0): inf/0.0100, Final solve time: 205.972
+Model status: 2, Obj val/bound for constraint (0, 4, 0): -0.6805/-0.6805, Final solve time: 1.390
+Partial MILP model status: 6, Obj val/bound for constraint (0, 4, 0): inf/0.0100, Final solve time: 276.067
+Model status: 2, Obj val/bound for constraint (0, 5, 0): -1.1782/-1.1782, Final solve time: 0.994
+Partial MILP model status: 6, Obj val/bound for constraint (0, 5, 0): inf/0.0100, Final solve time: 143.229
+Model status: 2, Obj val/bound for constraint (0, 6, 0): -1.0310/-1.0310, Final solve time: 1.512
+Partial MILP model status: 6, Obj val/bound for constraint (0, 6, 0): inf/0.0100, Final solve time: 185.120
+Model status: 2, Obj val/bound for constraint (0, 7, 0): -1.1531/-1.1531, Final solve time: 1.322
+Partial MILP model status: 6, Obj val/bound for constraint (0, 7, 0): inf/0.0100, Final solve time: 197.110
+Model status: 2, Obj val/bound for constraint (0, 8, 0): -0.7631/-0.7631, Final solve time: 1.227
+Partial MILP model status: 6, Obj val/bound for constraint (0, 8, 0): inf/0.0100, Final solve time: 180.440
+Model status: 2, Obj val/bound for constraint (0, 9, 0): -0.7014/-0.7014, Final solve time: 1.209
+Partial MILP model status: 6, Obj val/bound for constraint (0, 9, 0): inf/0.0100, Final solve time: 203.016
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 34 (UNSAT): 35/90; SAT 14; UNSAT 20; unknown 1; time: 1775.782; 112.811; 3948.377
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -1.2524/-1.2524, Final solve time: 2.251
+Partial MILP model status: 9, Obj val/bound for constraint (1, 0, 0): inf/-0.9541, Final solve time: 500.015
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 35 (UNKNOWN): 36/90; SAT 14; UNSAT 20; unknown 2; time: 515.970; 124.010; 4464.348
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -0.3427/-0.3427, Final solve time: 0.840
+Partial MILP model status: 6, Obj val/bound for constraint (8, 0, 0): inf/0.0100, Final solve time: 24.472
+Model status: 2, Obj val/bound for constraint (8, 1, 0): -0.1873/-0.1873, Final solve time: 0.857
+Partial MILP model status: 6, Obj val/bound for constraint (8, 1, 0): inf/0.0100, Final solve time: 16.815
+Model status: 2, Obj val/bound for constraint (8, 2, 0): -0.5108/-0.5108, Final solve time: 0.815
+Partial MILP model status: 6, Obj val/bound for constraint (8, 2, 0): inf/0.0100, Final solve time: 20.911
+Model status: 2, Obj val/bound for constraint (8, 3, 0): -0.5036/-0.5036, Final solve time: 0.756
+Partial MILP model status: 6, Obj val/bound for constraint (8, 3, 0): inf/0.0100, Final solve time: 23.106
+Model status: 2, Obj val/bound for constraint (8, 4, 0): -0.1981/-0.1981, Final solve time: 0.802
+Partial MILP model status: 6, Obj val/bound for constraint (8, 4, 0): inf/0.0100, Final solve time: 13.186
+Model status: 2, Obj val/bound for constraint (8, 5, 0): -0.2905/-0.2905, Final solve time: 0.813
+Partial MILP model status: 6, Obj val/bound for constraint (8, 5, 0): inf/0.0100, Final solve time: 14.290
+Model status: 2, Obj val/bound for constraint (8, 6, 0): -0.2333/-0.2333, Final solve time: 0.846
+Partial MILP model status: 6, Obj val/bound for constraint (8, 6, 0): inf/0.0100, Final solve time: 17.367
+Model status: 2, Obj val/bound for constraint (8, 7, 0): -0.4389/-0.4389, Final solve time: 0.818
+Partial MILP model status: 6, Obj val/bound for constraint (8, 7, 0): inf/0.0100, Final solve time: 20.317
+Model status: 2, Obj val/bound for constraint (8, 9, 0): -0.2756/-0.2756, Final solve time: 0.858
+Partial MILP model status: 6, Obj val/bound for constraint (8, 9, 0): inf/0.0100, Final solve time: 18.207
+img 0 Verified UNSAT for constraints [[(8, 0, 0)], [(8, 1, 0)], [(8, 2, 0)], [(8, 3, 0)], [(8, 4, 0)], [(8, 5, 0)], [(8, 6, 0)], [(8, 7, 0)], [(8, 9, 0)]]
+progress: 1/1
+Spec 36 (UNSAT): 37/90; SAT 14; UNSAT 21; unknown 2; time: 183.290; 125.612; 4647.638
+Box 0 SAT
+progress: 1/1
+Spec 37 (SAT): 38/90; SAT 15; UNSAT 21; unknown 2; time: 0.030; 122.307; 4647.668
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 38 (UNSAT): 39/90; SAT 15; UNSAT 22; unknown 2; time: 0.095; 119.173; 4647.763
+img 0 Verified UNSAT for constraints [[(3, 0, 0)], [(3, 1, 0)], [(3, 2, 0)], [(3, 4, 0)], [(3, 5, 0)], [(3, 6, 0)], [(3, 7, 0)], [(3, 8, 0)], [(3, 9, 0)]]
+progress: 1/1
+Spec 39 (UNSAT): 40/90; SAT 15; UNSAT 23; unknown 2; time: 0.095; 116.196; 4647.858
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 40 (UNSAT): 41/90; SAT 15; UNSAT 24; unknown 2; time: 0.073; 113.364; 4647.931
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -1.2790/-1.2790, Final solve time: 1.861
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-0.2289, Final solve time: 500.004
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 41 (UNKNOWN): 42/90; SAT 15; UNSAT 24; unknown 3; time: 515.351; 122.935; 5163.282
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 42 (UNSAT): 43/90; SAT 15; UNSAT 25; unknown 3; time: 0.101; 120.079; 5163.382
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 43 (UNSAT): 44/90; SAT 15; UNSAT 26; unknown 3; time: 0.096; 117.352; 5163.479
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -38.5140/-38.5140, Final solve time: 5.106
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-29.9594, Final solve time: 500.034
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 44 (UNKNOWN): 45/90; SAT 15; UNSAT 26; unknown 4; time: 531.215; 126.549; 5694.694
+Model status: 2, Obj val/bound for constraint (5, 0, 0): -0.4104/-0.4104, Final solve time: 1.304
+Partial MILP model status: 6, Obj val/bound for constraint (5, 0, 0): inf/0.0100, Final solve time: 43.803
+Model status: 2, Obj val/bound for constraint (5, 1, 0): -0.3402/-0.3402, Final solve time: 1.281
+Partial MILP model status: 6, Obj val/bound for constraint (5, 1, 0): inf/0.0100, Final solve time: 50.458
+Model status: 2, Obj val/bound for constraint (5, 2, 0): -0.4013/-0.4013, Final solve time: 1.245
+Partial MILP model status: 11, Obj val/bound for constraint (5, 2, 0): inf/0.0100, Final solve time: 77.582
+Model status: 2, Obj val/bound for constraint (5, 3, 0): -0.4235/-0.4235, Final solve time: 1.395
+Partial MILP model status: 11, Obj val/bound for constraint (5, 3, 0): inf/0.0100, Final solve time: 94.749
+Model status: 2, Obj val/bound for constraint (5, 4, 0): -0.3348/-0.3348, Final solve time: 1.317
+Partial MILP model status: 6, Obj val/bound for constraint (5, 4, 0): inf/0.0100, Final solve time: 63.510
+Model status: 2, Obj val/bound for constraint (5, 6, 0): -0.9025/-0.9025, Final solve time: 0.991
+Partial MILP model status: 6, Obj val/bound for constraint (5, 6, 0): inf/0.0100, Final solve time: 46.449
+Model status: 2, Obj val/bound for constraint (5, 7, 0): -0.4201/-0.4201, Final solve time: 1.405
+Partial MILP model status: 6, Obj val/bound for constraint (5, 7, 0): inf/0.0100, Final solve time: 75.401
+Model status: 2, Obj val/bound for constraint (5, 8, 0): -1.0410/-1.0410, Final solve time: 1.273
+Partial MILP model status: 6, Obj val/bound for constraint (5, 8, 0): inf/0.0100, Final solve time: 68.764
+Model status: 2, Obj val/bound for constraint (5, 9, 0): -0.3684/-0.3684, Final solve time: 1.277
+Partial MILP model status: 6, Obj val/bound for constraint (5, 9, 0): inf/0.0100, Final solve time: 69.064
+img 0 Verified UNSAT for constraints [[(5, 0, 0)], [(5, 1, 0)], [(5, 2, 0)], [(5, 3, 0)], [(5, 4, 0)], [(5, 6, 0)], [(5, 7, 0)], [(5, 8, 0)], [(5, 9, 0)]]
+progress: 1/1
+Spec 45 (UNSAT): 46/90; SAT 15; UNSAT 27; unknown 4; time: 608.965; 137.036; 6303.659
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 46 (UNSAT): 47/90; SAT 15; UNSAT 28; unknown 4; time: 0.107; 134.123; 6303.766
+Model status: 2, Obj val/bound for constraint (7, 0, 0): -54.9410/-54.9410, Final solve time: 4.749
+Partial MILP model status: 9, Obj val/bound for constraint (7, 0, 0): inf/-46.7505, Final solve time: 500.012
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 47 (UNKNOWN): 48/90; SAT 15; UNSAT 28; unknown 5; time: 531.071; 142.392; 6834.837
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -83.0188/-83.0188, Final solve time: 5.266
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): inf/-69.6890, Final solve time: 500.026
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 48 (UNKNOWN): 49/90; SAT 15; UNSAT 28; unknown 6; time: 532.165; 150.347; 7367.002
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -93.1648/-93.1648, Final solve time: 5.274
+Partial MILP model status: 11, Obj val/bound for constraint (0, 1, 0): -0.9191/-81.8477, Final solve time: 411.107
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 49 (UNKNOWN): 50/90; SAT 15; UNSAT 28; unknown 7; time: 444.556; 156.231; 7811.559
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -126.3602/-126.3602, Final solve time: 6.855
+Partial MILP model status: 9, Obj val/bound for constraint (1, 0, 0): inf/-110.3752, Final solve time: 500.009
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 50 (UNKNOWN): 51/90; SAT 15; UNSAT 28; unknown 8; time: 536.166; 163.681; 8347.725
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -103.2571/-103.2571, Final solve time: 5.608
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-87.2154, Final solve time: 500.009
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 51 (UNKNOWN): 52/90; SAT 15; UNSAT 28; unknown 9; time: 533.535; 170.793; 8881.260
+Box 0 SAT
+progress: 1/1
+Spec 52 (SAT): 53/90; SAT 16; UNSAT 28; unknown 9; time: 0.031; 167.572; 8881.291
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -5.0405/-5.0405, Final solve time: 2.912
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): inf/-3.9101, Final solve time: 500.013
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 53 (UNKNOWN): 54/90; SAT 16; UNSAT 28; unknown 10; time: 519.461; 174.088; 9400.752
+Model status: 2, Obj val/bound for constraint (3, 0, 0): -77.0038/-77.0038, Final solve time: 4.509
+Partial MILP model status: 9, Obj val/bound for constraint (3, 0, 0): inf/-60.1660, Final solve time: 500.023
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 54 (UNKNOWN): 55/90; SAT 16; UNSAT 28; unknown 11; time: 530.573; 180.570; 9931.325
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -0.2275/-0.2275, Final solve time: 1.016
+Partial MILP model status: 6, Obj val/bound for constraint (2, 0, 0): inf/0.0100, Final solve time: 25.520
+Model status: 2, Obj val/bound for constraint (2, 1, 0): -0.2144/-0.2144, Final solve time: 0.831
+Partial MILP model status: 6, Obj val/bound for constraint (2, 1, 0): inf/0.0100, Final solve time: 18.124
+Model status: 2, Obj val/bound for constraint (2, 3, 0): -0.4026/-0.4026, Final solve time: 0.860
+Partial MILP model status: 6, Obj val/bound for constraint (2, 3, 0): inf/0.0100, Final solve time: 40.738
+Model status: 2, Obj val/bound for constraint (2, 4, 0): -0.2146/-0.2146, Final solve time: 0.876
+Partial MILP model status: 6, Obj val/bound for constraint (2, 4, 0): inf/0.0100, Final solve time: 28.430
+Model status: 2, Obj val/bound for constraint (2, 5, 0): -0.2585/-0.2585, Final solve time: 0.823
+Partial MILP model status: 6, Obj val/bound for constraint (2, 5, 0): inf/0.0100, Final solve time: 21.737
+Model status: 2, Obj val/bound for constraint (2, 6, 0): -0.2239/-0.2239, Final solve time: 0.820
+Partial MILP model status: 6, Obj val/bound for constraint (2, 6, 0): inf/0.0100, Final solve time: 17.867
+Model status: 2, Obj val/bound for constraint (2, 7, 0): -0.1806/-0.1806, Final solve time: 0.900
+Partial MILP model status: 6, Obj val/bound for constraint (2, 7, 0): inf/0.0100, Final solve time: 24.781
+Model status: 2, Obj val/bound for constraint (2, 8, 0): -0.7946/-0.7946, Final solve time: 0.779
+Partial MILP model status: 6, Obj val/bound for constraint (2, 8, 0): inf/0.0100, Final solve time: 22.703
+Model status: 2, Obj val/bound for constraint (2, 9, 0): -0.2505/-0.2505, Final solve time: 0.861
+Partial MILP model status: 6, Obj val/bound for constraint (2, 9, 0): inf/0.0100, Final solve time: 27.604
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 55 (UNSAT): 56/90; SAT 16; UNSAT 29; unknown 11; time: 242.252; 181.671; 10173.577
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -143.6252/-143.6252, Final solve time: 7.274
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-126.2128, Final solve time: 500.003
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 56 (UNKNOWN): 57/90; SAT 16; UNSAT 29; unknown 12; time: 538.131; 187.925; 10711.708
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 57 (UNSAT): 58/90; SAT 16; UNSAT 30; unknown 12; time: 0.104; 184.686; 10711.812
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -1.7085/-1.7085, Final solve time: 2.503
+Partial MILP model status: 9, Obj val/bound for constraint (0, 1, 0): inf/-1.1125, Final solve time: 500.004
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 58 (UNKNOWN): 59/90; SAT 16; UNSAT 30; unknown 13; time: 517.648; 190.330; 11229.460
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -203.5515/-203.5515, Final solve time: 7.572
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-182.5315, Final solve time: 500.006
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 59 (UNKNOWN): 60/90; SAT 16; UNSAT 30; unknown 14; time: 538.878; 196.139; 11768.338
+img 0 Verified UNSAT for constraints [[(5, 0, 0)], [(5, 1, 0)], [(5, 2, 0)], [(5, 3, 0)], [(5, 4, 0)], [(5, 6, 0)], [(5, 7, 0)], [(5, 8, 0)], [(5, 9, 0)]]
+progress: 1/1
+Spec 60 (UNSAT): 61/90; SAT 16; UNSAT 31; unknown 14; time: 0.170; 192.926; 11768.508
+img 0 Verified UNSAT for constraints [[(6, 0, 0)], [(6, 1, 0)], [(6, 2, 0)], [(6, 3, 0)], [(6, 4, 0)], [(6, 5, 0)], [(6, 7, 0)], [(6, 8, 0)], [(6, 9, 0)]]
+progress: 1/1
+Spec 61 (UNSAT): 62/90; SAT 16; UNSAT 32; unknown 14; time: 0.141; 189.817; 11768.648
+Model status: 2, Obj val/bound for constraint (7, 0, 0): -9.4293/-9.4293, Final solve time: 2.783
+Partial MILP model status: 9, Obj val/bound for constraint (7, 0, 0): inf/-7.4577, Final solve time: 500.013
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 62 (UNKNOWN): 63/90; SAT 16; UNSAT 32; unknown 15; time: 525.291; 195.142; 12293.939
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -56.5740/-56.5740, Final solve time: 4.473
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): inf/-46.0768, Final solve time: 500.027
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 63 (UNKNOWN): 64/90; SAT 16; UNSAT 32; unknown 16; time: 535.491; 200.460; 12829.430
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -1176.6680/-1176.6680, Final solve time: 8.856
+Partial MILP model status: 9, Obj val/bound for constraint (0, 1, 0): inf/-1103.1260, Final solve time: 500.026
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 64 (UNKNOWN): 65/90; SAT 16; UNSAT 32; unknown 17; time: 552.718; 205.879; 13382.148
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -299.5488/-299.5488, Final solve time: 6.443
+Partial MILP model status: 11, Obj val/bound for constraint (1, 0, 0): -0.1022/-274.1983, Final solve time: 373.445
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 65 (UNKNOWN): 66/90; SAT 16; UNSAT 32; unknown 18; time: 419.788; 209.120; 13801.936
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -674.9830/-674.9830, Final solve time: 8.926
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-646.4366, Final solve time: 500.005
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 66 (UNKNOWN): 67/90; SAT 16; UNSAT 32; unknown 19; time: 552.820; 214.250; 14354.756
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -1033.7000/-1033.7000, Final solve time: 10.590
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-1033.7000, Final solve time: 500.002
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 67 (UNKNOWN): 68/90; SAT 16; UNSAT 32; unknown 20; time: 558.543; 219.313; 14913.299
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 68 (UNSAT): 69/90; SAT 16; UNSAT 33; unknown 20; time: 0.179; 216.137; 14913.477
+img 0 Verified UNSAT for constraints [[(3, 0, 0)], [(3, 1, 0)], [(3, 2, 0)], [(3, 4, 0)], [(3, 5, 0)], [(3, 6, 0)], [(3, 7, 0)], [(3, 8, 0)], [(3, 9, 0)]]
+progress: 1/1
+Spec 69 (UNSAT): 70/90; SAT 16; UNSAT 34; unknown 20; time: 0.153; 213.052; 14913.630
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 70 (UNSAT): 71/90; SAT 16; UNSAT 35; unknown 20; time: 0.129; 210.053; 14913.760
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -596.3367/-596.3367, Final solve time: 8.486
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-574.4698, Final solve time: 500.012
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 71 (UNKNOWN): 72/90; SAT 16; UNSAT 35; unknown 21; time: 550.622; 214.783; 15464.382
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 72 (UNSAT): 73/90; SAT 16; UNSAT 36; unknown 21; time: 0.155; 211.843; 15464.537
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 73 (UNSAT): 74/90; SAT 16; UNSAT 37; unknown 21; time: 0.155; 208.982; 15464.692
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -1915.7252/-1915.7252, Final solve time: 12.358
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-1915.7252, Final solve time: 500.011
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 74 (UNKNOWN): 75/90; SAT 16; UNSAT 37; unknown 22; time: 562.878; 213.701; 16027.570
+Model status: 2, Obj val/bound for constraint (5, 0, 0): -1211.1092/-1211.1092, Final solve time: 8.792
+Partial MILP model status: 9, Obj val/bound for constraint (5, 0, 0): inf/-1156.9838, Final solve time: 500.007
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 75 (UNKNOWN): 76/90; SAT 16; UNSAT 37; unknown 23; time: 551.875; 218.151; 16579.445
+Model status: 2, Obj val/bound for constraint (6, 0, 0): -1131.8452/-1131.8452, Final solve time: 8.657
+Partial MILP model status: 9, Obj val/bound for constraint (6, 0, 0): inf/-1069.9080, Final solve time: 500.008
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 76 (UNKNOWN): 77/90; SAT 16; UNSAT 37; unknown 24; time: 552.685; 222.495; 17132.131
+Model status: 2, Obj val/bound for constraint (7, 0, 0): -1768.3440/-1768.3440, Final solve time: 10.174
+Partial MILP model status: 9, Obj val/bound for constraint (7, 0, 0): inf/-1768.3440, Final solve time: 500.011
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 77 (UNKNOWN): 78/90; SAT 16; UNSAT 37; unknown 25; time: 556.969; 226.783; 17689.099
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -3811.1123/-3811.1123, Final solve time: 14.523
+Partial MILP model status: 9, Obj val/bound for constraint (2, 0, 0): inf/-3811.1123, Final solve time: 500.006
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 78 (UNKNOWN): 79/90; SAT 16; UNSAT 37; unknown 26; time: 565.351; 231.069; 18254.450
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -9845.2055/-9845.2055, Final solve time: 15.002
+Partial MILP model status: 9, Obj val/bound for constraint (0, 1, 0): inf/-9845.2055, Final solve time: 500.006
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 79 (UNKNOWN): 80/90; SAT 16; UNSAT 37; unknown 27; time: 567.404; 235.273; 18821.854
+Model status: 2, Obj val/bound for constraint (1, 0, 0): -4306.2765/-4306.2765, Final solve time: 22.298
+Partial MILP model status: 9, Obj val/bound for constraint (1, 0, 0): inf/-4306.2765, Final solve time: 500.002
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 80 (UNKNOWN): 81/90; SAT 16; UNSAT 37; unknown 28; time: 574.186; 239.457; 19396.040
+Model status: 2, Obj val/bound for constraint (8, 0, 0): -4174.3292/-4174.3292, Final solve time: 17.906
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-4174.3292, Final solve time: 500.006
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 81 (UNKNOWN): 82/90; SAT 16; UNSAT 37; unknown 29; time: 569.838; 243.486; 19965.878
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -4548.7115/-4548.7115, Final solve time: 17.740
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-4548.7115, Final solve time: 500.012
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 82 (UNKNOWN): 83/90; SAT 16; UNSAT 37; unknown 30; time: 570.332; 247.424; 20536.210
+Model status: 2, Obj val/bound for constraint (2, 0, 0): -686.3983/-686.3983, Final solve time: 6.924
+Partial MILP model status: 11, Obj val/bound for constraint (2, 0, 0): -0.0308/-634.2055, Final solve time: 406.831
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 83 (UNKNOWN): 84/90; SAT 16; UNSAT 37; unknown 31; time: 455.107; 249.897; 20991.317
+Model status: 2, Obj val/bound for constraint (3, 0, 0): -1321.6017/-1321.6017, Final solve time: 8.722
+Partial MILP model status: 9, Obj val/bound for constraint (3, 0, 0): inf/-1246.6658, Final solve time: 500.013
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 84 (UNKNOWN): 85/90; SAT 16; UNSAT 37; unknown 32; time: 552.684; 253.459; 21544.001
+img 0 Verified UNSAT for constraints [[(2, 0, 0)], [(2, 1, 0)], [(2, 3, 0)], [(2, 4, 0)], [(2, 5, 0)], [(2, 6, 0)], [(2, 7, 0)], [(2, 8, 0)], [(2, 9, 0)]]
+progress: 1/1
+Spec 85 (UNSAT): 86/90; SAT 16; UNSAT 38; unknown 32; time: 0.186; 250.514; 21544.187
+Model status: 2, Obj val/bound for constraint (9, 0, 0): -5350.1532/-5350.1532, Final solve time: 19.827
+Partial MILP model status: 9, Obj val/bound for constraint (9, 0, 0): inf/-5350.1532, Final solve time: 500.003
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 86 (UNKNOWN): 87/90; SAT 16; UNSAT 38; unknown 33; time: 573.861; 254.230; 22118.048
+img 0 Verified UNSAT for constraints [[(0, 1, 0)], [(0, 2, 0)], [(0, 3, 0)], [(0, 4, 0)], [(0, 5, 0)], [(0, 6, 0)], [(0, 7, 0)], [(0, 8, 0)], [(0, 9, 0)]]
+progress: 1/1
+Spec 87 (UNSAT): 88/90; SAT 16; UNSAT 39; unknown 33; time: 0.188; 251.344; 22118.236
+Model status: 2, Obj val/bound for constraint (0, 1, 0): -3478.2113/-3478.2113, Final solve time: 18.361
+Partial MILP model status: 9, Obj val/bound for constraint (0, 1, 0): inf/-3478.2113, Final solve time: 500.017
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 88 (UNKNOWN): 89/90; SAT 16; UNSAT 39; unknown 34; time: 567.590; 254.897; 22685.827
+Model status: 9, Obj val/bound for constraint (8, 0, 0): 0.0000/failed, Final solve time: 100.018
+Partial MILP model status: 9, Obj val/bound for constraint (8, 0, 0): inf/-8101.5725, Final solve time: 500.026
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 89 (UNKNOWN): 90/90; SAT 16; UNSAT 39; unknown 35; time: 655.403; 259.347; 23341.230
+
+Process finished with exit code 0

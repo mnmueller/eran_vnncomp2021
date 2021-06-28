@@ -1,0 +1,489 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --netname ../nets/DAVE/DAVE_NVIDIA_4_PGD.onnx --domain refinegpupoly --epsilon 0.00392156862 --epsilon_y 0.0 --regression True --from_test 0 --num_test 100 --k 3 --s -2 --sparse_n 10 --timeout_milp 10 --timeout_lp 10 --timeout_final_lp 200 --max_gpu_batch 200 --debug
+2021-04-06 18:57:36.386505: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+GPUPoly 0.11.0S Debug (built Apr  3 2021 10:38:48) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+2021-04-06 18:57:37.307180: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-06 18:57:37.346047: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-06 18:57:37.347248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.56GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-04-06 18:57:37.347311: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-06 18:57:37.347436: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-06 18:57:37.347515: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-04-06 18:57:37.350706: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-06 18:57:37.351435: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-06 18:57:37.359029: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-06 18:57:37.360347: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-04-06 18:57:37.360677: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-06 18:57:37.360860: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-06 18:57:37.361763: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-06 18:57:37.362527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-04-06 18:57:37.362589: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-06 18:57:37.680171: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-06 18:57:37.680230: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0
+2021-04-06 18:57:37.680235: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N
+2021-04-06 18:57:37.680405: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-06 18:57:37.680721: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-06 18:57:37.680955: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:941] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-04-06 18:57:37.681170: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6282 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+2021-04-06 18:57:37.681407: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+{'approx_k': True,
+ 'complete': False,
+ 'debug': True,
+ 'domain': 'refinegpupoly',
+ 'epsilon': 0.00392156862,
+ 'epsilon_y': 0.0,
+ 'from_test': 0,
+ 'k': 3,
+ 'max_gpu_batch': 200,
+ 'max_milp_neurons': 30,
+ 'n_milp_refine': 1,
+ 'netname': '../nets/DAVE/DAVE_NVIDIA_4_PGD.onnx',
+ 'num_tests': 100,
+ 'partial_milp': 0,
+ 'refine_neurons': False,
+ 'regression': True,
+ 's': -2,
+ 'sparse_n': 10,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 200.0,
+ 'timeout_final_milp': 100,
+ 'timeout_lp': 10.0,
+ 'timeout_milp': 10.0}
+Final Tanh layer omitted
+krelu: n 10 split_zero 4692 after cutoff 0 number of args 4692
+krelu: n 10 split_zero 770 after cutoff 0 number of args 770
+krelu: n 10 split_zero 110 after cutoff 11 number of args 121
+krelu: n 10 split_zero 121 after cutoff 20 number of args 141
+krelu: n 10 split_zero 43 after cutoff 3 number of args 44
+krelu: n 10 split_zero 4 after cutoff 2 number of args 5
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+
+--------------------------------------------
+Warning: your license will expire in 3 days
+--------------------------------------------
+
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Model status: 2, Obj val/bound for constraint (0, -1, 0.005348891198304542): 0.0214/0.0214, Final solve time: 46.978
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.005348891198304542): 0.0000/-inf, Final solve time: 200.020
+img 0 has natural MSE: 8.6263e-04 and certified MSE: 1.4923e-03
+progress: 1/100,nat MSE:  8.6263e-04/8.6263e-04,cert MSE: 1.4923e-03/1.4923e-03,time: 315.200; 315.200; 315.200
+krelu: n 10 split_zero 4781 after cutoff 0 number of args 4781
+krelu: n 10 split_zero 791 after cutoff 0 number of args 791
+krelu: n 10 split_zero 93 after cutoff 7 number of args 100
+krelu: n 10 split_zero 112 after cutoff 7 number of args 119
+krelu: n 10 split_zero 32 after cutoff 2 number of args 33
+krelu: n 10 split_zero 6 after cutoff 6 number of args 10
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0045252146461053295): 0.0099/0.0099, Final solve time: 49.290
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0045252146461053295): 0.0000/-inf, Final solve time: 200.007
+img 1 has natural MSE: 4.7079e-04 and certified MSE: 1.2959e-03
+progress: 2/100,nat MSE:  6.6671e-04/6.6671e-04,cert MSE: 1.3941e-03/1.3941e-03,time: 315.959; 315.579; 631.158
+krelu: n 10 split_zero 4493 after cutoff 0 number of args 4493
+krelu: n 10 split_zero 732 after cutoff 0 number of args 732
+krelu: n 10 split_zero 101 after cutoff 3 number of args 102
+krelu: n 10 split_zero 107 after cutoff 1 number of args 108
+krelu: n 10 split_zero 34 after cutoff 1 number of args 35
+krelu: n 10 split_zero 5 after cutoff 4 number of args 6
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0018443223065737046): -0.0143/-0.0143, Final solve time: 42.566
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0018443223065737046): 0.0000/-inf, Final solve time: 200.009
+img 2 has natural MSE: 2.1637e-07 and certified MSE: 2.5942e-04
+progress: 3/100,nat MSE:  4.7079e-04/4.4454e-04,cert MSE: 1.2959e-03/1.0159e-03,time: 307.643; 312.934; 938.802
+krelu: n 10 split_zero 4315 after cutoff 0 number of args 4315
+krelu: n 10 split_zero 730 after cutoff 0 number of args 730
+krelu: n 10 split_zero 101 after cutoff 5 number of args 103
+krelu: n 10 split_zero 101 after cutoff 3 number of args 102
+krelu: n 10 split_zero 31 after cutoff 2 number of args 32
+krelu: n 10 split_zero 6 after cutoff 4 number of args 7
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, -0.00037374355544965887): -0.0443/-0.0443, Final solve time: 46.143
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.00037374355544965887): 0.0000/-inf, Final solve time: 200.010
+img 3 has natural MSE: 3.7746e-04 and certified MSE: 1.9587e-03
+progress: 4/100,nat MSE:  4.2413e-04/4.2777e-04,cert MSE: 1.3941e-03/1.2516e-03,time: 310.134; 312.234; 1248.936
+krelu: n 10 split_zero 4234 after cutoff 0 number of args 4234
+krelu: n 10 split_zero 724 after cutoff 0 number of args 724
+krelu: n 10 split_zero 100 after cutoff 4 number of args 101
+krelu: n 10 split_zero 100 after cutoff 5 number of args 102
+krelu: n 10 split_zero 33 after cutoff 1 number of args 34
+krelu: n 10 split_zero 7 after cutoff 4 number of args 8
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, -0.0026005367072419105): -0.0552/-0.0552, Final solve time: 46.962
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.0026005367072419105): 0.0000/-inf, Final solve time: 200.001
+img 4 has natural MSE: 6.4676e-04 and certified MSE: 3.0370e-03
+progress: 5/100,nat MSE:  4.7079e-04/4.7157e-04,cert MSE: 1.4923e-03/1.6087e-03,time: 310.637; 311.915; 1559.573
+krelu: n 10 split_zero 3976 after cutoff 0 number of args 3976
+krelu: n 10 split_zero 656 after cutoff 0 number of args 656
+krelu: n 10 split_zero 101 after cutoff 6 number of args 105
+krelu: n 10 split_zero 105 after cutoff 2 number of args 106
+krelu: n 10 split_zero 34 after cutoff 1 number of args 35
+krelu: n 10 split_zero 6 after cutoff 5 number of args 8
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, -0.004354574294124056): -0.0608/-0.0608, Final solve time: 45.806
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.004354574294124056): 0.0000/-inf, Final solve time: 200.021
+img 5 has natural MSE: 9.6457e-04 and certified MSE: 3.6878e-03
+progress: 6/100,nat MSE:  5.5878e-04/5.5374e-04,cert MSE: 1.7255e-03/1.9552e-03,time: 309.212; 311.464; 1868.784
+krelu: n 10 split_zero 3780 after cutoff 0 number of args 3780
+krelu: n 10 split_zero 672 after cutoff 0 number of args 672
+krelu: n 10 split_zero 115 after cutoff 5 number of args 117
+krelu: n 10 split_zero 108 after cutoff 2 number of args 109
+krelu: n 10 split_zero 31 after cutoff 2 number of args 32
+krelu: n 10 split_zero 6 after cutoff 4 number of args 7
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): -0.0619/-0.0619, Final solve time: 55.178
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.005000000257717349): 0.0000/-inf, Final solve time: 200.006
+img 6 has natural MSE: 7.3778e-04 and certified MSE: 3.8227e-03
+progress: 7/100,nat MSE:  6.4676e-04/5.8003e-04,cert MSE: 1.9587e-03/2.2220e-03,time: 317.931; 312.388; 2186.715
+krelu: n 10 split_zero 3731 after cutoff 0 number of args 3731
+krelu: n 10 split_zero 747 after cutoff 0 number of args 747
+krelu: n 10 split_zero 120 after cutoff 3 number of args 121
+krelu: n 10 split_zero 87 after cutoff 2 number of args 88
+krelu: n 10 split_zero 31 after cutoff 1 number of args 32
+krelu: n 10 split_zero 3 after cutoff 3 number of args 4
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): -0.0751/-0.0751, Final solve time: 53.923
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.005000000257717349): 0.0000/-inf, Final solve time: 200.007
+img 7 has natural MSE: 1.4284e-03 and certified MSE: 5.6172e-03
+progress: 8/100,nat MSE:  6.9227e-04/6.8608e-04,cert MSE: 2.4979e-03/2.6464e-03,time: 316.925; 312.955; 2503.640
+krelu: n 10 split_zero 3812 after cutoff 0 number of args 3812
+krelu: n 10 split_zero 684 after cutoff 0 number of args 684
+krelu: n 10 split_zero 115 after cutoff 6 number of args 119
+krelu: n 10 split_zero 92 after cutoff 2 number of args 93
+krelu: n 10 split_zero 36 after cutoff 1 number of args 37
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): -0.0817/-0.0817, Final solve time: 106.119
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.005000000257717349): 0.0000/-inf, Final solve time: 200.021
+img 8 has natural MSE: 1.9508e-03 and certified MSE: 6.6431e-03
+progress: 9/100,nat MSE:  7.3778e-04/8.2660e-04,cert MSE: 3.0370e-03/3.0905e-03,time: 369.182; 319.202; 2872.822
+krelu: n 10 split_zero 3977 after cutoff 0 number of args 3977
+krelu: n 10 split_zero 695 after cutoff 0 number of args 695
+krelu: n 10 split_zero 105 after cutoff 7 number of args 112
+krelu: n 10 split_zero 94 after cutoff 1 number of args 95
+krelu: n 10 split_zero 32 after cutoff 0 number of args 32
+krelu: n 10 split_zero 3 after cutoff 1 number of args 4
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): -0.0076/-0.0076, Final solve time: 40.871
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.005000000257717349): 0.0000/-inf, Final solve time: 200.000
+img 9 has natural MSE: 9.5899e-04 and certified MSE: 4.5424e-03
+progress: 10/100,nat MSE:  8.0020e-04/8.3984e-04,cert MSE: 3.3624e-03/3.2356e-03,time: 304.708; 317.753; 3177.530
+krelu: n 10 split_zero 4031 after cutoff 0 number of args 4031
+krelu: n 10 split_zero 684 after cutoff 0 number of args 684
+krelu: n 10 split_zero 97 after cutoff 5 number of args 99
+krelu: n 10 split_zero 86 after cutoff 3 number of args 87
+krelu: n 10 split_zero 24 after cutoff 1 number of args 25
+krelu: n 10 split_zero 4 after cutoff 3 number of args 5
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): 0.0300/0.0300, Final solve time: 47.222
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.005000000257717349): 0.0000/-inf, Final solve time: 200.005
+img 10 has natural MSE: 2.5228e-03 and certified MSE: 3.5299e-03
+progress: 11/100,nat MSE:  8.6263e-04/9.9284e-04,cert MSE: 3.5299e-03/3.2624e-03,time: 310.067; 317.054; 3487.597
+krelu: n 10 split_zero 4039 after cutoff 0 number of args 4039
+krelu: n 10 split_zero 617 after cutoff 0 number of args 617
+krelu: n 10 split_zero 95 after cutoff 4 number of args 96
+krelu: n 10 split_zero 86 after cutoff 3 number of args 87
+krelu: n 10 split_zero 23 after cutoff 0 number of args 23
+krelu: n 10 split_zero 3 after cutoff 1 number of args 4
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): 0.0529/0.0529, Final solve time: 42.127
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.005000000257717349): -0.0645/-0.0645, Final solve time: 98.869
+img 11 has natural MSE: 3.5441e-03 and certified MSE: 4.1487e-03
+progress: 12/100,nat MSE:  9.1081e-04/1.2054e-03,cert MSE: 3.6089e-03/3.3363e-03,time: 203.404; 307.583; 3691.001
+krelu: n 10 split_zero 3922 after cutoff 0 number of args 3922
+krelu: n 10 split_zero 603 after cutoff 0 number of args 603
+krelu: n 10 split_zero 92 after cutoff 3 number of args 93
+krelu: n 10 split_zero 77 after cutoff 3 number of args 78
+krelu: n 10 split_zero 23 after cutoff 0 number of args 23
+krelu: n 10 split_zero 3 after cutoff 0 number of args 3
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, -0.005000000257717349): 0.0625/0.0625, Final solve time: 39.568
+Model status: 9, Obj val/bound for constraint (-1, 0, -0.005000000257717349): 0.0000/-inf, Final solve time: 200.004
+img 12 has natural MSE: 4.7066e-03 and certified MSE: 5.5469e-03
+progress: 13/100,nat MSE:  9.5899e-04/1.4748e-03,cert MSE: 3.6878e-03/3.5063e-03,time: 301.451; 307.112; 3992.453
+krelu: n 10 split_zero 3834 after cutoff 0 number of args 3834
+krelu: n 10 split_zero 621 after cutoff 0 number of args 621
+krelu: n 10 split_zero 92 after cutoff 2 number of args 93
+krelu: n 10 split_zero 78 after cutoff 4 number of args 79
+krelu: n 10 split_zero 24 after cutoff 0 number of args 24
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.003998162894162644): 0.0610/0.0610, Final solve time: 38.138
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.003998162894162644): -0.0731/-0.0731, Final solve time: 136.977
+img 13 has natural MSE: 4.4091e-03 and certified MSE: 5.3273e-03
+progress: 14/100,nat MSE:  9.6178e-04/1.6844e-03,cert MSE: 3.7552e-03/3.6364e-03,time: 237.224; 302.120; 4229.676
+krelu: n 10 split_zero 3863 after cutoff 0 number of args 3863
+krelu: n 10 split_zero 632 after cutoff 0 number of args 632
+krelu: n 10 split_zero 107 after cutoff 4 number of args 108
+krelu: n 10 split_zero 85 after cutoff 4 number of args 86
+krelu: n 10 split_zero 22 after cutoff 0 number of args 22
+krelu: n 10 split_zero 2 after cutoff 1 number of args 3
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, -0.0024426304767254377): 0.0585/0.0585, Final solve time: 39.150
+Model status: 2, Obj val/bound for constraint (-1, 0, -0.0024426304767254377): -0.0696/-0.0696, Final solve time: 119.421
+img 14 has natural MSE: 4.0197e-03 and certified MSE: 4.8302e-03
+progress: 15/100,nat MSE:  9.6457e-04/1.8401e-03,cert MSE: 3.8227e-03/3.7160e-03,time: 220.951; 296.708; 4450.627
+krelu: n 10 split_zero 3995 after cutoff 0 number of args 3995
+krelu: n 10 split_zero 646 after cutoff 0 number of args 646
+krelu: n 10 split_zero 90 after cutoff 5 number of args 92
+krelu: n 10 split_zero 84 after cutoff 3 number of args 85
+krelu: n 10 split_zero 32 after cutoff 0 number of args 32
+krelu: n 10 split_zero 2 after cutoff 1 number of args 3
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0003269109036740826): 0.0524/0.0524, Final solve time: 47.080
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0003269109036740826): -0.0628/-0.0628, Final solve time: 144.772
+img 15 has natural MSE: 3.2882e-03 and certified MSE: 3.9308e-03
+progress: 16/100,nat MSE:  1.1965e-03/1.9306e-03,cert MSE: 3.8767e-03/3.7294e-03,time: 254.527; 294.072; 4705.154
+krelu: n 10 split_zero 3956 after cutoff 0 number of args 3956
+krelu: n 10 split_zero 622 after cutoff 0 number of args 622
+krelu: n 10 split_zero 97 after cutoff 9 number of args 105
+krelu: n 10 split_zero 97 after cutoff 1 number of args 98
+krelu: n 10 split_zero 22 after cutoff 0 number of args 22
+krelu: n 10 split_zero 1 after cutoff 1 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0016666666537560554): 0.0461/0.0461, Final solve time: 36.632
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0016666666537560554): -0.0561/-0.0561, Final solve time: 105.915
+img 16 has natural MSE: 2.5845e-03 and certified MSE: 3.1448e-03
+progress: 17/100,nat MSE:  1.4284e-03/1.9690e-03,cert MSE: 3.8227e-03/3.6950e-03,time: 205.741; 288.876; 4910.895
+krelu: n 10 split_zero 3941 after cutoff 0 number of args 3941
+krelu: n 10 split_zero 632 after cutoff 0 number of args 632
+krelu: n 10 split_zero 104 after cutoff 7 number of args 111
+krelu: n 10 split_zero 100 after cutoff 1 number of args 101
+krelu: n 10 split_zero 22 after cutoff 0 number of args 22
+krelu: n 10 split_zero 1 after cutoff 1 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0012274740153595312): 0.0447/0.0447, Final solve time: 36.021
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0012274740153595312): -0.0543/-0.0543, Final solve time: 133.987
+img 17 has natural MSE: 2.4217e-03 and certified MSE: 2.9473e-03
+progress: 18/100,nat MSE:  1.6896e-03/1.9942e-03,cert MSE: 3.7552e-03/3.6535e-03,time: 233.406; 285.795; 5144.301
+krelu: n 10 split_zero 3919 after cutoff 0 number of args 3919
+krelu: n 10 split_zero 663 after cutoff 0 number of args 663
+krelu: n 10 split_zero 119 after cutoff 5 number of args 121
+krelu: n 10 split_zero 83 after cutoff 2 number of args 84
+krelu: n 10 split_zero 28 after cutoff 1 number of args 29
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0009540281523779505): 0.0487/0.0487, Final solve time: 37.544
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0009540281523779505): -0.0585/-0.0585, Final solve time: 102.318
+img 18 has natural MSE: 2.8820e-03 and certified MSE: 3.4163e-03
+progress: 19/100,nat MSE:  1.9508e-03/2.0409e-03,cert MSE: 3.6878e-03/3.6410e-03,time: 202.579; 281.415; 5346.881
+krelu: n 10 split_zero 3788 after cutoff 0 number of args 3788
+krelu: n 10 split_zero 662 after cutoff 0 number of args 662
+krelu: n 10 split_zero 135 after cutoff 5 number of args 137
+krelu: n 10 split_zero 90 after cutoff 3 number of args 91
+krelu: n 10 split_zero 28 after cutoff 1 number of args 29
+krelu: n 10 split_zero 1 after cutoff 1 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): 0.0518/0.0518, Final solve time: 43.236
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): -0.0622/-0.0622, Final solve time: 151.826
+img 19 has natural MSE: 3.2307e-03 and certified MSE: 3.8539e-03
+progress: 20/100,nat MSE:  2.1862e-03/2.1004e-03,cert MSE: 3.7552e-03/3.6516e-03,time: 257.878; 280.238; 5604.758
+krelu: n 10 split_zero 3847 after cutoff 0 number of args 3847
+krelu: n 10 split_zero 642 after cutoff 0 number of args 642
+krelu: n 10 split_zero 140 after cutoff 10 number of args 150
+krelu: n 10 split_zero 77 after cutoff 1 number of args 78
+krelu: n 10 split_zero 29 after cutoff 1 number of args 30
+krelu: n 10 split_zero 1 after cutoff 1 number of args 2
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): 0.0562/0.0562, Final solve time: 38.317
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): -0.0643/-0.0643, Final solve time: 191.956
+img 20 has natural MSE: 3.7056e-03 and certified MSE: 4.1208e-03
+progress: 21/100,nat MSE:  2.4217e-03/2.1768e-03,cert MSE: 3.8227e-03/3.6740e-03,time: 294.126; 280.899; 5898.884
+krelu: n 10 split_zero 3792 after cutoff 0 number of args 3792
+krelu: n 10 split_zero 685 after cutoff 0 number of args 685
+krelu: n 10 split_zero 134 after cutoff 4 number of args 135
+krelu: n 10 split_zero 98 after cutoff 4 number of args 99
+krelu: n 10 split_zero 32 after cutoff 2 number of args 33
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0011111111025040369): 0.0580/0.0580, Final solve time: 40.847
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0011111111025040369): -0.0646/-0.0646, Final solve time: 120.134
+img 21 has natural MSE: 3.7547e-03 and certified MSE: 4.1658e-03
+progress: 22/100,nat MSE:  2.4722e-03/2.2486e-03,cert MSE: 3.8383e-03/3.6963e-03,time: 224.017; 278.314; 6122.901
+krelu: n 10 split_zero 3833 after cutoff 0 number of args 3833
+krelu: n 10 split_zero 655 after cutoff 0 number of args 655
+krelu: n 10 split_zero 144 after cutoff 7 number of args 151
+krelu: n 10 split_zero 89 after cutoff 4 number of args 90
+krelu: n 10 split_zero 34 after cutoff 1 number of args 35
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0011111111025040369): 0.0514/0.0514, Final solve time: 37.940
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0011111111025040369): 0.0000/-inf, Final solve time: 200.186
+img 22 has natural MSE: 3.1966e-03 and certified MSE: 3.8815e-03
+progress: 23/100,nat MSE:  2.5228e-03/2.2898e-03,cert MSE: 3.8539e-03/3.7044e-03,time: 302.216; 279.353; 6425.118
+krelu: n 10 split_zero 3681 after cutoff 0 number of args 3681
+krelu: n 10 split_zero 616 after cutoff 0 number of args 616
+krelu: n 10 split_zero 127 after cutoff 5 number of args 129
+krelu: n 10 split_zero 102 after cutoff 4 number of args 103
+krelu: n 10 split_zero 32 after cutoff 0 number of args 32
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0011111111025040369): 0.0487/0.0487, Final solve time: 47.712
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0011111111025040369): -0.0588/-0.0588, Final solve time: 178.601
+img 23 has natural MSE: 2.8402e-03 and certified MSE: 3.4505e-03
+progress: 24/100,nat MSE:  2.5536e-03/2.3127e-03,cert MSE: 3.8383e-03/3.6938e-03,time: 289.152; 279.761; 6714.269
+krelu: n 10 split_zero 3683 after cutoff 0 number of args 3683
+krelu: n 10 split_zero 643 after cutoff 0 number of args 643
+krelu: n 10 split_zero 138 after cutoff 6 number of args 142
+krelu: n 10 split_zero 87 after cutoff 4 number of args 88
+krelu: n 10 split_zero 28 after cutoff 2 number of args 29
+krelu: n 10 split_zero 1 after cutoff 1 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0011111111025040369): 0.0409/0.0409, Final solve time: 42.430
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0011111111025040369): 0.0000/-inf, Final solve time: 200.002
+img 24 has natural MSE: 2.1368e-03 and certified MSE: 2.7359e-03
+progress: 25/100,nat MSE:  2.5228e-03/2.3057e-03,cert MSE: 3.8227e-03/3.6555e-03,time: 305.360; 280.785; 7019.629
+krelu: n 10 split_zero 3810 after cutoff 0 number of args 3810
+krelu: n 10 split_zero 686 after cutoff 0 number of args 686
+krelu: n 10 split_zero 150 after cutoff 5 number of args 152
+krelu: n 10 split_zero 103 after cutoff 0 number of args 103
+krelu: n 10 split_zero 33 after cutoff 1 number of args 34
+krelu: n 10 split_zero 3 after cutoff 2 number of args 4
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0011111111025040369): 0.0274/0.0274, Final solve time: 76.686
+Model status: 2, Obj val/bound for constraint (-1, 0, 0.0011111111025040369): -0.0459/-0.0459, Final solve time: 193.224
+img 25 has natural MSE: 1.4352e-03 and certified MSE: 2.1055e-03
+progress: 26/100,nat MSE:  2.4722e-03/2.2722e-03,cert MSE: 3.7552e-03/3.5959e-03,time: 333.746; 282.822; 7353.375
+krelu: n 10 split_zero 3706 after cutoff 0 number of args 3706
+krelu: n 10 split_zero 658 after cutoff 0 number of args 658
+krelu: n 10 split_zero 157 after cutoff 3 number of args 158
+krelu: n 10 split_zero 115 after cutoff 1 number of args 116
+krelu: n 10 split_zero 38 after cutoff 1 number of args 39
+krelu: n 10 split_zero 2 after cutoff 2 number of args 3
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): 0.0221/0.0221, Final solve time: 38.949
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.005
+img 26 has natural MSE: 1.1239e-03 and certified MSE: 1.9428e-03
+progress: 27/100,nat MSE:  2.4217e-03/2.2297e-03,cert MSE: 3.6878e-03/3.5346e-03,time: 302.837; 283.563; 7656.212
+krelu: n 10 split_zero 3674 after cutoff 0 number of args 3674
+krelu: n 10 split_zero 691 after cutoff 0 number of args 691
+krelu: n 10 split_zero 139 after cutoff 7 number of args 146
+krelu: n 10 split_zero 126 after cutoff 3 number of args 127
+krelu: n 10 split_zero 35 after cutoff 3 number of args 36
+krelu: n 10 split_zero 2 after cutoff 1 number of args 3
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): 0.0164/0.0164, Final solve time: 38.198
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.002
+img 27 has natural MSE: 7.2727e-04 and certified MSE: 1.4092e-03
+progress: 28/100,nat MSE:  2.2792e-03/2.1760e-03,cert MSE: 3.6089e-03/3.4587e-03,time: 303.160; 284.263; 7959.372
+krelu: n 10 split_zero 3587 after cutoff 0 number of args 3587
+krelu: n 10 split_zero 673 after cutoff 0 number of args 673
+krelu: n 10 split_zero 144 after cutoff 6 number of args 148
+krelu: n 10 split_zero 120 after cutoff 3 number of args 121
+krelu: n 10 split_zero 42 after cutoff 3 number of args 43
+krelu: n 10 split_zero 4 after cutoff 2 number of args 5
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): -0.0339/-0.0339, Final solve time: 48.338
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.016
+img 28 has natural MSE: 6.0987e-05 and certified MSE: 1.1456e-03
+progress: 29/100,nat MSE:  2.1368e-03/2.1031e-03,cert MSE: 3.5299e-03/3.3790e-03,time: 312.772; 285.246; 8272.145
+krelu: n 10 split_zero 3472 after cutoff 0 number of args 3472
+krelu: n 10 split_zero 652 after cutoff 0 number of args 652
+krelu: n 10 split_zero 150 after cutoff 6 number of args 154
+krelu: n 10 split_zero 112 after cutoff 2 number of args 113
+krelu: n 10 split_zero 37 after cutoff 1 number of args 38
+krelu: n 10 split_zero 4 after cutoff 4 number of args 5
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): -0.0754/-0.0754, Final solve time: 97.770
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.000
+img 29 has natural MSE: 1.4889e-03 and certified MSE: 5.6639e-03
+progress: 30/100,nat MSE:  2.0438e-03/2.0826e-03,cert MSE: 3.6089e-03/3.4551e-03,time: 361.294; 287.781; 8633.439
+krelu: n 10 split_zero 3482 after cutoff 0 number of args 3482
+krelu: n 10 split_zero 660 after cutoff 0 number of args 660
+krelu: n 10 split_zero 149 after cutoff 3 number of args 150
+krelu: n 10 split_zero 118 after cutoff 2 number of args 119
+krelu: n 10 split_zero 39 after cutoff 1 number of args 40
+krelu: n 10 split_zero 2 after cutoff 2 number of args 3
+krelu: n 10 split_zero 3 after cutoff 0 number of args 3
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): -0.1169/-0.1169, Final solve time: 45.312
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.008
+img 30 has natural MSE: 5.2785e-03 and certified MSE: 1.3537e-02
+progress: 31/100,nat MSE:  2.1368e-03/2.1857e-03,cert MSE: 3.6878e-03/3.7803e-03,time: 308.441; 288.448; 8941.880
+krelu: n 10 split_zero 3308 after cutoff 0 number of args 3308
+krelu: n 10 split_zero 650 after cutoff 0 number of args 650
+krelu: n 10 split_zero 153 after cutoff 6 number of args 157
+krelu: n 10 split_zero 124 after cutoff 0 number of args 124
+krelu: n 10 split_zero 43 after cutoff 0 number of args 43
+krelu: n 10 split_zero 2 after cutoff 2 number of args 3
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): -0.1392/-0.1392, Final solve time: 38.994
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.010
+img 31 has natural MSE: 8.9262e-03 and certified MSE: 1.9137e-02
+progress: 32/100,nat MSE:  2.2792e-03/2.3963e-03,cert MSE: 3.7552e-03/4.2603e-03,time: 301.924; 288.869; 9243.804
+krelu: n 10 split_zero 3278 after cutoff 0 number of args 3278
+krelu: n 10 split_zero 643 after cutoff 0 number of args 643
+krelu: n 10 split_zero 144 after cutoff 1 number of args 145
+krelu: n 10 split_zero 124 after cutoff 3 number of args 125
+krelu: n 10 split_zero 39 after cutoff 1 number of args 40
+krelu: n 10 split_zero 2 after cutoff 1 number of args 3
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): -0.1619/-0.1619, Final solve time: 42.062
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.020
+img 32 has natural MSE: 1.4470e-02 and certified MSE: 2.5778e-02
+progress: 33/100,nat MSE:  2.4217e-03/2.7622e-03,cert MSE: 3.8227e-03/4.9123e-03,time: 304.389; 289.339; 9548.193
+krelu: n 10 split_zero 3283 after cutoff 0 number of args 3283
+krelu: n 10 split_zero 656 after cutoff 0 number of args 656
+krelu: n 10 split_zero 135 after cutoff 5 number of args 137
+krelu: n 10 split_zero 112 after cutoff 2 number of args 113
+krelu: n 10 split_zero 38 after cutoff 0 number of args 38
+krelu: n 10 split_zero 4 after cutoff 2 number of args 5
+krelu: n 10 split_zero 2 after cutoff 0 number of args 2
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0005555555512520184): -0.1436/-0.1436, Final solve time: 38.345
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0005555555512520184): 0.0000/-inf, Final solve time: 200.098
+img 33 has natural MSE: 1.0677e-02 and certified MSE: 2.0337e-02
+progress: 34/100,nat MSE:  2.4722e-03/2.9950e-03,cert MSE: 3.8383e-03/5.3660e-03,time: 300.778; 289.676; 9848.971
+krelu: n 10 split_zero 3166 after cutoff 0 number of args 3166
+krelu: n 10 split_zero 618 after cutoff 0 number of args 618
+krelu: n 10 split_zero 143 after cutoff 6 number of args 147
+krelu: n 10 split_zero 108 after cutoff 3 number of args 109
+krelu: n 10 split_zero 38 after cutoff 0 number of args 38
+krelu: n 10 split_zero 2 after cutoff 1 number of args 3
+krelu: n 10 split_zero 3 after cutoff 0 number of args 3
+krelu: n 10 split_zero 1 after cutoff 0 number of args 1
+Model status: 2, Obj val/bound for constraint (0, -1, 0.0006814320797133901): -0.1444/-0.1444, Final solve time: 45.715
+Model status: 9, Obj val/bound for constraint (-1, 0, 0.0006814320797133901): 0.0000/-inf, Final solve time: 200.010
+img 34 has natural MSE: 1.1063e-02 and certified MSE: 2.0573e-02
+progress: 35/100,nat MSE:  2.5228e-03/3.2255e-03,cert MSE: 3.8539e-03/5.8005e-03,time: 308.248; 290.206; 10157.219
+krelu: n 10 split_zero 3204 after cutoff 0 number of args 3204
+krelu: n 10 split_zero 597 after cutoff 0 number of args 597
+krelu: n 10 split_zero 129 after cutoff 6 number of args 133
+krelu: n 10 split_zero 115 after cutoff 4 number of args 116
+krelu: n 10 split_zero 32 after cutoff 3 number of args 33
+krelu: n 10 split_zero 3 after cutoff 0 number of args 3
+krelu: n 10 split_zero 3 after cutoff 0 number of args 3
+krelu: n 10 split_zero 0 after cutoff 0 number of args 0

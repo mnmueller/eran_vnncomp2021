@@ -1,0 +1,593 @@
+/home/mark/anaconda3/envs/eran/bin/python /home/mark/Projects/ERAN/eran/tf_verify/eran_light.py --instance_file /home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/acasxu/acasxu_instances.csv --domain gpupoly --timeout_final_milp 10 --timeout_final_lp 5 --complete True --from_test 0
+GPUPoly 0.12.0S Debug (built Apr 23 2021 09:33:03) - Copyright (C) 2020 Department of Computer Science, ETH Zurich.
+This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it and to modify it under the terms of the GNU LGPLv3.
+
+{'approx_k': True,
+ 'complete': True,
+ 'debug': False,
+ 'domain': 'gpupoly',
+ 'from_test': 0,
+ 'instance_file': '/home/mark/Projects/VNN_COMP_2021/vnncomp2021/benchmarks/acasxu/acasxu_instances.csv',
+ 'k': 3,
+ 'max_gpu_batch': 500,
+ 'max_milp_neurons': 30,
+ 'n_milp_refine': 1,
+ 'netname': None,
+ 'partial_milp': 0,
+ 'refine_neurons': False,
+ 's': -2,
+ 'sparse_n': 70,
+ 'timeout_complete': None,
+ 'timeout_final_lp': 5.0,
+ 'timeout_final_milp': 10.0,
+ 'timeout_lp': 1,
+ 'timeout_milp': 1,
+ 'vnnlib_spec': None}
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 0 (UNSAT): 1/186; SAT 0; UNSAT 1; unkown 0; time: 2.863; 2.863; 2.863
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 1 (UNSAT): 2/186; SAT 0; UNSAT 2; unkown 0; time: 54.310; 28.587; 57.174
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 2 (UNSAT): 3/186; SAT 0; UNSAT 3; unkown 0; time: 3.187; 20.120; 60.361
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 3 (UNSAT): 4/186; SAT 0; UNSAT 4; unkown 0; time: 65.012; 31.343; 125.374
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 4 (UNSAT): 5/186; SAT 0; UNSAT 5; unkown 0; time: 3.041; 25.683; 128.415
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 5 (UNSAT): 6/186; SAT 0; UNSAT 6; unkown 0; time: 45.972; 29.065; 174.387
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 6 (UNSAT): 7/186; SAT 0; UNSAT 7; unkown 0; time: 2.916; 25.329; 177.303
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 7 (UNSAT): 8/186; SAT 0; UNSAT 8; unkown 0; time: 36.333; 26.704; 213.636
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 8 (UNSAT): 9/186; SAT 0; UNSAT 9; unkown 0; time: 36.737; 27.819; 250.373
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 9 (UNSAT): 10/186; SAT 0; UNSAT 10; unkown 0; time: 3.129; 25.350; 253.502
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 10 (UNSAT): 11/186; SAT 0; UNSAT 11; unkown 0; time: 105.423; 32.630; 358.925
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 11 (UNSAT): 12/186; SAT 0; UNSAT 12; unkown 0; time: 72.864; 35.982; 431.789
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 12 (UNSAT): 13/186; SAT 0; UNSAT 13; unkown 0; time: 2.863; 33.435; 434.652
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 13 (UNKNOWN): 14/186; SAT 0; UNSAT 13; unkown 1; time: 116.036; 39.335; 550.688
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 14 (UNKNOWN): 15/186; SAT 0; UNSAT 13; unkown 2; time: 116.028; 44.448; 666.716
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 15 (UNKNOWN): 16/186; SAT 0; UNSAT 13; unkown 3; time: 116.031; 48.922; 782.747
+Using license file /home/mark/gurobi.lic
+Academic license - for non-commercial use only
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 16 (UNKNOWN): 17/186; SAT 0; UNSAT 13; unkown 4; time: 116.011; 52.868; 898.758
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 17 (UNKNOWN): 18/186; SAT 0; UNSAT 13; unkown 5; time: 116.025; 56.377; 1014.783
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 18 (UNSAT): 19/186; SAT 0; UNSAT 14; unkown 5; time: 3.775; 53.608; 1018.558
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 19 (UNSAT): 20/186; SAT 0; UNSAT 15; unkown 5; time: 84.359; 55.146; 1102.917
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 20 (UNSAT): 21/186; SAT 0; UNSAT 16; unkown 5; time: 3.447; 52.684; 1106.364
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 21 (UNSAT): 22/186; SAT 0; UNSAT 17; unkown 5; time: 61.334; 53.077; 1167.698
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 22 (UNSAT): 23/186; SAT 0; UNSAT 18; unkown 5; time: 112.013; 55.640; 1279.712
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 23 (UNSAT): 24/186; SAT 0; UNSAT 19; unkown 5; time: 15.109; 53.951; 1294.820
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 24 (UNSAT): 25/186; SAT 0; UNSAT 20; unkown 5; time: 16.569; 52.456; 1311.390
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 25 (UNKNOWN): 26/186; SAT 0; UNSAT 20; unkown 6; time: 116.004; 54.900; 1427.394
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 26 (UNSAT): 27/186; SAT 0; UNSAT 21; unkown 6; time: 19.710; 53.596; 1447.103
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 27 (UNKNOWN): 28/186; SAT 0; UNSAT 21; unkown 7; time: 116.031; 55.826; 1563.134
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 28 (UNSAT): 29/186; SAT 0; UNSAT 22; unkown 7; time: 3.175; 54.011; 1566.310
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 29 (UNSAT): 30/186; SAT 0; UNSAT 23; unkown 7; time: 70.034; 54.545; 1636.344
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 30 (UNSAT): 31/186; SAT 0; UNSAT 24; unkown 7; time: 79.727; 55.357; 1716.071
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 31 (UNKNOWN): 32/186; SAT 0; UNSAT 24; unkown 8; time: 116.006; 57.252; 1832.077
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 32 (UNSAT): 33/186; SAT 0; UNSAT 25; unkown 8; time: 25.806; 56.299; 1857.883
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 33 (UNKNOWN): 34/186; SAT 0; UNSAT 25; unkown 9; time: 116.020; 58.056; 1973.903
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 34 (UNSAT): 35/186; SAT 0; UNSAT 26; unkown 9; time: 15.635; 56.844; 1989.538
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 35 (UNKNOWN): 36/186; SAT 0; UNSAT 26; unkown 10; time: 116.011; 58.487; 2105.548
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 36 (UNSAT): 37/186; SAT 0; UNSAT 27; unkown 10; time: 3.044; 56.989; 2108.593
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 37 (UNSAT): 38/186; SAT 0; UNSAT 28; unkown 10; time: 3.471; 55.581; 2112.063
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 38 (UNSAT): 39/186; SAT 0; UNSAT 29; unkown 10; time: 3.162; 54.237; 2115.225
+Box 0 Verified UNSAT for constraints [[(-1, 0, array([3.99112565]))]]
+progress: 1/1
+Spec 39 (UNSAT): 40/186; SAT 0; UNSAT 30; unkown 10; time: 57.982; 54.330; 2173.207
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 40 (UNKNOWN): 41/186; SAT 0; UNSAT 30; unkown 11; time: 116.023; 55.835; 2289.230
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 41 (UNKNOWN): 42/186; SAT 0; UNSAT 30; unkown 12; time: 116.021; 57.268; 2405.251
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 42 (UNKNOWN): 43/186; SAT 0; UNSAT 30; unkown 13; time: 116.017; 58.634; 2521.268
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 43 (UNKNOWN): 44/186; SAT 0; UNSAT 30; unkown 14; time: 116.011; 59.938; 2637.278
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 44 (UNKNOWN): 45/186; SAT 0; UNSAT 30; unkown 15; time: 116.018; 61.184; 2753.297
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 45 (UNSAT): 46/186; SAT 0; UNSAT 31; unkown 15; time: 2.991; 59.919; 2756.288
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 46 (UNSAT): 47/186; SAT 0; UNSAT 32; unkown 15; time: 68.042; 60.092; 2824.330
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 47 (UNSAT): 48/186; SAT 0; UNSAT 33; unkown 15; time: 5.284; 58.950; 2829.614
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 48 (UNSAT): 49/186; SAT 0; UNSAT 34; unkown 15; time: 108.712; 59.966; 2938.325
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 49 (UNSAT): 50/186; SAT 0; UNSAT 35; unkown 15; time: 3.049; 58.827; 2941.374
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 50 (UNSAT): 51/186; SAT 0; UNSAT 36; unkown 15; time: 75.481; 59.154; 3016.855
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 51 (UNSAT): 52/186; SAT 0; UNSAT 37; unkown 15; time: 3.179; 58.078; 3020.034
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 52 (UNSAT): 53/186; SAT 0; UNSAT 38; unkown 15; time: 57.567; 58.068; 3077.601
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 53 (UNSAT): 54/186; SAT 0; UNSAT 39; unkown 15; time: 43.420; 57.797; 3121.021
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 54 (UNSAT): 55/186; SAT 0; UNSAT 40; unkown 15; time: 3.911; 56.817; 3124.932
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 55 (UNKNOWN): 56/186; SAT 0; UNSAT 40; unkown 16; time: 116.018; 57.874; 3240.950
+Box 0 SAT
+progress: 1/1
+Spec 56 (SAT): 57/186; SAT 1; UNSAT 40; unkown 16; time: 0.003; 56.859; 3240.953
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 57 (UNSAT): 58/186; SAT 1; UNSAT 41; unkown 16; time: 5.240; 55.969; 3246.193
+Box 0 SAT
+progress: 1/1
+Spec 58 (SAT): 59/186; SAT 2; UNSAT 41; unkown 16; time: 0.003; 55.020; 3246.196
+Box 0 SAT
+progress: 1/1
+Spec 59 (SAT): 60/186; SAT 3; UNSAT 41; unkown 16; time: 0.003; 54.103; 3246.199
+Box 0 SAT
+progress: 1/1
+Spec 60 (SAT): 61/186; SAT 4; UNSAT 41; unkown 16; time: 0.003; 53.216; 3246.202
+Box 0 SAT
+progress: 1/1
+Spec 61 (SAT): 62/186; SAT 5; UNSAT 41; unkown 16; time: 0.003; 52.358; 3246.205
+property violated at  [0.6199644422499999, -0.010416666666666668, -0.5, 0.45, -0.5] output_score [ 0.02427538 -0.02053285  0.01961395 -0.01602007  0.02021876]
+Box 0 Verified SAT, with adversarial example with output [ 0.02427538 -0.02053285  0.01961395 -0.01602007  0.02021876] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 62 (SAT): 63/186; SAT 6; UNSAT 41; unkown 16; time: 11.732; 51.713; 3257.938
+Box 0 SAT
+progress: 1/1
+Spec 63 (SAT): 64/186; SAT 7; UNSAT 41; unkown 16; time: 0.003; 50.905; 3257.941
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 64 (UNKNOWN): 65/186; SAT 7; UNSAT 41; unkown 17; time: 116.018; 51.907; 3373.958
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 65 (UNSAT): 66/186; SAT 7; UNSAT 42; unkown 17; time: 5.549; 51.205; 3379.507
+Box 0 SAT
+progress: 1/1
+Spec 66 (SAT): 67/186; SAT 8; UNSAT 42; unkown 17; time: 0.003; 50.440; 3379.510
+Box 0 SAT
+progress: 1/1
+Spec 67 (SAT): 68/186; SAT 9; UNSAT 42; unkown 17; time: 0.003; 49.699; 3379.513
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 68 (UNSAT): 69/186; SAT 9; UNSAT 43; unkown 17; time: 40.405; 49.564; 3419.918
+property violated at  [0.679857769, 0.012500000000000011, -0.5, 0.45, -0.5] output_score [ 0.02459992  0.02172261 -0.02038613  0.0228696  -0.01393796]
+Box 0 Verified SAT, with adversarial example with output [ 0.02459992  0.02172261 -0.02038613  0.0228696  -0.01393796] for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+Box 0 Failed
+progress: 1/1
+Spec 69 (SAT): 70/186; SAT 10; UNSAT 43; unkown 17; time: 16.742; 49.095; 3436.660
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 70 (UNKNOWN): 71/186; SAT 10; UNSAT 43; unkown 18; time: 116.014; 50.038; 3552.674
+Box 0 SAT
+progress: 1/1
+Spec 71 (SAT): 72/186; SAT 11; UNSAT 43; unkown 18; time: 0.003; 49.343; 3552.677
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 72 (UNKNOWN): 73/186; SAT 11; UNSAT 43; unkown 19; time: 116.005; 50.256; 3668.682
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 73 (UNSAT): 74/186; SAT 11; UNSAT 44; unkown 19; time: 4.893; 49.643; 3673.575
+Box 0 SAT
+progress: 1/1
+Spec 74 (SAT): 75/186; SAT 12; UNSAT 44; unkown 19; time: 0.003; 48.981; 3673.578
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 75 (UNSAT): 76/186; SAT 12; UNSAT 45; unkown 19; time: 100.893; 49.664; 3774.472
+Box 0 SAT
+progress: 1/1
+Spec 76 (SAT): 77/186; SAT 13; UNSAT 45; unkown 19; time: 0.003; 49.019; 3774.475
+Box 0 SAT
+progress: 1/1
+Spec 77 (SAT): 78/186; SAT 14; UNSAT 45; unkown 19; time: 0.003; 48.391; 3774.478
+Box 0 SAT
+progress: 1/1
+Spec 78 (SAT): 79/186; SAT 15; UNSAT 45; unkown 19; time: 0.003; 47.778; 3774.481
+Box 0 SAT
+progress: 1/1
+Spec 79 (SAT): 80/186; SAT 16; UNSAT 45; unkown 19; time: 0.003; 47.181; 3774.484
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 80 (UNKNOWN): 81/186; SAT 16; UNSAT 45; unkown 20; time: 116.020; 48.031; 3890.503
+Box 0 SAT
+progress: 1/1
+Spec 81 (SAT): 82/186; SAT 17; UNSAT 45; unkown 20; time: 0.003; 47.445; 3890.506
+Box 0 SAT
+progress: 1/1
+Spec 82 (SAT): 83/186; SAT 18; UNSAT 45; unkown 20; time: 0.003; 46.874; 3890.509
+Box 0 Verified UNSAT for constraints [[(1, 0, 0), (2, 0, 0), (3, 0, 0), (4, 0, 0)]]
+progress: 1/1
+Spec 83 (UNSAT): 84/186; SAT 18; UNSAT 46; unkown 20; time: 4.053; 46.364; 3894.562
+Box 0 SAT
+progress: 1/1
+Spec 84 (SAT): 85/186; SAT 19; UNSAT 46; unkown 20; time: 0.003; 45.818; 3894.565
+Box 0 SAT
+progress: 1/1
+Spec 85 (SAT): 86/186; SAT 20; UNSAT 46; unkown 20; time: 0.003; 45.286; 3894.568
+Box 0 SAT
+progress: 1/1
+Spec 86 (SAT): 87/186; SAT 21; UNSAT 46; unkown 20; time: 0.003; 44.765; 3894.571
+Box 0 SAT
+progress: 1/1
+Spec 87 (SAT): 88/186; SAT 22; UNSAT 46; unkown 20; time: 0.003; 44.257; 3894.574
+Box 0 SAT
+progress: 1/1
+Spec 88 (SAT): 89/186; SAT 23; UNSAT 46; unkown 20; time: 0.003; 43.759; 3894.578
+Box 0 SAT
+progress: 1/1
+Spec 89 (SAT): 90/186; SAT 24; UNSAT 46; unkown 20; time: 0.003; 43.273; 3894.581
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 90 (UNSAT): 91/186; SAT 24; UNSAT 47; unkown 20; time: 0.033; 42.798; 3894.613
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 91 (UNSAT): 92/186; SAT 24; UNSAT 48; unkown 20; time: 0.033; 42.333; 3894.647
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 92 (UNSAT): 93/186; SAT 24; UNSAT 49; unkown 20; time: 6.973; 41.953; 3901.619
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 93 (UNSAT): 94/186; SAT 24; UNSAT 50; unkown 20; time: 0.033; 41.507; 3901.652
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 94 (UNSAT): 95/186; SAT 24; UNSAT 51; unkown 20; time: 0.032; 41.070; 3901.684
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 95 (UNSAT): 96/186; SAT 24; UNSAT 52; unkown 20; time: 0.032; 40.643; 3901.716
+Box 0 SAT
+progress: 1/1
+Spec 96 (SAT): 97/186; SAT 25; UNSAT 52; unkown 20; time: 0.003; 40.224; 3901.719
+Box 0 SAT
+progress: 1/1
+Spec 97 (SAT): 98/186; SAT 26; UNSAT 52; unkown 20; time: 0.003; 39.813; 3901.722
+Box 0 SAT
+progress: 1/1
+Spec 98 (SAT): 99/186; SAT 27; UNSAT 52; unkown 20; time: 0.003; 39.411; 3901.725
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 99 (UNSAT): 100/186; SAT 27; UNSAT 53; unkown 20; time: 0.032; 39.018; 3901.758
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 100 (UNSAT): 101/186; SAT 27; UNSAT 54; unkown 20; time: 0.032; 38.632; 3901.790
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 101 (UNSAT): 102/186; SAT 27; UNSAT 55; unkown 20; time: 0.032; 38.253; 3901.822
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 102 (UNSAT): 103/186; SAT 27; UNSAT 56; unkown 20; time: 0.032; 37.882; 3901.854
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 103 (UNSAT): 104/186; SAT 27; UNSAT 57; unkown 20; time: 0.032; 37.518; 3901.887
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 104 (UNSAT): 105/186; SAT 27; UNSAT 58; unkown 20; time: 0.033; 37.161; 3901.919
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 105 (UNSAT): 106/186; SAT 27; UNSAT 59; unkown 20; time: 0.033; 36.811; 3901.952
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 106 (UNSAT): 107/186; SAT 27; UNSAT 60; unkown 20; time: 0.032; 36.467; 3901.984
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 107 (UNSAT): 108/186; SAT 27; UNSAT 61; unkown 20; time: 0.032; 36.130; 3902.016
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 108 (UNSAT): 109/186; SAT 27; UNSAT 62; unkown 20; time: 5.814; 35.852; 3907.830
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 109 (UNSAT): 110/186; SAT 27; UNSAT 63; unkown 20; time: 0.032; 35.526; 3907.862
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 110 (UNSAT): 111/186; SAT 27; UNSAT 64; unkown 20; time: 0.032; 35.206; 3907.894
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 111 (UNSAT): 112/186; SAT 27; UNSAT 65; unkown 20; time: 2.905; 34.918; 3910.800
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 112 (UNSAT): 113/186; SAT 27; UNSAT 66; unkown 20; time: 0.032; 34.609; 3910.832
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 113 (UNSAT): 114/186; SAT 27; UNSAT 67; unkown 20; time: 0.032; 34.306; 3910.865
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 114 (UNSAT): 115/186; SAT 27; UNSAT 68; unkown 20; time: 0.032; 34.008; 3910.897
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 115 (UNSAT): 116/186; SAT 27; UNSAT 69; unkown 20; time: 0.032; 33.715; 3910.929
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 116 (UNSAT): 117/186; SAT 27; UNSAT 70; unkown 20; time: 0.032; 33.427; 3910.962
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 117 (UNSAT): 118/186; SAT 27; UNSAT 71; unkown 20; time: 0.032; 33.144; 3910.994
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 118 (UNSAT): 119/186; SAT 27; UNSAT 72; unkown 20; time: 0.032; 32.866; 3911.026
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 119 (UNSAT): 120/186; SAT 27; UNSAT 73; unkown 20; time: 2.938; 32.616; 3913.965
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 120 (UNSAT): 121/186; SAT 27; UNSAT 74; unkown 20; time: 0.033; 32.347; 3913.997
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 121 (UNSAT): 122/186; SAT 27; UNSAT 75; unkown 20; time: 0.032; 32.082; 3914.029
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 122 (UNSAT): 123/186; SAT 27; UNSAT 76; unkown 20; time: 4.511; 31.858; 3918.540
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 123 (UNSAT): 124/186; SAT 27; UNSAT 77; unkown 20; time: 4.122; 31.634; 3922.662
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 124 (UNSAT): 125/186; SAT 27; UNSAT 78; unkown 20; time: 0.032; 31.382; 3922.694
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 125 (UNSAT): 126/186; SAT 27; UNSAT 79; unkown 20; time: 2.881; 31.155; 3925.575
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 126 (UNSAT): 127/186; SAT 27; UNSAT 80; unkown 20; time: 0.033; 30.910; 3925.608
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 127 (UNSAT): 128/186; SAT 27; UNSAT 81; unkown 20; time: 0.032; 30.669; 3925.640
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 128 (UNSAT): 129/186; SAT 27; UNSAT 82; unkown 20; time: 0.032; 30.432; 3925.673
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 129 (UNSAT): 130/186; SAT 27; UNSAT 83; unkown 20; time: 0.032; 30.198; 3925.705
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 130 (UNSAT): 131/186; SAT 27; UNSAT 84; unkown 20; time: 0.033; 29.967; 3925.738
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 131 (UNSAT): 132/186; SAT 27; UNSAT 85; unkown 20; time: 0.032; 29.741; 3925.770
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 132 (UNSAT): 133/186; SAT 27; UNSAT 86; unkown 20; time: 0.032; 29.517; 3925.802
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 133 (UNSAT): 134/186; SAT 27; UNSAT 87; unkown 20; time: 0.032; 29.297; 3925.834
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 134 (UNSAT): 135/186; SAT 27; UNSAT 88; unkown 20; time: 0.032; 29.080; 3925.867
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 135 (UNSAT): 136/186; SAT 27; UNSAT 89; unkown 20; time: 0.032; 28.867; 3925.899
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 136 (UNSAT): 137/186; SAT 27; UNSAT 90; unkown 20; time: 0.033; 28.656; 3925.931
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 137 (UNSAT): 138/186; SAT 27; UNSAT 91; unkown 20; time: 0.032; 28.449; 3925.964
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 138 (UNSAT): 139/186; SAT 27; UNSAT 92; unkown 20; time: 0.032; 28.245; 3925.996
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 139 (UNSAT): 140/186; SAT 27; UNSAT 93; unkown 20; time: 0.032; 28.043; 3926.028
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 140 (UNSAT): 141/186; SAT 27; UNSAT 94; unkown 20; time: 0.032; 27.844; 3926.061
+Box 0 SAT
+progress: 1/1
+Spec 141 (SAT): 142/186; SAT 28; UNSAT 94; unkown 20; time: 0.003; 27.648; 3926.064
+Box 0 SAT
+progress: 1/1
+Spec 142 (SAT): 143/186; SAT 29; UNSAT 94; unkown 20; time: 0.003; 27.455; 3926.067
+Box 0 SAT
+progress: 1/1
+Spec 143 (SAT): 144/186; SAT 30; UNSAT 94; unkown 20; time: 0.003; 27.264; 3926.070
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 144 (UNSAT): 145/186; SAT 30; UNSAT 95; unkown 20; time: 0.032; 27.077; 3926.102
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 145 (UNSAT): 146/186; SAT 30; UNSAT 96; unkown 20; time: 0.032; 26.891; 3926.134
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 146 (UNSAT): 147/186; SAT 30; UNSAT 97; unkown 20; time: 0.032; 26.709; 3926.166
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 147 (UNSAT): 148/186; SAT 30; UNSAT 98; unkown 20; time: 0.032; 26.528; 3926.199
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 148 (UNSAT): 149/186; SAT 30; UNSAT 99; unkown 20; time: 0.032; 26.351; 3926.231
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 149 (UNSAT): 150/186; SAT 30; UNSAT 100; unkown 20; time: 2.352; 26.191; 3928.583
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 150 (UNSAT): 151/186; SAT 30; UNSAT 101; unkown 20; time: 0.032; 26.017; 3928.615
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 151 (UNSAT): 152/186; SAT 30; UNSAT 102; unkown 20; time: 2.985; 25.866; 3931.600
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 152 (UNSAT): 153/186; SAT 30; UNSAT 103; unkown 20; time: 0.033; 25.697; 3931.632
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 153 (UNSAT): 154/186; SAT 30; UNSAT 104; unkown 20; time: 0.033; 25.530; 3931.665
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 154 (UNSAT): 155/186; SAT 30; UNSAT 105; unkown 20; time: 0.032; 25.366; 3931.697
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 155 (UNSAT): 156/186; SAT 30; UNSAT 106; unkown 20; time: 0.032; 25.203; 3931.729
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 156 (UNSAT): 157/186; SAT 30; UNSAT 107; unkown 20; time: 0.032; 25.043; 3931.761
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 157 (UNSAT): 158/186; SAT 30; UNSAT 108; unkown 20; time: 0.032; 24.885; 3931.793
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 158 (UNSAT): 159/186; SAT 30; UNSAT 109; unkown 20; time: 0.032; 24.728; 3931.825
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 159 (UNSAT): 160/186; SAT 30; UNSAT 110; unkown 20; time: 0.032; 24.574; 3931.857
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 160 (UNSAT): 161/186; SAT 30; UNSAT 111; unkown 20; time: 0.032; 24.422; 3931.890
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 161 (UNSAT): 162/186; SAT 30; UNSAT 112; unkown 20; time: 2.174; 24.284; 3934.064
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 162 (UNSAT): 163/186; SAT 30; UNSAT 113; unkown 20; time: 0.032; 24.136; 3934.096
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 163 (UNSAT): 164/186; SAT 30; UNSAT 114; unkown 20; time: 0.032; 23.989; 3934.128
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 164 (UNSAT): 165/186; SAT 30; UNSAT 115; unkown 20; time: 0.032; 23.843; 3934.161
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 165 (UNSAT): 166/186; SAT 30; UNSAT 116; unkown 20; time: 0.032; 23.700; 3934.193
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 166 (UNSAT): 167/186; SAT 30; UNSAT 117; unkown 20; time: 0.032; 23.558; 3934.225
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 167 (UNSAT): 168/186; SAT 30; UNSAT 118; unkown 20; time: 0.032; 23.418; 3934.257
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 168 (UNSAT): 169/186; SAT 30; UNSAT 119; unkown 20; time: 0.032; 23.280; 3934.289
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 169 (UNSAT): 170/186; SAT 30; UNSAT 120; unkown 20; time: 0.032; 23.143; 3934.322
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 170 (UNSAT): 171/186; SAT 30; UNSAT 121; unkown 20; time: 0.033; 23.008; 3934.354
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 171 (UNSAT): 172/186; SAT 30; UNSAT 122; unkown 20; time: 0.032; 22.874; 3934.387
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 172 (UNSAT): 173/186; SAT 30; UNSAT 123; unkown 20; time: 0.032; 22.742; 3934.419
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 173 (UNSAT): 174/186; SAT 30; UNSAT 124; unkown 20; time: 0.032; 22.612; 3934.451
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 174 (UNSAT): 175/186; SAT 30; UNSAT 125; unkown 20; time: 0.032; 22.483; 3934.483
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 175 (UNSAT): 176/186; SAT 30; UNSAT 126; unkown 20; time: 0.032; 22.355; 3934.516
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 176 (UNSAT): 177/186; SAT 30; UNSAT 127; unkown 20; time: 0.032; 22.229; 3934.548
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 177 (UNSAT): 178/186; SAT 30; UNSAT 128; unkown 20; time: 0.032; 22.104; 3934.580
+Box 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 178 (UNSAT): 179/186; SAT 30; UNSAT 129; unkown 20; time: 3.960; 22.003; 3938.540
+img 0 Verified UNSAT for constraints [[(0, 1, 0), (0, 2, 0), (0, 3, 0), (0, 4, 0)]]
+progress: 1/1
+Spec 179 (UNSAT): 180/186; SAT 30; UNSAT 130; unkown 20; time: 0.032; 21.881; 3938.573
+Box 0 Verified UNSAT for constraints [[(0, 4, 0)], [(1, 4, 0)], [(2, 4, 0)], [(3, 4, 0)]]
+progress: 1/1
+Spec 180 (UNSAT): 181/186; SAT 30; UNSAT 131; unkown 20; time: 24.508; 21.895; 3963.081
+Box 0 Verified UNSAT for constraints [[(1, 0, 0)], [(2, 0, 0)], [(3, 0, 0)], [(4, 0, 0)]]
+progress: 1/2
+Box 1 Failed, without a adversarial example
+progress: 2/2
+Spec 181 (UNKNOWN): 182/186; SAT 30; UNSAT 131; unkown 21; time: 116.013; 22.413; 4079.094
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 182 (UNKNOWN): 183/186; SAT 30; UNSAT 131; unkown 22; time: 116.013; 22.924; 4195.106
+Box 0 Failed, without a adversarial example
+progress: 1/1
+Spec 183 (UNKNOWN): 184/186; SAT 30; UNSAT 131; unkown 23; time: 116.025; 23.430; 4311.131
+Box 0 Verified UNSAT for constraints [[(0, 3, 0)], [(1, 3, 0)], [(2, 3, 0)], [(4, 3, 0)]]
+progress: 1/1
+Spec 184 (UNSAT): 185/186; SAT 30; UNSAT 132; unkown 23; time: 67.970; 23.671; 4379.100
+Box 0 Verified UNSAT for constraints [[(1, 0, 0)], [(2, 0, 0)], [(3, 0, 0)], [(4, 0, 0)]]
+progress: 1/1
+Spec 185 (UNSAT): 186/186; SAT 30; UNSAT 133; unkown 23; time: 108.908; 24.129; 4488.008
+
+Process finished with exit code 0
