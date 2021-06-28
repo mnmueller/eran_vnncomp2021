@@ -9,7 +9,7 @@ fi
 
 
 cd bin
-./grbgetkey 878b2d60-d7db-11eb-be80-0242ac120002 < ../../
+./grbgetkey 9050179c-d832-11eb-80a7-0242ac120002 < ../../
 cd ../../../
 
 if [[ $CONDA_DEFAULT_ENV == "" ]]; then
