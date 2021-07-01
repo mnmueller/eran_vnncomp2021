@@ -12,7 +12,7 @@ fi
 #./grbgetkey #################### < ../../
 #cd ../../../
 
-cd ../..
+cd ../../
 if [[ $CONDA_DEFAULT_ENV == "" ]]; then
   python3 -m pip install -r requirements.txt
 else

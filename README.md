@@ -6,10 +6,10 @@
     ```
 2) Create and activate a conda environment:
    ```
-   conda create --name ERAN python=3.6
+   conda create --name ERAN python=3.6 -y
    conda activate ERAN
    ```
-3) Run the install script:
+3) Run the install script (wait until system updates are done (`ps -aux | grep apt` shows only the grep command)):
    ```
    bash ./vnncomp_scripts/install_tool.sh v1
    ```
