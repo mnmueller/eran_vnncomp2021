@@ -15,6 +15,13 @@ if [ $(id -u) = 0 ]; then
    exit 1
 fi
 
+if [[ ! $CONDA_DEFAULT_ENV == "ERAN" ]]; then
+  eval "$(conda shell.bash hook)"
+  conda create --name ERAN python=3.6 -y
+  conda activate ERAN
+  echo "created conda environment $CONDA_DEFAULT_ENV"
+fi
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 sudo -E bash "$SCRIPT_DIR/install_tool_sudo.sh"
