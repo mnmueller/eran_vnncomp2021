@@ -23,6 +23,13 @@ eran_file="$SCRIPT_DIR/../tf_verify/eran_light.py"
 
 echo "Running benchmark instance in category '$CATEGORY' with onnx file '$ONNX_FILE', vnnlib file '$VNNLIB_FILE', results file $RESULTS_FILE, and timeout $TIMEOUT"
 
+if [[ ! $CONDA_DEFAULT_ENV == "ERAN" ]]; then
+  eval "$(conda shell.bash hook)"
+  conda activate eran
+  echo "activated conda environment"
+fi
+
+
 case $CATEGORY in
   acasxu)
     python3 $eran_file  --netname $ONNX_FILE --vnnlib_spec $VNNLIB_FILE --timeout_complete $TIMEOUT --res_file $RESULTS_FILE --domain deeppoly --timeout_final_milp 5 --complete True --max_split_depth 8 --initial_splits 10 --attack_restarts 1

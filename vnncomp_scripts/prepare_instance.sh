@@ -23,6 +23,12 @@ echo "Preparing $TOOL_NAME for benchmark instance in category '$CATEGORY' with o
 # kill any zombie processes
 killall -q python3
 
+if [[ ! $CONDA_DEFAULT_ENV == "ERAN" ]]; then
+  eval "$(conda shell.bash hook)"
+  conda activate eran
+  echo "activated conda environment"
+fi
+
 case $CATEGORY in
   acasxu)
     python3 $eran_file  --netname $ONNX_FILE --vnnlib_spec $VNNLIB_FILE --domain deeppoly --prepare
