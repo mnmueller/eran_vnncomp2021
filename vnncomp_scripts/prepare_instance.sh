@@ -25,7 +25,7 @@ killall -q python3
 
 if [[ ! $CONDA_DEFAULT_ENV == "ERAN" ]]; then
   eval "$(conda shell.bash hook)"
-  conda activate eran
+  conda activate ERAN
   echo "activated conda environment"
 fi
 
