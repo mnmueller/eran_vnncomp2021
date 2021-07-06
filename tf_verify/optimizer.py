@@ -70,7 +70,7 @@ class Optimizer:
                     matrix, m_input_names , output_name , b_output_shape  = self.resources[i][domain]
                     
                     bias_length = reduce((lambda x, y: x*y), b_output_shape)
-                    bias = nn.zeros(bias_length)
+                    bias = np.zeros(bias_length)
 
                     i += 1
                 if domain == 'deepzono':
@@ -102,7 +102,7 @@ class Optimizer:
                 else:
                     filters, image_shape, strides, pad_top, pad_left, pad_bottom, pad_right, c_input_names, b_output_name, b_output_shape = self.resources[i][domain]
                     bias_length = reduce((lambda x, y: x*y), output_shape)
-                    bias = nn.zeros(bias_length)
+                    bias = np.zeros(bias_length)
                     i += 1
                 nn.numfilters.append(filters.shape[3])
                 nn.filter_size.append([filters.shape[0], filters.shape[1]])
@@ -475,7 +475,7 @@ class Optimizer:
                     matrix, input_names, output_name, b_output_shape = self.resources[i][domain]
 
                     bias_length = reduce((lambda x, y: x * y), b_output_shape)
-                    bias = nn.zeros(bias_length)
+                    bias = np.zeros(bias_length)
 
                     i += 1
                 # print("type ", type(matrix), type(bias), matrix.dtype, bias.dtype)
