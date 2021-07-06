@@ -1,6 +1,6 @@
 numpy
 tensorflow==2.5.0
-onnx==1.8.0
+onnx==1.9.0
 pycddlib
 tqdm
 onnxruntime
