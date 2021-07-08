@@ -454,7 +454,7 @@ def verify_network(config, nn, specLB, specUB, constraints, domain, network=None
     if domain == 'gpupoly' or domain == 'refinegpupoly':
         n_class = len(eval_instance(specLB)[1])
         cstr_matrix, cstr_idxs = cstr_matrix_from_cstr(constraints, n_class=n_class, dtype=network._last_dtype, permit_disjunctive=True)#.astype("float64")
-        res = network.evalAffineExpr_withProp(specLB, specUB, cstr_matrix[:, :-1], cstr_matrix[:, -1], back_substitute=1)
+        res = network.evalAffineExpr_withProp(specLB, specUB, cstr_matrix[:, :-1], cstr_matrix[:, -1], back_substitute=network.BACKSUBSTITUTION_WHILE_CONTAINS_ZERO)
         failed_constraint_index = [j for j, cstrs in enumerate(constraints) if not any([res[i, 0] > 0 for i in cstr_idxs[j]])]
         failed_constraints = [[constraints[j][i] for i in sorted(range(len(constraints[j])), key=lambda i: res[cstr_idxs[j][i],0], reverse=True)] for j in failed_constraint_index] # sort or-groups by highest success prob
         failed_constraints = [failed_constraints[j] for j in np.argsort([max([res[i, 0] for i in cstr_idxs[j]]) for j in range(len(failed_constraints))])] # sort and-groups by lowest success prob
