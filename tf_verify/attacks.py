@@ -260,8 +260,8 @@ def torch_whitebox_attack(model, device, sample, constraints, specLB, specUB, in
     input_shape = list(sample.shape)
     input_shape = ([1] if len(input_shape) in [3,1] else []) + input_shape
     nhwc_shape = input_shape[:-3] + input_shape[-2:] + input_shape[-3:-2]
-    specLB_t = torch.tensor(specLB.reshape(input_shape if input_nchw else nhwc_shape), dtype=torch.float64)
-    specUB_t = torch.tensor(specUB.reshape(input_shape if input_nchw else nhwc_shape),dtype=torch.float64)
+    specLB_t = torch.tensor(specLB.reshape(input_shape if input_nchw else nhwc_shape), dtype=torch.float64).to(device)
+    specUB_t = torch.tensor(specUB.reshape(input_shape if input_nchw else nhwc_shape),dtype=torch.float64).to(device)
     sample = sample.reshape(input_shape if input_nchw else nhwc_shape)
     if len(input_shape)==4:
         specLB_t = specLB_t.permute((0, 1, 2, 3) if input_nchw else (0, 3, 1, 2)).to(device)
