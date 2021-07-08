@@ -948,7 +948,13 @@ def check_translation(image, input_shape, index_nchw, is_nchw, onnx_model, onnx_
     elif input_dim == 4:
         image = image.flatten().reshape(nhwc_input_shape)
 
-    net_out_onnx = base.run(image.astype(np.float32).reshape(onnx_input_shape))
+    try:
+        net_out_onnx = base.run(image.astype(np.float32).reshape(onnx_input_shape))
+    except Exception as e1:
+        try:
+            net_out_onnx = base.run(image.astype(np.float64).reshape(onnx_input_shape))
+        except Exception as e2:
+            assert False, f"Failed to run onnx model with two exceptions: \n{e1}\n\n{e2}"
 
     assert np.isclose(net_out_onnx, net_out_eran, rtol=1e-3, atol=1e-6).all(), net_out_eran
 
