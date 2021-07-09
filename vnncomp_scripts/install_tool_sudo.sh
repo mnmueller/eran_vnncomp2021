@@ -86,6 +86,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib:/usr/local/lib:${GUROBI_HOME}/l
 
 sudo -u $real_user git clone https://github.com/eth-sri/ELINA.git
 cd ELINA
+sudo -u $real_user git checkout 2519e91d4d4d2b0b3e9163a53618c3d04892eb83
 if test "$has_cuda" -eq 1
 then
     ./configure -use-cuda -use-deeppoly -use-gurobi -use-fconv
