@@ -695,7 +695,8 @@ def prepare_instance(config=None):
 
     is_onnx = file_extension == ".onnx"
     assert is_onnx, "file extension not supported in ERAN light"
-    pkl_file_net = f"{filename}.pkl"
+    pkl_file_net = f"{filename}_net.pkl"
+    pkl_file_prop = f"{config.vnnlib_spec[:-7]}_prop.pkl"
     netname = config.netname
     domain = config.domain
 
@@ -718,7 +719,7 @@ def prepare_instance(config=None):
                         else:
                             res += (resources[i][j][k],)
                     resources[i][j] = res
-            pkl.dump((resources, operations), open(pkl_file_net, "wb"))
+            pkl.dump((resources, operations, orig_input_shape), open(pkl_file_net, "wb"))
     else:
         eran = ERAN(model, is_onnx=True, pkl_file=pkl_file_net)
         orig_input_shape = eran.orig_input_shape
@@ -729,7 +730,6 @@ def prepare_instance(config=None):
     nchw = "gpu" in domain
 
     boxes, constraint_set, _, _, is_nchw, input_shape = vnn_lib_data_loader(config.vnnlib_spec, dtype=DTYPE, index_is_nchw=config.index_is_nchw, output_is_nchw=nchw)
-    pkl_file_prop = f"{config.vnnlib_spec[:-7]}.pkl"
     pkl.dump((boxes, constraint_set, mean, std, is_nchw, input_shape), open(pkl_file_prop, "wb"))
 
     orig_sample, eps = translate_box_to_sample(boxes, equal_limits=True)
@@ -762,8 +762,8 @@ def run_analysis_instance(config=None):
 
     is_onnx = file_extension == ".onnx"
     assert is_onnx, "file extension not supported in ERAN light"
-    pkl_file_net = f"{filename}.pkl"
-    pkl_file_prop = f"{config.vnnlib_spec[:-7]}.pkl"
+    pkl_file_net = f"{filename}_net.pkl"
+    pkl_file_prop = f"{config.vnnlib_spec[:-7]}_prop.pkl"
 
     netname = config.netname
     domain = config.domain
