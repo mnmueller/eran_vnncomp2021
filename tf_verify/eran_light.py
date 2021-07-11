@@ -883,7 +883,7 @@ def run_analysis_instance(config=None):
                                               verbosity=1, input_nchw=nchw)
                     elif config.complete and (failed_constraints is not None):
                         # Run complete verification on uncertified constraints
-                        is_verified, adex, adv_val = verify_network_with_milp(config, layers(), specLB, specUB, nlb, nub,
+                        is_verified, adex, adv_val = verify_network_with_milp(config, nn, specLB, specUB, nlb, nub,
                                                                               failed_constraints,
                                                                               gpu_model="gpu" in domain,
                                                                               find_adex=True, is_nchw=nchw, start_time=start_time)
