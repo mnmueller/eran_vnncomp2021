@@ -780,6 +780,7 @@ def run_analysis_instance(config=None):
         else:
             translator = ONNXTranslator(model, True)
             operations, resources, orig_input_shape = translator.translate()
+            print(f"No resources loaded")
         optimizer = Optimizer(operations, resources)
         network, relu_layers, num_gpu_layers, _, nn = optimizer.get_gpupoly(nn)
     else:
@@ -789,6 +790,7 @@ def run_analysis_instance(config=None):
             print(f"Loaded resources successfully")
         else:
             resources, operations, orig_input_shape = None, None, None
+            print(f"No resources loaded")
         eran = ERAN(model, is_onnx=True, resources=resources, operations=operations, orig_input_shape=orig_input_shape)
         orig_input_shape = eran.orig_input_shape
 
@@ -809,10 +811,11 @@ def run_analysis_instance(config=None):
         print(f"Loaded spec successfully")
     else:
         boxes, constraint_set, _, _, is_nchw, input_shape = vnn_lib_data_loader(config.vnnlib_spec, dtype=DTYPE, index_is_nchw=config.index_is_nchw, output_is_nchw=nchw)
-    # orig_sample, eps = translate_box_to_sample(boxes, equal_limits=len(input_shape)>2)
-    check_translation(boxes[0][0], input_shape, index_nchw=config.index_is_nchw, is_nchw=nchw, onnx_model=model, onnx_input_shape= orig_input_shape,
+        # orig_sample, eps = translate_box_to_sample(boxes, equal_limits=len(input_shape)>2)
+        check_translation(boxes[0][0], input_shape, index_nchw=config.index_is_nchw, is_nchw=nchw, onnx_model=model, onnx_input_shape= orig_input_shape,
                       evalute_net=lambda x: evaluate_net(x, domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None),
                       mean=mean, std=std)
+        print(f"Spec computed")
     boxes = [(normalize(specLB,mean,std,nchw,input_shape),normalize(specUB,mean,std,nchw,input_shape)) for specLB, specUB in boxes]
     orig_sample, eps = translate_box_to_sample(boxes, equal_limits=len(input_shape)>2)
 
