@@ -746,7 +746,7 @@ def prepare_instance(config=None):
     return config
 
 def run_analysis_instance(config=None):
-    load_from_prepare = False
+    load_from_prepare = True
     if config is None:
         config = get_args()
 
@@ -776,6 +776,7 @@ def run_analysis_instance(config=None):
         if load_from_prepare and os.path.exists(pkl_file_net):
             with open(pkl_file_net, 'rb') as f:
                 (resources, operations, orig_input_shape) = pkl.load(f)
+            print(f"Loaded resources successfully")
         else:
             translator = ONNXTranslator(model, True)
             operations, resources, orig_input_shape = translator.translate()
@@ -785,6 +786,7 @@ def run_analysis_instance(config=None):
         if load_from_prepare and os.path.exists(pkl_file_net):
             with open(pkl_file_net, 'rb') as f:
                 (resources, operations, orig_input_shape) = pkl.load(f)
+            print(f"Loaded resources successfully")
         else:
             resources, operations, orig_input_shape = None, None, None
         eran = ERAN(model, is_onnx=True, resources=resources, operations=operations, orig_input_shape=orig_input_shape)
@@ -804,6 +806,7 @@ def run_analysis_instance(config=None):
     if load_from_prepare and os.path.exists(pkl_file_prop):
         with open(pkl_file_prop, 'rb') as f:
             (boxes, constraint_set, mean, std, is_nchw, input_shape) = pkl.load(f)
+        print(f"Loaded spec successfully")
     else:
         boxes, constraint_set, _, _, is_nchw, input_shape = vnn_lib_data_loader(config.vnnlib_spec, dtype=DTYPE, index_is_nchw=config.index_is_nchw, output_is_nchw=nchw)
     # orig_sample, eps = translate_box_to_sample(boxes, equal_limits=len(input_shape)>2)
@@ -815,6 +818,7 @@ def run_analysis_instance(config=None):
 
     if os.path.exists(netname[:-5]+".pynet"):
         torch_net = torch.load(netname[:-5] + ".pynet")
+        print(f"Loaded pynet successfully")
     else:
         torch_net = convert_net(netname, [orig_sample[0], boxes[0][0], boxes[0][1]], input_shape, nchw,
                                 lambda x: evaluate_net(x, domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None))
