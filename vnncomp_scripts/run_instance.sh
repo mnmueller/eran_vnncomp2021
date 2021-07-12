@@ -17,7 +17,6 @@ VNNLIB_FILE=$4
 RESULTS_FILE=$5
 TIMEOUT=$6
 
-
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 eran_file="$SCRIPT_DIR/../tf_verify/eran_light.py"
 
@@ -61,6 +60,10 @@ case $CATEGORY in
   ;;
   verivital)
     python3 $eran_file  --netname $ONNX_FILE --vnnlib_spec $VNNLIB_FILE --timeout_complete $TIMEOUT --res_file $RESULTS_FILE --domain refinegpupoly --sparse_n 100 --k 3 --s -2 --partial_milp 1 --max_milp_neurons 100 --timeout_final_milp 200 --complete True --attack_restarts 2
+  ;;
+  test)
+    python3 "$SCRIPT_DIR/../tf_verify/test_gurobi.py"
+    python3 $eran_file  --netname $ONNX_FILE --vnnlib_spec $VNNLIB_FILE --timeout_complete $TIMEOUT --res_file $RESULTS_FILE --domain refinegpupoly --sparse_n 100 --k 3 --s -2 --partial_milp 2 --max_milp_neurons 100 --timeout_final_milp 200 --attack_restarts 10
   ;;
   *)
     python3 $eran_file  --netname $ONNX_FILE --vnnlib_spec $VNNLIB_FILE --timeout_complete $TIMEOUT --res_file $RESULTS_FILE --domain refinegpupoly --sparse_n 100 --k 3 --s -2 --partial_milp 2 --max_milp_neurons 100 --timeout_final_milp 200 --attack_restarts 10
