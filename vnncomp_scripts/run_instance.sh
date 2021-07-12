@@ -63,6 +63,10 @@ case $CATEGORY in
   ;;
   test)
     python3 "$SCRIPT_DIR/../tf_verify/test_gurobi.py"
+    if [ $? != 0 ];
+    then
+        exit 1
+    fi
     python3 $eran_file  --netname $ONNX_FILE --vnnlib_spec $VNNLIB_FILE --timeout_complete $TIMEOUT --res_file $RESULTS_FILE --domain refinegpupoly --sparse_n 100 --k 3 --s -2 --partial_milp 2 --max_milp_neurons 100 --timeout_final_milp 200 --attack_restarts 10
   ;;
   *)
