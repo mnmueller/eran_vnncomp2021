@@ -840,7 +840,7 @@ def run_analysis_instance(config=None):
         # label = extract_label_from_cstr(y)
         y_1 = evaluate_net(x[0], domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None)
         y_2 = evaluate_net(x[1], domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None)
-        y_3 = evaluate_net(orig_sample, domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None)
+        y_3 = evaluate_net(orig_sample[i], domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None)
         is_correctly_classified = evaluate_cstr(y, np.stack([y_1[1], y_2[1], y_3[1]], axis=0)).all()
         if config.debug:
             print(f"concrete outputs: {y_3[1]}")
