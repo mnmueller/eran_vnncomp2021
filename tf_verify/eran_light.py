@@ -837,6 +837,7 @@ def run_analysis_instance(config=None):
     start_time = time.time()
 
     for i, (x, y) in enumerate(zip(boxes, constraint_set)):
+        if spec_sat: break
         # label = extract_label_from_cstr(y)
         y_1 = evaluate_net(x[0], domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None)
         y_2 = evaluate_net(x[1], domain, network if "gpu" in domain else None, eran if "gpu" not in domain else None)
